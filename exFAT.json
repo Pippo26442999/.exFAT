@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Akia - Viki",
+        "image": "exFAT/1.avif",
+        "akia_url": "https://link-akia.com",
+        "viki_url": "https://link-viki.com"
+    },
+    {
+        "title": "Avatar: Frontiers",
+        "image": "exFAT/2.avif",
+        "akia_url": "#",
+        "viki_url": "#"
+    }
+]
