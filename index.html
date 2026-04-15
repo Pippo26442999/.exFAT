@@ -3,23 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Game Library</title>
+    <title>Dynamic Multi-Color Library</title>
     <style>
-        /* [INSERISCI QUI TUTTO IL CSS CHE ABBIAMO CREATO PRIMA] */
-        /* Mantieni esattamente lo stile del messaggio precedente */
-        :root { --bg-1: #020205; --bg-2: #0a0a1a; --bg-3: #120520; --card-gradient: linear-gradient(-45deg, #ff0055, #8800ff, #0088ff, #00ffee, #ff8800); }
-        @keyframes siteBG { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 60px 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; background: linear-gradient(-45deg, var(--bg-1), var(--bg-2), var(--bg-3), var(--bg-1)); background-size: 300% 300%; animation: siteBG 15s ease infinite; color: #ffffff; }
-        h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 12px; margin-bottom: 70px; font-weight: 900; }
-        .game-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 50px; width: 100%; max-width: 1300px; justify-items: center; }
-        @keyframes cardAnim { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
-        .game-card { background: var(--card-gradient); background-size: 400% 400%; animation: cardAnim 6s ease infinite; border-radius: 25px; padding: 25px; text-align: center; width: 100%; max-width: 320px; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 15px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255, 255, 255, 0.2); }
-        .game-card:hover { transform: translateY(-20px) scale(1.05); }
-        .game-title { display: block; font-size: 1.4rem; font-weight: 800; margin-bottom: 20px; text-shadow: 0 2px 10px rgba(0,0,0,0.7); }
-        .game-card img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 15px; margin-bottom: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
-        .download-container { display: flex; justify-content: center; align-items: center; gap: 15px; border-top: 2px solid rgba(0,0,0,0.2); padding-top: 20px; }
-        .download-container a { background: rgba(0, 0, 0, 0.6); color: #fff; text-decoration: none; font-weight: 800; padding: 10px 18px; border-radius: 10px; font-size: 0.9rem; transition: 0.3s; }
-        .download-container a:hover { background: #fff; color: #000; transform: scale(1.1); }
+        /* Variabili Colori */
+        :root {
+            --bg-1: #020205;
+            --bg-2: #0a0a1a;
+            --bg-3: #120520;
+            --card-gradient: linear-gradient(-45deg, #ff0055, #8800ff, #0088ff, #00ffee, #ff8800);
+        }
+
+        /* 1. ANIMAZIONE BACKGROUND SITO (Lenta e profonda) */
+        @keyframes siteBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 80px 20px; /* Più spazio in alto e in basso */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(-45deg, var(--bg-1), var(--bg-2), var(--bg-3), var(--bg-1));
+            background-size: 300% 300%;
+            animation: siteBG 15s ease infinite;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            margin-bottom: 80px;
+            font-weight: 900;
+            text-shadow: 0 0 20px rgba(0, 170, 255, 0.4);
+        }
+
+        /* 2. GRIGLIA AGGIORNATA (Distanziamento Card) */
+        .game-grid {
+            display: grid;
+            /* Aumentato il minmax a 320px per evitare che le card si stringano troppo */
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+            gap: 60px; /* SPAZIO TRA LE CARD: Aumentato per distanziarle bene */
+            width: 100%;
+            max-width: 1400px; /* Griglia più larga per accogliere card distanziate */
+            justify-items: center;
+            padding: 20px;
+        }
+
+        /* 3. ANIMAZIONE GAME-CARD */
+        @keyframes cardAnim {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .game-card {
+            background: var(--card-gradient);
+            background-size: 400% 400%;
+            animation: cardAnim 6s ease infinite;
+            
+            border-radius: 30px; /* Bordi leggermente più arrotondati */
+            padding: 25px;
+            text-align: center;
+            width: 100%;
+            max-width: 340px; /* Larghezza massima card */
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+        }
+
+        .game-card:hover {
+            transform: translateY(-20px) scale(1.05);
+            box-shadow: 0 30px 70px rgba(0,0,0,0.8);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .game-title {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+            text-transform: uppercase;
+        }
+
+        /* Immagine Quadrata */
+        .game-card img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 18px;
+            margin-bottom: 25px;
+            display: block;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            border: 2px solid rgba(0,0,0,0.3);
+        }
+
+        /* Download Links */
+        .download-container {
+            margin-top: 10px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .download-container a {
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 800;
+            padding: 10px 22px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .download-container a:hover {
+            background: #fff;
+            color: #000;
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255,255,255,0.4);
+        }
+
+        .divider {
+            color: rgba(0,0,0,0.3);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Responsive per cellulari */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; letter-spacing: 6px; }
+            .game-grid { gap: 40px; }
+        }
     </style>
 </head>
 <body>
