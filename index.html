@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archivio Giochi - GitHub Pages</title>
+    <title>Game Archive</title>
     <style>
-        /* Stile Generale */
+        /* Modern Dark Theme */
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0f0f0f;
-            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #eeeeee;
             margin: 0;
             padding: 40px 20px;
             display: flex;
@@ -19,118 +19,116 @@
 
         h1 {
             margin-bottom: 40px;
-            font-size: 2.5rem;
-            color: #00d4ff;
+            font-size: 2rem;
+            color: #00ffcc;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
         }
 
-        /* Griglia dei giochi */
-        .game-grid {
+        /* Grid Layout */
+        .container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 25px;
             width: 100%;
-            max-width: 1200px;
+            max-width: 1100px;
         }
 
-        /* Card del singolo gioco */
-        .game-card {
+        /* Game Card Style */
+        .card {
             background-color: #1e1e1e;
-            border-radius: 15px;
+            border-radius: 12px;
             padding: 15px;
             text-align: center;
-            transition: all 0.3s ease;
             border: 1px solid #333;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: transform 0.2s ease, border-color 0.2s ease;
         }
 
-        .game-card:hover {
-            transform: translateY(-10px);
-            border-color: #00d4ff;
-            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #00ffcc;
         }
 
-        /* Nome Titolo Sopra */
-        .game-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 15px;
+        /* 1. Name/Title on top */
+        .title {
             display: block;
-            color: #eeeeee;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #ffffff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
-        /* Immagine dentro cartella Giochi */
-        .game-card img {
+        /* 2. Image in the middle (from .exFAT folder) */
+        .card img {
             width: 100%;
-            aspect-ratio: 2/3; /* Formato poster standard */
+            aspect-ratio: 2/3;
             object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            background-color: #333; /* Placeholder se l'immagine manca */
+            border-radius: 8px;
+            margin-bottom: 12px;
+            background-color: #2a2a2a; /* Placeholder color */
         }
 
-        /* Sezione Link Download */
-        .download-container {
+        /* 3. Links at the bottom */
+        .links {
+            font-size: 0.9rem;
             margin-top: 10px;
             padding-top: 10px;
             border-top: 1px solid #333;
-            font-size: 0.95rem;
         }
 
-        .download-container a {
-            color: #00d4ff;
+        .links a {
+            color: #00ffcc;
             text-decoration: none;
-            font-weight: 600;
-            transition: color 0.2s;
+            font-weight: bold;
         }
 
-        .download-container a:hover {
-            color: #ffffff;
+        .links a:hover {
             text-decoration: underline;
         }
 
-        .divider {
-            color: #555;
-            margin: 0 8px;
+        .sep {
+            color: #666;
+            margin: 0 5px;
         }
 
-        /* Messaggio se non ci sono ancora giochi */
         .footer {
-            margin-top: 50px;
-            color: #666;
+            margin-top: 60px;
             font-size: 0.8rem;
+            color: #555;
         }
     </style>
 </head>
 <body>
 
-    <h1>🎮 La Mia Raccolta</h1>
+    <h1>Game Collection</h1>
 
-    <div class="game-grid">
+    <div class="container">
 
-        <div class="game-card">
-            <span class="game-title">Nome Titolo 1</span>
-            <img src="Giochi/immagine1.jpg" alt="Gioco 1">
-            <div class="download-container">
-                <a href="LINK_AKIA_QUI" target="_blank">Akia</a>
-                <span class="divider">-</span>
-                <a href="LINK_VIKI_QUI" target="_blank">Viki</a>
+        <div class="card">
+            <span class="title">Game Name 1</span>
+            <img src=".exFAT/immagine1.jpg" alt="Game 1">
+            <div class="links">
+                <a href="LINK_HERE" target="_blank">Akia</a>
+                <span class="sep">-</span>
+                <a href="LINK_HERE" target="_blank">Viki</a>
             </div>
         </div>
-        <div class="game-card">
-            <span class="game-title">Nome Titolo 2</span>
-            <img src="Giochi/immagine2.png" alt="Gioco 2">
-            <div class="download-container">
+        <div class="card">
+            <span class="title">Game Name 2</span>
+            <img src=".exFAT/immagine2.jpg" alt="Game 2">
+            <div class="links">
                 <a href="#" target="_blank">Akia</a>
-                <span class="divider">-</span>
+                <span class="sep">-</span>
                 <a href="#" target="_blank">Viki</a>
             </div>
         </div>
         </div>
 
     <div class="footer">
-        Creato con GitHub Pages
+        Hosted on GitHub Pages
     </div>
 
 </body>
