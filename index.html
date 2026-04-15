@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Multi-Color Library</title>
+    <title>Dynamic Library - Small Cards</title>
     <style>
         /* Variabili Colori */
         :root {
@@ -23,7 +23,7 @@
         body {
             font-family: 'Segoe UI', Roboto, sans-serif;
             margin: 0;
-            padding: 80px 20px; /* Più spazio in alto e in basso */
+            padding: 60px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -36,22 +36,22 @@
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem; /* Testo leggermente ridotto */
             text-transform: uppercase;
-            letter-spacing: 12px;
-            margin-bottom: 80px;
+            letter-spacing: 10px;
+            margin-bottom: 60px;
             font-weight: 900;
-            text-shadow: 0 0 20px rgba(0, 170, 255, 0.4);
+            text-shadow: 0 0 15px rgba(0, 170, 255, 0.4);
         }
 
-        /* 2. GRIGLIA AGGIORNATA (Distanziamento Card) */
+        /* 2. GRIGLIA AGGIORNATA (Più colonne per card più piccole) */
         .game-grid {
             display: grid;
-            /* Aumentato il minmax a 320px per evitare che le card si stringano troppo */
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
-            gap: 60px; /* SPAZIO TRA LE CARD: Aumentato per distanziarle bene */
+            /* Ridotto il minmax a 240px per permettere card più piccole */
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+            gap: 40px; /* Spazio ridotto ma presente tra le card */
             width: 100%;
-            max-width: 1400px; /* Griglia più larga per accogliere card distanziate */
+            max-width: 1200px; /* Griglia massima più stretta */
             justify-items: center;
             padding: 20px;
         }
@@ -63,59 +63,60 @@
             100% { background-position: 0% 50%; }
         }
 
+        /* 4. GAME-CARD (Ridotta ma sempre quadrata internamente) */
         .game-card {
             background: var(--card-gradient);
             background-size: 400% 400%;
             animation: cardAnim 6s ease infinite;
             
-            border-radius: 30px; /* Bordi leggermente più arrotondati */
-            padding: 25px;
+            border-radius: 20px; /* Bordi proporzionati */
+            padding: 15px; /* Padding interno ridotto */
             text-align: center;
             width: 100%;
-            max-width: 340px; /* Larghezza massima card */
+            max-width: 260px; /* LARGHEZZA MASSIMA RIDOTTA */
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
             border: 1px solid rgba(255, 255, 255, 0.2);
             position: relative;
         }
 
         .game-card:hover {
-            transform: translateY(-20px) scale(1.05);
-            box-shadow: 0 30px 70px rgba(0,0,0,0.8);
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.8);
             border-color: rgba(255, 255, 255, 0.5);
         }
 
         .game-title {
             display: block;
-            font-size: 1.4rem;
+            font-size: 1.1rem; /* Titolo più piccolo */
             font-weight: 800;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
             color: #fff;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+            text-shadow: 0 2px 8px rgba(0,0,0,0.7);
             text-transform: uppercase;
         }
 
-        /* Immagine Quadrata */
+        /* Immagine Quadrata (Sempre quadrata) */
         .game-card img {
             width: 100%;
-            aspect-ratio: 1 / 1;
+            aspect-ratio: 1 / 1; /* Forza il formato QUADRATO */
             object-fit: cover;
-            border-radius: 18px;
-            margin-bottom: 25px;
+            border-radius: 12px;
+            margin-bottom: 15px; /* Spazio ridotto */
             display: block;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-            border: 2px solid rgba(0,0,0,0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            border: 1px solid rgba(0,0,0,0.3);
         }
 
-        /* Download Links */
+        /* Download Links (Ridimensionati) */
         .download-container {
-            margin-top: 10px;
-            padding-top: 20px;
+            margin-top: 5px;
+            padding-top: 15px;
             border-top: 2px solid rgba(0,0,0,0.2);
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 15px;
+            gap: 10px; /* Gap ridotto */
         }
 
         .download-container a {
@@ -123,9 +124,9 @@
             color: #fff;
             text-decoration: none;
             font-weight: 800;
-            padding: 10px 22px;
-            border-radius: 12px;
-            font-size: 0.95rem;
+            padding: 8px 18px; /* Pulsanti più piccoli */
+            border-radius: 10px;
+            font-size: 0.85rem; /* Testo pulsante più piccolo */
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.3s ease;
@@ -137,19 +138,19 @@
             background: #fff;
             color: #000;
             transform: scale(1.1);
-            box-shadow: 0 0 20px rgba(255,255,255,0.4);
+            box-shadow: 0 0 15px rgba(255,255,255,0.4);
         }
 
         .divider {
             color: rgba(0,0,0,0.3);
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
         /* Responsive per cellulari */
         @media (max-width: 600px) {
-            h1 { font-size: 2rem; letter-spacing: 6px; }
-            .game-grid { gap: 40px; }
+            h1 { font-size: 1.8rem; letter-spacing: 5px; }
+            .game-grid { gap: 30px; }
         }
     </style>
 </head>
