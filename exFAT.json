@@ -2,10 +2,29 @@
   {
     "title": "Avatar Frontiers of Pandora",
     "image": "exFAT/1.avif",
-    "tags": ["PPSA01576", "v01.011", "USA to EUR Languages"],
-    "akia_url": "https://pippo26442999.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiMzdmMmFYdGZRaGt5ejJNZ0o4RnpieCtJbnZBWTdRamdIcXZ5eUxJdmVCY0pFQThOMUd4RlpSOTJVaTRWa3dXNzZtajV4YmVoIiwicyI6ImFGVGVqSjhNQmhra01OWUV2cmlUU0E9PSIsImkiOiJuSjJ2bFFIU1RRdDRqbWhjIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiOUwzbTVZTHZLQXBZK0tyTk5SMjMrUkFGRmxocXJMS3FRSEc1a0h3UXh0N1BwcURoREFNeGpvMVNhNTMrZ0FiYjIxeVgiLCJzIjoiZzFlMFBvZ2lwVGlhMzFVTVEvYW9qdz09IiwiaSI6IkxhSG1jR3FIaDFVY3J6dysifQ==",
+    "tags": ["PPSA01576", "v01.011", "USA to EUR Languages", "4.xx BackPork"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMzdmMmFYdGZRaGt5ejJNZ0o4RnpieCtJbnZBWTdRamdIcXZ5eUxJdmVCY0pFQThOMUd4RlpSOTJVaTRWa3dXNzZtajV4YmVoIiwicyI6ImFGVGVqSjhNQmhra01OWUV2cmlUU0E9PSIsImkiOiJuSjJ2bFFIU1RRdDRqbWhjIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOUwzbTVZTHZLQXBZK0tyTk5SMjMrUkFGRmxocXJMS3FRSEc1a0h3UXh0N1BwcURoREFNeGpvMVNhNTMrZ0FiYjIxeVgiLCJzIjoiZzFlMFBvZ2lwVGlhMzFVTVEvYW9qdz09IiwiaSI6IkxhSG1jR3FIaDFVY3J6dysifQ==",
     "credits_files": "High-Speed007",
     "credits_backport": "BestPig"
+},
+  {
+    "title": "Vampire The Masquerade Bloodlines 2",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202506/2406/1aa1badf590e91360c963cf8b421208002b397dbcb6c9e5b.png",
+    "tags": ["PPSA15186", "v01.003", "EUR", "Standard + 4.xx BackPork"],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNGg3cVdpSStwcGJoNGRrZzFualo3YysxdndWNVdJUWFNUWdkNDc1TFh3K0JDc0RXZXo2elU3c2phN3ZRN1p4UEhNblYyVjcwIiwicyI6InZ6ZHB5RTFtTEZPc2EzcHlsYnYrZVE9PSIsImkiOiJEajB2YllmU2ZxZTI5UEF4In0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOFVhelFFZ2liNHNyVmIxWnVIa0dha05RRWFKWU52enBKeEJ3VFdRaklmRU1WSnNoZmFUMkF5SmliTFBUMnpYWnBhRmQiLCJzIjoiU1BGWGtOVW5MQzVjdnJMMXRPNTFYZz09IiwiaSI6IjBPL2NSbU83djRST2hVUmIifQ==",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT3QwTHlWR3M1YzlNb0QzODdxdytWNEdnSmhJb2lLU2Q4eEpoSTB0NTZtakZFb1FhRFA4TlhvcmVUd2U2ZzJCR3JYcFJiWHYyIiwicyI6IjVCVjRuWCt0SFBCQ2xQanhybVg3VkE9PSIsImkiOiIzY0QxWXNDOGRoOXd3NmdCIn0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibW1DQ1B6NktmY0lVOHZwRTZtb1NSMzQyTnNtZzB0czhGeC9LWGtpMVFaS0FSV3YzRUJwNFFMaUJ1YkE2UmE0UlVTd2kiLCJzIjoidzNzMTV5d2xnY3RuYjdhZGdERUxwZz09IiwiaSI6ImJJTHdraGFHSzVaWWx6LzMifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig"
+  },
+  {
+    "title": "Romancing SaGa 2: Revenge of the Seven",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2910/e8146bd54da924d5efd03b8bf5b441646b09a74a7f021f2f.png",
+    "tags": ["PPSA16566", "v01.010", "EUR", "8.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL2ZHSmxCV1NrL1lZOXlKUzkrS3lOTDdLOW85Qm9ONFErL1lSYmp5TVpIZHEvdUtqU0FaRm5XWlFNUFR4a2J6VkUvbEhJbFVTIiwicyI6IjBXWUFiZVI0NzlsZENqYXVrbUp2TkE9PSIsImkiOiJBWEJ6Q0ExWWpnTjlOdmtMIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMDNycm5ZdWMxZUp4T3dCVCt6dkZMYzVzb1ZEWGdMRmJzSVRRZGhsR29HdzlEWWJzRUZJWHFFNGpGVEZuRWJ1aENQSHoiLCJzIjoiNDlhV0psTld1SlMzYkpRaUNDbXJJQT09IiwiaSI6IjB5UEFRZ0d1YXdPRjNzZGwifQ==",
+    "credits_files": "SiESPTA"
   }
 ]
