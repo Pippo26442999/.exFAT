@@ -1,9 +1,11 @@
 [
-    {
-        "title": "Avatar Frontiers of Pandora",
-        "description": "• PPSA01576<br>• USA<br>• 4.xx and beyond.",
-        "image": "exFAT/1.avif",
-        "akia_url": "https://pippo26442999.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiSVE2Z3d4Y1hrbGFpMHRwT24yeHFWc3hQdE81dXcxTXhidXZJMkxsZjg3THJoM0s3anNBb0VJajNNcG5vU3FlTGRwQTlJWHlnIiwiaCI6InBpcHBvIiwicyI6IkFlODlNQlgybnJOckxPY2ZkU0hITHc9PSIsImkiOiJRSW9iSDQ4QUFaYnZQYzJlIn0=",
-        "viki_url": "https://pippo26442999.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiYVMvZzRUcUFmWTNyQUdkM0pWRER3MVNMaUJUMnZIUTZPaTl6NFlBTC83Nmh2anFYV1Jhd1JuVVNKZHppV2k1Y3ZISS8iLCJoIjoicGlwcG8iLCJzIjoiUCsxdFVHZUk2NENvMC80d2dCV1VRUT09IiwiaSI6IjhEYVJZbmdqMUtGRzZSZ1UifQ=="
-    }
+  {
+    "title": "Avatar Frontiers of Pandora",
+    "image": "exFAT/1.avif",
+    "tags": ["PPSA01576", "v01.011", "USA to EUR Languages"],
+    "akia_url": "https://pippo26442999.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiMzdmMmFYdGZRaGt5ejJNZ0o4RnpieCtJbnZBWTdRamdIcXZ5eUxJdmVCY0pFQThOMUd4RlpSOTJVaTRWa3dXNzZtajV4YmVoIiwicyI6ImFGVGVqSjhNQmhra01OWUV2cmlUU0E9PSIsImkiOiJuSjJ2bFFIU1RRdDRqbWhjIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiOUwzbTVZTHZLQXBZK0tyTk5SMjMrUkFGRmxocXJMS3FRSEc1a0h3UXh0N1BwcURoREFNeGpvMVNhNTMrZ0FiYjIxeVgiLCJzIjoiZzFlMFBvZ2lwVGlhMzFVTVEvYW9qdz09IiwiaSI6IkxhSG1jR3FIaDFVY3J6dysifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig"
+  }
 ]

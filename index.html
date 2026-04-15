@@ -3,84 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
+    <title>Game Library - Ultimate</title>
     <style>
         :root {
             --bg-1: #020205; --bg-2: #0a0a1a; --bg-3: #120520;
             --card-gradient: linear-gradient(-45deg, #ff0055, #8800ff, #0088ff, #00ffee, #ff8800);
+            --dmca-red: #ff0033;
+            --cyan-neon: #00ffee;
         }
 
+        /* ANIMAZIONI */
         @keyframes siteBG { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
         @keyframes cardAnim { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        @keyframes pulseRed {
+            0%, 100% { opacity: 0.4; text-shadow: none; }
+            50% { opacity: 1; text-shadow: 0 0 20px var(--dmca-red); color: #ff4d4d; }
+        }
 
         body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0; padding: 60px 20px;
+            font-family: 'Segoe UI', sans-serif; margin: 0; padding: 40px 20px;
             display: flex; flex-direction: column; align-items: center;
-            min-height: 100vh;
+            min-height: 100vh; color: #fff; overflow-x: hidden;
             background: linear-gradient(-45deg, var(--bg-1), var(--bg-2), var(--bg-3), var(--bg-1));
-            background-size: 300% 300%;
-            animation: siteBG 15s ease infinite;
-            color: #fff; overflow-x: hidden;
+            background-size: 300% 300%; animation: siteBG 15s ease infinite;
+            -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
         }
 
-        h1 { font-size: 2.5rem; text-transform: uppercase; letter-spacing: 10px; margin-bottom: 60px; font-weight: 900; }
+        /* NAVIGAZIONE E SEARCH */
+        nav { display: flex; gap: 40px; margin-bottom: 60px; align-items: center; }
+        .search-wrapper { display: flex; align-items: center; }
+        .search-icon { font-size: 2rem; cursor: pointer; opacity: 0.6; transition: 0.3s; user-select: none; margin-right: 10px; }
+        .search-icon:hover { opacity: 1; transform: scale(1.1); }
+        #search-input {
+            width: 0; padding: 0; border: none; outline: none; background: rgba(255, 255, 255, 0.1);
+            color: #fff; border-bottom: 2px solid var(--cyan-neon); font-size: 1.2rem;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s;
+        }
+        #search-input.active { width: 200px; padding: 5px 10px; margin-right: 15px; }
 
+        .nav-item {
+            font-size: 2.5rem; text-transform: uppercase; letter-spacing: 10px;
+            font-weight: 900; color: #fff; text-decoration: none; cursor: pointer;
+            transition: 0.3s; opacity: 0.4;
+        }
+        .nav-item.active { opacity: 1; text-shadow: 0 0 20px rgba(0, 170, 255, 0.8); }
+        #dmca-link { animation: pulseRed 2s infinite ease-in-out; opacity: 1; }
+
+        /* GRID E CARD NITIDE */
         .game-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
             gap: 40px; width: 100%; max-width: 1200px; justify-items: center;
         }
-
+        .card-container { width: 100%; max-width: 260px; perspective: 1000px; }
         .game-card {
-            background: var(--card-gradient); background-size: 400% 400%;
-            animation: cardAnim 6s ease infinite;
-            border-radius: 20px; padding: 20px; text-align: center;
-            width: 100%; max-width: 260px;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: var(--card-gradient); background-size: 400% 400%; animation: cardAnim 6s ease infinite;
+            border-radius: 20px; padding: 20px; width: 100%; border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3); transform-origin: center center;
         }
+        .card-container:hover .game-card { transform: translateY(-10px) scale(1.04); box-shadow: 0 30px 60px rgba(0,0,0,0.6); }
 
-        .game-card:hover { transform: translateY(-15px) scale(1.03); }
+        .game-title { display: block; margin-bottom: 15px; font-weight: 800; text-align: center; text-transform: uppercase; font-size: 0.95rem; min-height: 2.4em; }
+        .image-container { position: relative; width: 100%; aspect-ratio: 1/1; border-radius: 12px; overflow: hidden; }
+        .image-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        
+        /* TAGS IN BASSO A SINISTRA */
+        .tags-overlay { position: absolute; bottom: 10px; left: 10px; display: flex; flex-direction: column; align-items: flex-start; gap: 5px; }
+        .game-tag { background: rgba(0,0,0,0.8); color: #fff; font-size: 0.65rem; padding: 4px 10px; border-radius: 5px; font-weight: 800; border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(4px); }
 
-        .game-title { display: block; font-size: 1.1rem; font-weight: 800; margin-bottom: 15px; text-transform: uppercase; }
+        .download-container { display: flex; justify-content: center; align-items: center; gap: 12px; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 15px; }
+        .btn-dl { text-decoration: none; color: #fff; background: rgba(0,0,0,0.6); padding: 8px 18px; border-radius: 10px; font-size: 0.85rem; font-weight: 800; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1); cursor: pointer; }
+        .btn-dl:hover { background: #fff; color: #000; transform: scale(1.1); }
 
-        .game-card img {
-            width: 100%; aspect-ratio: 1 / 1; object-fit: cover;
-            border-radius: 12px; display: block;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-        }
-
-        /* Stile descrizione sotto l'immagine */
-        .game-description {
-            font-size: 0.75rem; line-height: 1.5;
-            color: #fff; text-align: left;
-            background: rgba(0, 0, 0, 0.3);
-            padding: 12px; border-radius: 10px;
-            margin: 15px 0; /* Spazio sopra e sotto */
-            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-        }
-
-        .download-container {
-            padding-top: 15px; border-top: 2px solid rgba(0,0,0,0.1);
-            display: flex; justify-content: center; align-items: center; gap: 10px;
-        }
-
-        .download-container a {
-            background: rgba(0, 0, 0, 0.6); color: #fff; text-decoration: none;
-            font-weight: 800; padding: 8px 18px; border-radius: 10px;
-            font-size: 0.85rem; text-transform: uppercase; transition: 0.3s;
-            backdrop-filter: blur(5px); border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .download-container a:hover { background: #fff; color: #000; transform: scale(1.1); }
-        .divider { color: rgba(0,0,0,0.3); font-weight: bold; }
+        /* POPUP MODALS */
+        .modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); backdrop-filter: blur(10px); }
+        .modal-content { background: #0a0a1a; margin: 10% auto; padding: 40px; border: 2px solid #ff0055; width: 85%; max-width: 550px; border-radius: 25px; position: relative; animation: cardAnim 10s infinite; }
+        .close-modal { position: absolute; right: 25px; top: 20px; color: #fff; font-size: 30px; cursor: pointer; }
+        
+        #credits-modal .modal-content { border-color: var(--cyan-neon); box-shadow: 0 0 50px rgba(0, 255, 238, 0.2); }
     </style>
 </head>
 <body>
-    <h1>LIBRARY</h1>
+
+    <nav>
+        <div class="search-wrapper">
+            <span class="search-icon" id="search-trigger">🔍</span>
+            <input type="text" id="search-input" placeholder="Search game...">
+        </div>
+        <a class="nav-item active" onclick="location.reload()">Library</a>
+        <a class="nav-item" id="dmca-link">DMCA</a>
+    </nav>
+
     <div class="game-grid" id="game-grid"></div>
+
+    <div id="dmca-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-dmca">&times;</span>
+            <h2 id="dmca-title" style="color: var(--cyan-neon); text-align: center; text-transform: uppercase;"></h2>
+            <div id="dmca-body" style="line-height: 1.6; color: #ddd;"></div>
+        </div>
+    </div>
+
+    <div id="credits-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-credits">&times;</span>
+            <h2 style="color: var(--cyan-neon); text-align: center; text-transform: uppercase; margin-bottom: 20px;">Credits</h2>
+            <div id="credits-body" style="text-align: center; font-size: 1.1rem; line-height: 1.8; color: #fff; margin-bottom: 30px;"></div>
+            <div style="text-align: center;">
+                <a id="final-download-btn" target="_blank" class="btn-dl" style="background: var(--cyan-neon); color: #000; padding: 12px 30px;">PROCEED TO DOWNLOAD</a>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
