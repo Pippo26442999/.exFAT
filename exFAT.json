@@ -1,5 +1,25 @@
 [
   {
+    "title": "Lost Soul Aside",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202412/0610/39ce4e6e838bf8def364426e97677d54e4775ac0f076ebf2.png",
+    "tags": ["PPSA26358", "v01.000", "USA", "4.xx BackPork"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiU0Rtd1RNdFY2VUxwRU9PWTJhdis4S0NUR2ZmK095VE0xRC91NnhCa0NWcTJkUUxYa0tOdU9mbU1qM1ZEVWZzSnR6NnVLaVJDIiwicyI6IjJ2aGUrbk9HZ2tWeEVPQ3RyOWlmYmc9PSIsImkiOiJHSzJOR3JhNFRhMTdvQTBCIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV1lIZDUxalB3dnpEU0FtWUozWDBIY3YyTjJHaWI3RElJZkUvQTUyYWpNZEZ3V0MrV2lGOEtVT0owWVFtbXR3Zm1zZE0iLCJzIjoiQWp3ZkZORlFLUXFhVjg2Wm9XUXNKUT09IiwiaSI6IlpQUVdXczJxWnlrMkM2SFAifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig "
+},
+  {
+    "title": "Demon Slayer Kimetsu no Yaiba The Hinokami Chronicles: Ultimate Edition",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202309/2105/17888caa136dd07ab9980c7b042a8f6e25271d92ef8a3f1c.png",
+    "tags": ["PPSA03457", "v1.08.03", "ASIA to EUR Languages", "3.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiREg1MFZDTTF3bGVHN09ybmtGWDdPUERVa0pQb3dyNXpZRTg4ZU5aeENNbmpUTmcwaDF0QmlkbTl5emRmSHYwVTc3NmJ2cy9WIiwicyI6ImJzRmkwa0tEWUNYcDVhbEFzQWhlT3c9PSIsImkiOiI5YktRakk4dXZWaE93V2ttIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieEVCUlNOZnAwd2ZJSzh4MytCVldTS3Yzb3ZoeEZxdUN0Z3NYN1pGU2VSVndZZGNsbkFmNjM5emd1ZjlJVTk2NnVMMUciLCJzIjoiOHEyN0FRaVRuVGZ4TDI1TVV3OE9MUT09IiwiaSI6Ik5XMHErVW5PM2pHcTdLWFMifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK2p6clpXenIwQ3ZsY0ZoSUl3dGFtUWtlTHpEemdJdVhuN0FYM1dBNTljazYwOThVRXh0bXR1TmlsU3RqSVRFN1hZTzd6R0xMIiwicyI6IlBpbm1XTnV4SjlmalQxT2VubnpxVGc9PSIsImkiOiIzZlpyQ3JSQ05DRFZtRGJtIn0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQ1ROUS95K0U3MnRwZnlHODh6QzVlK1RBTWZZN1FnYkxqYXZNYU0yaU92MmFqWThnYmkwa2oybHBIZ3lsenBCNlFjMWoiLCJzIjoiSVhFTmIvWHNoVnBWQmdHVW1uRG5Odz09IiwiaSI6IkFyS0s0d3BjbGlIWm9TN2UifQ==",
+    "credits_files": "SiESPTA",
+    "credits_dlc": "SiESPTA"
+},
+  {
     "title": "Avatar Frontiers of Pandora",
     "image": "exFAT/1.avif",
     "tags": ["PPSA01576", "v01.011", "USA to EUR Languages", "4.xx BackPork"],
@@ -11,7 +31,7 @@
   {
     "title": "Vampire The Masquerade Bloodlines 2",
     "image": "https://image.api.playstation.com/vulcan/ap/rnd/202506/2406/1aa1badf590e91360c963cf8b421208002b397dbcb6c9e5b.png",
-    "tags": ["PPSA15186", "v01.003", "EUR", "Standard + 4.xx BackPork"],
+    "tags": ["PPSA15186", "v01.003", "EUR", "Standard (9.xx) + 4.xx BackPork"],
     "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNGg3cVdpSStwcGJoNGRrZzFualo3YysxdndWNVdJUWFNUWdkNDc1TFh3K0JDc0RXZXo2elU3c2phN3ZRN1p4UEhNblYyVjcwIiwicyI6InZ6ZHB5RTFtTEZPc2EzcHlsYnYrZVE9PSIsImkiOiJEajB2YllmU2ZxZTI5UEF4In0=",
     "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOFVhelFFZ2liNHNyVmIxWnVIa0dha05RRWFKWU52enBKeEJ3VFdRaklmRU1WSnNoZmFUMkF5SmliTFBUMnpYWnBhRmQiLCJzIjoiU1BGWGtOVW5MQzVjdnJMMXRPNTFYZz09IiwiaSI6IjBPL2NSbU83djRST2hVUmIifQ==",
     "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT3QwTHlWR3M1YzlNb0QzODdxdytWNEdnSmhJb2lLU2Q4eEpoSTB0NTZtakZFb1FhRFA4TlhvcmVUd2U2ZzJCR3JYcFJiWHYyIiwicyI6IjVCVjRuWCt0SFBCQ2xQanhybVg3VkE9PSIsImkiOiIzY0QxWXNDOGRoOXd3NmdCIn0=",
@@ -26,5 +46,242 @@
     "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL2ZHSmxCV1NrL1lZOXlKUzkrS3lOTDdLOW85Qm9ONFErL1lSYmp5TVpIZHEvdUtqU0FaRm5XWlFNUFR4a2J6VkUvbEhJbFVTIiwicyI6IjBXWUFiZVI0NzlsZENqYXVrbUp2TkE9PSIsImkiOiJBWEJ6Q0ExWWpnTjlOdmtMIn0=",
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMDNycm5ZdWMxZUp4T3dCVCt6dkZMYzVzb1ZEWGdMRmJzSVRRZGhsR29HdzlEWWJzRUZJWHFFNGpGVEZuRWJ1aENQSHoiLCJzIjoiNDlhV0psTld1SlMzYkpRaUNDbXJJQT09IiwiaSI6IjB5UEFRZ0d1YXdPRjNzZGwifQ==",
     "credits_files": "SiESPTA"
+  },
+  {
+    "title": "Rugrats Adventure in Gameland",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/0916/7d394c35f96c95c7b933702ef8ad56e3ad7d7f4f1e90027b.png",
+    "tags": ["PPSA23396", "v01.000", "ASIA", "9.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMzk1dWdkSVlpd0dvMEJSSzdMaXBxOWhxMUQ4b3FSbWM4NHR4aDFXTlZxT1VrWXpHSzhKY2F2ZmtqSWtBc0MyNTlwUFdrY29RIiwicyI6ImtaYVErb0hYeURwallHWEliMHBUYlE9PSIsImkiOiJJTCt1OFN1djN4SDYzKzZFIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidVdZV3Q0SmNKM3VHV0pBNEJickJaNjM3QXBSZnFqMUl0cFhsLzU1RVRsN2REY0JGZ0d3Nnpwc0lYeWdpMnpvSVo1UVciLCJzIjoiK1hxWnQyMkRXZU16bVNNUCtkSmtjUT09IiwiaSI6ImwvSi9TQ3g4RnlVbXZ1WWkifQ==",
+    "credits_files": "SiESPTA"
+  },
+  {
+    "title": "Treasures of The Aegean",
+    "image": "https://image.api.playstation.com/vulcan/img/rnd/202111/1213/aC0ypYGlcspuzBxr0pxOtmTj.png",
+    "tags": ["PPSA04906", "v01.002", "ASIA", "2.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT2xQcVY2VFdrZUk0aEJ0N0tWS1Q2RHk0bXRmRXIxZmI4c3BXQnRKV21FR3grVEdTdXlNbWxWV1ExZzJ6LzRtVFUrYUdJUDVxIiwicyI6Im1TbmMrMUxiRjVNa04rYmpvd0x0cXc9PSIsImkiOiIxdXNqRWtadTdsbXFHQ2YzIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUHhDRnBEVTZveWNuNmhYMnJVRWVFY3cxZHRST2VYL1J5V1pWcFdId2QvZDg3aXdQVmRvL3VSV2VQT0ErR1pDdDFKZUIiLCJzIjoiVG15eEJ6MHhMNGNsbTh6bU9JWmxNZz09IiwiaSI6IktWWTJqcUpyYjlOM3h4WDgifQ==",
+    "credits_files": "SiESPTA"
+  },
+  {
+    "title": "Hell Is Us",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202505/1208/881d62059f98b7d5191eae48029004d5052df238da708d5b.png",
+    "tags": ["PPSA09259", "v01.006", "EUR", "4.xx BackPort + Popup Progress Fix"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT2xQcVY2VFdrZUk0aEJ0N0tWS1Q2RHk0bXRmRXIxZmI4c3BXQnRKV21FR3grVEdTdXlNbWxWV1ExZzJ6LzRtVFUrYUdJUDVxIiwicyI6Im1TbmMrMUxiRjVNa04rYmpvd0x0cXc9PSIsImkiOiIxdXNqRWtadTdsbXFHQ2YzIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVGxDUG1BQ2N4TnFCS3Z3Rm4xZmFtajBXWnBTNXM1Wk1PMzBQZDBLY2JOZndZUHRHMXZwTWFxeHBXa2h1dGQrdXJDcStMd1lVIiwicyI6IjFnU1NmU3JRc011US9ITUtwUk53cGc9PSIsImkiOiJJK29DUnR0NkdnU2REeFEvIn0=",
+    "credits_files": "SiESPTA",
+    "credits_backport": "Kira"
+  },
+  {
+    "title": "Kingdom Come Deliverance 2",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1208/05a84ce968125d79fa36484c5a756a1c8d9b05622aae21c1.png",
+    "tags": ["PPSA21704", "v01.041", "EUR", "Standard (9.xx) + 4.xx BackPort"],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS0hab0xIbGVxOGNNMDRjNFNaZitFamU4OHA5SmdvajNlclhkSlg3bWxYTE8vYmdEZXRqNkovVEVjcDRya3Q5a3BiVDIiLCJzIjoiTzVMblJMMEpsekowSERja0E1SHJxQT09IiwiaSI6IkFQd2ZQUCtZSmhGMTVTRmsifQ==",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOGNIYmFKR0RRcTJRVEppa1VRL3gyY0p0c25SanNMcU83aVVFS0ZzOC95cktqVDRNdjQzRkdxTmpvTi9aOHdTVTdIRnFab2JSIiwicyI6InJ5alhReUxXMjR3ZDZVcEEwNWdUWGc9PSIsImkiOiJpNXNEV25QU2hyWnhSc0VmIn0=",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVmlpemhJVzNiWC91Z3JVY2tlbHFFTDBjaVZybXdXSlB4cTBYT3NUSi94dTRnVi9QZCs0ZlMzeENHYUthNU9wcnVNVzFiVWEvIiwicyI6InVIa2EzYmhvU3ZEd1dCMWhMTWd0RXc9PSIsImkiOiI5V2NiOE5nRFMwQmM2RlNnIn0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidUIzNnlzZzl6R3ZXajM4dFNpb011cnArakFjVllqeEVoZWFwZTY1ZXpvSWNhV2hkbEVSZXNlaWFNMDA0azdLWUpENTgiLCJzIjoiejQ5M05qR1U3Mi9Tc2dlcHpvSU1xUT09IiwiaSI6Iko0TFBxSGpvaU5SQytlNlkifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "Kira"
+  },
+  {
+    "title": "Little Nightmares 3: Deluxe Edition",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202505/1516/3c97d7f9f842c0ea8d782287a111e99b8f9bc69c96b4998f.png",
+    "tags": ["PPSA05144", "v01.002", "USA to EUR Languages", "Standard (9.xx) + 4.xx BackPort"],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL1JGd3EycXFJc1ZUUGlDaFFxWk1IQkdNYjBuUDVmbCtJcEJ3WCtGOGJQOHYvV21RZlpmU1QwVlZFa21SdWdtVk80S1JhZlN2IiwicyI6IlpFNjc5ZW5TdEZkV1NSdjhxRnNqeHc9PSIsImkiOiJyREs0N0NwZ1luS0FxbTVxIn0=",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZDdDcmJSSGpVOUhkRFZmQkVHSXJWT0NmcGpCUStQM2cycGJLV2VvbGRCU1hwZDFXNWJzVlM0WXBIVTQ4Q3NsSkpWRDkrNFFFIiwicyI6IkVVSU40S2ovQVpObXU0Yy9XNHNpcFE9PSIsImkiOiJOaDdXQkdnbkVZL2dtUUJrIn0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaHJScUJVckNYb2JPclVqSXRvRDJ0YzRGeXJjU1RXQVdVLzFFNmtsY2FYdTNKUStuQzhxYThFK256NXVzMFZPYXRDSmQiLCJzIjoiVWFoVDBzZHRVeUwxdlNxTTEwNXJqZz09IiwiaSI6InRwQkF1emx0aHNQNlM3bmUifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTXJoQkhBZjR2eWMzcFdZa2xFaktjLzRqL28yQWpkOTR0ODNrS3Z2bFNnd0tPTmJHODZLOFhEOEpIbmFpTkNXR0FOdEdqSGF0IiwicyI6IlJaVUlLZzdaNVhIZmxjM0VvbDl0QlE9PSIsImkiOiJxaDNKMGFDWSt2bzZ5Vjl5In0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYUwrWnIzY3Q0anYzTzJuamx3M1c3cW1tRUxxTzRMS09waXFma3ZaOStZN2doTTVLR0hrMGM4QS9DQU1YemtBRXFEMm4iLCJzIjoiSzhOSmIrRHJJWjg1UDZabFV6SVZIZz09IiwiaSI6IngrY3UveTRUMXlSRXJGT3UifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "Kira",
+    "credits_dlc": "Pkykzhack"
+  },
+  {
+    "title": "Mortal Kombat Legacy Kollection",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0417/5ab2b91ba26e152b7e6e5010a1ad7bd234dd75c8aa62d64c.png",
+    "tags": ["PPSA28068", "v01.000", "USA", "4.xx BackPork"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTFdkbXpZeDFORE5HZnJ3cDhZbUFWY0hXTkRuMDdGRzhkWjJ5enVuK29tRlJ2TE1XQ25icHF5ZkFNc0NzOGVMb1dYTU9CVFpuIiwicyI6IklVN09sYjZqaVJrRC96TEx3VVlXN0E9PSIsImkiOiJDa2pCY0szQk93OVNjb0tTIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNDdFUjdma1VBaXJxZzgwRU43aFk5eFZ0RzI4RVBKSmxRS3QzTUY5U0FteFZJd0Y4VFNMU0kxdFJFdjB1S0wxQjdPMXkiLCJzIjoiWXhHQVdaLzh6VjdHWDRXdDVGYkNvQT09IiwiaSI6InlZT0hNUU1jUXBQSU5haGcifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig"
+  },
+  {
+    "title": "Ghost of Yotei: Deluxe Edition",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202504/2116/02140ae50c0046ac5b8c69cef17b30c0010b74fc906c402a.png",
+    "tags": ["PPSA26344", "v1.008.000", "USA", "4.xx BackPork"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL2ZnUk8yN0VYRVZDRU1jN2J0LytxMThiMElZL01QTTk0aUl6Z0xscXNyR0dIVit2WG1aU2lEZU1zUUFOcUZUNVFONDN0QjMwIiwicyI6IjJaSllYVnFyd0ViSEtkU2FOT0ZFTGc9PSIsImkiOiJwZVJEeDdIRUpzRGV6bGV5In0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQlBJV3FRUldiSTR0NTRsRTRLZ2RNK0xSWEQ3bGplYzhXZFowN3ZlczNKenoyWHNPZnNsSzJ4SkVYT2UybktjWDAzOFoiLCJzIjoibGZ4ZjdGWFNlZW9FbVdlQjBXZTl4UT09IiwiaSI6IkhCQUpBbkp6ZkkwNnY1N0QifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1lJSXlYT0hkdUlkYk9HcXpBdFA2MGZvdlNSb0xBaFlTWGpNL3NOTmVsVFlWR1BLMnE2WVV2cnR2S21vaTEwRzQ4SStkSzBNIiwicyI6InZtYzg0K2pGSkZGcXNxY2EwU09QSFE9PSIsImkiOiJ5SSthTzhFa0RnamQ5N3JSIn0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTlE4SGl6aFdZbm1HU0VqckNGQXZGQTJwYXd4U0ZIcmsyWHNuTlhMTWRwa1dXSWUvcGN3OGxGM1dzNnBrenkzK01SOXAiLCJzIjoiTHNZRGdyOVJBNnIwZDlVcnlMbzRtZz09IiwiaSI6InFYZTVqNnJjbmVHVmN4NzcifQ==",
+    "credits_files": "DUPLEX & SiESPTA",
+    "credits_backport": "BestPig",
+    "credits_dlc": "DUPLEX"
+  },
+  {
+    "title": "Clair Obscur Expedition 33: Deluxe Edition",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202412/0915/eef31f6d629b295610ed11617ab87f2a8dc393225f97666d.png",
+    "tags": ["PPSA17599", "v01.400", "EUR", "Standard (8.xx) + 4.xx BackPork"],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT0d6em01eVVXU3ZhaUVtMGMxeGtnOVZXZjZwY3VTam1LSzhqVzZ6L1o5ZFNNWGFwVGpqU2FzZEF6NmkrZCtEUGhEK1JFTllEIiwicyI6IlhRQ0hFYkpxTlZSNG1LaWIxc09oMWc9PSIsImkiOiIzUXdZR0cxNlBIRFQxdm8rIn0=",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTzBJdVpoZUd2R05IVmRteTdaZHIxY0k3SUQwK0ZEQ0Q2elVzTkpJNEc5eHBCNmE2Yy9HNUNkNzRkaThnVDJRM0VxNzAwMm9VIiwicyI6IkJ4Y1dneUhRRXJON3F4R1FKbHpLSmc9PSIsImkiOiJRVmR3dFRCZWlObjBJQ1RHIn0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOWIxZUt3d2RyS2JBbFdiV2hLSG1kTm5mZ1lLVGFTWjdNM1B1YVdKdnBVMHJkdDU2SVQxSmxwMHZCck1DdmtlMGZyTDAiLCJzIjoiT2d6MVN3bjFhVCtKK1lMOHBOTEpudz09IiwiaSI6IlIrdWVPR1N3a1VrM1FEYXAifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia2N0WVp0ZUZPL2lzQ3R3UGxkdFdtS01hZmRrMUFDbUNlQzlmNTh4eEJUVFdtankvTXJlN0FzUlU1M3dEOGNkbzEyeHZDMXY5IiwicyI6ImprMFZGbXFGZTl6bkEvNTUyVFB2VlE9PSIsImkiOiJuRnFOenZHWFVHYXIrb0VBIn0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicU8remdIaGRxZ0xvdFFsSG5QOHAyZFVHTjMzLzVzbTFURjUyV09lZlNCUTNUSXFGTXNqZjgyZ3luQUVmTWFDS3VxaHQiLCJzIjoiWmFORE9XdjJZcG1XN01kVDNhOENHQT09IiwiaSI6Im5zQXlRbitWUXRzaXkwbnkifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig",
+    "credits_dlc": "Pkykzhack"
+  },
+  {
+    "title": "Forza Horizon 5",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/42b3ee6b1b2094212231b0b0a82824f687fc5c4dc9bde31c.png",
+    "tags": ["PPSA22327", "v01.685.672", "USA", "4.xx BackPork"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZ1lmbUhpdHUzYnpMdWlyNmVQRlF3Vkk3RTNyaTdBYjRWQVR6SHYzNE9vVmRFTWZyL3UwTWNwRDdKMHU1Vy8vcEo1YUlJYlZ0IiwicyI6ImQ5ZDMxbVhMNVRkcXI3ZlVhZWF4bWc9PSIsImkiOiJSTE9mMk9yNUlEUStRM29IIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSWRKOXFJYzkwbTF1dkFuTjBIWlFTbUFNMzZvOE1STWdBN2o1dE9ldWlqUVJnM0UvaEw4Q09GdmY1NUFYUkJDODNHTmQiLCJzIjoiSEEzcFdKc2RsZnpiV2FhdDdyY1EwZz09IiwiaSI6Ik1Tclp5UWloWExuaWNST3IifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig",
+    "how_to_play": "How to Play (Ignore if you already have account with fake sign in): Download offact by ps5-payload-dev and active the account (better if is a new one) then download np-fake-signin by earthonion, send the .elf to your PS5 and before restart the console on your connection add this DNS 127.0.0.1 or turn off the connection. Enjoy."
+  },
+  {
+    "title": "TEKKEN 8",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202212/2009/04S9doVJzhHa0OE8o8wax88S.png",
+    "tags": ["PPSA10595", "v01.685.672", "USA to EUR Languages", "7.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZnhEeGJxMmVUcDAxUFk5eXhMYXFTTnZFRVNFZFJjS2NHME9xcm5ibng3T1I3S0IzcTV3TEFwVGpKU3dBTityR2pEcG93TTcyIiwicyI6IndnUjFrSGpWYTJjS3h6MkRScm4yWHc9PSIsImkiOiJoZkVqQ2xTdFBpaTRQWWk5In0=",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL1NnbGVoZzFvdnhaWlNYVXZNTkxnZ1JUV3g4Y3ZZYzdXeGxNSXlwY1Y0WU44c3pyNjkrTkczS3ByY1M1L0ttblk0UjYrNGFtIiwicyI6Im82Mld0Y3ZNa2JKeTIzVU1wSGxsK1E9PSIsImkiOiI0YVYweTM1SGxiclFuL1dsIn0=",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "Pkykzhack"
+  },
+  {
+    "title": "Mortal Kombat 1",
+    "image": "https://sm.ign.com/ign_cz/cover/m/mortal-kom/mortal-kombat-1_d76a.jpg",
+    "tags": ["PPSA07570", "v01.010.001", "USA to EUR Languages", "9.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMlhlYlBvVU1Jem05UnMyeVRncHBFVkxScjV1eGx4VXhjdnMzVGQvd3VIK0FMWGExZUl6UTJHU05vWWlsc09tVjRtSUwzZ2JMIiwicyI6Ik9FUVhWbmZFaFk1OW1zRG96aUxHNkE9PSIsImkiOiJvOWo4TENmaHN1UklnaFZIIn0=",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSUx1MUZQS0psdklXdWNoRk1sZkNpRTNjYzZhOUlDMmVHUWJPOGpOdldYRG1nRFRXTXo1R0pOZUdxQjdEMitQUzJDMW9IejhwIiwicyI6IjFROUNzVDhZWm1TTTNLdDM3MHM0SkE9PSIsImkiOiI2YkJXSmRFamREU0dKSFBhIn0=",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "Pkykzhack"
+  },
+  {
+    "title": "Horizon Chase 2",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202401/3017/47571cf1399026a8a61ed1a6810a4e28131b0761885fc2dd.png",
+    "tags": ["PPSA12771", "v01.007", "USA", "8.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia3hnSkU1OTJ6S2c2Qmd5NkpNb1RXMVdPdU1SS2pKSlYyUGhIVEFiQ1JLeUdGQzhEYUxYRmdGc0UrVjBWOHRDemdvYXF2Yk1vIiwicyI6IktnZjJhVnluMVhlUnJ1ZEpmSmtjb2c9PSIsImkiOiI2SGVDVEQ5eDQvSVJURk1OIn0=",
+    "credits_files": "High-Speed007"
+  },
+  {
+    "title": "Syphon Filter 2",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202207/2121/6S5xYRQ4wIz2btkxNe8Hyaon.png",
+    "tags": ["PPSA06695", "v01.000.002", "USA", "9.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoic2gwTys1ZG5hOEhnMUNtVEFFWnhtRnUvRUkrSE4waU9PQnkxK1pUNmlhaU5wU1RKd0R6TzRMeWI3TUF2TFNmQVU4OU0vUUcxIiwicyI6IndISDIyNWxpYlg2VDdGbENJNUMvNUE9PSIsImkiOiJQMWxLa1Z2OVF1b2g4eFNXIn0=",
+    "credits_files": "Amiibohound"
+  },
+  {
+    "title": "RoboCop Rogue City Unfinished Business",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2615/bcb4ef965b7b1f82a3711335fd39cb46425307fb0186e642.png",
+    "tags": ["PPSA28329", "v01.005", "EUR", "4.xx BackPork"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZWtmMlh3NDE5VVc4YlNjdjdXTzdBZldQU1MrU0tyczRFSnFFWjVxOWk3aDNvQnUvdHo1bFFUYksvVmxwTzlYZ01jdGx0d2VxIiwicyI6ImtVd2RUQWdsVEh5SktORlNPTkd4Rnc9PSIsImkiOiJyS3B3aXBjUzNIOGtERlo0In0=",
+    "credits_files": "SiESPTA & DUPLEX",
+    "credits_backport": "BestPig"
+  },
+  {
+    "title": "The Elder Scrolls IV Oblivion Remastered",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202504/0320/dda6507cae2232eed3e7ab82a5a3acddd7dcf182458658d7.png",
+    "tags": ["PPSA21203", "v01.512.105", "USA", "4.xx BackPort"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY0t1T3A4K0tRcTV1YWNmRXQ3Mm9HOTZtN21vd0JFMWxPaHo4L3ZLTlU1VDVsblM2SW9Xd3NKYmszUkNOczFuU0llSmUvUWwxIiwicyI6IlZPU2NkM3VCOU5qWnh0ckg2eEM4NGc9PSIsImkiOiJIem9LVW42bTlrU2hPWFFXIn0=",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig"
+  },
+  {
+    "title": "Cronos The New Dawn",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202410/1511/3775082b58945a3e9659f576feb92e0102332ac42f87ec24.png",
+    "tags": ["PPSA24096", "v01.006", "EUR", "4.xx BackPort"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRWhLOWJUQ3BNQVVjekRlVkVIVDY2YXY2UUk1L0VpbC81enZ0NUNqbVdQZ05DbUxYcnYvZE9tM05FQzloZ2RuV0ovMHQwMEk1IiwicyI6IjdVRFBIaUR2M0pBMUZ6bG0vNGdDOGc9PSIsImkiOiJ0ZDVGMTMrWXgyWE9mcW5wIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT1ZBWHZadDBUN0dVNU5rT0hpNFFoUmtwWWRKU1NzQjlNUnFzaU1sbk4vbmtmMUxZaUNHUEFBeTZUUlMzUUZRRWFFVHciLCJzIjoidVFGR3o4bXY2c041Rk1ESldIYlluQT09IiwiaSI6ImJlU1owakw5a3RIOFJlMzMifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "Kira"
+  },
+  {
+    "title": "The First Berserker Khazan",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202406/2604/78cf326a8cceaed3f4a807fe9e3f811abdfb5df96fe0cd06.png",
+    "tags": ["PPSA20447", "v01.020", "USA", "Standard (9.xx) + 4.xx BackPort"],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTHhFNWNZOFFtL0tDQ0xEMWhUeG9YUnVlVmhOOEVyOGlKNXV2WEtXemIvUXhiZER2Z0t3c1pjeEM1cFh2RkxTSDNJVkducTZJIiwicyI6IkQvSjV4SVg5bXlFNVpwSDVuMXYxdlE9PSIsImkiOiJyRTNSTGY4am9JampqMjEwIn0=",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWjdzMHpLTEdnTVozNDd3Z3oweHJwcjRnRDVSUTVWeFArSzlHaWsyL3pTZkN5ZXR6NEpuMGNYMHAwTnNRTEcra1pVY3M3c0tEIiwicyI6IjdBZ1NyV0REOWhLRW1ZazNtS25TTnc9PSIsImkiOiJFVmpSRkw1T1BsclNSdk5DIn0=",
+    "credits_files": "SiESPTA",
+    "credits_backport": "Kira"
+  },
+  {
+    "title": "ELDEN RING NIGHTREIGN",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202412/1301/308f8421ff74f3b061b231defc364d3f01e1710ea6fe6876.png",
+    "tags": ["PPSA25381", "v01.000.000", "JPN", "9.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN1h6L2VFNXduRG5ZVTVQV0JVYjlCU1JnalRXWnJOeE9wYzQ3QmNPMDA1QVRlcGhBR0crUzBuMjhLSUtTYmxqUUw2YWI3dVpIIiwicyI6ImMxcEZkdzFycDVIQkNYRWVJaEYxVUE9PSIsImkiOiI1Q2t2byt4WlFuN3pwL05zIn0=",
+    "credits_files": "DUPLEX & SiESPTA"
+  },
+  {
+    "title": "Mafia The Old Country: Deluxe Edition",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202504/2416/06f677b905f8794395b855a0de3e9fcb42b567e78c50aaed.png",
+    "tags": ["PPSA14299", "v01.006", "EUR", "4.xx BackPork + Sound Fix"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicENZVWxrYjhjSjV2Uy9qd0M3eVFOdjRlcnBLNzVKR0U1RFRpb2RoR0Vza2xxVDU2bkNLSTYxbWRTc3V1NGxHSTdXb0Z2Ti9PIiwicyI6Imo4QWxMMkJPM2k5Sm5zRGNwa2NJdVE9PSIsImkiOiJlRUFGMzU4bVR5Y3FWTlYrIn0=",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiM0Z1WlFPaHp4WlA2QTBta1RtV3h5aEJsQmVCcDgrSGt5K256dVUzUFQwbnFlcVhMS1FzeUt1YnBPbHQzaUFtR1dvNzQ5TlM2T2dnPSIsInMiOiJzeWY1dDJnemJpK044WjQ3dGlnamRBPT0iLCJpIjoiWEQ0QmdDYXhiVnlCRENBcyJ9",
+    "credits_files": "DUPLEX & SiESPTA",
+    "credits_backport": "BestPig",
+    "credits_dlc": "DUPLEX"
+  },
+  {
+    "title": "Black Myth Wukong: Deluxe Edition",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2122/ac63f546eed35848f4a155a9fa9ee64f0bcd7b2a175dbd78.png",
+    "tags": ["PPSA23226", "v01.000.016", "EUR", "DLCs Merged", "9.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUkV0VHV2ekx3aTdBcTR6cnBUT1J2NHJkMWRRRk8ydGVaVlFES1pMMVdSbmdvUFJQYmtwazVjYUpOWjR6ck44QWVBVE5DOEZiIiwicyI6IlF1SGJBYXZlVjk1c3N3ekFIeDVlRFE9PSIsImkiOiJGNGwzUVM2WTBISEhwYjZmIn0=",
+    "credits_files": "SiESPTA"
+  },
+  {
+    "title": "Days Gone Remastered",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1302/5453188f455facc3bee8fc154b46786dd89ef4d5a938f33b.png",
+    "tags": ["PPSA23226", "v01.036.178", "USA", "4.xx BackPork"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiLzlJejFaREZMcXF0M01iWjhkSGphSnV3YXdWdDhnTjdBOGM0a29JU0ozdEpId3VBRlliQ01MNFZDWk5pSHRQb1dMckh6bEQxIiwicyI6IkI5cWlZVEM5YngxUVBRNkRZMXRveGc9PSIsImkiOiJsWGtCNk5oL25CZFhDUmFSIn0=",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig"
+  },
+  {
+    "title": "QUBE 10th Anniversary",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/MvzZBlCy4ig7DL6XGq2Uq8F4.png",
+    "tags": ["PPSA05591", "v01.000.000", "USA", "5.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiemQ5WUcvZXVZdHR6UUZpS3RFdng1YzFxdW9aTlgzeE5oejdEYmVBMjRucjl6RmMwSlRjQ1V3bnpQbkVsMFBJdXdlRjlYVEJPIiwicyI6ImN2c1h4TE5pQ0w5ZTRmenN3cnk2K0E9PSIsImkiOiJ4ZUdKQ2pKbEwzM0V6QXVXIn0=",
+    "credits_files": "Amiibohound"
+  },
+  {
+    "title": "DOOM + DOOM II",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/2516/014e7a2470206a12a9130665689cf20c687738b5b6944b56.png",
+    "tags": ["PPSA21444", "v02.000.000", "USA", "9.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQURmT3c4c1A5WVlOVmoweGJKSUZFYUFoSjJvY2lGZGdEMDhnRzMrSkRBMUVjMFVJcDIxa0RQNE5paHl3V1grRzByV3ZuWnVvIiwicyI6ImdldWVyT2RDOE5QNW03Zm5DK2lSRFE9PSIsImkiOiJHb0tpNWwxd1hXTGVYZStDIn0=",
+    "credits_files": "Amiibohound"
+  },
+  {
+    "title": "DOOM The Dark Ages: Premium Edition",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202501/1405/5a9411754439a02d29f43dc71e6a5a953a087111c863d381.png",
+    "tags": ["PPSA20560", "v01.009", "EUR", "DLCs Merged", "7.xx BackPort + 4.xx BackPort"],
+    "backport7xx_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUXgrUVozSGdBdEwxSmtBWHBBZ0xVanp3clNEbC83SGhMQ3VwZWdSbFN1VlpId1NKT1psdUEzTUpwSmQyTWhEdUlobWJOM2xFIiwicyI6InlicXM3bjdoWGl1ZjZDWUlIdnJqTVE9PSIsImkiOiJHSUwwZGNkZ2ZpQVhwMEhHIn0=",
+    "backport4xx_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR203RGJSamV0OFVlYlBYZ1AwbjA0L1Z5RThNQW9aRy9hRGtLM0puSjdrWHNKY05aZGhNZ2dxWDZjcDRQOFBLRGFjbXdRd0QzIiwicyI6IjIrVk4vWDM1OW1ubFkvZ3ZpZENSamc9PSIsImkiOiJRWk5qUEh3V0RJdTNDVE9ZIn0=",
+    "credits_files": "High-Speed007",
+    "credits_backport": "Kira - idlesauce - BestPig"
+  },
+  {
+    "title": "Lies of P: Overture",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202503/0309/9c9610f649ad2e980b5bd94676a5b71a23e9d799e440be42.png",
+    "tags": ["PPSA10621", "v1.012.000", "EUR", "9.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRGNUWTg1OEpSMG9yVHFEZTg0OGlWT09wTUF4RVNQZFV4WVEvOWQzY0NMMmxScE1IK1l3Z3d1Zm1SWDM5ZWtwMDVOaDZ6bGgzIiwicyI6IkZiZXJTMnNHdjluOE8waXJUN2VPaGc9PSIsImkiOiJrSEFUMkh6MjJScCtXYlNJIn0=",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZVpQeFllMU5UZVIrVy9DYXhzekIzdGZVRUp6ZEI1K2pDdE5uNGJtVGw0Q200YnlsM3VkZFY2SHlhb3ltekg1NjI0cmtiamlRV0JNPSIsInMiOiJWVWw5cGlSakdWeURaVWF6WlR3Z2h3PT0iLCJpIjoiS2ZPUWhNTDgrOEdySU50VyJ9",
+    "credits_files": "SiESPTA",
+    "credits_dlc": "SiESPTA"
+  },
+  {
+    "title": "Endling Extinction is Forever",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202205/0315/GoFmMMR4hakwjwMZx2kmw9r9.png",
+    "tags": ["PPSA08511", "v1.000.002", "USA", "5.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRDV1Yzg4aStKT3pOc1dXSWZ3WkRWcWVhWFlGM0J2VGtwbllFNjZQNHdEM2RiVjhWSk1qWUpIUEFxa3RTWGlvWk9lZ0c5SjM4IiwicyI6ImxHQnM3TERJUVF0SGZhaC9RRkQ2L1E9PSIsImkiOiJ5M2I4ODh6bllBK2VPL1Y0In0=",
+    "credits_files": "Amiibohound"
+  },
+  {
+    "title": "The Outer Worlds Spacers Choice Edition ",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202208/3117/T8S5mhuuJH8h4tcQj8herpUO.png",
+    "tags": ["PPSA07148", "v1.006.000", "USA", "6.xx and beyond"],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib3daT0hxV3hhWWZDL2NseDdyY3h5c2d3ZnZGYVRJb2lyMEJYVzY1blAzM0tZdEc5Tmt4Kzl0cVVlMlZmQkNxR2pRZTM1aDFaIiwicyI6InVNNVVIeXZrQjYxSmhhZTJSVjFlK0E9PSIsImkiOiJBclRFWWY4ek0xdGVZU3RKIn0=",
+    "credits_files": "Amiibohound"
   }
 ]
