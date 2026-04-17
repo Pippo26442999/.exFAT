@@ -5,6 +5,7 @@ const itemsPerPage = 21;
 
 const SECRET_HASH = "a2242ead55c94c3deb7cf2340bfef9d5bcaca22dfe66e646745ee4371c633fc8";
 
+// Caricamento Library
 async function loadLibrary() {
     try {
         const response = await fetch('exFAT.json?v=' + Date.now());
@@ -15,6 +16,7 @@ async function loadLibrary() {
     } catch (e) { console.error("Errore caricamento:", e); }
 }
 
+// Funzione Hash
 async function hashStr(str) {
     const msgUint8 = new TextEncoder().encode(str);
     const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
@@ -22,11 +24,13 @@ async function hashStr(str) {
     return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
+// Controllo Password Sito
 async function checkSitePassword() {
     const input = document.getElementById('site-pw-input').value;
     const overlay = document.getElementById('site-lock-overlay');
     const errorMsg = document.getElementById('pw-error');
     const lockBox = document.getElementById('lock-box');
+
     const hashedInput = await hashStr(input);
 
     if (hashedInput === SECRET_HASH) {
@@ -46,6 +50,7 @@ async function checkSitePassword() {
     }
 }
 
+// Anti-Tamper
 function startProtection() {
     const observer = new MutationObserver(() => {
         if (sessionStorage.getItem('unlocked') !== SECRET_HASH) {
@@ -57,6 +62,7 @@ function startProtection() {
     observer.observe(document.body, { childList: true });
 }
 
+// Rendering Immersivo
 function renderGames() {
     const grid = document.getElementById('game-grid');
     if (!grid) return;
@@ -80,10 +86,14 @@ function renderGames() {
         };
 
         let downloadHTML = '';
-        // Aggiunto Buzz anche ai DLC se presente
-        let dlcBtns = createBtn(game.dlc_akia, 'AKIA', true) + createBtn(game.dlc_viki, 'VIKI', true) + createBtn(game.dlc_buzz, 'BUZZ', true);
+        
+        // Sezione DLC: Aggiunto BUZZ
+        let dlcBtns = createBtn(game.dlc_akia, 'AKIA', true) + 
+                      createBtn(game.dlc_viki, 'VIKI', true) + 
+                      createBtn(game.dlc_buzz, 'BUZZ', true);
         let dlcSection = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
 
+        // Gestione versioni e BUZZ
         if (game.backport7xx_akia || game.backport4xx_akia) {
             let bp7 = createBtn(game.backport7xx_akia, 'AKIA') + createBtn(game.backport7xx_viki, 'VIKI') + createBtn(game.backport7xx_buzz, 'BUZZ');
             let bp4 = createBtn(game.backport4xx_akia, 'AKIA') + createBtn(game.backport4xx_viki, 'VIKI') + createBtn(game.backport4xx_buzz, 'BUZZ');
@@ -93,7 +103,7 @@ function renderGames() {
             let bp = createBtn(game.backport_akia, 'AKIA') + createBtn(game.backport_viki, 'VIKI') + createBtn(game.backport_buzz, 'BUZZ');
             downloadHTML = `${std ? `<p class="ver-label"><b>STANDARD:</b></p><div class="download-container">${std}</div>` : ''}${bp ? `<p class="ver-label"><b>BACKPORT:</b></p><div class="download-container">${bp}</div>` : ''}`;
         } else {
-            // FIX: Aggiunto BUZZ nel caso base (quello di Borderlands 4 nello screenshot)
+            // Caso Borderlands 4: Aggiunto BUZZ
             downloadHTML = `<div class="download-container" style="margin-top:15px;">${createBtn(game.akia_url, 'AKIA') + createBtn(game.viki_url, 'VIKI') + createBtn(game.buzz_url, 'BUZZ')}</div>`;
         }
 
@@ -115,6 +125,7 @@ function renderGames() {
     document.getElementById('next-page').disabled = currentPage >= totalPages;
 }
 
+// Inizializzazione
 window.addEventListener('DOMContentLoaded', () => {
     if (sessionStorage.getItem('unlocked') === SECRET_HASH) {
         document.getElementById('site-lock-overlay')?.remove();
@@ -126,6 +137,7 @@ window.addEventListener('DOMContentLoaded', () => {
     loadLibrary();
 });
 
+// Fix Nav Scrolled
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     if (nav) {
@@ -134,12 +146,15 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Paginazione
 document.getElementById('next-page').onclick = () => { currentPage++; renderGames(); window.scrollTo(0,0); };
 document.getElementById('prev-page').onclick = () => { currentPage--; renderGames(); window.scrollTo(0,0); };
 
+// MODALE DOWNLOAD
 function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false) {
     let parts = [];
     const clean = (str) => (str && str !== "undefined" && str.trim() !== "") ? str.trim() : null;
+
     const fileAuthor = clean(fAuth);
     const bpAuthor = clean(bAuth);
     const dlcAuthor = clean(dAuth);
@@ -151,9 +166,11 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false) {
         if (fileAuthor) parts.push(`<b>${fileAuthor}</b> for the Files`);
         if (dlcAuthor) parts.push(`<b>${dlcAuthor}</b> for DLCs`);
     }
+    
     if (bpAuthor) parts.push(`<b>${bpAuthor}</b> for the BackPort`);
 
     let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
+
     let instHTML = "";
     if (isDLC) {
         instHTML = `<div style="margin-top:15px; padding:12px; background:rgba(57,255,20,0.08); border-radius:12px; font-size:0.85rem; color:var(--green-neon); border:1px solid rgba(57,255,20,0.2); text-align:left; line-height:1.4;"><b style="text-transform:uppercase; font-size:0.75rem; display:block; margin-bottom:5px; opacity:0.8;">How to Unlock All DLCs:</b>Install the title (.exFAT) then the DLCs.${playInstructions ? `<br><br><b style="text-transform:uppercase; font-size:0.75rem; display:block; margin-bottom:5px; opacity:0.8;">Extra Info:</b>${playInstructions}` : ''}</div>`;
@@ -175,6 +192,7 @@ window.revealPassword = () => {
     document.getElementById('pw-final').style.display = 'block';
 };
 
+// Ricerca
 const sTrig = document.getElementById('search-trigger');
 const sInp = document.getElementById('search-input');
 if(sTrig) sTrig.onclick = () => { sInp.classList.toggle('active'); sInp.focus(); };
@@ -184,6 +202,7 @@ if(sInp) sInp.oninput = (e) => {
     renderGames();
 };
 
+// DMCA
 document.getElementById('dmca-link').onclick = async () => {
     try {
         const res = await fetch('DMCA.json');
