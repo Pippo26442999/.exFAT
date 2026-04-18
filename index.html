@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pippo26442999 Library</title>
+    <title>Game Library</title>
     <style>
         :root {
             --bg-1: #020205; --bg-2: #0a0a1a; --bg-3: #120520;
@@ -47,26 +47,24 @@
             backdrop-filter: blur(20px); box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
-        /* --- BOTTONE KO-FI CON BAGLIORE --- */
+        /* --- BOTTONE KO-FI CON BAGLIORE AZZURRO --- */
         #kofi-nav-btn {
             display: flex; align-items: center; gap: 8px;
             background: var(--kofi-color) !important; color: white !important; text-decoration: none;
             padding: 8px 16px; border-radius: 50px; font-weight: 800; font-size: 0.9rem;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out !important;
             opacity: 0; transform: translateX(50px) scale(0); pointer-events: none;
             position: absolute; right: 50px;
+            border: none !important;
         }
         nav.scrolled #kofi-nav-btn { 
-            opacity: 1; 
-            transform: translateX(0) scale(1); 
-            pointer-events: auto; 
+            opacity: 1; transform: translateX(0) scale(1); pointer-events: auto; 
         }
         #kofi-nav-btn:hover {
-            transform: translateY(-2px) scale(1.02) !important;
+            transform: translateY(-3px) scale(1.05) !important;
             box-shadow: 0 0 15px var(--kofi-color), 0 0 30px rgba(41, 171, 224, 0.6) !important;
             filter: brightness(1.2) !important;
         }
-        /* ---------------------------------- */
 
         .nav-item { font-size: 2.5rem; text-transform: uppercase; letter-spacing: 10px; font-weight: 900; color: #fff; text-decoration: none; cursor: pointer; opacity: 0.4; transition: 0.4s; z-index: 10000; }
         nav.scrolled .nav-item { font-size: 1.8rem; letter-spacing: 6px; }
@@ -99,9 +97,23 @@
             background: radial-gradient(circle at center, var(--p1) 0%, var(--p2) 30%, var(--p3) 50%, transparent 75%);
             filter: blur(60px); animation: liquidGlow 8s ease-in-out infinite; z-index: 1; pointer-events: none;
         }
+.game-size {
+    position: absolute;
+    bottom: 15px; /* Spostato in basso */
+    right: 15px;  /* Spostato a destra */
+    background: rgba(0, 255, 238, 0.65); /* Più opaco per leggibilità */
+    color: #000; /* Testo nero per contrasto con lo sfondo cyan */
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    border: 1px solid #fff;
+    backdrop-filter: blur(5px);
+    z-index: 15;
+    box-shadow: 0 0 10px rgba(0, 255, 238, 0.5);
+}
 
         .game-title, .image-container, .download-section { position: relative; z-index: 5; width: 100%; }
-        
         .game-title { font-weight: 900; text-align: center; text-transform: uppercase; font-size: 1.2rem; min-height: 2.5rem; margin-bottom: 15px; letter-spacing: 1px; }
 
         .image-container { border-radius: 20px; overflow: hidden; aspect-ratio: 1/1; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); background: #000; }
@@ -145,12 +157,11 @@
     <div id="site-lock-overlay">
         <div id="lock-box" class="lock-box">
             <h2 style="color: var(--cyan-neon); text-transform: uppercase; margin-bottom: 15px; letter-spacing: 3px; font-weight: 900;">Access Denied</h2>
-            <p style="color: #888; margin-bottom: 30px; font-size: 0.9rem;">Please enter the security password to view the library.</p>
             <input type="password" id="site-pw-input" placeholder="Enter Password" 
                    onkeydown="if(event.key==='Enter') checkSitePassword()"
                    style="width: 100%; padding: 18px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #fff; text-align: center; font-size: 1.2rem; margin-bottom: 25px; outline: none; box-sizing: border-box;">
             <button onclick="checkSitePassword()" style="width: 100%; padding: 18px; border-radius: 15px; border: none; background: var(--cyan-neon); color: #000; font-weight: 900; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s;">Unlock Site</button>
-            <p id="pw-error" style="color: var(--dmca-red); margin-top: 20px; font-size: 0.85rem; display: none; font-weight: 700;">Invalid Password. Try again.</p>
+            <p id="pw-error" style="color: var(--dmca-red); margin-top: 20px; font-size: 0.85rem; display: none; font-weight: 700;">Invalid Password.</p>
         </div>
     </div>
 

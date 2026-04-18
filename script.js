@@ -77,6 +77,11 @@ function renderGames() {
 
     pageItems.forEach(game => {
         let tagsHTML = (game.tags || []).map(t => `<span class="game-tag">${t}</span>`).join('');
+        
+        // --- AGGIUNTA LOGICA SIZE ---
+        let sizeHTML = game.size ? `<div class="game-size">${game.size}</div>` : '';
+        // ----------------------------
+
         const hPlay = (game.how_to_play || "").replace(/'/g, "\\'");
         const dCredits = game.credits_dlc || game.credits_dlcs || '';
 
@@ -87,13 +92,11 @@ function renderGames() {
 
         let downloadHTML = '';
         
-        // Sezione DLC: Aggiunto BUZZ
         let dlcBtns = createBtn(game.dlc_akia, 'AKIA', true) + 
                       createBtn(game.dlc_viki, 'VIKI', true) + 
                       createBtn(game.dlc_buzz, 'BUZZ', true);
         let dlcSection = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
 
-        // Gestione versioni e BUZZ
         if (game.backport7xx_akia || game.backport4xx_akia) {
             let bp7 = createBtn(game.backport7xx_akia, 'AKIA') + createBtn(game.backport7xx_viki, 'VIKI') + createBtn(game.backport7xx_buzz, 'BUZZ');
             let bp4 = createBtn(game.backport4xx_akia, 'AKIA') + createBtn(game.backport4xx_viki, 'VIKI') + createBtn(game.backport4xx_buzz, 'BUZZ');
@@ -103,7 +106,6 @@ function renderGames() {
             let bp = createBtn(game.backport_akia, 'AKIA') + createBtn(game.backport_viki, 'VIKI') + createBtn(game.backport_buzz, 'BUZZ');
             downloadHTML = `${std ? `<p class="ver-label"><b>STANDARD:</b></p><div class="download-container">${std}</div>` : ''}${bp ? `<p class="ver-label"><b>BACKPORT:</b></p><div class="download-container">${bp}</div>` : ''}`;
         } else {
-            // Caso Borderlands 4: Aggiunto BUZZ
             downloadHTML = `<div class="download-container" style="margin-top:15px;">${createBtn(game.akia_url, 'AKIA') + createBtn(game.viki_url, 'VIKI') + createBtn(game.buzz_url, 'BUZZ')}</div>`;
         }
 
@@ -113,7 +115,7 @@ function renderGames() {
                 <div class="image-container">
                     <img src="${game.image}" referrerpolicy="no-referrer">
                     <div class="tags-overlay">${tagsHTML}</div>
-                </div>
+                    ${sizeHTML} </div>
                 <div class="download-section">${downloadHTML}${dlcSection}</div>
             </div>`;
     });
