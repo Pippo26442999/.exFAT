@@ -1,4 +1,23 @@
 [
+   {
+    "title": "NINJA GAIDEN 2 Black",
+    "image": "exFAT/NINJA_GAIDEN_2_Black.avif",
+    "tags": [
+      "PPSA26679",
+      "v01.003",
+      "JPN",
+      "Standard (9.xx) + 4.xx BackPork"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRWNrOEREMXFyV2pIZktreERmSmZKaWxRWlUrNXR3dFNQQlZRSnJsc1AwYkJIUWQ2WkFKV1AzMTEvU1gveENBRlAxcmg5ejJYIiwicyI6IktXaW1qQUdDNzBJdGJBbUNaNkM5L2c9PSIsImkiOiJvWktmUWphaTJWNUdJOFZyIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoielIzNHU0RWltWEJ5dmRxRjQyWVJQMWQxUDlJRXBBVEwvMEZpbS9wZUhyWlJtNlFkMGJ2NGFVNHl1VDR6c0oxZUFIcVMiLCJzIjoiS1pBNW9xbWI3M0NlUFpmRnRIeUxMUT09IiwiaSI6ImxyL3RzSkJUZHR6MEE0Uk4ifQ==",
+    "standard_buzz": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNXFId3gvQVcvTU96VnVVaWNibFZtclZwd3R0SnZYYmNDM3dyb3lYQXdIcE8vWVo3c2ZBTVZrb3l5SHJLaHA2QmxFRUd5QT09IiwicyI6Ijkrejc0RjcwdEYxMDZRYkNSYXRxVlE9PSIsImkiOiJFYUE3QWhEOTJqZUZ5ZDdWIn0=",
+    "backport_akia": "",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSlluMUtublB5TGhhS0ZyNnBXejV6ZEtsVGkxOWd0eUhESCtIamExcjEvSzRkMzduNUQwblFPT0JreE1yWTE1VExrV0QiLCJzIjoiK1Y1NzB1NGZGWGdsdmg5ZFJON3RvUT09IiwiaSI6Iis1c0s2TzU5bnVqbzdJN3MifQ==",
+    "backport_buzz": "",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig",
+    "size": "173GB"
+  },
     {
     "title": "Tony Hawks Pro Skater 3 + 4",
     "image": "exFAT/Tony_Hawks_Pro_Skater_3_+_4.avif",
@@ -122,21 +141,6 @@
     "credits_backport": "BestPig",
     "credits_dlc": "Psykzhack",
     "size": "10GB"
-  },
-    {
-    "title": "NINJA GAIDEN 2 Black",
-    "image": "exFAT/NINJA_GAIDEN_2_Black.avif",
-    "tags": [
-      "PPSA26679",
-      "v01.003",
-      "JPN",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRWNrOEREMXFyV2pIZktreERmSmZKaWxRWlUrNXR3dFNQQlZRSnJsc1AwYkJIUWQ2WkFKV1AzMTEvU1gveENBRlAxcmg5ejJYIiwicyI6IktXaW1qQUdDNzBJdGJBbUNaNkM5L2c9PSIsImkiOiJvWktmUWphaTJWNUdJOFZyIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoielIzNHU0RWltWEJ5dmRxRjQyWVJQMWQxUDlJRXBBVEwvMEZpbS9wZUhyWlJtNlFkMGJ2NGFVNHl1VDR6c0oxZUFIcVMiLCJzIjoiS1pBNW9xbWI3M0NlUFpmRnRIeUxMUT09IiwiaSI6ImxyL3RzSkJUZHR6MEE0Uk4ifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNXFId3gvQVcvTU96VnVVaWNibFZtclZwd3R0SnZYYmNDM3dyb3lYQXdIcE8vWVo3c2ZBTVZrb3l5SHJLaHA2QmxFRUd5QT09IiwicyI6Ijkrejc0RjcwdEYxMDZRYkNSYXRxVlE9PSIsImkiOiJFYUE3QWhEOTJqZUZ5ZDdWIn0=",
-    "credits_files": "High-Speed007",
-    "size": "173GB"
   },
   {
     "title": "Borderlands 4",
