@@ -1,4 +1,22 @@
 [
+   {
+    "title": "Alone In The Dark",
+    "image": "exFAT/Alone_In_The_Dark.webp",
+    "tags": [
+      "PPSA08135",
+      "v01.008",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL3Z4Ync5cVV4WEViQnluSUp2ZnpTRy9MaEt1Q2xSMHZqTjNSeDBVVDBXdUNvcWhLSjZCTmZQcVVqMk1yRm9Zc2ZsdlciLCJzIjoiSk83RkZ2bm1UZUNFMVFZOUllTHl1dz09IiwiaSI6ImRvdzNoRXljZ2hjZEdxc2QifQ==",
+    "buzz_url": "",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK2xoRzEzVTRFdTE2MmFPWTZYWWJrUkFVdjdQQ1lzT0VGMVRxbm9KbWl4ckF0Q1FXYVFCWEFJUGt0eHVvR2NpYVJBT1Yza3FaIiwicyI6IjBKVnY3Sk9wV2xadU5UY3JlSkFxR2c9PSIsImkiOiJ1Tkt2aUFLMFpWZzI1bS9WIn0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRFdHYXpZdGptanhBNk53ZTArQnJqclkvVlFSbmhMQ05SN2xBSDY2YnZodDZUM0pCZmZaSGMvVHYyVFhWRFZ2RTNRVlUiLCJzIjoiTWlkMHN6Y3VKcWNTOUhIb05kaWZIdz09IiwiaSI6InV3Q2g1ZDgyNmpOOE5zQlQifQ==",
+    "credits_files": "DUPLEX & José Carrión",
+   "credits_backport": "bbaderlink",
+    "size": "53GB"
+  },
  {
     "title": "Syphon Filter 2",
     "image": "exFAT/Syphon_Filter_2.png",
