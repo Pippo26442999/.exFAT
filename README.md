@@ -1,12 +1,11 @@
 # 🎮 Game Library Immersive UI
 
-A modern, responsive dashboard for browsing a game library, featuring a futuristic "Cyberpunk Neon" interface. This project includes an animated "Trending" section, instant search, and a secure access protection system.
+A modern, responsive dashboard for browsing a game library, featuring a futuristic "Cyberpunk Neon" interface. This project includes an instant search and a secure access protection system.
 
 ![Preview](exFAT/Preview.png)
 
 ## ✨ Key Features
 
-- **🔥 Trending Section**: Top section with infinite horizontal scrolling for featured titles.
 - **🛡️ Access Control**: Protection overlay using SHA-256 hashing (no plain-text passwords stored).
 - **📦 JSON Driven**: Simplified content management via an external `exFAT.json` file.
 - **🔍 Smart Search**: Dynamic filtering by title and category.
