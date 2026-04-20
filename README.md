@@ -13,7 +13,7 @@ A modern, responsive dashboard for browsing a game library, featuring a futurist
 - **💾 Meta-info**: Automatic display of file size, tags, and author credits.
 - **📱 Ultra-Responsive**: Design optimized for all screens (Desktop, Tablet, and Mobile).
 
-⚖️ Legal Notes & Disclaimer (DMCA)
+## ⚖️ Legal Notes & Disclaimer (DMCA)
 This project was created for illustrative and personal archiving purposes only.
 
 Data Provenance: This site does not perform direct "dumping" of protected content. All data regarding Dumps and files within the library are already publicly available online on various third-party platforms. This project merely reuses, indexes, and organizes existing information and links, acting as a consultation interface (aggregator).
@@ -22,7 +22,7 @@ Responsibility: The end user is solely responsible for the use of the linked con
 
 DMCA: If you are a copyright holder and wish to request the removal of a specific link, please refer to the integrated DMCA section on the site to submit a formal notice.
 
-🤝 Credits
+## 🤝 Credits
 Special thanks to the community for their support and for sharing the data used to populate this library.
 
 Created with ❤️ for digital preservation.
