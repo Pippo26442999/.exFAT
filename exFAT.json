@@ -1,5 +1,24 @@
 [
   {
+    "title": "A Plague Tale Innocence",
+    "image": "exFAT/A_Plague_Tale_Innocence.png",
+    "tags": [
+      "PPSA02387",
+      "v01.000",
+      "EUR",
+      "Chapter Fix",
+      "2.xx and beyond"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieHJrQjZaMjhEL1dEeWhQOTBudEZLNHpHQlNaS2c4OVhKYXluclNBR3hxaXlJYjhWM0tPQXhmUnJIRDZjdzBKOElDV0FTTDQvIiwicyI6ImZESmluQk1ERkF0VGxJcDdNVUFIOXc9PSIsImkiOiJPQVlTNEFnNVJvZ0pzS1c1In0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRkFqNTh4ZWJPNENhSG5Ec0RlUTV3eCtqS2FyaFhpM0g0WW9LWVVMWllSUWZValRxZ0ZwbTYyVjZPVUk5ZXZPSFB6d0YiLCJzIjoiRVUrV1g5SlhzV2IrUDBicUIzT05RUT09IiwiaSI6IjcyczRRa2h0NlFXeEs3L2wifQ==",
+    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNjhGUnl3TjlUa3M0ZHdteHU4dUp4dkVQSHVOWW4rNGZUY3BvckoyQzFvNGFCYjJjYm43b1VzSzF6VHZGSm1XaUV0Z3J2Zz09IiwicyI6InRwSHNwdzJweXNpN1ZRK21VOVBwT0E9PSIsImkiOiJxbERWYmpwZDNEejcwNi8xIn0=",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNld4MnB6RGJlTk5wUVFORU9pR0RaaDROOHBoTFlVVDB2NW92UFlPb200QXN5dE1BN29ISW52L200empFdk1DNG84SGFjZVlCIiwicyI6IjJIT1JqT2ZrdHV4cG53STcxTlRQb3c9PSIsImkiOiJ0MlU3WkQzc05CelhmYVpEIn0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMjc0R0lqTXk2d0hiU1ZwY2ZFbWw5SVdaNVh0N2F3dWNwZ214L2puZmplcWdxVXFLRXVRNmRHRDA2TVgxSEdQTmV6ZG8iLCJzIjoiYmVCdFFMVXdzQlg3R3dGM0h0cW1jUT09IiwiaSI6IkVtS09HV0xUNFltdHQvdi8ifQ==",
+    "credits_files": "DUPLEX & Dorukhan & SPX",
+    "credits_dlc": "Pkykzhack",
+    "size": "40GB"
+  },
+  {
     "title": "LEGO 2K Drive",
     "image": "exFAT/LEGO_2K_Drive.avif",
     "tags": [
