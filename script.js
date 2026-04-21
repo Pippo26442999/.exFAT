@@ -1,11 +1,36 @@
 let allGames = [];
 let filteredGames = [];
+let allUpdates = {}; 
 let currentPage = 1;
 const itemsPerPage = 21;
 
 const SECRET_HASH = "a2242ead55c94c3deb7cf2340bfef9d5bcaca22dfe66e646745ee4371c633fc8";
 
-// Caricamento Library
+// --- INIZIALIZZAZIONE ---
+async function init() {
+    await loadUpdates(); 
+    await loadLibrary();
+    
+    if (sessionStorage.getItem('unlocked') === SECRET_HASH) {
+        document.getElementById('site-lock-overlay')?.remove();
+        document.body.style.overflow = 'auto';
+    } else {
+        document.body.style.overflow = 'hidden';
+        startProtection();
+    }
+}
+
+async function loadUpdates() {
+    try {
+        const response = await fetch('old_updates.json?v=' + Date.now());
+        if (response.ok) {
+            allUpdates = await response.json();
+        }
+    } catch (e) {
+        console.warn("Updates file non trovato.");
+    }
+}
+
 async function loadLibrary() {
     try {
         const response = await fetch('exFAT.json?v=' + Date.now());
@@ -13,10 +38,12 @@ async function loadLibrary() {
         allGames = await response.json();
         filteredGames = [...allGames];
         renderGames();
-    } catch (e) { console.error("Errore caricamento:", e); }
+    } catch (e) { 
+        console.error("Errore caricamento library:", e); 
+    }
 }
 
-// Funzione Hash
+// --- LOGICA PASSWORD ---
 async function hashStr(str) {
     const msgUint8 = new TextEncoder().encode(str);
     const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
@@ -24,13 +51,11 @@ async function hashStr(str) {
     return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
-// Controllo Password Sito
 async function checkSitePassword() {
     const input = document.getElementById('site-pw-input').value;
     const overlay = document.getElementById('site-lock-overlay');
     const errorMsg = document.getElementById('pw-error');
     const lockBox = document.getElementById('lock-box');
-
     const hashedInput = await hashStr(input);
 
     if (hashedInput === SECRET_HASH) {
@@ -50,7 +75,6 @@ async function checkSitePassword() {
     }
 }
 
-// Anti-Tamper
 function startProtection() {
     const observer = new MutationObserver(() => {
         if (sessionStorage.getItem('unlocked') !== SECRET_HASH) {
@@ -62,7 +86,7 @@ function startProtection() {
     observer.observe(document.body, { childList: true });
 }
 
-// Rendering Immersivo
+// --- RENDERING GRIGLIA ---
 function renderGames() {
     const grid = document.getElementById('game-grid');
     if (!grid) return;
@@ -77,24 +101,31 @@ function renderGames() {
 
     pageItems.forEach(game => {
         let tagsHTML = (game.tags || []).map(t => `<span class="game-tag">${t}</span>`).join('');
-        
-        // --- AGGIUNTA LOGICA SIZE ---
         let sizeHTML = game.size ? `<div class="game-size">${game.size}</div>` : '';
-        // ----------------------------
+        
+        // --- LOGICA BADGE 24 ORE ---
+        let updateBadge = '';
+        const updates = allUpdates[game.title];
+        if (updates && updates.length > 0) {
+            const lastUpdateDate = new Date(updates[0].date);
+            const now = new Date();
+            const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60);
+
+            if (diffInHours >= 0 && diffInHours <= 24) {
+                updateBadge = `<div class="update-badge" style="position:absolute; top:15px; left:15px; background:var(--green-neon); color:#000; padding:4px 10px; border-radius:8px; font-weight:900; font-size:0.7rem; z-index:20; box-shadow:0 0 10px var(--green-neon); animation: pulseRed 2s infinite;">UPDATE</div>`;
+            }
+        }
 
         const hPlay = (game.how_to_play || "").replace(/'/g, "\\'");
         const dCredits = game.credits_dlc || game.credits_dlcs || '';
 
         const createBtn = (url, label, isDLC = false) => {
             if (!url || url === "undefined" || url.trim() === "") return '';
-            return `<a onclick="openDL('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', ${isDLC})" class="btn-dl">${label}</a>`;
+            return `<a onclick="openDL('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', ${isDLC}, '${game.title.replace(/'/g, "\\'")}')" class="btn-dl">${label}</a>`;
         };
 
         let downloadHTML = '';
-        
-        let dlcBtns = createBtn(game.dlc_akia, 'AKIA', true) + 
-                      createBtn(game.dlc_viki, 'VIKI', true) + 
-                      createBtn(game.dlc_buzz, 'BUZZ', true);
+        let dlcBtns = createBtn(game.dlc_akia, 'AKIA', true) + createBtn(game.dlc_viki, 'VIKI', true) + createBtn(game.dlc_buzz, 'BUZZ', true);
         let dlcSection = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
 
         if (game.backport7xx_akia || game.backport4xx_akia) {
@@ -111,49 +142,25 @@ function renderGames() {
 
         grid.innerHTML += `
             <div class="game-card">
+                ${updateBadge}
                 <span class="game-title">${game.title}</span>
                 <div class="image-container">
                     <img src="${game.image}" referrerpolicy="no-referrer">
                     <div class="tags-overlay">${tagsHTML}</div>
-                    ${sizeHTML} </div>
+                    ${sizeHTML} 
+                </div>
                 <div class="download-section">${downloadHTML}${dlcSection}</div>
             </div>`;
     });
 
     const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
-    const info = document.getElementById('page-info');
-    if (info) info.innerText = `Page ${currentPage} of ${totalPages || 1}`;
+    document.getElementById('page-info').innerText = `Page ${currentPage} of ${totalPages || 1}`;
     document.getElementById('prev-page').disabled = currentPage === 1;
     document.getElementById('next-page').disabled = currentPage >= totalPages;
 }
 
-// Inizializzazione
-window.addEventListener('DOMContentLoaded', () => {
-    if (sessionStorage.getItem('unlocked') === SECRET_HASH) {
-        document.getElementById('site-lock-overlay')?.remove();
-        document.body.style.overflow = 'auto';
-    } else {
-        document.body.style.overflow = 'hidden';
-        startProtection();
-    }
-    loadLibrary();
-});
-
-// Fix Nav Scrolled
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (nav) {
-        if (window.scrollY > 20) nav.classList.add('scrolled');
-        else nav.classList.remove('scrolled');
-    }
-});
-
-// Paginazione
-document.getElementById('next-page').onclick = () => { currentPage++; renderGames(); window.scrollTo(0,0); };
-document.getElementById('prev-page').onclick = () => { currentPage--; renderGames(); window.scrollTo(0,0); };
-
-// MODALE DOWNLOAD
-function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false) {
+// --- MODALE DOWNLOAD & UPDATES ---
+function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, gameTitle) {
     let parts = [];
     const clean = (str) => (str && str !== "undefined" && str.trim() !== "") ? str.trim() : null;
 
@@ -168,10 +175,39 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false) {
         if (fileAuthor) parts.push(`<b>${fileAuthor}</b> for the Files`);
         if (dlcAuthor) parts.push(`<b>${dlcAuthor}</b> for DLCs`);
     }
-    
     if (bpAuthor) parts.push(`<b>${bpAuthor}</b> for the BackPort`);
 
     let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
+
+    // --- SEZIONE UPDATE HISTORY (AKIA, VIKI, BUZZ) ---
+    let updateHTML = "";
+    const updates = allUpdates[gameTitle];
+    if (updates && updates.length > 0) {
+        updateHTML = `
+            <div style="margin-top:20px; padding-top:15px; border-top:1px dashed rgba(0,255,238,0.3); text-align:left;">
+                <b style="color:var(--cyan-neon); font-size:0.75rem; text-transform:uppercase; display:block; margin-bottom:10px;">OLD RELEASES:</b>
+                <div style="display:flex; flex-direction:column; gap:8px;">
+                    ${updates.map(upd => {
+                        // Inversione data da AAAA-MM-GG a GG/MM/AAAA per la visualizzazione
+                        const dp = upd.date.split('-');
+                        const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date;
+                        
+                        return `
+                        <div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:10px; display:flex; justify-content:space-between; align-items:center; border:1px solid rgba(255,255,255,0.1);">
+                            <div style="display:flex; flex-direction:column;">
+                                <span style="font-size:0.8rem; font-weight:700;">${upd.version} <small style="opacity:0.6;">(${upd.size || 'N/A'})</small></span>
+                                <span style="font-size:0.6rem; color:var(--cyan-neon); opacity:0.8;">Released: ${formattedDate}</span>
+                            </div>
+                            <div style="display:flex; gap:5px;">
+                                ${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" style="padding:4px 8px; background:var(--bg-1); border:1px solid var(--cyan-neon); color:var(--cyan-neon); border-radius:5px; font-size:0.65rem; text-decoration:none; font-weight:900;">AKIA</a>` : ''}
+                                ${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" style="padding:4px 8px; background:var(--bg-1); border:1px solid var(--cyan-neon); color:var(--cyan-neon); border-radius:5px; font-size:0.65rem; text-decoration:none; font-weight:900;">VIKI</a>` : ''}
+                                ${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" style="padding:4px 8px; background:var(--bg-1); border:1px solid var(--cyan-neon); color:var(--cyan-neon); border-radius:5px; font-size:0.65rem; text-decoration:none; font-weight:900;">BUZZ</a>` : ''}
+                            </div>
+                        </div>`;
+                    }).join('')}
+                </div>
+            </div>`;
+    }
 
     let instHTML = "";
     if (isDLC) {
@@ -181,7 +217,7 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false) {
     }
 
     const creditsBody = document.getElementById('credits-body');
-    if (creditsBody) creditsBody.innerHTML = `<div style="font-size:1.05rem; line-height:1.5;">${creditsText}</div>${instHTML}`;
+    if (creditsBody) creditsBody.innerHTML = `<div style="font-size:1.05rem; line-height:1.5;">${creditsText}</div>${instHTML}${updateHTML}`;
 
     document.getElementById('final-download-btn').href = url;
     document.getElementById('pw-instruction').style.display = 'block';
@@ -194,7 +230,20 @@ window.revealPassword = () => {
     document.getElementById('pw-final').style.display = 'block';
 };
 
-// Ricerca
+// --- UTILS & EVENTI ---
+window.addEventListener('DOMContentLoaded', init);
+
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (nav) {
+        if (window.scrollY > 20) nav.classList.add('scrolled');
+        else nav.classList.remove('scrolled');
+    }
+});
+
+document.getElementById('next-page').onclick = () => { currentPage++; renderGames(); window.scrollTo(0,0); };
+document.getElementById('prev-page').onclick = () => { currentPage--; renderGames(); window.scrollTo(0,0); };
+
 const sTrig = document.getElementById('search-trigger');
 const sInp = document.getElementById('search-input');
 if(sTrig) sTrig.onclick = () => { sInp.classList.toggle('active'); sInp.focus(); };
@@ -204,7 +253,6 @@ if(sInp) sInp.oninput = (e) => {
     renderGames();
 };
 
-// DMCA
 document.getElementById('dmca-link').onclick = async () => {
     try {
         const res = await fetch('DMCA.json');
