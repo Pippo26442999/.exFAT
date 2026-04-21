@@ -1,5 +1,23 @@
 [
   {
+    "title": "A Plague Tale Requiem",
+    "image": "exFAT/A_Plague_Tale_Requiem.avif",
+    "tags": [
+      "PPSA05366",
+      "v01.005",
+      "USA",
+      "4.xx BackPort Fixed"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWHBsZmhZMEFFU1h2L3ZiTkdPVVdiSUVHZE9FS25RZ2pEWnVDRU4wMDBQRUI0WDB4cVVoVUhid2hJSFNDOU1GNmtZelAiLCJzIjoiZDVqNCtyOHgyTVVmbjhMT255dkJQZz09IiwiaSI6Inh5OWIyR0NadGRpSmJkL1kifQ==",
+    "buzz_url": "",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibFI2VXZhK0hUd3pRM1kzbStZdUZYYllmc0h6R2ZaaVlOdkh3Y3JVL2g3aGx3YmZIeEVWbFlnSE5hYW1hRkNITkhhYThLN0ViIiwicyI6IlBPSm9uc3U4UEJQS0l2QTZ6VGNDZEE9PSIsImkiOiJ5SWlzdDBYRHVKNmFVUTA0In0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNlhUc2ZWVzRiL1F0c0t3RzduQ0hVRmx6aWl0QmNuSW1nQ1V6ZnNLOHRnc3c5dEYrNDVWUGNVVUE5Wm50MUFmNFhGOTgiLCJzIjoiK1F3USt3RUk0bTRDejdFSHA4akNldz09IiwiaSI6IndJelAxeWoyR056bUt4Z1UifQ==",
+    "credits_files": "José Carrión",
+    "credits_dlc": "Pkykzhack",
+    "size": "52GB"
+  },
+  {
     "title": "A Plague Tale Innocence",
     "image": "exFAT/A_Plague_Tale_Innocence.png",
     "tags": [
