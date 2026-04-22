@@ -1,5 +1,21 @@
 [
   {
+    "title": "Resident Evil 2",
+    "image": "exFAT/RE2R.avif",
+    "tags": [
+      "PPSA04288",
+      "v01.003",
+      "DLCs Merged",
+      "USA",
+      "3.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNkVwc0FLWmFtd1hKeHkzdUh3aVBzVVoveWIrZDBOWlErVjQ4TncwbGhEclNCL242bTlQMzE0L3FhL3hzbE5PMS9peWEiLCJzIjoiMDN0a3hDTlkxSFY0dVAvMlEzaDFiQT09IiwiaSI6IkE2VWFCb1BRcWx2eEI1Rk4ifQ==",
+    "buzz_url": "",
+    "credits_files": "High-Speed007",
+    "size": "35GB"
+  },
+  {
     "title": "Resident Evil 3",
     "image": "exFAT/RE3R.webp",
     "tags": [
