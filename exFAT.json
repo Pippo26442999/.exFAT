@@ -1,5 +1,24 @@
 [
   {
+    "title": "Kena Bridge of Spirits",
+    "image": "exFAT/Kena_Bridge_of_Spirits.avif",
+    "tags": [
+      "PPSA01746",
+      "v02.008",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNTVXUWFGd2czblpJbnRGWDhhOWNtM29JQUJzbGdua2YyendHdFQwOUtZUm9STGlFWnJnc1ZEek44ZnNDNTZ1Ly9CWisiLCJzIjoiWVd1bG1Zb3l0RUpXbVlUaFFkZ3JvQT09IiwiaSI6IkdoU0NScE41YnRWc1JkRncifQ==",
+    "buzz_url": "",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib2Vma1BpSG9hRWFKWE5uQktIUGR4cGsxYUlXbFNqamhLUVFicTdMam4wS09weFZUVFlXYzBjcXFCKzR3TWVhT2hYWVhDVVcvIiwicyI6InRwM0lPRUlUUEpPbXlGMEtjL0g0RUE9PSIsImkiOiIvRGtBdmtTcTdLUC9yd1d1In0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY3FjaitwQnBzbjBYVEtXZDVzdGl4ZmZhTC9XeUQyNkViVUVvR2tsT0poZGZnMXRBQ2hjTlA4RjZNaGlaRUNvc29zMjciLCJzIjoieVNJYmNpSzhNL1IyaWNGYkJ5NG13QT09IiwiaSI6Ikg2UVVYdVR5eGhETEx0bmkifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "Pkykzhack",
+    "credits_backport": "bbaderlink",
+    "size": "33GB"
+  },
+  {
     "title": "Stray",
     "image": "exFAT/Stray.avif",
     "tags": [
