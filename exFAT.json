@@ -1,5 +1,23 @@
 [
   {
+    "title": "Maneater",
+    "image": "exFAT/Maneater.png",
+    "tags": [
+      "PPSA01862",
+      "v01.000.010",
+      "EUR",
+      "2.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMFAxNzM0MzFsdHJRUWo3bVVHMnMzWDdCbG9hUHBTd1JlbTJ0TjkrYkFQRW4vNTNzUjQ5M2ZLbzc5SVczV28rd2YwQngiLCJzIjoiRkFUdnQ5YlJnMTFoOWl3UVpIeXhhUT09IiwiaSI6IkkyVDg4akJvOWVtdVdIY24ifQ==",
+    "buzz_url": "",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR05TTzFYU015VWNweFFTamJCYzlqRDB5OXhhVUxCcytyVzdFVEVkK3NXV1YyWmlxeVJ5d1BDOEdKclFaUkRudmhDM0RtZFl4IiwicyI6Im8rbkxqVzRxV0tQYTdFcFpPVkFpOHc9PSIsImkiOiJKb0FUVHpSdk5WcjRVWmI3In0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidlpzZm5wSEFUc1V6WDFkMVBjbERBVUFUeFRuejN1OW9LOGUrRDVhYVErSk05KzFCVkR5eW1INitXQm9hTkV6aE8yTXUiLCJzIjoiazU5czJkYVZMMEh6b3ZwNjVkak55Zz09IiwiaSI6InpFNDZLckdaRUxHUkRzb0UifQ==",
+    "credits_files": "DUPLEX",
+    "credits_dlc": "Pkykzhack",
+    "size": "21GB"
+  },
+  {
     "title": "Tour de France 2024",
     "image": "exFAT/Tour_de_France_2024.avif",
     "tags": [
