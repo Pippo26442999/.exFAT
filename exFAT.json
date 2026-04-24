@@ -1,5 +1,21 @@
 [
   {
+    "title": "Life is Strange Double Exposure - Ultimate Edition",
+    "image": "exFAT/Life_is_Strange_Double_Exposure.avif",
+    "tags": [
+      "PPSA03717",
+      "v01.002.000",
+      "EUR",
+      "4.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidVB1azlUVjJtQkdyeXdMMkZqWCtnQTlHcUMxMHNMeUpjbURNV2NHdmdwclp4TmdJL1ljVFNreVF5bGhtbFh1VWJteFgiLCJzIjoicGV3NG5Uekx1Wi9pMXo2MjRybCtVUT09IiwiaSI6InFHYjNWajBWdkIyR1RMdkoifQ==",
+    "buzz_url": "",
+    "credits_files": "DUPLEX & VanBuuren",
+    "credits_backport": "BestPig",
+    "size": "47GB"
+  },
+  {
     "title": "Control Ultimate Edition",
     "image": "exFAT/Control.avif",
     "tags": [
@@ -1240,20 +1256,6 @@
     "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUUlGTk5LOW1qMjlOZnhOVVpzdml1UXUxRTVTUzg3M0Y4WnNBa1VwdUc3WXVpRkU2Y1dnMUh2Z0t6TGRuUjlFTkxpN25HNnE3IiwicyI6IkVmZG9mQkdKVWlHYWlOdlpLMHF5a3c9PSIsImkiOiI1Q0xCUHVrZzFrRVlZczRjIn0=",
     "credits_files": "BedroZen & SuperPSX",
     "size": "26GB"
-  },
-  {
-    "title": "Life is Strange Double Exposure - Ultimate Edition",
-    "image": "exFAT/Life_is_Strange_Double_Exposure.avif",
-    "tags": [
-      "PPSA03717",
-      "v01.002.000",
-      "EUR",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNWlCVWl3VGZuL0pNVVBZbWhyRGJ3VSt3LzZlaU1qRW5ibDdjUWY3QmVwZlNkU0RPYXF0VlV3TGl3VThkWDNlUGhQdUdMM2RVIiwicyI6ImwzTlVMWm13cFhKUC9KaTF0Yzk3QWc9PSIsImkiOiJQRGVWV1RGejgrUitjRGlEIn0=",
-    "credits_files": "DUPLEX & VanBuuren",
-    "credits_backport": "BestPig",
-    "size": "51GB"
   },
   {
     "title": "Super Crazy Rhythm Castle",
