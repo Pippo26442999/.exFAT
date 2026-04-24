@@ -1,5 +1,21 @@
 [
   {
+    "title": "Tour de France 2024",
+    "image": "exFAT/Tour_de_France_2024.avif",
+    "tags": [
+      "PPSA20114",
+      "v01.008",
+      "EUR",
+      "9.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSUxOVm5GR1MzWGhydFR3M1cxL05RVXhaNmRiNytQcnh2ZjJFVnJ3ejdhMm4vTVNsNm1qME01Nk91NndkZHFJcW5wMTMiLCJzIjoiVmhtOVl2bEc1NmJxZ2NiUCtYak5HUT09IiwiaSI6Iit0TGpsRlp0aWt5LzNuUEsifQ==",
+    "buzz_url": "",
+    "credits_files": "DUPLEX & SiESPta",
+    "how_to_play": "SDK are 10 but with my test this game work fine with the eboot.bin original, with 4K Patch doesnt work (CE-10008-9).",
+    "size": "26GB"
+  },
+  {
     "title": "Visions of Mana",
     "image": "exFAT/Vision_of_Mana.avif",
     "tags": [
