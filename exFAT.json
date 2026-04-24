@@ -1,5 +1,21 @@
 [
   {
+    "title": "Jusant",
+    "image": "exFAT/Jusant.jpg",
+    "tags": [
+      "PPSA10264",
+      "v01.007",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibUQzOVNPekczTnNxVExLL1lvN2JIeVcyNzZoNWUrRGJBVmRvTmoreTR1NjRZMkNpNEhBQnpQaTBBQTFBZ1BobVZWOFkiLCJzIjoiRjE1QUEvbXJhSFJzUkp1ZUdneURUUT09IiwiaSI6IjBORE5tZ1FXQkt3QVZjczAifQ==",
+    "buzz_url": "",
+    "credits_files": "SiESPTA",
+    "credits_backport": "bbaderlink",
+    "size": "8GB"
+  },
+  {
     "title": "Morbid The Lords of Ire",
     "image": "exFAT/Morbid_The_Lords_of_Ire.avif",
     "tags": [
