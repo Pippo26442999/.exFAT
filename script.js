@@ -119,20 +119,34 @@ function setupDropdown() {
     });
 }
 
-// --- FILTRI ---
+// --- FILTRI (CON FIX PER BACKPORT) ---
 function applyFilters() {
     const searchTerm = document.getElementById('search-input').value.toLowerCase();
     const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
 
     filteredGames = allGames.filter(g => {
         const matchesSearch = g.title.toLowerCase().includes(searchTerm);
-        let gameFW = 1; 
-        if (g.tags) {
-            const fwTag = g.tags.find(t => t.match(/(\d+)\.xx/i));
-            if (fwTag) {
-                gameFW = parseInt(fwTag.match(/(\d+)\.xx/i)[1], 10);
+        
+        let gameFW = 1; // Default 1 (sempre visibile)
+        if (g.tags && g.tags.length > 0) {
+            let foundVersions = [];
+            g.tags.forEach(tag => {
+                // Trova TUTTI i numeri prima di .xx (es: [9, 4] da "9.xx + 4.xx")
+                const matches = tag.match(/(\d+)\.xx/gi);
+                if (matches) {
+                    matches.forEach(m => {
+                        const num = parseInt(m.match(/\d+/)[0], 10);
+                        foundVersions.push(num);
+                    });
+                }
+            });
+
+            if (foundVersions.length > 0) {
+                // Prende la versione più bassa tra quelle disponibili (il backport)
+                gameFW = Math.min(...foundVersions);
             }
         }
+        
         const matchesFW = gameFW <= selectedFW;
         return matchesSearch && matchesFW;
     });
