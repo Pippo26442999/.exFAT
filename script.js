@@ -86,6 +86,34 @@ function startProtection() {
     observer.observe(document.body, { childList: true });
 }
 
+// --- FILTRI COMBINATI (TESTO + FW) ---
+function applyFilters() {
+    const searchTerm = document.getElementById('search-input').value.toLowerCase();
+    const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
+
+    filteredGames = allGames.filter(g => {
+        // 1. Filtro Testuale
+        const matchesSearch = g.title.toLowerCase().includes(searchTerm);
+        
+        // 2. Filtro Firmware (estrae il numero dai tag tipo "9.xx and beyond")
+        let gameFW = 1; 
+        if (g.tags) {
+            const fwTag = g.tags.find(t => t.match(/(\d+)\.xx/i));
+            if (fwTag) {
+                gameFW = parseInt(fwTag.match(/(\d+)\.xx/i)[1], 10);
+            }
+        }
+        
+        // Mostra se FW del gioco è <= a quello scelto
+        const matchesFW = gameFW <= selectedFW;
+
+        return matchesSearch && matchesFW;
+    });
+
+    currentPage = 1;
+    renderGames();
+}
+
 // --- RENDERING GRIGLIA ---
 function renderGames() {
     const grid = document.getElementById('game-grid');
@@ -103,7 +131,6 @@ function renderGames() {
         let tagsHTML = (game.tags || []).map(t => `<span class="game-tag">${t}</span>`).join('');
         let sizeHTML = game.size ? `<div class="game-size">${game.size}</div>` : '';
         
-        // --- LOGICA BADGE 24 ORE ---
         let updateBadge = '';
         const updates = allUpdates[game.title];
         if (updates && updates.length > 0) {
@@ -179,7 +206,6 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, gameTitle) {
 
     let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
 
-    // --- SEZIONE UPDATE HISTORY (AKIA, VIKI, BUZZ) ---
     let updateHTML = "";
     const updates = allUpdates[gameTitle];
     if (updates && updates.length > 0) {
@@ -188,10 +214,8 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, gameTitle) {
                 <b style="color:var(--cyan-neon); font-size:0.75rem; text-transform:uppercase; display:block; margin-bottom:10px;">OLD RELEASES:</b>
                 <div style="display:flex; flex-direction:column; gap:8px;">
                     ${updates.map(upd => {
-                        // Inversione data da AAAA-MM-GG a GG/MM/AAAA per la visualizzazione
                         const dp = upd.date.split('-');
                         const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date;
-                        
                         return `
                         <div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:10px; display:flex; justify-content:space-between; align-items:center; border:1px solid rgba(255,255,255,0.1);">
                             <div style="display:flex; flex-direction:column;">
@@ -230,7 +254,7 @@ window.revealPassword = () => {
     document.getElementById('pw-final').style.display = 'block';
 };
 
-// --- UTILS & EVENTI ---
+// --- EVENTI ---
 window.addEventListener('DOMContentLoaded', init);
 
 window.addEventListener('scroll', () => {
@@ -246,12 +270,13 @@ document.getElementById('prev-page').onclick = () => { currentPage--; renderGame
 
 const sTrig = document.getElementById('search-trigger');
 const sInp = document.getElementById('search-input');
+const fwFilter = document.getElementById('fw-filter');
+
 if(sTrig) sTrig.onclick = () => { sInp.classList.toggle('active'); sInp.focus(); };
-if(sInp) sInp.oninput = (e) => {
-    filteredGames = allGames.filter(g => g.title.toLowerCase().includes(e.target.value.toLowerCase()));
-    currentPage = 1;
-    renderGames();
-};
+
+// Assegnazione filtri
+if(sInp) sInp.oninput = applyFilters;
+if(fwFilter) fwFilter.onchange = applyFilters;
 
 document.getElementById('dmca-link').onclick = async () => {
     try {

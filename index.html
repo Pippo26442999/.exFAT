@@ -47,7 +47,21 @@
             backdrop-filter: blur(20px); box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
-        /* --- BOTTONE KO-FI CON BAGLIORE AZZURRO --- */
+        /* --- FILTRO FIRMWARE STYLE --- */
+        .fw-select {
+            background: rgba(2, 2, 5, 0.8);
+            color: var(--cyan-neon);
+            border: 1px solid var(--cyan-neon);
+            padding: 5px 10px;
+            border-radius: 8px;
+            outline: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+            font-weight: 900;
+            backdrop-filter: blur(10px);
+        }
+        .fw-select option { background: var(--bg-1); color: #fff; }
+
         #kofi-nav-btn {
             display: flex; align-items: center; gap: 8px;
             background: var(--kofi-color) !important; color: white !important; text-decoration: none;
@@ -72,7 +86,7 @@
 
         #dmca-link { animation: pulseRed 2s infinite ease-in-out; color: var(--dmca-red) !important; opacity: 1 !important; }
 
-        .search-wrapper { display: flex; align-items: center; z-index: 10001; }
+        .search-wrapper { display: flex; align-items: center; z-index: 10001; gap: 10px; }
         .search-icon { font-size: 2rem; cursor: pointer; opacity: 0.6; margin-right: 10px; }
         #search-input { width: 0; padding: 0; border: none; outline: none; background: rgba(255, 255, 255, 0.1); color: #fff; border-bottom: 2px solid var(--cyan-neon); font-size: 1.2rem; transition: width 0.4s; visibility: hidden; }
         #search-input.active { width: 200px; padding: 5px 10px; visibility: visible; }
@@ -97,21 +111,14 @@
             background: radial-gradient(circle at center, var(--p1) 0%, var(--p2) 30%, var(--p3) 50%, transparent 75%);
             filter: blur(60px); animation: liquidGlow 8s ease-in-out infinite; z-index: 1; pointer-events: none;
         }
-.game-size {
-    position: absolute;
-    bottom: 15px; /* Spostato in basso */
-    right: 15px;  /* Spostato a destra */
-    background: rgba(0, 255, 238, 0.65); /* Più opaco per leggibilità */
-    color: #000; /* Testo nero per contrasto con lo sfondo cyan */
-    padding: 4px 10px;
-    border-radius: 8px;
-    font-size: 0.75rem;
-    font-weight: 900;
-    border: 1px solid #fff;
-    backdrop-filter: blur(5px);
-    z-index: 15;
-    box-shadow: 0 0 10px rgba(0, 255, 238, 0.5);
-}
+
+        .game-size {
+            position: absolute; bottom: 15px; right: 15px; 
+            background: rgba(0, 255, 238, 0.65); color: #000; 
+            padding: 4px 10px; border-radius: 8px; font-size: 0.75rem;
+            font-weight: 900; border: 1px solid #fff; backdrop-filter: blur(5px);
+            z-index: 15; box-shadow: 0 0 10px rgba(0, 255, 238, 0.5);
+        }
 
         .game-title, .image-container, .download-section { position: relative; z-index: 5; width: 100%; }
         .game-title { font-weight: 900; text-align: center; text-transform: uppercase; font-size: 1.2rem; min-height: 2.5rem; margin-bottom: 15px; letter-spacing: 1px; }
@@ -169,6 +176,21 @@
         <div class="search-wrapper">
             <span class="search-icon" id="search-trigger">🔍</span>
             <input type="text" id="search-input" placeholder="Search game...">
+            <select id="fw-filter" class="fw-select">
+                <option value="99">FW: All</option>
+                <option value="1">1.xx</option>
+                <option value="2">2.xx</option>
+                <option value="3">3.xx</option>
+                <option value="4">4.xx</option>
+                <option value="5">5.xx</option>
+                <option value="6">6.xx</option>
+                <option value="7">7.xx</option>
+                <option value="8">8.xx</option>
+                <option value="9">9.xx</option>
+                <option value="10">10.xx</option>
+                <option value="11">11.xx</option>
+                <option value="12">12.xx</option>
+            </select>
         </div>
         <div class="nav-item active">Library</div>
         <div class="nav-item" id="dmca-link">DMCA</div>
