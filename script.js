@@ -8,8 +8,9 @@ const SECRET_HASH = "a2242ead55c94c3deb7cf2340bfef9d5bcaca22dfe66e646745ee4371c6
 
 // --- INIZIALIZZAZIONE ---
 async function init() {
-    await loadUpdates(); 
+    await loadUpdates();
     await loadLibrary();
+    setupDropdown(); // Inizializza il nuovo menu
     
     if (sessionStorage.getItem('unlocked') === SECRET_HASH) {
         document.getElementById('site-lock-overlay')?.remove();
@@ -86,16 +87,45 @@ function startProtection() {
     observer.observe(document.body, { childList: true });
 }
 
-// --- FILTRI COMBINATI (TESTO + FW) ---
+// --- GESTIONE DROPDOWN (NEW) ---
+function setupDropdown() {
+    const dropdown = document.getElementById('fw-dropdown');
+    const trigger = dropdown.querySelector('.dropdown-trigger');
+    const optionsContainer = document.getElementById('fw-options');
+    const currentText = document.getElementById('fw-current');
+    const hiddenInput = document.getElementById('fw-filter');
+    const allOptions = dropdown.querySelectorAll('.option');
+
+    trigger.onclick = (e) => {
+        e.stopPropagation();
+        optionsContainer.classList.toggle('show');
+        dropdown.classList.toggle('active');
+    };
+
+    allOptions.forEach(opt => {
+        opt.onclick = () => {
+            const val = opt.getAttribute('data-value');
+            currentText.innerText = opt.innerText;
+            hiddenInput.value = val;
+            optionsContainer.classList.remove('show');
+            dropdown.classList.remove('active');
+            applyFilters(); // Richiama il filtro
+        };
+    });
+
+    window.addEventListener('click', () => {
+        optionsContainer.classList.remove('show');
+        dropdown.classList.remove('active');
+    });
+}
+
+// --- FILTRI ---
 function applyFilters() {
     const searchTerm = document.getElementById('search-input').value.toLowerCase();
     const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
 
     filteredGames = allGames.filter(g => {
-        // 1. Filtro Testuale
         const matchesSearch = g.title.toLowerCase().includes(searchTerm);
-        
-        // 2. Filtro Firmware (estrae il numero dai tag tipo "9.xx and beyond")
         let gameFW = 1; 
         if (g.tags) {
             const fwTag = g.tags.find(t => t.match(/(\d+)\.xx/i));
@@ -103,10 +133,7 @@ function applyFilters() {
                 gameFW = parseInt(fwTag.match(/(\d+)\.xx/i)[1], 10);
             }
         }
-        
-        // Mostra se FW del gioco è <= a quello scelto
         const matchesFW = gameFW <= selectedFW;
-
         return matchesSearch && matchesFW;
     });
 
@@ -186,7 +213,7 @@ function renderGames() {
     document.getElementById('next-page').disabled = currentPage >= totalPages;
 }
 
-// --- MODALE DOWNLOAD & UPDATES ---
+// --- MODALE DOWNLOAD ---
 function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, gameTitle) {
     let parts = [];
     const clean = (str) => (str && str !== "undefined" && str.trim() !== "") ? str.trim() : null;
@@ -270,13 +297,9 @@ document.getElementById('prev-page').onclick = () => { currentPage--; renderGame
 
 const sTrig = document.getElementById('search-trigger');
 const sInp = document.getElementById('search-input');
-const fwFilter = document.getElementById('fw-filter');
 
 if(sTrig) sTrig.onclick = () => { sInp.classList.toggle('active'); sInp.focus(); };
-
-// Assegnazione filtri
 if(sInp) sInp.oninput = applyFilters;
-if(fwFilter) fwFilter.onchange = applyFilters;
 
 document.getElementById('dmca-link').onclick = async () => {
     try {
