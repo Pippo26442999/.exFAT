@@ -1,4 +1,36 @@
 [
+   {
+    "title": "Empire of the Ants",
+    "image": "exFAT/Empire_of_the_Ants.jpg",
+    "tags": [
+      "PPSA14455",
+      "v02.004.000",
+      "EUR",
+      "9.xx and beyond"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicnJpelhSbjlNTWJvM2ZXUnc4aExnaE5sckZpMUdpd0UyQTdDb0pBa2lNckFDbW1UUG12WkFJQkI2aVEvb3FFT1lpeVl0YTNmIiwicyI6IlBCN0Q2ZmhsTHZIL083WGMxTGlQcGc9PSIsImkiOiJSZmcxQ1pUbnFRRU12bkZGIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQUR3M01uTERkSXNhN0o4di9QS2Nid2JFRmJpeXV4RitQT0YyYUVCaXdvUnFkUE1vVmt4bUtTWVNBekVXdUZCcHBKblYiLCJzIjoiVDRvZFU5YlFxekZ0dDBvLzE4SmVSdz09IiwiaSI6Imo4NTVtSEFZK0lpYVRhSVEifQ==",
+    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWXMzVEtWOVRhdEJ2Z0pDM3Z2blgxSkttaUpKRVJpbUxHSU9lbTNWSjBIWC96dzZaVW9FdCs2enJ3ckpWSXJzWWlVMkNzdz09IiwicyI6Ik5NcElYZWQ0WjdxSkRiYVFuT1hMNXc9PSIsImkiOiJOT2ZONitjeFhiYWUySnFXIn0=",
+    "credits_files": "DUPLEX & SiESPTA",
+    "size": "56GB"
+  },
+  {
+    "title": "Metal Gear Solid Delta Snake Eater Deluxe Edition",
+    "image": "exFAT/Metal_Gear_Solid_Delta_Snake_Eater_DE.avif",
+    "tags": [
+      "PPSA15304",
+      "v01.001.004",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPork"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUkh1ajdsT3FhN2ZqR0Y3RG1Wb2tmOXNkdTNsNno5ZGEyNDhUdGluSy92OERTYnpsTXB4dUZ6dXlBdXBzUDBQcTBYemg5MlNJIiwicyI6InkyR1hMR1ZWK2FuUy9yR2dXTERlUHc9PSIsImkiOiJhdXpHNXBkWHVFQnRMT2lkIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSHFXNit2K1ZpMUpFd0hQZDFBSVpLblNMNGpDbWVINk9oMHMxRjJQUm9RVXVPandHUnByNWVJNklTeERTbFQrcUtKMjgiLCJzIjoiV1lDUlp1aEtTNGR5azVoNkV4dkNiQT09IiwiaSI6ImNJeENGNm81WklDMU1YRTMifQ==",
+    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMm5MQXgxQnhZRjV5T0Q5QTlMQkNWSkdjQmo2V3E1eE5NRGtJTTVqc2RrWml4d2NWUjByamllQ3RjK2ZxTDg1L3lZa2Q5Zz09IiwicyI6IjNna1NNRW9EemlobGtxaE55cWZndGc9PSIsImkiOiJpTHBZYzVTUHVmT1hmM2o5In0=",
+    "credits_files": "DUPLEX & SiESPTA",
+    "credits_backport": "BestPig",
+    "size": "185GB"
+  },
   {
     "title": "Killing Floor 3",
     "image": "exFAT/Killing_Floor_3.avif",
@@ -1379,20 +1411,6 @@
     "credits_backport": "BADERLINK",
     "how_to_play": "If save didn’t load close the game then try again and finally game will load save files after couple of try.",
     "size": "56GB"
-  },
-  {
-    "title": "Metal Gear Solid Delta Snake Eater",
-    "image": "exFAT/Metal_Gear_Solid_Delta_Snake_Eater.avif",
-    "tags": [
-      "PPSA15304",
-      "v01.001.004",
-      "USA",
-      "8.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK1dJU3VzUEQ2V0ZJQ3VQaVdBV2ZiM3d3aG52aXExenJxRGJuVDhzV241dWh0TkhncWtmSE9WcFZORXZFbmZZS0JXN1MvQmFxIiwicyI6IkJjN0xBdEZzcm9mTlIrcW9FdnYxTmc9PSIsImkiOiJmYnVnN1ovVGFGMEZ2U1E2In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRWlQVDhMTVFmc1ZOWjRQWGFDcE5DNXIrNU1FdUZxK1pWNzMva1ZpTUtqR3BScGNWaTNUOTN2N0dycDVtN01pVnpMeU0iLCJzIjoiYXVaczhGb3NRY3gxRkxJT2FBTUxDUT09IiwiaSI6Ik5nVUZQTXdnZ2VEYzJLY2IifQ==",
-    "credits_files": "High-Speed007",
-    "size": "200GB"
   },
   {
     "title": "Elden Ring",
