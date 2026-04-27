@@ -1,5 +1,22 @@
 [
   {
+    "title": "EA Sports PGA Tour",
+    "image": "exFAT/EA_Sports_PGA_Tour.avif",
+    "tags": [
+      "PPSA02227",
+      "v01.002",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT2ZlZGhadEFNQUxTTkZNZHVDZnZCWHFqTUphM1FsdXVpQVV1My9BOGlFK3d5ZDRkbElDNnNrQjMyazF6T2xPNXpBQi8iLCJzIjoiOG8xdTA5ZHVyVkNpYWJ5b0JPNkZjdz09IiwiaSI6IlFzaUtpdERybDlNQlpTdnMifQ==",
+    "buzz_url": "",
+    "credits_files": "DUPLEX & VanBuuren",
+    "credits_backport": "kerrdec97",
+    "how_to_play": "Need connection disabled or 127.0.0.1 applied.",
+    "size": "71GB"
+  },
+  {
     "title": "Tour de France 2024",
     "image": "exFAT/Tour_de_France_2024.avif",
     "tags": [
