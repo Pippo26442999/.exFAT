@@ -1,5 +1,20 @@
 [
   {
+    "title": "SD GUNDAM BATTLE ALLIANCE",
+    "image": "exFAT/SD_Gundam_Battle_Alliance.avif",
+    "tags": [
+      "PPSA05163",
+      "v01.040",
+      "JPN",
+      "7.xx and beyond"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWkFwbG9OS1BMT21VWHEycEFVYzZWZHlvQjZRK0Iza3QyN1cwUWQ1eVI4alhNQXVlMm9PeWFxK2RJc0Q2eGlLZW5selRKM2ZUIiwicyI6IlFCbDNVL25lM3Nrd1l3REdNMTJLK0E9PSIsImkiOiJISGZtemU4eUhrVlZMNnVTIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNk1WSW1SKzZGWTkyNG9EWDBuZk5JaUJMaGgzYzA1aC9Sc1BoeU5qL0s0by8ySVlBYkExdzlRZFB6VjNMbXovTTZJNGoiLCJzIjoiQ3ZLNkd3a3d1dVBYM0NrVWQwTEp6dz09IiwiaSI6ImRrMkRjYkhnSDFrT1RrWGYifQ==",
+    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSXBzQjBxdjljQUFGaVg4bG5GUXpkUXhOaTRFRmxLT3hubytGY1VFVHY3TU55Tng4ODFZckZ2ZFNDR2VCbGN4WG81WVZndz09IiwicyI6IjJzeHFZRVhFUE1zNW51WWFQbGtCeXc9PSIsImkiOiJoUVhVUUYydm1IR2ZyQzd6In0=",
+    "credits_files": "SiESPTA",
+    "size": "69GB"
+  },
+  {
     "title": "Dead Space",
     "image": "exFAT/Dead_Space.jpg",
     "tags": [
@@ -55,6 +70,21 @@
     "how_to_play": "Must be installed the DLC Unlock for play, mandatory.",
     "popular": "on",
     "size": "167GB"
+  },
+    {
+    "title": "SOUTH PARK: SNOW DAY!",
+    "image": "exFAT/SOUTH_PARK_SNOW_DAY.avif",
+    "tags": [
+      "PPSA15572",
+      "v01.023",
+      "JPN to EUR Languages",
+      "7.xx and beyond"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZWttTDVNZFlBK3MxbTFpcEFiSWVONnRxRkZhanU5c1BPd1VUb3o5TzVPRFV3ZGJBOFhwQVBkbnlTY0l0Ri9BSlJkMEVSbmVmIiwicyI6IkNSTGVvSHJxQmwxeDliSnJ6UGZTYnc9PSIsImkiOiJzTGNuS0xrOWVlZ3ZjaTh6In0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRTlMMEppcjZXUThYSXBpNldWOUo1YmVKSi9ISWJ3S3lrMTFENFlNV1pPdXdCQ0p5MVMxMkpzYzZpV2xFdmIzR0lKUWwiLCJzIjoid3NuSGNDMjlESDVCTlVmWWN3bCsxdz09IiwiaSI6IlJoM2NOVmJub29NMVBqSWMifQ==",
+    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiczR0MnlxQU1tR0RIRW1qUExtc2N5a1lESThhVzhwWGd2eE9yOXFzdHJkUUVPQWlsWnFmMGErQXJ0bHlWK3d3Rk9NQXFTUT09IiwicyI6IlJ1c3dlWUpKTTgvRkJnelMrZFhEcmc9PSIsImkiOiJRRDdKVm5OdXN4eTh3RzU2In0=",
+    "credits_files": "SiESPTA",
+    "size": "38GB"
   },
   {
     "title": "High on Life",
