@@ -26,7 +26,6 @@ const originalRemoveItem = sessionStorage.removeItem.bind(sessionStorage);
 sessionStorage.setItem = function(key, value) {
     if (key === 'unlocked' && value === SECRET_HASH) {
         const stack = new Error().stack;
-        // Permetti solo se chiamato da checkSitePassword o da init (ripristino)
         if (!stack.includes('checkSitePassword') && !stack.includes('init')) {
             console.warn('🚨 Tentativo di bypass password rilevato!');
             return;
@@ -54,25 +53,20 @@ sessionStorage.removeItem = function(key) {
     return originalRemoveItem(key);
 };
 
-// Funzione per verificare l'integrità dello script
 function checkIntegrity() {
     try {
-        // Verifica che SECRET_HASH non sia stato modificato
         if (typeof SECRET_HASH !== 'string' || SECRET_HASH.length !== 64) {
             sessionStorage.removeItem('unlocked');
             sessionStorage.removeItem('unlocked_time');
             location.reload();
             return false;
         }
-        
-        // Verifica che la funzione init esista e non sia stata modificata
         if (typeof init !== 'function') {
             sessionStorage.removeItem('unlocked');
             sessionStorage.removeItem('unlocked_time');
             location.reload();
             return false;
         }
-        
         return true;
     } catch(e) {
         sessionStorage.removeItem('unlocked');
@@ -82,7 +76,6 @@ function checkIntegrity() {
     }
 }
 
-// Verifica periodica dell'integrità
 function startIntegrityCheck() {
     if (integrityCheckInterval) clearInterval(integrityCheckInterval);
     integrityCheckInterval = setInterval(() => {
@@ -97,15 +90,12 @@ function startIntegrityCheck() {
 }
 
 async function init() {
-    // Controllo anti-bypass all'avvio
     if (!checkIntegrity()) return;
     
-    // Verifica che non ci siano tentativi di bypass già nella sessione
     const unlocked = originalGetItem('unlocked');
     const unlockedTime = originalGetItem('unlocked_time');
     const overlay = document.getElementById('site-lock-overlay');
     
-    // Se c'è unlocked ma non esiste il timestamp o è troppo vecchio
     if (unlocked === SECRET_HASH) {
         if (!unlockedTime) {
             originalRemoveItem('unlocked');
@@ -208,6 +198,7 @@ function setupCarousel() {
         hasMoved = false;
         dragDistance = 0;
         dragStartTime = Date.now();
+        window._wasDrag = false;
         
         if (autoScrollActive) {
             autoScrollActive = false;
@@ -230,6 +221,7 @@ function setupCarousel() {
         
         if (Math.abs(diff) > 5) {
             hasMoved = true;
+            window._wasDrag = true;
             dragDistance = Math.abs(diff);
         }
         
@@ -259,6 +251,7 @@ function setupCarousel() {
             if (!isDragging) {
                 autoScrollActive = true;
                 startTime = null;
+                window._wasDrag = false;
             }
         }, 2000);
     };
@@ -312,7 +305,6 @@ async function checkSitePassword() {
         if (!hashedInput) return;
 
         if (hashedInput === SECRET_HASH) {
-            // Salva un timestamp per verificare che non sia stato bypassato
             originalSetItem('unlocked_time', Date.now().toString());
             originalSetItem('unlocked', SECRET_HASH);
             
@@ -336,17 +328,14 @@ async function checkSitePassword() {
 }
 
 function startProtection() {
-    // Observer per rilevare manipolazioni DOM
     const observer = new MutationObserver(() => {
         const unlocked = originalGetItem('unlocked');
         const overlay = document.getElementById('site-lock-overlay');
         
-        // Se l'overlay è stato rimosso senza password valida
         if (!overlay && unlocked !== SECRET_HASH) {
             location.reload();
         }
         
-        // Se la sessione è valida ma l'overlay esiste ancora
         if (overlay && unlocked === SECRET_HASH) {
             overlay.remove();
             document.body.style.overflow = 'auto';
@@ -354,14 +343,12 @@ function startProtection() {
     });
     observer.observe(document.body, { childList: true, subtree: true });
     
-    // Controllo periodico aggiuntivo
     if (protectionInterval) clearInterval(protectionInterval);
     protectionInterval = setInterval(() => {
         const unlocked = originalGetItem('unlocked');
         const overlay = document.getElementById('site-lock-overlay');
         const unlockedTime = originalGetItem('unlocked_time');
         
-        // Se c'è unlocked ma non esiste il timestamp
         if (unlocked === SECRET_HASH && !unlockedTime) {
             originalRemoveItem('unlocked');
             location.reload();
@@ -376,7 +363,6 @@ function startProtection() {
             }
         }
         
-        // Se l'overlay non esiste ma la password non è valida
         if (!overlay && unlocked !== SECRET_HASH) {
             location.reload();
         }
@@ -454,12 +440,14 @@ function openGameModal(game, event) {
         return false;
     }
     
-    if (hasMoved) {
+    if (hasMoved || window._wasDrag) {
         hasMoved = false;
+        window._wasDrag = false;
         return false;
     }
     
     hasMoved = false;
+    window._wasDrag = false;
     
     const modalHeader = document.getElementById('modal-header');
     modalHeader.style.backgroundImage = `url('${game.image}')`;
@@ -619,7 +607,7 @@ function renderPopularGames() {
         }
 
         htmlContent += `
-            <div class="popular-card" onclick='openGameModal(${JSON.stringify(game).replace(/'/g, "&#39;")}, event)'>
+            <div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'>
                 <div class="popular-card-bg" style="background-image: url('${game.image}')"></div>
                 <div class="popular-card-gradient"></div>
                 ${updateBadge}
@@ -634,6 +622,114 @@ function renderPopularGames() {
     });
 
     track.innerHTML = htmlContent + htmlContent;
+    
+    // Variabili per long press
+    let pressTimer = null;
+    let isLongPressActive = false;
+    let touchMoved = false;
+    
+    const cards = document.querySelectorAll('.popular-card');
+    
+    cards.forEach(card => {
+        // Rimuovi listener esistenti
+        const oldCard = card.cloneNode(true);
+        card.parentNode.replaceChild(oldCard, card);
+        
+        // Gestione click (desktop e tap breve)
+        oldCard.addEventListener('click', function(e) {
+            e.stopPropagation();
+            if (isLongPressActive) {
+                isLongPressActive = false;
+                return;
+            }
+            const gameDataAttr = this.getAttribute('data-game');
+            if (gameDataAttr) {
+                try {
+                    const decoded = gameDataAttr.replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+                    const game = JSON.parse(decoded);
+                    openGameModal(game, e);
+                } catch(err) {
+                    console.error("Errore:", err);
+                }
+            }
+        });
+        
+        // Gestione touch start (per long press) - TEMPO RIDOTTO A 200ms
+        oldCard.addEventListener('touchstart', function(e) {
+            touchMoved = false;
+            isLongPressActive = false;
+            window._isLongPress = false;
+            
+            pressTimer = setTimeout(() => {
+                // Long press rilevato! Attiva il drag
+                isLongPressActive = true;
+                window._isLongPress = true;
+                
+                // Feedback visivo
+                this.style.opacity = '0.7';
+                
+                // Attiva il drag sul container
+                const container = document.getElementById('carousel-container');
+                const dragEvent = new TouchEvent('touchstart', {
+                    touches: e.touches,
+                    target: container,
+                    cancelable: true
+                });
+                container.dispatchEvent(dragEvent);
+            }, 200); // <- TEMPO RIDOTTO A 200ms
+        });
+        
+        // Gestione touch move
+        oldCard.addEventListener('touchmove', function(e) {
+            touchMoved = true;
+            if (pressTimer) {
+                clearTimeout(pressTimer);
+                pressTimer = null;
+            }
+        });
+        
+        // Gestione touch end
+        oldCard.addEventListener('touchend', function(e) {
+            if (pressTimer) {
+                clearTimeout(pressTimer);
+                pressTimer = null;
+            }
+            
+            this.style.opacity = '';
+            
+            // Se non è long press e non c'è movimento, è un tap
+            if (!isLongPressActive && !touchMoved) {
+                // Simula click per aprire modale
+                setTimeout(() => {
+                    if (!window._wasDrag) {
+                        const clickEvent = new MouseEvent('click', {
+                            view: window,
+                            bubbles: true,
+                            cancelable: true
+                        });
+                        this.dispatchEvent(clickEvent);
+                    }
+                }, 10);
+            }
+            
+            // Reset long press dopo un breve delay
+            setTimeout(() => {
+                window._isLongPress = false;
+                isLongPressActive = false;
+            }, 100);
+        });
+        
+        // Gestione touch cancel
+        oldCard.addEventListener('touchcancel', function(e) {
+            if (pressTimer) {
+                clearTimeout(pressTimer);
+                pressTimer = null;
+            }
+            this.style.opacity = '';
+            window._isLongPress = false;
+            isLongPressActive = false;
+        });
+    });
 }
 
 function renderGames() {
