@@ -2,19 +2,137 @@ let allGames = [];
 let filteredGames = [];
 let allUpdates = {}; 
 let currentPage = 1;
+let autoScrollInterval = null;
+let isDragging = false;
+let startX = 0;
+let currentTranslate = 0;
+let animationId = null;
+let currentPosition = 0;
+let cardWidth = 575;
+let dragStartTime = 0;
+let dragDistance = 0;
+let hasMoved = false;
+let integrityCheckInterval = null;
+let protectionInterval = null;
 const itemsPerPage = 21;
-
 const SECRET_HASH = "a2242ead55c94c3deb7cf2340bfef9d5bcaca22dfe66e646745ee4371c633fc8";
 
-// --- INIZIALIZZAZIONE ---
+// Salva i riferimenti originali
+const originalSetItem = sessionStorage.setItem.bind(sessionStorage);
+const originalGetItem = sessionStorage.getItem.bind(sessionStorage);
+const originalRemoveItem = sessionStorage.removeItem.bind(sessionStorage);
+
+// Override di sessionStorage.setItem con controllo stack
+sessionStorage.setItem = function(key, value) {
+    if (key === 'unlocked' && value === SECRET_HASH) {
+        const stack = new Error().stack;
+        // Permetti solo se chiamato da checkSitePassword o da init (ripristino)
+        if (!stack.includes('checkSitePassword') && !stack.includes('init')) {
+            console.warn('🚨 Tentativo di bypass password rilevato!');
+            return;
+        }
+    }
+    if (key === 'unlocked_time') {
+        const stack = new Error().stack;
+        if (!stack.includes('checkSitePassword')) {
+            console.warn('🚨 Tentativo di bypass timestamp rilevato!');
+            return;
+        }
+    }
+    return originalSetItem(key, value);
+};
+
+// Override di sessionStorage.removeItem
+sessionStorage.removeItem = function(key) {
+    if (key === 'unlocked' || key === 'unlocked_time') {
+        const stack = new Error().stack;
+        if (!stack.includes('location.reload') && !stack.includes('startProtection')) {
+            console.warn('🚨 Tentativo di rimozione illegittima rilevato!');
+            return;
+        }
+    }
+    return originalRemoveItem(key);
+};
+
+// Funzione per verificare l'integrità dello script
+function checkIntegrity() {
+    try {
+        // Verifica che SECRET_HASH non sia stato modificato
+        if (typeof SECRET_HASH !== 'string' || SECRET_HASH.length !== 64) {
+            sessionStorage.removeItem('unlocked');
+            sessionStorage.removeItem('unlocked_time');
+            location.reload();
+            return false;
+        }
+        
+        // Verifica che la funzione init esista e non sia stata modificata
+        if (typeof init !== 'function') {
+            sessionStorage.removeItem('unlocked');
+            sessionStorage.removeItem('unlocked_time');
+            location.reload();
+            return false;
+        }
+        
+        return true;
+    } catch(e) {
+        sessionStorage.removeItem('unlocked');
+        sessionStorage.removeItem('unlocked_time');
+        location.reload();
+        return false;
+    }
+}
+
+// Verifica periodica dell'integrità
+function startIntegrityCheck() {
+    if (integrityCheckInterval) clearInterval(integrityCheckInterval);
+    integrityCheckInterval = setInterval(() => {
+        const unlocked = originalGetItem('unlocked');
+        if (unlocked === SECRET_HASH) {
+            if (!checkIntegrity()) {
+                alert("⚠️ Rilevata manipolazione! La pagina verrà ricaricata.");
+                location.reload();
+            }
+        }
+    }, 3000);
+}
+
 async function init() {
+    // Controllo anti-bypass all'avvio
+    if (!checkIntegrity()) return;
+    
+    // Verifica che non ci siano tentativi di bypass già nella sessione
+    const unlocked = originalGetItem('unlocked');
+    const unlockedTime = originalGetItem('unlocked_time');
+    const overlay = document.getElementById('site-lock-overlay');
+    
+    // Se c'è unlocked ma non esiste il timestamp o è troppo vecchio
+    if (unlocked === SECRET_HASH) {
+        if (!unlockedTime) {
+            originalRemoveItem('unlocked');
+            location.reload();
+            return;
+        }
+        const time = parseInt(unlockedTime);
+        if (Date.now() - time > 24 * 60 * 60 * 1000) {
+            originalRemoveItem('unlocked');
+            originalRemoveItem('unlocked_time');
+            location.reload();
+            return;
+        }
+    }
+    
     await loadUpdates();
     await loadLibrary();
-    setupDropdown(); // Inizializza il nuovo menu
+    setupDropdown();
+    setupCarousel();
     
-    if (sessionStorage.getItem('unlocked') === SECRET_HASH) {
-        document.getElementById('site-lock-overlay')?.remove();
+    if (unlocked === SECRET_HASH) {
+        if (overlay) {
+            overlay.remove();
+        }
         document.body.style.overflow = 'auto';
+        startIntegrityCheck();
+        startProtection();
     } else {
         document.body.style.overflow = 'hidden';
         startProtection();
@@ -35,17 +153,148 @@ async function loadUpdates() {
 async function loadLibrary() {
     try {
         const response = await fetch('exFAT.json?v=' + Date.now());
-        if (!response.ok) throw new Error("Errore JSON");
-        allGames = await response.json();
+        if (!response.ok) throw new Error("Errore JSON Network");
+        
+        const text = await response.text();
+        try {
+            allGames = JSON.parse(text);
+        } catch (jsonError) {
+            alert("🚨 ERRORE FATALE: Il tuo file exFAT.json è rotto!\nHai dimenticato una virgola o una parentesi quando hai aggiunto l'ultimo gioco.\nCorreggi il file JSON e ricarica la pagina.");
+            return;
+        }
+        
         filteredGames = [...allGames];
+        renderPopularGames();
         renderGames();
     } catch (e) { 
-        console.error("Errore caricamento library:", e); 
+        console.error("Errore caricamento library:", e);
     }
 }
 
-// --- LOGICA PASSWORD ---
+function setupCarousel() {
+    const container = document.getElementById('carousel-container');
+    const track = document.getElementById('popular-track');
+    
+    if (!container || !track) return;
+    
+    const halfWidth = track.scrollWidth / 2;
+    let startTime = null;
+    let autoScrollActive = true;
+    let startDragX = 0;
+    let startDragPos = 0;
+    
+    function autoScrollAnimation(timestamp) {
+        if (!autoScrollActive || isDragging) {
+            animationId = requestAnimationFrame(autoScrollAnimation);
+            return;
+        }
+        
+        if (!startTime) startTime = timestamp;
+        
+        const speed = 0.25;
+        currentPosition = (currentPosition + speed) % halfWidth;
+        
+        track.style.transform = `translateX(-${currentPosition}px)`;
+        
+        animationId = requestAnimationFrame(autoScrollAnimation);
+    }
+    
+    const startDrag = (e) => {
+        if (e.button === 2) return;
+        if (e.type === 'contextmenu') return;
+        
+        e.preventDefault();
+        
+        hasMoved = false;
+        dragDistance = 0;
+        dragStartTime = Date.now();
+        
+        if (autoScrollActive) {
+            autoScrollActive = false;
+        }
+        isDragging = true;
+        
+        startDragX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
+        startDragPos = currentPosition;
+        
+        track.style.transition = 'none';
+        container.style.cursor = 'grabbing';
+    };
+    
+    const onDrag = (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        
+        const currentX = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+        const diff = currentX - startDragX;
+        
+        if (Math.abs(diff) > 5) {
+            hasMoved = true;
+            dragDistance = Math.abs(diff);
+        }
+        
+        let newPosition = startDragPos - diff;
+        
+        const halfTrack = track.scrollWidth / 2;
+        if (newPosition >= halfTrack) {
+            newPosition -= halfTrack;
+            startDragPos -= halfTrack;
+        } else if (newPosition < 0) {
+            newPosition += halfTrack;
+            startDragPos += halfTrack;
+        }
+        
+        currentPosition = newPosition;
+        track.style.transform = `translateX(-${currentPosition}px)`;
+    };
+    
+    const endDrag = () => {
+        if (!isDragging) return;
+        
+        isDragging = false;
+        track.style.transition = '';
+        container.style.cursor = 'grab';
+        
+        setTimeout(() => {
+            if (!isDragging) {
+                autoScrollActive = true;
+                startTime = null;
+            }
+        }, 2000);
+    };
+    
+    container.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        return false;
+    });
+    
+    container.addEventListener('mousedown', startDrag);
+    window.addEventListener('mousemove', onDrag);
+    window.addEventListener('mouseup', endDrag);
+    
+    container.addEventListener('touchstart', startDrag);
+    window.addEventListener('touchmove', onDrag, { passive: false });
+    window.addEventListener('touchend', endDrag);
+    
+    container.addEventListener('mouseenter', () => {
+        autoScrollActive = false;
+    });
+    
+    container.addEventListener('mouseleave', () => {
+        if (!isDragging) {
+            autoScrollActive = true;
+            startTime = null;
+        }
+    });
+    
+    animationId = requestAnimationFrame(autoScrollAnimation);
+}
+
 async function hashStr(str) {
+    if (!crypto || !crypto.subtle) {
+        alert("⚠️ ERRORE BROWSER: Il telefono sta bloccando lo script di sicurezza. Per testare la password devi caricare i file su GitHub Pages, non puoi aprirli direttamente dalla memoria del telefono!");
+        return null;
+    }
     const msgUint8 = new TextEncoder().encode(str);
     const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
     const hashArray = Array.from(new Uint8Array(hashBuffer));
@@ -53,55 +302,102 @@ async function hashStr(str) {
 }
 
 async function checkSitePassword() {
-    const input = document.getElementById('site-pw-input').value;
-    const overlay = document.getElementById('site-lock-overlay');
-    const errorMsg = document.getElementById('pw-error');
-    const lockBox = document.getElementById('lock-box');
-    const hashedInput = await hashStr(input);
+    try {
+        const input = document.getElementById('site-pw-input').value;
+        const overlay = document.getElementById('site-lock-overlay');
+        const errorMsg = document.getElementById('pw-error');
+        const lockBox = document.getElementById('lock-box');
+        
+        const hashedInput = await hashStr(input);
+        if (!hashedInput) return;
 
-    if (hashedInput === SECRET_HASH) {
-        overlay.style.transition = 'opacity 0.5s ease';
-        overlay.style.opacity = '0';
-        setTimeout(() => {
-            overlay.remove();
-            sessionStorage.setItem('unlocked', SECRET_HASH);
-            document.body.style.overflow = 'auto';
-        }, 500);
-    } else {
-        errorMsg.style.display = 'block';
-        lockBox.style.animation = 'none';
-        lockBox.offsetHeight; 
-        lockBox.style.animation = 'shake 0.3s ease-in-out';
-        document.getElementById('site-pw-input').value = '';
+        if (hashedInput === SECRET_HASH) {
+            // Salva un timestamp per verificare che non sia stato bypassato
+            originalSetItem('unlocked_time', Date.now().toString());
+            originalSetItem('unlocked', SECRET_HASH);
+            
+            overlay.style.transition = 'opacity 0.5s ease';
+            overlay.style.opacity = '0';
+            setTimeout(() => {
+                overlay.remove();
+                document.body.style.overflow = 'auto';
+                startIntegrityCheck();
+            }, 500);
+        } else {
+            errorMsg.style.display = 'block';
+            lockBox.style.animation = 'none';
+            lockBox.offsetHeight;
+            lockBox.style.animation = 'shake 0.3s ease-in-out';
+            document.getElementById('site-pw-input').value = '';
+        }
+    } catch (e) {
+        console.error("Errore password:", e);
     }
 }
 
 function startProtection() {
+    // Observer per rilevare manipolazioni DOM
     const observer = new MutationObserver(() => {
-        if (sessionStorage.getItem('unlocked') !== SECRET_HASH) {
-            if (!document.getElementById('site-lock-overlay')) {
+        const unlocked = originalGetItem('unlocked');
+        const overlay = document.getElementById('site-lock-overlay');
+        
+        // Se l'overlay è stato rimosso senza password valida
+        if (!overlay && unlocked !== SECRET_HASH) {
+            location.reload();
+        }
+        
+        // Se la sessione è valida ma l'overlay esiste ancora
+        if (overlay && unlocked === SECRET_HASH) {
+            overlay.remove();
+            document.body.style.overflow = 'auto';
+        }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+    
+    // Controllo periodico aggiuntivo
+    if (protectionInterval) clearInterval(protectionInterval);
+    protectionInterval = setInterval(() => {
+        const unlocked = originalGetItem('unlocked');
+        const overlay = document.getElementById('site-lock-overlay');
+        const unlockedTime = originalGetItem('unlocked_time');
+        
+        // Se c'è unlocked ma non esiste il timestamp
+        if (unlocked === SECRET_HASH && !unlockedTime) {
+            originalRemoveItem('unlocked');
+            location.reload();
+        }
+        
+        if (unlocked === SECRET_HASH && unlockedTime) {
+            const time = parseInt(unlockedTime);
+            if (Date.now() - time > 24 * 60 * 60 * 1000) {
+                originalRemoveItem('unlocked');
+                originalRemoveItem('unlocked_time');
                 location.reload();
             }
         }
-    });
-    observer.observe(document.body, { childList: true });
+        
+        // Se l'overlay non esiste ma la password non è valida
+        if (!overlay && unlocked !== SECRET_HASH) {
+            location.reload();
+        }
+    }, 1000);
 }
 
-// --- GESTIONE DROPDOWN (NEW) ---
 function setupDropdown() {
     const dropdown = document.getElementById('fw-dropdown');
+    if (!dropdown) return;
     const trigger = dropdown.querySelector('.dropdown-trigger');
     const optionsContainer = document.getElementById('fw-options');
     const currentText = document.getElementById('fw-current');
     const hiddenInput = document.getElementById('fw-filter');
     const allOptions = dropdown.querySelectorAll('.option');
-
+    
     trigger.onclick = (e) => {
         e.stopPropagation();
         optionsContainer.classList.toggle('show');
         dropdown.classList.toggle('active');
     };
-
+    
     allOptions.forEach(opt => {
         opt.onclick = () => {
             const val = opt.getAttribute('data-value');
@@ -109,17 +405,16 @@ function setupDropdown() {
             hiddenInput.value = val;
             optionsContainer.classList.remove('show');
             dropdown.classList.remove('active');
-            applyFilters(); // Richiama il filtro
+            applyFilters(); 
         };
     });
-
+    
     window.addEventListener('click', () => {
         optionsContainer.classList.remove('show');
         dropdown.classList.remove('active');
     });
 }
 
-// --- FILTRI (CON FIX PER BACKPORT) ---
 function applyFilters() {
     const searchTerm = document.getElementById('search-input').value.toLowerCase();
     const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
@@ -127,11 +422,10 @@ function applyFilters() {
     filteredGames = allGames.filter(g => {
         const matchesSearch = g.title.toLowerCase().includes(searchTerm);
         
-        let gameFW = 1; // Default 1 (sempre visibile)
+        let gameFW = 1; 
         if (g.tags && g.tags.length > 0) {
             let foundVersions = [];
             g.tags.forEach(tag => {
-                // Trova TUTTI i numeri prima di .xx (es: [9, 4] da "9.xx + 4.xx")
                 const matches = tag.match(/(\d+)\.xx/gi);
                 if (matches) {
                     matches.forEach(m => {
@@ -142,7 +436,6 @@ function applyFilters() {
             });
 
             if (foundVersions.length > 0) {
-                // Prende la versione più bassa tra quelle disponibili (il backport)
                 gameFW = Math.min(...foundVersions);
             }
         }
@@ -155,7 +448,194 @@ function applyFilters() {
     renderGames();
 }
 
-// --- RENDERING GRIGLIA ---
+function openGameModal(game, event) {
+    if (event && event.button === 2) {
+        event.preventDefault();
+        return false;
+    }
+    
+    if (hasMoved) {
+        hasMoved = false;
+        return false;
+    }
+    
+    hasMoved = false;
+    
+    const modalHeader = document.getElementById('modal-header');
+    modalHeader.style.backgroundImage = `url('${game.image}')`;
+    modalHeader.style.backgroundSize = 'cover';
+    modalHeader.style.backgroundPosition = 'center';
+    
+    document.getElementById('modal-title').textContent = game.title;
+    
+    const tagsContainer = document.getElementById('modal-tags');
+    tagsContainer.innerHTML = (game.tags || []).map(t => `<span class="modal-tag">${t}</span>`).join('');
+    
+    document.getElementById('modal-size').textContent = game.size || 'N/A';
+    
+    const downloadsContainer = document.getElementById('modal-downloads');
+    const hPlay = (game.how_to_play || "").replace(/'/g, "\\'");
+    const dCredits = game.credits_dlc || game.credits_dlcs || '';
+    
+    const createModalBtn = (url, label) => {
+        if (!url || url === "undefined" || url.trim() === "") return '';
+        return `<button onclick="startDownloadFromModal('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">${label}</button>`;
+    };
+    
+    let downloadsHTML = '';
+    
+    if (game.backport7xx_akia || game.backport4xx_akia) {
+        let bp7 = '';
+        if (game.backport7xx_akia) bp7 += `<button onclick="startDownloadFromModal('${game.backport7xx_akia}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">AKIA</button>`;
+        if (game.backport7xx_viki) bp7 += `<button onclick="startDownloadFromModal('${game.backport7xx_viki}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">VIKI</button>`;
+        if (game.backport7xx_buzz) bp7 += `<button onclick="startDownloadFromModal('${game.backport7xx_buzz}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">BUZZ</button>`;
+        
+        let bp4 = '';
+        if (game.backport4xx_akia) bp4 += `<button onclick="startDownloadFromModal('${game.backport4xx_akia}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">AKIA</button>`;
+        if (game.backport4xx_viki) bp4 += `<button onclick="startDownloadFromModal('${game.backport4xx_viki}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">VIKI</button>`;
+        if (game.backport4xx_buzz) bp4 += `<button onclick="startDownloadFromModal('${game.backport4xx_buzz}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">BUZZ</button>`;
+        
+        downloadsHTML = `${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
+    } else if (game.standard_akia || game.backport_akia) {
+        let std = createModalBtn(game.standard_akia, 'AKIA') + createModalBtn(game.standard_viki, 'VIKI') + createModalBtn(game.standard_buzz, 'BUZZ');
+        let bp = createModalBtn(game.backport_akia, 'AKIA') + createModalBtn(game.backport_viki, 'VIKI') + createModalBtn(game.backport_buzz, 'BUZZ');
+        downloadsHTML = `${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
+    } else {
+        downloadsHTML = createModalBtn(game.akia_url, 'AKIA') + createModalBtn(game.viki_url, 'VIKI') + createModalBtn(game.buzz_url, 'BUZZ');
+    }
+    
+    downloadsContainer.innerHTML = downloadsHTML;
+    
+    const dlcSection = document.getElementById('modal-dlc-section');
+    const dlcContainer = document.getElementById('modal-dlc');
+    let dlcBtns = '';
+    if (game.dlc_akia) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_akia}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">AKIA</button>`;
+    if (game.dlc_viki) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_viki}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">VIKI</button>`;
+    if (game.dlc_buzz) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_buzz}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">BUZZ</button>`;
+    
+    if (dlcBtns) {
+        dlcSection.style.display = 'block';
+        dlcContainer.innerHTML = dlcBtns;
+    } else {
+        dlcSection.style.display = 'none';
+    }
+    
+    let parts = [];
+    const fileAuthor = game.credits_files;
+    const bpAuthor = game.credits_backport;
+    const dlcAuthor = game.credits_dlc || game.credits_dlcs;
+    
+    if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
+        parts.push(`<b>${fileAuthor}</b> for the Files with DLCs`);
+    } else {
+        if (fileAuthor) parts.push(`<b>${fileAuthor}</b> for the Files`);
+        if (dlcAuthor) parts.push(`<b>${dlcAuthor}</b> for DLCs`);
+    }
+    if (bpAuthor) parts.push(`<b>${bpAuthor}</b> for the BackPort`);
+    
+    let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
+    document.getElementById('modal-credits').innerHTML = creditsText;
+    
+    const instSection = document.getElementById('modal-instructions');
+    if (game.how_to_play) {
+        instSection.style.display = 'block';
+        document.getElementById('modal-instructions-text').innerHTML = game.how_to_play;
+    } else {
+        instSection.style.display = 'none';
+    }
+    
+    const updatesSection = document.getElementById('modal-updates');
+    const updatesList = document.getElementById('modal-updates-list');
+    const updates = allUpdates[game.title];
+    if (updates && updates.length > 0) {
+        updatesSection.style.display = 'block';
+        updatesList.innerHTML = updates.map(upd => {
+            const dp = upd.date.split('-');
+            const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date;
+            return `
+                <div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:12px; margin-bottom:8px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+                        <div>
+                            <strong>${upd.version}</strong> <small style="opacity:0.6;">(${upd.size || 'N/A'})</small><br>
+                            <small style="color:var(--cyan-neon);">Released: ${formattedDate}</small>
+                        </div>
+                        <div style="display:flex; gap:8px;">
+                            ${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">AKIA</a>` : ''}
+                            ${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VIKI</a>` : ''}
+                            ${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">BUZZ</a>` : ''}
+                        </div>
+                    </div>
+                </div>`;
+        }).join('');
+    } else {
+        updatesSection.style.display = 'none';
+    }
+    
+    const creditsModal = document.getElementById('credits-modal');
+    if (creditsModal) {
+        creditsModal.style.display = 'none';
+    }
+    
+    document.getElementById('game-detail-modal').style.display = 'block';
+}
+
+function startDownloadFromModal(url, fAuth, bAuth, dAuth, hPlay, isDLC, gameTitle) {
+    openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, gameTitle);
+}
+
+function renderPopularGames() {
+    const track = document.getElementById('popular-track');
+    const section = document.getElementById('popular-section');
+    if (!track || !section) return;
+
+    const popularGames = allGames.filter(g => g.popular === "on");
+    
+    if (popularGames.length === 0) {
+        section.style.display = 'none';
+        return;
+    }
+    
+    section.style.display = 'flex';
+    
+    const shuffledGames = [...popularGames];
+    for (let i = shuffledGames.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledGames[i], shuffledGames[j]] = [shuffledGames[j], shuffledGames[i]];
+    }
+    
+    let htmlContent = '';
+
+    shuffledGames.forEach(game => {
+        let updateBadge = '';
+        const updates = allUpdates[game.title];
+        if (updates && updates.length > 0) {
+            const lastUpdateDate = new Date(updates[0].date);
+            const now = new Date();
+            const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60);
+
+            if (diffInHours >= 0 && diffInHours <= 24) {
+                updateBadge = `<div class="update-badge-popular">UPDATE</div>`;
+            }
+        }
+
+        htmlContent += `
+            <div class="popular-card" onclick='openGameModal(${JSON.stringify(game).replace(/'/g, "&#39;")}, event)'>
+                <div class="popular-card-bg" style="background-image: url('${game.image}')"></div>
+                <div class="popular-card-gradient"></div>
+                ${updateBadge}
+                <div class="popular-card-content">
+                    <div class="popular-card-header">
+                        <div class="popular-game-title">${game.title}</div>
+                        ${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}
+                    </div>
+                </div>
+                <div class="click-hint">✨ Click for details</div>
+            </div>`;
+    });
+
+    track.innerHTML = htmlContent + htmlContent;
+}
+
 function renderGames() {
     const grid = document.getElementById('game-grid');
     if (!grid) return;
@@ -166,6 +646,7 @@ function renderGames() {
 
     if (pageItems.length === 0) {
         grid.innerHTML = '<p style="text-align:center; width:100%; font-size:1.5rem;">No games found.</p>';
+        return;
     }
 
     pageItems.forEach(game => {
@@ -227,7 +708,6 @@ function renderGames() {
     document.getElementById('next-page').disabled = currentPage >= totalPages;
 }
 
-// --- MODALE DOWNLOAD ---
 function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, gameTitle) {
     let parts = [];
     const clean = (str) => (str && str !== "undefined" && str.trim() !== "") ? str.trim() : null;
@@ -295,7 +775,19 @@ window.revealPassword = () => {
     document.getElementById('pw-final').style.display = 'block';
 };
 
-// --- EVENTI ---
+document.getElementById('modal-close-btn').onclick = () => {
+    document.getElementById('game-detail-modal').style.display = 'none';
+};
+
+window.onclick = (e) => {
+    if (e.target.classList.contains('game-modal')) {
+        e.target.style.display = 'none';
+    }
+    if (e.target.classList.contains('modal')) {
+        e.target.style.display = 'none';
+    }
+};
+
 window.addEventListener('DOMContentLoaded', init);
 
 window.addEventListener('scroll', () => {
@@ -327,4 +819,3 @@ document.getElementById('dmca-link').onclick = async () => {
 
 document.getElementById('close-credits').onclick = () => document.getElementById('credits-modal').style.display = "none";
 document.getElementById('close-dmca').onclick = () => document.getElementById('dmca-modal').style.display = "none";
-window.onclick = (e) => { if (e.target.classList.contains('modal')) e.target.style.display = "none"; };
