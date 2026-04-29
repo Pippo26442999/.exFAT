@@ -1,5 +1,24 @@
 [
   {
+    "title": "FATAL FURY: City of the Wolves",
+    "image": "exFAT/FATAL_FURY_City_of_the_Wolves.jpg",
+    "tags": [
+      "PPSA19359",
+      "v01.000",
+      "JPN",
+      "Standard (7.xx) + 4.xx BackPork"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVEEzQ0doV2hobTQvYjBoMHM1SDFmcEd6cW16eWJTWnVjVzAxSnpoVVNGaThRY0Q0VURyUXorSHVIMmxHTDF5N3BLc3pINnNKIiwicyI6Im1RRzhJQ3hhd29ncEpqdW9ZQ1l0VUE9PSIsImkiOiJqQ3hxcUpDRFRHMDFkNjd4In0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUi9mREVoRUpXVCt4ekE5aDY0R2h1RHRBM216dmlKbXBWZ0xBUlU0UkZzSkdYMm1QbzRWZC9iWitQUE52THVpSDRycVMiLCJzIjoiUFlNTURpM1RnK2VxVFl1elQ2Vk9jQT09IiwiaSI6IlY5Nlc3QmgvZ3Vzb2U5WG4ifQ==",
+    "standard_buzz": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUEs0M1ZpSDgzQ3JwanhmblowTHBaMy9xWnJpODRtVFhmcTBsWThzM3piUmRqeTVJbW9OY0VQZEh0MWxKSzhmNmVkNzlFZz09IiwicyI6ImJ4VDJjWGQwYWd0Zk9MNDkyZ1BNSlE9PSIsImkiOiJsSytKYVZ2NitkNmRSbnpzIn0=",
+    "backport_akia": "",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUGVZOStHY0NwelVsaXE0d3hyZ1ROcVlKbW4vWGpzMTZaRTRPaEJwdTRDME5zaDR3MXAzVlQzNk13eFlzQlJmT3J0OEkiLCJzIjoicVZYcmFPUmV2RXVmOEhpdHZaTWFuQT09IiwiaSI6Im5sNDdlbFFVMUtiS1JZNnYifQ==",
+    "backport_buzz": "",
+    "credits_files": "SiESPTA",
+    "credits_backport": "BestPig",
+    "size": "54GB"
+  },
+  {
     "title": "Tomb Raider I-III Remastered",
     "image": "exFAT/Tomb_Raider_I-III_Remastered.avif",
     "tags": [
@@ -566,21 +585,6 @@
     "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK0FaZWJ2RVFqWlhJNlNPTDdRNHc2YXd3SnRsOVBDZ2ZFTklYcXBSbXp5T1dqOU5FSXVCOHZueURUak85WEN1VzBHREx5Zz09IiwicyI6Im14MVM1b045akpxRnpzQnozNXlBVmc9PSIsImkiOiJmVDhOekd1WHlYVzlBRXNkIn0=",
     "credits_files": "High-Speed007",
     "size": "13GB"
-  },
-  {
-    "title": "FATAL FURY: City of the Wolves",
-    "image": "exFAT/FATAL_FURY_City_of_the_Wolves.jpg",
-    "tags": [
-      "PPSA19359",
-      "v01.000",
-      "JPN",
-      "7.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVEEzQ0doV2hobTQvYjBoMHM1SDFmcEd6cW16eWJTWnVjVzAxSnpoVVNGaThRY0Q0VURyUXorSHVIMmxHTDF5N3BLc3pINnNKIiwicyI6Im1RRzhJQ3hhd29ncEpqdW9ZQ1l0VUE9PSIsImkiOiJqQ3hxcUpDRFRHMDFkNjd4In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUi9mREVoRUpXVCt4ekE5aDY0R2h1RHRBM216dmlKbXBWZ0xBUlU0UkZzSkdYMm1QbzRWZC9iWitQUE52THVpSDRycVMiLCJzIjoiUFlNTURpM1RnK2VxVFl1elQ2Vk9jQT09IiwiaSI6IlY5Nlc3QmgvZ3Vzb2U5WG4ifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUEs0M1ZpSDgzQ3JwanhmblowTHBaMy9xWnJpODRtVFhmcTBsWThzM3piUmRqeTVJbW9OY0VQZEh0MWxKSzhmNmVkNzlFZz09IiwicyI6ImJ4VDJjWGQwYWd0Zk9MNDkyZ1BNSlE9PSIsImkiOiJsSytKYVZ2NitkNmRSbnpzIn0=",
-    "credits_files": "SiESPTA",
-    "size": "54GB"
   },
   {
     "title": "SAND LAND",
@@ -1583,7 +1587,7 @@
     "size": "31GB"
   },
   {
-    "title": "FC 25",
+    "title": "EA Sports FC 25",
     "image": "exFAT/FC_25.png",
     "tags": [
       "PPSA20049",
