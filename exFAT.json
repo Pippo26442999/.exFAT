@@ -1,5 +1,23 @@
 [
   {
+    "title": "ELDEN RING NIGHTREIGN",
+    "image": "exFAT/ELDEN_RING_NIGHTREIGN.png",
+    "tags": [
+      "PPSA25381",
+      "v01.000.000",
+      "JPN",
+      "Standard (9.xx) + 4.xx BackPork"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN1h6L2VFNXduRG5ZVTVQV0JVYjlCU1JnalRXWnJOeE9wYzQ3QmNPMDA1QVRlcGhBR0crUzBuMjhLSUtTYmxqUUw2YWI3dVpIIiwicyI6ImMxcEZkdzFycDVIQkNYRWVJaEYxVUE9PSIsImkiOiI1Q2t2byt4WlFuN3pwL05zIn0=",
+    "backport_akia": "",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUVJ4eEJlR29JOWZYRy82QVYrSXpOV05mckgyZDVjY3VwV09HdGtLWllhSEptaG5jVFFzZHMzT2RnMzlXMDBydnI5MkMiLCJzIjoiL050Snc4Nmt2MjZMalF4bXhXcHVUZz09IiwiaSI6ImtWNU9JVnQ3STd1U3VQbm0ifQ==",
+    "backport_buzz": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVHdCQThmYm0rTXhaaXlOaG4rZ3NjQndaVnI1aDRITFpRcUZGVldpSzZDUzJPOUx3eDdBRE50QkYzWGFFS3hpV0R2ek8ydz09IiwicyI6Ijd4Mk1tSmtGNFJXUXNwR3VTOFNFT1E9PSIsImkiOiJ2dzlMK0IvM05pcmZKN3pDIn0=",
+    "credits_files": "DUPLEX & SiESPTA",
+    "popular": "on",
+    "credits_backport": "BestPig",
+    "size": "40GB"
+  },
+  {
     "title": "Infinity Strash DRAGON QUEST The Adventure of Dai",
     "image": "exFAT/Infinity_Strash_DRAGON_QUEST_The_Adventure_of_Dai.avif",
     "tags": [
@@ -1392,20 +1410,6 @@
     "credits_backport": "Kira",
     "popular": "on",
     "size": "42GB"
-  },
-  {
-    "title": "ELDEN RING NIGHTREIGN",
-    "image": "exFAT/ELDEN_RING_NIGHTREIGN.png",
-    "tags": [
-      "PPSA25381",
-      "v01.000.000",
-      "JPN",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN1h6L2VFNXduRG5ZVTVQV0JVYjlCU1JnalRXWnJOeE9wYzQ3QmNPMDA1QVRlcGhBR0crUzBuMjhLSUtTYmxqUUw2YWI3dVpIIiwicyI6ImMxcEZkdzFycDVIQkNYRWVJaEYxVUE9PSIsImkiOiI1Q2t2byt4WlFuN3pwL05zIn0=",
-    "credits_files": "DUPLEX & SiESPTA",
-    "popular": "on",
-    "size": "40GB"
   },
   {
     "title": "Mafia The Old Country: Deluxe Edition",
