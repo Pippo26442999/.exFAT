@@ -1,4 +1,25 @@
 [
+   {
+    "title": "TEKKEN 8",
+    "image": "exFAT/TEKKEN_8.png",
+    "tags": [
+      "PPSA10595",
+      "v02.006.001",
+      "USA to EUR Languages",
+      "Standard (7.xx) + 4.xx BackPork"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZnhEeGJxMmVUcDAxUFk5eXhMYXFTTnZFRVNFZFJjS2NHME9xcm5ibng3T1I3S0IzcTV3TEFwVGpKU3dBTityR2pEcG93TTcyIiwicyI6IndnUjFrSGpWYTJjS3h6MkRScm4yWHc9PSIsImkiOiJoZkVqQ2xTdFBpaTRQWWk5In0=",
+    "backport_akia": "",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNlFENFVMTUg4NmFhbm9OcHJ3eWhmNllpZGs4a3hzK2NmNjhqRmZWOFMzUjducEVmZTIzNkJ4SFkyazRXdjMzTnJEa1EiLCJzIjoiS2loYk5xLzI0TzRteUhQZFFmL0h0UT09IiwiaSI6ImM1SlJjMVRTbUFnTjJPM3AifQ==",
+    "backport_buzz": "",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL1NnbGVoZzFvdnhaWlNYVXZNTkxnZ1JUV3g4Y3ZZYzdXeGxNSXlwY1Y0WU44c3pyNjkrTkczS3ByY1M1L0ttblk0UjYrNGFtIiwicyI6Im82Mld0Y3ZNa2JKeTIzVU1wSGxsK1E9PSIsImkiOiI0YVYweTM1SGxiclFuL1dsIn0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTlo2L212cEpKZHU5QTkwbVhnN2hIY1g4TjFJQk1xRzl1dkcyM1BCWlJZK3J0RHNCUXZLai9JYit3bENWWnZZdlhuakkiLCJzIjoiS09YV21SL1lLYkp1TjBiZ0pYOWp2Zz09IiwiaSI6InIyanJXRUlOeGdhbVByK1kifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "Pkykzhack",
+    "credits_backport": "BestPig",
+    "popular": "on",
+    "size": "172GB"
+  },
   {
     "title": "Dead Island 2 Ultimate Edition",
     "image": "exFAT/Dead_Island_2.avif",
@@ -1376,22 +1397,6 @@
     "how_to_play": "• Ignore if you already have account with fake sign in - Download offact by ps5-payload-dev and active the account (better if is a new one) then download np-fake-signin by earthonion, send the .elf to your PS5 and before restart the console on your connection add this DNS 127.0.0.1 or turn off the connection. Enjoy.",
     "popular": "on",
     "size": "223GB"
-  },
-  {
-    "title": "TEKKEN 8",
-    "image": "exFAT/TEKKEN_8.png",
-    "tags": [
-      "PPSA10595",
-      "v01.685.672",
-      "USA to EUR Languages",
-      "7.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZnhEeGJxMmVUcDAxUFk5eXhMYXFTTnZFRVNFZFJjS2NHME9xcm5ibng3T1I3S0IzcTV3TEFwVGpKU3dBTityR2pEcG93TTcyIiwicyI6IndnUjFrSGpWYTJjS3h6MkRScm4yWHc9PSIsImkiOiJoZkVqQ2xTdFBpaTRQWWk5In0=",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL1NnbGVoZzFvdnhaWlNYVXZNTkxnZ1JUV3g4Y3ZZYzdXeGxNSXlwY1Y0WU44c3pyNjkrTkczS3ByY1M1L0ttblk0UjYrNGFtIiwicyI6Im82Mld0Y3ZNa2JKeTIzVU1wSGxsK1E9PSIsImkiOiI0YVYweTM1SGxiclFuL1dsIn0=",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "Pkykzhack",
-    "popular": "on",
-    "size": "172GB"
   },
   {
     "title": "Mortal Kombat 1",
