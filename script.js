@@ -472,34 +472,64 @@ function openGameModal(game, event) {
     
     let downloadsHTML = '';
     
-    if (game.backport7xx_akia || game.backport4xx_akia) {
+    // Controllo se ESISTE ALMENO UN campo backport (7.xx o 4.xx)
+    const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data;
+    const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data;
+    
+    if (hasBackport7 || hasBackport4) {
         let bp7 = '';
-        if (game.backport7xx_akia) bp7 += `<button onclick="startDownloadFromModal('${game.backport7xx_akia}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">AKIA</button>`;
-        if (game.backport7xx_viki) bp7 += `<button onclick="startDownloadFromModal('${game.backport7xx_viki}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">VIKI</button>`;
-        if (game.backport7xx_buzz) bp7 += `<button onclick="startDownloadFromModal('${game.backport7xx_buzz}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">BUZZ</button>`;
+        if (hasBackport7) {
+            if (game.backport7xx_akia) bp7 += createModalBtn(game.backport7xx_akia, 'AKIA');
+            if (game.backport7xx_viki) bp7 += createModalBtn(game.backport7xx_viki, 'VIKI');
+            if (game.backport7xx_buzz) bp7 += createModalBtn(game.backport7xx_buzz, 'BUZZ');
+            if (game.backport7xx_data) bp7 += createModalBtn(game.backport7xx_data, 'DATA');
+        }
         
         let bp4 = '';
-        if (game.backport4xx_akia) bp4 += `<button onclick="startDownloadFromModal('${game.backport4xx_akia}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">AKIA</button>`;
-        if (game.backport4xx_viki) bp4 += `<button onclick="startDownloadFromModal('${game.backport4xx_viki}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">VIKI</button>`;
-        if (game.backport4xx_buzz) bp4 += `<button onclick="startDownloadFromModal('${game.backport4xx_buzz}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">BUZZ</button>`;
+        if (hasBackport4) {
+            if (game.backport4xx_akia) bp4 += createModalBtn(game.backport4xx_akia, 'AKIA');
+            if (game.backport4xx_viki) bp4 += createModalBtn(game.backport4xx_viki, 'VIKI');
+            if (game.backport4xx_buzz) bp4 += createModalBtn(game.backport4xx_buzz, 'BUZZ');
+            if (game.backport4xx_data) bp4 += createModalBtn(game.backport4xx_data, 'DATA');
+        }
         
         downloadsHTML = `${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
-    } else if (game.standard_akia || game.backport_akia) {
-        let std = createModalBtn(game.standard_akia, 'AKIA') + createModalBtn(game.standard_viki, 'VIKI') + createModalBtn(game.standard_buzz, 'BUZZ');
-        let bp = createModalBtn(game.backport_akia, 'AKIA') + createModalBtn(game.backport_viki, 'VIKI') + createModalBtn(game.backport_buzz, 'BUZZ');
+    } 
+    else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data) {
+        let std = '';
+        if (game.standard_akia) std += createModalBtn(game.standard_akia, 'AKIA');
+        if (game.standard_viki) std += createModalBtn(game.standard_viki, 'VIKI');
+        if (game.standard_buzz) std += createModalBtn(game.standard_buzz, 'BUZZ');
+        if (game.standard_data) std += createModalBtn(game.standard_data, 'DATA');
+        
+        let bp = '';
+        if (game.backport_akia) bp += createModalBtn(game.backport_akia, 'AKIA');
+        if (game.backport_viki) bp += createModalBtn(game.backport_viki, 'VIKI');
+        if (game.backport_buzz) bp += createModalBtn(game.backport_buzz, 'BUZZ');
+        if (game.backport_data) bp += createModalBtn(game.backport_data, 'DATA');
+        
         downloadsHTML = `${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
-    } else {
-        downloadsHTML = createModalBtn(game.akia_url, 'AKIA') + createModalBtn(game.viki_url, 'VIKI') + createModalBtn(game.buzz_url, 'BUZZ');
+    } 
+    else {
+        // Giochi semplici
+        let btns = '';
+        if (game.akia_url) btns += createModalBtn(game.akia_url, 'AKIA');
+        if (game.viki_url) btns += createModalBtn(game.viki_url, 'VIKI');
+        if (game.buzz_url) btns += createModalBtn(game.buzz_url, 'BUZZ');
+        if (game.data_url) btns += createModalBtn(game.data_url, 'DATA');
+        downloadsHTML = btns;
     }
     
     downloadsContainer.innerHTML = downloadsHTML;
     
+    // DLCs section
     const dlcSection = document.getElementById('modal-dlc-section');
     const dlcContainer = document.getElementById('modal-dlc');
     let dlcBtns = '';
     if (game.dlc_akia) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_akia}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">AKIA</button>`;
     if (game.dlc_viki) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_viki}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">VIKI</button>`;
     if (game.dlc_buzz) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_buzz}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">BUZZ</button>`;
+    if (game.dlc_data) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_data}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">DATA</button>`;
     
     if (dlcBtns) {
         dlcSection.style.display = 'block';
@@ -551,6 +581,7 @@ function openGameModal(game, event) {
                             ${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">AKIA</a>` : ''}
                             ${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VIKI</a>` : ''}
                             ${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">BUZZ</a>` : ''}
+                            ${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">DATA</a>` : ''}
                         </div>
                     </div>
                 </div>`;
@@ -623,7 +654,6 @@ function renderPopularGames() {
 
     track.innerHTML = htmlContent + htmlContent;
     
-    // Variabili per long press
     let pressTimer = null;
     let isLongPressActive = false;
     let touchMoved = false;
@@ -631,11 +661,9 @@ function renderPopularGames() {
     const cards = document.querySelectorAll('.popular-card');
     
     cards.forEach(card => {
-        // Rimuovi listener esistenti
         const oldCard = card.cloneNode(true);
         card.parentNode.replaceChild(oldCard, card);
         
-        // Gestione click (desktop e tap breve)
         oldCard.addEventListener('click', function(e) {
             e.stopPropagation();
             if (isLongPressActive) {
@@ -654,21 +682,15 @@ function renderPopularGames() {
             }
         });
         
-        // Gestione touch start (per long press) - TEMPO RIDOTTO A 200ms
         oldCard.addEventListener('touchstart', function(e) {
             touchMoved = false;
             isLongPressActive = false;
             window._isLongPress = false;
             
             pressTimer = setTimeout(() => {
-                // Long press rilevato! Attiva il drag
                 isLongPressActive = true;
                 window._isLongPress = true;
-                
-                // Feedback visivo
                 this.style.opacity = '0.7';
-                
-                // Attiva il drag sul container
                 const container = document.getElementById('carousel-container');
                 const dragEvent = new TouchEvent('touchstart', {
                     touches: e.touches,
@@ -676,10 +698,9 @@ function renderPopularGames() {
                     cancelable: true
                 });
                 container.dispatchEvent(dragEvent);
-            }, 200); // <- TEMPO RIDOTTO A 200ms
+            }, 200);
         });
         
-        // Gestione touch move
         oldCard.addEventListener('touchmove', function(e) {
             touchMoved = true;
             if (pressTimer) {
@@ -688,18 +709,13 @@ function renderPopularGames() {
             }
         });
         
-        // Gestione touch end
         oldCard.addEventListener('touchend', function(e) {
             if (pressTimer) {
                 clearTimeout(pressTimer);
                 pressTimer = null;
             }
-            
             this.style.opacity = '';
-            
-            // Se non è long press e non c'è movimento, è un tap
             if (!isLongPressActive && !touchMoved) {
-                // Simula click per aprire modale
                 setTimeout(() => {
                     if (!window._wasDrag) {
                         const clickEvent = new MouseEvent('click', {
@@ -711,15 +727,12 @@ function renderPopularGames() {
                     }
                 }, 10);
             }
-            
-            // Reset long press dopo un breve delay
             setTimeout(() => {
                 window._isLongPress = false;
                 isLongPressActive = false;
             }, 100);
         });
         
-        // Gestione touch cancel
         oldCard.addEventListener('touchcancel', function(e) {
             if (pressTimer) {
                 clearTimeout(pressTimer);
@@ -770,19 +783,61 @@ function renderGames() {
         };
 
         let downloadHTML = '';
-        let dlcBtns = createBtn(game.dlc_akia, 'AKIA', true) + createBtn(game.dlc_viki, 'VIKI', true) + createBtn(game.dlc_buzz, 'BUZZ', true);
+        
+        // DLCs
+        let dlcBtns = '';
+        if (game.dlc_akia) dlcBtns += createBtn(game.dlc_akia, 'AKIA', true);
+        if (game.dlc_viki) dlcBtns += createBtn(game.dlc_viki, 'VIKI', true);
+        if (game.dlc_buzz) dlcBtns += createBtn(game.dlc_buzz, 'BUZZ', true);
+        if (game.dlc_data) dlcBtns += createBtn(game.dlc_data, 'DATA', true);
         let dlcSection = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
 
-        if (game.backport7xx_akia || game.backport4xx_akia) {
-            let bp7 = createBtn(game.backport7xx_akia, 'AKIA') + createBtn(game.backport7xx_viki, 'VIKI') + createBtn(game.backport7xx_buzz, 'BUZZ');
-            let bp4 = createBtn(game.backport4xx_akia, 'AKIA') + createBtn(game.backport4xx_viki, 'VIKI') + createBtn(game.backport4xx_buzz, 'BUZZ');
+        // Controllo se ESISTE ALMENO UN campo backport (7.xx o 4.xx)
+        const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data;
+        const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data;
+        
+        if (hasBackport7 || hasBackport4) {
+            let bp7 = '';
+            if (hasBackport7) {
+                if (game.backport7xx_akia) bp7 += createBtn(game.backport7xx_akia, 'AKIA');
+                if (game.backport7xx_viki) bp7 += createBtn(game.backport7xx_viki, 'VIKI');
+                if (game.backport7xx_buzz) bp7 += createBtn(game.backport7xx_buzz, 'BUZZ');
+                if (game.backport7xx_data) bp7 += createBtn(game.backport7xx_data, 'DATA');
+            }
+            
+            let bp4 = '';
+            if (hasBackport4) {
+                if (game.backport4xx_akia) bp4 += createBtn(game.backport4xx_akia, 'AKIA');
+                if (game.backport4xx_viki) bp4 += createBtn(game.backport4xx_viki, 'VIKI');
+                if (game.backport4xx_buzz) bp4 += createBtn(game.backport4xx_buzz, 'BUZZ');
+                if (game.backport4xx_data) bp4 += createBtn(game.backport4xx_data, 'DATA');
+            }
+            
             downloadHTML = `${bp7 ? `<p class="ver-label"><b>BP 7.xx:</b></p><div class="download-container">${bp7}</div>` : ''}${bp4 ? `<p class="ver-label"><b>BP 4.xx:</b></p><div class="download-container">${bp4}</div>` : ''}`;
-        } else if (game.standard_akia || game.backport_akia) {
-            let std = createBtn(game.standard_akia, 'AKIA') + createBtn(game.standard_viki, 'VIKI') + createBtn(game.standard_buzz, 'BUZZ');
-            let bp = createBtn(game.backport_akia, 'AKIA') + createBtn(game.backport_viki, 'VIKI') + createBtn(game.backport_buzz, 'BUZZ');
+        } 
+        else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data) {
+            let std = '';
+            if (game.standard_akia) std += createBtn(game.standard_akia, 'AKIA');
+            if (game.standard_viki) std += createBtn(game.standard_viki, 'VIKI');
+            if (game.standard_buzz) std += createBtn(game.standard_buzz, 'BUZZ');
+            if (game.standard_data) std += createBtn(game.standard_data, 'DATA');
+            
+            let bp = '';
+            if (game.backport_akia) bp += createBtn(game.backport_akia, 'AKIA');
+            if (game.backport_viki) bp += createBtn(game.backport_viki, 'VIKI');
+            if (game.backport_buzz) bp += createBtn(game.backport_buzz, 'BUZZ');
+            if (game.backport_data) bp += createBtn(game.backport_data, 'DATA');
+            
             downloadHTML = `${std ? `<p class="ver-label"><b>STANDARD:</b></p><div class="download-container">${std}</div>` : ''}${bp ? `<p class="ver-label"><b>BACKPORT:</b></p><div class="download-container">${bp}</div>` : ''}`;
-        } else {
-            downloadHTML = `<div class="download-container" style="margin-top:15px;">${createBtn(game.akia_url, 'AKIA') + createBtn(game.viki_url, 'VIKI') + createBtn(game.buzz_url, 'BUZZ')}</div>`;
+        } 
+        else {
+            // Giochi semplici
+            let btns = '';
+            if (game.akia_url) btns += createBtn(game.akia_url, 'AKIA');
+            if (game.viki_url) btns += createBtn(game.viki_url, 'VIKI');
+            if (game.buzz_url) btns += createBtn(game.buzz_url, 'BUZZ');
+            if (game.data_url) btns += createBtn(game.data_url, 'DATA');
+            downloadHTML = `<div class="download-container" style="margin-top:15px;">${btns}</div>`;
         }
 
         grid.innerHTML += `
@@ -843,6 +898,7 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, gameTitle) {
                                 ${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" style="padding:4px 8px; background:var(--bg-1); border:1px solid var(--cyan-neon); color:var(--cyan-neon); border-radius:5px; font-size:0.65rem; text-decoration:none; font-weight:900;">AKIA</a>` : ''}
                                 ${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" style="padding:4px 8px; background:var(--bg-1); border:1px solid var(--cyan-neon); color:var(--cyan-neon); border-radius:5px; font-size:0.65rem; text-decoration:none; font-weight:900;">VIKI</a>` : ''}
                                 ${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" style="padding:4px 8px; background:var(--bg-1); border:1px solid var(--cyan-neon); color:var(--cyan-neon); border-radius:5px; font-size:0.65rem; text-decoration:none; font-weight:900;">BUZZ</a>` : ''}
+                                ${upd.data_url ? `<a href="${upd.data_url}" target="_blank" style="padding:4px 8px; background:var(--bg-1); border:1px solid var(--cyan-neon); color:var(--cyan-neon); border-radius:5px; font-size:0.65rem; text-decoration:none; font-weight:900;">DATA</a>` : ''}
                             </div>
                         </div>`;
                     }).join('')}
