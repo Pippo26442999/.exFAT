@@ -1,5 +1,24 @@
 [
   {
+    "title": "Hogwarts Legacy",
+    "image": "exFAT/Hogwarts_Legacy.avif",
+    "tags": [
+      "PPSA04609",
+      "v01.010",
+      "USA to EUR Languages",
+      "4.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOHZKY0d5Q3BTMTJXVm9vZ09QNEpBVnNlZ1k3NW0wRkZkV2VSVWdmTFhwNlhhNGZkdEtQRmNMTW1CS0FWWWJpOHMxWXIiLCJzIjoiUm4vYm1PakxQQmtRbWRGZWR6c0lsUT09IiwiaSI6IjV4bnlUbWdkUk9QSmFYNmwifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoianBybnIwaFpBOURQdm5pemgveXhFLzhnMG1qMlhYeFJLWkdWOENkYWh1K3ZlMWVSamRHUGdiRXBHTUx5RGxRdjJBPT0iLCJzIjoiajVLK0tTd3ZKRWFtTlB5Y3NFS1QxQT09IiwiaSI6Ii9GZ3hFWFdwYmtEd0dSeS8ifQ==",
+    "dlc_akia": "",
+    "dlc_viki": "",
+    "credits_files": "SiESPTA",
+    "credits_backport": "BestPig",
+    "popular": "on",
+    "size": "204GB"
+  },
+  {
     "title": "ELDEN RING Shadow of the Erdtree Edition",
     "image": "exFAT/Elden_Ring.avif",
     "tags": [
