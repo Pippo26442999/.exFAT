@@ -1,4 +1,23 @@
 [
+   {
+    "title": "Wo Long Fallen Dynasty",
+    "image": "exFAT/Wo_Long_Fallen_Dynasty.jpg",
+    "tags": [
+      "PPSA08772",
+      "v01.027",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV3NBM2E3OXZ6L0JBTUpodEJydTVGc2dsdnRwZno1cEcrUmVpaUp1MURrK1BwNlJJV1RGL2RLeXZrSFNUL1B3bXlBPT0iLCJzIjoidUJhZmM0QlJaOG5lTTl6Tmh2TmhPZz09IiwiaSI6IklRWWRCdnA1SFZROCsxUE8ifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiamFURFFHQXJIWGJhMkE2emRMRDd4ZnR0bUNvelBKSTdySnkxeFB5ZnIyRUcxcjhrMUIwNGRMcEs3NHg2cWFzcm0yeUpHRmJSIiwicyI6ImxHNVU3ZzVxRUVKYnRucWZEVnhJSHc9PSIsImkiOiJtd2ZIM2hnS1phU3VlNkMrIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR2RyUkFsOUdNdzZKcFdxNXhLYXQ5OUNmN0RLZlJhSzZCWHB5RHU1bFBheGNEVnZMRjNhUGRDY0h2M3BndXNFcExnPT0iLCJzIjoiMUdpV3UyRUdlOUtoL1h6QmtHOWxRZz09IiwiaSI6IldVWDA1c1VqNVNBUDdyL1cifQ==",
+    "credits_files": "SiESPTA",
+    "credits_dlc": "Pkykzhack",
+    "credits_backport": "bbaderlink",
+    "size": "101GB"
+  },
   {
     "title": "Silent Hill 2",
     "image": "exFAT/SH2R.avif",
@@ -35,6 +54,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZjBYam1PMHNOMDA4NithS2gzOW1HaVp1eTdndU5UUkZ5MVB2YnlSLy8vbVR3TWk0VjhxTDhPdHF4UStOUFVyQUdmd2ViMCtrIiwicyI6IlNQa0NXZ055ckNuRXZuQkNQSkVxa1E9PSIsImkiOiJpbEg3ekp1TC9TZ3daWGRuIn0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibllOMUxQK2lUSEZacjhrUmxpcWN4VUpMSVQrZDVCbmhhcFFzN3E2dTdMWEJ1M21la0NMbmM0cXVBQ0U3NVAvdmk4RlFqelY2ZVJSQkYrSUxiM3p2UXB2VlJVRkx4L3NUR0E9PSIsInMiOiJaSkdCaEtGNEM2UWZoR3hyMFlIN2dnPT0iLCJpIjoiRU9McmlGTFgwc2x1SGJRSCJ9",
     "credits_files": "SiESPTA",
+    "credits_dlc": "Pkykzhack",
     "credits_backport": "BestPig",
     "popular": "on",
     "size": "204GB"
