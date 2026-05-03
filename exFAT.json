@@ -1,4 +1,23 @@
 [
+   {
+    "title": "Star Wars Jedi Fallen Order",
+    "image": "exFAT/Star_Wars_Jedi_Fallen_Order.webp",
+    "tags": [
+      "PPSA02199",
+      "v01.006",
+      "EUR",
+      "2.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRjBRUS9xWmZYUEFSa0RQMVRVa1NzbllnRkdvaVYwS3NyZzJ6MmROT2hvTkRKMDNMWEgzVlBXU2N1cktXNDdWS2p3PT0iLCJzIjoiKzEvQmpVSldwYVBjZEhJdzhNTXBqZz09IiwiaSI6IjY4NDNKM0loSXo4SE5uMWIifQ==",
+    "dlc_akia": "",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQ2FxS0dSdXo3MU5jTTNEQzFhTmQxQTBLVDZkY28yWC85RXk2eE1sdFlNZnRKa0p1Slp0aGJvejVrY0Z1QWRmUHVBPT0iLCJzIjoiVWIyYXVtZVhoRmVOaHVpY2toTjZLUT09IiwiaSI6IlcrTlJzNmI2T3htTHFMdVQifQ==",
+    "credits_files": "José Carrión & CyB1K",
+    "credits_dlc": "Pkykzhack",
+    "popular": "on",
+    "size": "101GB"
+  },
   {
     "title": "The Elder Scrolls V Skyrim Special Edition",
     "image": "exFAT/The_Elder_Scrolls_V_Skyrim_Special_Edition.webp",
