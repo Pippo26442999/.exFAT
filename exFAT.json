@@ -1,4 +1,20 @@
 [
+   {
+    "title": "Returnal",
+    "image": "exFAT/Returnal.avif",
+    "tags": [
+      "PPSA01285",
+      "v03.005",
+      "EUR",
+      "2.xx and beyond"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoic2pUckdkcVpGekM2Q2N0YVdtK2hqVzZHbTZoZ3hveUl6Nk9OSFN0WXlCYjJWZUhjakxLbktNeHF2TmV4dm90aDJYT3h0YW16IiwicyI6Ikg2bkhRM1AvUktlWFgvOVFTd2MrcWc9PSIsImkiOiI1eFJ5OEV0QmNaWnU5NFkrIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOEExcWR1Rkk5c2Vzem9tbDlXWDh5TUxXRTYxcllsRmxBUUhJcVQ0bzl6blBCNzZRNDY0NUY3M3JlcldVd2I3aVpRSG0iLCJzIjoidU85ZWd0QzM2VUJ3dFdJaUVRQjcvdz09IiwiaSI6ImdTemtpTnh2dmRRRytiUW4ifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUlNONUVTRTZwOWNJRlJVQkdZbHBMWWNHeUdOZ2V5NzZJNjNSYUpuUWd4QnIwV3QxaVU0NmgxSUlNUVhOWHE1KzVBPT0iLCJzIjoidUdqbjY2OFN3OVdtOFplSE9UeHlaQT09IiwiaSI6IlBtUHNPM1J2V0w1QTZSOE4ifQ==", 
+    "how_to_play": "exFAT have some audio crackling, the only way is FFPKG.",
+    "credits_files": "SiESPTA",
+    "size": "144GB"
+  },
   {
     "title": "AEW Fight Forever",
     "image": "exFAT/AEW_Fight_Forever.jpg",
