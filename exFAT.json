@@ -1,5 +1,21 @@
 [
    {
+    "title": "Lollipop Chainsaw RePoP",
+    "image": "exFAT/Lollipop_Chainsaw_RePoP.jpg",
+    "tags": [
+      "PPSA21837",
+      "v01.005.001",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRHlYa3ZUZ1RWMThML0dEVWxqeTZLQ0ZTK0xvOE9vMnpHaTV1QWxIVmRjbUZ0cGRyeE9jNTM1Sk1GNm82ZzRRclRnPT0iLCJzIjoiMVcvRi9ZT083bnl5RjZvSGlFT0ovZz09IiwiaSI6InZ4c25mWnQ2cWQ2QXdiaVkifQ==",
+    "credits_files": "DUPLEX & VanBuuren",
+    "credits_backport": "kerrdec97",
+    "size": "36GB"
+  },
+   {
     "title": "Returnal",
     "image": "exFAT/Returnal.avif",
     "tags": [
