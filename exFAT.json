@@ -1,5 +1,25 @@
 [
   {
+    "title": "God Of War Ragnarok",
+    "image": "exFAT/God_Of_War_Ragnarok.jpg",
+    "tags": [
+      "PPSA08330",
+      "v05.005",
+      "EUR",
+      "4.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicWJRSkVzS0NlUnliVkU5bkF5VDVHK2M5OThUM3UwSjVQa1lSNDcxOWtSc20yOHNPRGhodzd1WW5qeWUrdGNBU1hBPT0iLCJzIjoiektMbWxDTjJjM1B0OTVnTjRuOTVzUT09IiwiaSI6IjZ0aEQvbnZjWCsvQ0xPRlYifQ==",
+    "dlc_akia": "",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiczVaU2hQazliQ01UcHpUWkw2OGxwalNuNm1OaExJK1R4VHFWVmR4c3pDYWFMTTZxTUhNZXRsclJMSzVNVXpod21BPT0iLCJzIjoiUEZ4VDBXQVRRWFZ0MU9hcFMzTVVydz09IiwiaSI6InVuMEFnaVloQzBhUktxYVkifQ==",
+    "credits_files": "DUPLEX & VanBuuren",
+    "credits_dlc": "DUPLEX",
+    "credits_backport": "BestPig",
+    "popular": "on",
+    "size": "184GB"
+  },
+  {
     "title": "MindsEye",
     "image": "exFAT/MindsEye.png",
     "tags": [
