@@ -1,5 +1,24 @@
 [
    {
+    "title": "Evil West",
+    "image": "exFAT/Evil_West.avif",
+    "tags": [
+      "PPSA08105",
+      "v01.005",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRm1WL1VTeGhacmZzZUFhRXQxK3E1LzhhSW5tQ3RTTVllZmNZdEFZOEtjY21XY0tQL281R3NDYWF5NG9odUtFejF3PT0iLCJzIjoiRCs3cXl1TVl4RURWdGsxajg2Ym1iQT09IiwiaSI6IlNiOVk5VjZhYWJxRCt0SjYifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaFdDM1FWbVNBdXNQUHNaSUV1bnBKYTVPbWlyQUtGb0JaRzM2dzA1UzVuSmNub0tHTmVtVGlXWmlHbXFCTVJrU1FNdlRrc0daIiwicyI6Ik1NTkk4Q1BuaktYUVh6STJnUTUyaEE9PSIsImkiOiJLMUdoUG44RDN1d0lzdENNIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNFhFanBaRHJlU0NSRDBmQ3NGUHFjREZ1S043SFZjazRtMjRDbkpERm9uZitOSmRUZm42VTU1K0hoNG9JdE1Wd3RBPT0iLCJzIjoia1F0amgrQjJFZmxJbXdVRVM5VVFXZz09IiwiaSI6IjNNUG5heFo2TDJxSjE2WHIifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "kerrdec97",
+    "popular": "on",
+    "size": "48GB"
+  },
+   {
     "title": "Lies of P: Overture",
     "image": "exFAT/Lies_of_P_Overture.png",
     "tags": [
@@ -20,7 +39,7 @@
     "popular": "on",
     "size": "72GB"
   },
-   {
+  {
     "title": "WWE 2K23",
     "image": "exFAT/WWE_2K23.avif",
     "tags": [
