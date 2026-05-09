@@ -2,27 +2,23 @@ let allGames = [];
 let filteredGames = [];
 let allUpdates = {}; 
 let currentPage = 1;
-let autoScrollInterval = null;
 let isDragging = false;
-let startX = 0;
-let currentTranslate = 0;
 let animationId = null;
 let currentPosition = 0;
-let cardWidth = 575;
-let dragStartTime = 0;
-let dragDistance = 0;
 let hasMoved = false;
 let integrityCheckInterval = null;
 let protectionInterval = null;
 const itemsPerPage = 21;
 const SECRET_HASH = "a2242ead55c94c3deb7cf2340bfef9d5bcaca22dfe66e646745ee4371c633fc8";
 
-// Salva i riferimenti originali
+let searchTimeout = null;
+let isRandomModeActive = false;
+let isTransitioning = false;
+
 const originalSetItem = sessionStorage.setItem.bind(sessionStorage);
 const originalGetItem = sessionStorage.getItem.bind(sessionStorage);
 const originalRemoveItem = sessionStorage.removeItem.bind(sessionStorage);
 
-// Override di sessionStorage.setItem con controllo stack
 sessionStorage.setItem = function(key, value) {
     if (key === 'unlocked' && value === SECRET_HASH) {
         const stack = new Error().stack;
@@ -41,7 +37,6 @@ sessionStorage.setItem = function(key, value) {
     return originalSetItem(key, value);
 };
 
-// Override di sessionStorage.removeItem
 sessionStorage.removeItem = function(key) {
     if (key === 'unlocked' || key === 'unlocked_time') {
         const stack = new Error().stack;
@@ -89,6 +84,25 @@ function startIntegrityCheck() {
     }, 3000);
 }
 
+function setupHintCountdown() {
+    const hintElement = document.querySelector('.search-hint');
+    if (!hintElement) return;
+    
+    const delayMilliseconds = 5000;
+    
+    setTimeout(() => {
+        hintElement.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        hintElement.style.opacity = '0';
+        hintElement.style.transform = 'translateY(30px)';
+        
+        setTimeout(() => {
+            if (hintElement && hintElement.parentNode) {
+                hintElement.style.display = 'none';
+            }
+        }, 600);
+    }, delayMilliseconds);
+}
+
 async function init() {
     if (!checkIntegrity()) return;
     
@@ -115,11 +129,15 @@ async function init() {
     await loadLibrary();
     setupDropdown();
     setupCarousel();
+    setupSearchModal();
+    setupHintCountdown();
+    setupDownloadModal();
+    setupDMCAModal();
+    setupRandomGame();
+    setupModalRandomButton();
     
     if (unlocked === SECRET_HASH) {
-        if (overlay) {
-            overlay.remove();
-        }
+        if (overlay) overlay.remove();
         document.body.style.overflow = 'auto';
         startIntegrityCheck();
         startProtection();
@@ -129,85 +147,581 @@ async function init() {
     }
 }
 
+function updateModalContentWithRipple(game) {
+    if (isTransitioning) return;
+    isTransitioning = true;
+    
+    const modalHeader = document.getElementById('modal-header');
+    const modalBody = document.getElementById('modal-body');
+    const modalTitle = document.getElementById('modal-title');
+    const modalTags = document.getElementById('modal-tags');
+    const modalSize = document.getElementById('modal-size');
+    const downloadsContainer = document.getElementById('modal-downloads');
+    const creditsContainer = document.getElementById('modal-credits');
+    const instSection = document.getElementById('modal-instructions');
+    const instText = document.getElementById('modal-instructions-text');
+    const updatesSection = document.getElementById('modal-updates');
+    const updatesList = document.getElementById('modal-updates-list');
+    const dlcSection = document.getElementById('modal-dlc-section');
+    const dlcContainer = document.getElementById('modal-dlc');
+    
+    // Effetto ripple out
+    modalHeader.classList.add('modal-header-ripple-out');
+    modalBody.classList.add('modal-body-ripple-out');
+    
+    setTimeout(() => {
+        // Aggiorna il contenuto
+        const newImageUrl = game.image;
+        modalHeader.style.backgroundImage = `url('${newImageUrl}')`;
+        modalHeader.style.backgroundSize = 'cover';
+        modalHeader.style.backgroundPosition = 'center';
+        
+        modalTitle.textContent = game.title;
+        modalTags.innerHTML = (game.tags || []).map(t => `<span class="modal-tag">${escapeHtml(t)}</span>`).join('');
+        modalSize.textContent = game.size || 'N/A';
+        
+        const hPlay = (game.how_to_play || "").replace(/'/g, "\\'");
+        const dCredits = game.credits_dlc || game.credits_dlcs || '';
+        
+        const createModalBtn = (url, label) => {
+            if (!url || url === "undefined" || url.trim() === "") return '';
+            return `<button onclick="startDownloadFromModal('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">${label}</button>`;
+        };
+        
+        let downloadsHTML = '';
+        const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data;
+        const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data;
+        if (hasBackport7 || hasBackport4) {
+            let bp7 = '', bp4 = '';
+            if (hasBackport7) {
+                if (game.backport7xx_akia) bp7 += createModalBtn(game.backport7xx_akia, 'AKIA');
+                if (game.backport7xx_viki) bp7 += createModalBtn(game.backport7xx_viki, 'VIKI');
+                if (game.backport7xx_buzz) bp7 += createModalBtn(game.backport7xx_buzz, 'BUZZ');
+                if (game.backport7xx_data) bp7 += createModalBtn(game.backport7xx_data, 'DATA');
+            }
+            if (hasBackport4) {
+                if (game.backport4xx_akia) bp4 += createModalBtn(game.backport4xx_akia, 'AKIA');
+                if (game.backport4xx_viki) bp4 += createModalBtn(game.backport4xx_viki, 'VIKI');
+                if (game.backport4xx_buzz) bp4 += createModalBtn(game.backport4xx_buzz, 'BUZZ');
+                if (game.backport4xx_data) bp4 += createModalBtn(game.backport4xx_data, 'DATA');
+            }
+            downloadsHTML = `${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
+        } else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data) {
+            let std = '', bp = '';
+            if (game.standard_akia) std += createModalBtn(game.standard_akia, 'AKIA');
+            if (game.standard_viki) std += createModalBtn(game.standard_viki, 'VIKI');
+            if (game.standard_buzz) std += createModalBtn(game.standard_buzz, 'BUZZ');
+            if (game.standard_data) std += createModalBtn(game.standard_data, 'DATA');
+            if (game.backport_akia) bp += createModalBtn(game.backport_akia, 'AKIA');
+            if (game.backport_viki) bp += createModalBtn(game.backport_viki, 'VIKI');
+            if (game.backport_buzz) bp += createModalBtn(game.backport_buzz, 'BUZZ');
+            if (game.backport_data) bp += createModalBtn(game.backport_data, 'DATA');
+            downloadsHTML = `${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
+        } else {
+            let btns = '';
+            if (game.akia_url) btns += createModalBtn(game.akia_url, 'AKIA');
+            if (game.viki_url) btns += createModalBtn(game.viki_url, 'VIKI');
+            if (game.buzz_url) btns += createModalBtn(game.buzz_url, 'BUZZ');
+            if (game.data_url) btns += createModalBtn(game.data_url, 'DATA');
+            downloadsHTML = btns;
+        }
+        downloadsContainer.innerHTML = downloadsHTML;
+        
+        let dlcBtns = '';
+        if (game.dlc_akia) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_akia}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">AKIA</button>`;
+        if (game.dlc_viki) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_viki}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">VIKI</button>`;
+        if (game.dlc_buzz) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_buzz}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">BUZZ</button>`;
+        if (game.dlc_data) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_data}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">DATA</button>`;
+        if (dlcBtns) { dlcSection.style.display = 'block'; dlcContainer.innerHTML = dlcBtns; } else { dlcSection.style.display = 'none'; }
+        
+        let parts = [];
+        const fileAuthor = game.credits_files, bpAuthor = game.credits_backport, dlcAuthor = game.credits_dlc || game.credits_dlcs;
+        if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
+        else { if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`); if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`); }
+        if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+        let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
+        creditsContainer.innerHTML = creditsText;
+        
+        if (game.how_to_play) { instSection.style.display = 'block'; instText.innerHTML = game.how_to_play; } else { instSection.style.display = 'none'; }
+        
+        const updates = allUpdates[game.title];
+        if (updates && updates.length > 0) {
+            updatesSection.style.display = 'block';
+            updatesList.innerHTML = updates.map(upd => { const dp = upd.date.split('-'); const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date; return `<div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:12px; margin-bottom:8px;"><div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;"><div><strong>${escapeHtml(upd.version)}</strong> <small style="opacity:0.6;">(${upd.size || 'N/A'})</small><br><small style="color:var(--cyan-neon);">Released: ${formattedDate}</small></div><div style="display:flex; gap:8px;">${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">AKIA</a>` : ''}${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VIKI</a>` : ''}${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">BUZZ</a>` : ''}${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">DATA</a>` : ''}</div></div></div>`; }).join('');
+        } else { updatesSection.style.display = 'none'; }
+        
+        // Rimuovi classi di animazione
+        modalHeader.classList.remove('modal-header-ripple-out');
+        modalBody.classList.remove('modal-body-ripple-out');
+        
+        // Effetto ripple in
+        modalHeader.classList.add('modal-header-ripple-in');
+        modalBody.classList.add('modal-body-ripple-in');
+        
+        setTimeout(() => {
+            modalHeader.classList.remove('modal-header-ripple-in');
+            modalBody.classList.remove('modal-body-ripple-in');
+            isTransitioning = false;
+        }, 350);
+    }, 250);
+}
+
+function setupModalRandomButton() {
+    const modalRandomBtn = document.getElementById('modalRandomBtn');
+    if (!modalRandomBtn) return;
+    
+    modalRandomBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        if (!allGames.length || isTransitioning) return;
+        
+        const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
+        let availableGames = allGames;
+        
+        if (selectedFW !== 99) {
+            availableGames = allGames.filter(g => {
+                let gameFW = 1;
+                if (g.tags && g.tags.length > 0) {
+                    let foundVersions = [];
+                    g.tags.forEach(tag => {
+                        const matches = tag.match(/(\d+)\.xx/gi);
+                        if (matches) {
+                            matches.forEach(m => {
+                                const num = parseInt(m.match(/\d+/)[0], 10);
+                                foundVersions.push(num);
+                            });
+                        }
+                    });
+                    if (foundVersions.length > 0) gameFW = Math.min(...foundVersions);
+                }
+                return gameFW <= selectedFW;
+            });
+        }
+        
+        if (availableGames.length === 0) return;
+        
+        const randomIndex = Math.floor(Math.random() * availableGames.length);
+        const randomGame = availableGames[randomIndex];
+        
+        isRandomModeActive = true;
+        
+        updateModalContentWithRipple(randomGame);
+        
+        const btn = modalRandomBtn;
+        btn.style.transform = 'scale(0.98)';
+        setTimeout(() => {
+            btn.style.transform = '';
+        }, 150);
+    });
+}
+
+function setupRandomGame() {
+    const randomBtn = document.getElementById('navRandomBtn');
+    if (!randomBtn) return;
+    
+    randomBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        if (!allGames.length) return;
+        
+        const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
+        let availableGames = allGames;
+        
+        if (selectedFW !== 99) {
+            availableGames = allGames.filter(g => {
+                let gameFW = 1;
+                if (g.tags && g.tags.length > 0) {
+                    let foundVersions = [];
+                    g.tags.forEach(tag => {
+                        const matches = tag.match(/(\d+)\.xx/gi);
+                        if (matches) {
+                            matches.forEach(m => {
+                                const num = parseInt(m.match(/\d+/)[0], 10);
+                                foundVersions.push(num);
+                            });
+                        }
+                    });
+                    if (foundVersions.length > 0) gameFW = Math.min(...foundVersions);
+                }
+                return gameFW <= selectedFW;
+            });
+        }
+        
+        if (availableGames.length === 0) return;
+        
+        const randomIndex = Math.floor(Math.random() * availableGames.length);
+        const randomGame = availableGames[randomIndex];
+        
+        isRandomModeActive = true;
+        
+        openGameModal(randomGame, null);
+        
+        const img = randomBtn.querySelector('img');
+        if (img) {
+            img.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                img.style.transform = '';
+            }, 150);
+        }
+    });
+}
+
+function setupDownloadModal() {
+    const modal = document.getElementById('download-modal');
+    const closeBtn = document.getElementById('close-download-modal');
+    
+    const closeModal = () => {
+        modal.classList.add('hiding');
+        const container = document.querySelector('#download-modal .download-modal-container');
+        if (container) container.classList.add('closing');
+        
+        setTimeout(() => {
+            modal.classList.remove('show', 'hiding');
+            if (container) container.classList.remove('closing');
+        }, 300);
+    };
+    
+    if (closeBtn) {
+        closeBtn.onclick = closeModal;
+    }
+    
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+}
+
+function showDownloadModal(content, downloadUrl) {
+    const modal = document.getElementById('download-modal');
+    const bodyContainer = document.getElementById('downloadModalBody');
+    const finalBtn = document.getElementById('downloadFinalBtn');
+    const pwHint = document.getElementById('downloadPwHint');
+    const pwValue = document.getElementById('downloadPwValue');
+    
+    modal.classList.remove('hiding');
+    const container = document.querySelector('#download-modal .download-modal-container');
+    if (container) container.classList.remove('closing');
+    
+    if (bodyContainer) bodyContainer.innerHTML = content;
+    if (finalBtn) finalBtn.href = downloadUrl;
+    if (pwHint) pwHint.style.display = 'block';
+    if (pwValue) pwValue.style.display = 'none';
+    
+    modal.classList.add('show');
+}
+
+window.revealDownloadPassword = function() {
+    const pwHint = document.getElementById('downloadPwHint');
+    const pwValue = document.getElementById('downloadPwValue');
+    if (pwHint) pwHint.style.display = 'none';
+    if (pwValue) pwValue.style.display = 'block';
+};
+
+function setupDMCAModal() {
+    const modal = document.getElementById('dmca-modal');
+    const closeBtn = document.getElementById('close-dmca-modal');
+    const dmcaLink = document.getElementById('dmca-link');
+    
+    const closeModal = () => {
+        modal.classList.add('hiding');
+        const container = document.querySelector('#dmca-modal .dmca-modal-container');
+        if (container) container.classList.add('closing');
+        
+        setTimeout(() => {
+            modal.classList.remove('show', 'hiding');
+            if (container) container.classList.remove('closing');
+        }, 300);
+    };
+    
+    if (closeBtn) {
+        closeBtn.onclick = closeModal;
+    }
+    
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    if (dmcaLink) {
+        dmcaLink.onclick = async () => {
+            try {
+                const res = await fetch('DMCA.json');
+                const data = await res.json();
+                const bodyContainer = document.getElementById('dmcaModalBody');
+                if (bodyContainer) {
+                    bodyContainer.innerHTML = `<div class="dmca-text">${data.content.map(p => `<p>${escapeHtml(p)}</p>`).join('')}</div>`;
+                }
+                modal.classList.remove('hiding');
+                const container = document.querySelector('#dmca-modal .dmca-modal-container');
+                if (container) container.classList.remove('closing');
+                modal.classList.add('show');
+            } catch(err) { 
+                console.error(err);
+                const bodyContainer = document.getElementById('dmcaModalBody');
+                if (bodyContainer) {
+                    bodyContainer.innerHTML = '<div class="dmca-text"><p>Errore nel caricamento del contenuto DMCA.</p></div>';
+                }
+                modal.classList.add('show');
+            }
+        };
+    }
+}
+
+function setupSearchModal() {
+    const overlay = document.getElementById('searchModalOverlay');
+    const searchInput = document.getElementById('searchModalInput');
+    const closeBtn = document.getElementById('searchModalCloseBtn');
+    const statsSpan = document.getElementById('searchModalStats');
+    const resultsContainer = document.getElementById('searchResultsContainer');
+    const navBtn = document.getElementById('navSearchBtn');
+    
+    if (!overlay || !searchInput) return;
+    
+    const openSearch = () => {
+        overlay.classList.add('active');
+        searchInput.value = '';
+        updateSearchResults('');
+        setTimeout(() => {
+            searchInput.focus();
+            searchInput.select();
+        }, 50);
+    };
+    
+    const closeSearch = () => {
+        overlay.classList.remove('active');
+        searchInput.value = '';
+        updateSearchResults('');
+        applyFWFilter();
+        currentPage = 1;
+        renderGames();
+        searchInput.blur();
+    };
+    
+    if (navBtn) navBtn.addEventListener('click', openSearch);
+    if (closeBtn) closeBtn.addEventListener('click', closeSearch);
+    
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeSearch();
+    });
+    
+    document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+            e.preventDefault();
+            openSearch();
+        }
+        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            e.preventDefault();
+            closeSearch();
+        }
+    });
+    
+    searchInput.addEventListener('input', (e) => {
+        if (searchTimeout) clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            const term = e.target.value;
+            updateSearchResults(term);
+            performSearchOnGrid(term);
+        }, 200);
+    });
+    
+    searchInput.addEventListener('focus', () => {
+        searchInput.style.animation = 'searchGlow 0.4s ease';
+        setTimeout(() => { if(searchInput) searchInput.style.animation = ''; }, 400);
+    });
+    
+    function updateSearchResults(term) {
+        const lowerTerm = term.toLowerCase().trim();
+        const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
+        
+        if (!lowerTerm) {
+            resultsContainer.innerHTML = '<div class="no-results">Start typing to search for games...</div>';
+            statsSpan.textContent = '0';
+            return;
+        }
+        
+        const searchResults = allGames.filter(g => {
+            const matchesSearch = g.title.toLowerCase().includes(lowerTerm);
+            let gameFW = 1;
+            if (g.tags && g.tags.length > 0) {
+                let foundVersions = [];
+                g.tags.forEach(tag => {
+                    const matches = tag.match(/(\d+)\.xx/gi);
+                    if (matches) {
+                        matches.forEach(m => {
+                            const num = parseInt(m.match(/\d+/)[0], 10);
+                            foundVersions.push(num);
+                        });
+                    }
+                });
+                if (foundVersions.length > 0) gameFW = Math.min(...foundVersions);
+            }
+            const matchesFW = gameFW <= selectedFW;
+            return matchesSearch && matchesFW;
+        });
+        
+        statsSpan.textContent = searchResults.length;
+        statsSpan.style.animation = 'none';
+        statsSpan.offsetHeight;
+        statsSpan.style.animation = 'fadeIn 0.2s ease';
+        if (searchResults.length > 0) {
+            statsSpan.style.color = '#39ff14';
+            setTimeout(() => { if(statsSpan) statsSpan.style.color = ''; }, 400);
+        } else {
+            statsSpan.style.color = '#ff0033';
+            setTimeout(() => { if(statsSpan) statsSpan.style.color = ''; }, 400);
+        }
+        
+        if (searchResults.length === 0) {
+            resultsContainer.innerHTML = '<div class="no-results">😔 Nessun gioco trovato per "' + escapeHtml(lowerTerm) + '"</div>';
+            return;
+        }
+        
+        resultsContainer.innerHTML = searchResults.map(game => `
+            <div class="search-result-item" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'>
+                <img class="search-result-img" src="${game.image}" alt="${game.title}" referrerpolicy="no-referrer">
+                <div class="search-result-info">
+                    <div class="search-result-title">${escapeHtml(game.title)}</div>
+                    <div class="search-result-tags">
+                        ${(game.tags || []).slice(0, 3).map(t => `<span class="search-result-tag">${escapeHtml(t)}</span>`).join('')}
+                        ${(game.tags || []).length > 3 ? `<span class="search-result-tag">+${game.tags.length - 3}</span>` : ''}
+                    </div>
+                </div>
+                ${game.size ? `<div class="search-result-size">${game.size}</div>` : ''}
+            </div>
+        `).join('');
+        
+        document.querySelectorAll('.search-result-item').forEach(el => {
+            el.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const gameDataAttr = el.getAttribute('data-game');
+                if (gameDataAttr) {
+                    try {
+                        const decoded = gameDataAttr.replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+                        const game = JSON.parse(decoded);
+                        closeSearch();
+                        setTimeout(() => {
+                            isRandomModeActive = false;
+                            openGameModal(game, e);
+                        }, 300);
+                    } catch(err) { console.error("Errore:", err); }
+                }
+            });
+        });
+    }
+    
+    function performSearchOnGrid(term) {
+        const lowerTerm = term.toLowerCase().trim();
+        const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
+        
+        if (!lowerTerm) {
+            applyFWFilter();
+            currentPage = 1;
+            renderGames();
+            return;
+        }
+        
+        const searchResults = allGames.filter(g => {
+            const matchesSearch = g.title.toLowerCase().includes(lowerTerm);
+            let gameFW = 1;
+            if (g.tags && g.tags.length > 0) {
+                let foundVersions = [];
+                g.tags.forEach(tag => {
+                    const matches = tag.match(/(\d+)\.xx/gi);
+                    if (matches) {
+                        matches.forEach(m => {
+                            const num = parseInt(m.match(/\d+/)[0], 10);
+                            foundVersions.push(num);
+                        });
+                    }
+                });
+                if (foundVersions.length > 0) gameFW = Math.min(...foundVersions);
+            }
+            const matchesFW = gameFW <= selectedFW;
+            return matchesSearch && matchesFW;
+        });
+        
+        filteredGames = searchResults;
+        currentPage = 1;
+        renderGames();
+    }
+}
+
+function applyFWFilter() {
+    const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
+    filteredGames = allGames.filter(g => {
+        let gameFW = 1;
+        if (g.tags && g.tags.length > 0) {
+            let foundVersions = [];
+            g.tags.forEach(tag => {
+                const matches = tag.match(/(\d+)\.xx/gi);
+                if (matches) {
+                    matches.forEach(m => {
+                        const num = parseInt(m.match(/\d+/)[0], 10);
+                        foundVersions.push(num);
+                    });
+                }
+            });
+            if (foundVersions.length > 0) gameFW = Math.min(...foundVersions);
+        }
+        return gameFW <= selectedFW;
+    });
+}
+
 async function loadUpdates() {
     try {
         const response = await fetch('old_updates.json?v=' + Date.now());
-        if (response.ok) {
-            allUpdates = await response.json();
-        }
-    } catch (e) {
-        console.warn("Updates file non trovato.");
-    }
+        if (response.ok) allUpdates = await response.json();
+    } catch (e) { console.warn("Updates file non trovato."); }
 }
 
 async function loadLibrary() {
     try {
         const response = await fetch('exFAT.json?v=' + Date.now());
         if (!response.ok) throw new Error("Errore JSON Network");
-        
         const text = await response.text();
         try {
             allGames = JSON.parse(text);
         } catch (jsonError) {
-            alert("🚨 ERRORE FATALE: Il tuo file exFAT.json è rotto!\nHai dimenticato una virgola o una parentesi quando hai aggiunto l'ultimo gioco.\nCorreggi il file JSON e ricarica la pagina.");
+            alert("🚨 ERRORE FATALE: Il tuo file exFAT.json è rotto!\nCorreggi il file JSON e ricarica la pagina.");
             return;
         }
-        
         filteredGames = [...allGames];
         renderPopularGames();
         renderGames();
-    } catch (e) { 
-        console.error("Errore caricamento library:", e);
-    }
+    } catch (e) { console.error("Errore caricamento library:", e); }
 }
 
 function setupCarousel() {
     const container = document.getElementById('carousel-container');
     const track = document.getElementById('popular-track');
-    
     if (!container || !track) return;
-    
     const halfWidth = track.scrollWidth / 2;
     let startTime = null;
     let autoScrollActive = true;
-    let startDragX = 0;
-    let startDragPos = 0;
+    let startDragX = 0, startDragPos = 0;
     
     function autoScrollAnimation(timestamp) {
-        if (!autoScrollActive || isDragging) {
-            animationId = requestAnimationFrame(autoScrollAnimation);
-            return;
-        }
-        
+        if (!autoScrollActive || isDragging) { animationId = requestAnimationFrame(autoScrollAnimation); return; }
         if (!startTime) startTime = timestamp;
-        
         const speed = 0.25;
         currentPosition = (currentPosition + speed) % halfWidth;
-        
         track.style.transform = `translateX(-${currentPosition}px)`;
-        
         animationId = requestAnimationFrame(autoScrollAnimation);
     }
     
     const startDrag = (e) => {
-        if (e.button === 2) return;
-        if (e.type === 'contextmenu') return;
-        
+        if (e.button === 2 || e.type === 'contextmenu') return;
         e.preventDefault();
-        
         hasMoved = false;
-        dragDistance = 0;
-        dragStartTime = Date.now();
         window._wasDrag = false;
-        
-        if (autoScrollActive) {
-            autoScrollActive = false;
-        }
+        if (autoScrollActive) autoScrollActive = false;
         isDragging = true;
-        
         startDragX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
         startDragPos = currentPosition;
-        
         track.style.transition = 'none';
         container.style.cursor = 'grabbing';
     };
@@ -215,77 +729,40 @@ function setupCarousel() {
     const onDrag = (e) => {
         if (!isDragging) return;
         e.preventDefault();
-        
         const currentX = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
         const diff = currentX - startDragX;
-        
-        if (Math.abs(diff) > 5) {
-            hasMoved = true;
-            window._wasDrag = true;
-            dragDistance = Math.abs(diff);
-        }
-        
+        if (Math.abs(diff) > 5) { hasMoved = true; window._wasDrag = true; }
         let newPosition = startDragPos - diff;
-        
         const halfTrack = track.scrollWidth / 2;
-        if (newPosition >= halfTrack) {
-            newPosition -= halfTrack;
-            startDragPos -= halfTrack;
-        } else if (newPosition < 0) {
-            newPosition += halfTrack;
-            startDragPos += halfTrack;
-        }
-        
+        if (newPosition >= halfTrack) { newPosition -= halfTrack; startDragPos -= halfTrack; }
+        else if (newPosition < 0) { newPosition += halfTrack; startDragPos += halfTrack; }
         currentPosition = newPosition;
         track.style.transform = `translateX(-${currentPosition}px)`;
     };
     
     const endDrag = () => {
         if (!isDragging) return;
-        
         isDragging = false;
         track.style.transition = '';
         container.style.cursor = 'grab';
-        
-        setTimeout(() => {
-            if (!isDragging) {
-                autoScrollActive = true;
-                startTime = null;
-                window._wasDrag = false;
-            }
-        }, 2000);
+        setTimeout(() => { if (!isDragging) { autoScrollActive = true; startTime = null; window._wasDrag = false; } }, 2000);
     };
     
-    container.addEventListener('contextmenu', (e) => {
-        e.preventDefault();
-        return false;
-    });
-    
+    container.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; });
     container.addEventListener('mousedown', startDrag);
     window.addEventListener('mousemove', onDrag);
     window.addEventListener('mouseup', endDrag);
-    
     container.addEventListener('touchstart', startDrag);
     window.addEventListener('touchmove', onDrag, { passive: false });
     window.addEventListener('touchend', endDrag);
-    
-    container.addEventListener('mouseenter', () => {
-        autoScrollActive = false;
-    });
-    
-    container.addEventListener('mouseleave', () => {
-        if (!isDragging) {
-            autoScrollActive = true;
-            startTime = null;
-        }
-    });
-    
+    container.addEventListener('mouseenter', () => { autoScrollActive = false; });
+    container.addEventListener('mouseleave', () => { if (!isDragging) { autoScrollActive = true; startTime = null; } });
     animationId = requestAnimationFrame(autoScrollAnimation);
 }
 
 async function hashStr(str) {
     if (!crypto || !crypto.subtle) {
-        alert("⚠️ ERRORE BROWSER: Il telefono sta bloccando lo script di sicurezza. Per testare la password devi caricare i file su GitHub Pages, non puoi aprirli direttamente dalla memoria del telefono!");
+        alert("⚠️ ERRORE BROWSER: Per testare la password devi caricare i file su GitHub Pages!");
         return null;
     }
     const msgUint8 = new TextEncoder().encode(str);
@@ -300,21 +777,14 @@ async function checkSitePassword() {
         const overlay = document.getElementById('site-lock-overlay');
         const errorMsg = document.getElementById('pw-error');
         const lockBox = document.getElementById('lock-box');
-        
         const hashedInput = await hashStr(input);
         if (!hashedInput) return;
-
         if (hashedInput === SECRET_HASH) {
             originalSetItem('unlocked_time', Date.now().toString());
             originalSetItem('unlocked', SECRET_HASH);
-            
             overlay.style.transition = 'opacity 0.5s ease';
             overlay.style.opacity = '0';
-            setTimeout(() => {
-                overlay.remove();
-                document.body.style.overflow = 'auto';
-                startIntegrityCheck();
-            }, 500);
+            setTimeout(() => { overlay.remove(); document.body.style.overflow = 'auto'; startIntegrityCheck(); }, 500);
         } else {
             errorMsg.style.display = 'block';
             lockBox.style.animation = 'none';
@@ -322,50 +792,28 @@ async function checkSitePassword() {
             lockBox.style.animation = 'shake 0.3s ease-in-out';
             document.getElementById('site-pw-input').value = '';
         }
-    } catch (e) {
-        console.error("Errore password:", e);
-    }
+    } catch (e) { console.error("Errore password:", e); }
 }
 
 function startProtection() {
     const observer = new MutationObserver(() => {
         const unlocked = originalGetItem('unlocked');
         const overlay = document.getElementById('site-lock-overlay');
-        
-        if (!overlay && unlocked !== SECRET_HASH) {
-            location.reload();
-        }
-        
-        if (overlay && unlocked === SECRET_HASH) {
-            overlay.remove();
-            document.body.style.overflow = 'auto';
-        }
+        if (!overlay && unlocked !== SECRET_HASH) location.reload();
+        if (overlay && unlocked === SECRET_HASH) { overlay.remove(); document.body.style.overflow = 'auto'; }
     });
     observer.observe(document.body, { childList: true, subtree: true });
-    
     if (protectionInterval) clearInterval(protectionInterval);
     protectionInterval = setInterval(() => {
         const unlocked = originalGetItem('unlocked');
         const overlay = document.getElementById('site-lock-overlay');
         const unlockedTime = originalGetItem('unlocked_time');
-        
-        if (unlocked === SECRET_HASH && !unlockedTime) {
-            originalRemoveItem('unlocked');
-            location.reload();
-        }
-        
+        if (unlocked === SECRET_HASH && !unlockedTime) { originalRemoveItem('unlocked'); location.reload(); }
         if (unlocked === SECRET_HASH && unlockedTime) {
             const time = parseInt(unlockedTime);
-            if (Date.now() - time > 24 * 60 * 60 * 1000) {
-                originalRemoveItem('unlocked');
-                originalRemoveItem('unlocked_time');
-                location.reload();
-            }
+            if (Date.now() - time > 24 * 60 * 60 * 1000) { originalRemoveItem('unlocked'); originalRemoveItem('unlocked_time'); location.reload(); }
         }
-        
-        if (!overlay && unlocked !== SECRET_HASH) {
-            location.reload();
-        }
+        if (!overlay && unlocked !== SECRET_HASH) location.reload();
     }, 1000);
 }
 
@@ -378,12 +826,7 @@ function setupDropdown() {
     const hiddenInput = document.getElementById('fw-filter');
     const allOptions = dropdown.querySelectorAll('.option');
     
-    trigger.onclick = (e) => {
-        e.stopPropagation();
-        optionsContainer.classList.toggle('show');
-        dropdown.classList.toggle('active');
-    };
-    
+    trigger.onclick = (e) => { e.stopPropagation(); optionsContainer.classList.toggle('show'); dropdown.classList.toggle('active'); };
     allOptions.forEach(opt => {
         opt.onclick = () => {
             const val = opt.getAttribute('data-value');
@@ -391,24 +834,35 @@ function setupDropdown() {
             hiddenInput.value = val;
             optionsContainer.classList.remove('show');
             dropdown.classList.remove('active');
-            applyFilters(); 
+            const searchInput = document.getElementById('searchModalInput');
+            if (searchInput && searchInput.value.trim()) {
+                updateSearchResultsExternal(searchInput.value);
+                performSearchOnGridExternal(searchInput.value);
+            } else {
+                applyFWFilter();
+                currentPage = 1;
+                renderGames();
+            }
         };
     });
-    
-    window.addEventListener('click', () => {
-        optionsContainer.classList.remove('show');
-        dropdown.classList.remove('active');
-    });
+    window.addEventListener('click', () => { optionsContainer.classList.remove('show'); dropdown.classList.remove('active'); });
 }
 
-function applyFilters() {
-    const searchTerm = document.getElementById('search-input').value.toLowerCase();
+function updateSearchResultsExternal(term) {
+    const resultsContainer = document.getElementById('searchResultsContainer');
+    const statsSpan = document.getElementById('searchModalStats');
+    const lowerTerm = term.toLowerCase().trim();
     const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
-
-    filteredGames = allGames.filter(g => {
-        const matchesSearch = g.title.toLowerCase().includes(searchTerm);
-        
-        let gameFW = 1; 
+    
+    if (!lowerTerm) {
+        if (resultsContainer) resultsContainer.innerHTML = '<div class="no-results">✨ Inizia a digitare per cercare giochi...</div>';
+        if (statsSpan) statsSpan.textContent = '0';
+        return;
+    }
+    
+    const searchResults = allGames.filter(g => {
+        const matchesSearch = g.title.toLowerCase().includes(lowerTerm);
+        let gameFW = 1;
         if (g.tags && g.tags.length > 0) {
             let foundVersions = [];
             g.tags.forEach(tag => {
@@ -420,98 +874,152 @@ function applyFilters() {
                     });
                 }
             });
-
-            if (foundVersions.length > 0) {
-                gameFW = Math.min(...foundVersions);
-            }
+            if (foundVersions.length > 0) gameFW = Math.min(...foundVersions);
         }
-        
         const matchesFW = gameFW <= selectedFW;
         return matchesSearch && matchesFW;
     });
+    
+    if (statsSpan) statsSpan.textContent = searchResults.length;
+    
+    if (searchResults.length === 0) {
+        if (resultsContainer) resultsContainer.innerHTML = '<div class="no-results">😔 Nessun gioco trovato per "' + escapeHtml(lowerTerm) + '"</div>';
+        return;
+    }
+    
+    if (resultsContainer) {
+        resultsContainer.innerHTML = searchResults.map(game => `
+            <div class="search-result-item" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'>
+                <img class="search-result-img" src="${game.image}" alt="${game.title}" referrerpolicy="no-referrer">
+                <div class="search-result-info">
+                    <div class="search-result-title">${escapeHtml(game.title)}</div>
+                    <div class="search-result-tags">
+                        ${(game.tags || []).slice(0, 3).map(t => `<span class="search-result-tag">${escapeHtml(t)}</span>`).join('')}
+                        ${(game.tags || []).length > 3 ? `<span class="search-result-tag">+${game.tags.length - 3}</span>` : ''}
+                    </div>
+                </div>
+                ${game.size ? `<div class="search-result-size">${game.size}</div>` : ''}
+            </div>
+        `).join('');
+        
+        document.querySelectorAll('.search-result-item').forEach(el => {
+            el.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const gameDataAttr = el.getAttribute('data-game');
+                if (gameDataAttr) {
+                    try {
+                        const decoded = gameDataAttr.replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+                        const game = JSON.parse(decoded);
+                        const overlay = document.getElementById('searchModalOverlay');
+                        if (overlay) overlay.classList.remove('active');
+                        setTimeout(() => {
+                            isRandomModeActive = false;
+                            openGameModal(game, e);
+                        }, 300);
+                    } catch(err) { console.error("Errore:", err); }
+                }
+            });
+        });
+    }
+}
 
+function performSearchOnGridExternal(term) {
+    const lowerTerm = term.toLowerCase().trim();
+    const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
+    
+    if (!lowerTerm) {
+        applyFWFilter();
+        currentPage = 1;
+        renderGames();
+        return;
+    }
+    
+    const searchResults = allGames.filter(g => {
+        const matchesSearch = g.title.toLowerCase().includes(lowerTerm);
+        let gameFW = 1;
+        if (g.tags && g.tags.length > 0) {
+            let foundVersions = [];
+            g.tags.forEach(tag => {
+                const matches = tag.match(/(\d+)\.xx/gi);
+                if (matches) {
+                    matches.forEach(m => {
+                        const num = parseInt(m.match(/\d+/)[0], 10);
+                        foundVersions.push(num);
+                    });
+                }
+            });
+            if (foundVersions.length > 0) gameFW = Math.min(...foundVersions);
+        }
+        const matchesFW = gameFW <= selectedFW;
+        return matchesSearch && matchesFW;
+    });
+    
+    filteredGames = searchResults;
     currentPage = 1;
     renderGames();
 }
 
+function escapeHtml(str) {
+    if (!str) return '';
+    return str.replace(/[&<>]/g, function(m) {
+        if (m === '&') return '&amp;';
+        if (m === '<') return '&lt;';
+        if (m === '>') return '&gt;';
+        return m;
+    });
+}
+
 function openGameModal(game, event) {
-    if (event && event.button === 2) {
-        event.preventDefault();
-        return false;
-    }
-    
-    if (hasMoved || window._wasDrag) {
-        hasMoved = false;
-        window._wasDrag = false;
-        return false;
-    }
-    
-    hasMoved = false;
-    window._wasDrag = false;
+    if (event && event.button === 2) { event.preventDefault(); return false; }
+    if (hasMoved || window._wasDrag) { hasMoved = false; window._wasDrag = false; return false; }
+    hasMoved = false; window._wasDrag = false;
     
     const modalHeader = document.getElementById('modal-header');
     modalHeader.style.backgroundImage = `url('${game.image}')`;
     modalHeader.style.backgroundSize = 'cover';
     modalHeader.style.backgroundPosition = 'center';
-    
     document.getElementById('modal-title').textContent = game.title;
-    
-    const tagsContainer = document.getElementById('modal-tags');
-    tagsContainer.innerHTML = (game.tags || []).map(t => `<span class="modal-tag">${t}</span>`).join('');
-    
+    document.getElementById('modal-tags').innerHTML = (game.tags || []).map(t => `<span class="modal-tag">${escapeHtml(t)}</span>`).join('');
     document.getElementById('modal-size').textContent = game.size || 'N/A';
     
     const downloadsContainer = document.getElementById('modal-downloads');
     const hPlay = (game.how_to_play || "").replace(/'/g, "\\'");
     const dCredits = game.credits_dlc || game.credits_dlcs || '';
-    
     const createModalBtn = (url, label) => {
         if (!url || url === "undefined" || url.trim() === "") return '';
         return `<button onclick="startDownloadFromModal('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', false, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">${label}</button>`;
     };
     
     let downloadsHTML = '';
-    
-    // Controllo se ESISTE ALMENO UN campo backport (7.xx o 4.xx)
     const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data;
     const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data;
-    
     if (hasBackport7 || hasBackport4) {
-        let bp7 = '';
+        let bp7 = '', bp4 = '';
         if (hasBackport7) {
             if (game.backport7xx_akia) bp7 += createModalBtn(game.backport7xx_akia, 'AKIA');
             if (game.backport7xx_viki) bp7 += createModalBtn(game.backport7xx_viki, 'VIKI');
             if (game.backport7xx_buzz) bp7 += createModalBtn(game.backport7xx_buzz, 'BUZZ');
             if (game.backport7xx_data) bp7 += createModalBtn(game.backport7xx_data, 'DATA');
         }
-        
-        let bp4 = '';
         if (hasBackport4) {
             if (game.backport4xx_akia) bp4 += createModalBtn(game.backport4xx_akia, 'AKIA');
             if (game.backport4xx_viki) bp4 += createModalBtn(game.backport4xx_viki, 'VIKI');
             if (game.backport4xx_buzz) bp4 += createModalBtn(game.backport4xx_buzz, 'BUZZ');
             if (game.backport4xx_data) bp4 += createModalBtn(game.backport4xx_data, 'DATA');
         }
-        
         downloadsHTML = `${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
-    } 
-    else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data) {
-        let std = '';
+    } else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data) {
+        let std = '', bp = '';
         if (game.standard_akia) std += createModalBtn(game.standard_akia, 'AKIA');
         if (game.standard_viki) std += createModalBtn(game.standard_viki, 'VIKI');
         if (game.standard_buzz) std += createModalBtn(game.standard_buzz, 'BUZZ');
         if (game.standard_data) std += createModalBtn(game.standard_data, 'DATA');
-        
-        let bp = '';
         if (game.backport_akia) bp += createModalBtn(game.backport_akia, 'AKIA');
         if (game.backport_viki) bp += createModalBtn(game.backport_viki, 'VIKI');
         if (game.backport_buzz) bp += createModalBtn(game.backport_buzz, 'BUZZ');
         if (game.backport_data) bp += createModalBtn(game.backport_data, 'DATA');
-        
         downloadsHTML = `${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
-    } 
-    else {
-        // Giochi semplici
+    } else {
         let btns = '';
         if (game.akia_url) btns += createModalBtn(game.akia_url, 'AKIA');
         if (game.viki_url) btns += createModalBtn(game.viki_url, 'VIKI');
@@ -519,10 +1027,8 @@ function openGameModal(game, event) {
         if (game.data_url) btns += createModalBtn(game.data_url, 'DATA');
         downloadsHTML = btns;
     }
-    
     downloadsContainer.innerHTML = downloadsHTML;
     
-    // DLCs section
     const dlcSection = document.getElementById('modal-dlc-section');
     const dlcContainer = document.getElementById('modal-dlc');
     let dlcBtns = '';
@@ -530,218 +1036,70 @@ function openGameModal(game, event) {
     if (game.dlc_viki) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_viki}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">VIKI</button>`;
     if (game.dlc_buzz) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_buzz}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">BUZZ</button>`;
     if (game.dlc_data) dlcBtns += `<button onclick="startDownloadFromModal('${game.dlc_data}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', true, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">DATA</button>`;
-    
-    if (dlcBtns) {
-        dlcSection.style.display = 'block';
-        dlcContainer.innerHTML = dlcBtns;
-    } else {
-        dlcSection.style.display = 'none';
-    }
+    if (dlcBtns) { dlcSection.style.display = 'block'; dlcContainer.innerHTML = dlcBtns; } else { dlcSection.style.display = 'none'; }
     
     let parts = [];
-    const fileAuthor = game.credits_files;
-    const bpAuthor = game.credits_backport;
-    const dlcAuthor = game.credits_dlc || game.credits_dlcs;
-    
-    if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
-        parts.push(`<b>${fileAuthor}</b> for the Files with DLCs`);
-    } else {
-        if (fileAuthor) parts.push(`<b>${fileAuthor}</b> for the Files`);
-        if (dlcAuthor) parts.push(`<b>${dlcAuthor}</b> for DLCs`);
-    }
-    if (bpAuthor) parts.push(`<b>${bpAuthor}</b> for the BackPort`);
-    
+    const fileAuthor = game.credits_files, bpAuthor = game.credits_backport, dlcAuthor = game.credits_dlc || game.credits_dlcs;
+    if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
+    else { if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`); if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`); }
+    if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
     let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
     document.getElementById('modal-credits').innerHTML = creditsText;
     
     const instSection = document.getElementById('modal-instructions');
-    if (game.how_to_play) {
-        instSection.style.display = 'block';
-        document.getElementById('modal-instructions-text').innerHTML = game.how_to_play;
-    } else {
-        instSection.style.display = 'none';
-    }
+    if (game.how_to_play) { instSection.style.display = 'block'; document.getElementById('modal-instructions-text').innerHTML = game.how_to_play; } else { instSection.style.display = 'none'; }
     
     const updatesSection = document.getElementById('modal-updates');
     const updatesList = document.getElementById('modal-updates-list');
     const updates = allUpdates[game.title];
     if (updates && updates.length > 0) {
         updatesSection.style.display = 'block';
-        updatesList.innerHTML = updates.map(upd => {
-            const dp = upd.date.split('-');
-            const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date;
-            return `
-                <div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:12px; margin-bottom:8px;">
-                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
-                        <div>
-                            <strong>${upd.version}</strong> <small style="opacity:0.6;">(${upd.size || 'N/A'})</small><br>
-                            <small style="color:var(--cyan-neon);">Released: ${formattedDate}</small>
-                        </div>
-                        <div style="display:flex; gap:8px;">
-                            ${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">AKIA</a>` : ''}
-                            ${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VIKI</a>` : ''}
-                            ${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">BUZZ</a>` : ''}
-                            ${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">DATA</a>` : ''}
-                        </div>
-                    </div>
-                </div>`;
-        }).join('');
-    } else {
-        updatesSection.style.display = 'none';
-    }
+        updatesList.innerHTML = updates.map(upd => { const dp = upd.date.split('-'); const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date; return `<div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:12px; margin-bottom:8px;"><div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;"><div><strong>${escapeHtml(upd.version)}</strong> <small style="opacity:0.6;">(${upd.size || 'N/A'})</small><br><small style="color:var(--cyan-neon);">Released: ${formattedDate}</small></div><div style="display:flex; gap:8px;">${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">AKIA</a>` : ''}${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VIKI</a>` : ''}${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">BUZZ</a>` : ''}${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">DATA</a>` : ''}</div></div></div>`; }).join('');
+    } else { updatesSection.style.display = 'none'; }
     
-    const creditsModal = document.getElementById('credits-modal');
-    if (creditsModal) {
-        creditsModal.style.display = 'none';
+    const modalRandomBtn = document.getElementById('modalRandomBtn');
+    if (modalRandomBtn) {
+        if (isRandomModeActive) {
+            modalRandomBtn.style.display = 'flex';
+        } else {
+            modalRandomBtn.style.display = 'none';
+        }
     }
     
     document.getElementById('game-detail-modal').style.display = 'block';
 }
 
-function startDownloadFromModal(url, fAuth, bAuth, dAuth, hPlay, isDLC, gameTitle) {
-    openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, gameTitle);
+function startDownloadFromModal(url, fAuth, bAuth, dAuth, hPlay, isDLC, gameTitle) { 
+    openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, gameTitle); 
 }
 
 function renderPopularGames() {
     const track = document.getElementById('popular-track');
     const section = document.getElementById('popular-section');
     if (!track || !section) return;
-
     const popularGames = allGames.filter(g => g.popular === "on");
-    
-    if (popularGames.length === 0) {
-        section.style.display = 'none';
-        return;
-    }
-    
+    if (popularGames.length === 0) { section.style.display = 'none'; return; }
     section.style.display = 'flex';
-    
     const shuffledGames = [...popularGames];
-    for (let i = shuffledGames.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffledGames[i], shuffledGames[j]] = [shuffledGames[j], shuffledGames[i]];
-    }
-    
+    for (let i = shuffledGames.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [shuffledGames[i], shuffledGames[j]] = [shuffledGames[j], shuffledGames[i]]; }
     let htmlContent = '';
-
     shuffledGames.forEach(game => {
         let updateBadge = '';
         const updates = allUpdates[game.title];
-        if (updates && updates.length > 0) {
-            const lastUpdateDate = new Date(updates[0].date);
-            const now = new Date();
-            const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60);
-
-            if (diffInHours >= 0 && diffInHours <= 24) {
-                updateBadge = `<div class="update-badge-popular">UPDATE</div>`;
-            }
-        }
-
-        htmlContent += `
-            <div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'>
-                <div class="popular-card-bg" style="background-image: url('${game.image}')"></div>
-                <div class="popular-card-gradient"></div>
-                ${updateBadge}
-                <div class="popular-card-content">
-                    <div class="popular-card-header">
-                        <div class="popular-game-title">${game.title}</div>
-                        ${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}
-                    </div>
-                </div>
-                <div class="click-hint">✨ Click for details</div>
-            </div>`;
+        if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; }
+        htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`;
     });
-
     track.innerHTML = htmlContent + htmlContent;
-    
-    let pressTimer = null;
-    let isLongPressActive = false;
-    let touchMoved = false;
-    
+    let pressTimer = null, isLongPressActive = false, touchMoved = false;
     const cards = document.querySelectorAll('.popular-card');
-    
     cards.forEach(card => {
         const oldCard = card.cloneNode(true);
         card.parentNode.replaceChild(oldCard, card);
-        
-        oldCard.addEventListener('click', function(e) {
-            e.stopPropagation();
-            if (isLongPressActive) {
-                isLongPressActive = false;
-                return;
-            }
-            const gameDataAttr = this.getAttribute('data-game');
-            if (gameDataAttr) {
-                try {
-                    const decoded = gameDataAttr.replace(/&quot;/g, '"').replace(/&#39;/g, "'");
-                    const game = JSON.parse(decoded);
-                    openGameModal(game, e);
-                } catch(err) {
-                    console.error("Errore:", err);
-                }
-            }
-        });
-        
-        oldCard.addEventListener('touchstart', function(e) {
-            touchMoved = false;
-            isLongPressActive = false;
-            window._isLongPress = false;
-            
-            pressTimer = setTimeout(() => {
-                isLongPressActive = true;
-                window._isLongPress = true;
-                this.style.opacity = '0.7';
-                const container = document.getElementById('carousel-container');
-                const dragEvent = new TouchEvent('touchstart', {
-                    touches: e.touches,
-                    target: container,
-                    cancelable: true
-                });
-                container.dispatchEvent(dragEvent);
-            }, 200);
-        });
-        
-        oldCard.addEventListener('touchmove', function(e) {
-            touchMoved = true;
-            if (pressTimer) {
-                clearTimeout(pressTimer);
-                pressTimer = null;
-            }
-        });
-        
-        oldCard.addEventListener('touchend', function(e) {
-            if (pressTimer) {
-                clearTimeout(pressTimer);
-                pressTimer = null;
-            }
-            this.style.opacity = '';
-            if (!isLongPressActive && !touchMoved) {
-                setTimeout(() => {
-                    if (!window._wasDrag) {
-                        const clickEvent = new MouseEvent('click', {
-                            view: window,
-                            bubbles: true,
-                            cancelable: true
-                        });
-                        this.dispatchEvent(clickEvent);
-                    }
-                }, 10);
-            }
-            setTimeout(() => {
-                window._isLongPress = false;
-                isLongPressActive = false;
-            }, 100);
-        });
-        
-        oldCard.addEventListener('touchcancel', function(e) {
-            if (pressTimer) {
-                clearTimeout(pressTimer);
-                pressTimer = null;
-            }
-            this.style.opacity = '';
-            window._isLongPress = false;
-            isLongPressActive = false;
-        });
+        oldCard.addEventListener('click', function(e) { e.stopPropagation(); if (isLongPressActive) return; const gameDataAttr = this.getAttribute('data-game'); if (gameDataAttr) { try { const decoded = gameDataAttr.replace(/&quot;/g, '"').replace(/&#39;/g, "'"); const game = JSON.parse(decoded); isRandomModeActive = false; openGameModal(game, e); } catch(err) { console.error("Errore:", err); } } });
+        oldCard.addEventListener('touchstart', function(e) { touchMoved = false; isLongPressActive = false; window._isLongPress = false; pressTimer = setTimeout(() => { isLongPressActive = true; window._isLongPress = true; this.style.opacity = '0.7'; const container = document.getElementById('carousel-container'); const dragEvent = new TouchEvent('touchstart', { touches: e.touches, target: container, cancelable: true }); container.dispatchEvent(dragEvent); }, 200); });
+        oldCard.addEventListener('touchmove', function(e) { touchMoved = true; if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; } });
+        oldCard.addEventListener('touchend', function(e) { if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; } this.style.opacity = ''; if (!isLongPressActive && !touchMoved) { setTimeout(() => { if (!window._wasDrag) { const clickEvent = new MouseEvent('click', { view: window, bubbles: true, cancelable: true }); this.dispatchEvent(clickEvent); } }, 10); } setTimeout(() => { window._isLongPress = false; isLongPressActive = false; }, 100); });
+        oldCard.addEventListener('touchcancel', function(e) { if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; } this.style.opacity = ''; window._isLongPress = false; isLongPressActive = false; });
     });
 }
 
@@ -749,110 +1107,44 @@ function renderGames() {
     const grid = document.getElementById('game-grid');
     if (!grid) return;
     grid.innerHTML = '';
-    
     const startIndex = (currentPage - 1) * itemsPerPage;
     const pageItems = filteredGames.slice(startIndex, startIndex + itemsPerPage);
-
-    if (pageItems.length === 0) {
-        grid.innerHTML = '<p style="text-align:center; width:100%; font-size:1.5rem;">No games found.</p>';
-        return;
-    }
-
+    if (pageItems.length === 0) { grid.innerHTML = '<p style="text-align:center; width:100%; font-size:1.5rem;">Nessun gioco trovato.</p>'; return; }
     pageItems.forEach(game => {
-        let tagsHTML = (game.tags || []).map(t => `<span class="game-tag">${t}</span>`).join('');
+        let tagsHTML = (game.tags || []).map(t => `<span class="game-tag">${escapeHtml(t)}</span>`).join('');
         let sizeHTML = game.size ? `<div class="game-size">${game.size}</div>` : '';
-        
         let updateBadge = '';
         const updates = allUpdates[game.title];
-        if (updates && updates.length > 0) {
-            const lastUpdateDate = new Date(updates[0].date);
-            const now = new Date();
-            const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60);
-
-            if (diffInHours >= 0 && diffInHours <= 24) {
-                updateBadge = `<div class="update-badge" style="position:absolute; top:15px; left:15px; background:var(--green-neon); color:#000; padding:4px 10px; border-radius:8px; font-weight:900; font-size:0.7rem; z-index:20; box-shadow:0 0 10px var(--green-neon); animation: pulseRed 2s infinite;">UPDATE</div>`;
-            }
-        }
-
+        if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge" style="position:absolute; top:15px; left:15px; background:var(--green-neon); color:#000; padding:4px 10px; border-radius:8px; font-weight:900; font-size:0.7rem; z-index:20; box-shadow:0 0 10px var(--green-neon); animation: pulseRed 2s infinite;">UPDATE</div>`; }
         const hPlay = (game.how_to_play || "").replace(/'/g, "\\'");
         const dCredits = game.credits_dlc || game.credits_dlcs || '';
-
-        const createBtn = (url, label, isDLC = false) => {
-            if (!url || url === "undefined" || url.trim() === "") return '';
-            return `<a onclick="openDL('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', ${isDLC}, '${game.title.replace(/'/g, "\\'")}')" class="btn-dl">${label}</a>`;
-        };
-
+        const createBtn = (url, label, isDLC = false) => { if (!url || url === "undefined" || url.trim() === "") return ''; return `<a onclick="openDL('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', ${isDLC}, '${game.title.replace(/'/g, "\\'")}')" class="btn-dl">${label}</a>`; };
         let downloadHTML = '';
-        
-        // DLCs
         let dlcBtns = '';
         if (game.dlc_akia) dlcBtns += createBtn(game.dlc_akia, 'AKIA', true);
         if (game.dlc_viki) dlcBtns += createBtn(game.dlc_viki, 'VIKI', true);
         if (game.dlc_buzz) dlcBtns += createBtn(game.dlc_buzz, 'BUZZ', true);
         if (game.dlc_data) dlcBtns += createBtn(game.dlc_data, 'DATA', true);
         let dlcSection = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
-
-        // Controllo se ESISTE ALMENO UN campo backport (7.xx o 4.xx)
         const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data;
         const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data;
-        
         if (hasBackport7 || hasBackport4) {
-            let bp7 = '';
-            if (hasBackport7) {
-                if (game.backport7xx_akia) bp7 += createBtn(game.backport7xx_akia, 'AKIA');
-                if (game.backport7xx_viki) bp7 += createBtn(game.backport7xx_viki, 'VIKI');
-                if (game.backport7xx_buzz) bp7 += createBtn(game.backport7xx_buzz, 'BUZZ');
-                if (game.backport7xx_data) bp7 += createBtn(game.backport7xx_data, 'DATA');
-            }
-            
-            let bp4 = '';
-            if (hasBackport4) {
-                if (game.backport4xx_akia) bp4 += createBtn(game.backport4xx_akia, 'AKIA');
-                if (game.backport4xx_viki) bp4 += createBtn(game.backport4xx_viki, 'VIKI');
-                if (game.backport4xx_buzz) bp4 += createBtn(game.backport4xx_buzz, 'BUZZ');
-                if (game.backport4xx_data) bp4 += createBtn(game.backport4xx_data, 'DATA');
-            }
-            
+            let bp7 = '', bp4 = '';
+            if (hasBackport7) { if (game.backport7xx_akia) bp7 += createBtn(game.backport7xx_akia, 'AKIA'); if (game.backport7xx_viki) bp7 += createBtn(game.backport7xx_viki, 'VIKI'); if (game.backport7xx_buzz) bp7 += createBtn(game.backport7xx_buzz, 'BUZZ'); if (game.backport7xx_data) bp7 += createBtn(game.backport7xx_data, 'DATA'); }
+            if (hasBackport4) { if (game.backport4xx_akia) bp4 += createBtn(game.backport4xx_akia, 'AKIA'); if (game.backport4xx_viki) bp4 += createBtn(game.backport4xx_viki, 'VIKI'); if (game.backport4xx_buzz) bp4 += createBtn(game.backport4xx_buzz, 'BUZZ'); if (game.backport4xx_data) bp4 += createBtn(game.backport4xx_data, 'DATA'); }
             downloadHTML = `${bp7 ? `<p class="ver-label"><b>BP 7.xx:</b></p><div class="download-container">${bp7}</div>` : ''}${bp4 ? `<p class="ver-label"><b>BP 4.xx:</b></p><div class="download-container">${bp4}</div>` : ''}`;
-        } 
-        else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data) {
-            let std = '';
-            if (game.standard_akia) std += createBtn(game.standard_akia, 'AKIA');
-            if (game.standard_viki) std += createBtn(game.standard_viki, 'VIKI');
-            if (game.standard_buzz) std += createBtn(game.standard_buzz, 'BUZZ');
-            if (game.standard_data) std += createBtn(game.standard_data, 'DATA');
-            
-            let bp = '';
-            if (game.backport_akia) bp += createBtn(game.backport_akia, 'AKIA');
-            if (game.backport_viki) bp += createBtn(game.backport_viki, 'VIKI');
-            if (game.backport_buzz) bp += createBtn(game.backport_buzz, 'BUZZ');
-            if (game.backport_data) bp += createBtn(game.backport_data, 'DATA');
-            
+        } else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data) {
+            let std = '', bp = '';
+            if (game.standard_akia) std += createBtn(game.standard_akia, 'AKIA'); if (game.standard_viki) std += createBtn(game.standard_viki, 'VIKI'); if (game.standard_buzz) std += createBtn(game.standard_buzz, 'BUZZ'); if (game.standard_data) std += createBtn(game.standard_data, 'DATA');
+            if (game.backport_akia) bp += createBtn(game.backport_akia, 'AKIA'); if (game.backport_viki) bp += createBtn(game.backport_viki, 'VIKI'); if (game.backport_buzz) bp += createBtn(game.backport_buzz, 'BUZZ'); if (game.backport_data) bp += createBtn(game.backport_data, 'DATA');
             downloadHTML = `${std ? `<p class="ver-label"><b>STANDARD:</b></p><div class="download-container">${std}</div>` : ''}${bp ? `<p class="ver-label"><b>BACKPORT:</b></p><div class="download-container">${bp}</div>` : ''}`;
-        } 
-        else {
-            // Giochi semplici
+        } else {
             let btns = '';
-            if (game.akia_url) btns += createBtn(game.akia_url, 'AKIA');
-            if (game.viki_url) btns += createBtn(game.viki_url, 'VIKI');
-            if (game.buzz_url) btns += createBtn(game.buzz_url, 'BUZZ');
-            if (game.data_url) btns += createBtn(game.data_url, 'DATA');
+            if (game.akia_url) btns += createBtn(game.akia_url, 'AKIA'); if (game.viki_url) btns += createBtn(game.viki_url, 'VIKI'); if (game.buzz_url) btns += createBtn(game.buzz_url, 'BUZZ'); if (game.data_url) btns += createBtn(game.data_url, 'DATA');
             downloadHTML = `<div class="download-container" style="margin-top:15px;">${btns}</div>`;
         }
-
-        grid.innerHTML += `
-            <div class="game-card">
-                ${updateBadge}
-                <span class="game-title">${game.title}</span>
-                <div class="image-container">
-                    <img src="${game.image}" referrerpolicy="no-referrer">
-                    <div class="tags-overlay">${tagsHTML}</div>
-                    ${sizeHTML} 
-                </div>
-                <div class="download-section">${downloadHTML}${dlcSection}</div>
-            </div>`;
+        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" referrerpolicy="no-referrer"><div class="tags-overlay">${tagsHTML}</div>${sizeHTML}</div><div class="download-section">${downloadHTML}${dlcSection}</div></div>`;
     });
-
     const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
     document.getElementById('page-info').innerText = `Page ${currentPage} of ${totalPages || 1}`;
     document.getElementById('prev-page').disabled = currentPage === 1;
@@ -862,112 +1154,74 @@ function renderGames() {
 function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, gameTitle) {
     let parts = [];
     const clean = (str) => (str && str !== "undefined" && str.trim() !== "") ? str.trim() : null;
-
-    const fileAuthor = clean(fAuth);
-    const bpAuthor = clean(bAuth);
-    const dlcAuthor = clean(dAuth);
-    const playInstructions = clean(hPlay);
-
-    if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
-        parts.push(`<b>${fileAuthor}</b> for the Files with DLCs`);
-    } else {
-        if (fileAuthor) parts.push(`<b>${fileAuthor}</b> for the Files`);
-        if (dlcAuthor) parts.push(`<b>${dlcAuthor}</b> for DLCs`);
-    }
-    if (bpAuthor) parts.push(`<b>${bpAuthor}</b> for the BackPort`);
-
+    const fileAuthor = clean(fAuth), bpAuthor = clean(bAuth), dlcAuthor = clean(dAuth), playInstructions = clean(hPlay);
+    if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
+    else { if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`); if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`); }
+    if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
     let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
-
+    
     let updateHTML = "";
     const updates = allUpdates[gameTitle];
     if (updates && updates.length > 0) {
         updateHTML = `
-            <div style="margin-top:20px; padding-top:15px; border-top:1px dashed rgba(0,255,238,0.3); text-align:left;">
-                <b style="color:var(--cyan-neon); font-size:0.75rem; text-transform:uppercase; display:block; margin-bottom:10px;">OLD RELEASES:</b>
-                <div style="display:flex; flex-direction:column; gap:8px;">
-                    ${updates.map(upd => {
-                        const dp = upd.date.split('-');
-                        const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date;
-                        return `
-                        <div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:10px; display:flex; justify-content:space-between; align-items:center; border:1px solid rgba(255,255,255,0.1);">
-                            <div style="display:flex; flex-direction:column;">
-                                <span style="font-size:0.8rem; font-weight:700;">${upd.version} <small style="opacity:0.6;">(${upd.size || 'N/A'})</small></span>
-                                <span style="font-size:0.6rem; color:var(--cyan-neon); opacity:0.8;">Released: ${formattedDate}</span>
+            <div class="download-updates-card">
+                <div class="download-updates-title">🔄 OLD RELEASES</div>
+                ${updates.map(upd => { 
+                    const dp = upd.date.split('-'); 
+                    const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date; 
+                    return `
+                        <div class="download-update-item">
+                            <div>
+                                <div class="download-update-version">${escapeHtml(upd.version)}</div>
+                                <div class="download-update-date">Released: ${formattedDate} (${upd.size || 'N/A'})</div>
                             </div>
-                            <div style="display:flex; gap:5px;">
-                                ${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" style="padding:4px 8px; background:var(--bg-1); border:1px solid var(--cyan-neon); color:var(--cyan-neon); border-radius:5px; font-size:0.65rem; text-decoration:none; font-weight:900;">AKIA</a>` : ''}
-                                ${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" style="padding:4px 8px; background:var(--bg-1); border:1px solid var(--cyan-neon); color:var(--cyan-neon); border-radius:5px; font-size:0.65rem; text-decoration:none; font-weight:900;">VIKI</a>` : ''}
-                                ${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" style="padding:4px 8px; background:var(--bg-1); border:1px solid var(--cyan-neon); color:var(--cyan-neon); border-radius:5px; font-size:0.65rem; text-decoration:none; font-weight:900;">BUZZ</a>` : ''}
-                                ${upd.data_url ? `<a href="${upd.data_url}" target="_blank" style="padding:4px 8px; background:var(--bg-1); border:1px solid var(--cyan-neon); color:var(--cyan-neon); border-radius:5px; font-size:0.65rem; text-decoration:none; font-weight:900;">DATA</a>` : ''}
+                            <div class="download-update-links">
+                                ${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="download-update-link">AKIA</a>` : ''}
+                                ${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="download-update-link">VIKI</a>` : ''}
+                                ${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="download-update-link">BUZZ</a>` : ''}
+                                ${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="download-update-link">DATA</a>` : ''}
                             </div>
-                        </div>`;
-                    }).join('')}
-                </div>
-            </div>`;
+                        </div>
+                    `;
+                }).join('')}
+            </div>
+        `;
     }
-
+    
     let instHTML = "";
     if (isDLC) {
-        instHTML = `<div style="margin-top:15px; padding:12px; background:rgba(57,255,20,0.08); border-radius:12px; font-size:0.85rem; color:var(--green-neon); border:1px solid rgba(57,255,20,0.2); text-align:left; line-height:1.4;"><b style="text-transform:uppercase; font-size:0.75rem; display:block; margin-bottom:5px; opacity:0.8;">How to Unlock All DLCs:</b>Install the title (.exFAT) then the DLCs.${playInstructions ? `<br><br><b style="text-transform:uppercase; font-size:0.75rem; display:block; margin-bottom:5px; opacity:0.8;">Extra Info:</b>${playInstructions}` : ''}</div>`;
+        instHTML = `
+            <div class="download-instruction-card">
+                <div class="download-instruction-title">🎮 HOW TO UNLOCK ALL DLCS</div>
+                <div class="download-instruction-text">Install the title (.exFAT) then the DLCs.${playInstructions ? `<br><br><strong>Extra Info:</strong> ${playInstructions}` : ''}</div>
+            </div>
+        `;
     } else if (playInstructions) {
-        instHTML = `<div style="margin-top:15px; padding:12px; background:rgba(57,255,20,0.08); border-radius:12px; font-size:0.85rem; color:var(--green-neon); border:1px solid rgba(57,255,20,0.2); text-align:left; line-height:1.4;"><b style="text-transform:uppercase; font-size:0.75rem; display:block; margin-bottom:5px; opacity:0.8;">Instructions / How to Play:</b>${playInstructions}</div>`;
+        instHTML = `
+            <div class="download-instruction-card">
+                <div class="download-instruction-title">📖 INSTRUCTIONS / HOW TO PLAY</div>
+                <div class="download-instruction-text">${playInstructions}</div>
+            </div>
+        `;
     }
-
-    const creditsBody = document.getElementById('credits-body');
-    if (creditsBody) creditsBody.innerHTML = `<div style="font-size:1.05rem; line-height:1.5;">${creditsText}</div>${instHTML}${updateHTML}`;
-
-    document.getElementById('final-download-btn').href = url;
-    document.getElementById('pw-instruction').style.display = 'block';
-    document.getElementById('pw-final').style.display = 'none';
-    document.getElementById('credits-modal').style.display = "block";
+    
+    const modalContent = `
+        <div class="download-credit-card">
+            <div class="download-credit-text">${creditsText}</div>
+        </div>
+        ${instHTML}
+        ${updateHTML}
+    `;
+    
+    showDownloadModal(modalContent, url);
 }
 
-window.revealPassword = () => {
-    document.getElementById('pw-instruction').style.display = 'none';
-    document.getElementById('pw-final').style.display = 'block';
-};
-
-document.getElementById('modal-close-btn').onclick = () => {
+document.getElementById('modal-close-btn').onclick = () => { 
     document.getElementById('game-detail-modal').style.display = 'none';
+    isRandomModeActive = false;
 };
-
-window.onclick = (e) => {
-    if (e.target.classList.contains('game-modal')) {
-        e.target.style.display = 'none';
-    }
-    if (e.target.classList.contains('modal')) {
-        e.target.style.display = 'none';
-    }
-};
-
+window.onclick = (e) => { if (e.target.classList.contains('game-modal')) { e.target.style.display = 'none'; isRandomModeActive = false; } };
 window.addEventListener('DOMContentLoaded', init);
-
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (nav) {
-        if (window.scrollY > 20) nav.classList.add('scrolled');
-        else nav.classList.remove('scrolled');
-    }
-});
-
+window.addEventListener('scroll', () => { const nav = document.querySelector('nav'); if (nav) { if (window.scrollY > 20) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); } });
 document.getElementById('next-page').onclick = () => { currentPage++; renderGames(); window.scrollTo(0,0); };
 document.getElementById('prev-page').onclick = () => { currentPage--; renderGames(); window.scrollTo(0,0); };
-
-const sTrig = document.getElementById('search-trigger');
-const sInp = document.getElementById('search-input');
-
-if(sTrig) sTrig.onclick = () => { sInp.classList.toggle('active'); sInp.focus(); };
-if(sInp) sInp.oninput = applyFilters;
-
-document.getElementById('dmca-link').onclick = async () => {
-    try {
-        const res = await fetch('DMCA.json');
-        const data = await res.json();
-        document.getElementById('dmca-title').innerText = data.title;
-        document.getElementById('dmca-body').innerHTML = data.content.map(p => `<p>${p}</p>`).join('');
-        document.getElementById('dmca-modal').style.display = "block";
-    } catch(err) { console.error(err); }
-};
-
-document.getElementById('close-credits').onclick = () => document.getElementById('credits-modal').style.display = "none";
-document.getElementById('close-dmca').onclick = () => document.getElementById('dmca-modal').style.display = "none";
