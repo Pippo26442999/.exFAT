@@ -576,7 +576,7 @@ function setupSearchModal() {
         }
         
         if (searchResults.length === 0) {
-            resultsContainer.innerHTML = '<div class="no-results">😔 Nessun gioco trovato per "' + escapeHtml(lowerTerm) + '"</div>';
+            resultsContainer.innerHTML = '<div class="no-results">😔 No games found for "' + escapeHtml(lowerTerm) + '"</div>';
             return;
         }
         
