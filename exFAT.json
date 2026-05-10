@@ -1,5 +1,22 @@
 [
    {
+    "title": "Days Gone Remastered",
+    "image": "exFAT/Days_Gone_Remastered.png",
+    "tags": [
+      "PPSA28180",
+      "v01.036.178",
+      "Region Bypass",
+      "4.xx BackPork"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWTNkY1dPcmtURmE0RHBhZi9MZzc2NXVDL0hMQkltUUphVFNRazhsOE5OM0tPWGoweHU5MDNPNjFMRzJFOEIwcC9tUlRjanFpIiwicyI6InAvT0RDZnRkMkJiRlNxZm5QVStqVFE9PSIsImkiOiJ0d0JlWFYrbXIrN3RtWjRpIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidTkxZHdrbk1STmVhY3U1L2ZzK1NLRGdtU3hCOUEvTU9reTkwVVpFL3lpKytIa0RkcWZXZ01KN0QySVF2cE5xenhvakUiLCJzIjoidXBVY2s3RU5Tc3Y1NlA2SGVqYkkwdz09IiwiaSI6IkxDbUhKOHFzbXhDcW5MQlgifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMXNUZmo5aU5vWWlWT3pRc1RpYmZDWiszWXFJSWpUYVhEdzhZb3h0VmlkS1k5VEYvUFFaSkNBOU5MWDQycERYQ3p3PT0iLCJzIjoia2Q5dnpXZTIyWU1WSWRwejFzU1pjUT09IiwiaSI6IlpJTTdZQzJIbUpUUjlRS3EifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig",
+    "popular": "on",
+    "size": "67GB"
+  },
+   {
     "title": "Tiny Tina's Wonderlands",
     "image": "exFAT/Tiny_Tinas_Wonderlands.webp",
     "tags": [
@@ -2125,21 +2142,6 @@
     "credits_dlc": "DUPLEX",
     "popular": "on",
     "size": "70GB"
-  },
-  {
-    "title": "Days Gone Remastered",
-    "image": "exFAT/Days_Gone_Remastered.png",
-    "tags": [
-      "PPSA23226",
-      "v01.036.178",
-      "USA",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiLzlJejFaREZMcXF0M01iWjhkSGphSnV3YXdWdDhnTjdBOGM0a29JU0ozdEpId3VBRlliQ01MNFZDWk5pSHRQb1dMckh6bEQxIiwicyI6IkI5cWlZVEM5YngxUVBRNkRZMXRveGc9PSIsImkiOiJsWGtCNk5oL25CZFhDUmFSIn0=",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "55GB"
   },
   {
     "title": "QUBE 10th Anniversary",
