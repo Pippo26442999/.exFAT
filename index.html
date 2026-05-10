@@ -16,6 +16,7 @@
             --p1: rgba(255, 0, 85, 0.4);
             --p2: rgba(136, 0, 255, 0.3); 
             --p3: rgba(0, 255, 238, 0.3);
+            --dump-color: #ffaa00;
         }
 
         @keyframes siteBG { 
@@ -72,7 +73,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Animazioni per il popup Download Ready */
         @keyframes modalCyberPop {
             0% { opacity: 0; transform: scale(0.85) translateY(30px); filter: blur(10px); }
             60% { opacity: 1; transform: scale(1.02) translateY(-5px); filter: blur(0); }
@@ -100,21 +100,18 @@
             100% { box-shadow: 0 0 0 0 rgba(0, 255, 238, 0); }
         }
 
-        /* Animazione per il bottone Random Game */
         @keyframes randomPulse {
             0% { filter: drop-shadow(0 0 2px var(--cyan-neon)); transform: scale(1); }
             50% { filter: drop-shadow(0 0 12px var(--cyan-neon)); transform: scale(1.08); }
             100% { filter: drop-shadow(0 0 2px var(--cyan-neon)); transform: scale(1); }
         }
 
-        /* Animazione per il bottone nel modale */
         @keyframes modalRandomPulse {
             0% { box-shadow: 0 0 0 0 rgba(0, 255, 238, 0.4); border-color: var(--cyan-neon); }
             50% { box-shadow: 0 0 0 8px rgba(0, 255, 238, 0.2), 0 0 15px var(--cyan-neon); border-color: #fff; }
             100% { box-shadow: 0 0 0 0 rgba(0, 255, 238, 0.4); border-color: var(--cyan-neon); }
         }
 
-        /* Animazione effetto goccia per il cambio random */
         @keyframes rippleOut {
             0% { opacity: 1; transform: scale(1); filter: blur(0); }
             30% { opacity: 0.5; transform: scale(0.95); filter: blur(2px); }
@@ -127,11 +124,6 @@
             100% { opacity: 1; transform: scale(1); filter: blur(0); }
         }
 
-        @keyframes contentShimmer {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
         body {
             font-family: 'Segoe UI', sans-serif;
             margin: 0; 
@@ -142,7 +134,6 @@
             background-size: 300% 300%; animation: siteBG 15s ease infinite;
         }
 
-        /* --- NAVBAR --- */
         nav { 
             display: flex;
             gap: 40px; align-items: center; 
@@ -157,7 +148,6 @@
             backdrop-filter: blur(20px); box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
-        /* --- PULSANTI RICERCA E RANDOM --- */
         .nav-buttons {
             display: flex;
             gap: 15px;
@@ -204,7 +194,6 @@
         .nav-random-btn:hover img {
             animation: randomPulse 0.8s ease-in-out infinite;
         }
-        /* Tooltip per il bottone Random */
         .nav-random-btn .tooltip {
             position: absolute;
             bottom: -40px;
@@ -232,7 +221,6 @@
             bottom: -35px;
         }
 
-        /* --- MODALE RICERCA CENTRALE --- */
         .search-modal-overlay {
             position: fixed;
             top: 0;
@@ -426,7 +414,6 @@
             pointer-events: none;
         }
 
-        /* --- CUSTOM DROPDOWN --- */
         .custom-dropdown {
             position: relative;
             user-select: none;
@@ -484,7 +471,6 @@
         }
         .option:hover { background: var(--cyan-neon); color: #000; font-weight: 800; }
 
-        /* --- BOTTONI E NAV ITEMS --- */
         #kofi-nav-btn {
             display: flex;
             align-items: center; gap: 8px;
@@ -504,7 +490,6 @@
         .nav-item.active { opacity: 1; text-shadow: 0 0 20px var(--cyan-neon); }
         #dmca-link { animation: pulseRed 2s infinite ease-in-out; color: var(--dmca-red) !important; opacity: 1 !important; cursor: pointer; }
 
-        /* --- CAROSELLO POPULAR --- */
         .popular-section {
             width: 100%; max-width: 1400px; margin-bottom: 60px; display: none; flex-direction: column;
             position: relative;
@@ -630,7 +615,6 @@
             font-weight: 700;
         }
 
-        /* --- MODALI GIOCO --- */
         .game-modal {
             display: none;
             position: fixed;
@@ -659,7 +643,6 @@
         }
         .game-modal-content::-webkit-scrollbar { display: none; }
         
-        /* Effetto transizione contenuto per il cambio random */
         .modal-body-ripple-out {
             animation: rippleOut 0.25s ease forwards;
         }
@@ -777,7 +760,6 @@
         .modal-btn:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(0, 255, 238, 0.4); }
         .modal-credits { background: rgba(255,255,255,0.03); padding: 15px; border-radius: 15px; font-size: 0.85rem; margin-top: 20px; }
 
-        /* --- GRIGLIA --- */
         .game-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 40px; width: 100%; max-width: 1400px; }
         .game-card {
             background: rgba(5, 5, 10, 0.7);
@@ -812,15 +794,15 @@
         .tags-overlay { position: absolute; bottom: 15px; left: 15px; display: flex; flex-direction: column; gap: 8px; z-index: 10; }
         .game-tag { background: rgba(0,0,0,0.8); color: #fff; font-size: 0.75rem; padding: 6px 14px; border-radius: 8px; font-weight: 800; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(4px); }
         .ver-label { font-size: 0.85rem; font-weight: 900; margin: 18px 0 8px 0; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
-        .download-container { display: flex; gap: 12px; width: 100%; }
+        .download-container { display: flex; gap: 12px; width: 100%; flex-wrap: wrap; }
         .btn-dl { display: block !important; text-decoration: none !important; color: #ffffff !important; background: rgba(255, 255, 255, 0.1) !important; padding: 16px 0 !important; border-radius: 14px !important; font-size: 0.9rem !important; font-weight: 900 !important; transition: all 0.25s ease-in-out !important; cursor: pointer !important; flex: 1; text-align: center; border: 1px solid rgba(255, 255, 255, 0.2) !important; position: relative; z-index: 20 !important; }
         .btn-dl:hover { background: #ffffff !important; color: #000000 !important; transform: translateY(-4px); box-shadow: 0 8px 25px rgba(255, 255, 255, 0.6); }
+        .btn-dl-dump:hover { background: #ffffff !important; color: #000000 !important; transform: translateY(-4px); box-shadow: 0 8px 25px rgba(255, 255, 255, 0.6); }
         .pagination { display: flex; gap: 20px; margin-top: 50px; align-items: center; position: relative; z-index: 100; }
         .page-btn { background: rgba(2, 2, 5, 0.8); border: 1px solid var(--cyan-neon); color: var(--cyan-neon); padding: 12px 25px; border-radius: 10px; cursor: pointer; font-weight: 900; transition: 0.3s; }
         .page-btn:hover:not(:disabled) { background: var(--cyan-neon); color: #000; box-shadow: 0 0 15px var(--cyan-neon); }
         .page-btn:disabled { opacity: 0.3; cursor: not-allowed; }
 
-        /* --- MODALE DOWNLOAD CREDITS - STILE CYBERPUNK --- */
         .download-modal-overlay {
             display: none;
             position: fixed;
@@ -1048,7 +1030,6 @@
             background: linear-gradient(135deg, #00ffee, #00aacc);
         }
 
-        /* --- MODALE DMCA --- */
         .dmca-modal-overlay {
             display: none;
             position: fixed;
@@ -1208,7 +1189,6 @@
         <a href="https://ko-fi.com/pippo26442999" target="_blank" id="kofi-nav-btn"><img src="https://ko-fi.com/img/cup-border.png" alt="Ko-fi" style="width: 20px;">Support Me</a>
     </nav>
 
-    <!-- MODALE RICERCA CENTRALE -->
     <div class="search-modal-overlay" id="searchModalOverlay">
         <div class="search-modal-content">
             <div class="search-modal-header">
@@ -1261,6 +1241,10 @@
                     <div class="modal-section-title">📥 Downloads</div>
                     <div class="modal-buttons" id="modal-downloads"></div>
                 </div>
+                <div class="modal-section" id="modal-dump-section" style="display:none;">
+                <div class="modal-section-title">💾 DUMP</div>
+                    <div class="modal-buttons" id="modal-dump"></div>
+                </div>
                 <div class="modal-section" id="modal-dlc-section" style="display:none;">
                     <div class="modal-section-title">🎮 DLCs</div>
                     <div class="modal-buttons" id="modal-dlc"></div>
@@ -1278,7 +1262,6 @@
         </div>
     </div>
 
-    <!-- MODALE DOWNLOAD CREDITS -->
     <div id="download-modal" class="download-modal-overlay">
         <div class="download-modal-container">
             <div class="download-modal-header">
@@ -1297,7 +1280,6 @@
         </div>
     </div>
 
-    <!-- MODALE DMCA -->
     <div id="dmca-modal" class="dmca-modal-overlay">
         <div class="dmca-modal-container">
             <div class="dmca-modal-header">
