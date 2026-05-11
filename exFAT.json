@@ -1,5 +1,23 @@
 [
    {
+    "title": "Little Nightmares 2",
+    "image": "exFAT/Little_Nightmares_2.avif",
+    "tags": [
+      "PPSA02154",
+      "v01.001",
+      "EUR",
+      "2.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWGY2WFpmVHc1ejFWcXBJMHU2KzR4NGczRFZ3TlIzVGtTaXU1MytXU3RBWTVVZkNIS0dTSHE1QTFscWJjQlN4bGh3PT0iLCJzIjoianAwemJlVlF1ZkdleWZLR3ZrUWlVQT09IiwiaSI6Ing0V1Y3L2hHOXV3aXk4Y3cifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS0hGZVRMb3VOY3g2NXFxYVpwdlV2Y0F2M3daTlFOWERaYmdROXpUckFWYXNWUDR4b3FHdFlleERnekpRdDNFbnlUYkZFNGJOIiwicyI6IjZtQ3JkTVVuVUpPZ1Q0eFY4Mm9wYmc9PSIsImkiOiJXNVVGN0p0Y1RiYXRsTVR0In0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoic3Q4eENFWUtWSWZUU3YzOWxLVmxlS1h3dW40SmFJZGE5enZQNFIxODhRdXFSMWZ2aisxaXdBSTllNFd6RmZjdTF3PT0iLCJzIjoib0xZN3U1Uk5ma3RscEVHNEY2MTZ6Zz09IiwiaSI6IkpPMXFQUnBncENqelNET2MifQ==",
+    "credits_files": "DUPLEX & Dorukhan & SPX",
+    "credits_dlc": "Pkykzhack",
+    "size": "9GB"
+  },
+   {
     "title": "Terminator Resistance Enhanced",
     "image": "exFAT/Terminator_Resistance_Enhanced.avif",
     "tags": [
