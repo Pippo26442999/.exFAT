@@ -1,5 +1,68 @@
 [
   {
+    "title": "Sonic Racing CrossWorlds Deluxe Edition",
+    "image": "exFAT/Sonic_Racing_CrossWorlds_Deluxe_Edition.avif",
+    "tags": [
+      "PPSA08804",
+      "v01.012",
+      "USA",
+      "4.xx BackPork"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSXhETHNLd0VYRWVsTW8vVktrNStWZzVQRFlGVm1HbisrV2dKMGtJZ0ZDSUtXMHpRNEw1bnVQVnpZbEplODdWUHBtNHdobmcyIiwicyI6IjM4VVU3bnV4OEREb2FaVjFtRHQ4VFE9PSIsImkiOiJFcTVXTUNicmNYbXpmcDF4In0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiU1o3MHU5eW01RWIyUG01Q2N5ajhEZWV4RHZtdW12dlNqTGl6R2NoNEF3czFweGZwM3BOdTFEQkRsa0QxdlVpZFJ5eFQiLCJzIjoiVk13SHFzb1RtY0lWWVJNRkdPKzhydz09IiwiaSI6ImhwUDJHamMvWGJXU3REUE8ifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY1oxWXZZbU92T2FvU0llY3ArZkJ4a1h6Vkh5SGluRmwyZzVMUEM5L3VUdjN2R0hFMHZRdUpHSGRnWCtIYnNzQWFRPT0iLCJzIjoiQlVoWDUyOUtSd1pUTStNZVhFa1ZtZz09IiwiaSI6IjJWQlNJendJTEpIc20wVzkifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1RwSDJ5K0oxeXArcWQvYzBydzNDMVlBVHhHeFdFTnNOYnRxZW9mNmJzQTFRU0p1UWNqVmJVMFBEbVdlQzBrTnh2UzljYk1iIiwicyI6Imc3SnNjKzFabDRWaUZPeTBKbnl5Rmc9PSIsImkiOiI2Szg1R3h3WTREVjhNcHgyIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOVJTZE5kbW5Bbm8xcXJIMUJKY2VKaFdhZUFmTmZwYlUyeStZWFdRVDYrVWhjZ2xFbnpxWjhkVGVtdWhCcjZPSTlnPT0iLCJzIjoiKzRrTy8vL1ZrbFlHQWxjc1hHaEl3dz09IiwiaSI6Iis0TGx1c1hLaWZ4VTFhTmMifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "BestPig",
+    "credits_dlc": "DUPLEX",
+    "popular": "on",
+    "size": "13GB"
+  },
+  {
+    "title": "Dragon Ball Z: Kakarot",
+    "image": "exFAT/Dragon_Ball_Z_Kakarot.avif",
+    "tags": [
+      "PPSA08083",
+      "v01.030",
+      "EUR",
+      "Standard (5.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVmRLQ0pqUTMwbUdXMFMwaWtZSE5QWVRzZFJVR01Uc001RlVVOEdOdVEvYmU3eXJRYTV6RmJwTnVOcW5kbThwckwxREpkYlhEIiwicyI6IjhhWVBlUzRTYXNQQTBXOS9HOG1YR0E9PSIsImkiOiJHRmtBTC9VaENNeE1XdzkzIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQ3VYK3VVM1Z3eXEwbWpRS1k2aGYyR0F4M1VPa1J6SkE0Y2JOeHNQZU5pVlNnZERYYzRsMVFsWnlnMFBQb0xTL01KUkciLCJzIjoiYm1JWElhSXZKSEszNjNCV055aTYydz09IiwiaSI6IkVGM080YUlTVU1pN005S2YifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRUxVMzhHZ2k3MWZUZmFsL1k1WjZFenZydE5KM1BMRnhjSElPY0lWWnBvNnZUSmVISUp4ZzZ4NktnckoyYTQ5SFVRPT0iLCJzIjoiY1VWY2h3WFcwRFV1di9VbXVZOTA2Zz09IiwiaSI6InFDTDFyeHowb0gvc0RPYkMifQ==",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUjM1WGdOdllkS1gzWGRTMmhTaFJya1duSUVPSVpUdytsREtLSEgyc2oyRzlXaUNDOGcya1UySVJsenZaVjUxZ0JnZ09WWFo2IiwicyI6InM3dE9TSkpyaGg5Tzh2RGFRaTJ6NXc9PSIsImkiOiJXZmtsNHlESUhQak0yQ3NNIn0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWU00UWFSSnhiajNwSWZOcnlhQ3JJS0hCdndjczJwWjhMS0JsMnh1N1pNR0hDZWFrcTBZcUtJRTNLUFJIdUZlcjhWWHoiLCJzIjoiY0JnVXNMQzREUW5KcFhxakV1QTgvdz09IiwiaSI6IklkbmFyWndsYUlPRkIyYlEifQ==",
+    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS1k5SUR5MUJJcGQveXpTWFYwZ0g2cmZNY3ZFZHN5djkyNXA3TWZ6dnlSOTdJVmhvS3MwTU1naDdMRjdNVDlrSjVnPT0iLCJzIjoib1RNM1hMclgrMEV6TnFocG9ncU5hUT09IiwiaSI6Im5pejFwLzA5dktKWW4rSXkifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR0FIU0lJVHhIRGVEVXBUSk9DTXp1cVlDSGZ6Rmw0cWRjSUxxRWpYNmJjQkdqNkNGeTN2Si82N3g3YTJjUGZxWXZURjRmOUFPIiwicyI6Im92NTJrOGJUQWk1YW1RMDlnNFN1N2c9PSIsImkiOiJRTm9CRUFuT3dpQmg2dEFQIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTHRuekwxM0NYVnQrbjdyM2E0R3lTSDJ3ODg5dGVTb3NSZWROZUt0T01zdUZRK2lHai9PQ2lreTRHYUhHc1NQWENRPT0iLCJzIjoiOWVpWHNwVW01WG04TmJpeldSanZGUT09IiwiaSI6ImxHa3J5Z1BxVjdhaERZYloifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "kerrdec97",
+    "credits_dlc": "Pkykzhack",
+    "popular": "on",
+    "size": "72GB"
+  },
+  {
+    "title": "The Callisto Protocol",
+    "image": "exFAT/The_Callisto_Protocol.webp",
+    "tags": [
+      "PPSA03351",
+      "v01.033",
+      "USA",
+      "4.xx BackPork"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUVNBdTFSaTFSQnkzNTJPNWdsUnMySC9COHB5QzdVdHkydHBNVjBwMFplSXdsVVJ0bHFTdjkveGxGNjZ0LzdTRnFzNWFpSDUzIiwicyI6Im5wUXB2NlBDRkM2MjJmWVozVnpvRGc9PSIsImkiOiJEYVVETjNnb0FmWEZvbUo4In0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoid1lrMHFIQWhCZ1B1T2RSNVJ1Tk82dXl3VG8wZjNvZE5QckNPdy9NR1EzWlJ2cXlvRnMzYjNkc0RVeGtkMWdUVmpWbGkiLCJzIjoiaktXdjAyR1padWRIYVpFSFMzSHIzQT09IiwiaSI6IlIvR3JLVzNUMkN4bUVmNGEifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZDdDbTZ2MUdYMGJ3TUVMVDRicmpWcll3NmlGeG9PRlRGM3FadUZkbVR6ZlM5K0tNeTBEcjVuMU5ycWw0SHRpRlBRPT0iLCJzIjoidUNqZVlydE1PVjlMKzd2Tmt6ZVNudz09IiwiaSI6IklzVHBLL1RkTkUzRGwzZTAifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTmN3OXJSU2NmSHNqN3BzcktzNkE4RGpRcElnTDJPTDltZHZXdzEwN1ZRY05ybUZ1dGtlM09KOWRZWXg1akpIYzUwbFFobWI1IiwicyI6InA1Ums0TjdROTh3UzViWWdPdmg4ZGc9PSIsImkiOiJvZVYyWE4zc2xkc1ZBcFhDIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTmhkRWJ4eEFHOTZBMXlSNW5wK0JGVlN6OEJzMzRFclJFdG44N05nZk14T0tsT0NUTFYwWXNSaGtOOXMrWW5UK1BRPT0iLCJzIjoiNG1ScGtjOWtCNm5JRlRYVWsvYTIzZz09IiwiaSI6IndKUjFFRGxHcGhQdnVETmwifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "BestPig",
+    "credits_dlc": "Pkykzhack",
+    "popular": "on",
+    "size": "122GB"
+  },
+  {
     "title": "Marvel's Guardians of the Galaxy",
     "image": "exFAT/Marvels_Guardians_of_the_Galaxy.webp",
     "tags": [
@@ -1230,26 +1293,6 @@
     "credits_files": "DUPLEX & VanBuuren",
     "popular": "on",
     "size": "149GB"
-  },
-  {
-    "title": "Sonic Racing CrossWorlds",
-    "image": "exFAT/Sonic_Racing_CrossWorlds.avif",
-    "tags": [
-      "PPSA08804",
-      "v01.012",
-      "USA",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZXdUd1BRRDcrbk1SL3N3ZUJ2TUFRUWFVTkRpVVNFZjdwOE5kczA1N09jWmNkc3RBZmZyTHlYVk1MVndGOXI5a3V1bXpkc215IiwicyI6ImpoVURCN2dhb2RMN2p4SVQ2U3A4bGc9PSIsImkiOiJkcE1tWDJIaWwwQ2lmQlZqIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib2N1SjE0YWF5SGpoUVMzQktwZ1J3Mm9yeWV1ZEtGVlVzaFdSMlBobi9ma016TUJOVnlwWGtWL2JJbVpRZ1YvNHdPSzQiLCJzIjoiMnZDYytWZFowWnliNTFuOHdwdVNudz09IiwiaSI6InRzbUNrU0dxbGFDNkdqWFUifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOFRRMm5EaVQ0bnlKRTNvbXRQY2lHaUFRejhpSGVrRjlJKzcvT0pOZ0VFcjRYNU5EZFp0S2srTlp1dFhkZnlkUmNBQjRoZz09IiwicyI6ImFMR1RBTXltQ0FBeFVROFp4d2pRcUE9PSIsImkiOiJFRlU1YnZFOUlON1IvYWlCIn0=",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZXBVMlpWeGNQVEFpQ21rdjF6TFRmUzAvTmdMbkZ4TEpqYk5XTjk0Z0FHUHVnUGNSVmtXUWpBOFFQZEhQZldIVGJhVDJTd2FvIiwicyI6ImlWNGdSWWZpNFZPUVVvM1BQZTl0N1E9PSIsImkiOiJ3YmRnc2hnZVErQU92V3dKIn0=",
-    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWERhbVFJSW9vbU1EdU5vcU1ZVkM0YmZvRG9lNUZyekhZeWR2MGtHZ0ZWYTh0NXVPbzBTT1dyT3QzVTN5Y2toRmc4OU8iLCJzIjoiZHBwakJWZ1MzMk51R2FJSDd4VXZJUT09IiwiaSI6InF6a2h0cUw0a2l3N3RFZEYifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig & Kira",
-    "credits_dlc": "Pkykzhack",
-    "popular": "on",
-    "size": "13GB"
   },
   {
     "title": "Life is Strange Double Exposure Ultimate Edition",
