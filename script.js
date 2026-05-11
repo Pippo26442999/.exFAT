@@ -14,6 +14,8 @@ const SECRET_HASH = "a2242ead55c94c3deb7cf2340bfef9d5bcaca22dfe66e646745ee4371c6
 let searchTimeout = null;
 let isRandomModeActive = false;
 let isTransitioning = false;
+let cachedPopularGames = null;
+let cachedIsMobile = null;
 
 const originalSetItem = sessionStorage.setItem.bind(sessionStorage);
 const originalGetItem = sessionStorage.getItem.bind(sessionStorage);
@@ -1228,6 +1230,20 @@ function startDownloadFromModal(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, 
     openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle);
 }
 
+function attachPopularCardEvents() {
+    let pressTimer = null, isLongPressActive = false, touchMoved = false;
+    const cards = document.querySelectorAll('.popular-card');
+    cards.forEach(card => {
+        const oldCard = card.cloneNode(true);
+        card.parentNode.replaceChild(oldCard, card);
+        oldCard.addEventListener('click', function(e) { e.stopPropagation(); if (isLongPressActive) return; const gameDataAttr = this.getAttribute('data-game'); if (gameDataAttr) { try { const decoded = gameDataAttr.replace(/&quot;/g, '"').replace(/&#39;/g, "'"); const game = JSON.parse(decoded); isRandomModeActive = false; openGameModal(game, e); } catch(err) { console.error("Errore:", err); } } });
+        oldCard.addEventListener('touchstart', function(e) { touchMoved = false; isLongPressActive = false; window._isLongPress = false; pressTimer = setTimeout(() => { isLongPressActive = true; window._isLongPress = true; this.style.opacity = '0.7'; const container = document.getElementById('carousel-container'); const dragEvent = new TouchEvent('touchstart', { touches: e.touches, target: container, cancelable: true }); container.dispatchEvent(dragEvent); }, 200); });
+        oldCard.addEventListener('touchmove', function(e) { touchMoved = true; if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; } });
+        oldCard.addEventListener('touchend', function(e) { if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; } this.style.opacity = ''; if (!isLongPressActive && !touchMoved) { setTimeout(() => { if (!window._wasDrag) { const clickEvent = new MouseEvent('click', { view: window, bubbles: true, cancelable: true }); this.dispatchEvent(clickEvent); } }, 10); } setTimeout(() => { window._isLongPress = false; isLongPressActive = false; }, 100); });
+        oldCard.addEventListener('touchcancel', function(e) { if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; } this.style.opacity = ''; window._isLongPress = false; isLongPressActive = false; });
+    });
+}
+
 function renderPopularGames() {
     const track = document.getElementById('popular-track');
     const section = document.getElementById('popular-section');
@@ -1235,9 +1251,28 @@ function renderPopularGames() {
     
     const popularGames = allGames.filter(g => g.popular === "on");
     if (popularGames.length === 0) { section.style.display = 'none'; return; }
-    section.style.display = 'flex';
     
     const isMobile = window.innerWidth <= 768;
+    
+    if (cachedPopularGames && cachedIsMobile === isMobile) {
+        let htmlContent = '';
+        cachedPopularGames.forEach(game => {
+            let updateBadge = '';
+            const updates = allUpdates[game.title];
+            if (updates && updates.length > 0) { 
+                const lastUpdateDate = new Date(updates[0].date); 
+                const now = new Date(); 
+                const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); 
+                if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; 
+            }
+            htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`;
+        });
+        track.innerHTML = htmlContent + htmlContent;
+        attachPopularCardEvents();
+        return;
+    }
+    
+    section.style.display = 'flex';
     const maxPopularGames = isMobile ? 10 : 20;
     let selectedGames = [...popularGames];
     
@@ -1247,6 +1282,8 @@ function renderPopularGames() {
     }
     
     selectedGames = selectedGames.slice(0, maxPopularGames);
+    cachedPopularGames = selectedGames;
+    cachedIsMobile = isMobile;
     
     let htmlContent = '';
     selectedGames.forEach(game => {
@@ -1262,24 +1299,20 @@ function renderPopularGames() {
     });
     
     track.innerHTML = htmlContent + htmlContent;
-    
-    let pressTimer = null, isLongPressActive = false, touchMoved = false;
-    const cards = document.querySelectorAll('.popular-card');
-    cards.forEach(card => {
-        const oldCard = card.cloneNode(true);
-        card.parentNode.replaceChild(oldCard, card);
-        oldCard.addEventListener('click', function(e) { e.stopPropagation(); if (isLongPressActive) return; const gameDataAttr = this.getAttribute('data-game'); if (gameDataAttr) { try { const decoded = gameDataAttr.replace(/&quot;/g, '"').replace(/&#39;/g, "'"); const game = JSON.parse(decoded); isRandomModeActive = false; openGameModal(game, e); } catch(err) { console.error("Errore:", err); } } });
-        oldCard.addEventListener('touchstart', function(e) { touchMoved = false; isLongPressActive = false; window._isLongPress = false; pressTimer = setTimeout(() => { isLongPressActive = true; window._isLongPress = true; this.style.opacity = '0.7'; const container = document.getElementById('carousel-container'); const dragEvent = new TouchEvent('touchstart', { touches: e.touches, target: container, cancelable: true }); container.dispatchEvent(dragEvent); }, 200); });
-        oldCard.addEventListener('touchmove', function(e) { touchMoved = true; if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; } });
-        oldCard.addEventListener('touchend', function(e) { if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; } this.style.opacity = ''; if (!isLongPressActive && !touchMoved) { setTimeout(() => { if (!window._wasDrag) { const clickEvent = new MouseEvent('click', { view: window, bubbles: true, cancelable: true }); this.dispatchEvent(clickEvent); } }, 10); } setTimeout(() => { window._isLongPress = false; isLongPressActive = false; }, 100); });
-        oldCard.addEventListener('touchcancel', function(e) { if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; } this.style.opacity = ''; window._isLongPress = false; isLongPressActive = false; });
-    });
+    attachPopularCardEvents();
 }
 
+let resizeTimeout;
 window.addEventListener('resize', () => {
-    if (allGames.length > 0) {
-        renderPopularGames();
-    }
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        const wasMobile = cachedIsMobile;
+        const isMobile = window.innerWidth <= 768;
+        if (wasMobile !== isMobile && cachedPopularGames) {
+            cachedPopularGames = null;
+            renderPopularGames();
+        }
+    }, 250);
 });
 
 function renderGames() {
