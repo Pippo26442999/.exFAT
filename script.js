@@ -128,6 +128,8 @@ async function init() {
     await loadUpdates();
     await loadLibrary();
     setupDropdown();
+    setupMobileDropdown();
+    setupMobileMenu();
     setupCarousel();
     setupSearchModal();
     setupHintCountdown();
@@ -147,14 +149,6 @@ async function init() {
     }
 }
 
-// Helper function per creare bottoni modale
-function createModalBtn(url, label, isDump = false) {
-    if (!url || url === "undefined" || url.trim() === "") return '';
-    const dumpAttr = isDump ? 'true' : 'false';
-    return `<button onclick="startDownloadFromModal('${url}', '${gameTitlePlaceholder}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, false, ${dumpAttr})" class="modal-btn ${isDump ? 'btn-dl-dump' : ''}">${label}</button>`;
-}
-
-// Variabili globali temporanee per la funzione sopra, verranno sovrascritte
 let gameTitlePlaceholder = '';
 let fileAuthPlaceholder = '';
 let bpAuthPlaceholder = '';
@@ -165,7 +159,6 @@ function updateModalContentWithRipple(game) {
     if (isTransitioning) return;
     isTransitioning = true;
     
-    // Aggiorna i placeholder globali
     gameTitlePlaceholder = game.title.replace(/'/g, "\\'");
     fileAuthPlaceholder = game.credits_files || '';
     bpAuthPlaceholder = game.credits_backport || '';
@@ -188,12 +181,10 @@ function updateModalContentWithRipple(game) {
     const dumpSection = document.getElementById('modal-dump-section');
     const dumpContainer = document.getElementById('modal-dump');
     
-    // Effetto ripple out
     modalHeader.classList.add('modal-header-ripple-out');
     modalBody.classList.add('modal-body-ripple-out');
     
     setTimeout(() => {
-        // Aggiorna il contenuto
         const newImageUrl = game.image;
         modalHeader.style.backgroundImage = `url('${newImageUrl}')`;
         modalHeader.style.backgroundSize = 'cover';
@@ -204,12 +195,11 @@ function updateModalContentWithRipple(game) {
         modalSize.textContent = game.size || 'N/A';
         
         const createModalBtnLocal = (url, label, isDump = false) => {
-    if (!url || url === "undefined" || url.trim() === "") return '';
-    const dumpAttr = isDump ? 'true' : 'false';
-    return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, false, ${dumpAttr})" class="modal-btn">${label}</button>`;
-};
+            if (!url || url === "undefined" || url.trim() === "") return '';
+            const dumpAttr = isDump ? 'true' : 'false';
+            return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, false, ${dumpAttr})" class="modal-btn">${label}</button>`;
+        };
         
-        // DOWNLOADS (STANDARD / BACKPORT / BACKPORT7/4)
         let downloadsHTML = '';
         const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data;
         const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data;
@@ -249,7 +239,6 @@ function updateModalContentWithRipple(game) {
         }
         downloadsContainer.innerHTML = downloadsHTML;
         
-        // DUMP SECTION (nuova)
         let dumpHTML = '';
         const hasDump = game.dump_akia || game.dump_viki || game.dump_buzz || game.dump_data;
         if (hasDump) {
@@ -263,7 +252,6 @@ function updateModalContentWithRipple(game) {
             dumpSection.style.display = 'none';
         }
         
-        // DLC SECTION
         let dlcBtns = '';
         if (game.dlc_akia) dlcBtns += createModalBtnLocal(game.dlc_akia, 'AKIA');
         if (game.dlc_viki) dlcBtns += createModalBtnLocal(game.dlc_viki, 'VIKI');
@@ -271,7 +259,6 @@ function updateModalContentWithRipple(game) {
         if (game.dlc_data) dlcBtns += createModalBtnLocal(game.dlc_data, 'DATA');
         if (dlcBtns) { dlcSection.style.display = 'block'; dlcContainer.innerHTML = dlcBtns; } else { dlcSection.style.display = 'none'; }
         
-        // CREDITS
         let parts = [];
         const fileAuthor = game.credits_files, bpAuthor = game.credits_backport, dlcAuthor = game.credits_dlc || game.credits_dlcs;
         if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
@@ -280,21 +267,17 @@ function updateModalContentWithRipple(game) {
         let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
         creditsContainer.innerHTML = creditsText;
         
-        // INSTRUCTIONS
         if (game.how_to_play) { instSection.style.display = 'block'; instText.innerHTML = game.how_to_play; } else { instSection.style.display = 'none'; }
         
-        // UPDATES
         const updates = allUpdates[game.title];
         if (updates && updates.length > 0) {
             updatesSection.style.display = 'block';
             updatesList.innerHTML = updates.map(upd => { const dp = upd.date.split('-'); const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date; return `<div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:12px; margin-bottom:8px;"><div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;"><div><strong>${escapeHtml(upd.version)}</strong> <small style="opacity:0.6;">(${upd.size || 'N/A'})</small><br><small style="color:var(--cyan-neon);">Released: ${formattedDate}</small></div><div style="display:flex; gap:8px;">${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">AKIA</a>` : ''}${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VIKI</a>` : ''}${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">BUZZ</a>` : ''}${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">DATA</a>` : ''}</div></div></div>`; }).join('');
         } else { updatesSection.style.display = 'none'; }
         
-        // Rimuovi classi di animazione
         modalHeader.classList.remove('modal-header-ripple-out');
         modalBody.classList.remove('modal-body-ripple-out');
         
-        // Effetto ripple in
         modalHeader.classList.add('modal-header-ripple-in');
         modalBody.classList.add('modal-body-ripple-in');
         
@@ -304,6 +287,94 @@ function updateModalContentWithRipple(game) {
             isTransitioning = false;
         }, 350);
     }, 250);
+}
+
+function setupMobileMenu() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const panel = document.getElementById('mobileMenuPanel');
+    const overlay = document.getElementById('mobileMenuOverlay');
+    const libraryBtn = document.querySelector('.mobile-menu-item[data-action="library"]');
+    
+    function closeMenu() {
+        if (hamburger) hamburger.classList.remove('active');
+        if (panel) panel.classList.remove('open');
+        if (overlay) overlay.classList.remove('active');
+    }
+    
+    function openMenu() {
+        if (hamburger) hamburger.classList.add('active');
+        if (panel) panel.classList.add('open');
+        if (overlay) overlay.classList.add('active');
+    }
+    
+    if (hamburger) {
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (panel && panel.classList.contains('open')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+    }
+    
+    if (overlay) {
+        overlay.addEventListener('click', closeMenu);
+    }
+    
+    if (libraryBtn) {
+        libraryBtn.addEventListener('click', () => {
+            closeMenu();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+}
+
+function setupMobileDropdown() {
+    const mobileDropdown = document.getElementById('mobile-fw-dropdown');
+    if (!mobileDropdown) return;
+    
+    const trigger = mobileDropdown.querySelector('.dropdown-trigger');
+    const optionsContainer = document.getElementById('mobile-fw-options');
+    const currentText = document.getElementById('mobile-fw-current');
+    const hiddenInput = document.getElementById('mobile-fw-filter');
+    const desktopHiddenInput = document.getElementById('fw-filter');
+    const desktopCurrentText = document.getElementById('fw-current');
+    const allOptions = mobileDropdown.querySelectorAll('.option');
+    
+    trigger.onclick = (e) => { 
+        e.stopPropagation(); 
+        optionsContainer.classList.toggle('show'); 
+        mobileDropdown.classList.toggle('active');
+    };
+    
+    allOptions.forEach(opt => {
+        opt.onclick = () => {
+            const val = opt.getAttribute('data-value');
+            const label = opt.innerText;
+            currentText.innerText = label;
+            hiddenInput.value = val;
+            if (desktopHiddenInput) desktopHiddenInput.value = val;
+            if (desktopCurrentText) desktopCurrentText.innerText = label;
+            optionsContainer.classList.remove('show');
+            mobileDropdown.classList.remove('active');
+            
+            const searchInput = document.getElementById('searchModalInput');
+            if (searchInput && searchInput.value.trim()) {
+                updateSearchResultsExternal(searchInput.value);
+                performSearchOnGridExternal(searchInput.value);
+            } else {
+                applyFWFilter();
+                currentPage = 1;
+                renderGames();
+            }
+        };
+    });
+    
+    window.addEventListener('click', () => { 
+        optionsContainer.classList.remove('show'); 
+        mobileDropdown.classList.remove('active');
+    });
 }
 
 function setupModalRandomButton() {
@@ -464,6 +535,7 @@ function setupDMCAModal() {
     const modal = document.getElementById('dmca-modal');
     const closeBtn = document.getElementById('close-dmca-modal');
     const dmcaLink = document.getElementById('dmca-link');
+    const mobileDmcaBtn = document.querySelector('.mobile-menu-item.dmca');
     
     const closeModal = () => {
         modal.classList.add('hiding');
@@ -486,28 +558,45 @@ function setupDMCAModal() {
         }
     });
     
-    if (dmcaLink) {
-        dmcaLink.onclick = async () => {
-            try {
-                const res = await fetch('DMCA.json');
-                const data = await res.json();
-                const bodyContainer = document.getElementById('dmcaModalBody');
-                if (bodyContainer) {
-                    bodyContainer.innerHTML = `<div class="dmca-text">${data.content.map(p => `<p>${escapeHtml(p)}</p>`).join('')}</div>`;
-                }
-                modal.classList.remove('hiding');
-                const container = document.querySelector('#dmca-modal .dmca-modal-container');
-                if (container) container.classList.remove('closing');
-                modal.classList.add('show');
-            } catch(err) { 
-                console.error(err);
-                const bodyContainer = document.getElementById('dmcaModalBody');
-                if (bodyContainer) {
-                    bodyContainer.innerHTML = '<div class="dmca-text"><p>Errore nel caricamento del contenuto DMCA.</p></div>';
-                }
-                modal.classList.add('show');
+    const openDMCAModal = async () => {
+        try {
+            const res = await fetch('DMCA.json');
+            const data = await res.json();
+            const bodyContainer = document.getElementById('dmcaModalBody');
+            if (bodyContainer) {
+                bodyContainer.innerHTML = `<div class="dmca-text">${data.content.map(p => `<p>${escapeHtml(p)}</p>`).join('')}</div>`;
             }
-        };
+            modal.classList.remove('hiding');
+            const container = document.querySelector('#dmca-modal .dmca-modal-container');
+            if (container) container.classList.remove('closing');
+            modal.classList.add('show');
+        } catch(err) { 
+            console.error(err);
+            const bodyContainer = document.getElementById('dmcaModalBody');
+            if (bodyContainer) {
+                bodyContainer.innerHTML = '<div class="dmca-text"><p>Errore nel caricamento del contenuto DMCA.</p></div>';
+            }
+            modal.classList.add('show');
+        }
+    };
+    
+    if (dmcaLink) {
+        dmcaLink.onclick = openDMCAModal;
+    }
+    
+    if (mobileDmcaBtn) {
+        const newMobileBtn = mobileDmcaBtn.cloneNode(true);
+        mobileDmcaBtn.parentNode.replaceChild(newMobileBtn, mobileDmcaBtn);
+        newMobileBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const panel = document.getElementById('mobileMenuPanel');
+            const overlay = document.getElementById('mobileMenuOverlay');
+            const hamburger = document.getElementById('hamburgerBtn');
+            if (panel) panel.classList.remove('open');
+            if (overlay) overlay.classList.remove('active');
+            if (hamburger) hamburger.classList.remove('active');
+            openDMCAModal();
+        });
     }
 }
 
@@ -874,6 +963,12 @@ function setupDropdown() {
             hiddenInput.value = val;
             optionsContainer.classList.remove('show');
             dropdown.classList.remove('active');
+            
+            const mobileHiddenInput = document.getElementById('mobile-fw-filter');
+            const mobileCurrentText = document.getElementById('mobile-fw-current');
+            if (mobileHiddenInput) mobileHiddenInput.value = val;
+            if (mobileCurrentText) mobileCurrentText.innerText = opt.innerText;
+            
             const searchInput = document.getElementById('searchModalInput');
             if (searchInput && searchInput.value.trim()) {
                 updateSearchResultsExternal(searchInput.value);
@@ -1014,7 +1109,6 @@ function openGameModal(game, event) {
     if (hasMoved || window._wasDrag) { hasMoved = false; window._wasDrag = false; return false; }
     hasMoved = false; window._wasDrag = false;
     
-    // Aggiorna i placeholder globali
     gameTitlePlaceholder = game.title.replace(/'/g, "\\'");
     fileAuthPlaceholder = game.credits_files || '';
     bpAuthPlaceholder = game.credits_backport || '';
@@ -1033,10 +1127,9 @@ function openGameModal(game, event) {
     const createModalBtnLocal = (url, label, isDump = false) => {
         if (!url || url === "undefined" || url.trim() === "") return '';
         const dumpAttr = isDump ? 'true' : 'false';
-        return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, false, ${dumpAttr})" class="modal-btn ${isDump ? 'btn-dl-dump' : ''}">${label}</button>`;
+        return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, false, ${dumpAttr})" class="modal-btn">${label}</button>`;
     };
     
-    // DOWNLOADS (STANDARD / BACKPORT / BACKPORT7/4)
     let downloadsHTML = '';
     const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data;
     const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data;
@@ -1076,7 +1169,6 @@ function openGameModal(game, event) {
     }
     downloadsContainer.innerHTML = downloadsHTML;
     
-    // DUMP SECTION (nuova)
     const dumpSection = document.getElementById('modal-dump-section');
     const dumpContainer = document.getElementById('modal-dump');
     let dumpHTML = '';
@@ -1092,7 +1184,6 @@ function openGameModal(game, event) {
         dumpSection.style.display = 'none';
     }
     
-    // DLC SECTION
     const dlcSection = document.getElementById('modal-dlc-section');
     const dlcContainer = document.getElementById('modal-dlc');
     let dlcBtns = '';
@@ -1102,7 +1193,6 @@ function openGameModal(game, event) {
     if (game.dlc_data) dlcBtns += createModalBtnLocal(game.dlc_data, 'DATA');
     if (dlcBtns) { dlcSection.style.display = 'block'; dlcContainer.innerHTML = dlcBtns; } else { dlcSection.style.display = 'none'; }
     
-    // CREDITS
     let parts = [];
     const fileAuthor = game.credits_files, bpAuthor = game.credits_backport, dlcAuthor = game.credits_dlc || game.credits_dlcs;
     if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
@@ -1111,11 +1201,9 @@ function openGameModal(game, event) {
     let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
     document.getElementById('modal-credits').innerHTML = creditsText;
     
-    // INSTRUCTIONS
     const instSection = document.getElementById('modal-instructions');
     if (game.how_to_play) { instSection.style.display = 'block'; document.getElementById('modal-instructions-text').innerHTML = game.how_to_play; } else { instSection.style.display = 'none'; }
     
-    // UPDATES
     const updatesSection = document.getElementById('modal-updates');
     const updatesList = document.getElementById('modal-updates-list');
     const updates = allUpdates[game.title];
@@ -1137,8 +1225,6 @@ function openGameModal(game, event) {
 }
 
 function startDownloadFromModal(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, gameTitle) {
-    // Nota: gameTitle viene passato come settimo parametro, ma nella chiamata originale potrebbe mancare
-    // Adattiamo la funzione per compatibilità
     openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle);
 }
 
@@ -1146,19 +1232,37 @@ function renderPopularGames() {
     const track = document.getElementById('popular-track');
     const section = document.getElementById('popular-section');
     if (!track || !section) return;
+    
     const popularGames = allGames.filter(g => g.popular === "on");
     if (popularGames.length === 0) { section.style.display = 'none'; return; }
     section.style.display = 'flex';
-    const shuffledGames = [...popularGames];
-    for (let i = shuffledGames.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [shuffledGames[i], shuffledGames[j]] = [shuffledGames[j], shuffledGames[i]]; }
+    
+    const isMobile = window.innerWidth <= 768;
+    const maxPopularGames = isMobile ? 10 : 20;
+    let selectedGames = [...popularGames];
+    
+    for (let i = selectedGames.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [selectedGames[i], selectedGames[j]] = [selectedGames[j], selectedGames[i]];
+    }
+    
+    selectedGames = selectedGames.slice(0, maxPopularGames);
+    
     let htmlContent = '';
-    shuffledGames.forEach(game => {
+    selectedGames.forEach(game => {
         let updateBadge = '';
         const updates = allUpdates[game.title];
-        if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; }
+        if (updates && updates.length > 0) { 
+            const lastUpdateDate = new Date(updates[0].date); 
+            const now = new Date(); 
+            const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); 
+            if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; 
+        }
         htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`;
     });
+    
     track.innerHTML = htmlContent + htmlContent;
+    
     let pressTimer = null, isLongPressActive = false, touchMoved = false;
     const cards = document.querySelectorAll('.popular-card');
     cards.forEach(card => {
@@ -1171,6 +1275,12 @@ function renderPopularGames() {
         oldCard.addEventListener('touchcancel', function(e) { if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; } this.style.opacity = ''; window._isLongPress = false; isLongPressActive = false; });
     });
 }
+
+window.addEventListener('resize', () => {
+    if (allGames.length > 0) {
+        renderPopularGames();
+    }
+});
 
 function renderGames() {
     const grid = document.getElementById('game-grid');
@@ -1188,27 +1298,24 @@ function renderGames() {
         const hPlay = (game.how_to_play || "").replace(/'/g, "\\'");
         const dCredits = game.credits_dlc || game.credits_dlcs || '';
         const createBtn = (url, label, isDLC = false, isDump = false) => { 
-    if (!url || url === "undefined" || url.trim() === "") return ''; 
-    return `<a onclick="openDL('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', ${isDLC}, ${isDump}, '${game.title.replace(/'/g, "\\'")}')" class="btn-dl">${label}</a>`;
-};
+            if (!url || url === "undefined" || url.trim() === "") return ''; 
+            return `<a onclick="openDL('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', ${isDLC}, ${isDump}, '${game.title.replace(/'/g, "\\'")}')" class="btn-dl">${label}</a>`;
+        };
         
         let downloadHTML = '';
         let dlcBtns = '';
         let dumpBtns = '';
         
-        // Dump section (nuova) - prioritaria, sopra gli altri?
         if (game.dump_akia) dumpBtns += createBtn(game.dump_akia, 'AKIA', false, true);
         if (game.dump_viki) dumpBtns += createBtn(game.dump_viki, 'VIKI', false, true);
         if (game.dump_buzz) dumpBtns += createBtn(game.dump_buzz, 'BUZZ', false, true);
         if (game.dump_data) dumpBtns += createBtn(game.dump_data, 'DATA', false, true);
         
-        // DLC
         if (game.dlc_akia) dlcBtns += createBtn(game.dlc_akia, 'AKIA', true);
         if (game.dlc_viki) dlcBtns += createBtn(game.dlc_viki, 'VIKI', true);
         if (game.dlc_buzz) dlcBtns += createBtn(game.dlc_buzz, 'BUZZ', true);
         if (game.dlc_data) dlcBtns += createBtn(game.dlc_data, 'DATA', true);
         
-        // Downloads standard
         const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data;
         const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data;
         if (hasBackport7 || hasBackport4) {
@@ -1292,13 +1399,13 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, 
         `;
     }
     
-const modalContent = `
-    <div class="download-credit-card">
-        <div class="download-credit-text">${creditsText}</div>
-    </div>
-    ${instHTML}
-    ${updateHTML}
-`;
+    const modalContent = `
+        <div class="download-credit-card">
+            <div class="download-credit-text">${creditsText}</div>
+        </div>
+        ${instHTML}
+        ${updateHTML}
+    `;
     
     showDownloadModal(modalContent, url);
 }
