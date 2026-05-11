@@ -1,5 +1,40 @@
 [
    {
+    "title": "Pneumata",
+    "image": "exFAT/Pneumata.avif",
+    "tags": [
+      "PPSA17139",
+      "v01.017",
+      "EUR",
+      "Standard (7.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidjU0a2FRV3NUTWppTHZKT2Vza1NRa3JzRWZtV09ISmh6RVB6eTJCUHVqa1lWWGJ0M0RhMDNhQ0pjTFhORU56dEIzbWw2SVZFIiwicyI6IldRRXFCUnM4QnJUWC94TDFxbnRFelE9PSIsImkiOiJvamdDMGlUMUdORkZjOE5NIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZFVpSnJZYmQ2YlVsbXR1a1J0VjlOTDFWbGVRQlJQc3Z2cUg0bG9NWEV3aUduazhzQkthRmJyM2JKUHB1Q2kzOFBnOHQiLCJzIjoibGU4MkpxVmJvQUkrMUdMbERXNWF4UT09IiwiaSI6IlB6S3JtL3p6YldkS04yRXEifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiREFsdFZ4bVNURFVZdmJGQXpibzkxUThnM3BhTUlYQ3RMT1lyUlJBVDZQNmRONVBNRllrQ2lNYzNPdDVLUHhuaVhnPT0iLCJzIjoiOXVKYTEyS042b25RNkcxTHlVc2hYUT09IiwiaSI6ImM4WFRBNnk5T2tMYjNBUUQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZ201WkF5RFpJYVZKVG5FSVphTlBvejA3eVIrQ0IwVHJxRVRBRnFmbEZYeStXcXdtWjNSVTZ4TDZUTWN0L0t4V25VeWxrbDdCIiwicyI6Ijg1OGFRMGcvc0ZKak81RzhTOGpqOWc9PSIsImkiOiJRb0ZuWEw2Z0VRUXluVTF2In0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTUdneTQ2Y1lwWmQvWGhwSk9aOVBOL3lYYkgwNzQzdUhCemtzZ2RjYjdGL2pxQVYzT2o5SG55R010V1BjaUtTN2wraDciLCJzIjoiZHVQOThNbjNHSlhuOFQyMWcyaE9zdz09IiwiaSI6ImRVdFg1YTV2MGJ1eG9sdXQifQ==",
+    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS0U5dFFUbHdXMExtaDVYNE91Ti9lU3orM1g1QlNGaEY0OStLRGJta3djOHZpMDQ1c1pYY3VZTWdsdWRRK0hOKzZRPT0iLCJzIjoiTVk2S1dsamlKbDBQWXF0dVNiVUdVUT09IiwiaSI6Inp3QlhkUkFwMDJPUk1WM2MifQ==",  
+    "credits_files": "SiESPTA",
+    "credits_backport": "kerrdec97",
+    "size": "60GB"
+  },
+  {
+    "title": "The Medium",
+    "image": "exFAT/The_Medium.jpg",
+    "tags": [
+      "PPSA08804",
+      "v01.007",
+      "EUR",
+      "2.xx and beyond"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT1lGTFlILzl5R2EvWE9KaHNRWFU1S2I3aXo2S3h2NjMyWG52eWxlNHdEekpKSzlSQTZEaGxPUzVNUHRSOWhzdTI5ZS9idVpMIiwicyI6IlRQSjVPQUZOeXFEYjVxWjdSUjVqYmc9PSIsImkiOiJCSlB5dzF3WTN5YmRBNkRFIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicmpYb2hQa0RrQTNwb0lUSGdIcThkNE1YMlA3Q1F0dXdYMGJKWmY1RzJrN0x3QmpZUmtwQnNRVm5xakxQWC9FK0J3WXMiLCJzIjoiM3U2UUdZZU1uK2JTQkdxRGEzSDNkdz09IiwiaSI6InN4blRKbnRTZVQ5K3BabjIifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV3ZNQSt2b1VlRDVPQXVFVXFTdmcxdVdsUVFKM3c4ZEJ3S0xPN21iSjRKU280anZpbWhaZVBHcDdjNWxsRWVCRjRRPT0iLCJzIjoiYjMyS01oZkF2SmZJeGs5TDJSbm5Mdz09IiwiaSI6IkErSFNQVkh5MCt3aGVmTDcifQ==",
+    "credits_files": "SiESPTA",
+    "popular": "on",
+    "size": "24GB"
+  },
+   {
     "title": "NHL 24",
     "image": "exFAT/NHL_24.avif",
     "tags": [
@@ -2480,19 +2515,6 @@
     "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMHdHUjFwK0hONm5QeVdxL1BjSUNzcmxnNSt1cXlEdHBSeEtKOURVbjcxVEZEMWtkbldJT2xLMTdCZ1pSU0w4M2RPcmNYTGxXIiwicyI6IlVwNzBHd1VDeDgxODdHdmVyTFBCUnc9PSIsImkiOiJ3TTQyaW1jK3kyeWJ6UWU4In0=",
     "credits_files": "SiESPTA",
     "size": "9GB"
-  },
-  {
-    "title": "The Medium",
-    "image": "exFAT/The_Medium.jpg",
-    "tags": [
-      "PPSA03717",
-      "v01.003",
-      "EUR",
-      "3.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUUlGTk5LOW1qMjlOZnhOVVpzdml1UXUxRTVTUzg3M0Y4WnNBa1VwdUc3WXVpRkU2Y1dnMUh2Z0t6TGRuUjlFTkxpN25HNnE3IiwicyI6IkVmZG9mQkdKVWlHYWlOdlpLMHF5a3c9PSIsImkiOiI1Q0xCUHVrZzFrRVlZczRjIn0=",
-    "credits_files": "BedroZen & SuperPSX",
-    "size": "26GB"
   },
   {
     "title": "Super Crazy Rhythm Castle",
