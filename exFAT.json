@@ -1,5 +1,24 @@
 [
    {
+    "title": "Skull Island Rise of Kong",
+    "image": "exFAT/Skull_Island_Rise_of_Kong.avif",
+    "tags": [
+      "PPSA15537",
+      "v01.200",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib1BVTFoxWFVFbjRVaHR1UHpVU1lpWFRkQjdXZWkrN2xjUFVpakkxeTU5QldFYVU5S3hTZkNnbkl1WU1wYzRPOW1wYlpsOXRSIiwicyI6InlaOWVRbDNqbFRxKzIzSnVKTi9mN3c9PSIsImkiOiJqL0RHcWJDN2d4amhmUDFYIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiU01FUDRiKy9IdnNSWFAwN3Jaa3k5ZkFwQ1JxMVcwd1pIZ3hMUFY2elkzeFliUExzQTRoZndldGpScnAzb1VWWGVyRXAiLCJzIjoicjBOemY0L3krd1pQRURiU3R3ZjJ4QT09IiwiaSI6IlROL0tmVktXMXJqdXAwbGgifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY3FEM0lsSnF6eXozSHJrV3Y3YlhYQm9hNFNBaTg1MmVldGx2YmE0R1I4eC9ZRDE0M3JyUThEMTVobmhld1BhN3hnPT0iLCJzIjoiVFd1ZG02dmorTzlxMW5QUkhNNzhIUT09IiwiaSI6Im0zTWYwZzhjVXhSWFovK2QifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOTB3aHBnaEpuVEpaeXFXYjBjWkpCTy9xNDRhRFUwVUt1L2xMR3hUOWJrUzdVenRBWERVWTQyQUtIeG9GMjBNYmZPNThZdk1iIiwicyI6IlN0cGVRWDdTWjRoZHdjeTBEQU4zVFE9PSIsImkiOiJvaEJ4ZC9MMldFRFZiTHdCIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVUF1ZHZYZWJOZGZKbGI4cHY3MmhidnhBYURqOVlTbGhYYVJwSmlXNVU1bWo4WkkrOGFON1RZNHdyM1VnUCs1MHNnPT0iLCJzIjoiaUVaaXI4Vlp4SmRpVGc3QzlVOWZUQT09IiwiaSI6InR0OVd5S1krVkFtMjJFNDkifQ==",
+    "credits_files": "DUPLEX & José Carrión",
+    "credits_backport": "kerrdec97",
+    "credits_dlc": "Pkykzhack",
+    "size": "12GB"
+  },
+   {
     "title": "The Outer Worlds 2",
     "image": "exFAT/The_Outer_Worlds_2.avif",
     "tags": [
