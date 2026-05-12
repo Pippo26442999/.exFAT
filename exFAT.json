@@ -1,20 +1,22 @@
 [
-   {
-    "title": "Resident Evil Requiem",
-    "image": "exFAT/Resident_Evil_Requiem.avif",
+  {
+    "title": "Resident Evil Requiem Deluxe Edition",
+    "image": "exFAT/Resident_Evil_Requiem_Deluxe_Edition.avif",
     "tags": [
       "PPSA31246",
       "v01.200",
       "EUR",
+      "DLCs Merged",
       "4.xx BackPork"
     ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoid2poMDQxTnhvK21VVWExT0t6UFFsT0hpcDR1ektNdldxUFlYdCtFcms5RDdyTTFGRTV6UkoySUMrZjFkcFhBWlZzV0kwemZJIiwicyI6IkE2T0NETURjSWtGOVBXdENFMXo2TXc9PSIsImkiOiJhRnNwSkxoUGYzdlVuK053In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidFNVRWdhdWhNSUw1RGluOWNKTHV6aXN5VUExTndBZlg3eVV3NndCRUpramJTZGE1eWdPYnpIbG9uN1VxY2RwMlJZUmwiLCJzIjoiNHlFeUxWemRxcFdXNFEyci9mNkJEdz09IiwiaSI6IjRPcytlTGtLby9tUnFLWEUifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUmZLOUpuR0ZBNW5CcmxlK1pnSExNcnYxVk92bGZvMHBQMUJwS2xxelJsM29pb3BacmEzK05LOWd3TDZxN0xqNkhRPT0iLCJzIjoiRCtWeHlsUlUxaDA2UWF6SWhra1g4QT09IiwiaSI6IlVseVJpVXVJS1pldUw0TTUifQ==",
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibiswaHF2VWU3Wmk3SDV2dWpGemsrbTVnNVkwbzRIUEdEN1VGcWUyU2tKbU1yMlFVRW5ITUNzVDBnUzBnZWx0ZlBBPT0iLCJzIjoiMVFCOFZKb09mLys0YVhrU1I0N1Vndz09IiwiaSI6IjJ6ZUJGU2NvS2xvUkdZK08ifQ==",
     "credits_files": "DUPLEX & SiESPta",
     "credits_backport": "BestPig",
+    "credits_dlc": "High-Speed007",
     "popular": "on",
-    "size": "121GB"
+    "size": "123GB"
   },
    {
     "title": "Skull Island Rise of Kong",
