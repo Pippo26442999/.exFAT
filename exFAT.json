@@ -1,5 +1,21 @@
 [
    {
+    "title": "New Tales From The Borderlands",
+    "image": "exFAT/New_Tales_From_The_Borderlands.avif",
+    "tags": [
+      "PPSA03500",
+      "v01.002",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOXJtQSs5M0hOOHU0UVhicm9Vbmt0TjcyeUtRekRFT3BnL1ZCaWtoU3BHdDJQNmZZcVNHUE56OVJJOG5vc2NVMWt3PT0iLCJzIjoibGVLci9CUVdsWEROcnpwMkZrYXUvUT09IiwiaSI6InMxRkVTazBiZDhTbEtDZk0ifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "kerrdec97",
+    "size": "45GB"
+  },
+   {
     "title": "Scars Above",
     "image": "exFAT/Scars_Above.avif",
     "tags": [
