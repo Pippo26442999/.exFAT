@@ -1,5 +1,22 @@
 [
    {
+    "title": "Reanimal",
+    "image": "exFAT/REANIMAL.jpg",
+    "tags": [
+      "PPSA23372",
+      "v01.000.006",
+      "EUR",
+      "4.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibDRBZGRNM2VqZzVnMUJodUUzSWFhb0pmdUZhOGs3ZlNYcXUwNGRCTXJ3cWJjNG5iRTJmdVFOcCtSMkNOSnlQWGpRPT0iLCJzIjoiY3ZKZk5NWDNQb1dUSlFKVWRKbHE1Zz09IiwiaSI6IlVralNzbUxpWmlmOTVSck0ifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "BestPig",
+    "popular": "on",
+    "size": "27GB"
+  },
+   {
     "title": "Life is Strange: Reunion",
     "image": "exFAT/Life_is_Strange_Reunion.jpg",
     "tags": [
@@ -12,6 +29,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYmdZTWZHbTN3RFYyTm5lVUZrcHduYnBIVEU1T1BaV0lmVGZKdGtKOHA4V0pTRVBCODNGc0lESThIc0p0aHh3Rjcyc1MiLCJzIjoiQjZQWTBlVDdKSGk2Y2grMFBGbkcwUT09IiwiaSI6IjJPYStwQWo2WHNHZmxrNlQifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT1RIeEFrK3UzZElCQkMzVVFKR3lHbFhOTndyWmNJOEc0QWdjL293UWFzMVdHV0xvWEhDUFRTQk9sOTRPUTYxSkFBPT0iLCJzIjoiRXdES0oxeW41SDhTQ1hCWVVHWVVXUT09IiwiaSI6InVGUVc4K2hIam9KYnZReWEifQ==",
     "credits_files": "DUPLEX",
+    "credits_backport": "BestPig",
     "popular": "on",
     "size": "44GB"
   },
