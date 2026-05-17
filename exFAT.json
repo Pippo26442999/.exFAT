@@ -1,4 +1,26 @@
 [
+   {
+    "title": "Mortal Kombat 1",
+    "image": "exFAT/Mortal_Kombat_1.jpg",
+    "tags": [
+      "PPSA07570",
+      "v01.010.001",
+      "USA to EUR Languages",
+      "DLC Merged",
+      "4.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia3NseWlVN3BDdHRBcmFMTFAxYUV0RVp0Nm9EZXlYMUN1dEY5RkRjeTNIeEtYYWZSWlIzc3F0VGEyODRsM0ZIdlVRPT0iLCJzIjoiRDNhUUFkWTZsRW1BQXcvYVMxTXU1QT09IiwiaSI6InZTb2FlMkNxNVVQbEVwOFAifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidHBMekxFYy9kUUNtc1ZWamhRZ01wVTFwbG1WblZDQ2daUjVnRnpXR2I0MXltU2EyMzZXTHFUYU1UWDU1TWE5OXAwMWpGbTk5IiwicyI6ImNVczdvdWVkNnk1QlpJYnhDMVBuY2c9PSIsImkiOiJOZXBjWmtXcldkek5BMmtIIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOS9NNkc4VlZQMUtNMmJLUnRaNFQxU1NVYjBWRHFFYkdNWTRpQU96L2p5dk1aUjlJK1hKNFI4SzBkdndZWUNmRWt3PT0iLCJzIjoiY2dvNFlpYUg4bTd2cWlaUVlKK0hJdz09IiwiaSI6IlZFaHExK1UrN2Jud1NJMEMifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "Pkykzhack",
+    "credits_backport": "BestPig",
+    "how_to_play": "Khaos Reign DLC now is Merged.",
+    "popular": "on",
+    "size": "306GB"
+  },
   {
     "title": "The Last of Us Part II Remastered",
     "image": "exFAT/The_Last_of_Us_Part_II.avif",
@@ -83,27 +105,6 @@
     "credits_files": "High-Speed007",
     "popular": "on",
     "size": "125GB"
-  },
-   {
-    "title": "Mortal Kombat 1",
-    "image": "exFAT/Mortal_Kombat_1.jpg",
-    "tags": [
-      "PPSA07570",
-      "v01.010.001",
-      "USA to EUR Languages",
-      "Standard (9.xx) + 4.xx BackPork"
-    ],
-    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMlhlYlBvVU1Jem05UnMyeVRncHBFVkxScjV1eGx4VXhjdnMzVGQvd3VIK0FMWGExZUl6UTJHU05vWWlsc09tVjRtSUwzZ2JMIiwicyI6Ik9FUVhWbmZFaFk1OW1zRG96aUxHNkE9PSIsImkiOiJvOWo4TENmaHN1UklnaFZIIn0=",
-    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoid1orREl3ZEVlcFgvRHUveGtydFFDTklLdTFsaWhBdG9vMUFwN2FtTnpueFE3MjhacDRWTmF4eXp6bXRlY3hxUHliNWZnejhuIiwicyI6IjZuY2VSa3FKd1dCM1B0cjJrUVduTlE9PSIsImkiOiJxVVk4bHRWZjgxOFpxSHRWIn0=",
-    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaXRVVHpyRUFUVHh2UXB6aEJ1bGl4WEVrV3pOMjV4S0hmYlBIU1ZxNThPVi9wVXp6Z3duZnoxd2U0SStLL0toYU9jUHEiLCJzIjoidUNON2szc3JRUFFTYVlHaTA0bU9BUT09IiwiaSI6IjNWY0JBeC9ETWordDVKVkoifQ==",
-    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWDBQZ2JtdW5UUHlUT1RHbDlMcHNpOGJNbkFQZHJXTzlHZTE1dXoxKzdsdGNXVWlwVVMzNGxHb3dONnQ0Szg3SHJnPT0iLCJzIjoiaE1GeGdHVTY1MVVEQ3pTMStRS3A2UT09IiwiaSI6ImNtM3FHWEtJdkpkdGRyeUgifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidHBMekxFYy9kUUNtc1ZWamhRZ01wVTFwbG1WblZDQ2daUjVnRnpXR2I0MXltU2EyMzZXTHFUYU1UWDU1TWE5OXAwMWpGbTk5IiwicyI6ImNVczdvdWVkNnk1QlpJYnhDMVBuY2c9PSIsImkiOiJOZXBjWmtXcldkek5BMmtIIn0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOS9NNkc4VlZQMUtNMmJLUnRaNFQxU1NVYjBWRHFFYkdNWTRpQU96L2p5dk1aUjlJK1hKNFI4SzBkdndZWUNmRWt3PT0iLCJzIjoiY2dvNFlpYUg4bTd2cWlaUVlKK0hJdz09IiwiaSI6IlZFaHExK1UrN2Jud1NJMEMifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "Pkykzhack",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "292GB"
   },
    {
     "title": "FATAL FURY: City of the Wolves",
