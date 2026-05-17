@@ -1,4 +1,21 @@
 [
+  {
+    "title": "SAROS",
+    "image": "exFAT/SAROS.avif",
+    "tags": [
+      "PPSA07631",
+      "v01.000.000",
+      "EUR",
+      "5.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUkZ0aC9yZG0xVHhvMEg0emQwZTBmc3ZpaWdRSFE4SzI0cEF0cStBQ0tzU3JwaTUvQjc1cEtxSW5QY1RjdStwcTJRPT0iLCJzIjoiSnFyc1oyQWt1TWdRZnJhUTJOWWd3QT09IiwiaSI6Ijd6aHNwYkRqamV5N29tUDcifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "BestPig",
+    "popular": "on",
+    "size": "151GB"
+  },
    {
     "title": "Mortal Kombat 1",
     "image": "exFAT/Mortal_Kombat_1.jpg",
