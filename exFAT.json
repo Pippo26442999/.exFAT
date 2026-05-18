@@ -1,5 +1,24 @@
 [
    {
+    "title": "EDENS ZERO",
+    "image": "exFAT/EDENS_ZERO.avif",
+    "tags": [
+      "PPSA07570",
+      "v01.000",
+      "JPN",
+      "Standard (9.xx) + 4.xx BackPork"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieHl3VUYxNjE2OEdYL1hLVDNqNFQwM0hZTUwyV0VnZTgxd29pcUN4eVoxRzZodFlCUDVsaUFWVW5ianFNRlNQa05tUHpGN0VMIiwicyI6IllidVIzWkN5N3BKamhTcHpPV3Y3MHc9PSIsImkiOiJxSUMxRE9pdzlzd0hSU1lZIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiM0xCd2lCa21kNzVvZkg4TkkzV3hoYzhUTWEwU2ZjTlNpSzl1MWR2eHlBbTZWeWhES2ZUczNBUFN5ck50V21lUnIyQzQiLCJzIjoiNzh5NGpxaVRpcmlTSUpwZFEzR0JvQT09IiwiaSI6ImtRYWFyZG9XU1p4Y1ROMlIifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaWIxWVBzVVNrNVZ3T2Q3TWMwRlR4c09LUXM0bWZDSFpUNjl1Rm0vVjFjZE9rWFBzTTRCQ0l5TUFtVytPTVJtZzRRPT0iLCJzIjoiN1ZFY1d5SWw1TkxrMmNjT0JuMDVYUT09IiwiaSI6Ik1WbjZZME9vSGRNdXBXVmsifQ==",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNHNTTFlGRmZxREN4SG4zYmpEN2t0Z0x5MVBic1BsR3ljSVNYc3ZmWllJeXRWRW9HbFZ4TWRVa3pKSkx5K3N3OFQ0a2syOFVaIiwicyI6IlNzOFp2c3pYRGFJaE1aaFlPdWROWXc9PSIsImkiOiJ0Zi9pdnBqSVd0NUNKaEF0In0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY0Nlb0pDZHJqUmliSE1MbVZwN0N0MW4rTUdjblJFQmdRb0Z2a3F3Vys3enZtVm5PTk8wTzFnaUZudklsenFDNVBwOG0iLCJzIjoiSCtZTm9GQ3N0b2VtRC9tejJuamluZz09IiwiaSI6InZ0M1VMMHZ1WW9oRndZbXgifQ==",
+    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOVB5LzR3QjM1TXNZYUFqS00zMDNuUWtlcjVxYWNrcklGQkhHdmJ0Tm43em4rdDQ0bjJkNWd0SW5tV2lieU16ZzVBPT0iLCJzIjoidGZGaHJMdkxzdlF5bWR2ZElWRVVvQT09IiwiaSI6IkR3SzJsNjBhZnk5eSsvT0UifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "BestPig",
+    "size": "24GB"
+  },
+   {
     "title": "Life is Strange: Reunion",
     "image": "exFAT/Life_is_Strange_Reunion.jpg",
     "tags": [
