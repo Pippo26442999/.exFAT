@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Pippo26442999 Library</title>
+    <title>Pippo Library</title>
     <style>
         :root {
             --bg-1: #020205;
@@ -123,6 +123,22 @@
             100% { opacity: 1; transform: scale(1); filter: blur(0); }
         }
 
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+@keyframes rainbowBorder {
+    0% { border-color: #ff0000; box-shadow: 0 0 8px #ff0000; }
+    14% { border-color: #ff8800; box-shadow: 0 0 8px #ff8800; }
+    28% { border-color: #ffff00; box-shadow: 0 0 8px #ffff00; }
+    42% { border-color: #00ff00; box-shadow: 0 0 8px #00ff00; }
+    57% { border-color: #00ffff; box-shadow: 0 0 8px #00ffff; }
+    71% { border-color: #0088ff; box-shadow: 0 0 8px #0088ff; }
+    85% { border-color: #ff00ff; box-shadow: 0 0 8px #ff00ff; }
+    100% { border-color: #ff0000; box-shadow: 0 0 8px #ff0000; }
+}
+
         body {
             font-family: 'Segoe UI', sans-serif;
             margin: 0; 
@@ -135,16 +151,99 @@
 
         nav { 
             display: flex;
-            gap: 40px; align-items: center; 
+            align-items: center;
+            justify-content: space-between;
             position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
             padding: 30px 50px;
             transition: all 0.5s ease;
-            background: transparent; justify-content: center;
+            background: transparent;
         }
         nav.scrolled {
             padding: 15px 50px;
             background: rgba(2, 2, 5, 0.9);
             backdrop-filter: blur(20px); box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        /* SINISTRA - Logo */
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+.nav-logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid var(--cyan-neon);
+    box-shadow: 0 0 8px rgba(0, 255, 238, 0.3);
+    transition: all 0.3s ease;
+    animation: rainbowBorder 4s linear infinite;
+}
+
+.nav-logo img:hover {
+    animation: rainbowBorder 1.5s linear infinite;
+    transform: scale(1.05);
+}
+
+.nav-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.nav-logo-link:hover {
+    transform: scale(1.02);
+}
+
+        .nav-logo .nav-title {
+            font-size: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #fff, var(--cyan-neon));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            white-space: nowrap;
+        }
+
+        nav.scrolled .nav-logo img {
+            width: 35px;
+            height: 35px;
+        }
+
+        nav.scrolled .nav-logo .nav-title {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        /* CENTRO - Bottoni e dropdown */
+        .nav-center {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* DESTRA - Ko-fi */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
         }
 
         .hamburger {
@@ -254,11 +353,6 @@
             justify-content: center;
         }
 
-        .nav-buttons {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
         .nav-search-btn {
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid var(--cyan-neon);
@@ -327,11 +421,6 @@
             bottom: -35px;
         }
 
-        .desktop-nav-items {
-            display: flex;
-            gap: 40px;
-            align-items: center;
-        }
         .nav-item { 
             font-size: 2.5rem; 
             text-transform: uppercase; 
@@ -356,7 +445,8 @@
             animation: pulseRed 2s infinite ease-in-out; 
             color: var(--dmca-red) !important; 
             opacity: 1 !important; 
-            cursor: pointer; 
+            cursor: pointer;
+            margin-left: 10px;
         }
 
         .custom-dropdown {
@@ -428,7 +518,6 @@
             font-size: 0.9rem;
             transition: all 0.3s ease-in-out !important;
             opacity: 0; transform: translateX(50px) scale(0); pointer-events: none;
-            position: absolute; right: 50px;
             border: none !important;
         }
         #kofi-nav-btn img {
@@ -755,6 +844,20 @@
             font-weight: 700;
         }
 
+        .result-counter {
+            width: 100%;
+            max-width: 1400px;
+            margin-bottom: 20px;
+            text-align: right;
+            font-size: 0.85rem;
+            color: var(--cyan-neon);
+            letter-spacing: 1px;
+            font-weight: 700;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
         .game-modal {
             display: none;
             position: fixed;
@@ -929,7 +1032,7 @@
         .game-title, .image-container, .download-section { position: relative; z-index: 5; width: 100%; }
         .game-title { font-weight: 900; text-align: center; text-transform: uppercase; font-size: 1.2rem; min-height: 2.5rem; margin-bottom: 15px; letter-spacing: 1px; }
         .image-container { border-radius: 20px; overflow: hidden; aspect-ratio: 1/1; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); background: #000; }
-        .image-container img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s; }
+        .image-container img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s; background: linear-gradient(135deg, #1a1a2e, #0a0a1a); }
         .game-card:hover .image-container img { transform: scale(1.1) rotate(2deg); }
         .tags-overlay { position: absolute; bottom: 15px; left: 15px; display: flex; flex-direction: column; gap: 8px; z-index: 10; }
         .game-tag { background: rgba(0,0,0,0.8); color: #fff; font-size: 0.75rem; padding: 6px 14px; border-radius: 8px; font-weight: 800; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(4px); }
@@ -1265,6 +1368,66 @@
             margin-bottom: 15px;
         }
 
+        .back-to-top {
+            position: fixed;
+            bottom: 90px;
+            right: 30px;
+            width: 52px;
+            height: 52px;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(12px);
+            border: 2px solid var(--cyan-neon);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 9998;
+            box-shadow: 0 0 10px rgba(0, 255, 238, 0.3), inset 0 0 5px rgba(0, 255, 238, 0.2);
+            text-decoration: none;
+        }
+        .back-to-top::before {
+            content: "▲";
+            font-family: 'Segoe UI', monospace;
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: var(--cyan-neon);
+            text-shadow: 0 0 8px var(--cyan-neon);
+            transition: all 0.2s ease;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .back-to-top:hover {
+            transform: translateY(-8px) scale(1.08);
+            border-color: #fff;
+            box-shadow: 0 0 25px var(--cyan-neon), 0 0 15px var(--cyan-neon), inset 0 0 10px var(--cyan-neon);
+            background: rgba(0, 255, 238, 0.15);
+        }
+        .back-to-top:hover::before {
+            color: #fff;
+            text-shadow: 0 0 15px var(--cyan-neon);
+            transform: scale(1.1);
+        }
+        .back-to-top:active {
+            transform: translateY(-4px) scale(0.98);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.3);
+            border-top: 1px solid rgba(0, 255, 238, 0.1);
+            width: 100%;
+            max-width: 1400px;
+        }
+
         #site-lock-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(2, 2, 5, 0.8); backdrop-filter: blur(25px); z-index: 999999; display: flex; justify-content: center; align-items: center; }
         .lock-box { background: #0a0a1a; padding: 45px; border-radius: 35px; border: 2px solid var(--cyan-neon); text-align: center; max-width: 400px; width: 90%; box-shadow: 0 0 50px rgba(0, 255, 238, 0.2); }
         
@@ -1280,24 +1443,46 @@
             .dmca-modal-header h2 { font-size: 1.2rem; }
             .nav-random-btn img { width: 32px; height: 32px; }
             .nav-random-btn .tooltip { font-size: 0.6rem; white-space: nowrap; }
-            .nav-buttons { gap: 10px; }
-            .modal-random-btn span { font-size: 0.7rem; }
-            .modal-random-btn img { width: 20px; height: 20px; }
-            .modal-random-btn { padding: 5px 12px; }
+            .back-to-top { width: 44px; height: 40px; font-size: 1.4rem; bottom: 80px; right: 20px; }
+            .result-counter { justify-content: flex-end; text-align: right; }
             
-            nav { padding: 15px 20px; justify-content: space-between; }
+            nav { padding: 15px 20px; }
             nav.scrolled { padding: 10px 20px; }
-            .desktop-nav-items { display: none; }
+            .nav-center { display: none; }
             .hamburger { display: flex; }
-            .desktop-nav-items .custom-dropdown { display: none; }
             .mobile-fw-selector .custom-dropdown { display: block; }
             .mobile-fw-selector .dropdown-options {
-        position: relative;
-        top: auto;
-        margin-top: 5px;
-    }
-            #kofi-nav-btn { display: none !important; }
+                position: relative;
+                top: auto;
+                margin-top: 5px;
+            }
             body { padding-top: 80px; }
+            
+            .nav-logo .nav-title {
+                font-size: 0.7rem;
+                letter-spacing: 1px;
+            }
+            .nav-logo img {
+                width: 32px;
+                height: 32px;
+            }
+            nav.scrolled .nav-logo img {
+                width: 28px;
+                height: 28px;
+            }
+            nav.scrolled .nav-logo .nav-title {
+                font-size: 0.6rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .nav-logo .nav-title {
+                display: none;
+            }
+            .nav-logo img {
+                width: 36px;
+                height: 36px;
+            }
         }
         
         @media (min-width: 769px) {
@@ -1307,25 +1492,39 @@
     </style>
 </head>
 <body>
-    <div id="site-lock-overlay">
-        <div id="lock-box" class="lock-box">
-            <h2 style="color: var(--cyan-neon); text-transform: uppercase; margin-bottom: 15px; letter-spacing: 3px; font-weight: 900;">Access Denied</h2>
-            <input type="password" id="site-pw-input" placeholder="Enter Password" onkeydown="if(event.key==='Enter') checkSitePassword()" style="width: 100%; padding: 18px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #fff; text-align: center; font-size: 1.2rem; margin-bottom: 25px; outline: none; box-sizing: border-box;">
-            <button onclick="checkSitePassword()" style="width: 100%; padding: 18px; border-radius: 15px; border: none; background: var(--cyan-neon); color: #000; font-weight: 900; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s;">Unlock Site</button>
-            <p id="pw-error" style="color: var(--dmca-red); margin-top: 20px; font-size: 0.85rem; display: none; font-weight: 700;">Invalid Password.</p>
+<div id="site-lock-overlay">
+    <div id="lock-box" class="lock-box">
+        <h2 style="color: var(--cyan-neon); text-transform: uppercase; margin-bottom: 15px; letter-spacing: 3px; font-weight: 900;">Access Denied</h2>
+        <input type="password" id="site-pw-input" placeholder="Enter Password" onkeydown="if(event.key==='Enter') checkSitePassword()" style="width: 100%; padding: 18px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #fff; text-align: center; font-size: 1.2rem; margin-bottom: 25px; outline: none; box-sizing: border-box;">
+        <button onclick="checkSitePassword()" style="width: 100%; padding: 18px; border-radius: 15px; border: none; background: var(--cyan-neon); color: #000; font-weight: 900; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; margin-bottom: 20px;">Unlock Site</button>
+        
+        <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 20px; cursor: pointer;" onclick="toggleRememberAccess()">
+            <div id="remember-checkbox" style="width: 22px; height: 22px; border: 2px solid var(--cyan-neon); border-radius: 6px; background: rgba(0, 255, 238, 0.1); display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; cursor: pointer;">
+                <span id="remember-checkmark" style="color: var(--cyan-neon); font-size: 14px; font-weight: 900; display: none;">✓</span>
+            </div>
+            <span style="color: var(--cyan-neon); font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; cursor: pointer;">Remember Access (1 hour)</span>
         </div>
+        
+        <p id="pw-error" style="color: var(--dmca-red); margin-top: 10px; font-size: 0.85rem; display: none; font-weight: 700;">Invalid Password.</p>
     </div>
+</div>
 
     <nav id="main-nav">
-        <div class="nav-buttons">
+        <!-- SINISTRA: Logo -->
+<div class="nav-logo" id="navLogo">
+    <a href="https://x.com/Pippo26442999" target="_blank" rel="noopener noreferrer" class="nav-logo-link">
+        <img src="exFAT/title.jpg" alt="Pippo Library" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=Pippo+Library'">
+    </a>
+    <span class="nav-title">Pippo Library</span>
+</div>
+        
+        <!-- CENTRO: Bottoni, dropdown, DMCA -->
+        <div class="nav-center">
             <div class="nav-search-btn" id="navSearchBtn">🔍</div>
             <div class="nav-random-btn" id="navRandomBtn">
                 <img src="exFAT/random_game.png" alt="Random Game" onerror="this.src='https://em-content.zobj.net/source/microsoft-teams/337/milky-way_1f30c.png'">
                 <span class="tooltip">Discover a Random Game</span>
             </div>
-        </div>
-        
-        <div class="desktop-nav-items">
             <div class="custom-dropdown" id="fw-dropdown">
                 <div class="dropdown-trigger">
                     <span id="fw-current">FW: All</span>
@@ -1343,8 +1542,27 @@
                 <input type="hidden" id="fw-filter" value="99">
             </div>
             
-            <div class="nav-item active">Library</div>
+            <div class="custom-dropdown" id="sort-dropdown">
+                <div class="dropdown-trigger">
+                    <span id="sort-current">Sort: Default</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-options" id="sort-options">
+                    <div class="option" data-value="default">Sort: Default</div>
+                    <div class="option" data-value="az">🔤 A → Z</div>
+                    <div class="option" data-value="za">🔤 Z → A</div>
+                    <div class="option" data-value="popular">🔥 Popular Games</div>
+                    <div class="option" data-value="size-asc">📦 Size ↑ (small first)</div>
+                    <div class="option" data-value="size-desc">📦 Size ↓ (large first)</div>
+                </div>
+                <input type="hidden" id="sort-filter" value="default">
+            </div>
+            
             <div class="nav-item" id="dmca-link">DMCA</div>
+        </div>
+        
+        <!-- DESTRA: Ko-fi (compare solo scrollando) -->
+        <div class="nav-right">
             <a href="https://ko-fi.com/pippo26442999" target="_blank" id="kofi-nav-btn"><img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Ko-fi">Support Me</a>
         </div>
         
@@ -1356,29 +1574,46 @@
     </nav>
 
     <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
-    <div class="mobile-menu-panel" id="mobileMenuPanel">
-        <div class="mobile-menu-item active" data-action="library">📚 Library</div>
-        <div class="mobile-menu-item dmca" data-action="dmca">⚠️ DMCA</div>
-        <div class="mobile-fw-selector">
-            <div class="custom-dropdown" id="mobile-fw-dropdown">
-                <div class="dropdown-trigger">
-                    <span id="mobile-fw-current">FW: All</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="dropdown-options" id="mobile-fw-options">
-                    <div class="option" data-value="99">FW: All</div>
-                    <div class="option" data-value="1">1.xx</div><div class="option" data-value="2">2.xx</div>
-                    <div class="option" data-value="3">3.xx</div><div class="option" data-value="4">4.xx</div>
-                    <div class="option" data-value="5">5.xx</div><div class="option" data-value="6">6.xx</div>
-                    <div class="option" data-value="7">7.xx</div><div class="option" data-value="8">8.xx</div>
-                    <div class="option" data-value="9">9.xx</div><div class="option" data-value="10">10.xx</div>
-                    <div class="option" data-value="11">11.xx</div><div class="option" data-value="12">12.xx</div>
-                </div>
-                <input type="hidden" id="mobile-fw-filter" value="99">
+<div class="mobile-menu-panel" id="mobileMenuPanel">
+    <div class="mobile-menu-item" data-action="search">🔍 Search</div>
+    <div class="mobile-menu-item" data-action="random">🎲 Random Game</div>
+    <div class="mobile-menu-item dmca" data-action="dmca">⚠️ DMCA</div>
+    <div class="mobile-fw-selector">
+        <div class="custom-dropdown" id="mobile-fw-dropdown">
+            <div class="dropdown-trigger">
+                <span id="mobile-fw-current">FW: All</span>
+                <span class="arrow">▼</span>
             </div>
+            <div class="dropdown-options" id="mobile-fw-options">
+                <div class="option" data-value="99">FW: All</div>
+                <div class="option" data-value="1">1.xx</div><div class="option" data-value="2">2.xx</div>
+                <div class="option" data-value="3">3.xx</div><div class="option" data-value="4">4.xx</div>
+                <div class="option" data-value="5">5.xx</div><div class="option" data-value="6">6.xx</div>
+                <div class="option" data-value="7">7.xx</div><div class="option" data-value="8">8.xx</div>
+                <div class="option" data-value="9">9.xx</div><div class="option" data-value="10">10.xx</div>
+                <div class="option" data-value="11">11.xx</div><div class="option" data-value="12">12.xx</div>
+            </div>
+            <input type="hidden" id="mobile-fw-filter" value="99">
         </div>
-        <a href="https://ko-fi.com/pippo26442999" target="_blank" class="mobile-kofi-btn"><img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Ko-fi">Support Me</a>
     </div>
+    <div class="mobile-fw-selector" style="margin-top: 10px;">
+        <div class="custom-dropdown" id="mobile-sort-dropdown">
+            <div class="dropdown-trigger">
+                <span id="mobile-sort-current">Sort: Default</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="dropdown-options" id="mobile-sort-options">
+                <div class="option" data-value="default">Sort: Default</div>
+                <div class="option" data-value="az">🔤 A → Z</div>
+                <div class="option" data-value="za">🔤 Z → A</div>
+                <div class="option" data-value="popular">🔥 Popular</div>
+                <div class="option" data-value="size-asc">📦 Size ↑</div>
+                <div class="option" data-value="size-desc">📦 Size ↓</div>
+            </div>
+            <input type="hidden" id="mobile-sort-filter" value="default">
+        </div>
+    </div>
+</div>
 
     <div class="search-modal-overlay" id="searchModalOverlay">
         <div class="search-modal-content">
@@ -1402,8 +1637,17 @@
         </div>
     </div>
 
+    <div class="result-counter" id="result-counter">
+        <span id="result-count-text" style="margin-left: auto;">Loading...</span>
+    </div>
+
     <div class="game-grid" id="game-grid"></div>
     <div class="pagination"><button id="prev-page" class="page-btn">Previous</button><span id="page-info">Page 1</span><button id="next-page" class="page-btn">Next</button></div>
+
+    <footer>
+        <p>Pippo Library | All rights reserved to respective owners</p>
+        <p style="margin-top: 8px;">📅 2024-2025</p>
+    </footer>
 
     <div id="game-detail-modal" class="game-modal">
         <div class="game-modal-content">

@@ -1,5 +1,6 @@
 let allGames = [];
 let filteredGames = [];
+let originalOrderMap = new Map();
 let allUpdates = {}; 
 let currentPage = 1;
 let isDragging = false;
@@ -8,6 +9,7 @@ let currentPosition = 0;
 let hasMoved = false;
 let integrityCheckInterval = null;
 let protectionInterval = null;
+let rememberAccess = false;
 const itemsPerPage = 21;
 const SECRET_HASH = "a2242ead55c94c3deb7cf2340bfef9d5bcaca22dfe66e646745ee4371c633fc8";
 
@@ -16,6 +18,7 @@ let isRandomModeActive = false;
 let isTransitioning = false;
 let cachedPopularGames = null;
 let cachedIsMobile = null;
+let isLoading = true;
 
 const originalSetItem = sessionStorage.setItem.bind(sessionStorage);
 const originalGetItem = sessionStorage.getItem.bind(sessionStorage);
@@ -105,49 +108,427 @@ function setupHintCountdown() {
     }, delayMilliseconds);
 }
 
+function showSkeletonLoader() {
+    const grid = document.getElementById('game-grid');
+    if (!grid) return;
+    
+    const skeletonHTML = Array(21).fill(0).map(() => `
+        <div class="skeleton-card">
+            <div class="skeleton-title shimmer"></div>
+            <div class="skeleton-image shimmer"></div>
+            <div class="skeleton-download shimmer"></div>
+            <div class="skeleton-download shimmer" style="width: 80%;"></div>
+        </div>
+    `).join('');
+    
+    grid.innerHTML = skeletonHTML;
+}
+
+function hideSkeletonLoader() {
+    const skeletons = document.querySelectorAll('.skeleton-card');
+    skeletons.forEach(s => s.remove());
+}
+
+function scrollToTop(smooth = true) {
+    if (!smooth) {
+        window.scrollTo(0, 0);
+        return;
+    }
+    
+    const startPosition = window.pageYOffset;
+    const targetPosition = 0;
+    const distance = startPosition - targetPosition;
+    const duration = 600;
+    let startTime = null;
+    
+    const easeOutCubic = (t) => {
+        return 1 - Math.pow(1 - t, 3);
+    };
+    
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        const easeProgress = easeOutCubic(progress);
+        
+        window.scrollTo(0, startPosition - (distance * easeProgress));
+        
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+        }
+    }
+    
+    requestAnimationFrame(animation);
+}
+
+function showBackToTopButton() {
+    const existingBtn = document.getElementById('backToTopBtn');
+    if (existingBtn) return;
+    
+    const btn = document.createElement('div');
+    btn.id = 'backToTopBtn';
+    btn.innerHTML = '';
+    btn.className = 'back-to-top';
+    btn.title = '';
+    btn.onclick = () => scrollToTop(true);
+    document.body.appendChild(btn);
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
+        }
+    });
+}
+
+function updateResultCount() {
+    const count = filteredGames.length;
+    const container = document.getElementById('result-count-text');
+    if (container) {
+        container.textContent = `${count} game${count !== 1 ? 's' : ''} found`;
+    }
+}
+
+function resetFilters() {
+    document.getElementById('fw-filter').value = '99';
+    document.getElementById('fw-current').innerText = 'FW: All';
+    const mobileFwFilter = document.getElementById('mobile-fw-filter');
+    const mobileFwCurrent = document.getElementById('mobile-fw-current');
+    if (mobileFwFilter) mobileFwFilter.value = '99';
+    if (mobileFwCurrent) mobileFwCurrent.innerText = 'FW: All';
+    
+    document.getElementById('sort-filter').value = 'default';
+    document.getElementById('sort-current').innerText = 'Sort: Default';
+    const mobileSortFilter = document.getElementById('mobile-sort-filter');
+    const mobileSortCurrent = document.getElementById('mobile-sort-current');
+    if (mobileSortFilter) mobileSortFilter.value = 'default';
+    if (mobileSortCurrent) mobileSortCurrent.innerText = 'Sort: Default';
+    
+    localStorage.setItem('preferred_fw', '99');
+    localStorage.setItem('preferred_sort', 'default');
+    
+    const searchInput = document.getElementById('searchModalInput');
+    if (searchInput) searchInput.value = '';
+    
+    applyFWFilterWithSort();
+    currentPage = 1;
+    renderGames();
+    scrollToTop(true);
+}
+
+function sizeToBytes(sizeStr) {
+    if (!sizeStr) return 0;
+    const match = sizeStr.match(/^([\d\.]+)\s*(B|KB|MB|GB|TB)$/i);
+    if (!match) return 0;
+    const value = parseFloat(match[1]);
+    const unit = match[2].toUpperCase();
+    const multipliers = { 'B': 1, 'KB': 1024, 'MB': 1048576, 'GB': 1073741824, 'TB': 1099511627776 };
+    return value * (multipliers[unit] || 0);
+}
+
+function sortGames(games, sortType) {
+    const sorted = [...games];
+    switch(sortType) {
+        case 'az':
+            return sorted.sort((a, b) => a.title.localeCompare(b.title));
+        case 'za':
+            return sorted.sort((a, b) => b.title.localeCompare(a.title));
+        case 'size-asc':
+            return sorted.sort((a, b) => sizeToBytes(a.size) - sizeToBytes(b.size));
+        case 'size-desc':
+            return sorted.sort((a, b) => sizeToBytes(b.size) - sizeToBytes(a.size));
+        case 'popular':
+            return sorted.filter(g => g.popular === "on");
+        case 'default':
+            return sorted.sort((a, b) => {
+                const indexA = originalOrderMap.get(a.title) || 0;
+                const indexB = originalOrderMap.get(b.title) || 0;
+                return indexA - indexB;
+            });
+        default:
+            return sorted;
+    }
+}
+
+function applySorting() {
+    const sortValue = document.getElementById('sort-filter').value;
+    const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
+    
+    // Ricomincia da allGames
+    let tempFiltered = [...allGames];
+    
+    // Applica filtro FW
+    if (selectedFW !== 99) {
+        tempFiltered = tempFiltered.filter(g => {
+            let gameFW = 1;
+            if (g.tags && g.tags.length > 0) {
+                let foundVersions = [];
+                g.tags.forEach(tag => {
+                    const matches = tag.match(/(\d+)\.xx/gi);
+                    if (matches) {
+                        matches.forEach(m => {
+                            const num = parseInt(m.match(/\d+/)[0], 10);
+                            foundVersions.push(num);
+                        });
+                    }
+                });
+                if (foundVersions.length > 0) gameFW = Math.min(...foundVersions);
+            }
+            return gameFW <= selectedFW;
+        });
+    }
+    
+    // Applica ordinamento (che per 'popular' significa filtrare)
+    filteredGames = sortGames(tempFiltered, sortValue);
+    
+    currentPage = 1;
+    renderGames();
+    updateResultCount();
+}
+
+function setupSortDropdown() {
+    const sortDropdown = document.getElementById('sort-dropdown');
+    if (!sortDropdown) return;
+    
+    const trigger = sortDropdown.querySelector('.dropdown-trigger');
+    const optionsContainer = document.getElementById('sort-options');
+    const currentText = document.getElementById('sort-current');
+    const hiddenInput = document.getElementById('sort-filter');
+    const allOptions = sortDropdown.querySelectorAll('.option');
+    
+    trigger.onclick = (e) => { 
+        e.stopPropagation(); 
+        optionsContainer.classList.toggle('show'); 
+        sortDropdown.classList.toggle('active');
+    };
+    
+    allOptions.forEach(opt => {
+        opt.onclick = () => {
+            const val = opt.getAttribute('data-value');
+            const label = opt.innerText;
+            currentText.innerText = label;
+            hiddenInput.value = val;
+            optionsContainer.classList.remove('show');
+            sortDropdown.classList.remove('active');
+            
+            const mobileHidden = document.getElementById('mobile-sort-filter');
+            const mobileCurrent = document.getElementById('mobile-sort-current');
+            if (mobileHidden) mobileHidden.value = val;
+            if (mobileCurrent) mobileCurrent.innerText = label;
+            
+            applySorting();
+        };
+    });
+    
+    const mobileSortDropdown = document.getElementById('mobile-sort-dropdown');
+    if (mobileSortDropdown) {
+        const mobileTrigger = mobileSortDropdown.querySelector('.dropdown-trigger');
+        const mobileOptions = document.getElementById('mobile-sort-options');
+        const mobileCurrent = document.getElementById('mobile-sort-current');
+        const mobileHidden = document.getElementById('mobile-sort-filter');
+        
+        mobileTrigger.onclick = (e) => {
+            e.stopPropagation();
+            mobileOptions.classList.toggle('show');
+            mobileSortDropdown.classList.toggle('active');
+        };
+        
+        mobileOptions.querySelectorAll('.option').forEach(opt => {
+            opt.onclick = () => {
+                const val = opt.getAttribute('data-value');
+                const label = opt.innerText;
+                mobileCurrent.innerText = label;
+                mobileHidden.value = val;
+                if (hiddenInput) hiddenInput.value = val;
+                if (currentText) currentText.innerText = label;
+                mobileOptions.classList.remove('show');
+                mobileSortDropdown.classList.remove('active');
+                applySorting();
+            };
+        });
+    }
+    
+    window.addEventListener('click', () => { 
+        optionsContainer.classList.remove('show'); 
+        sortDropdown.classList.remove('active');
+        if (mobileSortDropdown) {
+            const mobileOpts = document.getElementById('mobile-sort-options');
+            if (mobileOpts) mobileOpts.classList.remove('show');
+            mobileSortDropdown.classList.remove('active');
+        }
+    });
+}
+
+function saveFWFilter(value) {
+    localStorage.setItem('preferred_fw', value);
+}
+
+function loadFWPreference() {
+    const saved = localStorage.getItem('preferred_fw');
+    if (saved && saved !== '99') {
+        document.getElementById('fw-filter').value = saved;
+        const fwOption = document.querySelector(`#fw-options .option[data-value="${saved}"]`);
+        if (fwOption) {
+            document.getElementById('fw-current').innerText = fwOption.innerText;
+            const mobileFwCurrent = document.getElementById('mobile-fw-current');
+            if (mobileFwCurrent) mobileFwCurrent.innerText = fwOption.innerText;
+            const mobileFwFilter = document.getElementById('mobile-fw-filter');
+            if (mobileFwFilter) mobileFwFilter.value = saved;
+        }
+        return saved;
+    }
+    return '99';
+}
+
+function loadSortPreference() {
+    const saved = localStorage.getItem('preferred_sort');
+    if (saved && saved !== 'default') {
+        document.getElementById('sort-filter').value = saved;
+        const optionText = document.querySelector(`#sort-options .option[data-value="${saved}"]`)?.innerText || 'Sort: Default';
+        document.getElementById('sort-current').innerText = optionText;
+        const mobileCurrent = document.getElementById('mobile-sort-current');
+        if (mobileCurrent) mobileCurrent.innerText = optionText;
+        const mobileFilter = document.getElementById('mobile-sort-filter');
+        if (mobileFilter) mobileFilter.value = saved;
+        return saved;
+    }
+    document.getElementById('sort-filter').value = 'default';
+    document.getElementById('sort-current').innerText = 'Sort: Default';
+    const mobileCurrent = document.getElementById('mobile-sort-current');
+    if (mobileCurrent) mobileCurrent.innerText = 'Sort: Default';
+    const mobileFilter = document.getElementById('mobile-sort-filter');
+    if (mobileFilter) mobileFilter.value = 'default';
+    return 'default';
+}
+
+function applyFWFilterWithSort() {
+    const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
+    const sortValue = document.getElementById('sort-filter').value;
+    
+    let tempFiltered = [...allGames];
+    if (selectedFW !== 99) {
+        tempFiltered = tempFiltered.filter(g => {
+            let gameFW = 1;
+            if (g.tags && g.tags.length > 0) {
+                let foundVersions = [];
+                g.tags.forEach(tag => {
+                    const matches = tag.match(/(\d+)\.xx/gi);
+                    if (matches) {
+                        matches.forEach(m => {
+                            const num = parseInt(m.match(/\d+/)[0], 10);
+                            foundVersions.push(num);
+                        });
+                    }
+                });
+                if (foundVersions.length > 0) gameFW = Math.min(...foundVersions);
+            }
+            return gameFW <= selectedFW;
+        });
+    }
+    
+    filteredGames = sortGames(tempFiltered, sortValue);
+    updateResultCount();
+}
+
+function applyFWFilter() {
+    applyFWFilterWithSort();
+}
+
 async function init() {
     if (!checkIntegrity()) return;
     
     const unlocked = originalGetItem('unlocked');
     const unlockedTime = originalGetItem('unlocked_time');
+    const rememberFlag = originalGetItem('remember_access');
+    const unlockedTimeExtended = originalGetItem('unlocked_time_extended');
     const overlay = document.getElementById('site-lock-overlay');
     
+    let isUnlocked = false;
+    
     if (unlocked === SECRET_HASH) {
-        if (!unlockedTime) {
+        if (rememberFlag === 'true' && unlockedTimeExtended) {
+            const extendedTime = parseInt(unlockedTimeExtended);
+            if (Date.now() <= extendedTime) {
+                isUnlocked = true;
+            } else {
+                originalRemoveItem('unlocked');
+                originalRemoveItem('unlocked_time');
+                originalRemoveItem('remember_access');
+                originalRemoveItem('unlocked_time_extended');
+                isUnlocked = false;
+            }
+        } else if (unlockedTime) {
+            const time = parseInt(unlockedTime);
+            if (Date.now() - time <= 24 * 60 * 60 * 1000) {
+                isUnlocked = true;
+            } else {
+                originalRemoveItem('unlocked');
+                originalRemoveItem('unlocked_time');
+                isUnlocked = false;
+            }
+        } else {
             originalRemoveItem('unlocked');
-            location.reload();
-            return;
-        }
-        const time = parseInt(unlockedTime);
-        if (Date.now() - time > 24 * 60 * 60 * 1000) {
-            originalRemoveItem('unlocked');
-            originalRemoveItem('unlocked_time');
-            location.reload();
-            return;
+            isUnlocked = false;
         }
     }
     
-    await loadUpdates();
-    await loadLibrary();
-    setupDropdown();
-    setupMobileDropdown();
-    setupMobileMenu();
-    setupCarousel();
-    setupSearchModal();
-    setupHintCountdown();
-    setupDownloadModal();
-    setupDMCAModal();
-    setupRandomGame();
-    setupModalRandomButton();
-    
-    if (unlocked === SECRET_HASH) {
+    if (isUnlocked) {
         if (overlay) overlay.remove();
         document.body.style.overflow = 'auto';
         startIntegrityCheck();
         startProtection();
+        
+        showSkeletonLoader();
+        showBackToTopButton();
+        
+        await loadUpdates();
+        await loadLibrary();
+        setupDropdown();
+        setupMobileDropdown();
+        setupMobileMenu();
+        setupCarousel();
+        setupSearchModal();
+        setupHintCountdown();
+        setupDownloadModal();
+        setupDMCAModal();
+        setupRandomGame();
+        setupModalRandomButton();
+        setupSortDropdown();
+        
+        // Aggiungi evento click sul logo per tornare in cima
+        const navLogo = document.getElementById('navLogo');
+        if (navLogo) {
+            navLogo.addEventListener('click', () => scrollToTop(true));
+        }
     } else {
         document.body.style.overflow = 'hidden';
         startProtection();
+        
+        showSkeletonLoader();
+        showBackToTopButton();
+        
+        await loadUpdates();
+        await loadLibrary();
+        setupDropdown();
+        setupMobileDropdown();
+        setupMobileMenu();
+        setupCarousel();
+        setupSearchModal();
+        setupHintCountdown();
+        setupDownloadModal();
+        setupDMCAModal();
+        setupRandomGame();
+        setupModalRandomButton();
+        setupSortDropdown();
+        
+        const navLogo = document.getElementById('navLogo');
+        if (navLogo) {
+            navLogo.addEventListener('click', () => scrollToTop(true));
+        }
+        
+        rememberAccess = false;
+        updateCheckboxUI();
     }
 }
 
@@ -199,7 +580,7 @@ function updateModalContentWithRipple(game) {
         const createModalBtnLocal = (url, label, isDump = false) => {
             if (!url || url === "undefined" || url.trim() === "") return '';
             const dumpAttr = isDump ? 'true' : 'false';
-            return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, false, ${dumpAttr})" class="modal-btn">${label}</button>`;
+            return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, false, ${dumpAttr}, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">${label}</button>`;
         };
         
         let downloadsHTML = '';
@@ -296,17 +677,21 @@ function setupMobileMenu() {
     const panel = document.getElementById('mobileMenuPanel');
     const overlay = document.getElementById('mobileMenuOverlay');
     const libraryBtn = document.querySelector('.mobile-menu-item[data-action="library"]');
+    const searchBtn = document.querySelector('.mobile-menu-item[data-action="search"]');
+    const randomBtn = document.querySelector('.mobile-menu-item[data-action="random"]');
     
     function closeMenu() {
         if (hamburger) hamburger.classList.remove('active');
         if (panel) panel.classList.remove('open');
         if (overlay) overlay.classList.remove('active');
+        document.body.classList.remove('menu-open');
     }
     
     function openMenu() {
         if (hamburger) hamburger.classList.add('active');
         if (panel) panel.classList.add('open');
         if (overlay) overlay.classList.add('active');
+        document.body.classList.add('menu-open');
     }
     
     if (hamburger) {
@@ -327,7 +712,64 @@ function setupMobileMenu() {
     if (libraryBtn) {
         libraryBtn.addEventListener('click', () => {
             closeMenu();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            scrollToTop(true);
+        });
+    }
+    
+    // Aggiungi gestore per il bottone Search
+    if (searchBtn) {
+        searchBtn.addEventListener('click', () => {
+            closeMenu();
+            const searchOverlay = document.getElementById('searchModalOverlay');
+            if (searchOverlay) {
+                searchOverlay.classList.add('active');
+                const searchInput = document.getElementById('searchModalInput');
+                setTimeout(() => {
+                    if (searchInput) {
+                        searchInput.focus();
+                        searchInput.select();
+                    }
+                }, 100);
+            }
+        });
+    }
+    
+    // Aggiungi gestore per il bottone Random Game
+    if (randomBtn) {
+        randomBtn.addEventListener('click', () => {
+            closeMenu();
+            if (!allGames.length) return;
+            
+            const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
+            let availableGames = allGames;
+            
+            if (selectedFW !== 99) {
+                availableGames = allGames.filter(g => {
+                    let gameFW = 1;
+                    if (g.tags && g.tags.length > 0) {
+                        let foundVersions = [];
+                        g.tags.forEach(tag => {
+                            const matches = tag.match(/(\d+)\.xx/gi);
+                            if (matches) {
+                                matches.forEach(m => {
+                                    const num = parseInt(m.match(/\d+/)[0], 10);
+                                    foundVersions.push(num);
+                                });
+                            }
+                        });
+                        if (foundVersions.length > 0) gameFW = Math.min(...foundVersions);
+                    }
+                    return gameFW <= selectedFW;
+                });
+            }
+            
+            if (availableGames.length === 0) return;
+            
+            const randomIndex = Math.floor(Math.random() * availableGames.length);
+            const randomGame = availableGames[randomIndex];
+            
+            isRandomModeActive = true;
+            openGameModal(randomGame, null);
         });
     }
 }
@@ -361,14 +803,18 @@ function setupMobileDropdown() {
             optionsContainer.classList.remove('show');
             mobileDropdown.classList.remove('active');
             
+            // NON salvare più in localStorage
+            // saveFWFilter(val);
+            
             const searchInput = document.getElementById('searchModalInput');
             if (searchInput && searchInput.value.trim()) {
                 updateSearchResultsExternal(searchInput.value);
                 performSearchOnGridExternal(searchInput.value);
             } else {
-                applyFWFilter();
+                applyFWFilterWithSort();
                 currentPage = 1;
                 renderGames();
+                updateResultCount();
             }
         };
     });
@@ -626,9 +1072,10 @@ function setupSearchModal() {
         overlay.classList.remove('active');
         searchInput.value = '';
         updateSearchResults('');
-        applyFWFilter();
+        applyFWFilterWithSort();
         currentPage = 1;
         renderGames();
+        updateResultCount();
         searchInput.blur();
     };
     
@@ -647,6 +1094,10 @@ function setupSearchModal() {
         if (e.key === 'Escape' && overlay.classList.contains('active')) {
             e.preventDefault();
             closeSearch();
+        }
+        if (e.key === 'Escape' && document.getElementById('game-detail-modal').style.display === 'block') {
+            document.getElementById('game-detail-modal').style.display = 'none';
+            isRandomModeActive = false;
         }
     });
     
@@ -713,7 +1164,7 @@ function setupSearchModal() {
         
         resultsContainer.innerHTML = searchResults.map(game => `
             <div class="search-result-item" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'>
-                <img class="search-result-img" src="${game.image}" alt="${game.title}" referrerpolicy="no-referrer">
+                <img class="search-result-img" src="${game.image}" alt="${game.title}" loading="lazy" referrerpolicy="no-referrer">
                 <div class="search-result-info">
                     <div class="search-result-title">${escapeHtml(game.title)}</div>
                     <div class="search-result-tags">
@@ -747,11 +1198,14 @@ function setupSearchModal() {
     function performSearchOnGrid(term) {
         const lowerTerm = term.toLowerCase().trim();
         const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
+        const sortValue = document.getElementById('sort-filter').value;
         
         if (!lowerTerm) {
-            applyFWFilter();
+            applyFWFilterWithSort();
             currentPage = 1;
             renderGames();
+            updateResultCount();
+            scrollToTop(true);
             return;
         }
         
@@ -775,31 +1229,16 @@ function setupSearchModal() {
             return matchesSearch && matchesFW;
         });
         
-        filteredGames = searchResults;
+        filteredGames = sortGames(searchResults, sortValue);
         currentPage = 1;
         renderGames();
+        updateResultCount();
+        scrollToTop(true);
     }
 }
 
 function applyFWFilter() {
-    const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
-    filteredGames = allGames.filter(g => {
-        let gameFW = 1;
-        if (g.tags && g.tags.length > 0) {
-            let foundVersions = [];
-            g.tags.forEach(tag => {
-                const matches = tag.match(/(\d+)\.xx/gi);
-                if (matches) {
-                    matches.forEach(m => {
-                        const num = parseInt(m.match(/\d+/)[0], 10);
-                        foundVersions.push(num);
-                    });
-                }
-            });
-            if (foundVersions.length > 0) gameFW = Math.min(...foundVersions);
-        }
-        return gameFW <= selectedFW;
-    });
+    applyFWFilterWithSort();
 }
 
 async function loadUpdates() {
@@ -816,14 +1255,48 @@ async function loadLibrary() {
         const text = await response.text();
         try {
             allGames = JSON.parse(text);
+            // SALVA L'ORDINE ORIGINALE (indice nel JSON)
+            allGames.forEach((game, index) => {
+                originalOrderMap.set(game.title, index);
+            });
         } catch (jsonError) {
             alert("🚨 ERRORE FATALE: Il tuo file exFAT.json è rotto!\nCorreggi il file JSON e ricarica la pagina.");
+            hideSkeletonLoader();
             return;
         }
-        filteredGames = [...allGames];
+        
+        // RESETTA FILTRI FW E SORT ALL'AVVIO
+        // FW Filter a 99 (All)
+        document.getElementById('fw-filter').value = '99';
+        document.getElementById('fw-current').innerText = 'FW: All';
+        const mobileFwFilter = document.getElementById('mobile-fw-filter');
+        const mobileFwCurrent = document.getElementById('mobile-fw-current');
+        if (mobileFwFilter) mobileFwFilter.value = '99';
+        if (mobileFwCurrent) mobileFwCurrent.innerText = 'FW: All';
+        
+        // Sort Filter a default
+        document.getElementById('sort-filter').value = 'default';
+        document.getElementById('sort-current').innerText = 'Sort: Default';
+        const mobileSortFilter = document.getElementById('mobile-sort-filter');
+        const mobileSortCurrent = document.getElementById('mobile-sort-current');
+        if (mobileSortFilter) mobileSortFilter.value = 'default';
+        if (mobileSortCurrent) mobileSortCurrent.innerText = 'Sort: Default';
+        
+        // Resetta anche localStorage
+        localStorage.removeItem('preferred_fw');
+        localStorage.removeItem('preferred_sort');
+        
+        // Applica filtri (FW=All, Sort=Default)
+        applyFWFilterWithSort();
+        
         renderPopularGames();
         renderGames();
-    } catch (e) { console.error("Errore caricamento library:", e); }
+        updateResultCount();
+        hideSkeletonLoader();
+    } catch (e) { 
+        console.error("Errore caricamento library:", e);
+        hideSkeletonLoader();
+    }
 }
 
 function setupCarousel() {
@@ -910,20 +1383,56 @@ async function checkSitePassword() {
         const lockBox = document.getElementById('lock-box');
         const hashedInput = await hashStr(input);
         if (!hashedInput) return;
+        
         if (hashedInput === SECRET_HASH) {
             originalSetItem('unlocked_time', Date.now().toString());
             originalSetItem('unlocked', SECRET_HASH);
+            
+            if (rememberAccess) {
+                originalSetItem('remember_access', 'true');
+                originalSetItem('unlocked_time_extended', (Date.now() + (60 * 60 * 1000)).toString());
+            } else {
+                originalRemoveItem('remember_access');
+                originalRemoveItem('unlocked_time_extended');
+            }
+            
             overlay.style.transition = 'opacity 0.5s ease';
             overlay.style.opacity = '0';
-            setTimeout(() => { overlay.remove(); document.body.style.overflow = 'auto'; startIntegrityCheck(); }, 500);
+            setTimeout(() => { 
+                overlay.remove(); 
+                document.body.style.overflow = 'auto'; 
+                startIntegrityCheck(); 
+            }, 500);
         } else {
             errorMsg.style.display = 'block';
             lockBox.style.animation = 'none';
             lockBox.offsetHeight;
             lockBox.style.animation = 'shake 0.3s ease-in-out';
             document.getElementById('site-pw-input').value = '';
+            rememberAccess = false;
+            updateCheckboxUI();
         }
     } catch (e) { console.error("Errore password:", e); }
+}
+
+function toggleRememberAccess() {
+    rememberAccess = !rememberAccess;
+    updateCheckboxUI();
+}
+
+function updateCheckboxUI() {
+    const checkmark = document.getElementById('remember-checkmark');
+    const checkbox = document.getElementById('remember-checkbox');
+    
+    if (rememberAccess) {
+        checkmark.style.display = 'block';
+        checkbox.style.background = 'rgba(0, 255, 238, 0.3)';
+        checkbox.style.boxShadow = '0 0 8px var(--cyan-neon)';
+    } else {
+        checkmark.style.display = 'none';
+        checkbox.style.background = 'rgba(0, 255, 238, 0.1)';
+        checkbox.style.boxShadow = 'none';
+    }
 }
 
 function startProtection() {
@@ -939,10 +1448,41 @@ function startProtection() {
         const unlocked = originalGetItem('unlocked');
         const overlay = document.getElementById('site-lock-overlay');
         const unlockedTime = originalGetItem('unlocked_time');
-        if (unlocked === SECRET_HASH && !unlockedTime) { originalRemoveItem('unlocked'); location.reload(); }
+        const rememberFlag = originalGetItem('remember_access');
+        const unlockedTimeExtended = originalGetItem('unlocked_time_extended');
+        
+        if (rememberFlag === 'true' && unlockedTimeExtended) {
+            const extendedTime = parseInt(unlockedTimeExtended);
+            if (Date.now() > extendedTime) {
+                originalRemoveItem('unlocked');
+                originalRemoveItem('unlocked_time');
+                originalRemoveItem('remember_access');
+                originalRemoveItem('unlocked_time_extended');
+                location.reload();
+                return;
+            }
+        }
+        
+        if (unlocked === SECRET_HASH && !unlockedTime) { 
+            originalRemoveItem('unlocked'); 
+            location.reload(); 
+        }
         if (unlocked === SECRET_HASH && unlockedTime) {
             const time = parseInt(unlockedTime);
-            if (Date.now() - time > 24 * 60 * 60 * 1000) { originalRemoveItem('unlocked'); originalRemoveItem('unlocked_time'); location.reload(); }
+            if (rememberFlag === 'true' && unlockedTimeExtended) {
+                const extendedTime = parseInt(unlockedTimeExtended);
+                if (Date.now() > extendedTime) {
+                    originalRemoveItem('unlocked');
+                    originalRemoveItem('unlocked_time');
+                    originalRemoveItem('remember_access');
+                    originalRemoveItem('unlocked_time_extended');
+                    location.reload();
+                }
+            } else if (Date.now() - time > 24 * 60 * 60 * 1000) { 
+                originalRemoveItem('unlocked'); 
+                originalRemoveItem('unlocked_time'); 
+                location.reload(); 
+            }
         }
         if (!overlay && unlocked !== SECRET_HASH) location.reload();
     }, 1000);
@@ -971,14 +1511,18 @@ function setupDropdown() {
             if (mobileHiddenInput) mobileHiddenInput.value = val;
             if (mobileCurrentText) mobileCurrentText.innerText = opt.innerText;
             
+            // NON salvare più in localStorage
+            // saveFWFilter(val);
+            
             const searchInput = document.getElementById('searchModalInput');
             if (searchInput && searchInput.value.trim()) {
                 updateSearchResultsExternal(searchInput.value);
                 performSearchOnGridExternal(searchInput.value);
             } else {
-                applyFWFilter();
+                applyFWFilterWithSort();
                 currentPage = 1;
                 renderGames();
+                updateResultCount();
             }
         };
     });
@@ -1027,7 +1571,7 @@ function updateSearchResultsExternal(term) {
     if (resultsContainer) {
         resultsContainer.innerHTML = searchResults.map(game => `
             <div class="search-result-item" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'>
-                <img class="search-result-img" src="${game.image}" alt="${game.title}" referrerpolicy="no-referrer">
+                <img class="search-result-img" src="${game.image}" alt="${game.title}" loading="lazy" referrerpolicy="no-referrer">
                 <div class="search-result-info">
                     <div class="search-result-title">${escapeHtml(game.title)}</div>
                     <div class="search-result-tags">
@@ -1063,11 +1607,14 @@ function updateSearchResultsExternal(term) {
 function performSearchOnGridExternal(term) {
     const lowerTerm = term.toLowerCase().trim();
     const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
+    const sortValue = document.getElementById('sort-filter').value;
     
     if (!lowerTerm) {
-        applyFWFilter();
+        applyFWFilterWithSort();
         currentPage = 1;
         renderGames();
+        updateResultCount();
+        scrollToTop(true);
         return;
     }
     
@@ -1091,9 +1638,11 @@ function performSearchOnGridExternal(term) {
         return matchesSearch && matchesFW;
     });
     
-    filteredGames = searchResults;
+    filteredGames = sortGames(searchResults, sortValue);
     currentPage = 1;
     renderGames();
+    updateResultCount();
+    scrollToTop(true);
 }
 
 function escapeHtml(str) {
@@ -1129,7 +1678,7 @@ function openGameModal(game, event) {
     const createModalBtnLocal = (url, label, isDump = false) => {
         if (!url || url === "undefined" || url.trim() === "") return '';
         const dumpAttr = isDump ? 'true' : 'false';
-        return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, false, ${dumpAttr})" class="modal-btn">${label}</button>`;
+        return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, false, ${dumpAttr}, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">${label}</button>`;
     };
     
     let downloadsHTML = '';
@@ -1370,7 +1919,7 @@ function renderGames() {
         let dumpSectionHTML = dumpBtns ? `<p class="ver-label"><b>DUMP:</b></p><div class="download-container">${dumpBtns}</div>` : '';
         let dlcSectionHTML = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
         
-        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" referrerpolicy="no-referrer"><div class="tags-overlay">${tagsHTML}</div>${sizeHTML}</div><div class="download-section">${downloadHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
+        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" loading="lazy" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'"><div class="tags-overlay">${tagsHTML}</div>${sizeHTML}</div><div class="download-section">${downloadHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
     });
     const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
     document.getElementById('page-info').innerText = `Page ${currentPage} of ${totalPages || 1}`;
@@ -1450,5 +1999,5 @@ document.getElementById('modal-close-btn').onclick = () => {
 window.onclick = (e) => { if (e.target.classList.contains('game-modal')) { e.target.style.display = 'none'; isRandomModeActive = false; } };
 window.addEventListener('DOMContentLoaded', init);
 window.addEventListener('scroll', () => { const nav = document.querySelector('nav'); if (nav) { if (window.scrollY > 20) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); } });
-document.getElementById('next-page').onclick = () => { currentPage++; renderGames(); window.scrollTo(0,0); };
-document.getElementById('prev-page').onclick = () => { currentPage--; renderGames(); window.scrollTo(0,0); };
+document.getElementById('next-page').onclick = () => { currentPage++; renderGames(); scrollToTop(true); };
+document.getElementById('prev-page').onclick = () => { currentPage--; renderGames(); scrollToTop(true); };
