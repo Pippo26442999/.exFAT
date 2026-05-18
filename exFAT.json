@@ -1,4 +1,24 @@
 [
+   {
+    "title": "Crimson Desert Deluxe Edition",
+    "image": "exFAT/Crimson_Desert_Deluxe_Edition.avif",
+    "tags": [
+      "PPSA25286",
+      "v01.000.151",
+      "USA",
+      "5.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQjlqc3lDUGhPNHVVOUNCbFZQM3VsRys2TGZiVEVRaDRVWGNFaHl4MEFtYXBTZ3hkYzhybkJxV1crMFhKYmtVOHh3PT0iLCJzIjoiSE8zY0NudTdicDJEM1BVTXVTUThXUT09IiwiaSI6InhtTUtNcFM1MU9LVWc0TGsifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZ2pnYXhXaVZhV04rUmhJMzZEbTFReFJ1eTJ4c2VxOHNRMkh4S1lESHgrdU5SUmFJQlhLWi9Pa1MvSE9PdDI5ZHJLRHZoOFFmIiwicyI6InlXbnZrTi9vYXI5dXE3WG5IK2tMWWc9PSIsImkiOiJQZm44eXZvNjEzVUpQWll3In0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY1hOMU9VUTF6bi9LaGZjZlBPdklIV09JNlBkY2VCdnhNUmY3aGhWZmdjS0E3VTFnQUhkeVR3cUkyUTFUVlR3YnpRPT0iLCJzIjoidlUwbnIzK0JkUUtDbzNwWlNwRE9xUT09IiwiaSI6IkpuSnlUUGx5bDRDODJEdzkifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "BestPig",
+    "credits_dlc": "DUPLEX",
+    "popular": "on",
+    "size": "154GB"
+  },
   {
     "title": "SAROS",
     "image": "exFAT/SAROS.avif",
@@ -336,23 +356,6 @@
     "credits_files": "High-Speed007",
     "credits_backport": "kerrdec97",
     "size": "21GB"
-  },
-  {
-    "title": "Crimson Desert",
-    "image": "exFAT/Crimson_Desert.avif",
-    "tags": [
-      "PPSA25286",
-      "v01.000.151",
-      "USA",
-      "5.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZTB5RDJRa1I1bXVWWFM5NU43RE9wc3BBZWsxa3c2cGNvMTNMVzlPYmNmY1JqQmxKUE5ZWk4vMEhwRTRVV1FMS0pQdmY5TS9MIiwicyI6IlJGZ2NPNmFDcmhFbmxMY1JpMDAxR1E9PSIsImkiOiJuUEZYWDhqaS9RZzNocnF0In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTzNJV2M3dC9sSm9FL2JqUmtxQTlsZjhxblNXNCtzZHIzQnpYeU5DNWVnTlpsSUVNTEFncFVTUkFkb3MzRlFOVDNDWVYiLCJzIjoiR0hsb25NbGJUL1hRVnQ0MUtVSkI0UT09IiwiaSI6IkVFNTdyOHdzcmh1dnVvbi8ifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidU15bkh6ZFlna3BONERjT1BqOWtwb0JZMUJFanlmV2JBTyt0RFlLK0pCVXVhR1JJM0tINFdMdmxVeTdJZ2FCaXZ3PT0iLCJzIjoiS3lQSHp3cmMzYzd6dDFNSUYwZnZlUT09IiwiaSI6ImQ1eFNySlNnMmFKdEtNTlgifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "154GB"
   },
   {
     "title": "Resident Evil Requiem Deluxe Edition",
