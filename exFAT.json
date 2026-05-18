@@ -1,5 +1,45 @@
 [
    {
+    "title": "Life is Strange: Reunion",
+    "image": "exFAT/Life_is_Strange_Reunion.jpg",
+    "tags": [
+      "PPSA28101",
+      "v01.000",
+      "EUR",
+      "4.xx BackPork"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQlJhTHB5N0FjVTNqMFg3T0xCNzJWUXJxbFVKRUlyai9MRUpScXZGTmthbGFPY2pNT3Y1d1BqVmxsNUNXZG5QcGllSi9OdHdqIiwicyI6IkxPUWNBMHdpZnFGdEdVcm1wdnJBN1E9PSIsImkiOiJJRjEwa05FZlRaT2J2M1R6In0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYmdZTWZHbTN3RFYyTm5lVUZrcHduYnBIVEU1T1BaV0lmVGZKdGtKOHA4V0pTRVBCODNGc0lESThIc0p0aHh3Rjcyc1MiLCJzIjoiQjZQWTBlVDdKSGk2Y2grMFBGbkcwUT09IiwiaSI6IjJPYStwQWo2WHNHZmxrNlQifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT1RIeEFrK3UzZElCQkMzVVFKR3lHbFhOTndyWmNJOEc0QWdjL293UWFzMVdHV0xvWEhDUFRTQk9sOTRPUTYxSkFBPT0iLCJzIjoiRXdES0oxeW41SDhTQ1hCWVVHWVVXUT09IiwiaSI6InVGUVc4K2hIam9KYnZReWEifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNkFleGtDbnBDbTZ1VWhnRDg1L1FPaUk0UExmbmZUUTZ6Y0hUWWJSSGhrcllsMXRad29RbjZWcmtpckVEUVFTZFZoMER1ZnkrIiwicyI6ImRubmxXYWF5WHYrU3hPbUlJVEU3WEE9PSIsImkiOiJTSWJPMXFqZ1NxcmJ1VVNjIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicWpwZWJVV3VhOFVodUZ5M0dFSmNEVGFWZ0RFMmpPanZEY2NwRldsSUhqcWxERnZuT1hjVlQzU1ZSUWFSWlk1emNBPT0iLCJzIjoiODlRTUJkWDB5c3NldFEyUmtqZnl5QT09IiwiaSI6Im1tSFZOb1U0WkV5RFl5M00ifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "BestPig",
+    "credits_dlc": "DUPLEX",
+    "popular": "on",
+    "size": "44GB"
+  },
+   {
+    "title": "Reanimal",
+    "image": "exFAT/REANIMAL.jpg",
+    "tags": [
+      "PPSA23372",
+      "v01.000.006",
+      "EUR",
+      "4.xx BackPork"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSWZMK0lxR0l3NFBWT3RHQmdlb1JrRldKbGovdG0vN0V4eHM5UExQbVpiaC90RVdzOVFlVUhGbVpvZTZIeGpnVzRJSmVBUWlrIiwicyI6IlMrR0VUcXQ4ZEtERStTdk5FY2xMTXc9PSIsImkiOiJhb2NxdGsxSUVYcit0bGpnIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZ3N6ckFLcWJqZmQzZGhMY3Zadm1rd0pPN0hxWElBT0plektzcS9pMEhoSHA1VExjZHIzVHNzU3JxZ1NxRHJEc3Q4bnIiLCJzIjoiNVlGcUVXbTc1dUtnTjhYd2UvQnFGZz09IiwiaSI6Ilc3UUtDSUhjM0xyY0dJdTcifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibDRBZGRNM2VqZzVnMUJodUUzSWFhb0pmdUZhOGs3ZlNYcXUwNGRCTXJ3cWJjNG5iRTJmdVFOcCtSMkNOSnlQWGpRPT0iLCJzIjoiY3ZKZk5NWDNQb1dUSlFKVWRKbHE1Zz09IiwiaSI6IlVralNzbUxpWmlmOTVSck0ifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK0tXbmNPS0xrWjUvYlE3YWVGaHdoZnMrcmdoRmh1c2R0SktONFo1WWN3WGZzSit0YURvbzBiUlI2eDBTZTliZFVuRGh2MkEwIiwicyI6IjNLRGQ1b2FaSmdQOWdjQ2F6SWFkbGc9PSIsImkiOiI4N2FGVDBWRHljNHM0aTBiIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRVdZNzFoZmdnSkFjVUZRazJRSVhRejVLM255L0xQZzRlZ1pVT2VwbjlXY1NyT1BTTlYyWUhKUngwNWpxR2RtclBBPT0iLCJzIjoidGVNYTdNVmYrQmY3S2g4V25VVzBpdz09IiwiaSI6InNvSkFhN3pSQUNDWEhjKzUifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "BestPig",
+    "credits_dlc": "DUPLEX",
+    "popular": "on",
+    "size": "27GB"
+  },
+   {
     "title": "Tides of Tomorrow",
     "image": "exFAT/Tides_of_Tomorrow.avif",
     "tags": [
@@ -273,40 +313,6 @@
     "credits_backport": "BestPig",
     "popular": "on",
     "size": "9GB"
-  },
-   {
-    "title": "Reanimal",
-    "image": "exFAT/REANIMAL.jpg",
-    "tags": [
-      "PPSA23372",
-      "v01.000.006",
-      "EUR",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSWZMK0lxR0l3NFBWT3RHQmdlb1JrRldKbGovdG0vN0V4eHM5UExQbVpiaC90RVdzOVFlVUhGbVpvZTZIeGpnVzRJSmVBUWlrIiwicyI6IlMrR0VUcXQ4ZEtERStTdk5FY2xMTXc9PSIsImkiOiJhb2NxdGsxSUVYcit0bGpnIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZ3N6ckFLcWJqZmQzZGhMY3Zadm1rd0pPN0hxWElBT0plektzcS9pMEhoSHA1VExjZHIzVHNzU3JxZ1NxRHJEc3Q4bnIiLCJzIjoiNVlGcUVXbTc1dUtnTjhYd2UvQnFGZz09IiwiaSI6Ilc3UUtDSUhjM0xyY0dJdTcifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibDRBZGRNM2VqZzVnMUJodUUzSWFhb0pmdUZhOGs3ZlNYcXUwNGRCTXJ3cWJjNG5iRTJmdVFOcCtSMkNOSnlQWGpRPT0iLCJzIjoiY3ZKZk5NWDNQb1dUSlFKVWRKbHE1Zz09IiwiaSI6IlVralNzbUxpWmlmOTVSck0ifQ==",
-    "credits_files": "DUPLEX",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "27GB"
-  },
-   {
-    "title": "Life is Strange: Reunion",
-    "image": "exFAT/Life_is_Strange_Reunion.jpg",
-    "tags": [
-      "PPSA28101",
-      "v01.000",
-      "EUR",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQlJhTHB5N0FjVTNqMFg3T0xCNzJWUXJxbFVKRUlyai9MRUpScXZGTmthbGFPY2pNT3Y1d1BqVmxsNUNXZG5QcGllSi9OdHdqIiwicyI6IkxPUWNBMHdpZnFGdEdVcm1wdnJBN1E9PSIsImkiOiJJRjEwa05FZlRaT2J2M1R6In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYmdZTWZHbTN3RFYyTm5lVUZrcHduYnBIVEU1T1BaV0lmVGZKdGtKOHA4V0pTRVBCODNGc0lESThIc0p0aHh3Rjcyc1MiLCJzIjoiQjZQWTBlVDdKSGk2Y2grMFBGbkcwUT09IiwiaSI6IjJPYStwQWo2WHNHZmxrNlQifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT1RIeEFrK3UzZElCQkMzVVFKR3lHbFhOTndyWmNJOEc0QWdjL293UWFzMVdHV0xvWEhDUFRTQk9sOTRPUTYxSkFBPT0iLCJzIjoiRXdES0oxeW41SDhTQ1hCWVVHWVVXUT09IiwiaSI6InVGUVc4K2hIam9KYnZReWEifQ==",
-    "credits_files": "DUPLEX",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "44GB"
   },
   {
     "title": "Lords of The Fallen",
