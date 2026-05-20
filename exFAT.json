@@ -1,4 +1,23 @@
 [
+   {
+    "title": "PRAGMATA Deluxe Edition",
+    "image": "exFAT/PRAGMATA_Deluxe_Edition.avif",
+    "tags": [
+      "PPSA02530",
+      "v01.200",
+      "USA",
+      "5.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibVRMcHZzaG02NXc0b1NKUEY3MVJzZDlNZTk4b3BCQmxTRkp1cmYyMnpKVzU1WmRWVFdFMTNOTThCb0tqTldJK09BPT0iLCJzIjoiYmRBRjJRVm5uaWY0UWhjUCtqb0JLdz09IiwiaSI6ImhSdUN1eFRaWFJqT2tHcmkifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQVMrMSt1QTBmTVg5d1d0SDQ1dVhVaTdjb3c5Z2lZbktNTm5sa0hVQ3RHZXU3VjNiemxmblNWaFUrUEIyYTRSSEZvZW81bTcvIiwicyI6InBxNHpIdnhiTkliK2xGODU5ZTA3dlE9PSIsImkiOiJEaUo1RVZMc05EYkdnMFpPIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVTcrcUZVbWU0Z28ralJUdUVMT0l3U0oxR2hSbnVBMkQrY3l1enlSNlpuVEZWaHVlQnJVZlo5bUUrb3orRGRJMXBRPT0iLCJzIjoiR293KzRXZTRaS2F3S1o4V3pubFJwZz09IiwiaSI6InhHUW90WENuT0RMQ0kxamIifQ==",
+    "credits_files": "SiESPTA & DUPLEX",
+    "credits_backport": "rocknard",
+    "popular": "on",
+    "size": "85GB"
+  },
   {
     "title": "Biomutant",
     "image": "exFAT/Biomutant.avif",
@@ -373,23 +392,6 @@
     "credits_dlc": "realromhunter",
     "popular": "on",
     "size": "61GB"
-  },
-   {
-    "title": "PRAGMATA",
-    "image": "exFAT/PRAGMATA.avif",
-    "tags": [
-      "PPSA02530",
-      "v01.200",
-      "USA",
-      "5.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQlJxQUJsdStlR1AwRUZhMHA4VkFMV2R0RUI3Szh3NCtJMDB5VXd4T2VoeXNheXd1RkJxcko0Y0RmTittZFhMN2RvaXBPNk5QIiwicyI6IjFuZWdiak4vdWhzTGY1aDg0NEZTbXc9PSIsImkiOiJDd0ZJMWpIcWl3blpaRTJFIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiblJlYWIwaVdDTnlSL3liUlNrQWhTVTJaQ0d1VWp1L0J1ZEUwZ29MK0tnSHpnY1NiSFhORkQ1aXJMamU4bVJwdFIyUEEiLCJzIjoiYUNnYjV4SVp1TzIxem1iNlVmU2Y4dz09IiwiaSI6IitCU3lubjlpdzhHUEJrU2gifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMjZ6SWw5Y1hrT0tjY0ZxUVhtN2JOT1pyZXBVQzZOekFmTHdzK2JsMDRnd1M2b1M3cHg3OFIvU0JpMDZzQXlWckxRPT0iLCJzIjoiSTZDVjI0NCtQRURrTVViTVBRaThkQT09IiwiaSI6IkR4QUlaakxTY3g2MjlNT1AifQ==",
-    "credits_files": "SiESPTA & DUPLEX",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "84GB"
   },
    {
     "title": "The Last of Us Part I",
