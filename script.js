@@ -20,11 +20,11 @@ let cachedPopularGames = null;
 let cachedIsMobile = null;
 let isLoading = true;
 
-const originalSetItem = localStorage.setItem.bind(localStorage);
-const originalGetItem = localStorage.getItem.bind(localStorage);
-const originalRemoveItem = localStorage.removeItem.bind(localStorage);
+const originalSetItem = sessionStorage.setItem.bind(sessionStorage);
+const originalGetItem = sessionStorage.getItem.bind(sessionStorage);
+const originalRemoveItem = sessionStorage.removeItem.bind(sessionStorage);
 
-localStorage.setItem = function(key, value) {
+sessionStorage.setItem = function(key, value) {
     if (key === 'unlocked' && value === SECRET_HASH) {
         const stack = new Error().stack;
         if (!stack.includes('checkSitePassword') && !stack.includes('init')) {
@@ -39,18 +39,11 @@ localStorage.setItem = function(key, value) {
             return;
         }
     }
-    if (key === 'remember_access' || key === 'unlocked_time_extended') {
-        const stack = new Error().stack;
-        if (!stack.includes('checkSitePassword')) {
-            console.warn('🚨 Tentativo di bypass remember access rilevato!');
-            return;
-        }
-    }
     return originalSetItem(key, value);
 };
 
-localStorage.removeItem = function(key) {
-    if (key === 'unlocked' || key === 'unlocked_time' || key === 'remember_access' || key === 'unlocked_time_extended') {
+sessionStorage.removeItem = function(key) {
+    if (key === 'unlocked' || key === 'unlocked_time') {
         const stack = new Error().stack;
         if (!stack.includes('location.reload') && !stack.includes('startProtection')) {
             console.warn('🚨 Tentativo di rimozione illegittima rilevato!');
@@ -445,10 +438,10 @@ function applyFWFilter() {
 async function init() {
     if (!checkIntegrity()) return;
     
-    const unlocked = localStorage.getItem('unlocked');
-    const unlockedTime = localStorage.getItem('unlocked_time');
-    const rememberFlag = localStorage.getItem('remember_access');
-    const unlockedTimeExtended = localStorage.getItem('unlocked_time_extended');
+    const unlocked = originalGetItem('unlocked');
+    const unlockedTime = originalGetItem('unlocked_time');
+    const rememberFlag = originalGetItem('remember_access');
+    const unlockedTimeExtended = originalGetItem('unlocked_time_extended');
     const overlay = document.getElementById('site-lock-overlay');
     
     let isUnlocked = false;
@@ -459,10 +452,10 @@ async function init() {
             if (Date.now() <= extendedTime) {
                 isUnlocked = true;
             } else {
-                localStorage.removeItem('unlocked');
-                localStorage.removeItem('unlocked_time');
-                localStorage.removeItem('remember_access');
-                localStorage.removeItem('unlocked_time_extended');
+                originalRemoveItem('unlocked');
+                originalRemoveItem('unlocked_time');
+                originalRemoveItem('remember_access');
+                originalRemoveItem('unlocked_time_extended');
                 isUnlocked = false;
             }
         } else if (unlockedTime) {
@@ -470,12 +463,12 @@ async function init() {
             if (Date.now() - time <= 24 * 60 * 60 * 1000) {
                 isUnlocked = true;
             } else {
-                localStorage.removeItem('unlocked');
-                localStorage.removeItem('unlocked_time');
+                originalRemoveItem('unlocked');
+                originalRemoveItem('unlocked_time');
                 isUnlocked = false;
             }
         } else {
-            localStorage.removeItem('unlocked');
+            originalRemoveItem('unlocked');
             isUnlocked = false;
         }
     }
@@ -503,6 +496,7 @@ async function init() {
         setupModalRandomButton();
         setupSortDropdown();
         
+        // Aggiungi evento click sul logo per tornare in cima
         const navLogo = document.getElementById('navLogo');
         if (navLogo) {
             navLogo.addEventListener('click', () => scrollToTop(true));
@@ -1391,16 +1385,15 @@ async function checkSitePassword() {
         if (!hashedInput) return;
         
         if (hashedInput === SECRET_HASH) {
-            // Usa localStorage invece di sessionStorage
-            localStorage.setItem('unlocked_time', Date.now().toString());
-            localStorage.setItem('unlocked', SECRET_HASH);
+            originalSetItem('unlocked_time', Date.now().toString());
+            originalSetItem('unlocked', SECRET_HASH);
             
             if (rememberAccess) {
-                localStorage.setItem('remember_access', 'true');
-                localStorage.setItem('unlocked_time_extended', (Date.now() + (60 * 60 * 1000)).toString());
+                originalSetItem('remember_access', 'true');
+                originalSetItem('unlocked_time_extended', (Date.now() + (60 * 60 * 1000)).toString());
             } else {
-                localStorage.removeItem('remember_access');
-                localStorage.removeItem('unlocked_time_extended');
+                originalRemoveItem('remember_access');
+                originalRemoveItem('unlocked_time_extended');
             }
             
             overlay.style.transition = 'opacity 0.5s ease';
@@ -1444,7 +1437,7 @@ function updateCheckboxUI() {
 
 function startProtection() {
     const observer = new MutationObserver(() => {
-        const unlocked = localStorage.getItem('unlocked');
+        const unlocked = originalGetItem('unlocked');
         const overlay = document.getElementById('site-lock-overlay');
         if (!overlay && unlocked !== SECRET_HASH) location.reload();
         if (overlay && unlocked === SECRET_HASH) { overlay.remove(); document.body.style.overflow = 'auto'; }
@@ -1452,26 +1445,26 @@ function startProtection() {
     observer.observe(document.body, { childList: true, subtree: true });
     if (protectionInterval) clearInterval(protectionInterval);
     protectionInterval = setInterval(() => {
-        const unlocked = localStorage.getItem('unlocked');
+        const unlocked = originalGetItem('unlocked');
         const overlay = document.getElementById('site-lock-overlay');
-        const unlockedTime = localStorage.getItem('unlocked_time');
-        const rememberFlag = localStorage.getItem('remember_access');
-        const unlockedTimeExtended = localStorage.getItem('unlocked_time_extended');
+        const unlockedTime = originalGetItem('unlocked_time');
+        const rememberFlag = originalGetItem('remember_access');
+        const unlockedTimeExtended = originalGetItem('unlocked_time_extended');
         
         if (rememberFlag === 'true' && unlockedTimeExtended) {
             const extendedTime = parseInt(unlockedTimeExtended);
             if (Date.now() > extendedTime) {
-                localStorage.removeItem('unlocked');
-                localStorage.removeItem('unlocked_time');
-                localStorage.removeItem('remember_access');
-                localStorage.removeItem('unlocked_time_extended');
+                originalRemoveItem('unlocked');
+                originalRemoveItem('unlocked_time');
+                originalRemoveItem('remember_access');
+                originalRemoveItem('unlocked_time_extended');
                 location.reload();
                 return;
             }
         }
         
         if (unlocked === SECRET_HASH && !unlockedTime) { 
-            localStorage.removeItem('unlocked'); 
+            originalRemoveItem('unlocked'); 
             location.reload(); 
         }
         if (unlocked === SECRET_HASH && unlockedTime) {
@@ -1479,15 +1472,15 @@ function startProtection() {
             if (rememberFlag === 'true' && unlockedTimeExtended) {
                 const extendedTime = parseInt(unlockedTimeExtended);
                 if (Date.now() > extendedTime) {
-                    localStorage.removeItem('unlocked');
-                    localStorage.removeItem('unlocked_time');
-                    localStorage.removeItem('remember_access');
-                    localStorage.removeItem('unlocked_time_extended');
+                    originalRemoveItem('unlocked');
+                    originalRemoveItem('unlocked_time');
+                    originalRemoveItem('remember_access');
+                    originalRemoveItem('unlocked_time_extended');
                     location.reload();
                 }
             } else if (Date.now() - time > 24 * 60 * 60 * 1000) { 
-                localStorage.removeItem('unlocked'); 
-                localStorage.removeItem('unlocked_time'); 
+                originalRemoveItem('unlocked'); 
+                originalRemoveItem('unlocked_time'); 
                 location.reload(); 
             }
         }
