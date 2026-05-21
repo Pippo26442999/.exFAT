@@ -1497,13 +1497,7 @@
         <h2 style="color: var(--cyan-neon); text-transform: uppercase; margin-bottom: 15px; letter-spacing: 3px; font-weight: 900;">Access Denied</h2>
         <input type="password" id="site-pw-input" placeholder="Enter Password" onkeydown="if(event.key==='Enter') checkSitePassword()" style="width: 100%; padding: 18px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #fff; text-align: center; font-size: 1.2rem; margin-bottom: 25px; outline: none; box-sizing: border-box;">
         <button onclick="checkSitePassword()" style="width: 100%; padding: 18px; border-radius: 15px; border: none; background: var(--cyan-neon); color: #000; font-weight: 900; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; margin-bottom: 20px;">Unlock Site</button>
-        
-        <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 20px; cursor: pointer;" onclick="toggleRememberAccess()">
-            <div id="remember-checkbox" style="width: 22px; height: 22px; border: 2px solid var(--cyan-neon); border-radius: 6px; background: rgba(0, 255, 238, 0.1); display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; cursor: pointer;">
-                <span id="remember-checkmark" style="color: var(--cyan-neon); font-size: 14px; font-weight: 900; display: none;">✓</span>
-            </div>
-            <span style="color: var(--cyan-neon); font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; cursor: pointer;">Remember Access (1 hour)</span>
-        </div>
+      
         
         <p id="pw-error" style="color: var(--dmca-red); margin-top: 10px; font-size: 0.85rem; display: none; font-weight: 700;">Invalid Password.</p>
     </div>

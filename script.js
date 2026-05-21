@@ -20,11 +20,11 @@ let cachedPopularGames = null;
 let cachedIsMobile = null;
 let isLoading = true;
 
-const originalSetItem = localStorage.setItem.bind(localStorage);
-const originalGetItem = localStorage.getItem.bind(localStorage);
-const originalRemoveItem = localStorage.removeItem.bind(localStorage);
+const originalSetItem = sessionStorage.setItem.bind(sessionStorage);
+const originalGetItem = sessionStorage.getItem.bind(sessionStorage);
+const originalRemoveItem = sessionStorage.removeItem.bind(sessionStorage);
 
-localStorage.setItem = function(key, value) {
+sessionStorage.setItem = function(key, value) {
     if (key === 'unlocked' && value === SECRET_HASH) {
         const stack = new Error().stack;
         if (!stack.includes('checkSitePassword') && !stack.includes('init')) {
@@ -39,18 +39,11 @@ localStorage.setItem = function(key, value) {
             return;
         }
     }
-    if (key === 'remember_access' || key === 'unlocked_time_extended') {
-        const stack = new Error().stack;
-        if (!stack.includes('checkSitePassword')) {
-            console.warn('🚨 Tentativo di bypass remember access rilevato!');
-            return;
-        }
-    }
     return originalSetItem(key, value);
 };
 
-localStorage.removeItem = function(key) {
-    if (key === 'unlocked' || key === 'unlocked_time' || key === 'remember_access' || key === 'unlocked_time_extended') {
+sessionStorage.removeItem = function(key) {
+    if (key === 'unlocked' || key === 'unlocked_time') {
         const stack = new Error().stack;
         if (!stack.includes('location.reload') && !stack.includes('startProtection')) {
             console.warn('🚨 Tentativo di rimozione illegittima rilevato!');
@@ -445,97 +438,59 @@ function applyFWFilter() {
 async function init() {
     if (!checkIntegrity()) return;
     
-    const unlocked = originalGetItem('unlocked');
-    const unlockedTime = originalGetItem('unlocked_time');
-    const rememberFlag = originalGetItem('remember_access');
-    const unlockedTimeExtended = originalGetItem('unlocked_time_extended');
+    const unlocked = sessionStorage.getItem('unlocked');
+    const unlockedTime = sessionStorage.getItem('unlocked_time');
     const overlay = document.getElementById('site-lock-overlay');
     
     let isUnlocked = false;
     
-    if (unlocked === SECRET_HASH) {
-        if (rememberFlag === 'true' && unlockedTimeExtended) {
-            const extendedTime = parseInt(unlockedTimeExtended);
-            if (Date.now() <= extendedTime) {
-                isUnlocked = true;
-            } else {
-                originalRemoveItem('unlocked');
-                originalRemoveItem('unlocked_time');
-                originalRemoveItem('remember_access');
-                originalRemoveItem('unlocked_time_extended');
-                isUnlocked = false;
-            }
-        } else if (unlockedTime) {
-            const time = parseInt(unlockedTime);
-            if (Date.now() - time <= 24 * 60 * 60 * 1000) {
-                isUnlocked = true;
-            } else {
-                originalRemoveItem('unlocked');
-                originalRemoveItem('unlocked_time');
-                isUnlocked = false;
-            }
+    // Controlla se è sbloccato e non scaduto (24 ore)
+    if (unlocked === SECRET_HASH && unlockedTime) {
+        const time = parseInt(unlockedTime);
+        if (Date.now() - time <= 24 * 60 * 60 * 1000) {
+            isUnlocked = true;
         } else {
-            originalRemoveItem('unlocked');
+            // Scaduto, pulisci
+            sessionStorage.removeItem('unlocked');
+            sessionStorage.removeItem('unlocked_time');
             isUnlocked = false;
         }
     }
     
+    // Carica sempre i dati necessari prima di mostrare la UI
+    showSkeletonLoader();
+    showBackToTopButton();
+    
+    await loadUpdates();
+    await loadLibrary();
+    setupDropdown();
+    setupMobileDropdown();
+    setupMobileMenu();
+    setupCarousel();
+    setupSearchModal();
+    setupHintCountdown();
+    setupDownloadModal();
+    setupDMCAModal();
+    setupRandomGame();
+    setupModalRandomButton();
+    setupSortDropdown();
+    
+    const navLogo = document.getElementById('navLogo');
+    if (navLogo) {
+        navLogo.addEventListener('click', () => scrollToTop(true));
+    }
+    
     if (isUnlocked) {
+        // Già sbloccato, rimuovi overlay
         if (overlay) overlay.remove();
         document.body.style.overflow = 'auto';
         startIntegrityCheck();
         startProtection();
-        
-        showSkeletonLoader();
-        showBackToTopButton();
-        
-        await loadUpdates();
-        await loadLibrary();
-        setupDropdown();
-        setupMobileDropdown();
-        setupMobileMenu();
-        setupCarousel();
-        setupSearchModal();
-        setupHintCountdown();
-        setupDownloadModal();
-        setupDMCAModal();
-        setupRandomGame();
-        setupModalRandomButton();
-        setupSortDropdown();
-        
-        // Aggiungi evento click sul logo per tornare in cima
-        const navLogo = document.getElementById('navLogo');
-        if (navLogo) {
-            navLogo.addEventListener('click', () => scrollToTop(true));
-        }
     } else {
+        // Bloccato, mostra overlay
         document.body.style.overflow = 'hidden';
         startProtection();
-        
-        showSkeletonLoader();
-        showBackToTopButton();
-        
-        await loadUpdates();
-        await loadLibrary();
-        setupDropdown();
-        setupMobileDropdown();
-        setupMobileMenu();
-        setupCarousel();
-        setupSearchModal();
-        setupHintCountdown();
-        setupDownloadModal();
-        setupDMCAModal();
-        setupRandomGame();
-        setupModalRandomButton();
-        setupSortDropdown();
-        
-        const navLogo = document.getElementById('navLogo');
-        if (navLogo) {
-            navLogo.addEventListener('click', () => scrollToTop(true));
-        }
-        
-        rememberAccess = false;
-        updateCheckboxUI();
+        // L'overlay è già visibile nel DOM
     }
 }
 
@@ -1392,88 +1347,63 @@ async function checkSitePassword() {
         if (!hashedInput) return;
         
         if (hashedInput === SECRET_HASH) {
-            localStorage.setItem('unlocked_time', Date.now().toString());
-            localStorage.setItem('unlocked', SECRET_HASH);
+            // Salva lo sblocco
+            sessionStorage.setItem('unlocked', SECRET_HASH);
+            sessionStorage.setItem('unlocked_time', Date.now().toString());
             
-            if (rememberAccess) {
-                localStorage.setItem('remember_access', 'true');
-                localStorage.setItem('unlocked_time_extended', (Date.now() + (60 * 60 * 1000)).toString());
-            } else {
-                localStorage.removeItem('remember_access');
-                localStorage.removeItem('unlocked_time_extended');
+            // Rimuovi l'overlay
+            if (overlay) {
+                overlay.style.transition = 'opacity 0.5s ease';
+                overlay.style.opacity = '0';
+                setTimeout(() => { 
+                    if (overlay && overlay.parentNode) overlay.remove(); 
+                    document.body.style.overflow = 'auto'; 
+                    startIntegrityCheck(); 
+                }, 500);
             }
-            
-            overlay.style.transition = 'opacity 0.5s ease';
-            overlay.style.opacity = '0';
-            setTimeout(() => { 
-                overlay.remove(); 
-                document.body.style.overflow = 'auto'; 
-                startIntegrityCheck(); 
-            }, 500);
         } else {
             errorMsg.style.display = 'block';
             lockBox.style.animation = 'none';
             lockBox.offsetHeight;
             lockBox.style.animation = 'shake 0.3s ease-in-out';
             document.getElementById('site-pw-input').value = '';
-            rememberAccess = false;
-            updateCheckboxUI();
+            setTimeout(() => {
+                if (errorMsg) errorMsg.style.display = 'none';
+            }, 2000);
         }
-    } catch (e) { console.error("Errore password:", e); }
-}
-
-function toggleRememberAccess() {
-    rememberAccess = !rememberAccess;
-    updateCheckboxUI();
-}
-
-function updateCheckboxUI() {
-    const checkmark = document.getElementById('remember-checkmark');
-    const checkbox = document.getElementById('remember-checkbox');
-    
-    if (rememberAccess) {
-        checkmark.style.display = 'block';
-        checkbox.style.background = 'rgba(0, 255, 238, 0.3)';
-        checkbox.style.boxShadow = '0 0 8px var(--cyan-neon)';
-    } else {
-        checkmark.style.display = 'none';
-        checkbox.style.background = 'rgba(0, 255, 238, 0.1)';
-        checkbox.style.boxShadow = 'none';
+    } catch (e) { 
+        console.error("Errore password:", e); 
     }
 }
 
 function startProtection() {
     if (protectionInterval) clearInterval(protectionInterval);
-    // Controllo ogni 10 secondi (meno aggressivo)
     protectionInterval = setInterval(() => {
-        const unlocked = localStorage.getItem('unlocked');
-        const unlockedTime = localStorage.getItem('unlocked_time');
-        const rememberFlag = localStorage.getItem('remember_access');
-        const unlockedTimeExtended = localStorage.getItem('unlocked_time_extended');
+        const unlocked = sessionStorage.getItem('unlocked');
+        const unlockedTime = sessionStorage.getItem('unlocked_time');
+        const overlay = document.getElementById('site-lock-overlay');
         
-        // Se è in modalità remember access
-        if (rememberFlag === 'true' && unlockedTimeExtended) {
-            const extendedTime = parseInt(unlockedTimeExtended);
-            if (Date.now() > extendedTime) {
-                localStorage.removeItem('unlocked');
-                localStorage.removeItem('unlocked_time');
-                localStorage.removeItem('remember_access');
-                localStorage.removeItem('unlocked_time_extended');
-                location.reload();
-            }
-            return; // Esci, non fare altri controlli
+        // Se non c'è overlay e non è sbloccato -> ricarica
+        if (!overlay && unlocked !== SECRET_HASH) {
+            location.reload();
         }
         
-        // Modalità normale (24 ore)
+        // Se è sbloccato ma scaduto (24 ore)
         if (unlocked === SECRET_HASH && unlockedTime) {
             const time = parseInt(unlockedTime);
             if (Date.now() - time > 24 * 60 * 60 * 1000) {
-                localStorage.removeItem('unlocked');
-                localStorage.removeItem('unlocked_time');
+                sessionStorage.removeItem('unlocked');
+                sessionStorage.removeItem('unlocked_time');
                 location.reload();
             }
         }
-    }, 10000); // Ogni 10 secondi invece di 1
+        
+        // Se c'è overlay ma è sbloccato -> rimuovi overlay
+        if (overlay && unlocked === SECRET_HASH) {
+            overlay.remove();
+            document.body.style.overflow = 'auto';
+        }
+    }, 5000);
 }
 
 function setupDropdown() {
