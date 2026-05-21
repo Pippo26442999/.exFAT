@@ -1,5 +1,24 @@
 [
    {
+    "title": "Clair Obscur: Expedition 33",
+    "image": "exFAT/Clair_Obscur_Expedition_33.avif",
+    "tags": [
+      "PPSA17599",
+      "v01.500.300",
+      "EUR",
+      "9.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidC91SlQ2UE5jS2Vaa1MvNjh2MmF1OWtPUzNPdG04aFhnRVNFWHU5bFhlbU1QRFYxZzhRazdTL0svUjBiZmdnVUNRPT0iLCJzIjoidXRoNXZJMmNNbXNtSGFnRHRvazhSQT09IiwiaSI6IkpyYmthc3JLeTdaaTM0TEQifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia2N0WVp0ZUZPL2lzQ3R3UGxkdFdtS01hZmRrMUFDbUNlQzlmNTh4eEJUVFdtankvTXJlN0FzUlU1M3dEOGNkbzEyeHZDMXY5IiwicyI6ImprMFZGbXFGZTl6bkEvNTUyVFB2VlE9PSIsImkiOiJuRnFOenZHWFVHYXIrb0VBIn0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicU8remdIaGRxZ0xvdFFsSG5QOHAyZFVHTjMzLzVzbTFURjUyV09lZlNCUTNUSXFGTXNqZjgyZ3luQUVmTWFDS3VxaHQiLCJzIjoiWmFORE9XdjJZcG1XN01kVDNhOENHQT09IiwiaSI6Im5zQXlRbitWUXRzaXkwbnkifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "Pkykzhack",
+    "popular": "on",
+    "size": "72GB"
+  },
+   {
     "title": "Slitterhead",
     "image": "exFAT/Slitterhead.jpg",
     "tags": [
@@ -2874,26 +2893,6 @@
     "credits_dlc": "DUPLEX",
     "popular": "on",
     "size": "154GB"
-  },
-  {
-    "title": "Clair Obscur Expedition 33: Deluxe Edition",
-    "image": "exFAT/Clair_Obscur_Expedition_33_Deluxe_Edition.png",
-    "tags": [
-      "PPSA17599",
-      "v01.400",
-      "EUR",
-      "Standard (8.xx) + 4.xx BackPork"
-    ],
-    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT0d6em01eVVXU3ZhaUVtMGMxeGtnOVZXZjZwY3VTam1LSzhqVzZ6L1o5ZFNNWGFwVGpqU2FzZEF6NmkrZCtEUGhEK1JFTllEIiwicyI6IlhRQ0hFYkpxTlZSNG1LaWIxc09oMWc9PSIsImkiOiIzUXdZR0cxNlBIRFQxdm8rIn0=",
-    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTzBJdVpoZUd2R05IVmRteTdaZHIxY0k3SUQwK0ZEQ0Q2elVzTkpJNEc5eHBCNmE2Yy9HNUNkNzRkaThnVDJRM0VxNzAwMm9VIiwicyI6IkJ4Y1dneUhRRXJON3F4R1FKbHpLSmc9PSIsImkiOiJRVmR3dFRCZWlObjBJQ1RHIn0=",
-    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOWIxZUt3d2RyS2JBbFdiV2hLSG1kTm5mZ1lLVGFTWjdNM1B1YVdKdnBVMHJkdDU2SVQxSmxwMHZCck1DdmtlMGZyTDAiLCJzIjoiT2d6MVN3bjFhVCtKK1lMOHBOTEpudz09IiwiaSI6IlIrdWVPR1N3a1VrM1FEYXAifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia2N0WVp0ZUZPL2lzQ3R3UGxkdFdtS01hZmRrMUFDbUNlQzlmNTh4eEJUVFdtankvTXJlN0FzUlU1M3dEOGNkbzEyeHZDMXY5IiwicyI6ImprMFZGbXFGZTl6bkEvNTUyVFB2VlE9PSIsImkiOiJuRnFOenZHWFVHYXIrb0VBIn0=",
-    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicU8remdIaGRxZ0xvdFFsSG5QOHAyZFVHTjMzLzVzbTFURjUyV09lZlNCUTNUSXFGTXNqZjgyZ3luQUVmTWFDS3VxaHQiLCJzIjoiWmFORE9XdjJZcG1XN01kVDNhOENHQT09IiwiaSI6Im5zQXlRbitWUXRzaXkwbnkifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "credits_dlc": "Pkykzhack",
-    "popular": "on",
-    "size": "66GB"
   },
   {
     "title": "Forza Horizon 5",
