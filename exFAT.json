@@ -1,4 +1,23 @@
 [
+  {
+    "title": "Looney Tunes Wacky World of Sports",
+    "image": "exFAT/Looney_Tunes_Wacky_World_of_Sports.avif",
+    "tags": [
+      "PPSA19563",
+      "v01.001",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQk9LVExoUXVRdTF3akpZSG02cjd1UWhJanlUb0YrZEUvSDJGSlA3aGZmdUttM3RmR3VFdlBKdEdZdHczTVBXekJYNkJTdG11IiwicyI6InZYYm5zVjI5Znlvc1VvRFFHaUg3TXc9PSIsImkiOiJVVGVZVjhFZThBYW45a2gwIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV2xjanhzZXZnbG90MDlNQk1hUkJEZVFkOUc4WFZwNWpkYWwyc0hvVkliRzUxTjZaa2EyKytFb2ZJemg2WnVEbStaOHAiLCJzIjoiczVBZVlxY1VEWFVBSWFHZ3MvZVl5Zz09IiwiaSI6InNTM2t0TlpVQ3pCOVF4bHIifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZm9hckpaQVBOMmxkK29WcG5DbTROQllxdjRVZjBUVW1GY1piR2lWQVVadi9GRlZrWmtSQkdFWWE4VWxabzMrMFJRPT0iLCJzIjoiOHkyZDZlMmNaSzFQWldndEFQOVNMZz09IiwiaSI6IkZNVE81bUIrQmpLSmdSVCsifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS2FKbWtId0Z3eGNBSTByZjVZZ3VXb3Jpbm9YbW1ITlFkREpwWTRiT0JMWXZRVmlLbmc4UzV1SmZMYWZ5QXl2dHprYTUyTXBMIiwicyI6IjA5K1FpR0gxenJWVXV6UGtuY0pLcGc9PSIsImkiOiJwRE1jd0tOSUN3V3BscENmIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaE1wa1Q2K0s4THdBelJvMUVPbXJoVDN3YjR1b1FmWk1LMzJDU0hEUjVTTHdzMytpSGNBZmcrRDdRdlJWdlpNMFFnPT0iLCJzIjoiSXZFYmgxdmMvSGJYWUxDTTV4c09VZz09IiwiaSI6IjNSYVlVZloxR0JGcC9oWW8ifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "kerrdec97",
+    "credits_dlc": "Pkykzhack",
+    "size": "9GB"
+  },
    {
     "title": "Fort Solis",
     "image": "exFAT/Fort_Solis.avif",
@@ -31,6 +50,7 @@
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVzlIUWc5WkdQVm1aOCtDcW94QXkwMGR6UmVXNjlKM0l5WktCekNxVi81a2pZTVUzT3MzZE5paE1Ic2NTcExQSjJRPT0iLCJzIjoiTkhIanhKV0JWSjNEUHZyMFJOOVFKUT09IiwiaSI6Im9VYzdOWC93bTlKQ2pqSTIifQ==",
     "credits_files": "High-Speed007",
     "credits_backport": "kerrdec97",
+    "credits_dlc": "Pkykzhack",
     "popular": "on",
     "size": "41GB"
   },
