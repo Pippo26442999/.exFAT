@@ -1,5 +1,22 @@
 [
    {
+    "title": "Fort Solis",
+    "image": "exFAT/Fort_Solis.avif",
+    "tags": [
+      "PPSA14374",
+      "v01.002",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQ2o5dlo1VTJzcGxJck5XMWV6NFhPT2lDZ0MvdGNkUjJyMmFUKytGbGI5eElnVkVCcUtXOEd4Y2F5a21hK0tKSWVBZlZkaWZQIiwicyI6IkJianlnbjBOSWhYWTFSWWtyVHErM2c9PSIsImkiOiJ4VTAzREl4TlNnR2wyN25RIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSkNacm4xSTJ0VGo0S3JPc2E5RjVsaEdmOVZHMEM2OXZGbjdHL1lhTXpFWDRLaG40OFFiTTZIa04zUFo5NVc5ZmVabFoiLCJzIjoiWE4vMTNCclZhdjVKR2ZqM3J3TE1mQT09IiwiaSI6IlVNNi8xNDg5Y1dzanNMaUkifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1B6K1QyczJ6N3hwU0JvaVdqdnNIOVc0VGZJSzFqdFUrYzZnc21xeFpnSjNxbXBFcm1CbEJWM2NVbTY2OVNiY3VRPT0iLCJzIjoiR0p6ZVZzNVhYVkdNcmlHZ0tmNWd0QT09IiwiaSI6Ikg0TUZ4QXdJNTVMWHcrd0gifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "kerrdec97",
+    "popular": "on",
+    "size": "14GB"
+  },
+   {
     "title": "Shin Megami Tensei V Vengeance",
     "image": "exFAT/Shin_Megami_Tensei_V_Vengeance.avif",
     "tags": [
@@ -13,7 +30,7 @@
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWG5WVmJhU0lOTDB2eWZjZ0kwZStMSGJxMmtIdU9US2ROclFaZVpSVjkwOXV0cUU5ZTNUaUdGWm5FQjl5b29SSFN3PT0iLCJzIjoiWGMrY0VnNkdrUDlQQkdGejFlVUl3QT09IiwiaSI6ImlVTk5STmdvYmxqZmE2cU4ifQ==",
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidU5WNkZYYnNxdERmQVFJUVd0U09ySlJ4M0Y4SFdPaGI1SGdPZDVYSGR6M2JubWluWFozVVpqVk9pU1c1VzlsL0FoRzNMOHdaIiwicyI6ImpGUEcvWWg1OVFNa1FVV2paRUo0TEE9PSIsImkiOiJJMUp5SzRtSEFvQ2ZaRGx5In0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVzlIUWc5WkdQVm1aOCtDcW94QXkwMGR6UmVXNjlKM0l5WktCekNxVi81a2pZTVUzT3MzZE5paE1Ic2NTcExQSjJRPT0iLCJzIjoiTkhIanhKV0JWSjNEUHZyMFJOOVFKUT09IiwiaSI6Im9VYzdOWC93bTlKQ2pqSTIifQ==",
-    "credits_files": "SiESPTA",
+    "credits_files": "High-Speed007",
     "credits_backport": "kerrdec97",
     "popular": "on",
     "size": "41GB"
