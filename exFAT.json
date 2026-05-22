@@ -1,5 +1,21 @@
 [
    {
+    "title": "Layers of Fear",
+    "image": "exFAT/Layers_of_Fear.jpg",
+    "tags": [
+      "PPSA07265",
+      "v01.010",
+      "EUR",     
+      "7.xx and beyond"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMzVLNnV6MkVleFV2c0EwSjNsU3JXSkNjWTRrVG5CSkdMazM3V1NCTmFPcHFXWkYxd2QwTEhkY1dsSDFKMllmU1JUOGRuUHkyIiwicyI6InJyWkx6Ri9rZlcxKzZJTTBJYU0zZVE9PSIsImkiOiJFS2VwMjBzSmRYZlgyaEJtIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNmdXdHllSHRjaW1aSDBtdSt6Y2poVEoyV0V4UDU2NG5wOGJSVTBiTGtMUjEwd0IzdFN6R3k3SU9CZm9wYm5VR3drRlIiLCJzIjoiWmF6VjN2Mkk0ejlsbWZrL1NuWU1BZz09IiwiaSI6ImhUNHkyTWpFUmE4YWRZWHIifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWmwza2hBZ015QUJ6Ui9GUXV3dGNaNjlKL2tyakwwMTA4QmU5aCthbHJrUXh5SmVFeUpTMWVtTEFQYklNZVlDSE5BPT0iLCJzIjoiam1rS1NBbnV6WTZzK1JwK0p6TzBQdz09IiwiaSI6ImJoTi9JbjNPSUtXMS9SYlEifQ==",
+    "credits_files": "SiESPta",
+    "popular": "on",
+    "size": "31GB"
+  },
+   {
     "title": "Clair Obscur: Expedition 33",
     "image": "exFAT/Clair_Obscur_Expedition_33.avif",
     "tags": [
@@ -3046,22 +3062,6 @@
     "credits_backport": "BestPig",
     "popular": "on",
     "size": "201GB"
-  },
-  {
-    "title": "Cronos The New Dawn",
-    "image": "exFAT/Cronos_The_New_Dawn.png",
-    "tags": [
-      "PPSA24096",
-      "v01.006",
-      "EUR",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRWhLOWJUQ3BNQVVjekRlVkVIVDY2YXY2UUk1L0VpbC81enZ0NUNqbVdQZ05DbUxYcnYvZE9tM05FQzloZ2RuV0ovMHQwMEk1IiwicyI6IjdVRFBIaUR2M0pBMUZ6bG0vNGdDOGc9PSIsImkiOiJ0ZDVGMTMrWXgyWE9mcW5wIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT1ZBWHZadDBUN0dVNU5rT0hpNFFoUmtwWWRKU1NzQjlNUnFzaU1sbk4vbmtmMUxZaUNHUEFBeTZUUlMzUUZRRWFFVHciLCJzIjoidVFGR3o4bXY2c041Rk1ESldIYlluQT09IiwiaSI6ImJlU1owakw5a3RIOFJlMzMifQ==",
-    "credits_files": "SiESPTA",
-    "credits_backport": "Kira",
-    "popular": "on",
-    "size": "34GB"
   },
   {
     "title": "Mafia The Old Country: Deluxe Edition",
