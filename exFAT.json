@@ -1,5 +1,25 @@
 [
    {
+    "title": "Borderlands 4",
+    "image": "exFAT/Borderlands_4.avif",
+    "tags": [
+      "PPSA01494",
+      "v01.050",
+      "USA",
+      "4.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidzRvZnAreEpGaVl6SVprN1lOSHd6Y0x5OTYzczNlWmRUeUVtY2R6VW93ckdyUFUzSWhIY2VpOUtYNXBXQnh1VWx3PT0iLCJzIjoiYnVBZGtIc0J6cWdHczYvOGl1aVhrUT09IiwiaSI6Ik8zNCtoRmozLzg0bGdlNlMifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZ0NYSnMrZUpoTW1vZStXS1dkcjlWSGhES1RNcUhqRUxLekZJMitPbnFpOSt1QnJzd2dHSzk3VFhudkpDWHRETzZLOVZSMXdEIiwicyI6InNVSU5QZjVMdDZOdUZxc0lQR00yaEE9PSIsImkiOiI4SllNTjlEOEZXWW9zM0E2In0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVEF5OWRkc3BqYlhOQXB3eldyb2VoMVlUa1I4RVVzUktPT2RUMFVwcDFBN052NHJSUlJ2aTVyVEs2bzJVR1VzbktNclciLCJzIjoibStBc1AwdFNTT2ZkY3JuaXIvRGtmZz09IiwiaSI6IlZJRm1PMk9rQWdzdS9UZ2gifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig",
+    "credits_dlc": "Psykzhack",
+    "popular": "on",
+    "size": "88GB"
+  },
+   {
     "title": "Dragon Quest VII Reimagined",
     "image": "exFAT/Dragon_Quest_VII_Reimagined.jpg",
     "tags": [
@@ -2749,26 +2769,6 @@
     "credits_backport": "BestPig",
     "credits_dlc": "Psykzhack",
     "size": "10GB"
-  },
-  {
-    "title": "Borderlands 4",
-    "image": "exFAT/Borderlands_4.avif",
-    "tags": [
-      "PPSA01494",
-      "v01.003.001",
-      "USA",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOXdsOW0yVEl6SDM1K0h5Y0VHTURrY0JKNkhLdis1UWJvTHNWSnh1d240dGx4NzBEdVkzTFpPRFhmZE80bVdCRkowbWFjZkNSIiwicyI6Im85dmpFNnpYK0VYOURQMEhyMG56OFE9PSIsImkiOiI3Z1UxbnFHbkZxYUpackliIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTGhIV3RRTjdGZTJlbVpEeTVJMHZ2Tkh4RWJ2Yk5zM0ppbFhDcWZQWk5hMlVrcEdnUDZLcEdGTktJdzM2ZG1HZ0RrZWYiLCJzIjoiLzZ5cnNGVmFhaGVMdVdiK1A3Y1dMUT09IiwiaSI6IlVWNkh1MEkwajNCSWxhWWYifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTVVLMERJVndYQi9NbXMwRDYzRTBNZVVQd2MvbXhoQ1JqVjVmOXJzMFVpakxFL3o4MU9la1prV2ZvYk8weld4S3E1NENTdz09IiwicyI6Inh5MEtLbnV6L01tNWMvdFM0UEN6TFE9PSIsImkiOiJtYXBpUGtkTHViUXVab3BaIn0=",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZ0NYSnMrZUpoTW1vZStXS1dkcjlWSGhES1RNcUhqRUxLekZJMitPbnFpOSt1QnJzd2dHSzk3VFhudkpDWHRETzZLOVZSMXdEIiwicyI6InNVSU5QZjVMdDZOdUZxc0lQR00yaEE9PSIsImkiOiI4SllNTjlEOEZXWW9zM0E2In0=",
-    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVEF5OWRkc3BqYlhOQXB3eldyb2VoMVlUa1I4RVVzUktPT2RUMFVwcDFBN052NHJSUlJ2aTVyVEs2bzJVR1VzbktNclciLCJzIjoibStBc1AwdFNTT2ZkY3JuaXIvRGtmZz09IiwiaSI6IlZJRm1PMk9rQWdzdS9UZ2gifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "credits_dlc": "Psykzhack",
-    "popular": "on",
-    "size": "77GB"
   },
   {
     "title": "Until Dawn",
