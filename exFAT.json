@@ -1,5 +1,25 @@
 [
    {
+    "title": "Daemon X Machina Titanic Scion",
+    "image": "exFAT/Daemon_X_Machina_Titanic_Scion.avif",
+    "tags": [
+      "PPSA29154",
+      "v01.002.002",
+      "USA",
+      "4.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibEsraDk1ZWV1bTdhUEo1ODgrbE5mWFI2QUJhQnU3bmpzNFpNbHpzazhZeURrUDU2NmlRM3VJOU05K04wK3J4bEl3PT0iLCJzIjoiSk1FS253bGFDWG5zdHIrbmpZTCt5Zz09IiwiaSI6IjhhMTAzVzlCdzYzZ3RMc20ifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUVpLVmc0cDVPcXgrU3N0SnBCTnFITnV0cXJaTTNLM0djckNJVC9zdGxEMWk4UFhEN0IzaHFsK0tETkdzUFA3clN2MFZyVG01IiwicyI6ImtyTmNkZ29idDhMa2RZVm1yNTREWnc9PSIsImkiOiJjT1J1MXV5eStVUEgrUllyIn0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT3puMitMSUZpTk83Q09DakVCamhUY1M2ZUdadEpyakViWFZGL2EybkpxRlFkUkJxNGtBbjdFYWs5VmZmTWVkdEFTL0ciLCJzIjoiNVA4UjFlSjNNTEdxNXBFQzhqd3czZz09IiwiaSI6Ii9ueE5wUFZYK0N6blZkcnoifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "BestPig",
+    "credits_dlc": "Pkykzhack",
+    "how_to_play": "Game modified for make DLCs ASIA work into USA.",
+    "size": "46GB"
+  },
+   {
     "title": "Layers of Fear",
     "image": "exFAT/Layers_of_Fear.jpg",
     "tags": [
@@ -1922,25 +1942,6 @@
     "credits_backport": "BestPig",
     "popular": "on",
     "size": "71GB"
-  },
-  {
-    "title": "Daemon X Machina Titanic Scion",
-    "image": "exFAT/Daemon_X_Machina_Titanic_Scion.avif",
-    "tags": [
-      "PPSA23253",
-      "v01.001",
-      "ASIA",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNmMzdGExaUpBZCtFaEoyaTNSK2ZYNVRHaGZuREtOd1pzRjlZczdQL1FiMWszL3pCSDJoUUErUFVheVRacE9HUldpdGhkWXBTIiwicyI6IngxbzFBVElqTDFzWXp4NW51VERLbWc9PSIsImkiOiJ0REl4S0dia2NwNTdEWktsIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNXZ5eTA5L2xlSnJVSXFnNnpqZlJkOThRTkQ5SnFTR0hGQ0h6T2I4SEprUm9Ba0twQXUzK0YvYkpCZjVMVEJET1FyLzYiLCJzIjoiSWxlelJYOHkwYzBZRGw1NDU4NSs5dz09IiwiaSI6ImdCODBwWmtJZ24xZmhLd1YifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQnlkVDU3OEhmR0JJQnVRY2dKcmxPaENWeTVLNDZDcXpUUlM3WHMzak5zSERCWnBqWFlnNmNrNkRVb1VYeHUxTFZ1TGcvQT09IiwicyI6Imt0KzZKczA5NVl5QUVOcE1rV2hOSUE9PSIsImkiOiJGNFhrd0Y3ZXlIRmxLNWtaIn0=",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUVpLVmc0cDVPcXgrU3N0SnBCTnFITnV0cXJaTTNLM0djckNJVC9zdGxEMWk4UFhEN0IzaHFsK0tETkdzUFA3clN2MFZyVG01IiwicyI6ImtyTmNkZ29idDhMa2RZVm1yNTREWnc9PSIsImkiOiJjT1J1MXV5eStVUEgrUllyIn0=",
-    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT3puMitMSUZpTk83Q09DakVCamhUY1M2ZUdadEpyakViWFZGL2EybkpxRlFkUkJxNGtBbjdFYWs5VmZmTWVkdEFTL0ciLCJzIjoiNVA4UjFlSjNNTEdxNXBFQzhqd3czZz09IiwiaSI6Ii9ueE5wUFZYK0N6blZkcnoifQ==",
-    "credits_files": "SiESPTA",
-    "credits_backport": "BestPig",
-    "credits_dlc": "Pkykzhack",
-    "size": "44GB"
   },
   {
     "title": "ELDEN RING NIGHTREIGN",
