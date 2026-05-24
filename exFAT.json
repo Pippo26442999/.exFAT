@@ -1,5 +1,23 @@
 [
    {
+    "title": "Star Wars Outlaws Ultimate Edition",
+    "image": "exFAT/Star_Wars_Outlaws_Ultimate_Edition.avif",
+    "tags": [
+      "PPSA08260",
+      "v01.007",
+      "EUR",
+      "9.xx and beyond"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT1lUKzIrNm1rNkFOYWMyYWV0ekRCTzBOUGVoV1NkRUJBdDVhU25zdlo5ZXlpVVlzOGV1NCs4eEFHYjRmd0ZHenZaRWR5UFVIIiwicyI6ImZ0WnRIYm9TVmNWM1lpUitCQVNuM0E9PSIsImkiOiJHeEZWelhFeU5jeXVHek84In0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNEVmdmZQZ05WdUpGNFQzSGFlbFI5aVU2RFQwL1YzcUI4bmVhY3lWVXY0VjZybnc5MTlYaFVIQ0hxOE85Z0pCN2JqNDMiLCJzIjoiQ0gyNXg2eTE4OFppWmhPYllSOXk0dz09IiwiaSI6InhkMGpkR1BMNVZGaHpaeTcifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1ZaazIvZmV1TUNJamlJTEwwdDFyUkdhSzJVR21udzFzeTd4RHpTTk9Bcm9FTDFvTkFQdWhZTWE3QXo5RmdncEFBPT0iLCJzIjoibXUrNURsbkI2ZzVBTkJ6VTh2R0JSUT09IiwiaSI6IjBYd05HQnJPUW1BNkxpd0kifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQ3ltVmI1dldYMlZXR1UvdkV6cDRtZ2ZPamdmRy9vdm9CcWZMajNTdCtGUW5pQUErMjQvUlR2cm1iOTZaeGh4UVBGeDVBT2R3IiwicyI6IndNSXBUMlFHdHJXR0tBRXpuRUN3bkE9PSIsImkiOiJsUWNqNzFoNGcyMjJmdklpIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRzR1ZUptR1U0YUdUbHd5VGVkUnFaQ05lNVNEQ1JxUGhPSGFXZnhvVEZjUEN3dkZGNndYeUIvNzJjNDFuL29wOXh3PT0iLCJzIjoicFNMSDJmaWdicVE3RXlqRkNmNCtQdz09IiwiaSI6ImVlSmhORDBrUE05cThUejAifQ==",
+    "credits_files": "SiESPTA",
+    "popular": "on",
+    "size": "137GB"
+  },
+   {
     "title": "Star Wars Dark Forces Remaster",
     "image": "exFAT/Star_Wars_Dark_Forces_Remaster.avif",
     "tags": [
@@ -3447,21 +3465,6 @@
     "credits_files": "High-Speed007",
     "credits_backport": "BestPig",
     "size": "162GB"
-  },
-  {
-    "title": "Star Wars Outlaws",
-    "image": "exFAT/Star_Wars_Outlaws.png",
-    "tags": [
-      "PPSA08260",
-      "v01.003.001",
-      "EUR",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSHFRb2tWVDd1V2c0MFUrQm5KUmErYjRmZ2hoZzEyWituUkdJKzVqTEtPRW92Sy9WZy9LaUNWbTBEQjdwb0p6cFZwaHdEVXlrIiwicyI6InlGQnJhb3l2SXNYODQzOGZKUVBwa0E9PSIsImkiOiJnaDduZ09ZNzJ4aHBzM0FnIn0=",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "119GB"
   },
   {
     "title": "Silent Hill f",
