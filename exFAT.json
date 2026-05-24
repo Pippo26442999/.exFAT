@@ -6,12 +6,16 @@
       "PPSA19728",
       "v02.000",
       "USA",
-      "8.xx and beyond"
+      "Standard (8.xx) + 4.xx BackPort"
     ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQitzTndyLzMvTGVrOC9Za3EyK0Y1Wkg5QlBDam9tenEzTGFGWlppa0tVTXd2eXpQaTBlZ3h4MUJWTWJlMmIwa3prSlZ6djZpIiwicyI6InNCNkFiTEhjUEMxSU9LWlpGOWNNMWc9PSIsImkiOiJXRWxqZmJFVmNscWpBMGcyIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieFFjWHJ5RWZpVUxYS0h0eWJ2TmczQlFzc3FvTmdRN0pMbE5EbjBZTUVDd05VYlloK1c4dVMyWDlTaWN2YjRsbVJyZk8iLCJzIjoiN3oxbXgySHVRaG81VXdzU1k0Rndodz09IiwiaSI6IitoZG13V3FvdjlHdW5ZWHMifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK2NIWUFZQjN2MWtMY2JTRWFkakRITW5Va2t0cUV1NHRxVVJiQlJ0UVMxRDNjZlZ1RHRzVnhwZFNmZjRONVNpekd3PT0iLCJzIjoiSG1FQmk2aWxzQ2dhUXZPMGpzSXJUUT09IiwiaSI6Ik0wanBqTjliUEhMUE8vVkwifQ==",
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQitzTndyLzMvTGVrOC9Za3EyK0Y1Wkg5QlBDam9tenEzTGFGWlppa0tVTXd2eXpQaTBlZ3h4MUJWTWJlMmIwa3prSlZ6djZpIiwicyI6InNCNkFiTEhjUEMxSU9LWlpGOWNNMWc9PSIsImkiOiJXRWxqZmJFVmNscWpBMGcyIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieFFjWHJ5RWZpVUxYS0h0eWJ2TmczQlFzc3FvTmdRN0pMbE5EbjBZTUVDd05VYlloK1c4dVMyWDlTaWN2YjRsbVJyZk8iLCJzIjoiN3oxbXgySHVRaG81VXdzU1k0Rndodz09IiwiaSI6IitoZG13V3FvdjlHdW5ZWHMifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK2NIWUFZQjN2MWtMY2JTRWFkakRITW5Va2t0cUV1NHRxVVJiQlJ0UVMxRDNjZlZ1RHRzVnhwZFNmZjRONVNpekd3PT0iLCJzIjoiSG1FQmk2aWxzQ2dhUXZPMGpzSXJUUT09IiwiaSI6Ik0wanBqTjliUEhMUE8vVkwifQ==",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMHRrSlR6b1JRQy9FZllXTGR3SUNlV2xJVllSbkRraEVYOHdGMGVScXc4ZjUvUDlKTC9GY1d3VTU5M0xoQUpVRVNEOEtGOHgxIiwicyI6IndlNWI1U1c2UjlFYlJzV1EzaWZsYUE9PSIsImkiOiJnd09XNTF5MHFJZVQ1YysrIn0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYks5aGpOYis4cHhCdUo3MGtPZlRwNTRqL2JSc1JvREdZcmtjNGpVOU1NRGlDT2RIUHVIaU02R2c4OHVwTkhBZElYTVEiLCJzIjoidDVxQll2ZnVkdEVUbkh2SWNYUFdyUT09IiwiaSI6ImZEWXdMTFBIQlR4bDJYT24ifQ==",
+    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQXVPSkdrVXh5Y2d2ek1OZlVYR0lCRS9HUDR5ZHpzNjBwRURXTE1DNDUyQjh5M3FxNDRRNVBMMkpNcXlPcGZIVTJRPT0iLCJzIjoiNWI0NkplS1lmaTZmYzNiRTM3R2FoZz09IiwiaSI6Imd3R1RheGdWNWRYYnFPNWYifQ==",
     "credits_files": "High-Speed007",
+    "credits_backport": "kerrdec97",
     "size": "1GB"
   },
    {
