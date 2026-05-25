@@ -1,5 +1,21 @@
 [
    {
+    "title": "Evotinction",
+    "image": "exFAT/Evotinction.avif",
+    "tags": [
+      "PPSA10414",
+      "v01.009",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYkNKdnluZUpsQ3Fubytmc1NEa000TnNkTGVaOFBLem9PbnNrR3NZNGhCTHNHSExoOVJFUnZDRzZpbzlZRU03Y2R0NC93c0pBIiwicyI6Im81UW1QU0lBeUlheUFydkFUdU1IalE9PSIsImkiOiJ4UkREdkFiekQ3RHBsRFBiIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN01pT3VGY2UxdlBySm9SajFCd084N2pmMDBNRXB5UXJTNTVWT281b1dKQTRUMGNoZGdGTko0SUtac2VMMGdpMlJPVUUiLCJzIjoiNGJ0WDRReU9CaWxBbHkrKytpS2JqZz09IiwiaSI6IjR4OXRzc1V2dXdvWEFLQ0kifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoid3JXNjZPOW5XL1Y3Vi9VUUZSS08vYkJyWllrTCtPWVJtSG13YlF6S3VaT1BzOTZyNnozVHl3OExKMGhqdktjcyt3PT0iLCJzIjoiZERWeG9CYytCcFFvZmhOWEZuRFVXZz09IiwiaSI6IktyMVpPc2FvenNsQ1NmRUQifQ==",
+    "credits_files": "DUPLEX & SiESPta",
+    "credits_backport": "kerrdec97",
+    "size": "12GB"
+  },
+   {
     "title": "Bleak Faith Forsaken",
     "image": "exFAT/Bleak_Faith_Forsaken.avif",
     "tags": [
