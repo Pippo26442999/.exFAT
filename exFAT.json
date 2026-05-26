@@ -1,5 +1,21 @@
 [
    {
+    "title": "Miasma Chronicles",
+    "image": "exFAT/Miasma_Chronicles.avif",
+    "tags": [
+      "PPSA06217",
+      "v01.007",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNHRIR053dGVTT0FiMitScU1QM3QvelZGaUZrMGpkNFJsVU1xakV5RVVGdjcwSXhOY2pmTU1sdzk2a1djeVFkOHJ3PT0iLCJzIjoiQWNKS2E0RHJ5QnRrelZmcHdWWUZUZz09IiwiaSI6IkxoQmVpZCtaQytiY0o0dGQifQ==",
+    "credits_files": "DUPLEX & José Carrión",
+    "credits_backport": "kerrdec97",
+    "size": "21GB"
+  },
+   {
     "title": "Star Wars Outlaws Ultimate Edition",
     "image": "exFAT/Star_Wars_Outlaws_Ultimate_Edition.avif",
     "tags": [
