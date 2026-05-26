@@ -1,5 +1,24 @@
 [
    {
+    "title": "Art of Rally",
+    "image": "exFAT/Art_of_Rally.avif",
+    "tags": [
+      "PPSA03659",
+      "v01.006",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQnV0aTNQa1d0eHdUTUhaR3EvSG90dXRyclpkYWhiOHhNS0VZdngyTzZjNTZaU2tkNUhSTUpMUUIwTGI4WWkvNHVKUDJNUTJpIiwicyI6IlpBN3N5ZGhaeDNnV2FjQUlrQTNVUFE9PSIsImkiOiJJdDBOQzlta1c4ODd0d1JUIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMUJmTkFtZzBFSi91eFhIQzFBRWlXanlYc21NcllJWmMxaFBXM3YrUGRPZ1A4RmMweXBnUStkWEhRcVp5a210MkJOcWciLCJzIjoidTZERUkxU1dPMVlzQkt4TE1PY3Yxdz09IiwiaSI6IlJaWUhpQzlQYXhJZmtrUW4ifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicS83YUtwT0MyRDZhT1NWV2wwekt4L0lUZVNpR0JodVJwOTFraTQ0ZFJZcC94TTRnb1dmTWZHTFJNa2p2TmRBK1Z3PT0iLCJzIjoiM09LTzZVSUt3YWVXMEloY1dncTR1dz09IiwiaSI6IlhkbTZnalRXb3Q2UWRjcVIifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibTlRT2VRVmpoR25tdHVjbHFFMFZkWXFndGJzeGNhenBlVnN3TjlET3VzMis5SjBIVnY0Y0tWdGZkV0pLM2pRc3N6L0JoSGR6IiwicyI6IkJoaHBhaHF4RStoMzF4NlFDUW5GaGc9PSIsImkiOiJ2aVE2YnMxczd4cDh1dnI1In0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicHlCZmVwV0MxcDVQVmVGakpnUXZMcjlCUllhM3FremZqRjRsb1BWNSszZ2ZPWEVSUW5ENGZYYmpld2E1a3hQODR3PT0iLCJzIjoiNitkU3g3RXJ4OXd1OEdpWFlPZlBwZz09IiwiaSI6ImZDSEV3VUhhOGRWMkcwL1MifQ==",
+    "credits_files": "DUPLEX & José Carrión",
+    "credits_backport": "kerrdec97",
+    "credits_dlc": "DUPLEX & José Carrión",
+    "size": "3GB"
+  },
+   {
     "title": "Miasma Chronicles",
     "image": "exFAT/Miasma_Chronicles.avif",
     "tags": [
