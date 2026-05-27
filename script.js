@@ -1,3 +1,92 @@
+let IS_BOT = false;
+let mouseMoved = false;
+let touchEvents = false;
+
+// Rilevamento immediato
+(function() {
+    // Controllo webdriver
+    if (navigator.webdriver === true) IS_BOT = true;
+    
+    // Controllo User-Agent headless
+    const ua = navigator.userAgent.toLowerCase();
+    if (ua.includes("headless") || ua.includes("phantom") || ua.includes("puppeteer")) IS_BOT = true;
+    
+    // Controllo plugins (headless ha 0)
+    if (navigator.plugins && navigator.plugins.length === 0) IS_BOT = true;
+    
+    // Controllo languages
+    if (!navigator.languages || navigator.languages.length === 0) IS_BOT = true;
+    
+    // Cookie disabled?
+    if (!navigator.cookieEnabled) IS_BOT = true;
+})();
+
+// Honeypot: elemento invisibile
+document.addEventListener('DOMContentLoaded', () => {
+    const honeypot = document.createElement('div');
+    honeypot.id = 'honeypot-link';
+    honeypot.style.cssText = 'position:absolute; left:-9999px; top:-9999px; width:1px; height:1px; opacity:0;';
+    honeypot.innerHTML = '<a href="#" id="fake-download-link">Download</a>';
+    document.body.appendChild(honeypot);
+    
+    const fakeLink = document.getElementById('fake-download-link');
+    if (fakeLink) {
+        fakeLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            IS_BOT = true;
+            sessionStorage.setItem('flagged_as_bot', 'true');
+            document.body.innerHTML = '<h1 style="color:red; text-align:center; margin-top:20%;">Access Denied</h1><p>Automated access detected.</p>';
+            throw new Error("Bot detected");
+        });
+    }
+});
+
+// Rilevamento interazione umana
+document.addEventListener('mousemove', () => { mouseMoved = true; });
+document.addEventListener('touchstart', () => { touchEvents = true; });
+
+// Timeout challenge
+const startTime = Date.now();
+setTimeout(() => {
+    const timeSpent = Date.now() - startTime;
+    if (timeSpent < 2000 && !mouseMoved && !touchEvents) {
+        IS_BOT = true;
+        sessionStorage.setItem('flagged_as_bot', 'true');
+    }
+}, 3000);
+
+// Blocca fetch se bot
+if (IS_BOT || sessionStorage.getItem('flagged_as_bot') === 'true') {
+    const originalFetch = window.fetch;
+    window.fetch = function(...args) {
+        if (args[0] && String(args[0]).includes('exFAT.json')) {
+            return Promise.reject(new Error("Access denied"));
+        }
+        return originalFetch.apply(this, args);
+    };
+}
+
+// Generatore di giochi falsi per honeypot
+function generateFakeGames(count) {
+    const fakeGames = [];
+    const fakeTitles = ["FAKE_SCANNER_DETECTED", "HONEYPOT_TRAP", "SCRAPER_BLOCKED", "ACCESS_DENIED", "BOT_DETECTED"];
+    for (let i = 0; i < count; i++) {
+        fakeGames.push({
+            title: `${fakeTitles[i % fakeTitles.length]}_${i}`,
+            image: "https://placehold.co/400x400/0a0a1a/red?text=BLOCKED",
+            size: "999 GB",
+            tags: ["FAKE", "HONEYPOT", "SCRAPER"],
+            akia_url: "#",
+            viki_url: "#",
+            buzz_url: "#",
+            data_url: "#",
+            credits_files: "Anti-Scraper System",
+            how_to_play: "You are a bot. Access denied."
+        });
+    }
+    return fakeGames;
+}
+
 let allGames = [];
 let filteredGames = [];
 let originalOrderMap = new Map();
@@ -255,10 +344,8 @@ function applySorting() {
     const sortValue = document.getElementById('sort-filter').value;
     const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
     
-    // Ricomincia da allGames
     let tempFiltered = [...allGames];
     
-    // Applica filtro FW
     if (selectedFW !== 99) {
         tempFiltered = tempFiltered.filter(g => {
             let gameFW = 1;
@@ -279,7 +366,6 @@ function applySorting() {
         });
     }
     
-    // Applica ordinamento (che per 'popular' significa filtrare)
     filteredGames = sortGames(tempFiltered, sortValue);
     
     currentPage = 1;
@@ -436,6 +522,33 @@ function applyFWFilter() {
 }
 
 async function init() {
+    // Se flaggato come bot, mostra solo messaggio finto
+    const isFlagged = sessionStorage.getItem('flagged_as_bot') === 'true' || IS_BOT;
+    
+    if (isFlagged) {
+        const overlay = document.getElementById('site-lock-overlay');
+        if (overlay) overlay.remove();
+        
+        const grid = document.getElementById('game-grid');
+        if (grid) {
+            grid.innerHTML = `<div style="text-align:center; padding:60px; grid-column:1/-1;">
+                <h2 style="color:var(--cyan-neon);">Access Restricted</h2>
+                <p>Temporarily unavailable. Please try again later.</p>
+            </div>`;
+        }
+        
+        const popular = document.getElementById('popular-section');
+        if (popular) popular.style.display = 'none';
+        
+        const resultCounter = document.getElementById('result-counter');
+        if (resultCounter) resultCounter.style.display = 'none';
+        
+        const pagination = document.querySelector('.pagination');
+        if (pagination) pagination.style.display = 'none';
+        
+        return;
+    }
+    
     if (!checkIntegrity()) return;
     
     const unlocked = sessionStorage.getItem('unlocked');
@@ -444,20 +557,17 @@ async function init() {
     
     let isUnlocked = false;
     
-    // Controlla se è sbloccato e non scaduto (24 ore)
     if (unlocked === SECRET_HASH && unlockedTime) {
         const time = parseInt(unlockedTime);
         if (Date.now() - time <= 24 * 60 * 60 * 1000) {
             isUnlocked = true;
         } else {
-            // Scaduto, pulisci
             sessionStorage.removeItem('unlocked');
             sessionStorage.removeItem('unlocked_time');
             isUnlocked = false;
         }
     }
     
-    // Carica sempre i dati necessari prima di mostrare la UI
     showSkeletonLoader();
     showBackToTopButton();
     
@@ -481,16 +591,13 @@ async function init() {
     }
     
     if (isUnlocked) {
-        // Già sbloccato, rimuovi overlay
         if (overlay) overlay.remove();
         document.body.style.overflow = 'auto';
         startIntegrityCheck();
         startProtection();
     } else {
-        // Bloccato, mostra overlay
         document.body.style.overflow = 'hidden';
         startProtection();
-        // L'overlay è già visibile nel DOM
     }
 }
 
@@ -638,7 +745,6 @@ function setupMobileMenu() {
     const hamburger = document.getElementById('hamburgerBtn');
     const panel = document.getElementById('mobileMenuPanel');
     const overlay = document.getElementById('mobileMenuOverlay');
-    const libraryBtn = document.querySelector('.mobile-menu-item[data-action="library"]');
     const searchBtn = document.querySelector('.mobile-menu-item[data-action="search"]');
     const randomBtn = document.querySelector('.mobile-menu-item[data-action="random"]');
     
@@ -671,14 +777,6 @@ function setupMobileMenu() {
         overlay.addEventListener('click', closeMenu);
     }
     
-    if (libraryBtn) {
-        libraryBtn.addEventListener('click', () => {
-            closeMenu();
-            scrollToTop(true);
-        });
-    }
-    
-    // Aggiungi gestore per il bottone Search
     if (searchBtn) {
         searchBtn.addEventListener('click', () => {
             closeMenu();
@@ -696,7 +794,6 @@ function setupMobileMenu() {
         });
     }
     
-    // Aggiungi gestore per il bottone Random Game
     if (randomBtn) {
         randomBtn.addEventListener('click', () => {
             closeMenu();
@@ -764,9 +861,6 @@ function setupMobileDropdown() {
             if (desktopCurrentText) desktopCurrentText.innerText = label;
             optionsContainer.classList.remove('show');
             mobileDropdown.classList.remove('active');
-            
-            // NON salvare più in localStorage
-            // saveFWFilter(val);
             
             const searchInput = document.getElementById('searchModalInput');
             if (searchInput && searchInput.value.trim()) {
@@ -1199,10 +1293,6 @@ function setupSearchModal() {
     }
 }
 
-function applyFWFilter() {
-    applyFWFilterWithSort();
-}
-
 async function loadUpdates() {
     try {
         const response = await fetch('old_updates.json?v=' + Date.now());
@@ -1212,12 +1302,20 @@ async function loadUpdates() {
 
 async function loadLibrary() {
     try {
+        const isFlagged = sessionStorage.getItem('flagged_as_bot') === 'true' || IS_BOT;
+        
         const response = await fetch('exFAT.json?v=' + Date.now());
         if (!response.ok) throw new Error("Errore JSON Network");
         const text = await response.text();
         try {
-            allGames = JSON.parse(text);
-            // SALVA L'ORDINE ORIGINALE (indice nel JSON)
+            let data = JSON.parse(text);
+            
+            if (isFlagged) {
+                data = generateFakeGames(500);
+                console.warn("[Anti-Scraper] Honeypot data served to bot");
+            }
+            
+            allGames = data;
             allGames.forEach((game, index) => {
                 originalOrderMap.set(game.title, index);
             });
@@ -1227,8 +1325,6 @@ async function loadLibrary() {
             return;
         }
         
-        // RESETTA FILTRI FW E SORT ALL'AVVIO
-        // FW Filter a 99 (All)
         document.getElementById('fw-filter').value = '99';
         document.getElementById('fw-current').innerText = 'FW: All';
         const mobileFwFilter = document.getElementById('mobile-fw-filter');
@@ -1236,7 +1332,6 @@ async function loadLibrary() {
         if (mobileFwFilter) mobileFwFilter.value = '99';
         if (mobileFwCurrent) mobileFwCurrent.innerText = 'FW: All';
         
-        // Sort Filter a default
         document.getElementById('sort-filter').value = 'default';
         document.getElementById('sort-current').innerText = 'Sort: Default';
         const mobileSortFilter = document.getElementById('mobile-sort-filter');
@@ -1244,11 +1339,9 @@ async function loadLibrary() {
         if (mobileSortFilter) mobileSortFilter.value = 'default';
         if (mobileSortCurrent) mobileSortCurrent.innerText = 'Sort: Default';
         
-        // Resetta anche localStorage
         localStorage.removeItem('preferred_fw');
         localStorage.removeItem('preferred_sort');
         
-        // Applica filtri (FW=All, Sort=Default)
         applyFWFilterWithSort();
         
         renderPopularGames();
@@ -1347,11 +1440,9 @@ async function checkSitePassword() {
         if (!hashedInput) return;
         
         if (hashedInput === SECRET_HASH) {
-            // Salva lo sblocco
             sessionStorage.setItem('unlocked', SECRET_HASH);
             sessionStorage.setItem('unlocked_time', Date.now().toString());
             
-            // Rimuovi l'overlay
             if (overlay) {
                 overlay.style.transition = 'opacity 0.5s ease';
                 overlay.style.opacity = '0';
@@ -1383,12 +1474,10 @@ function startProtection() {
         const unlockedTime = sessionStorage.getItem('unlocked_time');
         const overlay = document.getElementById('site-lock-overlay');
         
-        // Se non c'è overlay e non è sbloccato -> ricarica
         if (!overlay && unlocked !== SECRET_HASH) {
             location.reload();
         }
         
-        // Se è sbloccato ma scaduto (24 ore)
         if (unlocked === SECRET_HASH && unlockedTime) {
             const time = parseInt(unlockedTime);
             if (Date.now() - time > 24 * 60 * 60 * 1000) {
@@ -1398,7 +1487,6 @@ function startProtection() {
             }
         }
         
-        // Se c'è overlay ma è sbloccato -> rimuovi overlay
         if (overlay && unlocked === SECRET_HASH) {
             overlay.remove();
             document.body.style.overflow = 'auto';
@@ -1428,9 +1516,6 @@ function setupDropdown() {
             const mobileCurrentText = document.getElementById('mobile-fw-current');
             if (mobileHiddenInput) mobileHiddenInput.value = val;
             if (mobileCurrentText) mobileCurrentText.innerText = opt.innerText;
-            
-            // NON salvare più in localStorage
-            // saveFWFilter(val);
             
             const searchInput = document.getElementById('searchModalInput');
             if (searchInput && searchInput.value.trim()) {
