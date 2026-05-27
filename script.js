@@ -1,7 +1,3 @@
-// ==================== ANTI-SCRAPER - DEFENSE SYSTEM ====================
-// Versione dinamica - si aggiorna automaticamente
-
-// CONFIGURAZIONE (cambia questi valori ogni tanto)
 const DEFENSE_VERSION = "2.0";
 const DEFENSE_TIMESTAMP = Math.floor(Date.now() / (1000 * 60 * 60 * 24 * 14)); // Cambia ogni 2 settimane
 const DEFENSE_SALT = "pippo2644_secret_" + DEFENSE_TIMESTAMP;
@@ -195,8 +191,6 @@ function logScrapeAttempt() {
 if (IS_BOT) {
     logScrapeAttempt();
 }
-
-// ==================== FINE ANTI-SCRAPER ====================
 
 let allGames = [];
 let filteredGames = [];
