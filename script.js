@@ -1,91 +1,202 @@
-let IS_BOT = false;
-let mouseMoved = false;
-let touchEvents = false;
+// ==================== ANTI-SCRAPER - DEFENSE SYSTEM ====================
+// Versione dinamica - si aggiorna automaticamente
 
-// Rilevamento immediato
-(function() {
-    // Controllo webdriver
-    if (navigator.webdriver === true) IS_BOT = true;
-    
-    // Controllo User-Agent headless
-    const ua = navigator.userAgent.toLowerCase();
-    if (ua.includes("headless") || ua.includes("phantom") || ua.includes("puppeteer")) IS_BOT = true;
-    
-    // Controllo plugins (headless ha 0)
-    if (navigator.plugins && navigator.plugins.length === 0) IS_BOT = true;
-    
-    // Controllo languages
-    if (!navigator.languages || navigator.languages.length === 0) IS_BOT = true;
-    
-    // Cookie disabled?
-    if (!navigator.cookieEnabled) IS_BOT = true;
-})();
+// CONFIGURAZIONE (cambia questi valori ogni tanto)
+const DEFENSE_VERSION = "2.0";
+const DEFENSE_TIMESTAMP = Math.floor(Date.now() / (1000 * 60 * 60 * 24 * 14)); // Cambia ogni 2 settimane
+const DEFENSE_SALT = "pippo2644_secret_" + DEFENSE_TIMESTAMP;
 
-// Honeypot: elemento invisibile
-document.addEventListener('DOMContentLoaded', () => {
+// Varianti di difesa che ruotano
+const DEFENSE_VARIANTS = {
+    0: function() { // Variante A: basata su webdriver
+        let score = 0;
+        if (navigator.webdriver === true) score += 10;
+        if (navigator.userAgent.toLowerCase().includes("headless")) score += 10;
+        if (navigator.plugins && navigator.plugins.length === 0) score += 5;
+        if (!navigator.languages || navigator.languages.length === 0) score += 5;
+        return score > 15;
+    },
+    1: function() { // Variante B: basata su WebGL e hardware
+        let score = 0;
+        try {
+            const canvas = document.createElement('canvas');
+            const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+            if (gl) {
+                const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+                if (debugInfo) {
+                    const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+                    if (renderer && (renderer.toLowerCase().includes('swiftshader') || 
+                                     renderer.toLowerCase().includes('llvmpipe'))) {
+                        score += 10;
+                    }
+                }
+            }
+        } catch(e) { score += 5; }
+        if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 2) score += 5;
+        if (!window.chrome && !navigator.brave) score += 5;
+        return score > 10;
+    },
+    2: function() { // Variante C: basata su timing e comportamenti anomali
+        let score = 0;
+        if (window.outerWidth === 0 || window.outerHeight === 0) score += 10;
+        if (screen.width < 800 || screen.height < 600) score += 5;
+        if (!document.hidden) score += 3;
+        if (performance && performance.timing) {
+            const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+            if (loadTime < 200) score += 8;
+        }
+        return score > 12;
+    },
+    3: function() { // Variante D: combinata con honeypot
+        let score = 0;
+        if (sessionStorage.getItem('honeypot_clicked') === 'true') score += 20;
+        if (localStorage.getItem('bot_detected') === 'true') score += 15;
+        if (!navigator.cookieEnabled) score += 8;
+        if (window.__playwright__ === true) score += 10;
+        if (window.__webdriver_evaluate) score += 10;
+        return score > 15;
+    }
+};
+
+// Seleziona variante in base alla data (cambia automaticamente)
+const variantIndex = DEFENSE_TIMESTAMP % Object.keys(DEFENSE_VARIANTS).length;
+const IS_BOT = DEFENSE_VARIANTS[variantIndex]();
+
+// Honeypot invisibile (sempre attivo)
+(function setupHoneypot() {
     const honeypot = document.createElement('div');
-    honeypot.id = 'honeypot-link';
+    honeypot.id = 'honeypot-link-' + DEFENSE_TIMESTAMP;
     honeypot.style.cssText = 'position:absolute; left:-9999px; top:-9999px; width:1px; height:1px; opacity:0;';
-    honeypot.innerHTML = '<a href="#" id="fake-download-link">Download</a>';
+    honeypot.innerHTML = '<a href="#" id="fake-download-link-' + DEFENSE_TIMESTAMP + '">Download</a>';
     document.body.appendChild(honeypot);
     
-    const fakeLink = document.getElementById('fake-download-link');
+    const fakeLink = document.getElementById('fake-download-link-' + DEFENSE_TIMESTAMP);
     if (fakeLink) {
         fakeLink.addEventListener('click', (e) => {
             e.preventDefault();
-            IS_BOT = true;
+            sessionStorage.setItem('honeypot_clicked', 'true');
             sessionStorage.setItem('flagged_as_bot', 'true');
-            document.body.innerHTML = '<h1 style="color:red; text-align:center; margin-top:20%;">Access Denied</h1><p>Automated access detected.</p>';
-            throw new Error("Bot detected");
+            localStorage.setItem('bot_detected', 'true');
+            document.body.innerHTML = '<h1 style="color:red; text-align:center; margin-top:20%;">Access Denied</h1><p>Automated access detected. Your IP has been logged.</p>';
+            throw new Error("Bot detected via honeypot");
         });
     }
-});
+})();
 
 // Rilevamento interazione umana
+let mouseMoved = false;
+let touchEvents = false;
 document.addEventListener('mousemove', () => { mouseMoved = true; });
 document.addEventListener('touchstart', () => { touchEvents = true; });
 
-// Timeout challenge
+// Timeout challenge (se carica troppo in fretta)
 const startTime = Date.now();
 setTimeout(() => {
     const timeSpent = Date.now() - startTime;
-    if (timeSpent < 2000 && !mouseMoved && !touchEvents) {
-        IS_BOT = true;
+    if (timeSpent < 2000 && !mouseMoved && !touchEvents && !IS_BOT) {
         sessionStorage.setItem('flagged_as_bot', 'true');
     }
 }, 3000);
 
-// Blocca fetch se bot
+// Se bot rilevato, blocca i fetch
 if (IS_BOT || sessionStorage.getItem('flagged_as_bot') === 'true') {
     const originalFetch = window.fetch;
     window.fetch = function(...args) {
         if (args[0] && String(args[0]).includes('exFAT.json')) {
+            console.warn("[Anti-Scraper] Blocked exFAT.json request");
             return Promise.reject(new Error("Access denied"));
         }
         return originalFetch.apply(this, args);
     };
+    
+    // Blocca anche XMLHttpRequest
+    const originalOpen = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function(method, url, ...rest) {
+        if (url && String(url).includes('exFAT.json')) {
+            throw new Error("Access denied");
+        }
+        return originalOpen.call(this, method, url, ...rest);
+    };
 }
 
-// Generatore di giochi falsi per honeypot
+// Genera dati falsi per honeypot
 function generateFakeGames(count) {
+    const fakeTitles = [
+        "FAKE_SCANNER_TRAP", "HONEYPOT_DETECTED", "SCRAPER_BLOCKED", 
+        "ACCESS_DENIED_001", "BOT_TRAP_ACTIVE", "DUMMY_DATA_INJECTED",
+        "ANTI_SCRAPER_2026", "PIPPO_TRAP_" + DEFENSE_TIMESTAMP
+    ];
+    const fakeHosts = ['https://httpbin.org/status/404', 'https://example.com/fake', 'https://httpbin.org/delay/10'];
+    
     const fakeGames = [];
-    const fakeTitles = ["FAKE_SCANNER_DETECTED", "HONEYPOT_TRAP", "SCRAPER_BLOCKED", "ACCESS_DENIED", "BOT_DETECTED"];
     for (let i = 0; i < count; i++) {
         fakeGames.push({
-            title: `${fakeTitles[i % fakeTitles.length]}_${i}`,
-            image: "https://placehold.co/400x400/0a0a1a/red?text=BLOCKED",
+            title: `${fakeTitles[i % fakeTitles.length]}_${i}_${DEFENSE_TIMESTAMP}`,
+            image: "https://placehold.co/400x400/0a0a1a/red?text=SCRAPER+BLOCKED",
             size: "999 GB",
-            tags: ["FAKE", "HONEYPOT", "SCRAPER"],
-            akia_url: "#",
-            viki_url: "#",
-            buzz_url: "#",
-            data_url: "#",
-            credits_files: "Anti-Scraper System",
-            how_to_play: "You are a bot. Access denied."
+            tags: ["FAKE", "HONEYPOT", "BLOCKED", "DELETE_ME"],
+            akia_url: fakeHosts[i % fakeHosts.length],
+            viki_url: fakeHosts[(i+1) % fakeHosts.length],
+            buzz_url: fakeHosts[(i+2) % fakeHosts.length],
+            data_url: fakeHosts[(i+3) % fakeHosts.length],
+            credits_files: "Anti-Scraper System v" + DEFENSE_VERSION,
+            credits_backport: "Detection active",
+            how_to_play: "You are a bot. Access denied. Your activity has been logged.",
+            popular: i < 5 ? "on" : "off"
         });
     }
     return fakeGames;
 }
+
+// Offusca i link veri dinamicamente
+function obfuscateLinks(games) {
+    const obfuscationKey = DEFENSE_TIMESTAMP % 256;
+    return games.map(game => {
+        const obfuscated = {...game};
+        const linkFields = ['akia_url', 'viki_url', 'buzz_url', 'data_url', 
+                           'standard_akia', 'standard_viki', 'standard_buzz', 'standard_data',
+                           'backport_akia', 'backport_viki', 'backport_buzz', 'backport_data',
+                           'dump_akia', 'dump_viki', 'dump_buzz', 'dump_data',
+                           'dlc_akia', 'dlc_viki', 'dlc_buzz', 'dlc_data'];
+        
+        linkFields.forEach(field => {
+            if (obfuscated[field] && typeof obfuscated[field] === 'string') {
+                // Simple XOR obfuscation (reversible)
+                let encoded = '';
+                for (let i = 0; i < obfuscated[field].length; i++) {
+                    encoded += String.fromCharCode(obfuscated[field].charCodeAt(i) ^ obfuscationKey);
+                }
+                obfuscated['_enc_' + field] = encoded;
+                delete obfuscated[field];
+            }
+        });
+        return obfuscated;
+    });
+}
+
+function deobfuscateUrl(encoded, key) {
+    if (!encoded) return '';
+    let decoded = '';
+    for (let i = 0; i < encoded.length; i++) {
+        decoded += String.fromCharCode(encoded.charCodeAt(i) ^ key);
+    }
+    return decoded;
+}
+
+// Registra tentativi di scraping (per debugging)
+function logScrapeAttempt() {
+    const attempts = parseInt(localStorage.getItem('scrape_attempts') || '0');
+    localStorage.setItem('scrape_attempts', attempts + 1);
+    localStorage.setItem('last_scrape_attempt', Date.now());
+    localStorage.setItem('last_scrape_ua', navigator.userAgent);
+}
+
+// Se è bot, incrementa il contatore
+if (IS_BOT) {
+    logScrapeAttempt();
+}
+
+// ==================== FINE ANTI-SCRAPER ====================
 
 let allGames = [];
 let filteredGames = [];
@@ -532,8 +643,10 @@ async function init() {
         const grid = document.getElementById('game-grid');
         if (grid) {
             grid.innerHTML = `<div style="text-align:center; padding:60px; grid-column:1/-1;">
+                <div style="font-size:3rem; margin-bottom:20px;">🔒</div>
                 <h2 style="color:var(--cyan-neon);">Access Restricted</h2>
-                <p>Temporarily unavailable. Please try again later.</p>
+                <p style="color:rgba(255,255,255,0.6);">This content is temporarily unavailable. Please try again later.</p>
+                <p style="color:rgba(255,255,255,0.4); font-size:0.8rem; margin-top:20px;">Reference: ERR_${DEFENSE_TIMESTAMP}</p>
             </div>`;
         }
         
