@@ -1,5 +1,24 @@
 [
    {
+    "title": "Disgaea 7 Vows of The Virtueless",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Disgaea_7_Vows_of_The_Virtueless.jpg",
+    "tags": [
+      "PPSA13844",
+      "v01.050",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR1RSRVgyMFhuOWxrUmQwTUptRmZQVU1ZMzl6VmhiR081bEFqYTh2aUpTOGs4Vno2ekFvdHlxUjJqSmlQeWQxYTRnPT0iLCJzIjoiMTh0dEFkUUJvbGxNNUNlTml5NFJhUT09IiwiaSI6InREeVhYY1BzYU9QUEt4MWsifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaWxQc2E2SXR0bWowRmRuMGlGT3NsQnl0RnVaNE51MnpXcG4xb1BBU0tkTGl6N1oxdmRiRnkyYzVvRnJTckhoWGdxNVgxWi9JIiwicyI6ImRZbVUxbnVrTWlDcUttbkN2RGZFZkE9PSIsImkiOiJELzhKdWhDVG8yRDd1ZHNVIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOXpNYXd5MThvbXpFb2ZDeHg0d2h4S29YSm5GZitaVnJaRWFzcTFkajkvZm52TmV4OVIzSzNRN0d6WUtER0JSQjZnPT0iLCJzIjoiSHdUaDJrN0tyL01NT3hnUmhQcmRidz09IiwiaSI6InhjZnFaT0Irclg5RFIvakcifQ==",
+    "credits_files": "DUPLEX & VanBuuren",
+    "credits_backport": "kerrdec97",
+    "credits_dlc": "DUPLEX & VanBuuren",
+    "size": "33GB"
+  },
+   {
     "title": "Remnant 2",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Remnant_2.avif",
     "tags": [
