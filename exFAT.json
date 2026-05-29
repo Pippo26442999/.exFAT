@@ -1,11 +1,29 @@
 [
    {
+    "title": "DRAGON BALL: Sparking! ZERO",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/DRAGON_BALL_Sparking_ZERO.avif",
+    "tags": [
+      "PPSA15211",
+      "v02.017",
+      "USA to EUR Languages",
+      "DLCs Merged", 
+      "9.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN2R3ais4QlJnTGpQQXpDYTBTQlREQWJyUFlKRXJKWlh1MzVkUVRvWnEybHlpeGxIVW44ZStFRkQ3UjROd1FVdktBPT0iLCJzIjoibzRTcmV5MDc0K2swRW9PWmZZMnpaQT09IiwiaSI6ImJXcm1hMENCdlFlNlZpbFAifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "drakmor",
+    "popular": "on",
+    "size": "63GB"
+  },
+   {
     "title": "Dragon Ball Z: Kakarot",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dragon_Ball_Z_Kakarot.avif",
     "tags": [
       "PPSA08084",
       "v01.040",
-      "USA",
+      "USA to EUR Languages",
       "DLCs Merged",
       "5.xx and beyond"
     ],
@@ -1301,29 +1319,6 @@
     "credits_backport": "BestPig",
     "popular": "on",
     "size": "127GB"
-  },
-  {
-    "title": "DRAGON BALL: Sparking! ZERO",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/DRAGON_BALL_Sparking_ZERO.avif",
-    "tags": [
-      "PPSA15210",
-      "v02.000.013",
-      "EUR",
-      "Standard (9.xx) + 4.xx BackPork"
-    ],
-    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibDhVV21LWUxiYVB0SEtWOFFzRXcyMkRhREEvNHJ0cnRQVzNPTjUvWEk2OG1CTHNVYlpqZS8yVm1IM2FLcjVCM1pSWmdtb3RZIiwicyI6IlVsRHpXN2RuLzgvdWJSY0hrZFNpbkE9PSIsImkiOiI4Z0pCNjl6SWxkTnF3cVo0In0=",
-    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR1cwMkdLNytBOXpPSEhZR1FhdjFTNnpyUFMwYTVORkdHdHgyZjFkdGZNVmp2VS85cUFxdzVJNlJodkRiVmlYVzN4em4iLCJzIjoibk85aFJxZmttOE5RQUF6QUxSb2hQUT09IiwiaSI6InpHemRwRlV5NlBUckVQOE0ifQ==",
-    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS3FGZFBEYWxYZkYxSGpOVlVVNmtjTUcxVlBPWXFaZW9nQXpKam03eS9QeVZRcDV1WUlTM0E5RENJc2IxT1BzYzRBPT0iLCJzIjoiUW9XYnVtOXJkTHZxbjNDN2pDNm0rZz09IiwiaSI6ImgyQnh5ZW0wbmtTR1VFK3AifQ==",
-    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVXpXaThtWXpaU0xoUktSdXVMWDkrUEFMdk93MkRQNnNUMUw3b1VFK1dzZFplaFRrbmVjNTJDMThjN3hwclhNRjZYNkJ6VTVuIiwicyI6ImdqekJnbGE1bDBiTEwwT3FQQXVja2c9PSIsImkiOiJuS1pwbnpQbXZTY2VucTZ2In0=",
-    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQmNxN1NLOGlDUFNxWlk1bDFNU1QzVHB1K21ZeUs5Q0JGRmNneERDczVHTjRYSmVHMVBPakhNdm9OYnU0NkxHcHFjMW0iLCJzIjoiWHhGZmRJY3VMaWVBSEFYajgwNUU0UT09IiwiaSI6IlVnRURZVzUwbmlWVkxQa2wifQ==",
-    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYW15RExOclBqOVJXY1JZSFU1M0Y2cGVRS2d4aklRa1VtLzhBU0cwZWxab2lYeG1uejVnZDVSdFdoVU9jK3JORnpBPT0iLCJzIjoiMWdFSHZYTmg5YUtPZ3BDTjV0akNpZz09IiwiaSI6ImN5clNUYkxpRDRoWFhoTXEifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNWVwM3l2Y0ZVSk5TTWhLWnFJMmlCSmp4UmhVMEQ4YzZGdWF4ckFtQitla2RZRXJUS3lqT1JTTEJaZkRBQmE0WUkxUTAvRlZkIiwicyI6IkRLTEVFY2V2SUJpU1NqNVY5bkZrVXc9PSIsImkiOiJYZlJKZmE4Vi9Vclpob2E3In0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOW9qclJ1QVc4QW1nNFQvRlpJQmFQVVBOTzZCbzRIRkphMUhDMXNlbFNpSGJuWnJVNVVpdkVDQVBnV3k5TVVLcENBPT0iLCJzIjoiNkl0NXQ2ZXQyRmlqUE83aFJOcC9ldz09IiwiaSI6Im4zcUQzWkkvcFlIQmZaZUQifQ==",
-    "credits_files": "SiESPta",
-    "credits_backport": "BestPig",
-    "credits_dlc": "Pkykzhack",
-    "popular": "on",
-    "size": "63GB"
   },
   {
     "title": "Red Dead Redemption",
