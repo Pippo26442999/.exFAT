@@ -1,5 +1,24 @@
 [
    {
+    "title": "The Quarry",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Quarry.webp",
+    "tags": [
+      "PPSA06225",
+      "v01.000",
+      "EUR", 
+      "DLCs Merged",
+      "4.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUW5CMG5kWHdURHBMNSt3VnBpUzRDb3ZSVUw3Um1GdjY1WHpqQXhPTlRGSDJHWnlQVTdqVUtrM2tuemtTQXlBMlpBPT0iLCJzIjoiSFhLNHV4cFRxY0dWaktXVlh4ZmVsdz09IiwiaSI6InpDKzRBYjExc2VaYkxzeUgifQ==",
+    "credits_files": "DUPLEX & José Carrión",
+    "credits_dlc": "drakmor",
+    "how_to_play": "Only Horror History Visual Filter Pack is available, you can select the filter on Settings then Display. (v01.007 needed for others DLCs)",
+    "popular": "on",
+    "size": "80GB"
+  },
+   {
     "title": "Destruction AllStars",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Destruction_AllStars.webp",
     "tags": [
