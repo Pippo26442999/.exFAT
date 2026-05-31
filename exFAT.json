@@ -1,5 +1,21 @@
 [
    {
+    "title": "Star Ocean The Divine Force",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Star_Ocean_The_Divine_Force.avif",
+    "tags": [
+      "PPSA06262",
+      "v01.000",
+      "ASIA", 
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUG90cjcwQUFaaXI5aUdZMHRTbG5PQnUwVk00Qm5YTGh4eCt3MTVQODFxL3JzUHRuMlJRbzNGS3crM3dxYTR1MXZ3PT0iLCJzIjoiQnQ5aGtxaFJHd1Y5TStVR2dRODJ1Zz09IiwiaSI6Ims5MWVpNlZLcnc1QTRaZDEifQ==",
+    "credits_files": "SiESPta",
+    "credits_backport": "kerrdec97",
+    "size": "81GB"
+  },
+   {
     "title": "41 Hours",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/41_Hours.avif",
     "tags": [
