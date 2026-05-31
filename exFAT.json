@@ -1,5 +1,21 @@
 [
    {
+    "title": "Scorn",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Scorn.avif",
+    "tags": [
+      "PPSA07850",
+      "v01.000",
+      "EUR", 
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYzZpb3c4cEUyUWhmMlpMRFNYSE9JVytZMFpHN0JBUk8vUFdyNFV6cmZYTGc4UndHK01jK0VMVzVkai9PbmtkdjFWY2ZrRVlKIiwicyI6IldSSzY5OU1mNUVYQWlPRDdGV1VQK1E9PSIsImkiOiJqMmVMT0I2TXplcU50YjlKIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidjhPT2NmcDJLMUN4U3M3S0ZCK0hDTFNMTkF5SCtYZVB5emhPb25mWUNWYmlKOGlGWXNoc0cvbCtDQWhBa3BnL3dyL0ciLCJzIjoiTFJpMkVFL0VrM1BqcW1US2FRMnh3dz09IiwiaSI6IlFhcmhsN0V3WUV5NThvQWEifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTWhUazR3dWNGL1JEU0IrbXVwdG1PU0pkOUNySE8zZUE3N0dwYXJTQ1ZDYkNlUEJid2pyRmtZanZ6WStFWE1qU0pRPT0iLCJzIjoiRWtiN1VPemJ6YzYrams1NlI0OWc4UT09IiwiaSI6Ik52MytMWWZlMVJZSE8vVkgifQ==",
+    "credits_files": "DUPLEX & José Carrión",
+    "credits_backport": "kerrdec97",
+    "size": "27GB"
+  },
+   {
     "title": "Sword Art Online Last Recollection",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sword_Art_Online_Last_Recollection.avif",
     "tags": [
