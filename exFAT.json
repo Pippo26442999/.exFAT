@@ -1,5 +1,21 @@
 [
    {
+    "title": "41 Hours",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/41_Hours.avif",
+    "tags": [
+      "PPSA04583",
+      "v01.000",
+      "USA", 
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQU5jcEhsRnlnV245dVRDVDU1TE5QazBiaFU5Zzd3NUhkODhlL2ZHdEQvcUZRZnUvNWNvK1hLU21VMG5tSDc1cThRPT0iLCJzIjoieFduanV3Rk5kU0gzV3FXbCtPcmZ1UT09IiwiaSI6IjRnSTY4UXdpQy9zdjVrTDkifQ==",
+    "credits_files": "Lucran & SiESPta",
+    "credits_backport": "kerrdec97",
+    "size": "21GB"
+  },
+   {
     "title": "Shadows of The Damned Hella Remastered",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Shadows_of_The_Damned_Hella_Remastered.avif",
     "tags": [
@@ -39,24 +55,6 @@
     "credits_backport": "kerrdec97",
     "popular": "on",
     "size": "79GB"
-  },
-   {
-    "title": "Chernobylite",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Chernobylite.jpg",
-    "tags": [
-      "PPSA04747",
-      "v01.000",
-      "USA", 
-      "DLCs Merged",
-      "4.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVnNZZkFhV01XYkJ1TjBwcitnNEtZRVJNYXFIdG9VOS8yZkNEakwyZzBnMUxiZFlENTJvV2JDNEZqSUNWN20zQVBUbStuaXdvIiwicyI6ImRzTG1xb0p1Vis3WWFmb2pnazhJQ0E9PSIsImkiOiJBb3llcUNnR1pIMWQyU0hIIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSW9DbkI0b3ZyTXRtZ0VmanpFVmxkcVVPeWIyZkRDZTRUMklxL2Y0bzBESmdxeitMcmdBZXIwVmU0ZlF6eitlbFR3RXUiLCJzIjoiY0VCN1lNaUxHMUlIQ3k2MjJvSVowdz09IiwiaSI6IkxKOTZHbzRDby8wQ0lQcmUifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMGlCRUZEdXZEcS9lbGxhUGZHZ2NtL2liUCtMQkM2T2FsVFZBQ1oyZ0tjTUFoWTN1cWg3ZGlwdHQ1NjBvSkVUSmVBPT0iLCJzIjoiQllZUDJwR1VPSnJkdEJPOXVEYWZYQT09IiwiaSI6ImFBVlcyb3BCamlORWhQNFAifQ==",
-    "credits_files": "BedroZen",
-    "credits_dlc": "drakmor & Psykzhack",
-    "popular": "on",
-    "size": "45GB"
   },
    {
     "title": "LEGO Star Wars The Skywalker Saga",
