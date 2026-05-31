@@ -1,5 +1,24 @@
 [
    {
+    "title": "The Lord of The Rings Gollum",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Lord_of_The_Rings_Gollum.jpg",
+    "tags": [
+      "PPSA06367",
+      "v01.000",
+      "USA", 
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQlB0dXlRQWNFOXpaZWFFNmtNS2lMekZocVBQUlY2T1FML0RmQnAvYXFNQldHbGtyZjRDNThyTnJNd0h4Vm9FVk5nPT0iLCJzIjoiZXl4VDc2bUd4TXJlc3djWkl3bCtmQT09IiwiaSI6Im9MOTh0S1U5NFluQXp3TE0ifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibW5OK1NGYnFkcXFnNHg3b3I2d2svUnh5bHFZZFcyeFZUZHpabWJNd1JuZEVnUVFpdmt3Yzl5aGdwM2hmdzBmdENGM2t0bVhvIiwicyI6IkZLZUFBWDNVRkJJR01QVUVJRUhEaGc9PSIsImkiOiJYNCs1eVYrQjVadVI4L0J0In0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTE5UcWhoVU82MnNOUlZ6VzVoY0dLaUxJQkY0WG5PbU1TOHpOUVg5aU8zcTRWWS9oYkQ5N0RSUi9EWDYyQ1IrNE1BPT0iLCJzIjoib2RqVDMydEtWTStYWVJPeXJmNHpkdz09IiwiaSI6IkJhWVNUWDJSakNnVHlpYXcifQ==",
+    "credits_files": "Lucran & José Carrión",
+    "credits_backport": "kerrdec97",
+    "credits_dlc": "Pkykzhack",
+    "size": "37GB"
+  },
+   {
     "title": "Star Ocean The Divine Force",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Star_Ocean_The_Divine_Force.avif",
     "tags": [
