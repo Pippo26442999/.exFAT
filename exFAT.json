@@ -1,5 +1,24 @@
 [
    {
+    "title": "Sword Art Online Last Recollection",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sword_Art_Online_Last_Recollection.avif",
+    "tags": [
+      "PPSA06958",
+      "v01.021",
+      "EUR", 
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL2pJd2lkR05UWHU3Tm1IVzRROUNmdkhjR3NyTXh3cjU0NWFzYmhvd0VVcXhFNk96UkhRMjI1NkxWTEt2ZW53NGtBelR5NWZPIiwicyI6ImdPNklKcC9FNFRNbEhIRFdXV0FGcmc9PSIsImkiOiI5ZkEveE5WUGx2TnpsenpSIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicnQ2NndHMWlEYVhNK25QOVRJckovd1p4SFVEMW4rTnptZSt1c093RmdyQk0vK0IzM1Q0RGxJZmJnU2xnZFFsd09Nc2siLCJzIjoiT1E2a1hyYW5LYmttNFRTQzNlRjFEUT09IiwiaSI6ImZ1TDltd24wRmI3UExSVXkifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia3hjWGlGQjkxYmlWUUNSQ3VFSytSeStuMzVEM0kwMUU2N3NHR0RtQ2xCSWxUTU0xeC9nVWp3T1diUDhOdy9Vd293PT0iLCJzIjoidHl1K0EvY1djWERLRnc2MG9XdmVGdz09IiwiaSI6IkgwSzZiQzlCVDdyWStleDIifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV0Z6Qjc1M3lrcGo3UkE4TVYrajZtbXFua1pSUVBiNVBIVFV1eXVQK0RiTWh4R2Z2MVJOZC9YdDRFT1F0TG1oMU9yN2s4VWFmIiwicyI6Im9yRmxFK1RianZaTFNmdVo0TXFUeXc9PSIsImkiOiJPTkZDci9ralVxdjQ3b1psIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibXhUbUoyZFlJMWpxRUZCU3YzSGxiUzVyNXlISlNkYWFHbm9QMFo0d21VNFBoQnZQYk5LclZBdFdiMzVINzFUdE1RPT0iLCJzIjoiRStlcWxNWTFsOU8yTmdkQkkveVFSQT09IiwiaSI6IjlYYTBod2RoblVmVTdNSU4ifQ==",
+    "credits_files": "DUPLEX & José Carrión",
+    "credits_backport": "kerrdec97",
+    "credits_dlc": "Pkykzhack",
+    "size": "31GB"
+  },
+   {
     "title": "The Lord of The Rings Gollum",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Lord_of_The_Rings_Gollum.jpg",
     "tags": [
