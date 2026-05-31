@@ -1,5 +1,24 @@
 [
    {
+    "title": "Shadows of The Damned Hella Remastered",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Shadows_of_The_Damned_Hella_Remastered.avif",
+    "tags": [
+      "PPSA17858",
+      "v01.001",
+      "USA",
+      "Standard (9.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTVVEdlAwSzM5eWM5UE9FSUVhRE51Qjd3M0I4NDR4WC9Yb0FsblhlcDNYeXJuWitsaFBzanhzam43NGhBT3ZiNDdqQnZ0QUlRIiwicyI6Ilg5Zkk4MjZKQ2RQK0hHRFl2dDdvcGc9PSIsImkiOiJQWnZZMHcwVlVDUkV4ODI5In0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRXhOM3FxakNWY1RlSU5RWVpkcndGZHhDM2k5akIrbmtJYllGcHdQQitmVjZyenlVTk41YmN2N0xONmFlK1IyQk9RRkIiLCJzIjoibklFSkNVcGRHeXBBdGdub0YxT0Q2UT09IiwiaSI6Ii9CQ05MWm1xdU5VY3piR0wifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS2RyajV5Uy9LU0dPckhLcFBmUzNNd1pPZE4rY1RLMnVscllVMkVFRnZMZ1lzaWlvMEgyUWlEV3NETVNGYnQ1a3lRPT0iLCJzIjoiYnZkZ09pZWovb0Ywa3F4QS9jV2tPZz09IiwiaSI6ImVSV2pQRGpvczg3M0pLclQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoic2M4YzUrVmo2VzZUbXN2UVE2NHcwV1FKeUt4TWNqNzcvZk83OVNwRGlnbmJ0L2xHbHJmM2JuWnhHaHUxbU5raStBeXV1dEtZIiwicyI6IlZka243WllNRGVRbmtMV082UEMwM3c9PSIsImkiOiJXVkg5TFZ2M3ZnbkphSUZqIn0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMjl5TVJvNGg2a3V1T1QvU01CV2tnUlhzTFNHOElhU2F5OGhXWjdEdGVsNkRMT0ppTGNiZzNJeGkvUkpMMjJMbU5hdGMiLCJzIjoiZXBiZ1Nxckt1ZGpVNVlUK0RUL1pTdz09IiwiaSI6Iml3TzZPKzRFRlFZYVd1WHMifQ==",
+    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT285MHZSOEsybkk4aFBrWHpETmo1S2RnckpsWmRqaWhjNWtjQ05NK2s2ditJOG9yUSsrT0RuZlUxVjdmZGtDNWJnPT0iLCJzIjoidHNKMXNES3dqNkIvTlJxVDBGMlU3UT09IiwiaSI6IklrejlKc1RISzFLRFBZcTUifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "kerrdec97",
+    "size": "4GB"
+  },
+   {
     "title": "Dragon Ball Z: Kakarot",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dragon_Ball_Z_Kakarot.avif",
     "tags": [
@@ -271,21 +290,6 @@
     "credits_backport": "kerrdec97",
     "popular": "on",
     "size": "177GB"
-  },
-   {
-    "title": "Shadows of The Damned Hella Remastered",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Shadows_of_The_Damned_Hella_Remastered.avif",
-    "tags": [
-      "PPSA17858",
-      "v01.001",
-      "USA",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTVVEdlAwSzM5eWM5UE9FSUVhRE51Qjd3M0I4NDR4WC9Yb0FsblhlcDNYeXJuWitsaFBzanhzam43NGhBT3ZiNDdqQnZ0QUlRIiwicyI6Ilg5Zkk4MjZKQ2RQK0hHRFl2dDdvcGc9PSIsImkiOiJQWnZZMHcwVlVDUkV4ODI5In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRXhOM3FxakNWY1RlSU5RWVpkcndGZHhDM2k5akIrbmtJYllGcHdQQitmVjZyenlVTk41YmN2N0xONmFlK1IyQk9RRkIiLCJzIjoibklFSkNVcGRHeXBBdGdub0YxT0Q2UT09IiwiaSI6Ii9CQ05MWm1xdU5VY3piR0wifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS2RyajV5Uy9LU0dPckhLcFBmUzNNd1pPZE4rY1RLMnVscllVMkVFRnZMZ1lzaWlvMEgyUWlEV3NETVNGYnQ1a3lRPT0iLCJzIjoiYnZkZ09pZWovb0Ywa3F4QS9jV2tPZz09IiwiaSI6ImVSV2pQRGpvczg3M0pLclQifQ==",
-    "credits_files": "SiESPTA",
-    "size": "4GB"
   },
    {
     "title": "KARMA The Dark World",
