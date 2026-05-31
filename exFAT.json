@@ -1,5 +1,27 @@
 [
    {
+    "title": "Dragon Ball Z: Kakarot",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dragon_Ball_Z_Kakarot.avif",
+    "tags": [
+      "PPSA08084",
+      "v01.040",
+      "USA to EUR Languages",
+      "DLCs Merged",
+      "Standard (5.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRFJyOXg4cEhMSDRuMzhwLytMbXBGZTFnWFV5MnBRMWVsWGt4Umpyb254SFNtN0h0K09nS1ZhUTRIVHpLTTdaWElrU1hna3pRIiwicyI6IjZ3OFJodjdpa0NRcTJGUW5IRG4xVEE9PSIsImkiOiJuM0txT0xjNU9xTTNnUTh6In0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidzU2RkptU1BkQzIva2J4QzA1Uk1JM3JiTFgrQlIwenZyRGxMZ2ZLUmtGU0NHNWpOb1pKOHJ3SU9OWlY1YnlsV282c3YiLCJzIjoic1J2MFd1SlE1cTB2d2tFU09wOER4UT09IiwiaSI6IkNMTFBrY3lXZ3JMdHIzZGQifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY2tQNmJ0UUI2dzhKYm94bUVvKzRGZThCUkhGaDVsMnF3SjQ0MktVUXRGZkdvZFcxVGU3N2dOVjU5Q01OK3pmcXNnPT0iLCJzIjoiSEVySm85WUFkckViWjZNYUIxNmZYQT09IiwiaSI6IlRPZ1JhV3lzaU5hV0lXdmMifQ==",
+    "backport_akia": "",
+    "backport_viki": "",
+    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN01YVkhENVZ3Zy8vYythT0pBamt5SVpxWitUbnhaQnRZdkFjRkF4SXBJWE94dUlGd1U2Q2hsQU1OQUcyWllUc1dnPT0iLCJzIjoiRGgvZlBzblhXRTIxTTFoTkJ0K3hrQT09IiwiaSI6IkJGclUvSmdHU2M4RXRRbEgifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "drakmor",
+    "credits_backport": "kerrdec97",
+    "popular": "on",
+    "size": "79GB"
+  },
+   {
     "title": "Chernobylite",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Chernobylite.jpg",
     "tags": [
@@ -122,24 +144,6 @@
     "credits_dlc": "drakmor",
     "popular": "on",
     "size": "63GB"
-  },
-   {
-    "title": "Dragon Ball Z: Kakarot",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dragon_Ball_Z_Kakarot.avif",
-    "tags": [
-      "PPSA08084",
-      "v01.040",
-      "USA to EUR Languages",
-      "DLCs Merged",
-      "5.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRFJyOXg4cEhMSDRuMzhwLytMbXBGZTFnWFV5MnBRMWVsWGt4Umpyb254SFNtN0h0K09nS1ZhUTRIVHpLTTdaWElrU1hna3pRIiwicyI6IjZ3OFJodjdpa0NRcTJGUW5IRG4xVEE9PSIsImkiOiJuM0txT0xjNU9xTTNnUTh6In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidzU2RkptU1BkQzIva2J4QzA1Uk1JM3JiTFgrQlIwenZyRGxMZ2ZLUmtGU0NHNWpOb1pKOHJ3SU9OWlY1YnlsV282c3YiLCJzIjoic1J2MFd1SlE1cTB2d2tFU09wOER4UT09IiwiaSI6IkNMTFBrY3lXZ3JMdHIzZGQifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY2tQNmJ0UUI2dzhKYm94bUVvKzRGZThCUkhGaDVsMnF3SjQ0MktVUXRGZkdvZFcxVGU3N2dOVjU5Q01OK3pmcXNnPT0iLCJzIjoiSEVySm85WUFkckViWjZNYUIxNmZYQT09IiwiaSI6IlRPZ1JhV3lzaU5hV0lXdmMifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "drakmor",
-    "popular": "on",
-    "size": "79GB"
   },
    {
     "title": "Goat Simulator 3",
@@ -359,7 +363,7 @@
     "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK0wyWFRYVGRUeFBRMW1IcXhCNjJkUEVBcFBlaFZraTdzZ0NXWTUxZzFOVnF5TDVLWTg1S2RsS2paSzVjRzJsRkVQMzUiLCJzIjoiUnhSWFN0ek5RNER6YmhXSFVFZlVoZz09IiwiaSI6Ii9CcXl0bkpBU04xd3NIQmcifQ==",
     "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSkdueTdCanc1NVBlWmxXZnZQVkpyelRmUkVpYlZpNzZKdEsrNmp5NEEvVlVLOTdsVzk0SEhpZEdsQmZGMWE5SE1BPT0iLCJzIjoidVY1NnJBOFMza05hZXlvZVVFMzQ1UT09IiwiaSI6ImNIeElFODdtS0pPZEsxTG4ifQ==",
     "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTWJWdDJSR2JtamQ2eDV2dFVKOFM2cnd3RmJlSzdxMXpIdnRRVjB4VStTOXlpNWhKNENDdzU0c3pyRnMxY1RxbU9UV1BpL256IiwicyI6IjNWL0JMaEUwRXYvTC8xU3RpZ3NOV3c9PSIsImkiOiJacnFobzZBbW5vTkdmdkhqIn0=",
-    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidEJCQ2NyRk95ZFQ3Sm5QN0dLbmtyMW1KK09Sa0FxNUIwenE2WUREbHd6TW1iQjI3Q1ZXYk53bXpaUzFCVmM1TDJBUTUiLCJzIjoiQnlpOHBrblV3OGFFSFIrUXhrM1AyQT09IiwiaSI6ImhxcERnU3cyZGIzWjlpVlgifQ==",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWm15Q0QzMm9sU0FEWjdlUHhJYm10TGJhdGRzcWpuazlxMU85bG45STNEUVhMZURnUU5CMmR3VDJ6b1hLS3d0OVVZc2ciLCJzIjoiaHdMcHpDdkw4NFlVUVI3WWtvTWJZZz09IiwiaSI6ImZCcmYxOExqbUl5cWxUdXMifQ==",
     "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQmZQUVAzdXdFZzVnTjU3TkpJOGVuTlJKSWgxN1BDbEtZNHFlYVRXanc1Y0lPbUM5dDdobmZ4UmNCWHZTVU91dTRBPT0iLCJzIjoiN2hSa1dLQkEyTU4rT0J0SldWaFZFQT09IiwiaSI6IkVRLzlFSTRicmZqMUJXR0IifQ==",
     "credits_files": "SiESPTA",
     "credits_backport": "BestPig",
