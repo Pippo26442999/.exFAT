@@ -1,9 +1,25 @@
 [
    {
+    "title": "MotoGP 24",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/MotoGP_24.avif",
+    "tags": [
+      "PPSA19566",
+      "v01.011",
+      "EUR",         
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS1NmMzVVWmV1cWxXcUczdE5JWWwxbUtVM0U3UnMvdkVJRklLME5ZUWVkU2dMZWt6T0NIRjBDZ2xuSDhkVGpOaVFnPT0iLCJzIjoidFVaTzZGSWpRTVJzNjN5Smw1ZnZndz09IiwiaSI6InRDbE5iZUdScGNpc2VLZ2EifQ==",
+    "credits_files": "DUPLEX & José Carrión",
+    "credits_backport": "kerrdec97",
+    "size": "39GB"
+  },
+   {
     "title": "Redemption Reapers",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Redemption_Reapers.png",
     "tags": [
-      "PPSA09804",
+      "PPSA16029",
       "v01.420",
       "JPN", 
       "4.xx BackPort"
