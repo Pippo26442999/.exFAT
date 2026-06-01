@@ -1,5 +1,21 @@
 [
    {
+    "title": "Afterimage",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Afterimage.avif",
+    "tags": [
+      "PPSA14053",
+      "v01.000",
+      "EUR",         
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMTVHcjhjS1Y4NkQ1ZVJRTDVLZ2I4ZEtITXpvUEJzSDUyYlZBcUJmMUEyci9vOU04M0N4NXVNYWpDQ1dqT3JSWFNYU1llSW1MIiwicyI6ImFtM0NpSFFJL2dJdGFJWTl1aXZQM1E9PSIsImkiOiJpajF5dmxyVFZBcHF5K1NaIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaC8ram9pMGFibUZGeEZFWm56N1FJblZYT1AvUTlESU1FYk41SE1RWndXa3RINE1wZmo5ZWVWYk1RU0JHUlJIV1BmQnEiLCJzIjoiK3lOZ0VFWmFCSzVFdFY4UXpUM3pqZz09IiwiaSI6IkFaSU5RZStocmd5LytRY0UifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVk9GTW5BeWpia01mcm1CSzhzMmlPbFFjOVNpWFJoQXpncjQ1SHlWTmtpVnNsdkJWWVZoYm8va2FFYk5hUHdMUUNBPT0iLCJzIjoibi9BTU5ERTdzeHlQTWhJNmo1VTlSUT09IiwiaSI6IlhzOFNQdlBCbjlyS3BCZ2MifQ==",
+    "credits_files": "DUPLEX & José Carrión",
+    "credits_backport": "kerrdec97",
+    "size": "6GB"
+  },
+   {
     "title": "Weird West Definitive Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Weird_West_Definitive_Edition.avif",
     "tags": [
