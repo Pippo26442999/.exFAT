@@ -1,5 +1,21 @@
 [
    {
+    "title": "Redemption Reapers",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Redemption_Reapers.webp",
+    "tags": [
+      "PPSA09804",
+      "v01.420",
+      "JPN", 
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNFc1NUN4Ym5XbFB2K1JGZDBZNGpVeFZiNzBlR05BTk9OTGw2MkNYci94TzNwL28zSGlwTGl2WEdDMmdNV1pvb3VHVjRJamxmIiwicyI6ImZBVnZVcldaWDB5RlhvNzF2MEE1aFE9PSIsImkiOiJmR0QrVEZYY01nLzhYZ1VMIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib3pPd0VEWTNCT3NjNTNYTUJMRXBRc3oyWXVPWnVDeWxZWFdITlZCc2JJUTlkN3g5N3Zya3QxVUFXS2ZOUFNEdnpacDEiLCJzIjoieGJnQkVVUWhaNTNQYmc3VVI5aWNIQT09IiwiaSI6ImZ0eWF6RUZKcVZDU1NEV0EifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicTh6bVExdHZtcVlsT2FoQnVPOU9rS1g3bVpWV2I4YVZVMEVzaGcvSUpwSU1ZUm1KaDJNVXRWelU0bDNpc2hsRHRnPT0iLCJzIjoiZGlaeWtpdEw5bndtM004Y05OZm5CQT09IiwiaSI6IjViSldmaDN2SFR4Q2dJN3oifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "kerrdec97",
+    "size": "13GB"
+  },
+   {
     "title": "GRIS",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/GRIS.webp",
     "tags": [
