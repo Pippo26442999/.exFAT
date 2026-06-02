@@ -1,5 +1,21 @@
 [
    {
+    "title": "Aliens Dark Descent",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Aliens_Dark_Descent.avif",
+    "tags": [
+      "PPSA08312",
+      "v01.000",
+      "EUR",  
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoid2R1bWNzR0JHMC9RQXFsYjNQelEzRXM5YmxqcWc1QlNKY291aFllRS9ObFlIWGdsNVZKZ3VPSVQyRFFhcCtkd05jS2wiLCJzIjoieHkxeW9SYWdOeVhRRFpSejZvVU1pZz09IiwiaSI6IjJBUG9QWFNGdDZLbDY0eUkifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVUZBNWpBNk16WWhnZnpraWladWd3MkxQWXI5SnFQcmJtYmdkQkpOTDFhMmROUjNCZFUvRGU1RExaU3lISlRVVXVRPT0iLCJzIjoiUjBESHlscGJnR0VxQWVPWkV5VisvZz09IiwiaSI6IlJBT2toemdqeGh3cWRMQS8ifQ==",
+    "credits_files": "DUPLEX & José Carrión",
+    "credits_backport": "kerrdec97",
+    "size": "53GB"
+  },
+   {
     "title": "Neva",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Neva.avif",
     "tags": [
