@@ -1,5 +1,21 @@
 [
    {
+    "title": "Five Nights at Freddy's Help Wanted 2",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Five_Nights_at_Freddys_Help_Wanted_2.avif",
+    "tags": [
+      "PPSA18887",
+      "v01.004",
+      "EUR",  
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieFpDN3JMZk9XMENFa2NKLzVveDhjbXNuZ3hpc1NyWXFpa2dwVEU5S0MyWGNOc3NCVThZQzlPem83ek1KTDNndmRnPT0iLCJzIjoiVm5kRFJFM2EvUnpzaHdXdC9rd2piZz09IiwiaSI6Ik5Ud1kyZkMzR2NhcUtSZWUifQ==",
+    "credits_files": "DUPLEX & José Carrión",
+    "credits_backport": "kerrdec97",
+    "size": "27GB"
+  },
+   {
     "title": "Blasphemous 2",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Blasphemous_2.avif",
     "tags": [
@@ -13,9 +29,9 @@
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYmN0aGlBdG9QVzhQTDlFeGNyckYxb00rNURZOTN0ZGZKS1hwdVV0OXJ6aFBTMFZJOG9TUXdKWE12L044V1p0YjJRPT0iLCJzIjoiVitTWERkUHlzWUxEa0lnenc2S3pTUT09IiwiaSI6InArckZBbVFGM29xMVBKRTUifQ==",
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicnI3K0FtdDQ5R0NzdVlXL1phK2FpcWV6ODVjcHVQbjU0TSthcUVlUE5aOEUrSUpucHpOaG5BQVFVaVlxV1I4L2RaNERINURTIiwicyI6InhXTWRvMkluSFRySytmbVZhVmV0ckE9PSIsImkiOiJ0c1lHYnplNGh4eTJweEpBIn0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY0dQUDE2RHZmUXk2aERNajlXVEp4Z0ViaWJIcHA3NWJnbGJXZEx5bUZjRHFFZU50ak9Gb2dJSDdhcE5hR3hqc1BRPT0iLCJzIjoib01YRTdvd3lqQkZ4aHErZFdQTGQzZz09IiwiaSI6ImpjK1B6eGRuR3l5MTI1OGcifQ==",
-    "credits_files": "DUPLEX & José Carrión",
+    "credits_files": "DUPLEX & SiESPta",
     "credits_backport": "kerrdec97",
-    "credits_dlc": "DUPLEX & José Carrión",
+    "credits_dlc": "DUPLEX & SiESPta",
     "size": "3GB"
   },
    {
