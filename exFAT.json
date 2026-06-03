@@ -1,5 +1,23 @@
 [
    {
+    "title": "The Riftbreaker",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Riftbreaker.webp",
+    "tags": [
+      "PPSA03753",
+      "v01.020",
+      "USA",  
+      "DLCs Merged", 
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVk5vT2NnZURKSnF2dWQxVm9OZU4wUnBEWTJ5cmdRRVNjSGdtaGEwaXJZakpKclVnbjFDS2lrVTdMSlZpUzlqN3hxcWRBd2FnIiwicyI6IkgwZERXM1Z3dkdqcDIrdFJvWXhOM0E9PSIsImkiOiJFaHlraHlteThyUGovQXkzIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYVc1Qk1GcS8wYXoxZis2RmRoMnZrNFhwMDFFaFU5ZnBCaE9uVGNMZFpLVzRsVWhpQVR3b3dTa1JDUWhvbzg4UWxIeWsiLCJzIjoiTXBJSnErajNES0JYWTh3YjhiTWlhdz09IiwiaSI6Im8xaWpucEFvRkwrTVh5c1kifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSHdKaktIYXRaakV3U056dFg5bXVGUGk4cDdjcU5IOVp5bHJuTlBmbVdoMzM1aEtDNWRpUlR6OWdvSDFqL1l6OFNRPT0iLCJzIjoiWDZZQks4WHUveHJ4M3IrdlJUZm9Xdz09IiwiaSI6InJEK3ZpV296c25idVBaVkYifQ==",
+    "credits_files": "José Carrión",
+    "credits_backport": "José Carrión",
+    "credits_dlc": "Pkykzhack",
+    "size": "9GB"
+  },
+   {
     "title": "Thymesia",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Thymesia.webp",
     "tags": [
