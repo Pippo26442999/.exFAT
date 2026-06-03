@@ -139,6 +139,37 @@
             100% { border-color: #ff0000; box-shadow: 0 0 8px #ff0000; }
         }
 
+        /* Animazioni per il pulsante di conversione */
+        @keyframes convertingPulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 136, 0, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 136, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 136, 0, 0); }
+        }
+
+        @keyframes successPulse {
+            0% { box-shadow: 0 0 0 0 rgba(57, 255, 20, 0.7); transform: scale(1.05); }
+            50% { box-shadow: 0 0 0 20px rgba(57, 255, 20, 0); transform: scale(1.1); }
+            100% { box-shadow: 0 0 0 0 rgba(57, 255, 20, 0); transform: scale(1.05); }
+        }
+
+        @keyframes errorShake {
+            0%, 100% { transform: translateX(0) scale(0.95); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px) scale(0.95); }
+            20%, 40%, 60%, 80% { transform: translateX(5px) scale(0.95); }
+        }
+
+        .converting-pulse {
+            animation: convertingPulse 1s infinite;
+        }
+
+        .success-pulse {
+            animation: successPulse 0.5s ease-out 2;
+        }
+
+        .error-shake {
+            animation: errorShake 0.4s ease-in-out;
+        }
+
         body {
             font-family: 'Segoe UI', sans-serif;
             margin: 0; 
@@ -164,7 +195,6 @@
             backdrop-filter: blur(20px); box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
-        /* SINISTRA - Logo */
         .nav-left {
             display: flex;
             align-items: center;
@@ -229,7 +259,6 @@
             letter-spacing: 1px;
         }
 
-        /* CENTRO - Bottoni e dropdown */
         .nav-center {
             display: flex;
             gap: 15px;
@@ -239,7 +268,6 @@
             transform: translateX(-50%);
         }
 
-        /* DESTRA - Ko-fi */
         .nav-right {
             display: flex;
             align-items: center;
@@ -449,7 +477,6 @@
             margin-left: 10px;
         }
 
-        /* DROPDOWN UNIFORMATI - STESSA LARGHEZZA PER TUTTI */
         .custom-dropdown {
             position: relative;
             user-select: none;
@@ -513,7 +540,6 @@
         }
         .option:hover { background: var(--cyan-neon); color: #000; font-weight: 800; }
 
-        /* Tool Modal specific styles */
         .tool-modal-overlay {
             display: none;
             position: fixed;
@@ -1556,6 +1582,31 @@
         #site-lock-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(2, 2, 5, 0.8); backdrop-filter: blur(25px); z-index: 999999; display: flex; justify-content: center; align-items: center; }
         .lock-box { background: #0a0a1a; padding: 45px; border-radius: 35px; border: 2px solid var(--cyan-neon); text-align: center; max-width: 400px; width: 90%; box-shadow: 0 0 50px rgba(0, 255, 238, 0.2); }
         
+        /* Stile aggiuntivo per il pulsante di conversione */
+        #convertPegasusBtn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        #convertPegasusBtn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.4s, height 0.4s;
+        }
+
+        #convertPegasusBtn:active::before {
+            width: 200px;
+            height: 200px;
+        }
+        
         @media (max-width: 768px) {
             .popular-card { width: 420px; height: 340px; }
             .popular-game-title { font-size: 1rem; }
@@ -1622,22 +1673,18 @@
         <h2 style="color: var(--cyan-neon); text-transform: uppercase; margin-bottom: 15px; letter-spacing: 3px; font-weight: 900;">Access Denied</h2>
         <input type="password" id="site-pw-input" placeholder="Enter Password" onkeydown="if(event.key==='Enter') checkSitePassword()" style="width: 100%; padding: 18px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: #fff; text-align: center; font-size: 1.2rem; margin-bottom: 25px; outline: none; box-sizing: border-box;">
         <button onclick="checkSitePassword()" style="width: 100%; padding: 18px; border-radius: 15px; border: none; background: var(--cyan-neon); color: #000; font-weight: 900; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; margin-bottom: 20px;">Unlock Site</button>
-      
-        
         <p id="pw-error" style="color: var(--dmca-red); margin-top: 10px; font-size: 0.85rem; display: none; font-weight: 700;">Invalid Password.</p>
     </div>
 </div>
 
     <nav id="main-nav">
-        <!-- SINISTRA: Logo -->
-<div class="nav-logo" id="navLogo">
-    <a href="https://x.com/Pippo26442999" target="_blank" rel="noopener noreferrer" class="nav-logo-link">
-        <img src="exFAT/title.jpg" alt="Pippo Library" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=Pippo+Library'">
-    </a>
-    <span class="nav-title">Pippo Library</span>
-</div>
+        <div class="nav-logo" id="navLogo">
+            <a href="https://x.com/Pippo26442999" target="_blank" rel="noopener noreferrer" class="nav-logo-link">
+                <img src="exFAT/title.jpg" alt="Pippo Library" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=Pippo+Library'">
+            </a>
+            <span class="nav-title">Pippo Library</span>
+        </div>
         
-        <!-- CENTRO: Bottoni, dropdown, DMCA -->
         <div class="nav-center">
             <div class="nav-search-btn" id="navSearchBtn">🔍</div>
             <div class="nav-random-btn" id="navRandomBtn">
@@ -1677,22 +1724,20 @@
                 <input type="hidden" id="sort-filter" value="default">
             </div>
             
-            <!-- TOOL DROPDOWN - STESSA LARGHEZZA DEGLI ALTRI -->
             <div class="custom-dropdown" id="tool-dropdown">
                 <div class="dropdown-trigger">
                     <span id="tool-current">Tool</span>
                     <span class="arrow">▼</span>
                 </div>
                 <div class="dropdown-options" id="tool-options">
-                    <div class="option" data-value="pegasus-dl">pegasus-dl</div>
-                    <div class="option" data-value="exfat-ripper">exFAT-Ripper</div>
+                    <div class="option" data-value="pegasus-dl">🐴 pegasus-dl</div>
+                    <div class="option" data-value="exfat-ripper">⚡ exFAT-Ripper</div>
                 </div>
             </div>
             
             <div class="nav-item" id="dmca-link">DMCA</div>
         </div>
         
-        <!-- DESTRA: Ko-fi (compare solo scrollando) -->
         <div class="nav-right">
             <a href="https://ko-fi.com/pippo26442999" target="_blank" id="kofi-nav-btn"><img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Ko-fi">Support Me</a>
         </div>
@@ -1705,60 +1750,59 @@
     </nav>
 
     <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
-<div class="mobile-menu-panel" id="mobileMenuPanel">
-    <div class="mobile-menu-item" data-action="search">🔍 Search</div>
-    <div class="mobile-menu-item" data-action="random">🎲 Random Game</div>
-    <div class="mobile-menu-item" data-action="tool">🔧 Tool</div>
-    <div class="mobile-menu-item dmca" data-action="dmca">⚠️ DMCA</div>
-    <div class="mobile-fw-selector">
-        <div class="custom-dropdown" id="mobile-fw-dropdown">
-            <div class="dropdown-trigger">
-                <span id="mobile-fw-current">FW: All</span>
-                <span class="arrow">▼</span>
-            </div>
-            <div class="dropdown-options" id="mobile-fw-options">
-                <div class="option" data-value="99">FW: All</div>
-                <div class="option" data-value="1">1.xx</div><div class="option" data-value="2">2.xx</div>
-                <div class="option" data-value="3">3.xx</div><div class="option" data-value="4">4.xx</div>
-                <div class="option" data-value="5">5.xx</div><div class="option" data-value="6">6.xx</div>
-                <div class="option" data-value="7">7.xx</div><div class="option" data-value="8">8.xx</div>
-                <div class="option" data-value="9">9.xx</div><div class="option" data-value="10">10.xx</div>
-                <div class="option" data-value="11">11.xx</div><div class="option" data-value="12">12.xx</div>
-            </div>
-            <input type="hidden" id="mobile-fw-filter" value="99">
-        </div>
-    </div>
-    <div class="mobile-fw-selector" style="margin-top: 10px;">
-        <div class="custom-dropdown" id="mobile-sort-dropdown">
-            <div class="dropdown-trigger">
-                <span id="mobile-sort-current">Sort: Default</span>
-                <span class="arrow">▼</span>
-            </div>
-            <div class="dropdown-options" id="mobile-sort-options">
-                <div class="option" data-value="default">Sort: Default</div>
-                <div class="option" data-value="az">🔤 A → Z</div>
-                <div class="option" data-value="za">🔤 Z → A</div>
-                <div class="option" data-value="popular">🔥 Popular</div>
-                <div class="option" data-value="size-asc">📦 Size ↑</div>
-                <div class="option" data-value="size-desc">📦 Size ↓</div>
-            </div>
-            <input type="hidden" id="mobile-sort-filter" value="default">
-        </div>
-    </div>
-    <!-- MOBILE TOOL DROPDOWN - STESSA LARGHEZZA -->
-    <div class="mobile-fw-selector" style="margin-top: 10px;">
-        <div class="custom-dropdown" id="mobile-tool-dropdown">
-            <div class="dropdown-trigger">
-                <span id="mobile-tool-current">🛠️ Tool</span>
-                <span class="arrow">▼</span>
-            </div>
-            <div class="dropdown-options" id="mobile-tool-options">
-                <div class="option" data-value="pegasus-dl">🐴 pegasus-dl</div>
-                <div class="option" data-value="exfat-ripper">⚡ exFAT-Ripper</div>
+    <div class="mobile-menu-panel" id="mobileMenuPanel">
+        <div class="mobile-menu-item" data-action="search">🔍 Search</div>
+        <div class="mobile-menu-item" data-action="random">🎲 Random Game</div>
+        <div class="mobile-menu-item" data-action="tool">🔧 Tool</div>
+        <div class="mobile-menu-item dmca" data-action="dmca">⚠️ DMCA</div>
+        <div class="mobile-fw-selector">
+            <div class="custom-dropdown" id="mobile-fw-dropdown">
+                <div class="dropdown-trigger">
+                    <span id="mobile-fw-current">FW: All</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-options" id="mobile-fw-options">
+                    <div class="option" data-value="99">FW: All</div>
+                    <div class="option" data-value="1">1.xx</div><div class="option" data-value="2">2.xx</div>
+                    <div class="option" data-value="3">3.xx</div><div class="option" data-value="4">4.xx</div>
+                    <div class="option" data-value="5">5.xx</div><div class="option" data-value="6">6.xx</div>
+                    <div class="option" data-value="7">7.xx</div><div class="option" data-value="8">8.xx</div>
+                    <div class="option" data-value="9">9.xx</div><div class="option" data-value="10">10.xx</div>
+                    <div class="option" data-value="11">11.xx</div><div class="option" data-value="12">12.xx</div>
+                </div>
+                <input type="hidden" id="mobile-fw-filter" value="99">
             </div>
         </div>
+        <div class="mobile-fw-selector" style="margin-top: 10px;">
+            <div class="custom-dropdown" id="mobile-sort-dropdown">
+                <div class="dropdown-trigger">
+                    <span id="mobile-sort-current">Sort: Default</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-options" id="mobile-sort-options">
+                    <div class="option" data-value="default">Sort: Default</div>
+                    <div class="option" data-value="az">🔤 A → Z</div>
+                    <div class="option" data-value="za">🔤 Z → A</div>
+                    <div class="option" data-value="popular">🔥 Popular</div>
+                    <div class="option" data-value="size-asc">📦 Size ↑</div>
+                    <div class="option" data-value="size-desc">📦 Size ↓</div>
+                </div>
+                <input type="hidden" id="mobile-sort-filter" value="default">
+            </div>
+        </div>
+        <div class="mobile-fw-selector" style="margin-top: 10px;">
+            <div class="custom-dropdown" id="mobile-tool-dropdown">
+                <div class="dropdown-trigger">
+                    <span id="mobile-tool-current">🛠️ Tool</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-options" id="mobile-tool-options">
+                    <div class="option" data-value="pegasus-dl">🐴 pegasus-dl</div>
+                    <div class="option" data-value="exfat-ripper">⚡ exFAT-Ripper</div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
     <div class="search-modal-overlay" id="searchModalOverlay">
         <div class="search-modal-content">
@@ -1872,7 +1916,7 @@
         </div>
     </div>
 
-    <!-- TOOL MODAL - pegasus-dl -->
+    <!-- TOOL MODAL - PEGASUS-DL CON BOTTONE CONVERSIONE -->
     <div id="tool-modal" class="tool-modal-overlay">
         <div class="tool-modal-container">
             <div class="tool-modal-header">
@@ -1914,16 +1958,24 @@
                     </div>
                 </div>
                 <div class="tool-card">
-                    <div class="tool-title">📥 Download</div>
+                    <div class="tool-title">📥 Download & Catalog</div>
                     <div class="tool-description">
-                        <a href="https://github.com/pegasus-ps5/pegasus-dl" target="_blank" style="color: var(--cyan-neon);">🔗 GitHub Repository →</a>
+                        <a href="https://github.com/pegasus-ps5/pegasus-dl" target="_blank" style="color: var(--cyan-neon); display: inline-block; margin-bottom: 15px;">🔗 GitHub Repository →</a>
+                        
+                        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(0, 255, 238, 0.2);">
+                            <div style="font-weight: 800; margin-bottom: 10px; color: var(--cyan-neon);">Convert exFAT to Pegasus Catalog</div>
+                            <button id="convertPegasusBtn" style="background: linear-gradient(135deg, var(--cyan-neon), #0099cc); border: none; color: #000; padding: 14px 20px; border-radius: 30px; font-weight: 900; cursor: pointer; width: 100%; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); position: relative; overflow: hidden;">
+                                 Generate exFAT-Pegasus.json
+                            </button>
+                            <p style="font-size: 0.7rem; margin-top: 10px; opacity: 0.7;">Converts the Library into Pegasus catalog format for direct use in pegasus-dl</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- TOOL MODAL - exFAT-Ripper -->
+    <!-- TOOL MODAL - exFAT-RIPPER -->
     <div id="tool-modal-ripper" class="tool-modal-overlay">
         <div class="tool-modal-container">
             <div class="tool-modal-header">
@@ -1988,6 +2040,7 @@
         </div>
     </div>
 
+    <script src="pippo-exfat-converter.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
