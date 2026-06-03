@@ -626,6 +626,128 @@ function applyFWFilter() {
     applyFWFilterWithSort();
 }
 
+// ==================== TOOL DROPDOWN & MODAL ====================
+function setupToolDropdown() {
+    const toolDropdown = document.getElementById('tool-dropdown');
+    if (!toolDropdown) return;
+    
+    const trigger = toolDropdown.querySelector('.dropdown-trigger');
+    const optionsContainer = document.getElementById('tool-options');
+    const allOptions = toolDropdown.querySelectorAll('.option');
+    
+    trigger.onclick = (e) => { 
+        e.stopPropagation(); 
+        optionsContainer.classList.toggle('show'); 
+        toolDropdown.classList.toggle('active');
+    };
+    
+    allOptions.forEach(opt => {
+        opt.onclick = () => {
+            const val = opt.getAttribute('data-value');
+            optionsContainer.classList.remove('show');
+            toolDropdown.classList.remove('active');
+            
+            if (val === 'pegasus-dl') {
+                openToolModal('pegasus');
+            } else if (val === 'exfat-ripper') {
+                openToolModal('ripper');
+            }
+        };
+    });
+    
+    window.addEventListener('click', () => { 
+        optionsContainer.classList.remove('show'); 
+        toolDropdown.classList.remove('active');
+    });
+    
+    // Mobile version
+    const mobileToolDropdown = document.getElementById('mobile-tool-dropdown');
+    if (mobileToolDropdown) {
+        const mobileTrigger = mobileToolDropdown.querySelector('.dropdown-trigger');
+        const mobileOptions = document.getElementById('mobile-tool-options');
+        
+        mobileTrigger.onclick = (e) => {
+            e.stopPropagation();
+            mobileOptions.classList.toggle('show');
+            mobileToolDropdown.classList.toggle('active');
+        };
+        
+        mobileOptions.querySelectorAll('.option').forEach(opt => {
+            opt.onclick = () => {
+                const val = opt.getAttribute('data-value');
+                mobileOptions.classList.remove('show');
+                mobileToolDropdown.classList.remove('active');
+                
+                if (val === 'pegasus-dl') {
+                    openToolModal('pegasus');
+                } else if (val === 'exfat-ripper') {
+                    openToolModal('ripper');
+                }
+            };
+        });
+    }
+}
+
+function setupToolModal() {
+    // Setup per pegasus-dl modal
+    const modalPegasus = document.getElementById('tool-modal');
+    const closeBtnPegasus = document.getElementById('close-tool-modal');
+    
+    if (closeBtnPegasus) {
+        closeBtnPegasus.onclick = () => closeToolModal(modalPegasus);
+    }
+    if (modalPegasus) {
+        modalPegasus.addEventListener('click', (e) => {
+            if (e.target === modalPegasus) closeToolModal(modalPegasus);
+        });
+    }
+    
+    // Setup per exFAT-Ripper modal
+    const modalRipper = document.getElementById('tool-modal-ripper');
+    const closeBtnRipper = document.getElementById('close-tool-modal-ripper');
+    
+    if (closeBtnRipper) {
+        closeBtnRipper.onclick = () => closeToolModal(modalRipper);
+    }
+    if (modalRipper) {
+        modalRipper.addEventListener('click', (e) => {
+            if (e.target === modalRipper) closeToolModal(modalRipper);
+        });
+    }
+}
+
+function closeToolModal(modal) {
+    if (!modal) return;
+    modal.classList.add('hiding');
+    const container = modal.querySelector('.tool-modal-container');
+    if (container) container.classList.add('closing');
+    
+    setTimeout(() => {
+        modal.classList.remove('show', 'hiding');
+        if (container) container.classList.remove('closing');
+    }, 300);
+}
+
+function openToolModal(toolName) {
+    let modalId;
+    if (toolName === 'pegasus') {
+        modalId = 'tool-modal';
+    } else if (toolName === 'ripper') {
+        modalId = 'tool-modal-ripper';
+    } else {
+        return;
+    }
+    
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('hiding');
+        const container = modal.querySelector('.tool-modal-container');
+        if (container) container.classList.remove('closing');
+        modal.classList.add('show');
+    }
+}
+// ==================== FINE TOOL ====================
+
 async function init() {
     // Se flaggato come bot, mostra solo messaggio finto
     const isFlagged = sessionStorage.getItem('flagged_as_bot') === 'true' || IS_BOT;
@@ -691,6 +813,8 @@ async function init() {
     setupRandomGame();
     setupModalRandomButton();
     setupSortDropdown();
+    setupToolDropdown();
+    setupToolModal();
     
     const navLogo = document.getElementById('navLogo');
     if (navLogo) {
@@ -854,6 +978,7 @@ function setupMobileMenu() {
     const overlay = document.getElementById('mobileMenuOverlay');
     const searchBtn = document.querySelector('.mobile-menu-item[data-action="search"]');
     const randomBtn = document.querySelector('.mobile-menu-item[data-action="random"]');
+    const toolBtn = document.querySelector('.mobile-menu-item[data-action="tool"]');
     
     function closeMenu() {
         if (hamburger) hamburger.classList.remove('active');
@@ -936,6 +1061,14 @@ function setupMobileMenu() {
             
             isRandomModeActive = true;
             openGameModal(randomGame, null);
+        });
+    }
+    
+    if (toolBtn) {
+        toolBtn.addEventListener('click', () => {
+            closeMenu();
+            // Apre il primo tool di default (pegasus-dl)
+            openToolModal('pegasus');
         });
     }
 }

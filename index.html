@@ -128,16 +128,16 @@
             100% { background-position: 200% 0; }
         }
 
-@keyframes rainbowBorder {
-    0% { border-color: #ff0000; box-shadow: 0 0 8px #ff0000; }
-    14% { border-color: #ff8800; box-shadow: 0 0 8px #ff8800; }
-    28% { border-color: #ffff00; box-shadow: 0 0 8px #ffff00; }
-    42% { border-color: #00ff00; box-shadow: 0 0 8px #00ff00; }
-    57% { border-color: #00ffff; box-shadow: 0 0 8px #00ffff; }
-    71% { border-color: #0088ff; box-shadow: 0 0 8px #0088ff; }
-    85% { border-color: #ff00ff; box-shadow: 0 0 8px #ff00ff; }
-    100% { border-color: #ff0000; box-shadow: 0 0 8px #ff0000; }
-}
+        @keyframes rainbowBorder {
+            0% { border-color: #ff0000; box-shadow: 0 0 8px #ff0000; }
+            14% { border-color: #ff8800; box-shadow: 0 0 8px #ff8800; }
+            28% { border-color: #ffff00; box-shadow: 0 0 8px #ffff00; }
+            42% { border-color: #00ff00; box-shadow: 0 0 8px #00ff00; }
+            57% { border-color: #00ffff; box-shadow: 0 0 8px #00ffff; }
+            71% { border-color: #0088ff; box-shadow: 0 0 8px #0088ff; }
+            85% { border-color: #ff00ff; box-shadow: 0 0 8px #ff00ff; }
+            100% { border-color: #ff0000; box-shadow: 0 0 8px #ff0000; }
+        }
 
         body {
             font-family: 'Segoe UI', sans-serif;
@@ -180,32 +180,32 @@
             transition: all 0.3s ease;
         }
 
-.nav-logo img {
-    width: 45px;
-    height: 45px;
-    border-radius: 12px;
-    object-fit: cover;
-    border: 2px solid var(--cyan-neon);
-    box-shadow: 0 0 8px rgba(0, 255, 238, 0.3);
-    transition: all 0.3s ease;
-    animation: rainbowBorder 4s linear infinite;
-}
+        .nav-logo img {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 2px solid var(--cyan-neon);
+            box-shadow: 0 0 8px rgba(0, 255, 238, 0.3);
+            transition: all 0.3s ease;
+            animation: rainbowBorder 4s linear infinite;
+        }
 
-.nav-logo img:hover {
-    animation: rainbowBorder 1.5s linear infinite;
-    transform: scale(1.05);
-}
+        .nav-logo img:hover {
+            animation: rainbowBorder 1.5s linear infinite;
+            transform: scale(1.05);
+        }
 
-.nav-logo-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    transition: transform 0.2s ease;
-}
+        .nav-logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
 
-.nav-logo-link:hover {
-    transform: scale(1.02);
-}
+        .nav-logo-link:hover {
+            transform: scale(1.02);
+        }
 
         .nav-logo .nav-title {
             font-size: 1rem;
@@ -449,10 +449,11 @@
             margin-left: 10px;
         }
 
+        /* DROPDOWN UNIFORMATI - STESSA LARGHEZZA PER TUTTI */
         .custom-dropdown {
             position: relative;
             user-select: none;
-            min-width: 130px;
+            min-width: 140px;
             z-index: 10002;
         }
         .dropdown-trigger {
@@ -469,6 +470,8 @@
             align-items: center;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
+            white-space: nowrap;
+            min-width: 130px;
         }
         .dropdown-trigger:hover {
             background: rgba(0, 255, 238, 0.1);
@@ -509,6 +512,128 @@
             border-bottom: 1px solid rgba(255,255,255,0.05);
         }
         .option:hover { background: var(--cyan-neon); color: #000; font-weight: 800; }
+
+        /* Tool Modal specific styles */
+        .tool-modal-overlay {
+            display: none;
+            position: fixed;
+            z-index: 50001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(12px);
+            align-items: center;
+            justify-content: center;
+        }
+        .tool-modal-overlay.show {
+            display: flex;
+            animation: fadeInModal 0.3s ease forwards;
+        }
+        .tool-modal-overlay.hiding {
+            animation: fadeOutModal 0.3s ease forwards;
+        }
+        .tool-modal-container {
+            background: linear-gradient(135deg, rgba(10, 10, 26, 0.98), rgba(2, 2, 5, 0.98));
+            border: 2px solid var(--cyan-neon);
+            border-radius: 40px;
+            width: 90%;
+            max-width: 650px;
+            overflow: hidden;
+            animation: modalCyberPop 0.5s cubic-bezier(0.34, 1.2, 0.64, 1);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 0 50px rgba(0, 255, 238, 0.3);
+        }
+        .tool-modal-container.closing {
+            animation: modalCyberOut 0.4s ease forwards;
+        }
+        .tool-modal-header {
+            position: relative;
+            background: linear-gradient(135deg, rgba(0, 255, 238, 0.15), rgba(0, 100, 150, 0.3));
+            padding: 25px 30px;
+            text-align: center;
+            border-bottom: 1px solid var(--cyan-neon);
+        }
+        .tool-modal-header h2 {
+            margin: 0;
+            font-size: 1.6rem;
+            letter-spacing: 3px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #fff, var(--cyan-neon));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+        }
+        .tool-modal-close {
+            position: absolute;
+            right: 18px;
+            top: 18px;
+            background: rgba(255,255,255,0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        .tool-modal-close:hover {
+            background: var(--dmca-red);
+            transform: rotate(90deg);
+        }
+        .tool-modal-body {
+            padding: 25px;
+            max-height: 65vh;
+            overflow-y: auto;
+        }
+        .tool-modal-body::-webkit-scrollbar {
+            width: 5px;
+        }
+        .tool-modal-body::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+        }
+        .tool-modal-body::-webkit-scrollbar-thumb {
+            background: var(--cyan-neon);
+            border-radius: 10px;
+        }
+        .tool-card {
+            background: rgba(0, 255, 238, 0.05);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--cyan-neon);
+        }
+        .tool-title {
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: var(--cyan-neon);
+            margin-bottom: 12px;
+        }
+        .tool-description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #ddd;
+        }
+        .tool-feature {
+            margin: 15px 0 0 0;
+            padding-left: 20px;
+        }
+        .tool-feature li {
+            margin-bottom: 8px;
+            color: #ccc;
+        }
+        code {
+            background: rgba(0,0,0,0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.85rem;
+        }
 
         #kofi-nav-btn {
             display: flex;
@@ -1552,6 +1677,18 @@
                 <input type="hidden" id="sort-filter" value="default">
             </div>
             
+            <!-- TOOL DROPDOWN - STESSA LARGHEZZA DEGLI ALTRI -->
+            <div class="custom-dropdown" id="tool-dropdown">
+                <div class="dropdown-trigger">
+                    <span id="tool-current">Tool</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-options" id="tool-options">
+                    <div class="option" data-value="pegasus-dl">pegasus-dl</div>
+                    <div class="option" data-value="exfat-ripper">exFAT-Ripper</div>
+                </div>
+            </div>
+            
             <div class="nav-item" id="dmca-link">DMCA</div>
         </div>
         
@@ -1571,6 +1708,7 @@
 <div class="mobile-menu-panel" id="mobileMenuPanel">
     <div class="mobile-menu-item" data-action="search">🔍 Search</div>
     <div class="mobile-menu-item" data-action="random">🎲 Random Game</div>
+    <div class="mobile-menu-item" data-action="tool">🔧 Tool</div>
     <div class="mobile-menu-item dmca" data-action="dmca">⚠️ DMCA</div>
     <div class="mobile-fw-selector">
         <div class="custom-dropdown" id="mobile-fw-dropdown">
@@ -1605,6 +1743,19 @@
                 <div class="option" data-value="size-desc">📦 Size ↓</div>
             </div>
             <input type="hidden" id="mobile-sort-filter" value="default">
+        </div>
+    </div>
+    <!-- MOBILE TOOL DROPDOWN - STESSA LARGHEZZA -->
+    <div class="mobile-fw-selector" style="margin-top: 10px;">
+        <div class="custom-dropdown" id="mobile-tool-dropdown">
+            <div class="dropdown-trigger">
+                <span id="mobile-tool-current">🛠️ Tool</span>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="dropdown-options" id="mobile-tool-options">
+                <div class="option" data-value="pegasus-dl">🐴 pegasus-dl</div>
+                <div class="option" data-value="exfat-ripper">⚡ exFAT-Ripper</div>
+            </div>
         </div>
     </div>
 </div>
@@ -1717,6 +1868,122 @@
             </div>
             <div class="dmca-modal-body" id="dmcaModalBody">
                 <div class="dmca-text">Loading...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOOL MODAL - pegasus-dl -->
+    <div id="tool-modal" class="tool-modal-overlay">
+        <div class="tool-modal-container">
+            <div class="tool-modal-header">
+                <h2>🔧 pegasus-dl</h2>
+                <div class="tool-modal-close" id="close-tool-modal">✕</div>
+            </div>
+            <div class="tool-modal-body">
+                <div class="tool-card">
+                    <div class="tool-title">pegasus-dl by pegasus-ps5</div>
+                    <div class="tool-description">
+                        <strong>Pegasus DL</strong> - Direct package downloading from your PS5, managed through a local web interface. No PC required for transfers.
+                    </div>
+                    <ul class="tool-feature">
+                        <li>✅ No PC required for transfer</li>
+                        <li>✅ Works directly from PS5 browser</li>
+                        <li>✅ Compatible with all jailbroken PS5 firmware versions</li>
+                        <li>✅ Multiple download connections with resume support</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-title">🎯 How to use</div>
+                    <div class="tool-description">
+                        1️⃣ Download <strong>pegasus_dl.elf</strong> from GitHub releases<br>
+                        2️⃣ Send the payload to your PS5 using your usual payload loader<br>
+                        3️⃣ Open from any device on the same network: <code>http://&lt;your-ps5-ip&gt;:6970/</code><br>
+                        4️⃣ Choose a writable download folder in Settings<br>
+                        5️⃣ Add a catalog source (JSON file with package links)<br>
+                        6️⃣ Search, select, and queue your downloads
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-title">⚠️ Important Notes</div>
+                    <div class="tool-description">
+                        • <strong>Queue does not survive reboot</strong> - downloads are lost if PS5 restarts<br>
+                        • <strong>Catalogs not included</strong> - you must provide your own catalog sources<br>
+                        • <strong>Downloader only</strong> - does NOT install packages (use a separate installer)<br>
+                        • Resume support depends on the download host<br>
+                        • Use only with content you own or have permission to download
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-title">📥 Download</div>
+                    <div class="tool-description">
+                        <a href="https://github.com/pegasus-ps5/pegasus-dl" target="_blank" style="color: var(--cyan-neon);">🔗 GitHub Repository →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOOL MODAL - exFAT-Ripper -->
+    <div id="tool-modal-ripper" class="tool-modal-overlay">
+        <div class="tool-modal-container">
+            <div class="tool-modal-header">
+                <h2>⚡ exFAT-Ripper</h2>
+                <div class="tool-modal-close" id="close-tool-modal-ripper">✕</div>
+            </div>
+            <div class="tool-modal-body">
+                <div class="tool-card">
+                    <div class="tool-title">exFAT Ripper by kerrdec97</div>
+                    <div class="tool-description">
+                        <strong>Premium Windows desktop launcher</strong> for the PS5 exFAT library. Browse cover art, PPSA codes, titles, versions and download links — with scraping or library updates running in the background.
+                    </div>
+                    <ul class="tool-feature">
+                        <li>✅ Built with pywebview (Python backend + HTML/CSS/JS frontend)</li>
+                        <li>✅ Gaming-launcher UI: custom titlebar, animated sidebar, cover art grid, cinematic detail panel</li>
+                        <li>✅ Offline-safe: after initial scraping, everything works offline</li>
+                        <li>✅ Instant offline link unlocking (AES-GCM decryption)</li>
+                        <li>✅ Linux support (AppImage build) - contributed by Nazky</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-title">🎯 Key Features</div>
+                    <div class="tool-description">
+                        <strong>Interface:</strong> DM Sans + JetBrains Mono, dark theme, hover animations, glow effects. 440px wide detail panel with 172px hero image.<br><br>
+                        <strong>Library:</strong> Tab-pill (All | Native | Backports | DLCs | Updates) with live counts. Library Health widget (SVG ring gauge) with percentage score. Storage widget (TB used/free).<br><br>
+                        <strong>Cards:</strong> 3/4 aspect ratio, FW color coding (green=native, purple=backport, cyan=FW version, amber=DLC). Hover quick-actions overlay (favourite, open folder, re-scrape, fetch metadata). Favourite star (localStorage persistent).<br><br>
+                        <strong>Detail Panel:</strong> Metacritic/OpenCritic/HowLongToBeat scores. 2-col metadata grid (Developer, Publisher, Genres, Play Modes, Languages, Release Date). Collapsible description.<br><br>
+                        <strong>Files Tab:</strong> Version-grouped download cards (newest first). Older versions collapsible. Host cards with emojis (📦 Akirabox, ⚓ VikingFile, 💾 Datanodes, 🔥 MediaFire). Open + Copy buttons per link, Open All + Copy All for multi-link hosts.<br><br>
+                        <strong>Screenshots:</strong> Fullscreen gallery with keyboard navigation (← → Esc), thumbnails, adjacent image preloading.<br><br>
+                        <strong>Settings:</strong> RAWG + IGDB API keys, cover cache controls, metadata enrichment toggles, database repair.
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-title">🔧 Metadata API Keys</div>
+                    <div class="tool-description">
+                        Metadata (descriptions, ratings, genres, Metacritic, screenshots) comes from external APIs. Both have free tiers.
+                        <ul class="tool-feature" style="margin-top: 10px;">
+                            <li><strong>RAWG</strong> — 20,000 req/month → <a href="https://rawg.io/apidocs" target="_blank" style="color: var(--cyan-neon);">rawg.io/apidocs</a></li>
+                            <li><strong>IGDB</strong> — Unlimited (Twitch auth) → <a href="https://api.igdb.com/" target="_blank" style="color: var(--cyan-neon);">api.igdb.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-title">⚠️ Important Notes</div>
+                    <div class="tool-description">
+                        • First launch of the unsigned .exe may show a Windows SmartScreen warning — "More info" → "Run anyway" (normal for unsigned apps).<br>
+                        • The .exe is large (bundled Chromium + Python runtime). Expected.<br>
+                        • If scraping fails with "grid never appeared", the site is showing a CAPTCHA. Open the site in Brave/Chrome, solve it, leave it open, and scrape again.<br>
+                        • This app scrapes a site hosting pirated content. Make sure your use complies with local laws.
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-title">📥 Download & Credits</div>
+                    <div class="tool-description">
+                        <a href="https://github.com/kerrdec97/exFAT-Ripper" target="_blank" style="color: var(--cyan-neon);">🔗 GitHub Repository →</a><br><br>
+                        <strong>Credits:</strong> Special thanks to <strong>pippo26442999</strong> — creator and maintainer of the PS5 exFAT library.<br>
+                        Built by <strong>kerrdec97</strong><br>
+                        Linux support (AppImage build, Qt backend) — <strong>Nazky</strong><br><br>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
