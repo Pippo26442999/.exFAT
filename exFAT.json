@@ -1,5 +1,24 @@
 [
    {
+    "title": "ASTRO BOT",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/ASTRO_BOT.avif",
+    "tags": [
+      "PPSA21564",
+      "v01.007",
+      "USA",
+      "4.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOERZck0xMzZ6OEY2bWp3bWZlS1hZN1NZUUdNMjJZSmJDT0EwdmhGaEo2L09UTFlvQmZpWVdxVWRtU2xzOFE1N2dRPT0iLCJzIjoiR2RmeSs0U2NxZnVoTXBSWUtmYm5wdz09IiwiaSI6ImNQdWg0YzJMQWRHU0NYZW8ifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiKzdVYUd5U1Z3NzRDKytJWjdhZCtpVmhWY2FOZmxGK0VaNmJoS1FLQ21tek4ySkt5MVY1VjVaRzZtMVhaR0hkYlRSWG9wYmRDIiwicyI6Ill1eTdGRnFZSDZkdXRCNHJTeHR3RWc9PSIsImkiOiJhelFlL2ZmWGdhanBTNlE0In0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVVpXMUs0N3N0R0RpOGNXWlV4QUhHcTg3QUxGZU5ma0lubFp3QkMybFVqNzhCY2ZkZmh4V2dWeUxxSGZjZmpWaW1nPT0iLCJzIjoiMDZzWTlsTmZnYVA2TjVFa1laS21udz09IiwiaSI6IlNHc2hmMXo4Und6aC9ncnkifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "Pkykzhack",
+    "popular": "on",
+    "size": "152GB"
+  },
+   {
     "title": "Visions of Mana",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Vision_of_Mana.avif",
     "tags": [
@@ -2481,27 +2500,6 @@
     "credits_": "BestPig",
     "popular": "on",
     "size": "85GB"
-  },
-  {
-    "title": "ASTRO BOT",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/ASTRO_BOT.avif",
-    "tags": [
-      "PPSA21567",
-      "v01.018.000",
-      "EUR",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTk9PUzkvc2J0UCs2TG5jcTZ1dWtHL3J0a0dwTkFRcVNYOGpSdTNrZmJZMzFWQkJiR0RUYWtsMjB4NjBLZjBOL2x2N3dWakszIiwicyI6Img3cnd2VjY4dU53R0xiL0o0TEwrWFE9PSIsImkiOiJZQ1pCR1A2WlhqWUEzYXF2In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZm5JMnJBY3hGWDNIMTRqMVRmTFJ3N0o3NzBHM2R4c01nNDlXNDg3ZWRvQmh2S0JaY0hpT29MeDZOWlZHRjVoUTlCZzgiLCJzIjoicVVYR0ZLd3NsWElrL2g1TjNZRkgwQT09IiwiaSI6ImkxOXc5RkZYZm9hSmpBd1kifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiU0tBQUlKc2xVcW5VZnQ2WWFQUmNRUkU2RC9XNUVvNUlLVzJ2dCttTFJ3VlNIVkVScXpyeVJJUGwySkJYMWdTT09RPT0iLCJzIjoiY1lGam15YmZvcFNYMFFtSmtDeXVNQT09IiwiaSI6IjZrankwQWtNQjNWR3pBazIifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOTUvMG5nb2R6UWdMTjJ6QnMrbmp1a1Z0eGg2NytMTHJvZDJoYnl4SkN3TUE3TGRPaWF1ZG9uU2djT2tua3VHcktnPT0iLCJzIjoiKzUyYlRvR0cwclBzM0FUOG5IYmo3Zz09IiwiaSI6Ik5mYlYzOUNiZjVkVmNBRHcifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTnVBV1o1WUl5OTNYTjBOQ1ZxNnIvKzlMQ1NqU0J3bm9laXNMaVloM1lka1ZYWnRvTGdqSGFRa0ZMZkRvTFVLQnVqaUsyYU84IiwicyI6IndGaXJwdzlJTGtINFBMQTFRUzNpWVE9PSIsImkiOiJTWjhJdGNVeXFRdmNLK0JkIn0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieUZxVFVrSHFqcWpRL2NYbU9sb2s3d2xpNmRuTG9XR1lUSk84elVPSjVrSVdLOVV4MEtVWmxVMVpDQlEzWGhORGhRPT0iLCJzIjoiNnFUL1d5WGdwV3FyYVczQytGdEVIQT09IiwiaSI6IkxKSFZKK21wUDFxdGxUclgifQ==",
-    "credits_files": "SiESPTA",
-    "credits_dlc": "Pkykzhack",
-    "how_to_play": "⚠️Latest Version have some problems with APR, patched bin from High-Speed007 isnt enough, crash after Tutorial. Recommended Play the old Version FFPKG below.⚠️",
-    "popular": "on",
-    "size": "152GB"
   },
   {
     "title": "WUCHANG Fallen Feathers Deluxe Edition",
