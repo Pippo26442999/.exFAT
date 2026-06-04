@@ -1,5 +1,21 @@
 [
    {
+    "title": "Poppy Playtime Chapter 2",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Poppy_Playtime_Chapter_2.jpg",
+    "tags": [
+      "PPSA21631",
+      "v01.000",
+      "EUR",  
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMDYwclJ5T2xFeXByWmw2dzU5UGJCMUs4NVp2Q3VyOTZhRzM4bjNuSTJ3blhiMmpwVWNuUHdScGJTTVgyaXFtT2lFdmZjL2tGIiwicyI6IkNML2FJVnl0SDRQdndjdW1JKytxWGc9PSIsImkiOiIvL0V2ejBTTS9KbGR6WkRBIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNzM1Vk5sYm9KME1oUHk4WTdCUEp5NHZtSmExODJSUDN0NnRzS1NhdVBraG5UYTZWTHVwaWFyWGFnRHdNdDJXbkdSNlMiLCJzIjoiVjZmWXNEbERSTTVxOFJYcWdlSFR4dz09IiwiaSI6IlZNaUtRNnRQSnhNWnM3YXoifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaUw2a0FpRzlBM1ZDQkV0aHhZdDlpNFp0am9PdlVGVzFQZVlwWVhmSUxVbVJOdDFNamNzcnZLZERvWVRtcG5wdUlRPT0iLCJzIjoieVpKWE5meVJubG1OWFFkWDYxRmFQdz09IiwiaSI6IlBZMGFlVEx0UklrbHBKVzIifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "Kira",
+    "size": "8GB"
+  },
+   {
     "title": "ASTRO BOT",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/ASTRO_BOT.avif",
     "tags": [
@@ -15,6 +31,7 @@
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVVpXMUs0N3N0R0RpOGNXWlV4QUhHcTg3QUxGZU5ma0lubFp3QkMybFVqNzhCY2ZkZmh4V2dWeUxxSGZjZmpWaW1nPT0iLCJzIjoiMDZzWTlsTmZnYVA2TjVFa1laS21udz09IiwiaSI6IlNHc2hmMXo4Und6aC9ncnkifQ==",
     "credits_files": "High-Speed007",
     "credits_dlc": "Pkykzhack",
+    "credits_backport": "BestPig",
     "popular": "on",
     "size": "152GB"
   },
