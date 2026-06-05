@@ -187,6 +187,9 @@ let cachedPopularGames = null;
 let cachedIsMobile = null;
 let isLoading = true;
 
+// Cache per i link decifrati di pegasus (solo in memoria, niente localStorage)
+let pegasusDecryptCache = new Map();
+
 const originalSetItem = sessionStorage.setItem.bind(sessionStorage);
 const originalGetItem = sessionStorage.getItem.bind(sessionStorage);
 const originalRemoveItem = sessionStorage.removeItem.bind(sessionStorage);
@@ -501,7 +504,121 @@ function applyFWFilterWithSort() {
 }
 function applyFWFilter() { applyFWFilterWithSort(); }
 
-// ==================== FUNZIONE CONVERSIONE PEGASUS CON EFFETTI ====================
+// ========== FUNZIONI GENERATORE PEGASUS CON PROGRESSO NEL BOTTONE ==========
+// Niente localStorage per i link decifrati, solo cache in memoria
+
+function parseSizeBytesFromString(sizeStr) {
+    if (!sizeStr) return null;
+    const match = sizeStr.match(/(\d+(?:[.,]\d+)?)\s*(KB|MB|GB|TB)/i);
+    if (!match) return null;
+    const value = parseFloat(match[1].replace(',', '.'));
+    const unit = match[2].toUpperCase();
+    const multipliers = { KB: 1024, MB: 1048576, GB: 1073741824, TB: 1099511627776 };
+    return Math.round(value * (multipliers[unit] || 1));
+}
+
+async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
+    const packages = [];
+    const title = game.title || '';
+    const tags = game.tags || [];
+    
+    let titleId = null;
+    for (const tag of tags) {
+        const match = tag.match(/\b([A-Z]{4}\d{5})\b/);
+        if (match) {
+            titleId = match[1];
+            break;
+        }
+    }
+    
+    if (!title) {
+        warnings.push(`item ${itemNumber}: title is required`);
+        return packages;
+    }
+    
+    const groupedLinks = new Map();
+    const seen = new Set();
+    
+    for (const [key, value] of Object.entries(game)) {
+        if (typeof value !== 'string') continue;
+        if (!value.startsWith('http://') && !value.startsWith('https://')) continue;
+        
+        if (key === 'image' || key === 'poster' || key === 'img') continue;
+        
+        let decodedUrl = value;
+        if (PippoExfatConverter.isLinkLockUrl(value)) {
+            if (pegasusDecryptCache.has(value)) {
+                decodedUrl = pegasusDecryptCache.get(value);
+            } else {
+                try {
+                    decodedUrl = await originalDecrypt(value);
+                    pegasusDecryptCache.set(value, decodedUrl);
+                } catch (error) {
+                    warnings.push(`${title}: could not decrypt ${key}: ${error.message}`);
+                    continue;
+                }
+            }
+        }
+        
+        let group = 'files';
+        let mirror = key;
+        
+        if (key.includes('standard')) group = 'standard';
+        else if (key.includes('backport')) group = 'backport';
+        else if (key.includes('dlc')) group = 'dlc';
+        else if (key.includes('dump')) group = 'dump';
+        
+        if (key.includes('akia')) mirror = 'akia';
+        else if (key.includes('viki')) mirror = 'viki';
+        else if (key.includes('buzz')) mirror = 'buzz';
+        else if (key.includes('data')) mirror = 'data';
+        
+        let name = mirror.charAt(0).toUpperCase() + mirror.slice(1);
+        if (group !== 'files') {
+            name = `${group.charAt(0).toUpperCase() + group.slice(1)} - ${name}`;
+        }
+        
+        const dedupeKey = `${group}\0${name.toLowerCase()}\0${decodedUrl}`;
+        if (seen.has(dedupeKey)) continue;
+        if (!groupedLinks.has(group)) groupedLinks.set(group, []);
+        groupedLinks.get(group).push({ name, url: decodedUrl });
+        seen.add(dedupeKey);
+    }
+    
+    const allLinks = [];
+    for (const [group, links] of groupedLinks) {
+        for (const link of links) {
+            allLinks.push(link);
+        }
+    }
+    
+    if (allLinks.length === 0) {
+        return packages;
+    }
+    
+    const descLines = [];
+    if (tags && tags.length) descLines.push(`Tags: ${tags.join(', ')}`);
+    if (game.size) descLines.push(`Size: ${game.size}`);
+    const credits = [];
+    if (game.credits_files) credits.push(`Files: ${game.credits_files}`);
+    if (game.credits_backport) credits.push(`Backport: ${game.credits_backport}`);
+    if (credits.length) descLines.push(`Credits: ${credits.join('; ')}`);
+    if (game.how_to_play) descLines.push(`How to play: ${game.how_to_play}`);
+    
+    packages.push({
+        titleId: titleId || `GAME_${itemNumber}`,
+        title: title,
+        version: "1.0",
+        category: "game",
+        posterUrl: game.image || null,
+        description: descLines.join('\n'),
+        downloadLinks: allLinks,
+        sizeBytes: parseSizeBytesFromString(game.size)
+    });
+    
+    return packages;
+}
+
 async function convertExFatToPegasusDirect() {
     if (!allGames || allGames.length === 0) {
         alert("No game data loaded. Please wait for the library to load.");
@@ -513,123 +630,126 @@ async function convertExFatToPegasusDirect() {
     
     const originalText = convertBtn.innerHTML;
     const originalBackground = convertBtn.style.background;
+    const totalGames = allGames.length;
     
-    // EFFETTO 1: Pulsante in conversione - animazione di caricamento
-    convertBtn.innerHTML = '🔄 CONVERTING...';
+    // Animazione spinner
+    let animationInterval = null;
+    const spinnerFrames = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'];
+    let frameIndex = 0;
+    
+    const startSpinner = () => {
+        animationInterval = setInterval(() => {
+            if (convertBtn.disabled) {
+                const currentPercent = convertBtn.innerHTML.match(/\d+/);
+                const percent = currentPercent ? currentPercent[0] : '0';
+                convertBtn.innerHTML = `${spinnerFrames[frameIndex]} ${percent}%`;
+                frameIndex = (frameIndex + 1) % spinnerFrames.length;
+            }
+        }, 100);
+    };
+    
+    const stopSpinner = () => {
+        if (animationInterval) {
+            clearInterval(animationInterval);
+            animationInterval = null;
+        }
+    };
+    
+    // Stato iniziale - con effetto pulsante
+    convertBtn.innerHTML = '⠋ 0%';
     convertBtn.disabled = true;
     convertBtn.style.background = 'linear-gradient(135deg, #ff8800, #ff5500)';
     convertBtn.style.transform = 'scale(0.98)';
-    convertBtn.style.boxShadow = '0 0 20px rgba(255, 136, 0, 0.6)';
     convertBtn.style.transition = 'all 0.2s ease';
-    
-    // Aggiungi classe per animazione pulse
     convertBtn.classList.add('converting-pulse');
     
+    startSpinner();
+    
+    let warningCount = 0;
+    
     try {
-        const { catalog, warnings } = await PippoExfatConverter.convertExFatToPegasus(allGames);
+        const originalDecrypt = PippoExfatConverter.decryptLinkLockUrl;
+        const allPackages = [];
+        const warnings = [];
+        
+        for (let i = 0; i < allGames.length; i++) {
+            const game = allGames[i];
+            const current = i + 1;
+            const percent = Math.round((current / totalGames) * 100);
+            
+            // Aggiorna percentuale (lo spinner continua da solo)
+            const currentSpinner = convertBtn.innerHTML.charAt(0);
+            convertBtn.innerHTML = `${currentSpinner} ${percent}%`;
+            
+            const result = await convertSingleGame(game, current, warnings, originalDecrypt);
+            allPackages.push(...result);
+            warningCount = warnings.length;
+        }
+        
+        stopSpinner();
+        
+        convertBtn.innerHTML = '📦 Creating JSON...';
+        convertBtn.classList.remove('converting-pulse');
+        
+        const catalog = {
+            name: "exFAT Pegasus",
+            version: 1,
+            packages: allPackages,
+            _generated: new Date().toISOString(),
+            _stats: { totalItems: allGames.length, totalPackages: allPackages.length }
+        };
+        
         const jsonStr = JSON.stringify(catalog, null, 2);
         const blob = new Blob([jsonStr], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
         a.download = 'exFAT-Pegasus.json';
-        a.style.display = 'none';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
         
-        // EFFETTO 2: Download completato - successo
+        // Successo - con effetto pulsante verde
         convertBtn.innerHTML = '✅ DOWNLOADED!';
         convertBtn.style.background = 'linear-gradient(135deg, #39ff14, #00cc00)';
         convertBtn.style.transform = 'scale(1.05)';
-        convertBtn.style.boxShadow = '0 0 30px rgba(57, 255, 20, 0.8)';
-        convertBtn.classList.remove('converting-pulse');
         convertBtn.classList.add('success-pulse');
         
-        // Effetto particelle di successo
         createSuccessParticles(convertBtn);
         
-        if (warnings && warnings.length > 0) {
-            console.warn('Conversion warnings:', warnings);
-            showToast(`⚠️ ${warnings.length} warning(s) - Check console`, '#ffaa00');
-        } else {
-            showToast(`✅ Downloaded ${catalog.packages.length} packages!`, '#39ff14');
+        if (warnings.length > 0) {
+            console.warn(`⚠️ ${warnings.length} warnings:`, warnings.slice(0, 5));
         }
         
-        // Reset dopo 2.5 secondi
         setTimeout(() => {
             convertBtn.innerHTML = originalText;
             convertBtn.style.background = originalBackground || 'linear-gradient(135deg, var(--cyan-neon), #0099cc)';
             convertBtn.style.transform = 'scale(1)';
-            convertBtn.style.boxShadow = '';
             convertBtn.disabled = false;
             convertBtn.classList.remove('success-pulse');
         }, 2500);
         
     } catch (error) {
         console.error('Conversion error:', error);
+        stopSpinner();
         
-        // EFFETTO 3: Errore - rosso con shake
         convertBtn.innerHTML = '❌ FAILED!';
         convertBtn.style.background = 'linear-gradient(135deg, #ff0033, #cc0000)';
         convertBtn.style.transform = 'scale(0.95)';
-        convertBtn.style.boxShadow = '0 0 25px rgba(255, 0, 51, 0.8)';
         convertBtn.classList.remove('converting-pulse');
         convertBtn.classList.add('error-shake');
-        
-        showToast('❌ Conversion failed: ' + error.message, '#ff0033');
         
         setTimeout(() => {
             convertBtn.innerHTML = originalText;
             convertBtn.style.background = originalBackground || 'linear-gradient(135deg, var(--cyan-neon), #0099cc)';
             convertBtn.style.transform = 'scale(1)';
-            convertBtn.style.boxShadow = '';
             convertBtn.disabled = false;
             convertBtn.classList.remove('error-shake');
         }, 2500);
     }
 }
 
-// Funzione helper per toast notifiche
-function showToast(message, color) {
-    const toast = document.createElement('div');
-    toast.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%) translateY(20px);
-        background: rgba(0,0,0,0.95);
-        backdrop-filter: blur(10px);
-        color: ${color};
-        padding: 14px 28px;
-        border-radius: 50px;
-        z-index: 100000;
-        font-weight: 900;
-        border: 2px solid ${color};
-        text-align: center;
-        font-size: 0.85rem;
-        letter-spacing: 1px;
-        opacity: 0;
-        transition: all 0.3s ease;
-        box-shadow: 0 0 20px ${color};
-    `;
-    toast.innerHTML = message;
-    document.body.appendChild(toast);
-    
-    setTimeout(() => {
-        toast.style.opacity = '1';
-        toast.style.transform = 'translateX(-50%) translateY(0)';
-    }, 10);
-    
-    setTimeout(() => {
-        toast.style.opacity = '0';
-        toast.style.transform = 'translateX(-50%) translateY(20px)';
-        setTimeout(() => toast.remove(), 300);
-    }, 3000);
-}
-
-// Effetto particelle di successo
 function createSuccessParticles(button) {
     const rect = button.getBoundingClientRect();
     const colors = ['#39ff14', '#00ffee', '#ffffff', '#ffcc00'];
@@ -682,7 +802,8 @@ function createSuccessParticles(button) {
         requestAnimationFrame(animateParticle);
     }
 }
-// ==================== FINE FUNZIONE CONVERSIONE ====================
+
+// ========== TOOL DROPDOWN E MODAL ==========
 
 function setupToolDropdown() {
     const toolDropdown = document.getElementById('tool-dropdown');
@@ -729,6 +850,12 @@ function setupToolModal() {
     const closeBtnRipper = document.getElementById('close-tool-modal-ripper');
     if (closeBtnRipper) closeBtnRipper.onclick = () => closeToolModal(modalRipper);
     if (modalRipper) modalRipper.addEventListener('click', (e) => { if (e.target === modalRipper) closeToolModal(modalRipper); });
+    
+    const convertBtn = document.getElementById('convertPegasusBtn');
+    if (convertBtn && !convertBtn.hasListener) {
+        convertBtn.addEventListener('click', convertExFatToPegasusDirect);
+        convertBtn.hasListener = true;
+    }
 }
 
 function closeToolModal(modal) {
