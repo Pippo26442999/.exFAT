@@ -1,5 +1,23 @@
 [
    {
+    "title": "GreedFall",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/GreedFall.avif",
+    "tags": [
+      "PPSA02981",
+      "v01.003",
+      "EUR",  
+      "3.xx and beyond"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL3g5SVlQSEcxdzJnRXNuSjAzTGRpYy8zcXNQa0JnZXlIbVVzRW03QTZRTFNVQXFFeXRZSGphMnhvRW9KZnJqS1E1dXNNZDgyIiwicyI6IjNwVGFnNHFqbmhlZ3ZVVUxBK2JkaVE9PSIsImkiOiIwcHFmbHpzMXVrMWI3UmllIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT1IzUGVnZ2tnd1Juekg3SlhYRG02Y2UvcGl4QytkSXpZWjZmNElnaXdweng0UC9OR1JybHNiOUVPK1k0NTBkQktkMkQiLCJzIjoicFNIcUdPU05VOWlHaWNCWTcrd2oxZz09IiwiaSI6IklieGk5VDFHR1k2dnp3bVoifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR3VpVTVqanh2SnRUL01SZDluTUhFeTljUmRSRE13VG5jUGpuZEViOHlWU2hkQkdQMnFOUG9ONzVVcHgxWDBEU2p3PT0iLCJzIjoiQUFVTjdmMno4a0JRWWh1OGlqVXNPUT09IiwiaSI6IjhEVlBJUEsrRkVTbGxWK1QifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZE9GcnIwdlEvYW5xOEtwaHZnazZqajc3MjU2cWxJMHliYTBKM3RUQVZwVkVhdXMxZDEyZkptS0NDeE1EeTA3RTNQOWtVelplIiwicyI6IjNzemtpSnFtcFJsU2ErbTE1SzdNRXc9PSIsImkiOiJyVXFZenFrS0hWaFJjVnlUIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWHh5enpEQ1JZbStrdHd0Uk5DcVZnUUNzYkRIUU8xNTkvbm1IeDhqRXdjeTlZUnhyVE9CUXQwcTJUTXE5UlRwdXZRPT0iLCJzIjoiTk40QTBCU1ZCMk53SC9KWmZWeFZVUT09IiwiaSI6IjNJMnRrRFQvV1dNa3YrT0MifQ==",
+    "credits_files": "BedroZen & SuperPSX",
+    "credits_dlc": "Pkykzhack",
+    "size": "19GB"
+  },
+   {
     "title": "Tales of Arise",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Tales_of_Arise.avif",
     "tags": [
