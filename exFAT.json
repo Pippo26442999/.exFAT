@@ -1,5 +1,23 @@
 [
    {
+    "title": "Dead Rising Deluxe Remaster",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dead_Rising_Deluxe_Remaster.avif",
+    "tags": [
+      "PPSA02257",
+      "v01.000",
+      "EUR", 
+      "DLCs Merged",  
+      "4.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZ28wM1RDVWJmbXJFVDhQQ2ovZ3ladEtUdm1kZktjTmF2L0NHMGMvWjIwc2traUhwUG9VUkxyTHhacC80SjBFQ293PT0iLCJzIjoiMEw5RCsxUlJmaXJKWXhQc1RIaVM4Zz09IiwiaSI6Imh0ZVZoVStFRG11R2FyTWIifQ==",
+    "credits_files": "High-Speed007 & DUPLEX",
+    "credits_backport": "BestPig",
+    "popular": "on",
+    "size": "110GB"
+  },
+   {
     "title": "Guilty Gear Strive",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Guilty_Gear_Strive.webp",
     "tags": [
