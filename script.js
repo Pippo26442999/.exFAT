@@ -1054,11 +1054,32 @@ function updateModalContentWithRipple(game) {
         if (game.dlc_data) dlcBtns += createModalBtnLocal(game.dlc_data, 'DATA');
         if (dlcBtns) { dlcSection.style.display = 'block'; dlcContainer.innerHTML = dlcBtns; } else dlcSection.style.display = 'none';
         
+        // MODIFICATO: Nuova logica per i crediti
         let parts = [];
         const fileAuthor = game.credits_files, bpAuthor = game.credits_backport, dlcAuthor = game.credits_dlc || game.credits_dlcs;
-        if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
-        else { if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`); if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`); }
-        if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+        
+        // CASO: Files e BackPort sono la stessa persona
+        if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
+            if (dlcAuthor) {
+                parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
+            } else {
+                parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
+            }
+        }
+        // CASO: Files e DLC sono la stessa persona
+        else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
+            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
+            if (bpAuthor && bpAuthor !== fileAuthor) {
+                parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+            }
+        }
+        // CASO: Tutti diversi
+        else {
+            if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
+            if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
+            if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+        }
+        
         let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
         creditsContainer.innerHTML = creditsText;
         
@@ -1469,13 +1490,36 @@ function openGameModal(game, event) {
     let dlcBtns = '';
     if (game.dlc_akia) dlcBtns += createModalBtnLocal(game.dlc_akia, 'AKIA'); if (game.dlc_viki) dlcBtns += createModalBtnLocal(game.dlc_viki, 'VIKI'); if (game.dlc_buzz) dlcBtns += createModalBtnLocal(game.dlc_buzz, 'BUZZ'); if (game.dlc_data) dlcBtns += createModalBtnLocal(game.dlc_data, 'DATA');
     if (dlcBtns) { dlcSection.style.display = 'block'; dlcContainer.innerHTML = dlcBtns; } else dlcSection.style.display = 'none';
+    
+    // MODIFICATO: Nuova logica per i crediti
     let parts = [];
     const fileAuthor = game.credits_files, bpAuthor = game.credits_backport, dlcAuthor = game.credits_dlc || game.credits_dlcs;
-    if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
-    else { if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`); if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`); }
-    if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+    
+    // CASO: Files e BackPort sono la stessa persona
+    if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
+        if (dlcAuthor) {
+            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
+        } else {
+            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
+        }
+    }
+    // CASO: Files e DLC sono la stessa persona
+    else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
+        parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
+        if (bpAuthor && bpAuthor !== fileAuthor) {
+            parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+        }
+    }
+    // CASO: Tutti diversi
+    else {
+        if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
+        if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
+        if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+    }
+    
     let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
     document.getElementById('modal-credits').innerHTML = creditsText;
+    
     const instSection = document.getElementById('modal-instructions');
     if (game.how_to_play) { instSection.style.display = 'block'; document.getElementById('modal-instructions-text').innerHTML = game.how_to_play; } else instSection.style.display = 'none';
     const updatesSection = document.getElementById('modal-updates');
@@ -1594,12 +1638,33 @@ function renderGames() {
 }
 
 function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, gameTitle) {
+    // MODIFICATO: Nuova logica per i crediti
     let parts = [];
     const clean = (str) => (str && str !== "undefined" && str.trim() !== "") ? str.trim() : null;
     const fileAuthor = clean(fAuth), bpAuthor = clean(bAuth), dlcAuthor = clean(dAuth), playInstructions = clean(hPlay);
-    if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
-    else { if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`); if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`); }
-    if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+    
+    // CASO: Files e BackPort sono la stessa persona
+    if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
+        if (dlcAuthor) {
+            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
+        } else {
+            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
+        }
+    }
+    // CASO: Files e DLC sono la stessa persona
+    else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
+        parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
+        if (bpAuthor && bpAuthor !== fileAuthor) {
+            parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+        }
+    }
+    // CASO: Tutti diversi
+    else {
+        if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
+        if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
+        if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+    }
+    
     let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
     let updateHTML = "";
     const updates = allUpdates[gameTitle];
