@@ -1,5 +1,23 @@
 [
    {
+    "title": "Guilty Gear Strive",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Guilty_Gear_Strive.webp",
+    "tags": [
+      "PPSA02257",
+      "v01.030",
+      "EUR",  
+      "3.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaS9CcW42blhQdTh6ZkxnSTZHUHcwaFE3NUo5Qll5ZVdNdHhxa2tER2NCVEFpZzVtMjU2ZTI1MXR4WWRqbUNHQS93PT0iLCJzIjoiQm1sVlpHVnd5RmYzakY2R2VkVXZnQT09IiwiaSI6IlM1bTNmRHpUWklmTC82SVgifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibTdUTzVhTmtNZGFVQnRDOWtsOXF3emRIdzZqVmtqeVprZmdsOVQ5ekozQXRBa2J0elNtS2RLeGh2WTY3eldCY3F3MVdmVWN1IiwicyI6IkF1RXlMVFJUcEhNN0UwNXgyeWZud3c9PSIsImkiOiJtOGdLRFpLWkhvU3Z6TWtIIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoic1VHNEVzdTBOZ1Z3ODJJQ0FFV2gyU3ZObGRpTUlTZFp1TTQ3WVZTYTdUdzJzbWFFZUN2UzVZQThLR1c0LzhQaDJ3PT0iLCJzIjoiVnNtUm9vVmVyRjVNdEpvUHFaQ3FCUT09IiwiaSI6IkRoVlA3Qy9ocVBRNUd2cFYifQ==",
+    "credits_files": "C4our20 & TRIFECTA",
+    "credits_dlc": "Pkykzhack",
+    "size": "62GB"
+  },
+   {
     "title": "GreedFall",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/GreedFall.avif",
     "tags": [
