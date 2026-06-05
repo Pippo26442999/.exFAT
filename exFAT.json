@@ -6,7 +6,7 @@
       "PPSA02257",
       "v01.030",
       "EUR",  
-      "3.xx and beyond"
+      "4.xx BackPort"
     ],
     "akia_url": "",
     "viki_url": "",
@@ -14,6 +14,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibTdUTzVhTmtNZGFVQnRDOWtsOXF3emRIdzZqVmtqeVprZmdsOVQ5ekozQXRBa2J0elNtS2RLeGh2WTY3eldCY3F3MVdmVWN1IiwicyI6IkF1RXlMVFJUcEhNN0UwNXgyeWZud3c9PSIsImkiOiJtOGdLRFpLWkhvU3Z6TWtIIn0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoic1VHNEVzdTBOZ1Z3ODJJQ0FFV2gyU3ZObGRpTUlTZFp1TTQ3WVZTYTdUdzJzbWFFZUN2UzVZQThLR1c0LzhQaDJ3PT0iLCJzIjoiVnNtUm9vVmVyRjVNdEpvUHFaQ3FCUT09IiwiaSI6IkRoVlA3Qy9ocVBRNUd2cFYifQ==",
     "credits_files": "C4our20 & TRIFECTA",
+    "credits_backport": "C4our20 & TRIFECTA",
     "credits_dlc": "Pkykzhack",
     "size": "62GB"
   },
