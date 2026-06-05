@@ -187,6 +187,9 @@ let cachedPopularGames = null;
 let cachedIsMobile = null;
 let isLoading = true;
 
+// Cache per i link decifrati di pegasus (solo in memoria, niente localStorage)
+let pegasusDecryptCache = new Map();
+
 const originalSetItem = sessionStorage.setItem.bind(sessionStorage);
 const originalGetItem = sessionStorage.getItem.bind(sessionStorage);
 const originalRemoveItem = sessionStorage.removeItem.bind(sessionStorage);
@@ -195,14 +198,14 @@ sessionStorage.setItem = function(key, value) {
     if (key === 'unlocked' && value === SECRET_HASH) {
         const stack = new Error().stack;
         if (!stack.includes('checkSitePassword') && !stack.includes('init')) {
-            console.warn('馃毃 Tentativo di bypass password rilevato!');
+            console.warn('🚨 Tentativo di bypass password rilevato!');
             return;
         }
     }
     if (key === 'unlocked_time') {
         const stack = new Error().stack;
         if (!stack.includes('checkSitePassword')) {
-            console.warn('馃毃 Tentativo di bypass timestamp rilevato!');
+            console.warn('🚨 Tentativo di bypass timestamp rilevato!');
             return;
         }
     }
@@ -213,7 +216,7 @@ sessionStorage.removeItem = function(key) {
     if (key === 'unlocked' || key === 'unlocked_time') {
         const stack = new Error().stack;
         if (!stack.includes('location.reload') && !stack.includes('startProtection')) {
-            console.warn('馃毃 Tentativo di rimozione illegittima rilevato!');
+            console.warn('🚨 Tentativo di rimozione illegittima rilevato!');
             return;
         }
     }
@@ -249,7 +252,7 @@ function startIntegrityCheck() {
         const unlocked = originalGetItem('unlocked');
         if (unlocked === SECRET_HASH) {
             if (!checkIntegrity()) {
-                alert("鈿狅笍 Rilevata manipolazione! La pagina verr脿 ricaricata.");
+                alert("⚠️ Rilevata manipolazione! La pagina verrà ricaricata.");
                 location.reload();
             }
         }
@@ -501,7 +504,121 @@ function applyFWFilterWithSort() {
 }
 function applyFWFilter() { applyFWFilterWithSort(); }
 
-// ==================== FUNZIONE CONVERSIONE PEGASUS CON EFFETTI ====================
+// ========== FUNZIONI GENERATORE PEGASUS CON PROGRESSO NEL BOTTONE ==========
+// Niente localStorage per i link decifrati, solo cache in memoria
+
+function parseSizeBytesFromString(sizeStr) {
+    if (!sizeStr) return null;
+    const match = sizeStr.match(/(\d+(?:[.,]\d+)?)\s*(KB|MB|GB|TB)/i);
+    if (!match) return null;
+    const value = parseFloat(match[1].replace(',', '.'));
+    const unit = match[2].toUpperCase();
+    const multipliers = { KB: 1024, MB: 1048576, GB: 1073741824, TB: 1099511627776 };
+    return Math.round(value * (multipliers[unit] || 1));
+}
+
+async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
+    const packages = [];
+    const title = game.title || '';
+    const tags = game.tags || [];
+    
+    let titleId = null;
+    for (const tag of tags) {
+        const match = tag.match(/\b([A-Z]{4}\d{5})\b/);
+        if (match) {
+            titleId = match[1];
+            break;
+        }
+    }
+    
+    if (!title) {
+        warnings.push(`item ${itemNumber}: title is required`);
+        return packages;
+    }
+    
+    const groupedLinks = new Map();
+    const seen = new Set();
+    
+    for (const [key, value] of Object.entries(game)) {
+        if (typeof value !== 'string') continue;
+        if (!value.startsWith('http://') && !value.startsWith('https://')) continue;
+        
+        if (key === 'image' || key === 'poster' || key === 'img') continue;
+        
+        let decodedUrl = value;
+        if (PippoExfatConverter.isLinkLockUrl(value)) {
+            if (pegasusDecryptCache.has(value)) {
+                decodedUrl = pegasusDecryptCache.get(value);
+            } else {
+                try {
+                    decodedUrl = await originalDecrypt(value);
+                    pegasusDecryptCache.set(value, decodedUrl);
+                } catch (error) {
+                    warnings.push(`${title}: could not decrypt ${key}: ${error.message}`);
+                    continue;
+                }
+            }
+        }
+        
+        let group = 'files';
+        let mirror = key;
+        
+        if (key.includes('standard')) group = 'standard';
+        else if (key.includes('backport')) group = 'backport';
+        else if (key.includes('dlc')) group = 'dlc';
+        else if (key.includes('dump')) group = 'dump';
+        
+        if (key.includes('akia')) mirror = 'akia';
+        else if (key.includes('viki')) mirror = 'viki';
+        else if (key.includes('buzz')) mirror = 'buzz';
+        else if (key.includes('data')) mirror = 'data';
+        
+        let name = mirror.charAt(0).toUpperCase() + mirror.slice(1);
+        if (group !== 'files') {
+            name = `${group.charAt(0).toUpperCase() + group.slice(1)} - ${name}`;
+        }
+        
+        const dedupeKey = `${group}\0${name.toLowerCase()}\0${decodedUrl}`;
+        if (seen.has(dedupeKey)) continue;
+        if (!groupedLinks.has(group)) groupedLinks.set(group, []);
+        groupedLinks.get(group).push({ name, url: decodedUrl });
+        seen.add(dedupeKey);
+    }
+    
+    const allLinks = [];
+    for (const [group, links] of groupedLinks) {
+        for (const link of links) {
+            allLinks.push(link);
+        }
+    }
+    
+    if (allLinks.length === 0) {
+        return packages;
+    }
+    
+    const descLines = [];
+    if (tags && tags.length) descLines.push(`Tags: ${tags.join(', ')}`);
+    if (game.size) descLines.push(`Size: ${game.size}`);
+    const credits = [];
+    if (game.credits_files) credits.push(`Files: ${game.credits_files}`);
+    if (game.credits_backport) credits.push(`Backport: ${game.credits_backport}`);
+    if (credits.length) descLines.push(`Credits: ${credits.join('; ')}`);
+    if (game.how_to_play) descLines.push(`How to play: ${game.how_to_play}`);
+    
+    packages.push({
+        titleId: titleId || `GAME_${itemNumber}`,
+        title: title,
+        version: "1.0",
+        category: "game",
+        posterUrl: game.image || null,
+        description: descLines.join('\n'),
+        downloadLinks: allLinks,
+        sizeBytes: parseSizeBytesFromString(game.size)
+    });
+    
+    return packages;
+}
+
 async function convertExFatToPegasusDirect() {
     if (!allGames || allGames.length === 0) {
         alert("No game data loaded. Please wait for the library to load.");
@@ -513,123 +630,89 @@ async function convertExFatToPegasusDirect() {
     
     const originalText = convertBtn.innerHTML;
     const originalBackground = convertBtn.style.background;
+    const totalGames = allGames.length;
     
-    // EFFETTO 1: Pulsante in conversione - animazione di caricamento
-    convertBtn.innerHTML = '馃攧 CONVERTING...';
+    convertBtn.innerHTML = '🔄 0%';
     convertBtn.disabled = true;
     convertBtn.style.background = 'linear-gradient(135deg, #ff8800, #ff5500)';
-    convertBtn.style.transform = 'scale(0.98)';
-    convertBtn.style.boxShadow = '0 0 20px rgba(255, 136, 0, 0.6)';
-    convertBtn.style.transition = 'all 0.2s ease';
+    convertBtn.style.opacity = '0.8';
     
-    // Aggiungi classe per animazione pulse
-    convertBtn.classList.add('converting-pulse');
+    let warningCount = 0;
     
     try {
-        const { catalog, warnings } = await PippoExfatConverter.convertExFatToPegasus(allGames);
+        const originalDecrypt = PippoExfatConverter.decryptLinkLockUrl;
+        const allPackages = [];
+        const warnings = [];
+        
+        for (let i = 0; i < allGames.length; i++) {
+            const game = allGames[i];
+            const current = i + 1;
+            const percent = Math.round((current / totalGames) * 100);
+            
+            let shortName = game.title;
+            if (shortName.length > 25) {
+                shortName = shortName.substring(0, 22) + '...';
+            }
+            convertBtn.innerHTML = `🔄 ${percent}% - ${shortName}`;
+            
+            const result = await convertSingleGame(game, current, warnings, originalDecrypt);
+            allPackages.push(...result);
+            warningCount = warnings.length;
+        }
+        
+        convertBtn.innerHTML = '📦 Creating JSON...';
+        
+        const catalog = {
+            name: "exFAT Pegasus",
+            version: 1,
+            packages: allPackages,
+            _generated: new Date().toISOString(),
+            _stats: { totalItems: allGames.length, totalPackages: allPackages.length }
+        };
+        
         const jsonStr = JSON.stringify(catalog, null, 2);
         const blob = new Blob([jsonStr], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
         a.download = 'exFAT-Pegasus.json';
-        a.style.display = 'none';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
         
-        // EFFETTO 2: Download completato - successo
-        convertBtn.innerHTML = '鉁� DOWNLOADED!';
+        convertBtn.innerHTML = '✅ DOWNLOADED!';
         convertBtn.style.background = 'linear-gradient(135deg, #39ff14, #00cc00)';
-        convertBtn.style.transform = 'scale(1.05)';
-        convertBtn.style.boxShadow = '0 0 30px rgba(57, 255, 20, 0.8)';
-        convertBtn.classList.remove('converting-pulse');
-        convertBtn.classList.add('success-pulse');
+        convertBtn.style.opacity = '1';
         
-        // Effetto particelle di successo
         createSuccessParticles(convertBtn);
         
-        if (warnings && warnings.length > 0) {
-            console.warn('Conversion warnings:', warnings);
-            showToast(`鈿狅笍 ${warnings.length} warning(s) - Check console`, '#ffaa00');
-        } else {
-            showToast(`鉁� Downloaded ${catalog.packages.length} packages!`, '#39ff14');
+        if (warnings.length > 0) {
+            console.warn(`⚠️ ${warnings.length} warnings:`, warnings.slice(0, 5));
         }
         
-        // Reset dopo 2.5 secondi
         setTimeout(() => {
             convertBtn.innerHTML = originalText;
-            convertBtn.style.background = originalBackground || 'linear-gradient(135deg, var(--cyan-neon), #0099cc)';
-            convertBtn.style.transform = 'scale(1)';
-            convertBtn.style.boxShadow = '';
+            convertBtn.style.background = originalBackground;
             convertBtn.disabled = false;
-            convertBtn.classList.remove('success-pulse');
-        }, 2500);
+            convertBtn.style.opacity = '1';
+        }, 2000);
         
     } catch (error) {
         console.error('Conversion error:', error);
         
-        // EFFETTO 3: Errore - rosso con shake
-        convertBtn.innerHTML = '鉂� FAILED!';
+        convertBtn.innerHTML = '❌ FAILED!';
         convertBtn.style.background = 'linear-gradient(135deg, #ff0033, #cc0000)';
-        convertBtn.style.transform = 'scale(0.95)';
-        convertBtn.style.boxShadow = '0 0 25px rgba(255, 0, 51, 0.8)';
-        convertBtn.classList.remove('converting-pulse');
-        convertBtn.classList.add('error-shake');
-        
-        showToast('鉂� Conversion failed: ' + error.message, '#ff0033');
         
         setTimeout(() => {
             convertBtn.innerHTML = originalText;
-            convertBtn.style.background = originalBackground || 'linear-gradient(135deg, var(--cyan-neon), #0099cc)';
-            convertBtn.style.transform = 'scale(1)';
-            convertBtn.style.boxShadow = '';
+            convertBtn.style.background = originalBackground;
             convertBtn.disabled = false;
-            convertBtn.classList.remove('error-shake');
-        }, 2500);
+            convertBtn.style.opacity = '1';
+        }, 2000);
     }
 }
 
-// Funzione helper per toast notifiche
-function showToast(message, color) {
-    const toast = document.createElement('div');
-    toast.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%) translateY(20px);
-        background: rgba(0,0,0,0.95);
-        backdrop-filter: blur(10px);
-        color: ${color};
-        padding: 14px 28px;
-        border-radius: 50px;
-        z-index: 100000;
-        font-weight: 900;
-        border: 2px solid ${color};
-        text-align: center;
-        font-size: 0.85rem;
-        letter-spacing: 1px;
-        opacity: 0;
-        transition: all 0.3s ease;
-        box-shadow: 0 0 20px ${color};
-    `;
-    toast.innerHTML = message;
-    document.body.appendChild(toast);
-    
-    setTimeout(() => {
-        toast.style.opacity = '1';
-        toast.style.transform = 'translateX(-50%) translateY(0)';
-    }, 10);
-    
-    setTimeout(() => {
-        toast.style.opacity = '0';
-        toast.style.transform = 'translateX(-50%) translateY(20px)';
-        setTimeout(() => toast.remove(), 300);
-    }, 3000);
-}
-
-// Effetto particelle di successo
 function createSuccessParticles(button) {
     const rect = button.getBoundingClientRect();
     const colors = ['#39ff14', '#00ffee', '#ffffff', '#ffcc00'];
@@ -682,7 +765,8 @@ function createSuccessParticles(button) {
         requestAnimationFrame(animateParticle);
     }
 }
-// ==================== FINE FUNZIONE CONVERSIONE ====================
+
+// ========== TOOL DROPDOWN E MODAL ==========
 
 function setupToolDropdown() {
     const toolDropdown = document.getElementById('tool-dropdown');
@@ -729,6 +813,12 @@ function setupToolModal() {
     const closeBtnRipper = document.getElementById('close-tool-modal-ripper');
     if (closeBtnRipper) closeBtnRipper.onclick = () => closeToolModal(modalRipper);
     if (modalRipper) modalRipper.addEventListener('click', (e) => { if (e.target === modalRipper) closeToolModal(modalRipper); });
+    
+    const convertBtn = document.getElementById('convertPegasusBtn');
+    if (convertBtn && !convertBtn.hasListener) {
+        convertBtn.addEventListener('click', convertExFatToPegasusDirect);
+        convertBtn.hasListener = true;
+    }
 }
 
 function closeToolModal(modal) {
@@ -770,7 +860,7 @@ async function init() {
         const overlay = document.getElementById('site-lock-overlay');
         if (overlay) overlay.remove();
         const grid = document.getElementById('game-grid');
-        if (grid) grid.innerHTML = `<div style="text-align:center; padding:60px; grid-column:1/-1;"><div style="font-size:3rem; margin-bottom:20px;">馃敀</div><h2 style="color:var(--cyan-neon);">Access Restricted</h2><p style="color:rgba(255,255,255,0.6);">This content is temporarily unavailable. Please try again later.</p><p style="color:rgba(255,255,255,0.4); font-size:0.8rem; margin-top:20px;">Reference: ERR_${DEFENSE_TIMESTAMP}</p></div>`;
+        if (grid) grid.innerHTML = `<div style="text-align:center; padding:60px; grid-column:1/-1;"><div style="font-size:3rem; margin-bottom:20px;">🔒</div><h2 style="color:var(--cyan-neon);">Access Restricted</h2><p style="color:rgba(255,255,255,0.6);">This content is temporarily unavailable. Please try again later.</p><p style="color:rgba(255,255,255,0.4); font-size:0.8rem; margin-top:20px;">Reference: ERR_${DEFENSE_TIMESTAMP}</p></div>`;
         const popular = document.getElementById('popular-section');
         if (popular) popular.style.display = 'none';
         const resultCounter = document.getElementById('result-counter');
@@ -1113,7 +1203,7 @@ function setupSearchModal() {
         const searchResults = allGames.filter(g => { const matchesSearch = g.title.toLowerCase().includes(lowerTerm); let gameFW = 1; if (g.tags && g.tags.length > 0) { let foundVersions = []; g.tags.forEach(tag => { const matches = tag.match(/(\d+)\.xx/gi); if (matches) matches.forEach(m => { const num = parseInt(m.match(/\d+/)[0], 10); foundVersions.push(num); }); }); if (foundVersions.length > 0) gameFW = Math.min(...foundVersions); } return matchesSearch && gameFW <= selectedFW; });
         statsSpan.textContent = searchResults.length;
         statsSpan.style.animation = 'none'; statsSpan.offsetHeight; statsSpan.style.animation = 'fadeIn 0.2s ease';
-        if (searchResults.length === 0) { resultsContainer.innerHTML = '<div class="no-results">馃様 Nessun gioco trovato per "' + escapeHtml(lowerTerm) + '"</div>'; return; }
+        if (searchResults.length === 0) { resultsContainer.innerHTML = '<div class="no-results">😔 Nessun gioco trovato per "' + escapeHtml(lowerTerm) + '"</div>'; return; }
         resultsContainer.innerHTML = searchResults.map(game => `<div class="search-result-item" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><img class="search-result-img" src="${game.image}" alt="${game.title}" loading="lazy" referrerpolicy="no-referrer"><div class="search-result-info"><div class="search-result-title">${escapeHtml(game.title)}</div><div class="search-result-tags">${(game.tags || []).slice(0, 3).map(t => `<span class="search-result-tag">${escapeHtml(t)}</span>`).join('')}${(game.tags || []).length > 3 ? `<span class="search-result-tag">+${game.tags.length - 3}</span>` : ''}</div></div>${game.size ? `<div class="search-result-size">${game.size}</div>` : ''}</div>`).join('');
         document.querySelectorAll('.search-result-item').forEach(el => { el.addEventListener('click', (e) => { e.stopPropagation(); const gameDataAttr = el.getAttribute('data-game'); if (gameDataAttr) { try { const decoded = gameDataAttr.replace(/&quot;/g, '"').replace(/&#39;/g, "'"); const game = JSON.parse(decoded); closeSearch(); setTimeout(() => { isRandomModeActive = false; openGameModal(game, e); }, 300); } catch(err) { console.error("Errore:", err); } } }); });
     }
@@ -1147,7 +1237,7 @@ async function loadLibrary() {
             if (isFlagged) data = generateFakeGames(500);
             allGames = data;
             allGames.forEach((game, index) => { originalOrderMap.set(game.title, index); });
-        } catch (jsonError) { alert("馃毃 ERRORE FATALE: Il tuo file exFAT.json 猫 rotto!\nCorreggi il file JSON e ricarica la pagina."); hideSkeletonLoader(); return; }
+        } catch (jsonError) { alert("🚨 ERRORE FATALE: Il tuo file exFAT.json è rotto!\nCorreggi il file JSON e ricarica la pagina."); hideSkeletonLoader(); return; }
         document.getElementById('fw-filter').value = '99';
         document.getElementById('fw-current').innerText = 'FW: All';
         const mobileFwFilter = document.getElementById('mobile-fw-filter');
@@ -1202,7 +1292,7 @@ function setupCarousel() {
 }
 
 async function hashStr(str) {
-    if (!crypto || !crypto.subtle) { alert("鈿狅笍 ERRORE BROWSER: Per testare la password devi caricare i file su GitHub Pages!"); return null; }
+    if (!crypto || !crypto.subtle) { alert("⚠️ ERRORE BROWSER: Per testare la password devi caricare i file su GitHub Pages!"); return null; }
     const msgUint8 = new TextEncoder().encode(str);
     const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
     const hashArray = Array.from(new Uint8Array(hashBuffer));
@@ -1270,10 +1360,10 @@ function updateSearchResultsExternal(term) {
     const statsSpan = document.getElementById('searchModalStats');
     const lowerTerm = term.toLowerCase().trim();
     const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
-    if (!lowerTerm) { if (resultsContainer) resultsContainer.innerHTML = '<div class="no-results">鉁� Inizia a digitare per cercare giochi...</div>'; if (statsSpan) statsSpan.textContent = '0'; return; }
+    if (!lowerTerm) { if (resultsContainer) resultsContainer.innerHTML = '<div class="no-results">✨ Inizia a digitare per cercare giochi...</div>'; if (statsSpan) statsSpan.textContent = '0'; return; }
     const searchResults = allGames.filter(g => { const matchesSearch = g.title.toLowerCase().includes(lowerTerm); let gameFW = 1; if (g.tags && g.tags.length > 0) { let foundVersions = []; g.tags.forEach(tag => { const matches = tag.match(/(\d+)\.xx/gi); if (matches) matches.forEach(m => { const num = parseInt(m.match(/\d+/)[0], 10); foundVersions.push(num); }); }); if (foundVersions.length > 0) gameFW = Math.min(...foundVersions); } return matchesSearch && gameFW <= selectedFW; });
     if (statsSpan) statsSpan.textContent = searchResults.length;
-    if (searchResults.length === 0) { if (resultsContainer) resultsContainer.innerHTML = '<div class="no-results">馃様 Nessun gioco trovato per "' + escapeHtml(lowerTerm) + '"</div>'; return; }
+    if (searchResults.length === 0) { if (resultsContainer) resultsContainer.innerHTML = '<div class="no-results">😔 Nessun gioco trovato per "' + escapeHtml(lowerTerm) + '"</div>'; return; }
     if (resultsContainer) {
         resultsContainer.innerHTML = searchResults.map(game => `<div class="search-result-item" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><img class="search-result-img" src="${game.image}" alt="${game.title}" loading="lazy" referrerpolicy="no-referrer"><div class="search-result-info"><div class="search-result-title">${escapeHtml(game.title)}</div><div class="search-result-tags">${(game.tags || []).slice(0, 3).map(t => `<span class="search-result-tag">${escapeHtml(t)}</span>`).join('')}${(game.tags || []).length > 3 ? `<span class="search-result-tag">+${game.tags.length - 3}</span>` : ''}</div></div>${game.size ? `<div class="search-result-size">${game.size}</div>` : ''}</div>`).join('');
         document.querySelectorAll('.search-result-item').forEach(el => { el.addEventListener('click', (e) => { e.stopPropagation(); const gameDataAttr = el.getAttribute('data-game'); if (gameDataAttr) { try { const decoded = gameDataAttr.replace(/&quot;/g, '"').replace(/&#39;/g, "'"); const game = JSON.parse(decoded); const overlay = document.getElementById('searchModalOverlay'); if (overlay) overlay.classList.remove('active'); setTimeout(() => { isRandomModeActive = false; openGameModal(game, e); }, 300); } catch(err) { console.error("Errore:", err); } } }); });
@@ -1388,7 +1478,7 @@ function renderPopularGames() {
     const isMobile = window.innerWidth <= 768;
     if (cachedPopularGames && cachedIsMobile === isMobile) {
         let htmlContent = '';
-        cachedPopularGames.forEach(game => { let updateBadge = ''; const updates = allUpdates[game.title]; if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; } htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">鉁� Click for details</div></div>`; });
+        cachedPopularGames.forEach(game => { let updateBadge = ''; const updates = allUpdates[game.title]; if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; } htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`; });
         track.innerHTML = htmlContent + htmlContent;
         attachPopularCardEvents();
         return;
@@ -1401,7 +1491,7 @@ function renderPopularGames() {
     cachedPopularGames = selectedGames;
     cachedIsMobile = isMobile;
     let htmlContent = '';
-    selectedGames.forEach(game => { let updateBadge = ''; const updates = allUpdates[game.title]; if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; } htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">鉁� Click for details</div></div>`; });
+    selectedGames.forEach(game => { let updateBadge = ''; const updates = allUpdates[game.title]; if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; } htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`; });
     track.innerHTML = htmlContent + htmlContent;
     attachPopularCardEvents();
 }
@@ -1477,11 +1567,11 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, 
     let updateHTML = "";
     const updates = allUpdates[gameTitle];
     if (updates && updates.length > 0) {
-        updateHTML = `<div class="download-updates-card"><div class="download-updates-title">馃攧 OLD RELEASES</div>${updates.map(upd => { const dp = upd.date.split('-'); const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date; return `<div class="download-update-item"><div><div class="download-update-version">${escapeHtml(upd.version)}</div><div class="download-update-date">Released: ${formattedDate} (${upd.size || 'N/A'})</div></div><div class="download-update-links">${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="download-update-link">AKIA</a>` : ''}${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="download-update-link">VIKI</a>` : ''}${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="download-update-link">BUZZ</a>` : ''}${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="download-update-link">DATA</a>` : ''}</div></div>`; }).join('')}</div>`;
+        updateHTML = `<div class="download-updates-card"><div class="download-updates-title">🔄 OLD RELEASES</div>${updates.map(upd => { const dp = upd.date.split('-'); const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date; return `<div class="download-update-item"><div><div class="download-update-version">${escapeHtml(upd.version)}</div><div class="download-update-date">Released: ${formattedDate} (${upd.size || 'N/A'})</div></div><div class="download-update-links">${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="download-update-link">AKIA</a>` : ''}${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="download-update-link">VIKI</a>` : ''}${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="download-update-link">BUZZ</a>` : ''}${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="download-update-link">DATA</a>` : ''}</div></div>`; }).join('')}</div>`;
     }
     let instHTML = "";
-    if (isDLC) instHTML = `<div class="download-instruction-card"><div class="download-instruction-title">馃幃 HOW TO UNLOCK ALL DLCS</div><div class="download-instruction-text">Install the title (.exFAT) then the DLCs.${playInstructions ? `<br><br><strong>Extra Info:</strong> ${playInstructions}` : ''}</div></div>`;
-    else if (playInstructions) instHTML = `<div class="download-instruction-card"><div class="download-instruction-title">馃摉 INSTRUCTIONS / HOW TO PLAY</div><div class="download-instruction-text">${playInstructions}</div></div>`;
+    if (isDLC) instHTML = `<div class="download-instruction-card"><div class="download-instruction-title">🎮 HOW TO UNLOCK ALL DLCS</div><div class="download-instruction-text">Install the title (.exFAT) then the DLCs.${playInstructions ? `<br><br><strong>Extra Info:</strong> ${playInstructions}` : ''}</div></div>`;
+    else if (playInstructions) instHTML = `<div class="download-instruction-card"><div class="download-instruction-title">📖 INSTRUCTIONS / HOW TO PLAY</div><div class="download-instruction-text">${playInstructions}</div></div>`;
     const modalContent = `<div class="download-credit-card"><div class="download-credit-text">${creditsText}</div></div>${instHTML}${updateHTML}`;
     showDownloadModal(modalContent, url);
 }
