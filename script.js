@@ -187,7 +187,6 @@ let cachedPopularGames = null;
 let cachedIsMobile = null;
 let isLoading = true;
 
-// Cache per i link decifrati di pegasus (solo in memoria, niente localStorage)
 let pegasusDecryptCache = new Map();
 
 const originalSetItem = sessionStorage.setItem.bind(sessionStorage);
@@ -504,9 +503,6 @@ function applyFWFilterWithSort() {
 }
 function applyFWFilter() { applyFWFilterWithSort(); }
 
-// ========== FUNZIONI GENERATORE PEGASUS CON PROGRESSO NEL BOTTONE ==========
-// Niente localStorage per i link decifrati, solo cache in memoria
-
 function parseSizeBytesFromString(sizeStr) {
     if (!sizeStr) return null;
     const match = sizeStr.match(/(\d+(?:[.,]\d+)?)\s*(KB|MB|GB|TB)/i);
@@ -632,7 +628,6 @@ async function convertExFatToPegasusDirect() {
     const originalBackground = convertBtn.style.background;
     const totalGames = allGames.length;
     
-    // Animazione spinner
     let animationInterval = null;
     const spinnerFrames = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'];
     let frameIndex = 0;
@@ -655,7 +650,6 @@ async function convertExFatToPegasusDirect() {
         }
     };
     
-    // Stato iniziale - con effetto pulsante
     convertBtn.innerHTML = '⠋ 0%';
     convertBtn.disabled = true;
     convertBtn.style.background = 'linear-gradient(135deg, #ff8800, #ff5500)';
@@ -677,7 +671,6 @@ async function convertExFatToPegasusDirect() {
             const current = i + 1;
             const percent = Math.round((current / totalGames) * 100);
             
-            // Aggiorna percentuale (lo spinner continua da solo)
             const currentSpinner = convertBtn.innerHTML.charAt(0);
             convertBtn.innerHTML = `${currentSpinner} ${percent}%`;
             
@@ -710,7 +703,6 @@ async function convertExFatToPegasusDirect() {
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
         
-        // Successo - con effetto pulsante verde
         convertBtn.innerHTML = '✅ DOWNLOADED!';
         convertBtn.style.background = 'linear-gradient(135deg, #39ff14, #00cc00)';
         convertBtn.style.transform = 'scale(1.05)';
@@ -803,8 +795,6 @@ function createSuccessParticles(button) {
     }
 }
 
-// ========== TOOL DROPDOWN E MODAL ==========
-
 function setupToolDropdown() {
     const toolDropdown = document.getElementById('tool-dropdown');
     if (!toolDropdown) return;
@@ -878,7 +868,6 @@ function openToolModal(toolName) {
         if (container) container.classList.remove('closing');
         modal.classList.add('show');
         
-        // Aggiungi listener per il bottone di conversione nel modal pegasus
         if (toolName === 'pegasus') {
             setTimeout(() => {
                 const convertBtn = document.getElementById('convertPegasusBtn');
@@ -935,6 +924,7 @@ async function init() {
     setupSortDropdown();
     setupToolDropdown();
     setupToolModal();
+    setupPageJump();
     
     const navLogo = document.getElementById('navLogo');
     if (navLogo) navLogo.addEventListener('click', () => scrollToTop(true));
@@ -1054,11 +1044,9 @@ function updateModalContentWithRipple(game) {
         if (game.dlc_data) dlcBtns += createModalBtnLocal(game.dlc_data, 'DATA');
         if (dlcBtns) { dlcSection.style.display = 'block'; dlcContainer.innerHTML = dlcBtns; } else dlcSection.style.display = 'none';
         
-        // MODIFICATO: Nuova logica per i crediti
         let parts = [];
         const fileAuthor = game.credits_files, bpAuthor = game.credits_backport, dlcAuthor = game.credits_dlc || game.credits_dlcs;
         
-        // CASO: Files e BackPort sono la stessa persona
         if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
             if (dlcAuthor) {
                 parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
@@ -1066,14 +1054,12 @@ function updateModalContentWithRipple(game) {
                 parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
             }
         }
-        // CASO: Files e DLC sono la stessa persona
         else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
             parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
             if (bpAuthor && bpAuthor !== fileAuthor) {
                 parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
             }
         }
-        // CASO: Tutti diversi
         else {
             if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
             if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
@@ -1491,11 +1477,9 @@ function openGameModal(game, event) {
     if (game.dlc_akia) dlcBtns += createModalBtnLocal(game.dlc_akia, 'AKIA'); if (game.dlc_viki) dlcBtns += createModalBtnLocal(game.dlc_viki, 'VIKI'); if (game.dlc_buzz) dlcBtns += createModalBtnLocal(game.dlc_buzz, 'BUZZ'); if (game.dlc_data) dlcBtns += createModalBtnLocal(game.dlc_data, 'DATA');
     if (dlcBtns) { dlcSection.style.display = 'block'; dlcContainer.innerHTML = dlcBtns; } else dlcSection.style.display = 'none';
     
-    // MODIFICATO: Nuova logica per i crediti
     let parts = [];
     const fileAuthor = game.credits_files, bpAuthor = game.credits_backport, dlcAuthor = game.credits_dlc || game.credits_dlcs;
     
-    // CASO: Files e BackPort sono la stessa persona
     if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
         if (dlcAuthor) {
             parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
@@ -1503,14 +1487,12 @@ function openGameModal(game, event) {
             parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
         }
     }
-    // CASO: Files e DLC sono la stessa persona
     else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
         parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
         if (bpAuthor && bpAuthor !== fileAuthor) {
             parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
         }
     }
-    // CASO: Tutti diversi
     else {
         if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
         if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
@@ -1635,15 +1617,136 @@ function renderGames() {
     document.getElementById('page-info').innerText = `Page ${currentPage} of ${totalPages || 1}`;
     document.getElementById('prev-page').disabled = currentPage === 1;
     document.getElementById('next-page').disabled = currentPage >= totalPages;
+    
+if (pageJumpInput) {
+    if (pageJumpInput.value === "") {
+        // lascia vuoto
+    } else {
+        pageJumpInput.value = currentPage;
+    }
+    pageJumpInput.max = totalPages;
+}
+}
+
+function setupPageJump() {
+    const paginationDiv = document.querySelector('.pagination');
+    if (!paginationDiv) return;
+    
+    let jumpWrapper = document.getElementById('pageJumpWrapper');
+    if (!jumpWrapper) {
+        jumpWrapper = document.createElement('div');
+        jumpWrapper.id = 'pageJumpWrapper';
+        jumpWrapper.className = 'page-jump-wrapper';
+        
+        const jumpInput = document.createElement('input');
+        jumpInput.type = 'number';
+        jumpInput.id = 'pageJumpInput';
+        jumpInput.className = 'page-jump-input';
+        jumpInput.placeholder = 'Page';
+        jumpInput.min = '1';
+        jumpInput.value = '1';
+        
+        const jumpBtn = document.createElement('button');
+        jumpBtn.id = 'pageJumpBtn';
+        jumpBtn.className = 'page-jump-btn';
+        jumpBtn.textContent = 'GO';
+        
+        jumpWrapper.appendChild(jumpInput);
+        jumpWrapper.appendChild(jumpBtn);
+        
+        const pageInfo = document.getElementById('page-info');
+        if (pageInfo && pageInfo.parentNode) {
+            pageInfo.parentNode.insertBefore(jumpWrapper, pageInfo.nextSibling);
+        }
+    }
+    
+    let jumpIcon = document.getElementById('pageJumpIconBtn');
+    if (!jumpIcon) {
+        jumpIcon = document.createElement('button');
+        jumpIcon.id = 'pageJumpIconBtn';
+        jumpIcon.className = 'page-jump-icon';
+        jumpIcon.innerHTML = '⛭';
+        jumpIcon.title = 'Go to page';
+        
+        const pageInfo = document.getElementById('page-info');
+        if (pageInfo && pageInfo.parentNode) {
+            pageInfo.parentNode.insertBefore(jumpIcon, pageInfo.nextSibling);
+        }
+    }
+    
+    let jumpModal = document.getElementById('pageJumpModal');
+    if (!jumpModal) {
+        jumpModal = document.createElement('div');
+        jumpModal.id = 'pageJumpModal';
+        jumpModal.className = 'page-jump-modal';
+        jumpModal.innerHTML = `
+            <div class="page-jump-modal-content">
+                <div class="page-jump-modal-header">
+                    <h3>Jump to Page</h3>
+                    <span class="page-jump-modal-close">&times;</span>
+                </div>
+                <div class="page-jump-modal-body">
+                    <input type="number" id="pageJumpModalInput" class="page-jump-modal-input" placeholder="Enter page number" min="1">
+                    <button id="pageJumpModalBtn" class="page-jump-modal-btn">GO</button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(jumpModal);
+    }
+    
+    const jumpInput = document.getElementById('pageJumpInput');
+    const jumpBtn = document.getElementById('pageJumpBtn');
+    const jumpIconBtn = document.getElementById('pageJumpIconBtn');
+    const modal = document.getElementById('pageJumpModal');
+    const modalClose = document.querySelector('.page-jump-modal-close');
+    const modalBtn = document.getElementById('pageJumpModalBtn');
+    const modalInput = document.getElementById('pageJumpModalInput');
+    
+    const executeJump = (targetPage) => {
+        const total = Math.ceil(filteredGames.length / itemsPerPage);
+        let page = parseInt(targetPage);
+        if (isNaN(page)) page = 1;
+        page = Math.max(1, Math.min(page, total));
+        if (page !== currentPage) {
+            currentPage = page;
+            renderGames();
+            scrollToTop(true);
+            if (jumpBtn) {
+                jumpBtn.style.animation = 'jumpPulse 0.5s ease';
+                setTimeout(() => { if (jumpBtn) jumpBtn.style.animation = ''; }, 500);
+            }
+        }
+        if (jumpInput) jumpInput.value = currentPage;
+        if (modalInput) modalInput.value = currentPage;
+        if (modal && modal.classList.contains('show')) modal.classList.remove('show');
+    };
+    
+    if (jumpBtn) jumpBtn.addEventListener('click', () => { if (jumpInput) executeJump(jumpInput.value); });
+    if (jumpInput) jumpInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') executeJump(jumpInput.value); });
+    
+    if (jumpIconBtn && modal) {
+        jumpIconBtn.addEventListener('click', () => {
+            const total = Math.ceil(filteredGames.length / itemsPerPage);
+            if (modalInput) {
+                modalInput.value = currentPage;
+                modalInput.max = total;
+                modalInput.min = 1;
+            }
+            modal.classList.add('show');
+        });
+    }
+    
+    if (modalClose && modal) modalClose.addEventListener('click', () => modal.classList.remove('show'));
+    if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('show'); });
+    if (modalBtn && modalInput) modalBtn.addEventListener('click', () => executeJump(modalInput.value));
+    if (modalInput) modalInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') executeJump(modalInput.value); });
 }
 
 function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, gameTitle) {
-    // MODIFICATO: Nuova logica per i crediti
     let parts = [];
     const clean = (str) => (str && str !== "undefined" && str.trim() !== "") ? str.trim() : null;
     const fileAuthor = clean(fAuth), bpAuthor = clean(bAuth), dlcAuthor = clean(dAuth), playInstructions = clean(hPlay);
     
-    // CASO: Files e BackPort sono la stessa persona
     if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
         if (dlcAuthor) {
             parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
@@ -1651,14 +1754,12 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, 
             parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
         }
     }
-    // CASO: Files e DLC sono la stessa persona
     else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
         parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
         if (bpAuthor && bpAuthor !== fileAuthor) {
             parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
         }
     }
-    // CASO: Tutti diversi
     else {
         if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
         if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
