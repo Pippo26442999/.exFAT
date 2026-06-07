@@ -1234,7 +1234,6 @@
             border-radius: 20px;
         }
 
-        /* STILI PAGE JUMP */
         .page-jump-wrapper {
             display: inline-flex;
             gap: 8px;
@@ -1262,22 +1261,22 @@
             transform: scale(1.02);
         }
 
-.page-jump-btn {
-    background: rgba(2, 2, 5, 0.8);
-    border: 1px solid var(--cyan-neon);
-    color: var(--cyan-neon);
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 900;
-    transition: 0.3s;
-}
+        .page-jump-btn {
+            background: rgba(2, 2, 5, 0.8);
+            border: 1px solid var(--cyan-neon);
+            color: var(--cyan-neon);
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 900;
+            transition: 0.3s;
+        }
 
-.page-jump-btn:hover:not(:disabled) {
-    background: var(--cyan-neon);
-    color: #000;
-    box-shadow: 0 0 15px var(--cyan-neon);
-}
+        .page-jump-btn:hover:not(:disabled) {
+            background: var(--cyan-neon);
+            color: #000;
+            box-shadow: 0 0 15px var(--cyan-neon);
+        }
 
         .page-jump-icon {
             background: rgba(2, 2, 5, 0.8);
@@ -1938,6 +1937,7 @@
                 <div class="dropdown-options" id="tool-options">
                     <div class="option" data-value="pegasus-dl">🐴 pegasus-dl</div>
                     <div class="option" data-value="exfat-ripper">⚡ exFAT-Ripper</div>
+                    <div class="option" data-value="spectrum">🌈 Spectrum Library</div>
                 </div>
             </div>
             
@@ -2004,6 +2004,7 @@
                 <div class="dropdown-options" id="mobile-tool-options">
                     <div class="option" data-value="pegasus-dl">🐴 pegasus-dl</div>
                     <div class="option" data-value="exfat-ripper">⚡ exFAT-Ripper</div>
+                    <div class="option" data-value="spectrum">🌈 Spectrum Library</div>
                 </div>
             </div>
         </div>
@@ -2038,16 +2039,16 @@
 
     <div class="game-grid" id="game-grid"></div>
     
-<div class="pagination">
-    <button id="prev-page" class="page-btn">◀ PREV</button>
-    <span id="page-info">Page 1 of 1</span>
-    <button id="next-page" class="page-btn">NEXT ▶</button>
-    <div class="page-jump-wrapper" id="pageJumpWrapper">
-        <input type="number" id="pageJumpInput" class="page-jump-input" placeholder="Page" min="1">
-        <button id="pageJumpBtn" class="page-jump-btn">GO</button>
+    <div class="pagination">
+        <button id="prev-page" class="page-btn">◀ PREV</button>
+        <span id="page-info">Page 1 of 1</span>
+        <button id="next-page" class="page-btn">NEXT ▶</button>
+        <div class="page-jump-wrapper" id="pageJumpWrapper">
+            <input type="number" id="pageJumpInput" class="page-jump-input" placeholder="Page" min="1">
+            <button id="pageJumpBtn" class="page-jump-btn">GO</button>
+        </div>
+        <button class="page-jump-icon" id="pageJumpIconBtn" title="Go to page">⛭</button>
     </div>
-    <button class="page-jump-icon" id="pageJumpIconBtn" title="Go to page">⛭</button>
-</div>
 
     <footer>
         <p>Pippo Library | All rights reserved</p>
@@ -2248,6 +2249,43 @@
                         <strong>Credits:</strong> Special thanks to <strong>pippo26442999</strong> — creator and maintainer of the PS5 exFAT library.<br>
                         Built by <strong>kerrdec97</strong><br>
                         Linux support (AppImage build, Qt backend) — <strong>Nazky</strong><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOOL MODAL - Spectrum Library -->
+    <div id="tool-modal-spectrum" class="tool-modal-overlay">
+        <div class="tool-modal-container">
+            <div class="tool-modal-header">
+                <h2>🌈 Spectrum Library</h2>
+                <div class="tool-modal-close" id="close-tool-modal-spectrum">✕</div>
+            </div>
+            <div class="tool-modal-body">
+                <div class="tool-card">
+                    <div class="tool-title">Spectrum Library by Phoenixx1202</div>
+                    <div class="tool-description">
+                        <strong>Spectrum Library</strong> is a lightweight content manager designed to organize and deliver supported game files in a simple, clean, and user-friendly way. It provides a streamlined library interface with categories, cover artwork, file details, download controls, and installation status, making it easier for users to browse available content and manage their downloads from one place.
+                    </div>
+                    <ul class="tool-feature">
+                        <li>✅ Lightweight content manager for game files</li>
+                        <li>✅ Clean library interface with categories and cover artwork</li>
+                        <li>✅ File details, download controls, and installation status</li>
+                        <li>✅ Easy browsing and download management from one place</li>
+                        <li>👤 Created by Phoenixx1202</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-title">🙏 Credits</div>
+                    <div class="tool-description">
+                        Thanks to the <strong>SiESTA Team</strong> in particular <strong>Pippo</strong> (<a href="https://x.com/Pippo26442999" target="_blank" style="color: var(--cyan-neon);">@Pippo26442999</a>) for making the games available in an organized way on their website.
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-title">📥 Download</div>
+                    <div class="tool-description">
+                        <a href="https://github.com/Phoenixx1202/Spectrum-Library" target="_blank" style="color: var(--cyan-neon);">🔗 GitHub Repository →</a>
                     </div>
                 </div>
             </div>

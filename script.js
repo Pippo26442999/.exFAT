@@ -539,8 +539,6 @@ async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
         if (typeof value !== 'string') continue;
         if (!value.startsWith('http://') && !value.startsWith('https://')) continue;
         
-        if (key === 'image' || key === 'poster' || key === 'img') continue;
-        
         let decodedUrl = value;
         if (PippoExfatConverter.isLinkLockUrl(value)) {
             if (pegasusDecryptCache.has(value)) {
@@ -809,6 +807,7 @@ function setupToolDropdown() {
             toolDropdown.classList.remove('active');
             if (val === 'pegasus-dl') openToolModal('pegasus');
             else if (val === 'exfat-ripper') openToolModal('ripper');
+            else if (val === 'spectrum') openToolModal('spectrum');
         };
     });
     window.addEventListener('click', () => { optionsContainer.classList.remove('show'); toolDropdown.classList.remove('active'); });
@@ -825,6 +824,7 @@ function setupToolDropdown() {
                 mobileToolDropdown.classList.remove('active');
                 if (val === 'pegasus-dl') openToolModal('pegasus');
                 else if (val === 'exfat-ripper') openToolModal('ripper');
+                else if (val === 'spectrum') openToolModal('spectrum');
             };
         });
     }
@@ -840,6 +840,11 @@ function setupToolModal() {
     const closeBtnRipper = document.getElementById('close-tool-modal-ripper');
     if (closeBtnRipper) closeBtnRipper.onclick = () => closeToolModal(modalRipper);
     if (modalRipper) modalRipper.addEventListener('click', (e) => { if (e.target === modalRipper) closeToolModal(modalRipper); });
+    
+    const modalSpectrum = document.getElementById('tool-modal-spectrum');
+    const closeBtnSpectrum = document.getElementById('close-tool-modal-spectrum');
+    if (closeBtnSpectrum) closeBtnSpectrum.onclick = () => closeToolModal(modalSpectrum);
+    if (modalSpectrum) modalSpectrum.addEventListener('click', (e) => { if (e.target === modalSpectrum) closeToolModal(modalSpectrum); });
     
     const convertBtn = document.getElementById('convertPegasusBtn');
     if (convertBtn && !convertBtn.hasListener) {
@@ -860,7 +865,17 @@ function closeToolModal(modal) {
 }
 
 function openToolModal(toolName) {
-    const modalId = toolName === 'pegasus' ? 'tool-modal' : 'tool-modal-ripper';
+    let modalId;
+    if (toolName === 'pegasus') {
+        modalId = 'tool-modal';
+    } else if (toolName === 'ripper') {
+        modalId = 'tool-modal-ripper';
+    } else if (toolName === 'spectrum') {
+        modalId = 'tool-modal-spectrum';
+    } else {
+        return;
+    }
+    
     const modal = document.getElementById(modalId);
     if (modal) {
         modal.classList.remove('hiding');
@@ -1618,14 +1633,15 @@ function renderGames() {
     document.getElementById('prev-page').disabled = currentPage === 1;
     document.getElementById('next-page').disabled = currentPage >= totalPages;
     
-if (pageJumpInput) {
-    if (pageJumpInput.value === "") {
-        // lascia vuoto
-    } else {
-        pageJumpInput.value = currentPage;
+    const pageJumpInput = document.getElementById('pageJumpInput');
+    if (pageJumpInput) {
+        if (pageJumpInput.value === "") {
+            // lascia vuoto
+        } else {
+            pageJumpInput.value = currentPage;
+        }
+        pageJumpInput.max = totalPages;
     }
-    pageJumpInput.max = totalPages;
-}
 }
 
 function setupPageJump() {
