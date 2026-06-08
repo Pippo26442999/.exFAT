@@ -1,5 +1,24 @@
 [
    {
+    "title": "Saints Row",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Saints_Row.jpg",
+    "tags": [
+      "PPSA02807",
+      "v01.017",
+      "EUR",    
+      "4.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN1JTdnVvZ1Joa1pNWmhLQ2FrMzVKNnhCRXloNUorUGZJRFIrRG1CbFduNDBsQWtWaVZiNnNWR1czU2xvajNJYlRnPT0iLCJzIjoiS25DcHdiMEdpOG9aYUFCcHJ2WEhhZz09IiwiaSI6IlAzTXBBQW9NcG41YW15SmMifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig",
+    "credits_dlc": "Pippo & drakmor",
+    "how_to_play": "Totally Converted in EUR thx to NazkyYT & kerrdec97.",
+    "popular": "on",
+    "size": "75GB"
+  },
+   {
     "title": "Assassins Creed Shadows",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Assassins_Creed_Shadows.avif",
     "tags": [
@@ -620,7 +639,7 @@
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY2ljWnFSVytmNWh1WEgrMmZBMk51STFIRW1sUTFIYkNzOTA2UjJBV1BzQTJ1NzRkSWtUVWt3THJERGlhS2xaZm1BPT0iLCJzIjoiY3VJZEZUakd2emU5NjFGakJwbXZpZz09IiwiaSI6InZuUmhTQjJYMlVrMzlJdWYifQ==",
     "credits_files": "SiESPTA",
     "how_to_play": "Prologue DLC is Unlocked. Enjoy.",
-    "credits_dlc": "drakmor",
+    "credits_dlc": "Pippo & drakmor",
     "size": "20GB"
   },
    {
@@ -883,7 +902,7 @@
     "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia0h2YW1XWDREQ0hkOW50L3Eza05wVUxDUENlMENYYlo5dDBwVXhsMlZUUlh2M1F4R0xsd29OaklpSUgxVFVHNDZLN28iLCJzIjoiNzRWZEF1NHh2MXh0NG1taWhaRzd1dz09IiwiaSI6IlRiRS9yUUN6a0lRUUVNVjUifQ==",
     "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN01YVkhENVZ3Zy8vYythT0pBamt5SVpxWitUbnhaQnRZdkFjRkF4SXBJWE94dUlGd1U2Q2hsQU1OQUcyWllUc1dnPT0iLCJzIjoiRGgvZlBzblhXRTIxTTFoTkJ0K3hrQT09IiwiaSI6IkJGclUvSmdHU2M4RXRRbEgifQ==",
     "credits_files": "High-Speed007",
-    "credits_dlc": "drakmor",
+    "credits_dlc": "Pippo & drakmor",
     "credits_backport": "kerrdec97",
     "popular": "on",
     "size": "79GB"
@@ -937,7 +956,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWVliWlFKaXNpVnRtd2R2OVZVRE1Qek0xTnN3QU9OcDlIQWsxVDdjREFGRCtFc0ZCRi8yazZ4a3hJSjJ4U3pqbGk3VG4iLCJzIjoiZXorUm85VUUydDlaeVFaUDBVZDl4Zz09IiwiaSI6IklRTGRNNlFabE9EZ3BJL2sifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUW5CMG5kWHdURHBMNSt3VnBpUzRDb3ZSVUw3Um1GdjY1WHpqQXhPTlRGSDJHWnlQVTdqVUtrM2tuemtTQXlBMlpBPT0iLCJzIjoiSFhLNHV4cFRxY0dWaktXVlh4ZmVsdz09IiwiaSI6InpDKzRBYjExc2VaYkxzeUgifQ==",
     "credits_files": "DUPLEX & José Carrión",
-    "credits_dlc": "drakmor",
+    "credits_dlc": "Pippo & drakmor",
     "how_to_play": "Only Horror History Visual Filter Pack is available, you can select the filter on Settings then Display. (v01.007 needed for others DLCs)",
     "popular": "on",
     "size": "80GB"
@@ -957,7 +976,7 @@
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQ2FPWDczQktFM3RCWnFIcjIxSjZBb2FQcVdxWnpaS01jcjNxaE5vUVhXa2ZSSDBsYkM0eVlWaFRnV3Y5N0FoTmdRPT0iLCJzIjoiUFVYamV0anJFSUFRUlNURkZWOWd3QT09IiwiaSI6InhJSExNaWtnTzdSNUY0bmYifQ==",
     "credits_files": "High-Speed007",
     "credits_backport": "TRIFECTA",
-    "credits_dlc": "drakmor",
+    "credits_dlc": "Pippo & drakmor",
     "popular": "on",
     "size": "96GB"
   },
@@ -990,7 +1009,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiU0xxU3p2NlhndnFtb1R5REtYTmZtMytiWjhUOWI3RW9zRjFHbjE1ZXFWWnhON3lmdXMzVmZIWXdMQVUySWNUU0p3VVYiLCJzIjoiM0V1L3p3OW9pZ2cxV1Z5Uko1MzRrdz09IiwiaSI6ImxEcGlCL013VUhBNzdRNXIifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN2R3ais4QlJnTGpQQXpDYTBTQlREQWJyUFlKRXJKWlh1MzVkUVRvWnEybHlpeGxIVW44ZStFRkQ3UjROd1FVdktBPT0iLCJzIjoibzRTcmV5MDc0K2swRW9PWmZZMnpaQT09IiwiaSI6ImJXcm1hMENCdlFlNlZpbFAifQ==",
     "credits_files": "High-Speed007",
-    "credits_dlc": "drakmor",
+    "credits_dlc": "Pippo & drakmor",
     "popular": "on",
     "size": "63GB"
   },
@@ -1008,7 +1027,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTEhpbldVMmRLejh1RnBKcjZBZzNaTHppUGVBNk5kbEcwUTVwRENreDFTQTBkK1IyVmV4dVE5RmVxSzlWdDFPeDdIalciLCJzIjoidXlUcyt5d3puRzE0dkJzSFEyTHJFdz09IiwiaSI6IldwM1NYaDMwTDhYN2JFcUwifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaE1qSW0vVk5Ec0NtaWc1WkhJa3ZnZmJFdnI4TXFRTmRzZUdZYUdJRkxmTVV2NERjWGNMMGI1a3FoMmJrU1RiS3RBPT0iLCJzIjoiVk9YTVlyTkdxckFjNk9OZXI2RXhRQT09IiwiaSI6IlIvSXYrM21kbHFJQXJ2K24ifQ==",
     "credits_files": "High-Speed007",
-    "credits_dlc": "drakmor",
+    "credits_dlc": "Pippo & drakmor",
     "popular": "on",
     "size": "14GB"
   },
