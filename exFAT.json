@@ -7,12 +7,16 @@
       "v01.014.001",
       "JPN", 
       "DLCs Merged",  
-      "9.xx and beyond"
+      "Standard (9.xx) + 4.xx BackPork"
     ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicnF0aEdvMnNoa3Zkb3NvSUNLUWJFU3hENzdhYXAwU2hFWm9rSXQzSmNRRkxjMXoxWjhjQVVNUG9RZTNSR0t1cnJsWmhVZzJwIiwicyI6ImdzZVNjOVNPZnlMYnNZaWJSY2REVXc9PSIsImkiOiIzTTVaUVFOR3BnYUdRYXZWIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZzg5UTJtQXNZZWlOZUkzQWtZeWpSU09JZkw0ckkySjZzQk8xL2U0V1pBLy9UMWdKVkIxR2dyVlNkMC9sWVZ4YU1nbnkiLCJzIjoiOEJqRXgyZmdFbk9JeXJFMzRtdmxxQT09IiwiaSI6Ik02TjB0VFQwWFYrYVpmSmUifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicm1WOWJkVVdVN1hYM3pJNG5wQWVJREhjcHpSUHV6ejdzY2hyWjBYM2V6eG5LZmpYTWd4TCszNStHdThWTVNPYnRRPT0iLCJzIjoiRDNiSzZLMnJCZ2JWZVJEWS9VUWpRQT09IiwiaSI6Ik0waVoyY01JK3ZvQTJxVy8ifQ==",
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicnF0aEdvMnNoa3Zkb3NvSUNLUWJFU3hENzdhYXAwU2hFWm9rSXQzSmNRRkxjMXoxWjhjQVVNUG9RZTNSR0t1cnJsWmhVZzJwIiwicyI6ImdzZVNjOVNPZnlMYnNZaWJSY2REVXc9PSIsImkiOiIzTTVaUVFOR3BnYUdRYXZWIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZzg5UTJtQXNZZWlOZUkzQWtZeWpSU09JZkw0ckkySjZzQk8xL2U0V1pBLy9UMWdKVkIxR2dyVlNkMC9sWVZ4YU1nbnkiLCJzIjoiOEJqRXgyZmdFbk9JeXJFMzRtdmxxQT09IiwiaSI6Ik02TjB0VFQwWFYrYVpmSmUifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicm1WOWJkVVdVN1hYM3pJNG5wQWVJREhjcHpSUHV6ejdzY2hyWjBYM2V6eG5LZmpYTWd4TCszNStHdThWTVNPYnRRPT0iLCJzIjoiRDNiSzZLMnJCZ2JWZVJEWS9VUWpRQT09IiwiaSI6Ik0waVoyY01JK3ZvQTJxVy8ifQ==",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT0lvbTVYcU54TFFoVm0wWVNvOEpBZEJSMTN2czd6STArMkVZSmdBeWdjSWtEMEhuR1VLNDkrb0tUNk1ONEdTR0pTdS9walJUIiwicyI6IkNZd2FsVE55dVJIU0xla1hJUkdENUE9PSIsImkiOiJSVWhLYkZlVENaM2ZJQ1k0In0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZG91M1k5ZUpQMm03NkkwY25Md1NwY0czSzU2NmJPOFpNUElQYXVGYzMzTmhKOGVKanhxUS95eGV2T1A0TG8wWXc4WWwiLCJzIjoicHNRWTFyU240a3VGOTNrNlZ4YTA4QT09IiwiaSI6IlllaEJPWU9ZWTQ3RVRIU1kifQ==",
+    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiU3pRMzdvdEpIN0Q4YmdDeWExdnNsSytwV25GUk5vdXBHTkVFTzY2VW5EVjJFSGtGR090ZHdmYTlJZXJqempVdGZRPT0iLCJzIjoidElHaWFheVF0Mm5XK2tTbnNCYXF2Zz09IiwiaSI6ImxDODdLajlrVy9VUnhURFYifQ==",
     "credits_files": "SiESPta",
+    "credits_backport": "BestPig", 
     "credits_dlc": "Pippo & drakmor",
     "popular": "on",
     "size": "90GB"
