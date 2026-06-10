@@ -934,7 +934,6 @@ async function init() {
     setupHintCountdown();
     setupDownloadModal();
     setupDMCAModal();
-    setupFAQModal();
     setupRandomGame();
     setupModalRandomButton();
     setupSortDropdown();
@@ -1239,76 +1238,6 @@ function setupDMCAModal() {
     if (mobileDmcaBtn) { const newMobileBtn = mobileDmcaBtn.cloneNode(true); mobileDmcaBtn.parentNode.replaceChild(newMobileBtn, mobileDmcaBtn); newMobileBtn.addEventListener('click', (e) => { e.preventDefault(); const panel = document.getElementById('mobileMenuPanel'); const overlay = document.getElementById('mobileMenuOverlay'); const hamburger = document.getElementById('hamburgerBtn'); if (panel) panel.classList.remove('open'); if (overlay) overlay.classList.remove('active'); if (hamburger) hamburger.classList.remove('active'); openDMCAModal(); }); }
 }
 
-function setupFAQModal() {
-    const modal = document.getElementById('faq-modal');
-    const closeBtn = document.getElementById('close-faq-modal');
-    const faqLink = document.getElementById('faq-link');
-    
-    const closeModal = () => {
-        if (!modal) return;
-        modal.classList.add('hiding');
-        const container = modal.querySelector('.faq-modal-container');
-        if (container) container.classList.add('closing');
-        setTimeout(() => {
-            modal.classList.remove('show', 'hiding');
-            if (container) container.classList.remove('closing');
-        }, 300);
-    };
-    
-    if (closeBtn) closeBtn.onclick = closeModal;
-    if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-    
-    const openFAQModal = async () => {
-        try {
-            const res = await fetch('FAQ.json?v=' + Date.now());
-            const data = await res.json();
-            const bodyContainer = document.getElementById('faqModalBody');
-            if (bodyContainer) {
-                let html = `<div class="faq-text"><h3 style="color:var(--cyan-neon); margin-bottom:25px; text-align:center;">${data.title}</h3>`;
-                data.sections.forEach(section => {
-                    html += `<div class="faq-question">
-                                <strong>${section.question}</strong>
-                                <p>${section.answer}</p>
-                             </div>`;
-                });
-                html += `</div>`;
-                bodyContainer.innerHTML = html;
-            }
-            if (modal) {
-                modal.classList.remove('hiding');
-                const container = modal.querySelector('.faq-modal-container');
-                if (container) container.classList.remove('closing');
-                modal.classList.add('show');
-            }
-        } catch(err) {
-            console.error("Errore caricamento FAQ:", err);
-            const bodyContainer = document.getElementById('faqModalBody');
-            if (bodyContainer) bodyContainer.innerHTML = '<div class="faq-text"><p>⚠️ Impossibile caricare le FAQ. Riprova più tardi.</p></div>';
-            if (modal) modal.classList.add('show');
-        }
-    };
-    
-    if (faqLink) faqLink.onclick = openFAQModal;
-    
-    // Aggiungi voce FAQ anche nel menu mobile
-    const mobileFwSelector = document.querySelector('.mobile-fw-selector');
-    if (mobileFwSelector && !document.querySelector('.mobile-menu-item.faq-mobile')) {
-        const faqMobileItem = document.createElement('div');
-        faqMobileItem.className = 'mobile-menu-item faq-mobile';
-        faqMobileItem.textContent = '❓ FAQ';
-        faqMobileItem.style.cursor = 'pointer';
-        faqMobileItem.addEventListener('click', () => {
-            const panel = document.getElementById('mobileMenuPanel');
-            const overlay = document.getElementById('mobileMenuOverlay');
-            const hamburger = document.getElementById('hamburgerBtn');
-            if (panel) panel.classList.remove('open');
-            if (overlay) overlay.classList.remove('active');
-            if (hamburger) hamburger.classList.remove('active');
-            openFAQModal();
-        });
-        mobileFwSelector.parentNode.insertBefore(faqMobileItem, mobileFwSelector);
-    }
-}
 function setupSearchModal() {
     const overlay = document.getElementById('searchModalOverlay');
     const searchInput = document.getElementById('searchModalInput');

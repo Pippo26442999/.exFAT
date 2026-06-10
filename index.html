@@ -163,18 +163,6 @@
             100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 255, 238, 0); }
         }
 
-.nav-item#faq-link {
-    color: #fff !important;
-    opacity: 0.4 !important;
-    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-}
-
-.nav-item#faq-link:hover {
-    opacity: 1 !important;
-    text-shadow: 0 0 20px var(--cyan-neon);
-    letter-spacing: 12px;
-}
-
         .converting-pulse {
             animation: convertingPulse 1s infinite;
         }
@@ -1725,117 +1713,6 @@
             margin-bottom: 15px;
         }
 
-/* FAQ MODAL - Stile ciano/neutro (non rosso) */
-.faq-modal-overlay {
-    display: none;
-    position: fixed;
-    z-index: 50000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(12px);
-    align-items: center;
-    justify-content: center;
-}
-.faq-modal-overlay.show {
-    display: flex;
-    animation: fadeInModal 0.3s ease forwards;
-}
-.faq-modal-overlay.hiding {
-    animation: fadeOutModal 0.3s ease forwards;
-}
-.faq-modal-container {
-    background: linear-gradient(135deg, rgba(10, 10, 26, 0.98), rgba(2, 2, 5, 0.98));
-    border: 2px solid var(--cyan-neon);
-    border-radius: 40px;
-    width: 90%;
-    max-width: 650px;
-    overflow: hidden;
-    animation: modalCyberPop 0.5s cubic-bezier(0.34, 1.2, 0.64, 1);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 0 50px rgba(0, 255, 238, 0.2);
-}
-.faq-modal-container.closing {
-    animation: modalCyberOut 0.4s ease forwards;
-}
-.faq-modal-header {
-    position: relative;
-    background: linear-gradient(135deg, rgba(0, 255, 238, 0.15), rgba(0, 100, 150, 0.3));
-    padding: 25px 30px;
-    text-align: center;
-    border-bottom: 1px solid var(--cyan-neon);
-}
-.faq-modal-header h2 {
-    margin: 0;
-    font-size: 1.6rem;
-    letter-spacing: 3px;
-    font-weight: 900;
-    background: linear-gradient(135deg, #fff, var(--cyan-neon));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-transform: uppercase;
-}
-.faq-modal-close {
-    position: absolute;
-    right: 18px;
-    top: 18px;
-    background: rgba(255,255,255,0.1);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.2rem;
-    color: #fff;
-    transition: all 0.3s ease;
-}
-.faq-modal-close:hover {
-    background: var(--cyan-neon);
-    color: #000;
-    transform: rotate(90deg);
-}
-.faq-modal-body {
-    padding: 25px;
-    max-height: 65vh;
-    overflow-y: auto;
-}
-.faq-modal-body::-webkit-scrollbar {
-    width: 5px;
-}
-.faq-modal-body::-webkit-scrollbar-track {
-    background: rgba(255,255,255,0.05);
-    border-radius: 10px;
-}
-.faq-modal-body::-webkit-scrollbar-thumb {
-    background: var(--cyan-neon);
-    border-radius: 10px;
-}
-.faq-text {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #ddd;
-}
-.faq-question {
-    margin-bottom: 25px;
-    border-left: 3px solid var(--cyan-neon);
-    padding-left: 18px;
-}
-.faq-question strong {
-    color: var(--cyan-neon);
-    font-size: 1rem;
-    display: block;
-    margin-bottom: 8px;
-}
-.faq-question p {
-    margin: 0;
-    color: #ccc;
-    line-height: 1.5;
-}
-
         .back-to-top {
             position: fixed;
             bottom: 90px;
@@ -1975,51 +1852,8 @@
                 align-items: center;
                 justify-content: center;
             }
-/* FAQ Nav Item - Verde Neon con effetto hover luminoso */
-.nav-item#faq-link {
-    color: var(--green-neon) !important;
-    opacity: 1 !important;
-    text-shadow: 0 0 8px rgba(57, 255, 20, 0.5);
-    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-    position: relative;
-}
-
-.nav-item#faq-link:hover {
-    color: #ffffff !important;
-    text-shadow: 0 0 15px var(--green-neon), 0 0 25px var(--green-neon);
-    letter-spacing: 12px;
-    transform: scale(1.02);
-}
-
-/* Versione scrolled navbar */
-.nav-item#faq-link:hover {
-    color: #ffffff !important;
-    text-shadow: 0 0 15px var(--green-neon), 0 0 25px var(--green-neon);
-    letter-spacing: 12px;
-    transform: scale(1.02);
-}
-
-/* Versione scrolled navbar */
-nav.scrolled .nav-item#faq-link {
-    font-size: 1.8rem;
-    letter-spacing: 6px;
-}
-
-nav.scrolled .nav-item#faq-link:hover {
-    letter-spacing: 8px;
-}
-
-/* Menu mobile - FAQ uniforme */
-.mobile-menu-item.faq-mobile {
-    color: #fff !important;
-    opacity: 0.7 !important;
-}
-
-.mobile-menu-item.faq-mobile:hover {
-    color: var(--cyan-neon) !important;
-    opacity: 1 !important;
-    padding-left: 25px;
-}        
+        }
+        
         @media (max-width: 480px) {
             .nav-logo .nav-title {
                 display: none;
@@ -2106,8 +1940,7 @@ nav.scrolled .nav-item#faq-link:hover {
                     <div class="option" data-value="spectrum">🌈 Spectrum Library</div>
                 </div>
             </div>
-
-            <div class="nav-item" id="faq-link">FAQ</div>
+            
             <div class="nav-item" id="dmca-link">DMCA</div>
         </div>
         
@@ -2175,6 +2008,7 @@ nav.scrolled .nav-item#faq-link:hover {
                 </div>
             </div>
         </div>
+        <a href="https://ko-fi.com/pippo26442999" target="_blank" class="mobile-kofi-btn"><img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Ko-fi">Support on Ko-fi</a>
     </div>
 
     <div class="search-modal-overlay" id="searchModalOverlay">
@@ -2420,19 +2254,6 @@ nav.scrolled .nav-item#faq-link:hover {
             </div>
         </div>
     </div>
-
-<!-- FAQ MODAL -->
-<div id="faq-modal" class="faq-modal-overlay">
-    <div class="faq-modal-container">
-        <div class="faq-modal-header">
-            <h2>❓ FAQ</h2>
-            <div class="faq-modal-close" id="close-faq-modal">✕</div>
-        </div>
-        <div class="faq-modal-body" id="faqModalBody">
-            <div class="faq-text">Loading...</div>
-        </div>
-    </div>
-</div>
 
     <!-- TOOL MODAL - Spectrum Library -->
     <div id="tool-modal-spectrum" class="tool-modal-overlay">
