@@ -1,0 +1,61 @@
+{
+  "title": "Frequently Asked Questions",
+  "sections": [
+    {
+      "question": "❓ What is Pippo Library?",
+      "answer": "Pippo Library is a curated collection of titles for jailbroken PS5 consoles, organized in exFAT format for easy download and installation."
+    },
+    {
+      "question": "💾 How do I install a game?",
+      "answer": "Download the files from the provided link, copy the format to a USB drive formatted in exFAT, and insert it into the PS5; they also work internally, including in the M2 slot. ShadowMountPlus is highly recommended."
+    },
+    {
+      "question": "📁 How to update .exFAT?",
+      "answer": "Simply use OSFMount or exFAT Image Builder, mount the image and replace what you need."
+    },
+    {
+      "question": "🪄 How can i fix the lag issue?",
+      "answer": "It all depends on the game's optimization. If there's an update for ampr-emu (Only APR titles), do it because it might help. Remember, exFAT or BackPort are never the problem."
+    },
+    {
+      "question": "❌ The game doesnt launch, what can i do?",
+      "answer": "Make sure you have a good external drive, such as an NVMe SSD; a low-quality SSD is often the cause of the problem. If that doesn’t help, move the .exFAT to an internal drive (ext1 or /data/homebrew). All the games in the catalog have been tested on 9.00 with kstuff 1.6.7 and ShadowMountPlus, so you’ll never encounter games that won’t launch."
+    },
+    {
+      "question": "🔄 What does FW: 4.xx / 7.xx / 9.xx mean?",
+      "answer": "This indicates the minimum required PS5 firmware version. Select the filter that matches your version to see only compatible games. For example: if you have FW 4.03, you will see games for version 4.xx and lower."
+    },
+    {
+      "question": "📦 What are STANDARD and BACKPORT?",
+      "answer": "STANDARD is the original game, which requires firmware version 9.xx, for example. BACKPORT is a modified version designed to run on older firmware (e.g., 4.xx or lower)."
+    },
+    {
+      "question": "🎮 How do you use DLCs?",
+      "answer": "Install the format first, then the DLCs."
+    },
+    {
+      "question": "🙏 How can I support the project?",
+      "answer": "You can support me on Ko-f or contribute to the community by reporting new games, backports, or fixes."
+    },
+    {
+      "question": "📱 Is the website optimized for mobile devices?",
+      "answer": "Yes! On smartphones, you'll see a hamburger menu and vertical filters. The carousel and grid adjust automatically."
+    },
+    {
+      "question": "🔐 Why is it asking for my password?",
+      "answer": "To protect the library from automated access and scraping, enter the password you received. Your session will remain active until you exit."
+    },
+    {
+      "question": "⚠️ I got an “Access Denied” message / Have I been flagged as a bot?",
+      "answer": "The anti-bot system is very sensitive. If you use a VPN, automated browsers, or browse too quickly, you may be temporarily blocked. Please refresh the page and wait a few minutes."
+    },
+    {
+      "question": "⚡ What is exFAT-Ripper used for?",
+      "answer": "A Windows/Linux app for browsing your library offline, featuring previews, metadata, and download management. You can find it all in the TOOLS section. If you’d like to suggest a feature or report an issue, please use the dedicated GitHub page (Issues)."
+    },
+    {
+      "question": "🐴 What is pegasus-dl?",
+      "answer": "A tool that lets you download games directly to your PS5 without a PC. Click on TOOL → pegasus-dl for more information. If you’d like to suggest a feature or report an issue, please use the dedicated GitHub page (Issues)."
+    }
+  ]
+}
