@@ -1267,8 +1267,8 @@ function setupFAQModal() {
                 let html = `<div class="faq-text"><h3 style="color:var(--cyan-neon); margin-bottom:25px; text-align:center;">${data.title}</h3>`;
                 data.sections.forEach(section => {
                     html += `<div class="faq-question">
-                                <strong>${section.question}</strong>
-                                <p>${section.answer}</p>
+                                <strong>${escapeHtml(section.question)}</strong>
+                                <p>${escapeHtml(section.answer)}</p>
                              </div>`;
                 });
                 html += `</div>`;
@@ -1290,14 +1290,29 @@ function setupFAQModal() {
     
     if (faqLink) faqLink.onclick = openFAQModal;
     
-    // Aggiungi voce FAQ anche nel menu mobile
-    const mobileFwSelector = document.querySelector('.mobile-fw-selector');
-    if (mobileFwSelector && !document.querySelector('.mobile-menu-item.faq-mobile')) {
-        const faqMobileItem = document.createElement('div');
-        faqMobileItem.className = 'mobile-menu-item faq-mobile';
-        faqMobileItem.textContent = '❓ FAQ';
-        faqMobileItem.style.cursor = 'pointer';
-        faqMobileItem.addEventListener('click', () => {
+    // Gestione FAQ per mobile - cerca l'elemento esistente o crealo
+    let faqMobileItem = document.querySelector('.mobile-menu-item.faq-mobile');
+    if (!faqMobileItem) {
+        // Se non esiste, crealo
+        const mobileMenuPanel = document.getElementById('mobileMenuPanel');
+        const dmcaItem = document.querySelector('.mobile-menu-item.dmca');
+        if (mobileMenuPanel && dmcaItem) {
+            faqMobileItem = document.createElement('div');
+            faqMobileItem.className = 'mobile-menu-item faq-mobile';
+            faqMobileItem.textContent = '❓ FAQ';
+            faqMobileItem.style.cursor = 'pointer';
+            // Inseriscilo prima di dmca
+            dmcaItem.parentNode.insertBefore(faqMobileItem, dmcaItem);
+        }
+    }
+    
+    if (faqMobileItem) {
+        // Rimuovi eventuali listener vecchi clonando
+        const newFaqMobile = faqMobileItem.cloneNode(true);
+        faqMobileItem.parentNode.replaceChild(newFaqMobile, faqMobileItem);
+        newFaqMobile.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
             const panel = document.getElementById('mobileMenuPanel');
             const overlay = document.getElementById('mobileMenuOverlay');
             const hamburger = document.getElementById('hamburgerBtn');
@@ -1306,7 +1321,6 @@ function setupFAQModal() {
             if (hamburger) hamburger.classList.remove('active');
             openFAQModal();
         });
-        mobileFwSelector.parentNode.insertBefore(faqMobileItem, mobileFwSelector);
     }
 }
 function setupSearchModal() {
