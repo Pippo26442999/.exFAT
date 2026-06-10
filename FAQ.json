@@ -11,7 +11,7 @@
     },
     {
       "question": "📁 How to update .exFAT?",
-      "answer": "Simply use OSFMount or exFAT Image Builder, mount the image and replace what you need."
+      "answer": "Simply use OSFMount or exFAT Image Builder, mount the format and replace what you need."
     },
     {
       "question": "🪄 How can i fix the lag issue?",
