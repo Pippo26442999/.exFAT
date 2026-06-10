@@ -42,7 +42,7 @@
       "answer": "Yes! On smartphones, you'll see a hamburger menu and vertical filters. The carousel and grid adjust automatically."
     },
     {
-      "question": "🔐 Why is it asking for my password?",
+      "question": "🔐 Why is it asking for the password?",
       "answer": "To protect the library from automated access and scraping, enter the password you received. Your session will remain active until you exit."
     },
     {
