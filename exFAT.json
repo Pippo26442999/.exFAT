@@ -1,5 +1,27 @@
 [
    {
+    "title": "DEATHLOOP Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Deathloop.webp",
+    "tags": [
+      "PPSA01670",
+      "v01.405",
+      "EUR",   
+      "Standard (5.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "",
+    "standard_viki": "",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib3JRSjlDMVFwdGVHWEt2c3N5bnJSSk4zc3BvWWRzK1V4eVNzUk1yRUtTa3JVNW8wYVlGSGloQlpCVmxmZEU3bTdnPT0iLCJzIjoid1F0cWRlU1ZyWVZjVW8wM1hKSlJzdz09IiwiaSI6IjhyRXkvL0x4V1pWQzFqNm8ifQ==",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTXNpRzk5YXdyNVRtZ3NDSU1uUFhSdXdEV0FvQ0dkMXdIcFUzZmkrVmVjMHowVHpOK3M4RWZPaGtaZzQ2WHg5UW5lTEZIdVpWIiwicyI6IkY2WlZZYkliWDV6MzFoS05iYS9pNnc9PSIsImkiOiJyZ2lOcFcxS3JPTHJpek5sIn0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidi9MUkxiWDJDZjlOZ3V6TEdOYStHU3VvemdqcXhyeUl0UVBJbjhvRmRyeUxJMmxYY25GVjBoOVBGbVk2cHR2WVZyTXQiLCJzIjoiRjVhWEZ3cDBpSk5xV3pSUnU4KzFZUT09IiwiaSI6Ikd2dlpWZXQ5aEtTcDdEUloifQ==",
+    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicmh4dHBIV1Q2ODNoWE9VOVBjeGFYRjAvUEp4NXpxRHE3WStYRkdMbzN5S1BPNE4vMGZZSHViak5IOHVRNHovVjJRPT0iLCJzIjoiSlNOclZtNVA1Z2RIOHdlOTZnNzNrdz09IiwiaSI6IlJjOXc1NmR1cGlmNVJEUGEifQ==",
+    "credits_files": "DUPLEX & SiESPTA",
+    "credits_dlc": "DUPLEX & SiESPTA",
+    "credits_backport": "Kira",
+    "how_to_play": "4.xx BackPort must be use only on FW 4, if you are on 5.xx+ use the Standard one.",
+    "popular": "on",
+    "size": "72GB"
+  },
+   {
     "title": "Star Wars Jedi Survivor",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Star_Wars_Jedi_Survivor.webp",
     "tags": [
@@ -86,24 +108,6 @@
     "credits_backport": "BestPig",
     "popular": "on",
     "size": "191GB"
-  },
-   {
-    "title": "DEATHLOOP Deluxe Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Deathloop.webp",
-    "tags": [
-      "PPSA01670",
-      "v01.405",
-      "EUR",   
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTXNpRzk5YXdyNVRtZ3NDSU1uUFhSdXdEV0FvQ0dkMXdIcFUzZmkrVmVjMHowVHpOK3M4RWZPaGtaZzQ2WHg5UW5lTEZIdVpWIiwicyI6IkY2WlZZYkliWDV6MzFoS05iYS9pNnc9PSIsImkiOiJyZ2lOcFcxS3JPTHJpek5sIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidi9MUkxiWDJDZjlOZ3V6TEdOYStHU3VvemdqcXhyeUl0UVBJbjhvRmRyeUxJMmxYY25GVjBoOVBGbVk2cHR2WVZyTXQiLCJzIjoiRjVhWEZ3cDBpSk5xV3pSUnU4KzFZUT09IiwiaSI6Ikd2dlpWZXQ5aEtTcDdEUloifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicmh4dHBIV1Q2ODNoWE9VOVBjeGFYRjAvUEp4NXpxRHE3WStYRkdMbzN5S1BPNE4vMGZZSHViak5IOHVRNHovVjJRPT0iLCJzIjoiSlNOclZtNVA1Z2RIOHdlOTZnNzNrdz09IiwiaSI6IlJjOXc1NmR1cGlmNVJEUGEifQ==",
-    "credits_files": "DUPLEX & SiESPTA",
-    "credits_dlc": "DUPLEX & SiESPTA",
-    "credits_backport": "Kira",
-    "popular": "on",
-    "size": "72GB"
   },
    {
     "title": "Final Fantasy VII Remake Intergrade",
