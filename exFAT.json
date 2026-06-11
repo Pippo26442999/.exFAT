@@ -1,5 +1,25 @@
 [
    {
+    "title": "Far Cry 6",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Far_Cry_6.avif",
+    "tags": [
+      "PPSA01870",
+      "v01.000.013",
+      "EUR",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiemVWMVJpNktiRHZObmpudGxXUlVrSVdKci9wTUdjRzlVQmdKQmc0UlBQNlpyUHhwS2JmVkM1eGFYZFR0NlZRbFpRPT0iLCJzIjoiU3hyTkNPWjhOUUtlZWw1SExpSFhHdz09IiwiaSI6IlpveU1aaGVtbU9DdWFSUXcifQ==",
+    "credits_files": "Psykzhack",
+    "credits_dlc": "Psykzhack",
+    "credits_backport": "kerrdec97",
+    "how_to_play": "For some reason is not possible select other Audio than English, all Subs work fine.",
+    "popular": "on",
+    "size": "179GB"
+  },
+   {
     "title": "Immortals Fenyx Rising",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Immortals_Fenyx_Rising.avif.avif",
     "tags": [
