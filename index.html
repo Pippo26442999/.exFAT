@@ -1164,6 +1164,7 @@
         .modal-info-item { background: rgba(255,255,255,0.05); padding: 10px 20px; border-radius: 15px; }
         .modal-info-label { font-size: 0.7rem; text-transform: uppercase; color: var(--cyan-neon); display: block; }
         .modal-info-value { font-size: 1rem; font-weight: 700; margin-top: 5px; }
+.modal-apr-emu { background: rgba(255, 0, 0, 0.85); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 900; border: 1px solid #ff6666; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); text-shadow: 0 0 2px rgba(0,0,0,0.5); white-space: nowrap; display: inline-block; margin-left: 10px; }
         .modal-section { margin-bottom: 25px; }
         .modal-section-title { font-size: 0.8rem; text-transform: uppercase; color: var(--cyan-neon); margin-bottom: 12px; letter-spacing: 2px; }
         .modal-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -1188,15 +1189,41 @@
             filter: blur(60px); animation: liquidGlow 8s ease-in-out infinite;
             z-index: 1; pointer-events: none;
         }
-        .game-size {
-            position: absolute;
-            bottom: 15px; right: 15px; 
-            background: rgba(0, 255, 238, 0.65); color: #000; 
-            padding: 4px 10px; border-radius: 8px; font-size: 0.75rem;
-            font-weight: 900;
-            border: 1px solid #fff; backdrop-filter: blur(5px);
-            z-index: 15; box-shadow: 0 0 10px rgba(0, 255, 238, 0.5);
-        }
+.game-badges {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    gap: 8px;
+    z-index: 15;
+}
+
+.game-size {
+    background: rgba(0, 255, 238, 0.65);
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    border: 1px solid #fff;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 255, 238, 0.5);
+    white-space: nowrap;
+}
+
+.game-apr-emu {
+    background: rgba(255, 0, 0, 0.85);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    border: 1px solid #ff6666;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    white-space: nowrap;
+    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
         .game-title, .image-container, .download-section { position: relative; z-index: 5; width: 100%; }
         .game-title { font-weight: 900; text-align: center; text-transform: uppercase; font-size: 1.2rem; min-height: 2.5rem; margin-bottom: 15px; letter-spacing: 1px; }
         .image-container { border-radius: 20px; overflow: hidden; aspect-ratio: 1/1; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); background: #000; }
@@ -2208,12 +2235,15 @@
             </div>
             <div class="modal-body" id="modal-body">
                 <div class="modal-tags" id="modal-tags"></div>
-                <div class="modal-info">
-                    <div class="modal-info-item">
-                        <span class="modal-info-label">Size</span>
-                        <span class="modal-info-value" id="modal-size"></span>
-                    </div>
-                </div>
+<div class="modal-info">
+    <div class="modal-info-item">
+        <span class="modal-info-label">Size</span>
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <span class="modal-info-value" id="modal-size"></span>
+            <span id="modal-apr-emu-badge"></span>
+        </div>
+    </div>
+</div>
                 <div class="modal-section">
                     <div class="modal-section-title">📥 Downloads</div>
                     <div class="modal-buttons" id="modal-downloads"></div>
