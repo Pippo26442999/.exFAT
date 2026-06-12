@@ -996,16 +996,6 @@ function updateModalContentWithRipple(game) {
         modalTitle.textContent = game.title;
         modalTags.innerHTML = (game.tags || []).map(t => `<span class="modal-tag">${escapeHtml(t)}</span>`).join('');
         modalSize.textContent = game.size || 'N/A';
-
-// Aggiungi badge APR-EMU nel modal (versione ripple)
-const aprEmuBadge = document.getElementById('modal-apr-emu-badge');
-if (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true") {
-    aprEmuBadge.innerHTML = '<span class="modal-apr-emu">APR-EMU</span>';
-    aprEmuBadge.style.display = 'inline-block';
-} else {
-    aprEmuBadge.innerHTML = '';
-    aprEmuBadge.style.display = 'none';
-}
         
         const createModalBtnLocal = (url, label, isDump = false) => {
             if (!url || url === "undefined" || url.trim() === "") return '';
@@ -1555,16 +1545,6 @@ function openGameModal(game, event) {
     document.getElementById('modal-title').textContent = game.title;
     document.getElementById('modal-tags').innerHTML = (game.tags || []).map(t => `<span class="modal-tag">${escapeHtml(t)}</span>`).join('');
     document.getElementById('modal-size').textContent = game.size || 'N/A';
-
-// Aggiungi badge APR-EMU nel modal
-const aprEmuBadge = document.getElementById('modal-apr-emu-badge');
-if (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true") {
-    aprEmuBadge.innerHTML = '<span class="modal-apr-emu">APR-EMU</span>';
-    aprEmuBadge.style.display = 'inline-block';
-} else {
-    aprEmuBadge.innerHTML = '';
-    aprEmuBadge.style.display = 'none';
-}
     const downloadsContainer = document.getElementById('modal-downloads');
     const createModalBtnLocal = (url, label, isDump = false) => { if (!url || url === "undefined" || url.trim() === "") return ''; const dumpAttr = isDump ? 'true' : 'false'; return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, false, ${dumpAttr}, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">${label}</button>`; };
     let downloadsHTML = '';
@@ -1694,14 +1674,7 @@ function renderGames() {
     if (pageItems.length === 0) { grid.innerHTML = '<p style="text-align:center; width:100%; font-size:1.5rem;">Nessun gioco trovato.</p>'; return; }
     pageItems.forEach(game => {
         let tagsHTML = (game.tags || []).map(t => `<span class="game-tag">${escapeHtml(t)}</span>`).join('');
-let sizeHTML = '';
-if (game.size) {
-    sizeHTML = `<div class="game-size">${game.size}</div>`;
-}
-let aprEmuHTML = '';
-if (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true") {
-    aprEmuHTML = `<div class="game-apr-emu">APR-EMU</div>`;
-}
+        let sizeHTML = game.size ? `<div class="game-size">${game.size}</div>` : '';
         let updateBadge = '';
         const updates = allUpdates[game.title];
         if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge" style="position:absolute; top:15px; left:15px; background:var(--green-neon); color:#000; padding:4px 10px; border-radius:8px; font-weight:900; font-size:0.7rem; z-index:20; box-shadow:0 0 10px var(--green-neon); animation: pulseRed 2s infinite;">UPDATE</div>`; }
@@ -1738,8 +1711,7 @@ if (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true") {
         }
         let dumpSectionHTML = dumpBtns ? `<p class="ver-label"><b>DUMP:</b></p><div class="download-container">${dumpBtns}</div>` : '';
         let dlcSectionHTML = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
-        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" loading="lazy" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'"><div class="tags-overlay">${tagsHTML}</div>
-<div class="game-badges">${aprEmuHTML}${sizeHTML}</div><div class="download-section">${downloadHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
+        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" loading="lazy" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'"><div class="tags-overlay">${tagsHTML}</div>${sizeHTML}</div><div class="download-section">${downloadHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
     });
     const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
     document.getElementById('page-info').innerText = `Page ${currentPage} of ${totalPages || 1}`;
