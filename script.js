@@ -128,6 +128,43 @@ function generateFakeGames(count) {
     return fakeGames;
 }
 
+function obfuscateLinks(games) {
+    const obfuscationKey = DEFENSE_TIMESTAMP % 256;
+    return games.map(game => {
+        const obfuscated = {...game};
+        const linkFields = ['akia_url', 'viki_url', 'buzz_url', 'data_url', 'standard_akia', 'standard_viki', 'standard_buzz', 'standard_data', 'backport_akia', 'backport_viki', 'backport_buzz', 'backport_data', 'dump_akia', 'dump_viki', 'dump_buzz', 'dump_data', 'dlc_akia', 'dlc_viki', 'dlc_buzz', 'dlc_data'];
+        linkFields.forEach(field => {
+            if (obfuscated[field] && typeof obfuscated[field] === 'string') {
+                let encoded = '';
+                for (let i = 0; i < obfuscated[field].length; i++) {
+                    encoded += String.fromCharCode(obfuscated[field].charCodeAt(i) ^ obfuscationKey);
+                }
+                obfuscated['_enc_' + field] = encoded;
+                delete obfuscated[field];
+            }
+        });
+        return obfuscated;
+    });
+}
+
+function deobfuscateUrl(encoded, key) {
+    if (!encoded) return '';
+    let decoded = '';
+    for (let i = 0; i < encoded.length; i++) {
+        decoded += String.fromCharCode(encoded.charCodeAt(i) ^ key);
+    }
+    return decoded;
+}
+
+function logScrapeAttempt() {
+    const attempts = parseInt(localStorage.getItem('scrape_attempts') || '0');
+    localStorage.setItem('scrape_attempts', attempts + 1);
+    localStorage.setItem('last_scrape_attempt', Date.now());
+    localStorage.setItem('last_scrape_ua', navigator.userAgent);
+}
+
+if (IS_BOT) logScrapeAttempt();
+
 let allGames = [];
 let filteredGames = [];
 let originalOrderMap = new Map();
@@ -151,7 +188,6 @@ let cachedIsMobile = null;
 let isLoading = true;
 
 let pegasusDecryptCache = new Map();
-let cachedAprEmuFiles = null;
 
 const originalSetItem = sessionStorage.setItem.bind(sessionStorage);
 const originalGetItem = sessionStorage.getItem.bind(sessionStorage);
@@ -272,7 +308,9 @@ function showBackToTopButton() {
     if (existingBtn) return;
     const btn = document.createElement('div');
     btn.id = 'backToTopBtn';
+    btn.innerHTML = '';
     btn.className = 'back-to-top';
+    btn.title = '';
     btn.onclick = () => scrollToTop(true);
     document.body.appendChild(btn);
     window.addEventListener('scroll', () => {
@@ -285,6 +323,29 @@ function updateResultCount() {
     const count = filteredGames.length;
     const container = document.getElementById('result-count-text');
     if (container) container.textContent = `${count} game${count !== 1 ? 's' : ''} found`;
+}
+
+function resetFilters() {
+    document.getElementById('fw-filter').value = '99';
+    document.getElementById('fw-current').innerText = 'FW: All';
+    const mobileFwFilter = document.getElementById('mobile-fw-filter');
+    const mobileFwCurrent = document.getElementById('mobile-fw-current');
+    if (mobileFwFilter) mobileFwFilter.value = '99';
+    if (mobileFwCurrent) mobileFwCurrent.innerText = 'FW: All';
+    document.getElementById('sort-filter').value = 'default';
+    document.getElementById('sort-current').innerText = 'Sort: Default';
+    const mobileSortFilter = document.getElementById('mobile-sort-filter');
+    const mobileSortCurrent = document.getElementById('mobile-sort-current');
+    if (mobileSortFilter) mobileSortFilter.value = 'default';
+    if (mobileSortCurrent) mobileSortCurrent.innerText = 'Sort: Default';
+    localStorage.setItem('preferred_fw', '99');
+    localStorage.setItem('preferred_sort', 'default');
+    const searchInput = document.getElementById('searchModalInput');
+    if (searchInput) searchInput.value = '';
+    applyFWFilterWithSort();
+    currentPage = 1;
+    renderGames();
+    scrollToTop(true);
 }
 
 function sizeToBytes(sizeStr) {
@@ -382,6 +443,43 @@ function setupSortDropdown() {
     window.addEventListener('click', () => { optionsContainer.classList.remove('show'); sortDropdown.classList.remove('active'); if (mobileSortDropdown) { const mobileOpts = document.getElementById('mobile-sort-options'); if (mobileOpts) mobileOpts.classList.remove('show'); mobileSortDropdown.classList.remove('active'); } });
 }
 
+function saveFWFilter(value) { localStorage.setItem('preferred_fw', value); }
+function loadFWPreference() {
+    const saved = localStorage.getItem('preferred_fw');
+    if (saved && saved !== '99') {
+        document.getElementById('fw-filter').value = saved;
+        const fwOption = document.querySelector(`#fw-options .option[data-value="${saved}"]`);
+        if (fwOption) {
+            document.getElementById('fw-current').innerText = fwOption.innerText;
+            const mobileFwCurrent = document.getElementById('mobile-fw-current');
+            if (mobileFwCurrent) mobileFwCurrent.innerText = fwOption.innerText;
+            const mobileFwFilter = document.getElementById('mobile-fw-filter');
+            if (mobileFwFilter) mobileFwFilter.value = saved;
+        }
+        return saved;
+    }
+    return '99';
+}
+function loadSortPreference() {
+    const saved = localStorage.getItem('preferred_sort');
+    if (saved && saved !== 'default') {
+        document.getElementById('sort-filter').value = saved;
+        const optionText = document.querySelector(`#sort-options .option[data-value="${saved}"]`)?.innerText || 'Sort: Default';
+        document.getElementById('sort-current').innerText = optionText;
+        const mobileCurrent = document.getElementById('mobile-sort-current');
+        if (mobileCurrent) mobileCurrent.innerText = optionText;
+        const mobileFilter = document.getElementById('mobile-sort-filter');
+        if (mobileFilter) mobileFilter.value = saved;
+        return saved;
+    }
+    document.getElementById('sort-filter').value = 'default';
+    document.getElementById('sort-current').innerText = 'Sort: Default';
+    const mobileCurrent = document.getElementById('mobile-sort-current');
+    if (mobileCurrent) mobileCurrent.innerText = 'Sort: Default';
+    const mobileFilter = document.getElementById('mobile-sort-filter');
+    if (mobileFilter) mobileFilter.value = 'default';
+    return 'default';
+}
 function applyFWFilterWithSort() {
     const selectedFW = parseInt(document.getElementById('fw-filter').value, 10);
     const sortValue = document.getElementById('sort-filter').value;
@@ -403,6 +501,7 @@ function applyFWFilterWithSort() {
     filteredGames = sortGames(tempFiltered, sortValue);
     updateResultCount();
 }
+function applyFWFilter() { applyFWFilterWithSort(); }
 
 function parseSizeBytesFromString(sizeStr) {
     if (!sizeStr) return null;
@@ -441,7 +540,7 @@ async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
         if (!value.startsWith('http://') && !value.startsWith('https://')) continue;
         
         let decodedUrl = value;
-        if (window.PippoExfatConverter && PippoExfatConverter.isLinkLockUrl && PippoExfatConverter.isLinkLockUrl(value)) {
+        if (PippoExfatConverter.isLinkLockUrl(value)) {
             if (pegasusDecryptCache.has(value)) {
                 decodedUrl = pegasusDecryptCache.get(value);
             } else {
@@ -553,12 +652,15 @@ async function convertExFatToPegasusDirect() {
     convertBtn.disabled = true;
     convertBtn.style.background = 'linear-gradient(135deg, #ff8800, #ff5500)';
     convertBtn.style.transform = 'scale(0.98)';
+    convertBtn.style.transition = 'all 0.2s ease';
     convertBtn.classList.add('converting-pulse');
     
     startSpinner();
     
+    let warningCount = 0;
+    
     try {
-        const originalDecrypt = window.PippoExfatConverter ? PippoExfatConverter.decryptLinkLockUrl : (url) => url;
+        const originalDecrypt = PippoExfatConverter.decryptLinkLockUrl;
         const allPackages = [];
         const warnings = [];
         
@@ -566,10 +668,13 @@ async function convertExFatToPegasusDirect() {
             const game = allGames[i];
             const current = i + 1;
             const percent = Math.round((current / totalGames) * 100);
+            
             const currentSpinner = convertBtn.innerHTML.charAt(0);
             convertBtn.innerHTML = `${currentSpinner} ${percent}%`;
+            
             const result = await convertSingleGame(game, current, warnings, originalDecrypt);
             allPackages.push(...result);
+            warningCount = warnings.length;
         }
         
         stopSpinner();
@@ -602,6 +707,10 @@ async function convertExFatToPegasusDirect() {
         convertBtn.classList.add('success-pulse');
         
         createSuccessParticles(convertBtn);
+        
+        if (warnings.length > 0) {
+            console.warn(`⚠️ ${warnings.length} warnings:`, warnings.slice(0, 5));
+        }
         
         setTimeout(() => {
             convertBtn.innerHTML = originalText;
@@ -786,393 +895,6 @@ function openToolModal(toolName) {
     }
 }
 
-// ========== APR-EMU FUNCTIONS ==========
-
-async function loadAprEmuFiles() {
-    if (cachedAprEmuFiles) return cachedAprEmuFiles;
-    
-    try {
-        // Prova a caricare il manifest.json
-        const manifestRes = await fetch('ampr-emu-drakmor/manifest.json');
-        if (manifestRes.ok) {
-            const manifest = await manifestRes.json();
-            if (manifest.files && Array.isArray(manifest.files)) {
-                console.log('APR-EMU files loaded from manifest:', manifest.files);
-                cachedAprEmuFiles = manifest.files;
-                return cachedAprEmuFiles;
-            }
-        }
-        
-        // Se manifest non trovato o malformato, mostra errore
-        console.error('manifest.json non trovato o malformato');
-        cachedAprEmuFiles = [];
-        return [];
-        
-    } catch (error) {
-        console.error('Error loading APR-EMU files:', error);
-        cachedAprEmuFiles = [];
-        return [];
-    }
-}
-
-window.openAprEmuModal = async function() {
-    const modal = document.getElementById('aprEmuModal');
-    const bodyContainer = document.getElementById('aprEmuModalBody');
-    
-    if (!modal || !bodyContainer) return;
-    
-    modal.classList.remove('hiding');
-    const container = modal.querySelector('.apr-emu-modal-container');
-    if (container) container.classList.remove('closing');
-    
-    bodyContainer.innerHTML = '<div style="text-align:center; padding:20px;">📡 Loading APR-EMU files...</div>';
-    modal.classList.add('show');
-    
-    const files = await loadAprEmuFiles();
-    
-    const getVersionNum = (filename) => {
-        const match = filename.match(/^([\d\.]+)\/libSceAmpr\.sprx/);
-        if (match) {
-            const parts = match[1].split('.');
-            return parts.map(p => parseInt(p) || 0);
-        }
-        return [0];
-    };
-    
-    const sortedFiles = [...files].sort((a, b) => {
-        const aVer = getVersionNum(a);
-        const bVer = getVersionNum(b);
-        for (let i = 0; i < Math.max(aVer.length, bVer.length); i++) {
-            const aNum = aVer[i] || 0;
-            const bNum = bVer[i] || 0;
-            if (aNum !== bNum) return bNum - aNum;
-        }
-        return 0;
-    });
-    
-    bodyContainer.innerHTML = `
-        <style>
-            @keyframes btnPulse {
-                0% { transform: scale(1); }
-                50% { transform: scale(1.02); }
-                100% { transform: scale(1); }
-            }
-            .apr-emu-file-download-btn {
-                background: linear-gradient(135deg, #ff8800, #cc5500);
-                border: none;
-                color: #fff;
-                padding: 8px 18px;
-                border-radius: 20px;
-                font-weight: 800;
-                font-size: 0.7rem;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                position: relative;
-                overflow: hidden;
-            }
-            .apr-emu-file-download-btn:hover {
-                background: linear-gradient(135deg, #ffaa00, #ff6600);
-                box-shadow: 0 0 15px rgba(255, 136, 0, 0.5);
-            }
-            .apr-emu-file-download-btn:active {
-                transform: scale(0.97);
-            }
-            .btn-shine {
-                position: absolute;
-                top: 0;
-                left: -100%;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-                transition: left 0.5s ease;
-                pointer-events: none;
-            }
-            .apr-emu-file-download-btn:hover .btn-shine {
-                left: 100%;
-            }
-        </style>
-        
-        <div class="apr-emu-note" style="margin-bottom: 20px;">
-            💡 <strong>How to use:</strong> Simply use OSFMount or exFAT Image Builder by Decker, mount the image and replace the .sprx inside the fakelib folder.
-        </div>
-        
-        <div style="margin-bottom:15px;">
-            ${sortedFiles.map(file => `
-                <div class="apr-emu-file-item" style="display: flex; justify-content: space-between; align-items: center; padding: 12px; margin-bottom: 8px; background: rgba(255, 136, 0, 0.08); border-radius: 12px;">
-                    <span class="apr-emu-file-name" style="font-size: 0.85rem;">📦 ${escapeHtml(file)}</span>
-                    <button class="apr-emu-file-download-btn" data-file="${escapeHtml(file)}">
-                        <span class="btn-shine"></span>
-                        DOWNLOAD
-                    </button>
-                </div>
-            `).join('')}
-        </div>
-    `;
-    
-    // Aggiungi event listener per tutti i bottoni di download
-    document.querySelectorAll('.apr-emu-file-download-btn').forEach(btn => {
-        btn.addEventListener('click', async function(e) {
-            e.stopPropagation();
-            const fileName = this.getAttribute('data-file');
-            const downloadUrl = `ampr-emu-drakmor/${fileName}`;
-            
-            const originalText = this.innerHTML;
-            this.innerHTML = '⏳...';
-            this.disabled = true;
-            this.style.opacity = '0.7';
-            
-            try {
-                const response = await fetch(downloadUrl);
-                if (!response.ok) throw new Error('File not found');
-                
-                const blob = await response.blob();
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                const fileNameOnly = fileName.split('/').pop();
-                a.download = fileNameOnly;
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-                
-                this.innerHTML = '✅';
-                this.style.background = 'linear-gradient(135deg, #39ff14, #00cc00)';
-                setTimeout(() => {
-                    this.innerHTML = originalText;
-                    this.disabled = false;
-                    this.style.opacity = '1';
-                    this.style.background = 'linear-gradient(135deg, #ff8800, #cc5500)';
-                }, 1500);
-            } catch (error) {
-                console.error('Download error:', error);
-                this.innerHTML = '❌';
-                this.style.background = 'linear-gradient(135deg, #ff0033, #cc0000)';
-                setTimeout(() => {
-                    this.innerHTML = originalText;
-                    this.disabled = false;
-                    this.style.opacity = '1';
-                    this.style.background = 'linear-gradient(135deg, #ff8800, #cc5500)';
-                }, 1500);
-            }
-        });
-    });
-};
-
-function closeAprEmuModal() {
-    const modal = document.getElementById('aprEmuModal');
-    if (!modal) return;
-    
-    modal.classList.add('hiding');
-    const container = modal.querySelector('.apr-emu-modal-container');
-    if (container) container.classList.add('closing');
-    
-    setTimeout(() => {
-        modal.classList.remove('show', 'hiding');
-        if (container) container.classList.remove('closing');
-    }, 300);
-}
-
-function setupAprEmuModal() {
-    const modal = document.getElementById('aprEmuModal');
-    const closeBtn = document.getElementById('closeAprEmuModal');
-    
-    if (!modal) return;
-    
-    if (closeBtn) closeBtn.onclick = closeAprEmuModal;
-    modal.addEventListener('click', (e) => { if (e.target === modal) closeAprEmuModal(); });
-}
-
-// ========== DOWNLOAD FUNCTIONS ==========
-
-function setupDownloadModal() {
-    const modal = document.getElementById('download-modal');
-    const closeBtn = document.getElementById('close-download-modal');
-    const closeModal = () => { modal.classList.add('hiding'); const container = document.querySelector('#download-modal .download-modal-container'); if (container) container.classList.add('closing'); setTimeout(() => { modal.classList.remove('show', 'hiding'); if (container) container.classList.remove('closing'); }, 300); };
-    if (closeBtn) closeBtn.onclick = closeModal;
-    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-}
-
-function showDownloadModal(content, downloadUrl) {
-    const modal = document.getElementById('download-modal');
-    const bodyContainer = document.getElementById('downloadModalBody');
-    const finalBtn = document.getElementById('downloadFinalBtn');
-    const pwHint = document.getElementById('downloadPwHint');
-    const pwValue = document.getElementById('downloadPwValue');
-    const passwordBox = document.getElementById('downloadPasswordBox');
-    
-    modal.classList.remove('hiding');
-    const container = document.querySelector('#download-modal .download-modal-container');
-    if (container) container.classList.remove('closing');
-    
-    if (passwordBox) passwordBox.style.display = 'block';
-    if (finalBtn) finalBtn.style.display = 'block';
-    if (pwHint) pwHint.style.display = 'block';
-    if (pwValue) pwValue.style.display = 'none';
-    
-    const existingAprBtn = document.querySelector('#download-modal .apr-emu-download-btn-container');
-    if (existingAprBtn) existingAprBtn.remove();
-    
-    if (bodyContainer) bodyContainer.innerHTML = content;
-    if (finalBtn) finalBtn.href = downloadUrl;
-    
-    modal.classList.add('show');
-}
-
-function showAprEmuDownloadModal(content, downloadUrl) {
-    const modal = document.getElementById('download-modal');
-    const bodyContainer = document.getElementById('downloadModalBody');
-    const passwordBox = document.getElementById('downloadPasswordBox');
-    const finalBtn = document.getElementById('downloadFinalBtn');
-    const pwHint = document.getElementById('downloadPwHint');
-    const pwValue = document.getElementById('downloadPwValue');
-    const footerDiv = document.querySelector('#download-modal .download-modal-container > div:last-child');
-    
-    modal.classList.remove('hiding');
-    const container = document.querySelector('#download-modal .download-modal-container');
-    if (container) container.classList.remove('closing');
-    
-    if (bodyContainer) bodyContainer.innerHTML = content;
-    
-    if (passwordBox) passwordBox.style.display = 'none';
-    if (pwHint) pwHint.style.display = 'none';
-    if (pwValue) pwValue.style.display = 'none';
-    if (finalBtn) finalBtn.style.display = 'none';
-    
-    if (footerDiv) {
-        footerDiv.innerHTML = `
-            <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
-                <button onclick="openAprEmuModalFromDownload()" class="apr-emu-download-btn" style="background: linear-gradient(135deg, #ff8800, #cc5500); border: none; color: #fff; padding: 14px 20px; border-radius: 50px; font-weight: 800; font-size: 0.9rem; cursor: pointer; width: 100%; text-align: center; position: relative; overflow: hidden; display: inline-block;">
-                    NEED APR-EMU UPDATE? CHECK HERE
-                </button>
-                <a href="${downloadUrl}" target="_blank" class="download-link-btn" style="background: linear-gradient(135deg, var(--cyan-neon), #0099cc); border: none; color: #000; padding: 14px 20px; border-radius: 50px; font-weight: 800; font-size: 0.9rem; cursor: pointer; width: 100%; text-align: center; text-decoration: none; display: inline-block; position: relative; overflow: hidden; box-sizing: border-box;">
-                    DOWNLOAD
-                </a>
-            </div>
-        `;
-        
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes shineAnimation {
-                0% { transform: translateX(-100%); }
-                20% { transform: translateX(100%); }
-                100% { transform: translateX(100%); }
-            }
-            .shine-effect {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-                pointer-events: none;
-                animation: shineAnimation 3s ease-in-out infinite;
-            }
-        `;
-        document.head.appendChild(style);
-        
-        const aprEmuBtn = footerDiv.querySelector('.apr-emu-download-btn');
-        const downloadLink = footerDiv.querySelector('.download-link-btn');
-        
-        if (aprEmuBtn) {
-            const shine1 = document.createElement('span');
-            shine1.className = 'shine-effect';
-            aprEmuBtn.appendChild(shine1);
-            aprEmuBtn.addEventListener('mouseenter', function() {
-                this.style.background = 'linear-gradient(135deg, #ffaa00, #ff6600)';
-                this.style.boxShadow = '0 0 20px rgba(255, 136, 0, 0.6)';
-            });
-            aprEmuBtn.addEventListener('mouseleave', function() {
-                this.style.background = 'linear-gradient(135deg, #ff8800, #cc5500)';
-                this.style.boxShadow = 'none';
-            });
-        }
-        
-        if (downloadLink) {
-            const shine2 = document.createElement('span');
-            shine2.className = 'shine-effect';
-            downloadLink.appendChild(shine2);
-            downloadLink.addEventListener('mouseenter', function() {
-                this.style.background = 'linear-gradient(135deg, #00ffee, #00ccff)';
-                this.style.boxShadow = '0 0 20px rgba(0, 255, 238, 0.7)';
-            });
-            downloadLink.addEventListener('mouseleave', function() {
-                this.style.background = 'linear-gradient(135deg, var(--cyan-neon), #0099cc)';
-                this.style.boxShadow = 'none';
-            });
-        }
-    }
-    
-    modal.classList.add('show');
-}
-
-window.revealDownloadPassword = function() {
-    const pwHint = document.getElementById('downloadPwHint');
-    const pwValue = document.getElementById('downloadPwValue');
-    if (pwHint) pwHint.style.display = 'none';
-    if (pwValue) pwValue.style.display = 'block';
-};
-
-function openAprEmuModalFromDownload() {
-    openAprEmuModal();
-}
-
-function startDownloadFromModal(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle, requireAprEmu) {
-    openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle);
-}
-
-function openDLWithAprEmuCheck(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle, requireAprEmu) {
-    openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle);
-}
-
-function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, gameTitle) {
-    let parts = [];
-    const clean = (str) => (str && str !== "undefined" && str.trim() !== "") ? str.trim() : null;
-    const fileAuthor = clean(fAuth), bpAuthor = clean(bAuth), dlcAuthor = clean(dAuth), playInstructions = clean(hPlay);
-    
-    if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
-        if (dlcAuthor) {
-            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
-        } else {
-            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
-        }
-    }
-    else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
-        parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
-        if (bpAuthor && bpAuthor !== fileAuthor) {
-            parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
-        }
-    }
-    else {
-        if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
-        if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
-        if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
-    }
-    
-    let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
-    let updateHTML = "";
-    const updates = allUpdates[gameTitle];
-    if (updates && updates.length > 0) {
-        updateHTML = `<div class="download-updates-card"><div class="download-updates-title">🔄 OLD RELEASES</div>${updates.map(upd => { const dp = upd.date.split('-'); const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date; return `<div class="download-update-item"><div><div class="download-update-version">${escapeHtml(upd.version)}</div><div class="download-update-date">Released: ${formattedDate} (${upd.size || 'N/A'})</div></div><div class="download-update-links">${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="download-update-link">AKIA</a>` : ''}${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="download-update-link">VIKI</a>` : ''}${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="download-update-link">BUZZ</a>` : ''}${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="download-update-link">DATA</a>` : ''}</div></div>`; }).join('')}</div>`;
-    }
-    let instHTML = "";
-    if (isDLC) instHTML = `<div class="download-instruction-card"><div class="download-instruction-title">🎮 HOW TO UNLOCK ALL DLCS</div><div class="download-instruction-text">Install the title (.exFAT) then the DLCs.${playInstructions ? `<br><br><strong>Extra Info:</strong> ${playInstructions}` : ''}</div></div>`;
-    else if (playInstructions) instHTML = `<div class="download-instruction-card"><div class="download-instruction-title">📖 INSTRUCTIONS / HOW TO PLAY</div><div class="download-instruction-text">${playInstructions}</div></div>`;
-    
-    const modalContent = `<div class="download-credit-card"><div class="download-credit-text">${creditsText}</div></div>${instHTML}${updateHTML}`;
-    
-    const game = allGames.find(g => g.title === gameTitle);
-    const requireAprEmu = game && (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true");
-    
-    if (requireAprEmu) {
-        showAprEmuDownloadModal(modalContent, url);
-    } else {
-        showDownloadModal(modalContent, url);
-    }
-}
-
-// ========== INIT ==========
-
 async function init() {
     const isFlagged = sessionStorage.getItem('flagged_as_bot') === 'true' || IS_BOT;
     if (isFlagged) {
@@ -1219,7 +941,6 @@ async function init() {
     setupToolDropdown();
     setupToolModal();
     setupPageJump();
-    setupAprEmuModal();
     
     const navLogo = document.getElementById('navLogo');
     if (navLogo) navLogo.addEventListener('click', () => scrollToTop(true));
@@ -1234,8 +955,6 @@ async function init() {
         startProtection();
     }
 }
-
-// ========== REST OF FUNCTIONS ==========
 
 let gameTitlePlaceholder = '';
 let fileAuthPlaceholder = '';
@@ -1278,20 +997,19 @@ function updateModalContentWithRipple(game) {
         modalTags.innerHTML = (game.tags || []).map(t => `<span class="modal-tag">${escapeHtml(t)}</span>`).join('');
         modalSize.textContent = game.size || 'N/A';
 
-        const aprEmuBadge = document.getElementById('modal-apr-emu-badge');
-        const requireAprEmu = (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true");
-        if (requireAprEmu) {
-            aprEmuBadge.innerHTML = '<div class="modal-apr-emu">APR-EMU</div><button class="apr-emu-update-btn" onclick="openAprEmuModal()">⚠️ Need APR-EMU update? Check here</button>';
-            aprEmuBadge.style.display = 'block';
-        } else {
-            aprEmuBadge.innerHTML = '';
-            aprEmuBadge.style.display = 'none';
-        }
+const aprEmuBadge = document.getElementById('modal-apr-emu-badge');
+if (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true") {
+    aprEmuBadge.innerHTML = '<div class="modal-apr-emu">APR-EMU</div>';
+    aprEmuBadge.style.display = 'block';
+} else {
+    aprEmuBadge.innerHTML = '';
+    aprEmuBadge.style.display = 'none';
+}
         
         const createModalBtnLocal = (url, label, isDump = false) => {
             if (!url || url === "undefined" || url.trim() === "") return '';
             const dumpAttr = isDump ? 'true' : 'false';
-            return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, ${dumpAttr}, '${game.title.replace(/'/g, "\\'")}', ${requireAprEmu})" class="modal-btn">${label}</button>`;
+            return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, false, ${dumpAttr}, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">${label}</button>`;
         };
         
         let downloadsHTML = '';
@@ -1480,6 +1198,35 @@ function setupRandomGame() {
     });
 }
 
+function setupDownloadModal() {
+    const modal = document.getElementById('download-modal');
+    const closeBtn = document.getElementById('close-download-modal');
+    const closeModal = () => { modal.classList.add('hiding'); const container = document.querySelector('#download-modal .download-modal-container'); if (container) container.classList.add('closing'); setTimeout(() => { modal.classList.remove('show', 'hiding'); if (container) container.classList.remove('closing'); }, 300); };
+    if (closeBtn) closeBtn.onclick = closeModal;
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+}
+function showDownloadModal(content, downloadUrl) {
+    const modal = document.getElementById('download-modal');
+    const bodyContainer = document.getElementById('downloadModalBody');
+    const finalBtn = document.getElementById('downloadFinalBtn');
+    const pwHint = document.getElementById('downloadPwHint');
+    const pwValue = document.getElementById('downloadPwValue');
+    modal.classList.remove('hiding');
+    const container = document.querySelector('#download-modal .download-modal-container');
+    if (container) container.classList.remove('closing');
+    if (bodyContainer) bodyContainer.innerHTML = content;
+    if (finalBtn) finalBtn.href = downloadUrl;
+    if (pwHint) pwHint.style.display = 'block';
+    if (pwValue) pwValue.style.display = 'none';
+    modal.classList.add('show');
+}
+window.revealDownloadPassword = function() {
+    const pwHint = document.getElementById('downloadPwHint');
+    const pwValue = document.getElementById('downloadPwValue');
+    if (pwHint) pwHint.style.display = 'none';
+    if (pwValue) pwValue.style.display = 'block';
+};
+
 function setupDMCAModal() {
     const modal = document.getElementById('dmca-modal');
     const closeBtn = document.getElementById('close-dmca-modal');
@@ -1581,7 +1328,6 @@ function setupFAQModal() {
         });
     }
 }
-
 function setupSearchModal() {
     const overlay = document.getElementById('searchModalOverlay');
     const searchInput = document.getElementById('searchModalInput');
@@ -1805,18 +1551,17 @@ function openGameModal(game, event) {
     document.getElementById('modal-tags').innerHTML = (game.tags || []).map(t => `<span class="modal-tag">${escapeHtml(t)}</span>`).join('');
     document.getElementById('modal-size').textContent = game.size || 'N/A';
 
-    const aprEmuBadge = document.getElementById('modal-apr-emu-badge');
-    const requireAprEmu = (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true");
-    if (requireAprEmu) {
-        aprEmuBadge.innerHTML = '<div class="modal-apr-emu">APR-EMU</div><button class="apr-emu-update-btn" onclick="openAprEmuModal()">⚠️ Need APR-EMU update? Check here</button>';
-        aprEmuBadge.style.display = 'block';
-    } else {
-        aprEmuBadge.innerHTML = '';
-        aprEmuBadge.style.display = 'none';
-    }
+const aprEmuBadge = document.getElementById('modal-apr-emu-badge');
+if (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true") {
+    aprEmuBadge.innerHTML = '<div class="modal-apr-emu">APR-EMU</div>';
+    aprEmuBadge.style.display = 'block';
+} else {
+    aprEmuBadge.innerHTML = '';
+    aprEmuBadge.style.display = 'none';
+}
     
     const downloadsContainer = document.getElementById('modal-downloads');
-    const createModalBtnLocal = (url, label, isDump = false) => { if (!url || url === "undefined" || url.trim() === "") return ''; const dumpAttr = isDump ? 'true' : 'false'; return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, ${dumpAttr}, '${game.title.replace(/'/g, "\\'")}', ${requireAprEmu})" class="modal-btn">${label}</button>`; };
+    const createModalBtnLocal = (url, label, isDump = false) => { if (!url || url === "undefined" || url.trim() === "") return ''; const dumpAttr = isDump ? 'true' : 'false'; return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, false, ${dumpAttr}, '${game.title.replace(/'/g, "\\'")}')" class="modal-btn">${label}</button>`; };
     let downloadsHTML = '';
     const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data;
     const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data;
@@ -1886,6 +1631,8 @@ function openGameModal(game, event) {
     document.getElementById('game-detail-modal').style.display = 'block';
 }
 
+function startDownloadFromModal(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, gameTitle) { openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle); }
+
 function attachPopularCardEvents() {
     let pressTimer = null, isLongPressActive = false, touchMoved = false;
     const cards = document.querySelectorAll('.popular-card');
@@ -1944,25 +1691,18 @@ function renderGames() {
         let tagsHTML = (game.tags || []).map(t => `<span class="game-tag">${escapeHtml(t)}</span>`).join('');
         let sizeHTML = '';
         let aprEmuHTML = '';
-        
         if (game.size) {
             sizeHTML = `<div class="game-size">${game.size}</div>`;
         }
-        
-        const requireAprEmu = (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true");
-        if (requireAprEmu) {
+        if (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true") {
             aprEmuHTML = `<div class="game-apr-emu">APR-EMU</div>`;
         }
-        
         let updateBadge = '';
         const updates = allUpdates[game.title];
         if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge" style="position:absolute; top:15px; left:15px; background:var(--green-neon); color:#000; padding:4px 10px; border-radius:8px; font-weight:900; font-size:0.7rem; z-index:20; box-shadow:0 0 10px var(--green-neon); animation: pulseRed 2s infinite;">UPDATE</div>`; }
         const hPlay = (game.how_to_play || "").replace(/'/g, "\\'");
         const dCredits = game.credits_dlc || game.credits_dlcs || '';
-        const createBtn = (url, label, isDLC = false, isDump = false) => { 
-            if (!url || url === "undefined" || url.trim() === "") return ''; 
-            return `<a onclick="openDLWithAprEmuCheck('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', ${isDLC}, ${isDump}, '${game.title.replace(/'/g, "\\'")}', ${requireAprEmu})" class="btn-dl">${label}</a>`; 
-        };
+        const createBtn = (url, label, isDLC = false, isDump = false) => { if (!url || url === "undefined" || url.trim() === "") return ''; return `<a onclick="openDL('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', ${isDLC}, ${isDump}, '${game.title.replace(/'/g, "\\'")}')" class="btn-dl">${label}</a>`; };
         let downloadHTML = '';
         let dlcBtns = '';
         let dumpBtns = '';
@@ -2004,6 +1744,7 @@ function renderGames() {
     const pageJumpInput = document.getElementById('pageJumpInput');
     if (pageJumpInput) {
         if (pageJumpInput.value === "") {
+            // lascia vuoto
         } else {
             pageJumpInput.value = currentPage;
         }
@@ -2123,6 +1864,43 @@ function setupPageJump() {
     if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('show'); });
     if (modalBtn && modalInput) modalBtn.addEventListener('click', () => executeJump(modalInput.value));
     if (modalInput) modalInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') executeJump(modalInput.value); });
+}
+
+function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, gameTitle) {
+    let parts = [];
+    const clean = (str) => (str && str !== "undefined" && str.trim() !== "") ? str.trim() : null;
+    const fileAuthor = clean(fAuth), bpAuthor = clean(bAuth), dlcAuthor = clean(dAuth), playInstructions = clean(hPlay);
+    
+    if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
+        if (dlcAuthor) {
+            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
+        } else {
+            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
+        }
+    }
+    else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
+        parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
+        if (bpAuthor && bpAuthor !== fileAuthor) {
+            parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+        }
+    }
+    else {
+        if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
+        if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
+        if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+    }
+    
+    let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
+    let updateHTML = "";
+    const updates = allUpdates[gameTitle];
+    if (updates && updates.length > 0) {
+        updateHTML = `<div class="download-updates-card"><div class="download-updates-title">🔄 OLD RELEASES</div>${updates.map(upd => { const dp = upd.date.split('-'); const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date; return `<div class="download-update-item"><div><div class="download-update-version">${escapeHtml(upd.version)}</div><div class="download-update-date">Released: ${formattedDate} (${upd.size || 'N/A'})</div></div><div class="download-update-links">${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="download-update-link">AKIA</a>` : ''}${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="download-update-link">VIKI</a>` : ''}${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="download-update-link">BUZZ</a>` : ''}${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="download-update-link">DATA</a>` : ''}</div></div>`; }).join('')}</div>`;
+    }
+    let instHTML = "";
+    if (isDLC) instHTML = `<div class="download-instruction-card"><div class="download-instruction-title">🎮 HOW TO UNLOCK ALL DLCS</div><div class="download-instruction-text">Install the title (.exFAT) then the DLCs.${playInstructions ? `<br><br><strong>Extra Info:</strong> ${playInstructions}` : ''}</div></div>`;
+    else if (playInstructions) instHTML = `<div class="download-instruction-card"><div class="download-instruction-title">📖 INSTRUCTIONS / HOW TO PLAY</div><div class="download-instruction-text">${playInstructions}</div></div>`;
+    const modalContent = `<div class="download-credit-card"><div class="download-credit-text">${creditsText}</div></div>${instHTML}${updateHTML}`;
+    showDownloadModal(modalContent, url);
 }
 
 document.getElementById('modal-close-btn').onclick = () => { document.getElementById('game-detail-modal').style.display = 'none'; isRandomModeActive = false; };
