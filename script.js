@@ -1049,7 +1049,6 @@ function showAprEmuDownloadModal(content, downloadUrl) {
                     DOWNLOAD
                 </a>
             </div>
-            <div style="font-size: 0.7rem; text-align: center; color: rgba(255,255,255,0.5); margin-top: 12px;">This game requires APR-EMU payload. Download it first before playing.</div>
         `;
         
         const style = document.createElement('style');
