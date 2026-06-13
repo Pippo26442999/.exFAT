@@ -155,6 +155,267 @@ let isLoading = true;
 let pegasusDecryptCache = new Map();
 let cachedAprEmuFiles = null;
 
+// ============================================================================
+// Pegasus decrypt acceleration: IndexedDB persistent cache + Web Worker pool
+// ----------------------------------------------------------------------------
+// LinkLock ciphertext->plaintext is deterministic and stable, so decrypted URLs
+// can be cached permanently and reused across reloads/sessions. PBKDF2 (100k
+// iterations) is ~99% of decrypt cost and only real OS threads (Web Workers)
+// parallelise it. This block adds both, with safe single-thread fallback.
+// ============================================================================
+const PEGASUS_IDB_NAME = 'pegasusDecryptCache';
+const PEGASUS_IDB_STORE = 'links';
+const PEGASUS_IDB_VERSION = 1;
+
+const pegasusCacheStats = { hits: 0, idbHits: 0, misses: 0, writes: 0 };
+
+function pegasusOpenDB() {
+  return new Promise((resolve, reject) => {
+    if (!('indexedDB' in window)) { resolve(null); return; }
+    let req;
+    try { req = indexedDB.open(PEGASUS_IDB_NAME, PEGASUS_IDB_VERSION); }
+    catch (e) { resolve(null); return; }
+    req.onupgradeneeded = () => {
+      const db = req.result;
+      if (!db.objectStoreNames.contains(PEGASUS_IDB_STORE)) {
+        db.createObjectStore(PEGASUS_IDB_STORE); // key = encrypted URL, value = plaintext
+      }
+    };
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => resolve(null); // fail soft: no cache rather than crash
+  });
+}
+
+// Bulk-read plaintexts for a list of encrypted URLs. Returns Map(enc -> plain).
+async function pegasusIdbGetMany(db, encUrls) {
+  const out = new Map();
+  if (!db || !encUrls.length) return out;
+  return new Promise((resolve) => {
+    let tx;
+    try { tx = db.transaction(PEGASUS_IDB_STORE, 'readonly'); }
+    catch (e) { resolve(out); return; }
+    const store = tx.objectStore(PEGASUS_IDB_STORE);
+    let pending = encUrls.length;
+    for (const enc of encUrls) {
+      const g = store.get(enc);
+      g.onsuccess = () => { if (typeof g.result === 'string') out.set(enc, g.result); if (--pending === 0) resolve(out); };
+      g.onerror = () => { if (--pending === 0) resolve(out); };
+    }
+    tx.onabort = () => resolve(out);
+  });
+}
+
+// Bulk-write newly decrypted plaintexts. Map(enc -> plain).
+async function pegasusIdbPutMany(db, map) {
+  if (!db || !map.size) return 0;
+  return new Promise((resolve) => {
+    let tx;
+    try { tx = db.transaction(PEGASUS_IDB_STORE, 'readwrite'); }
+    catch (e) { resolve(0); return; }
+    const store = tx.objectStore(PEGASUS_IDB_STORE);
+    let n = 0;
+    for (const [enc, plain] of map) { try { store.put(plain, enc); n++; } catch (e) {} }
+    tx.oncomplete = () => resolve(n);
+    tx.onerror = () => resolve(0);
+    tx.onabort = () => resolve(0);
+  });
+}
+
+async function pegasusIdbCount(db) {
+  if (!db) return null;
+  return new Promise((resolve) => {
+    try {
+      const tx = db.transaction(PEGASUS_IDB_STORE, 'readonly');
+      const c = tx.objectStore(PEGASUS_IDB_STORE).count();
+      c.onsuccess = () => resolve(c.result);
+      c.onerror = () => resolve(null);
+    } catch (e) { resolve(null); }
+  });
+}
+
+// Clear the Pegasus decrypt cache (both in-memory and IndexedDB). Callable from
+// the console as `clearPegasusDecryptCache()` or wired to a button. Returns the
+// number of IndexedDB entries removed (or 'memory-only' if IDB unavailable).
+async function clearPegasusDecryptCache() {
+  try { pegasusDecryptCache.clear(); } catch (e) {}
+  const db = await pegasusOpenDB();
+  if (!db) { console.log('[pegasus] cleared in-memory cache (IndexedDB unavailable)'); return 'memory-only'; }
+  const before = await pegasusIdbCount(db);
+  await new Promise((resolve) => {
+    try {
+      const tx = db.transaction(PEGASUS_IDB_STORE, 'readwrite');
+      tx.objectStore(PEGASUS_IDB_STORE).clear();
+      tx.oncomplete = () => resolve();
+      tx.onerror = () => resolve();
+      tx.onabort = () => resolve();
+    } catch (e) { resolve(); }
+  });
+  try { db.close(); } catch (e) {}
+  console.log(`[pegasus] cleared decrypt cache (${before != null ? before : '?'} IndexedDB entries removed)`);
+  return before;
+}
+if (typeof window !== 'undefined') window.clearPegasusDecryptCache = clearPegasusDecryptCache;
+
+// --- Worker source (built from a Blob so it ships inside script.js) ---------
+// The worker re-implements ONLY the decrypt primitives, identical to
+// Generators/pegasus-dl-converter-kerrdec97.js, so output matches exactly.
+const PEGASUS_WORKER_SRC = `
+const LINK_LOCK_PASSWORD = "pippo";
+const DEF_SALT = new Uint8Array([236,231,167,249,207,95,201,235,164,98,246,26,176,174,72,249]);
+const DEF_IV = new Uint8Array([255,237,148,105,6,255,123,202,115,130,16,116]);
+function b64(b){let n=b.replace(/-/g,'+').replace(/_/g,'/');const p=(4-(n.length%4))%4;n+='='.repeat(p);const s=atob(n);const u=new Uint8Array(s.length);for(let i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u;}
+let _mat=null;
+async function mat(){ if(_mat)return _mat; _mat=await crypto.subtle.importKey('raw',new TextEncoder().encode(LINK_LOCK_PASSWORD),'PBKDF2',false,['deriveKey']); return _mat; }
+async function decryptOne(url){
+  const parsed=new URL(url);
+  const payload=b64(parsed.hash.slice(1));
+  const params=JSON.parse(new TextDecoder().decode(payload));
+  const encrypted=b64(params.e);
+  const salt=params.s?b64(params.s):DEF_SALT;
+  const iv=params.i?b64(params.i):DEF_IV;
+  const km=await mat();
+  const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:salt,iterations:100000,hash:'SHA-256'},km,{name:'AES-GCM',length:256},true,['decrypt']);
+  const ct=encrypted.slice(0,encrypted.length-16), tag=encrypted.slice(encrypted.length-16);
+  const dec=await crypto.subtle.decrypt({name:'AES-GCM',iv:iv,tagLength:128},key,new Uint8Array([...ct,...tag]));
+  return new TextDecoder().decode(dec);
+}
+self.onmessage=async(e)=>{
+  const {id,url}=e.data;
+  try{ const plain=await decryptOne(url); self.postMessage({id,url,plain}); }
+  catch(err){ self.postMessage({id,url,error:err.message}); }
+};
+`;
+
+let _pegasusWorkerBlobUrl = null;
+function pegasusWorkerUrl() {
+  if (_pegasusWorkerBlobUrl) return _pegasusWorkerBlobUrl;
+  const blob = new Blob([PEGASUS_WORKER_SRC], { type: 'application/javascript' });
+  _pegasusWorkerBlobUrl = URL.createObjectURL(blob);
+  return _pegasusWorkerBlobUrl;
+}
+
+// Compute the worker pool size: min(8, hardwareConcurrency), >=1.
+function pegasusPoolSize() {
+  try { return Math.max(1, Math.min(8, navigator.hardwareConcurrency || 4)); } catch (e) { return 4; }
+}
+
+// Decrypt a list of encrypted URLs across a worker pool. Returns
+// Map(enc -> plain). Output order is irrelevant (keyed by URL). Falls back to
+// single-thread decrypt if Workers are unavailable or fail to spawn.
+async function pegasusDecryptViaPool(encUrls, singleThreadDecrypt, onProgress) {
+  const result = new Map();
+  if (!encUrls.length) return result;
+
+  const canWorker = (typeof Worker !== 'undefined');
+  let poolSize = pegasusPoolSize();
+
+  // Fallback: single-thread sequential (existing behaviour).
+  const runSingleThread = async () => {
+    let done = 0;
+    for (const enc of encUrls) {
+      try { result.set(enc, await singleThreadDecrypt(enc)); } catch (e) { /* skip, don't cache failure */ }
+      done++; if (onProgress) onProgress(done, 'fallback');
+    }
+    return result;
+  };
+
+  if (!canWorker) return runSingleThread();
+
+  // Spawn pool.
+  let workers = [];
+  try {
+    const url = pegasusWorkerUrl();
+    for (let i = 0; i < poolSize; i++) workers.push(new Worker(url));
+  } catch (e) {
+    workers.forEach(w => { try { w.terminate(); } catch (_) {} });
+    return runSingleThread();
+  }
+
+  return new Promise((resolve) => {
+    let nextIndex = 0;
+    let settledCount = 0;          // jobs that returned a result OR errored
+    let settled = false;
+    let aliveWorkers = workers.length;
+    const inFlight = new Map();    // worker -> enc URL it is currently processing
+    const unfinished = new Set();  // URLs a dead worker dropped (need single-thread)
+
+    const total = encUrls.length;
+
+    const sweepAndResolve = async () => {
+      if (settled) return; settled = true;
+      try { workers.forEach(w => { try { w.terminate(); } catch (_) {} }); } catch (_) {}
+      // Single-thread sweep for EVERY URL not yet resolved: in-flight at crash
+      // time, dropped by a dead worker, or never assigned because the pool died
+      // before reaching them. This guarantees completeness regardless of how
+      // many workers survived.
+      for (const enc of encUrls) {
+        if (result.has(enc)) continue;
+        try { result.set(enc, await singleThreadDecrypt(enc)); } catch (e) { /* don't cache failure */ }
+        settledCount++; if (onProgress) onProgress(Math.min(settledCount, total), 'sweep');
+      }
+      resolve(result);
+    };
+
+    const maybeDone = () => { if (settledCount >= total || aliveWorkers === 0) sweepAndResolve(); };
+
+    const assign = (w) => {
+      if (nextIndex >= encUrls.length) { inFlight.delete(w); return; }
+      const enc = encUrls[nextIndex++];
+      inFlight.set(w, enc);
+      try { w.postMessage({ id: nextIndex - 1, url: enc }); }
+      catch (e) {
+        // posting to a dead worker: record the URL for the sweep and stop using it
+        unfinished.add(enc); inFlight.delete(w); aliveWorkers = Math.max(0, aliveWorkers - 1);
+        maybeDone();
+      }
+    };
+
+    workers.forEach((w) => {
+      w.onmessage = (e) => {
+        const { plain, url } = e.data;
+        if (typeof plain === 'string') result.set(url, plain);
+        // decrypt failures are simply not cached (per spec); they still count as settled
+        inFlight.delete(w);
+        settledCount++;
+        if (onProgress) onProgress(Math.min(settledCount, total), 'worker');
+        if (settledCount >= total) { sweepAndResolve(); return; }
+        assign(w);
+      };
+      w.onerror = () => {
+        // Worker crashed mid-job: its in-flight URL was never processed, so
+        // queue it for the single-thread sweep. Mark this worker dead.
+        const cur = inFlight.get(w);
+        if (cur && !result.has(cur)) unfinished.add(cur);
+        inFlight.delete(w);
+        aliveWorkers = Math.max(0, aliveWorkers - 1);
+        try { w.terminate(); } catch (_) {}
+        // If other workers are alive, the dropped URL is handled in the final
+        // sweep; remaining queued URLs continue on live workers.
+        maybeDone();
+      };
+    });
+
+    if (total === 0) { sweepAndResolve(); return; }
+
+    // Prime each worker with one job.
+    for (let k = 0; k < workers.length; k++) assign(workers[k]);
+
+    // Watchdog: guarantee the promise resolves even in pathological cases
+    // (e.g. a worker that neither posts back nor fires onerror). Generous
+    // timeout scaled to workload; on fire, sweep whatever is unfinished.
+    const watchdogMs = Math.max(30000, total * 500);
+    setTimeout(() => {
+      if (settled) return;
+      // Anything still in flight or never assigned gets swept single-threaded.
+      for (const [, enc] of inFlight) if (!result.has(enc)) unfinished.add(enc);
+      for (let i = nextIndex; i < encUrls.length; i++) if (!result.has(encUrls[i])) unfinished.add(encUrls[i]);
+      aliveWorkers = 0;
+      sweepAndResolve();
+    }, watchdogMs);
+  });
+}
+
+
 const originalSetItem = sessionStorage.setItem.bind(sessionStorage);
 const originalGetItem = sessionStorage.getItem.bind(sessionStorage);
 const originalRemoveItem = sessionStorage.removeItem.bind(sessionStorage);
@@ -280,7 +541,7 @@ function showBackToTopButton() {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) btn.classList.add('visible');
         else btn.classList.remove('visible');
-    });
+    }, { passive: true });
 }
 
 function updateResultCount() {
@@ -420,6 +681,7 @@ async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
     const packages = [];
     const title = game.title || '';
     const tags = game.tags || [];
+    if (window.PEGASUS_DEBUG) console.log('PROCESSING', title || `(item ${itemNumber})`);
     
     let titleId = null;
     for (const tag of tags) {
@@ -437,16 +699,24 @@ async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
     
     const groupedLinks = new Map();
     const seen = new Set();
-    
+
+    // Priority 2: never treat metadata fields as download links. The cover
+    // (`image`) is used only as posterUrl below; it must not become an "Image"
+    // download link. Skipping these keys also avoids useless link-lock checks.
+    const SKIP_KEYS = new Set(['image', 'title', 'size', 'how_to_play', 'tags']);
+
     for (const [key, value] of Object.entries(game)) {
+        if (SKIP_KEYS.has(key) || key.startsWith('credits_')) continue;
         if (typeof value !== 'string') continue;
         if (!value.startsWith('http://') && !value.startsWith('https://')) continue;
         
         let decodedUrl = value;
         if (window.PippoExfatConverter && PippoExfatConverter.isLinkLockUrl && PippoExfatConverter.isLinkLockUrl(value)) {
             if (pegasusDecryptCache.has(value)) {
+                // Resolved in the pre-pass (memory/IndexedDB/worker pool).
                 decodedUrl = pegasusDecryptCache.get(value);
             } else {
+                // Fallback: not pre-resolved (e.g. pool skipped it). Decrypt now.
                 try {
                     decodedUrl = await originalDecrypt(value);
                     pegasusDecryptCache.set(value, decodedUrl);
@@ -492,6 +762,12 @@ async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
     }
     
     if (allLinks.length === 0) {
+        // Every link field either was absent or failed to decrypt. Emitting no
+        // package is correct (a catalog entry with no downloads is useless), but
+        // make it LOUD so a corrupted source row isn't lost silently.
+        const reason = 'no decryptable download links';
+        warnings.push(`${title} (${titleId || 'no PPSA'}): skipped — ${reason}`);
+        if (window.PEGASUS_DEBUG) console.log('SKIPPED', title, '-', reason);
         return packages;
     }
     
@@ -514,6 +790,7 @@ async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
         downloadLinks: allLinks,
         sizeBytes: parseSizeBytesFromString(game.size)
     });
+    if (window.PEGASUS_DEBUG) console.log('CREATED', title, '-', allLinks.length, 'links');
     
     return packages;
 }
@@ -534,14 +811,30 @@ async function convertExFatToPegasusDirect() {
     let animationInterval = null;
     const spinnerFrames = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'];
     let frameIndex = 0;
-    
+
+    // Debug instrumentation (disabled unless window.PEGASUS_DEBUG === true).
+    // Logs every progress update with its source so the update path is fully
+    // traceable. Never parses the button text; reads structured args only.
+    const logProgress = (source, completed, total, percent, label) => {
+        if (!window.PEGASUS_DEBUG) return;
+        console.log('[pegasus:progress]', { source, completed, total, percent, label });
+    };
+
+    // Single source of truth for the button label (without the leading spinner
+    // glyph). The spinner only swaps the glyph; it never re-parses innerHTML, so
+    // counts like "171/1097" can't be mistaken for a percentage.
+    let _btnLabel = '0%';
+    const setProgressLabel = (label) => {
+        _btnLabel = label;
+        convertBtn.innerHTML = `${spinnerFrames[frameIndex]} ${label}`;
+    };
+
     const startSpinner = () => {
         animationInterval = setInterval(() => {
             if (convertBtn.disabled) {
-                const currentPercent = convertBtn.innerHTML.match(/\d+/);
-                const percent = currentPercent ? currentPercent[0] : '0';
-                convertBtn.innerHTML = `${spinnerFrames[frameIndex]} ${percent}%`;
                 frameIndex = (frameIndex + 1) % spinnerFrames.length;
+                convertBtn.innerHTML = `${spinnerFrames[frameIndex]} ${_btnLabel}`;
+                logProgress('spinner', null, null, null, _btnLabel);
             }
         }, 100);
     };
@@ -553,7 +846,7 @@ async function convertExFatToPegasusDirect() {
         }
     };
     
-    convertBtn.innerHTML = '⠋ 0%';
+    setProgressLabel('0%');
     convertBtn.disabled = true;
     convertBtn.style.background = 'linear-gradient(135deg, #ff8800, #ff5500)';
     convertBtn.style.transform = 'scale(0.98)';
@@ -565,17 +858,121 @@ async function convertExFatToPegasusDirect() {
         const originalDecrypt = window.PippoExfatConverter ? PippoExfatConverter.decryptLinkLockUrl : (url) => url;
         const allPackages = [];
         const warnings = [];
-        
+
+        // Priority 3: timing + key-derivation stats. Reset the PBKDF2 counters
+        // so the numbers reflect only this generation run.
+        if (window.PippoExfatConverter && PippoExfatConverter._resetKeyDeriveStats) {
+            PippoExfatConverter._resetKeyDeriveStats();
+        }
+        const _t0 = performance.now();
+
+        // ====================================================================
+        // PRE-PASS: resolve every LinkLock URL once, in this order:
+        //   1. in-memory pegasusDecryptCache (this session)
+        //   2. IndexedDB persistent cache (across sessions/reloads)
+        //   3. Web Worker pool (cold decrypts only)  -> written back to IDB
+        // convertSingleGame then just reads pegasusDecryptCache, so output and
+        // ordering are unchanged.
+        // ====================================================================
+        pegasusCacheStats.hits = 0;
+        pegasusCacheStats.idbHits = 0;
+        pegasusCacheStats.misses = 0;
+        pegasusCacheStats.writes = 0;
+
+        const isLL = (v) => window.PippoExfatConverter && PippoExfatConverter.isLinkLockUrl && PippoExfatConverter.isLinkLockUrl(v);
+
+        // Collect distinct LinkLock URLs across the whole library.
+        const SKIP = new Set(['image', 'title', 'size', 'how_to_play', 'tags']);
+        const distinctEnc = new Set();
+        for (const game of allGames) {
+            for (const [key, value] of Object.entries(game)) {
+                if (SKIP.has(key) || key.startsWith('credits_')) continue;
+                if (typeof value !== 'string') continue;
+                if (!value.startsWith('http')) continue;
+                if (isLL(value)) distinctEnc.add(value);
+            }
+        }
+        const allEnc = [...distinctEnc];
+        const totalLinks = allEnc.length;
+
+        // 1) in-memory hits
+        const needIdb = [];
+        for (const enc of allEnc) {
+            if (pegasusDecryptCache.has(enc)) pegasusCacheStats.hits++;
+            else needIdb.push(enc);
+        }
+
+        // 2) IndexedDB hits
+        const db = await pegasusOpenDB();
+        let coldUrls = needIdb;
+        if (db && needIdb.length) {
+            const found = await pegasusIdbGetMany(db, needIdb);
+            coldUrls = [];
+            for (const enc of needIdb) {
+                if (found.has(enc)) { pegasusDecryptCache.set(enc, found.get(enc)); pegasusCacheStats.idbHits++; }
+                else coldUrls.push(enc);
+            }
+        }
+        pegasusCacheStats.misses = coldUrls.length;
+
+        // 3) Cold decrypts via worker pool (fallback: single-thread)
+        let _workerCount = 0;
+        if (coldUrls.length) {
+            _workerCount = (typeof Worker !== 'undefined') ? pegasusPoolSize() : 0;
+            setProgressLabel(`0/${coldUrls.length}`);
+            const singleThread = (url) => originalDecrypt(url);
+            let _coldLastPct = -1;
+            const newlyDecrypted = await pegasusDecryptViaPool(coldUrls, singleThread, (done, src) => {
+                const safeDone = Math.min(done, coldUrls.length);
+                const pct = Math.min(100, Math.round((safeDone / coldUrls.length) * 100));
+                logProgress(src || 'cold-decrypt', safeDone, coldUrls.length, pct, `${safeDone}/${coldUrls.length} (${pct}%)`);
+                if (pct !== _coldLastPct) {
+                    _coldLastPct = pct;
+                    setProgressLabel(`${safeDone}/${coldUrls.length} (${pct}%)`);
+                }
+            });
+            // Populate memory cache and queue IDB writes for successful decrypts.
+            const toPersist = new Map();
+            for (const [enc, plain] of newlyDecrypted) {
+                pegasusDecryptCache.set(enc, plain);
+                toPersist.set(enc, plain);
+            }
+            if (db && toPersist.size) {
+                pegasusCacheStats.writes = await pegasusIdbPutMany(db, toPersist);
+            }
+        }
+
+        const idbSize = await pegasusIdbCount(db);
+        const _tResolve = performance.now();
+        console.log(
+            `[pegasus] resolve: ${(_tResolve - _t0).toFixed(0)}ms | ` +
+            `links: ${totalLinks} | mem hits: ${pegasusCacheStats.hits} | ` +
+            `idb hits: ${pegasusCacheStats.idbHits} | cold decrypts: ${pegasusCacheStats.misses} | ` +
+            `idb writes: ${pegasusCacheStats.writes} | workers: ${_workerCount}` +
+            (idbSize != null ? ` | idb size: ${idbSize}` : '')
+        );
+        if (db) { try { db.close(); } catch (e) {} }
+
+        // Priority 4: throttle progress UI. Only update when the integer percent
+        // actually changes. The label flows through setProgressLabel so the
+        // spinner stays in sync and never re-parses the text.
+        let _lastPercent = -1;
+
         for (let i = 0; i < allGames.length; i++) {
             const game = allGames[i];
             const current = i + 1;
-            const percent = Math.round((current / totalGames) * 100);
-            const currentSpinner = convertBtn.innerHTML.charAt(0);
-            convertBtn.innerHTML = `${currentSpinner} ${percent}%`;
+            const percent = Math.min(100, Math.round((current / totalGames) * 100));
+            if (percent !== _lastPercent) {
+                _lastPercent = percent;
+                setProgressLabel(`${percent}%`);
+                logProgress('package-build', current, totalGames, percent, `${percent}%`);
+            }
             const result = await convertSingleGame(game, current, warnings, originalDecrypt);
             allPackages.push(...result);
         }
-        
+
+        const _tBuild = performance.now();
+
         stopSpinner();
         
         convertBtn.innerHTML = '📦 Creating JSON...';
@@ -591,6 +988,35 @@ async function convertExFatToPegasusDirect() {
         
         const jsonStr = JSON.stringify(catalog, null, 2);
         const blob = new Blob([jsonStr], { type: 'application/json' });
+
+        const _tJson = performance.now();
+
+        // Priority 3: emit the timing + cache report.
+        const _decryptedUrls = pegasusDecryptCache.size;
+        const _keyStats = (window.PippoExfatConverter && PippoExfatConverter._getKeyDeriveStats)
+            ? PippoExfatConverter._getKeyDeriveStats()
+            : { derivations: 'n/a', hits: 'n/a', misses: 'n/a', distinctSalts: 'n/a' };
+        console.log(
+            `[pegasus] total: ${(_tJson - _t0).toFixed(0)}ms | ` +
+            `resolve(decrypt): ${(_tResolve - _t0).toFixed(0)}ms | ` +
+            `build: ${(_tBuild - _tResolve).toFixed(0)}ms | ` +
+            `stringify+blob: ${(_tJson - _tBuild).toFixed(0)}ms`
+        );
+        console.log(
+            `[pegasus] cache -> mem hits: ${pegasusCacheStats.hits}, ` +
+            `idb hits: ${pegasusCacheStats.idbHits}, cold decrypts: ${pegasusCacheStats.misses}, ` +
+            `idb writes: ${pegasusCacheStats.writes}`
+        );
+        console.log(
+            `[pegasus] PBKDF2 derivations: ${_keyStats.derivations} ` +
+            `(key-cache hits: ${_keyStats.hits}, misses: ${_keyStats.misses}, distinct salts: ${_keyStats.distinctSalts}) | ` +
+            `decrypted URLs in memory: ${_decryptedUrls} | packages: ${allPackages.length} | warnings: ${warnings.length}`
+        );
+        if (warnings.length) {
+            console.warn(`[pegasus] ${warnings.length} warning(s) — entries below were skipped or had problems:`);
+            warnings.forEach(w => console.warn('  • ' + w));
+        }
+
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
@@ -1305,16 +1731,14 @@ function updateModalContentWithRipple(game) {
                 if (game.backport7xx_viki) bp7 += createModalBtnLocal(game.backport7xx_viki, 'VIKI');
                 if (game.backport7xx_buzz) bp7 += createModalBtnLocal(game.backport7xx_buzz, 'BUZZ');
                 if (game.backport7xx_data) bp7 += createModalBtnLocal(game.backport7xx_data, 'DATA');
-                if (game.backport7xx_filek) bp7 += createModalBtnLocal(game.backport7xx_filek, 'FILEK');
-                if (game.backport7xx_vault) bp7 += createModalBtnLocal(game.backport7xx_vault, 'VAULT');
+                if (game.backport7xx_filek) bp7 += createModalBtnLocal(game.backport7xx_filek, 'FILEK'); if (game.backport7xx_vault) bp7 += createModalBtnLocal(game.backport7xx_vault, 'VAULT');
             }
             if (hasBackport4) {
                 if (game.backport4xx_akia) bp4 += createModalBtnLocal(game.backport4xx_akia, 'AKIA');
                 if (game.backport4xx_viki) bp4 += createModalBtnLocal(game.backport4xx_viki, 'VIKI');
                 if (game.backport4xx_buzz) bp4 += createModalBtnLocal(game.backport4xx_buzz, 'BUZZ');
                 if (game.backport4xx_data) bp4 += createModalBtnLocal(game.backport4xx_data, 'DATA');
-                if (game.backport4xx_filek) bp4 += createModalBtnLocal(game.backport4xx_filek, 'FILEK');
-                if (game.backport4xx_vault) bp4 += createModalBtnLocal(game.backport4xx_vault, 'VAULT');
+                if (game.backport4xx_filek) bp4 += createModalBtnLocal(game.backport4xx_filek, 'FILEK'); if (game.backport4xx_vault) bp4 += createModalBtnLocal(game.backport4xx_vault, 'VAULT');
             }
             downloadsHTML = `${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
         } else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault) {
@@ -1323,14 +1747,12 @@ function updateModalContentWithRipple(game) {
             if (game.standard_viki) std += createModalBtnLocal(game.standard_viki, 'VIKI');
             if (game.standard_buzz) std += createModalBtnLocal(game.standard_buzz, 'BUZZ');
             if (game.standard_data) std += createModalBtnLocal(game.standard_data, 'DATA');
-            if (game.standard_filek) std += createModalBtnLocal(game.standard_filek, 'FILEK');
-            if (game.standard_vault) std += createModalBtnLocal(game.standard_vault, 'VAULT');
+            if (game.standard_filek) std += createModalBtnLocal(game.standard_filek, 'FILEK'); if (game.standard_vault) std += createModalBtnLocal(game.standard_vault, 'VAULT');
             if (game.backport_akia) bp += createModalBtnLocal(game.backport_akia, 'AKIA');
             if (game.backport_viki) bp += createModalBtnLocal(game.backport_viki, 'VIKI');
             if (game.backport_buzz) bp += createModalBtnLocal(game.backport_buzz, 'BUZZ');
             if (game.backport_data) bp += createModalBtnLocal(game.backport_data, 'DATA');
-            if (game.backport_filek) bp += createModalBtnLocal(game.backport_filek, 'FILEK');
-            if (game.backport_vault) bp += createModalBtnLocal(game.backport_vault, 'VAULT');
+            if (game.backport_filek) bp += createModalBtnLocal(game.backport_filek, 'FILEK'); if (game.backport_vault) bp += createModalBtnLocal(game.backport_vault, 'VAULT');
             downloadsHTML = `${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
         } else {
             let btns = '';
@@ -1351,8 +1773,7 @@ function updateModalContentWithRipple(game) {
             if (game.dump_viki) dumpHTML += createModalBtnLocal(game.dump_viki, 'VIKI', true);
             if (game.dump_buzz) dumpHTML += createModalBtnLocal(game.dump_buzz, 'BUZZ', true);
             if (game.dump_data) dumpHTML += createModalBtnLocal(game.dump_data, 'DATA', true);
-            if (game.dump_filek) dumpHTML += createModalBtnLocal(game.dump_filek, 'FILEK', true);
-            if (game.dump_vault) dumpHTML += createModalBtnLocal(game.dump_vault, 'VAULT', true);
+            if (game.dump_filek) dumpHTML += createModalBtnLocal(game.dump_filek, 'FILEK', true); if (game.dump_vault) dumpHTML += createModalBtnLocal(game.dump_vault, 'VAULT', true);
             dumpSection.style.display = 'block';
             dumpContainer.innerHTML = dumpHTML;
         } else dumpSection.style.display = 'none';
@@ -1362,8 +1783,7 @@ function updateModalContentWithRipple(game) {
         if (game.dlc_viki) dlcBtns += createModalBtnLocal(game.dlc_viki, 'VIKI');
         if (game.dlc_buzz) dlcBtns += createModalBtnLocal(game.dlc_buzz, 'BUZZ');
         if (game.dlc_data) dlcBtns += createModalBtnLocal(game.dlc_data, 'DATA');
-        if (game.dlc_filek) dlcBtns += createModalBtnLocal(game.dlc_filek, 'FILEK');
-        if (game.dlc_vault) dlcBtns += createModalBtnLocal(game.dlc_vault, 'VAULT');
+        if (game.dlc_filek) dlcBtns += createModalBtnLocal(game.dlc_filek, 'FILEK'); if (game.dlc_vault) dlcBtns += createModalBtnLocal(game.dlc_vault, 'VAULT');
         if (dlcBtns) { dlcSection.style.display = 'block'; dlcContainer.innerHTML = dlcBtns; } else dlcSection.style.display = 'none';
         
         let parts = [];
@@ -1837,8 +2257,8 @@ function openGameModal(game, event) {
     const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault;
     if (hasBackport7 || hasBackport4) {
         let bp7 = '', bp4 = '';
-        if (hasBackport7) { if (game.backport7xx_akia) bp7 += createModalBtnLocal(game.backport7xx_akia, 'AKIA'); if (game.backport7xx_viki) bp7 += createModalBtnLocal(game.backport7xx_viki, 'VIKI'); if (game.backport7xx_buzz) bp7 += createModalBtnLocal(game.backport7xx_buzz, 'BUZZ'); if (game.backport7xx_data) bp7 += createModalBtnLocal(game.backport7xx_data, 'DATA'); if (game.backport7xx_filek) bp7 += createModalBtnLocal(game.backport7xx_filek, 'FILEK'); if (game.backport7xx_vault) bp7 += createModalBtnLocal(game.backport7xx_vault, 'VAULT'); }
-        if (hasBackport4) { if (game.backport4xx_akia) bp4 += createModalBtnLocal(game.backport4xx_akia, 'AKIA'); if (game.backport4xx_viki) bp4 += createModalBtnLocal(game.backport4xx_viki, 'VIKI'); if (game.backport4xx_buzz) bp4 += createModalBtnLocal(game.backport4xx_buzz, 'BUZZ'); if (game.backport4xx_data) bp4 += createModalBtnLocal(game.backport4xx_data, 'DATA'); if (game.backport4xx_filek) bp4 += createModalBtnLocal(game.backport4xx_filek, 'FILEK'); if (game.backport4xx_vault) bp4 += createModalBtnLocal(game.backport4xx_vault, 'VAULT'); }
+        if (hasBackport7) { if (game.backport7xx_akia) bp7 += createModalBtnLocal(game.backport7xx_akia, 'AKIA'); if (game.backport7xx_viki) bp7 += createModalBtnLocal(game.backport7xx_viki, 'VIKI'); if (game.backport7xx_buzz) bp7 += createModalBtnLocal(game.backport7xx_buzz, 'BUZZ'); if (game.backport7xx_data) bp7 += createModalBtnLocal(game.backport7xx_data, 'DATA'); if (game.backport7xx_filek || game.backport7xx_vault) bp7 += createModalBtnLocal(game.backport7xx_filek || game.backport7xx_vault, 'FILEK'); }
+        if (hasBackport4) { if (game.backport4xx_akia) bp4 += createModalBtnLocal(game.backport4xx_akia, 'AKIA'); if (game.backport4xx_viki) bp4 += createModalBtnLocal(game.backport4xx_viki, 'VIKI'); if (game.backport4xx_buzz) bp4 += createModalBtnLocal(game.backport4xx_buzz, 'BUZZ'); if (game.backport4xx_data) bp4 += createModalBtnLocal(game.backport4xx_data, 'DATA'); if (game.backport4xx_filek || game.backport4xx_vault) bp4 += createModalBtnLocal(game.backport4xx_filek || game.backport4xx_vault, 'FILEK'); }
         downloadsHTML = `${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
     } else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault) {
         let std = '', bp = '';
@@ -1855,7 +2275,7 @@ function openGameModal(game, event) {
     const dumpContainer = document.getElementById('modal-dump');
     let dumpHTML = '';
     const hasDump = game.dump_akia || game.dump_viki || game.dump_buzz || game.dump_data || game.dump_filek || game.dump_vault;
-    if (hasDump) { if (game.dump_akia) dumpHTML += createModalBtnLocal(game.dump_akia, 'AKIA', true); if (game.dump_viki) dumpHTML += createModalBtnLocal(game.dump_viki, 'VIKI', true); if (game.dump_buzz) dumpHTML += createModalBtnLocal(game.dump_buzz, 'BUZZ', true); if (game.dump_data) dumpHTML += createModalBtnLocal(game.dump_data, 'DATA', true); if (game.dump_filek) dumpHTML += createModalBtnLocal(game.dump_filek, 'FILEK', true); if (game.dump_vault) dumpHTML += createModalBtnLocal(game.dump_vault, 'VAULT', true); dumpSection.style.display = 'block'; dumpContainer.innerHTML = dumpHTML; } else dumpSection.style.display = 'none';
+    if (hasDump) { if (game.dump_akia) dumpHTML += createModalBtnLocal(game.dump_akia, 'AKIA', true); if (game.dump_viki) dumpHTML += createModalBtnLocal(game.dump_viki, 'VIKI', true); if (game.dump_buzz) dumpHTML += createModalBtnLocal(game.dump_buzz, 'BUZZ', true); if (game.dump_data) dumpHTML += createModalBtnLocal(game.dump_data, 'DATA', true); if (game.dump_filek || game.dump_vault) dumpHTML += createModalBtnLocal(game.dump_filek || game.dump_vault, 'FILEK', true); dumpSection.style.display = 'block'; dumpContainer.innerHTML = dumpHTML; } else dumpSection.style.display = 'none';
     const dlcSection = document.getElementById('modal-dlc-section');
     const dlcContainer = document.getElementById('modal-dlc');
     let dlcBtns = '';
@@ -1985,20 +2405,18 @@ function renderGames() {
         if (game.dump_viki) dumpBtns += createBtn(game.dump_viki, 'VIKI', false, true);
         if (game.dump_buzz) dumpBtns += createBtn(game.dump_buzz, 'BUZZ', false, true);
         if (game.dump_data) dumpBtns += createBtn(game.dump_data, 'DATA', false, true);
-        if (game.dump_filek) dumpBtns += createBtn(game.dump_filek, 'FILEK', false, true);
-        if (game.dump_vault) dumpBtns += createBtn(game.dump_vault, 'VAULT', false, true);
+        if (game.dump_filek) dumpBtns += createBtn(game.dump_filek, 'FILEK', false, true); if (game.dump_vault) dumpBtns += createBtn(game.dump_vault, 'VAULT', false, true);
         if (game.dlc_akia) dlcBtns += createBtn(game.dlc_akia, 'AKIA', true);
         if (game.dlc_viki) dlcBtns += createBtn(game.dlc_viki, 'VIKI', true);
         if (game.dlc_buzz) dlcBtns += createBtn(game.dlc_buzz, 'BUZZ', true);
         if (game.dlc_data) dlcBtns += createBtn(game.dlc_data, 'DATA', true);
-        if (game.dlc_filek) dlcBtns += createBtn(game.dlc_filek, 'FILEK', true);
-        if (game.dlc_vault) dlcBtns += createBtn(game.dlc_vault, 'VAULT', true);
+        if (game.dlc_filek) dlcBtns += createBtn(game.dlc_filek, 'FILEK', true); if (game.dlc_vault) dlcBtns += createBtn(game.dlc_vault, 'VAULT', true);
         const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault;
         const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault;
         if (hasBackport7 || hasBackport4) {
             let bp7 = '', bp4 = '';
-            if (hasBackport7) { if (game.backport7xx_akia) bp7 += createBtn(game.backport7xx_akia, 'AKIA'); if (game.backport7xx_viki) bp7 += createBtn(game.backport7xx_viki, 'VIKI'); if (game.backport7xx_buzz) bp7 += createBtn(game.backport7xx_buzz, 'BUZZ'); if (game.backport7xx_data) bp7 += createBtn(game.backport7xx_data, 'DATA'); if (game.backport7xx_filek) bp7 += createBtn(game.backport7xx_filek, 'FILEK'); if (game.backport7xx_vault) bp7 += createBtn(game.backport7xx_vault, 'VAULT'); }
-            if (hasBackport4) { if (game.backport4xx_akia) bp4 += createBtn(game.backport4xx_akia, 'AKIA'); if (game.backport4xx_viki) bp4 += createBtn(game.backport4xx_viki, 'VIKI'); if (game.backport4xx_buzz) bp4 += createBtn(game.backport4xx_buzz, 'BUZZ'); if (game.backport4xx_data) bp4 += createBtn(game.backport4xx_data, 'DATA'); if (game.backport4xx_filek) bp4 += createBtn(game.backport4xx_filek, 'FILEK'); if (game.backport4xx_vault) bp4 += createBtn(game.backport4xx_vault, 'VAULT'); }
+            if (hasBackport7) { if (game.backport7xx_akia) bp7 += createBtn(game.backport7xx_akia, 'AKIA'); if (game.backport7xx_viki) bp7 += createBtn(game.backport7xx_viki, 'VIKI'); if (game.backport7xx_buzz) bp7 += createBtn(game.backport7xx_buzz, 'BUZZ'); if (game.backport7xx_data) bp7 += createBtn(game.backport7xx_data, 'DATA'); if (game.backport7xx_filek || game.backport7xx_vault) bp7 += createBtn(game.backport7xx_filek || game.backport7xx_vault, 'FILEK'); }
+            if (hasBackport4) { if (game.backport4xx_akia) bp4 += createBtn(game.backport4xx_akia, 'AKIA'); if (game.backport4xx_viki) bp4 += createBtn(game.backport4xx_viki, 'VIKI'); if (game.backport4xx_buzz) bp4 += createBtn(game.backport4xx_buzz, 'BUZZ'); if (game.backport4xx_data) bp4 += createBtn(game.backport4xx_data, 'DATA'); if (game.backport4xx_filek || game.backport4xx_vault) bp4 += createBtn(game.backport4xx_filek || game.backport4xx_vault, 'FILEK'); }
             downloadHTML = `${bp7 ? `<p class="ver-label"><b>BP 7.xx:</b></p><div class="download-container">${bp7}</div>` : ''}${bp4 ? `<p class="ver-label"><b>BP 4.xx:</b></p><div class="download-container">${bp4}</div>` : ''}`;
         } else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault) {
             let std = '', bp = '';
@@ -2013,7 +2431,7 @@ function renderGames() {
         let dumpSectionHTML = dumpBtns ? `<p class="ver-label"><b>DUMP:</b></p><div class="download-container">${dumpBtns}</div>` : '';
         let dlcSectionHTML = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
         
-        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" loading="lazy" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'"><div class="tags-overlay">${tagsHTML}</div><div class="game-badges">${aprEmuHTML}${sizeHTML}</div></div><div class="download-section">${downloadHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
+        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'"><div class="tags-overlay">${tagsHTML}</div><div class="game-badges">${aprEmuHTML}${sizeHTML}</div></div><div class="download-section">${downloadHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
     });
     const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
     document.getElementById('page-info').innerText = `Page ${currentPage} of ${totalPages || 1}`;
@@ -2147,6 +2565,6 @@ function setupPageJump() {
 document.getElementById('modal-close-btn').onclick = () => { document.getElementById('game-detail-modal').style.display = 'none'; isRandomModeActive = false; };
 window.onclick = (e) => { if (e.target.classList.contains('game-modal')) { e.target.style.display = 'none'; isRandomModeActive = false; } };
 window.addEventListener('DOMContentLoaded', init);
-window.addEventListener('scroll', () => { const nav = document.querySelector('nav'); if (nav) { if (window.scrollY > 20) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); } });
+window.addEventListener('scroll', () => { const nav = document.querySelector('nav'); if (nav) { if (window.scrollY > 20) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); } }, { passive: true });
 document.getElementById('next-page').onclick = () => { currentPage++; renderGames(); scrollToTop(true); };
 document.getElementById('prev-page').onclick = () => { currentPage--; renderGames(); scrollToTop(true); };

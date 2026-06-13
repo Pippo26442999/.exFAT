@@ -95,6 +95,51 @@ async function deriveKey(password, salt, iterations = 100000) {
   );
 }
 
+// --- Derived-key cache (Priority 1) -----------------------------------------
+// PBKDF2 at 100k iterations is the dominant cost. The derived CryptoKey is a
+// pure function of (password, iterations, salt) -- and in this catalog nearly
+// every link-lock URL shares the same default salt. Caching the CryptoKey
+// collapses ~1098 derivations down to one per distinct salt. Decrypted output
+// is byte-identical; only the key object is reused.
+const _derivedKeyCache = new Map(); // cacheKey -> Promise<CryptoKey>
+const _keyDeriveStats = { derivations: 0, hits: 0, misses: 0 };
+
+function _saltToB64(salt) {
+  let s = '';
+  for (let i = 0; i < salt.length; i++) s += String.fromCharCode(salt[i]);
+  return btoa(s);
+}
+
+async function deriveKeyCached(password, salt, iterations = 100000) {
+  const cacheKey = `${password}|${iterations}|${_saltToB64(salt)}`;
+  if (_derivedKeyCache.has(cacheKey)) {
+    _keyDeriveStats.hits++;
+    return _derivedKeyCache.get(cacheKey);
+  }
+  _keyDeriveStats.misses++;
+  _keyDeriveStats.derivations++;
+  const keyPromise = deriveKey(password, salt, iterations);
+  _derivedKeyCache.set(cacheKey, keyPromise);
+  return keyPromise;
+}
+
+function _getKeyDeriveStats() {
+  return { ..._keyDeriveStats, distinctSalts: _derivedKeyCache.size };
+}
+
+function _resetKeyDeriveStats() {
+  _keyDeriveStats.derivations = 0;
+  _keyDeriveStats.hits = 0;
+  _keyDeriveStats.misses = 0;
+}
+
+// Benchmark-only: drop the derived-key cache so the next run pays full
+// cold-start PBKDF2 cost. Do NOT call this in normal generation -- the cache
+// is meant to stay warm across repeat generations in a session.
+function _clearKeyCacheForBenchmark() {
+  _derivedKeyCache.clear();
+}
+
 async function decryptLinkLockUrl(encryptedUrl) {
   const parsed = new URL(encryptedUrl);
   if (parsed.hostname !== LINK_LOCK_HOST || !parsed.pathname.startsWith('/link-lock-pippo/')) {
@@ -109,7 +154,7 @@ async function decryptLinkLockUrl(encryptedUrl) {
   const salt = params.s ? base64ToBuffer(params.s) : new Uint8Array([236, 231, 167, 249, 207, 95, 201, 235, 164, 98, 246, 26, 176, 174, 72, 249]);
   const iv = params.i ? base64ToBuffer(params.i) : new Uint8Array([255, 237, 148, 105, 6, 255, 123, 202, 115, 130, 16, 116]);
   
-  const key = await deriveKey(LINK_LOCK_PASSWORD, salt);
+  const key = await deriveKeyCached(LINK_LOCK_PASSWORD, salt);
   const ciphertext = encrypted.slice(0, encrypted.length - 16);
   const tag = encrypted.slice(encrypted.length - 16);
   
@@ -372,4 +417,4 @@ async function convertExFatToPegasus(exFatData) {
   };
 }
 
-window.PippoExfatConverter = { convertExFatToPegasus, decryptLinkLockUrl, isLinkLockUrl };
+window.PippoExfatConverter = { convertExFatToPegasus, decryptLinkLockUrl, isLinkLockUrl, _getKeyDeriveStats, _resetKeyDeriveStats, _clearKeyCacheForBenchmark };

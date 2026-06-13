@@ -1396,15 +1396,25 @@
             display: flex; flex-direction: column; align-items: center; position: relative;
             overflow: hidden; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             animation: slideInLeft 0.5s ease backwards;
+            /* Perf: skip layout/paint/composite for off-screen cards. The
+               intrinsic size keeps the scrollbar stable so there is no jump. */
+            content-visibility: auto;
+            contain-intrinsic-size: auto 560px;
         }
         .game-card:hover { transform: translateY(-10px) scale(1.02); background: rgba(10, 10, 20, 0.85); border-color: rgba(255, 255, 255, 0.3); box-shadow: 0 20px 50px rgba(0,0,0,0.8); }
         .game-card::before {
             content: "";
             position: absolute; top: -40%; left: -40%; width: 180%; height: 180%;
             background: radial-gradient(circle at center, var(--p1) 0%, var(--p2) 30%, var(--p3) 50%, transparent 75%);
-            filter: blur(60px); animation: liquidGlow 8s ease-in-out infinite;
+            filter: blur(60px);
+            /* Perf: the 60px-blur glow used to animate infinitely on EVERY card,
+               forcing a composite every frame even off-screen. Keep the glow
+               static (identical look at rest); only animate while hovered. */
+            animation: liquidGlow 8s ease-in-out infinite;
+            animation-play-state: paused;
             z-index: 1; pointer-events: none;
         }
+        .game-card:hover::before { animation-play-state: running; }
         .game-badges {
             position: absolute;
             bottom: 15px;
