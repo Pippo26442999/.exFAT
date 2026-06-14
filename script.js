@@ -2067,35 +2067,106 @@ async function loadUpdates() {
 async function loadLibrary() {
     try {
         const isFlagged = sessionStorage.getItem('flagged_as_bot') === 'true' || IS_BOT;
-        const response = await fetch('exFAT.json?v=' + Date.now());
-        if (!response.ok) throw new Error("Errore JSON Network");
+        const url = 'exFAT.json?v=' + Date.now();
+        console.log('[LIBRARY] Tentativo di caricamento da:', url);
+        
+        const response = await fetch(url);
+        
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        
         const text = await response.text();
+        console.log('[LIBRARY] File ricevuto, lunghezza:', text.length, 'bytes');
+        
+        if (!text || text.trim() === '') {
+            throw new Error('Il file exFAT.json è vuoto');
+        }
+        
+        let data;
         try {
-            let data = JSON.parse(text);
-            if (isFlagged) data = generateFakeGames(500);
-            allGames = data;
-            allGames.forEach((game, index) => { originalOrderMap.set(game.title, index); });
-        } catch (jsonError) { alert("🚨 ERRORE FATALE: Il tuo file exFAT.json è rotto!\nCorreggi il file JSON e ricarica la pagina."); hideSkeletonLoader(); return; }
-        document.getElementById('fw-filter').value = '99';
-        document.getElementById('fw-current').innerText = 'FW: All';
+            data = JSON.parse(text);
+            console.log('[LIBRARY] JSON parsato con successo,', Array.isArray(data) ? data.length + ' giochi' : 'oggetto ricevuto');
+        } catch (jsonError) {
+            console.error('[LIBRARY] Errore parsing JSON:', jsonError.message);
+            console.log('[LIBRARY] Prime 300 caratteri:', text.substring(0, 300));
+            
+            // Mostra errore più dettagliato
+            const errorMsg = document.getElementById('pw-error') || document.createElement('div');
+            errorMsg.style.cssText = 'position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.95); color:#ff4444; padding:30px; border-radius:20px; z-index:999999; text-align:center; border:2px solid #ff4444;';
+            errorMsg.innerHTML = `<h2>❌ ERRORE FATALE</h2><p>Il file exFAT.json è corrotto o malformato.</p><p style="font-size:0.8rem; margin-top:20px;">${jsonError.message}</p><button onclick="location.reload()" style="margin-top:20px; padding:10px 20px; background:#ff4444; border:none; border-radius:10px; color:white; cursor:pointer;">RICARICA</button>`;
+            document.body.appendChild(errorMsg);
+            hideSkeletonLoader();
+            return;
+        }
+        
+        // Verifica che data sia un array
+        if (!Array.isArray(data)) {
+            console.error('[LIBRARY] exFAT.json non è un array!', typeof data);
+            if (isFlagged) {
+                data = generateFakeGames(500);
+            } else {
+                throw new Error('Il file exFAT.json deve contenere un array di giochi');
+            }
+        }
+        
+        if (isFlagged) {
+            data = generateFakeGames(500);
+            console.log('[LIBRARY] Modalità bot attiva - generati 500 fake games');
+        }
+        
+        allGames = data;
+        allGames.forEach((game, index) => { 
+            originalOrderMap.set(game.title, index); 
+        });
+        
+        console.log('[LIBRARY] Caricati', allGames.length, 'giochi');
+        
+        // Inizializza i filtri
+        const fwFilter = document.getElementById('fw-filter');
+        const fwCurrent = document.getElementById('fw-current');
+        if (fwFilter) fwFilter.value = '99';
+        if (fwCurrent) fwCurrent.innerText = 'FW: All';
+        
         const mobileFwFilter = document.getElementById('mobile-fw-filter');
         const mobileFwCurrent = document.getElementById('mobile-fw-current');
         if (mobileFwFilter) mobileFwFilter.value = '99';
         if (mobileFwCurrent) mobileFwCurrent.innerText = 'FW: All';
-        document.getElementById('sort-filter').value = 'default';
-        document.getElementById('sort-current').innerText = 'Sort: Default';
+        
+        const sortFilter = document.getElementById('sort-filter');
+        const sortCurrent = document.getElementById('sort-current');
+        if (sortFilter) sortFilter.value = 'default';
+        if (sortCurrent) sortCurrent.innerText = 'Sort: Default';
+        
         const mobileSortFilter = document.getElementById('mobile-sort-filter');
         const mobileSortCurrent = document.getElementById('mobile-sort-current');
         if (mobileSortFilter) mobileSortFilter.value = 'default';
         if (mobileSortCurrent) mobileSortCurrent.innerText = 'Sort: Default';
-        localStorage.removeItem('preferred_fw');
-        localStorage.removeItem('preferred_sort');
+        
+        // Applica filtri e renderizza
         applyFWFilterWithSort();
         renderPopularGames();
         renderGames();
         updateResultCount();
         hideSkeletonLoader();
-    } catch (e) { console.error("Errore caricamento library:", e); hideSkeletonLoader(); }
+        
+    } catch (e) {
+        console.error('[LIBRARY] Errore fatale:', e);
+        hideSkeletonLoader();
+        
+        // Mostra errore visibile
+        const grid = document.getElementById('game-grid');
+        if (grid) {
+            grid.innerHTML = `
+                <div style="grid-column:1/-1; text-align:center; padding:60px; background:rgba(255,0,0,0.1); border-radius:30px; margin:20px;">
+                    <div style="font-size:3rem; margin-bottom:20px;">⚠️</div>
+                    <h2 style="color:#ff4444;">Errore Caricamento Libreria</h2>
+                    <p style="color:rgba(255,255,255,0.7); margin-bottom:20px;">${e.message}</p>
+                    <button onclick="location.reload()" style="background:var(--cyan-neon); border:none; padding:12px 30px; border-radius:30px; font-weight:900; cursor:pointer;">🔄 Ricarica Pagina</button>
+                </div>
+            `;
+        }
+    }
 }
 
 function setupCarousel() {
