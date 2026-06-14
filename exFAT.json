@@ -1,5 +1,26 @@
 [
    {
+    "title": "Lost Judgment",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Lost_Judgment.webp",
+    "tags": [
+      "PPSA03775",
+      "v01.011",
+      "EUR",
+      "DLCs Merged",
+      "3.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUmhhcm5NRXYydkZrTHUzRTN6S1lGanhCSTErNlBBOXN3TVBpWk82VjlWV0lxOS9SM1JyUkc4RlJ1RjFjQXZhNUVBPT0iLCJzIjoiTU9wY0tOQkxBWnJJczFmKzNoSkpkZz09IiwiaSI6IkRvTDZCQjVhUlduanZTMFUifQ==",
+    "filek_url": "",
+    "vault_url": "",
+    "credits_files": "SiESPTA",
+    "credits_dlc": "SiESPTA",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "57GB"
+  },
+   {
     "title": "GRID Legends",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/GRID_Legends.avif",
     "tags": [
@@ -3798,25 +3819,6 @@
     "credits_files": "SazanOFF & TRIFECTA",
     "credits_dlc": "Pkykzhack",
     "size": "26GB"
-  },
-  {
-    "title": "FATAL FURY: City of the Wolves",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/FATAL_FURY_City_of_the_Wolves.jpg",
-    "tags": [
-      "PPSA19359",
-      "v01.000",
-      "JPN",
-      "Standard (7.xx) + 4.xx BackPork"
-    ],
-    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVEEzQ0doV2hobTQvYjBoMHM1SDFmcEd6cW16eWJTWnVjVzAxSnpoVVNGaThRY0Q0VURyUXorSHVIMmxHTDF5N3BLc3pINnNKIiwicyI6Im1RRzhJQ3hhd29ncEpqdW9ZQ1l0VUE9PSIsImkiOiJqQ3hxcUpDRFRHMDFkNjd4In0=",
-    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUi9mREVoRUpXVCt4ekE5aDY0R2h1RHRBM216dmlKbXBWZ0xBUlU0UkZzSkdYMm1QbzRWZC9iWitQUE52THVpSDRycVMiLCJzIjoiUFlNTURpM1RnK2VxVFl1elQ2Vk9jQT09IiwiaSI6IlY5Nlc3QmgvZ3Vzb2U5WG4ifQ==",
-    "standard_buzz": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUEs0M1ZpSDgzQ3JwanhmblowTHBaMy9xWnJpODRtVFhmcTBsWThzM3piUmRqeTVJbW9OY0VQZEh0MWxKSzhmNmVkNzlFZz09IiwicyI6ImJ4VDJjWGQwYWd0Zk9MNDkyZ1BNSlE9PSIsImkiOiJsSytKYVZ2NitkNmRSbnpzIn0=",
-    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNS94RmcySXZBazZQOHlYVXpBNzhsbmwyMkFOWjlkSVJBTlVHc09ZejQ5dnJNSkpndnExbjd3Z3lOTVVqRG51Y2lzK2FsWUxnIiwicyI6Ikl3L3VIYUNTMlQ5TFZsbWRHQjUvZFE9PSIsImkiOiJmUWg0a2FSZW1FaTF1cWRsIn0=",
-    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUGVZOStHY0NwelVsaXE0d3hyZ1ROcVlKbW4vWGpzMTZaRTRPaEJwdTRDME5zaDR3MXAzVlQzNk13eFlzQlJmT3J0OEkiLCJzIjoicVZYcmFPUmV2RXVmOEhpdHZaTWFuQT09IiwiaSI6Im5sNDdlbFFVMUtiS1JZNnYifQ==",
-    "backport_buzz": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMXBCZGhYaXNvWGxSNThRQmtGN3BtL0pZcE52ZVppeHJOL3Y2T2NGLy9Oc1ZPQjFrY0Q2eVpqVElhRkN5bWhCRldJYU1Idz09IiwicyI6IkRid2h4akp5eVV4cFhpR1VzSjB4b2c9PSIsImkiOiJUTEF2UEc0SlNMdlg5cTRYIn0=",
-    "credits_files": "SiESPTA",
-    "credits_backport": "BestPig",
-    "size": "54GB"
   },
   {
     "title": "Tomb Raider I-III Remastered",
