@@ -1998,7 +1998,29 @@
         .dmca-text p {
             margin-bottom: 15px;
         }
+        
+.faq-text a {
+    color: var(--cyan-neon) !important;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(0, 255, 238, 0.1);
+}
 
+.faq-text a:hover {
+    color: #fff !important;
+    background: rgba(0, 255, 238, 0.25);
+    text-shadow: 0 0 20px var(--cyan-neon);
+    box-shadow: 0 0 15px rgba(0, 255, 238, 0.3);
+    text-decoration: none;
+}
+
+.faq-text a:visited {
+    color: #88ddff;
+}
         /* FAQ MODAL */
         .faq-modal-overlay {
             display: none;
