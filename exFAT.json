@@ -1,5 +1,28 @@
 [
    {
+    "title": "Gotham Knights",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Gotham_Knights.avif",
+    "tags": [
+      "PPSA07257",
+      "v05.000",
+      "EUR",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQ3BBb1JYeXJpMkZJQlNnM3RLV1MzNnFlYXZFVEJpQ2h2VlRZV1RIU3dkZ1ByelZuV0ttdm1CbWVPdkVPUXVUK3NnPT0iLCJzIjoiWDcxN2g4TENCaEZ3Z1YxY28yRnQ0QT09IiwiaSI6ImQzSjhRaXI3c1lmcDlTb24ifQ==",
+    "filek_url": "",
+    "vault_url": "",
+    "credits_files": "Psykzhack",
+    "credits_dlc": "Psykzhack",
+    "credits_backport": "kerrdec97",
+    "how_to_play": "Need Trophy Unlocker (if use etaHEN - Check the FAQ) or kstuff lite 1.07+ for avoid the loading infinite.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "80GB"
+  },
+   {
     "title": "Asterix and Obelix Slap Them All",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Asterix_and_Obelix_Slap_Them_All.avif",
     "tags": [
