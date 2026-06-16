@@ -1955,22 +1955,22 @@ function setupFAQModal() {
     if (closeBtn) closeBtn.onclick = closeModal;
     if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
     
-    const openFAQModal = async () => {
-        try {
-            const res = await fetch('FAQ.json?v=' + Date.now());
-            const data = await res.json();
-            const bodyContainer = document.getElementById('faqModalBody');
-            if (bodyContainer) {
-                let html = `<div class="faq-text"><h3 style="color:var(--cyan-neon); margin-bottom:25px; text-align:center;">${data.title}</h3>`;
-                data.sections.forEach(section => {
-                    html += `<div class="faq-question">
-                                <strong>${escapeHtml(section.question)}</strong>
-                                <p>${escapeHtml(section.answer)}</p>
-                             </div>`;
-                });
-                html += `</div>`;
-                bodyContainer.innerHTML = html;
-            }
+const openFAQModal = async () => {
+    try {
+        const res = await fetch('FAQ.json?v=' + Date.now());
+        const data = await res.json();
+        const bodyContainer = document.getElementById('faqModalBody');
+        if (bodyContainer) {
+            let html = `<div class="faq-text"><h3 style="color:var(--cyan-neon); margin-bottom:25px; text-align:center;">${data.title}</h3>`;
+            data.sections.forEach(section => {
+                html += `<div class="faq-question">
+                            <strong>${escapeHtml(section.question)}</strong>
+                            <p>${section.answer}</p>  <!-- RIMOSSO escapeHtml() -->
+                         </div>`;
+            });
+            html += `</div>`;
+            bodyContainer.innerHTML = html;
+        }
             if (modal) {
                 modal.classList.remove('hiding');
                 const container = modal.querySelector('.faq-modal-container');
