@@ -157,11 +157,6 @@ let cachedAprEmuFiles = null;
 
 // ============================================================================
 // Pegasus decrypt acceleration: IndexedDB persistent cache + Web Worker pool
-// ----------------------------------------------------------------------------
-// LinkLock ciphertext->plaintext is deterministic and stable, so decrypted URLs
-// can be cached permanently and reused across reloads/sessions. PBKDF2 (100k
-// iterations) is ~99% of decrypt cost and only real OS threads (Web Workers)
-// parallelise it. This block adds both, with safe single-thread fallback.
 // ============================================================================
 const PEGASUS_IDB_NAME = 'pegasusDecryptCache';
 const PEGASUS_IDB_STORE = 'links';
@@ -178,15 +173,14 @@ function pegasusOpenDB() {
     req.onupgradeneeded = () => {
       const db = req.result;
       if (!db.objectStoreNames.contains(PEGASUS_IDB_STORE)) {
-        db.createObjectStore(PEGASUS_IDB_STORE); // key = encrypted URL, value = plaintext
+        db.createObjectStore(PEGASUS_IDB_STORE);
       }
     };
     req.onsuccess = () => resolve(req.result);
-    req.onerror = () => resolve(null); // fail soft: no cache rather than crash
+    req.onerror = () => resolve(null);
   });
 }
 
-// Bulk-read plaintexts for a list of encrypted URLs. Returns Map(enc -> plain).
 async function pegasusIdbGetMany(db, encUrls) {
   const out = new Map();
   if (!db || !encUrls.length) return out;
@@ -205,7 +199,6 @@ async function pegasusIdbGetMany(db, encUrls) {
   });
 }
 
-// Bulk-write newly decrypted plaintexts. Map(enc -> plain).
 async function pegasusIdbPutMany(db, map) {
   if (!db || !map.size) return 0;
   return new Promise((resolve) => {
@@ -233,9 +226,6 @@ async function pegasusIdbCount(db) {
   });
 }
 
-// Clear the Pegasus decrypt cache (both in-memory and IndexedDB). Callable from
-// the console as `clearPegasusDecryptCache()` or wired to a button. Returns the
-// number of IndexedDB entries removed (or 'memory-only' if IDB unavailable).
 async function clearPegasusDecryptCache() {
   try { pegasusDecryptCache.clear(); } catch (e) {}
   const db = await pegasusOpenDB();
@@ -256,9 +246,7 @@ async function clearPegasusDecryptCache() {
 }
 if (typeof window !== 'undefined') window.clearPegasusDecryptCache = clearPegasusDecryptCache;
 
-// --- Worker source (built from a Blob so it ships inside script.js) ---------
-// The worker re-implements ONLY the decrypt primitives, identical to
-// Generators/pegasus-dl-converter-kerrdec97.js, so output matches exactly.
+// --- Worker source ---
 const PEGASUS_WORKER_SRC = `
 const LINK_LOCK_PASSWORD = "pippo";
 const DEF_SALT = new Uint8Array([236,231,167,249,207,95,201,235,164,98,246,26,176,174,72,249]);
@@ -294,14 +282,10 @@ function pegasusWorkerUrl() {
   return _pegasusWorkerBlobUrl;
 }
 
-// Compute the worker pool size: min(8, hardwareConcurrency), >=1.
 function pegasusPoolSize() {
   try { return Math.max(1, Math.min(8, navigator.hardwareConcurrency || 4)); } catch (e) { return 4; }
 }
 
-// Decrypt a list of encrypted URLs across a worker pool. Returns
-// Map(enc -> plain). Output order is irrelevant (keyed by URL). Falls back to
-// single-thread decrypt if Workers are unavailable or fail to spawn.
 async function pegasusDecryptViaPool(encUrls, singleThreadDecrypt, onProgress) {
   const result = new Map();
   if (!encUrls.length) return result;
@@ -309,7 +293,6 @@ async function pegasusDecryptViaPool(encUrls, singleThreadDecrypt, onProgress) {
   const canWorker = (typeof Worker !== 'undefined');
   let poolSize = pegasusPoolSize();
 
-  // Fallback: single-thread sequential (existing behaviour).
   const runSingleThread = async () => {
     let done = 0;
     for (const enc of encUrls) {
@@ -321,7 +304,6 @@ async function pegasusDecryptViaPool(encUrls, singleThreadDecrypt, onProgress) {
 
   if (!canWorker) return runSingleThread();
 
-  // Spawn pool.
   let workers = [];
   try {
     const url = pegasusWorkerUrl();
@@ -333,21 +315,16 @@ async function pegasusDecryptViaPool(encUrls, singleThreadDecrypt, onProgress) {
 
   return new Promise((resolve) => {
     let nextIndex = 0;
-    let settledCount = 0;          // jobs that returned a result OR errored
+    let settledCount = 0;
     let settled = false;
     let aliveWorkers = workers.length;
-    const inFlight = new Map();    // worker -> enc URL it is currently processing
-    const unfinished = new Set();  // URLs a dead worker dropped (need single-thread)
-
+    const inFlight = new Map();
+    const unfinished = new Set();
     const total = encUrls.length;
 
     const sweepAndResolve = async () => {
       if (settled) return; settled = true;
       try { workers.forEach(w => { try { w.terminate(); } catch (_) {} }); } catch (_) {}
-      // Single-thread sweep for EVERY URL not yet resolved: in-flight at crash
-      // time, dropped by a dead worker, or never assigned because the pool died
-      // before reaching them. This guarantees completeness regardless of how
-      // many workers survived.
       for (const enc of encUrls) {
         if (result.has(enc)) continue;
         try { result.set(enc, await singleThreadDecrypt(enc)); } catch (e) { /* don't cache failure */ }
@@ -364,7 +341,6 @@ async function pegasusDecryptViaPool(encUrls, singleThreadDecrypt, onProgress) {
       inFlight.set(w, enc);
       try { w.postMessage({ id: nextIndex - 1, url: enc }); }
       catch (e) {
-        // posting to a dead worker: record the URL for the sweep and stop using it
         unfinished.add(enc); inFlight.delete(w); aliveWorkers = Math.max(0, aliveWorkers - 1);
         maybeDone();
       }
@@ -374,7 +350,6 @@ async function pegasusDecryptViaPool(encUrls, singleThreadDecrypt, onProgress) {
       w.onmessage = (e) => {
         const { plain, url } = e.data;
         if (typeof plain === 'string') result.set(url, plain);
-        // decrypt failures are simply not cached (per spec); they still count as settled
         inFlight.delete(w);
         settledCount++;
         if (onProgress) onProgress(Math.min(settledCount, total), 'worker');
@@ -382,31 +357,22 @@ async function pegasusDecryptViaPool(encUrls, singleThreadDecrypt, onProgress) {
         assign(w);
       };
       w.onerror = () => {
-        // Worker crashed mid-job: its in-flight URL was never processed, so
-        // queue it for the single-thread sweep. Mark this worker dead.
         const cur = inFlight.get(w);
         if (cur && !result.has(cur)) unfinished.add(cur);
         inFlight.delete(w);
         aliveWorkers = Math.max(0, aliveWorkers - 1);
         try { w.terminate(); } catch (_) {}
-        // If other workers are alive, the dropped URL is handled in the final
-        // sweep; remaining queued URLs continue on live workers.
         maybeDone();
       };
     });
 
     if (total === 0) { sweepAndResolve(); return; }
 
-    // Prime each worker with one job.
     for (let k = 0; k < workers.length; k++) assign(workers[k]);
 
-    // Watchdog: guarantee the promise resolves even in pathological cases
-    // (e.g. a worker that neither posts back nor fires onerror). Generous
-    // timeout scaled to workload; on fire, sweep whatever is unfinished.
     const watchdogMs = Math.max(30000, total * 500);
     setTimeout(() => {
       if (settled) return;
-      // Anything still in flight or never assigned gets swept single-threaded.
       for (const [, enc] of inFlight) if (!result.has(enc)) unfinished.add(enc);
       for (let i = nextIndex; i < encUrls.length; i++) if (!result.has(encUrls[i])) unfinished.add(encUrls[i]);
       aliveWorkers = 0;
@@ -700,9 +666,6 @@ async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
     const groupedLinks = new Map();
     const seen = new Set();
 
-    // Priority 2: never treat metadata fields as download links. The cover
-    // (`image`) is used only as posterUrl below; it must not become an "Image"
-    // download link. Skipping these keys also avoids useless link-lock checks.
     const SKIP_KEYS = new Set(['image', 'title', 'size', 'how_to_play', 'tags']);
 
     for (const [key, value] of Object.entries(game)) {
@@ -713,10 +676,8 @@ async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
         let decodedUrl = value;
         if (window.PippoExfatConverter && PippoExfatConverter.isLinkLockUrl && PippoExfatConverter.isLinkLockUrl(value)) {
             if (pegasusDecryptCache.has(value)) {
-                // Resolved in the pre-pass (memory/IndexedDB/worker pool).
                 decodedUrl = pegasusDecryptCache.get(value);
             } else {
-                // Fallback: not pre-resolved (e.g. pool skipped it). Decrypt now.
                 try {
                     decodedUrl = await originalDecrypt(value);
                     pegasusDecryptCache.set(value, decodedUrl);
@@ -762,9 +723,6 @@ async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
     }
     
     if (allLinks.length === 0) {
-        // Every link field either was absent or failed to decrypt. Emitting no
-        // package is correct (a catalog entry with no downloads is useless), but
-        // make it LOUD so a corrupted source row isn't lost silently.
         const reason = 'no decryptable download links';
         warnings.push(`${title} (${titleId || 'no PPSA'}): skipped — ${reason}`);
         if (window.PEGASUS_DEBUG) console.log('SKIPPED', title, '-', reason);
@@ -812,17 +770,11 @@ async function convertExFatToPegasusDirect() {
     const spinnerFrames = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'];
     let frameIndex = 0;
 
-    // Debug instrumentation (disabled unless window.PEGASUS_DEBUG === true).
-    // Logs every progress update with its source so the update path is fully
-    // traceable. Never parses the button text; reads structured args only.
     const logProgress = (source, completed, total, percent, label) => {
         if (!window.PEGASUS_DEBUG) return;
         console.log('[pegasus:progress]', { source, completed, total, percent, label });
     };
 
-    // Single source of truth for the button label (without the leading spinner
-    // glyph). The spinner only swaps the glyph; it never re-parses innerHTML, so
-    // counts like "171/1097" can't be mistaken for a percentage.
     let _btnLabel = '0%';
     const setProgressLabel = (label) => {
         _btnLabel = label;
@@ -859,21 +811,11 @@ async function convertExFatToPegasusDirect() {
         const allPackages = [];
         const warnings = [];
 
-        // Priority 3: timing + key-derivation stats. Reset the PBKDF2 counters
-        // so the numbers reflect only this generation run.
         if (window.PippoExfatConverter && PippoExfatConverter._resetKeyDeriveStats) {
             PippoExfatConverter._resetKeyDeriveStats();
         }
         const _t0 = performance.now();
 
-        // ====================================================================
-        // PRE-PASS: resolve every LinkLock URL once, in this order:
-        //   1. in-memory pegasusDecryptCache (this session)
-        //   2. IndexedDB persistent cache (across sessions/reloads)
-        //   3. Web Worker pool (cold decrypts only)  -> written back to IDB
-        // convertSingleGame then just reads pegasusDecryptCache, so output and
-        // ordering are unchanged.
-        // ====================================================================
         pegasusCacheStats.hits = 0;
         pegasusCacheStats.idbHits = 0;
         pegasusCacheStats.misses = 0;
@@ -881,7 +823,6 @@ async function convertExFatToPegasusDirect() {
 
         const isLL = (v) => window.PippoExfatConverter && PippoExfatConverter.isLinkLockUrl && PippoExfatConverter.isLinkLockUrl(v);
 
-        // Collect distinct LinkLock URLs across the whole library.
         const SKIP = new Set(['image', 'title', 'size', 'how_to_play', 'tags']);
         const distinctEnc = new Set();
         for (const game of allGames) {
@@ -895,14 +836,12 @@ async function convertExFatToPegasusDirect() {
         const allEnc = [...distinctEnc];
         const totalLinks = allEnc.length;
 
-        // 1) in-memory hits
         const needIdb = [];
         for (const enc of allEnc) {
             if (pegasusDecryptCache.has(enc)) pegasusCacheStats.hits++;
             else needIdb.push(enc);
         }
 
-        // 2) IndexedDB hits
         const db = await pegasusOpenDB();
         let coldUrls = needIdb;
         if (db && needIdb.length) {
@@ -915,7 +854,6 @@ async function convertExFatToPegasusDirect() {
         }
         pegasusCacheStats.misses = coldUrls.length;
 
-        // 3) Cold decrypts via worker pool (fallback: single-thread)
         let _workerCount = 0;
         if (coldUrls.length) {
             _workerCount = (typeof Worker !== 'undefined') ? pegasusPoolSize() : 0;
@@ -931,7 +869,6 @@ async function convertExFatToPegasusDirect() {
                     setProgressLabel(`${safeDone}/${coldUrls.length} (${pct}%)`);
                 }
             });
-            // Populate memory cache and queue IDB writes for successful decrypts.
             const toPersist = new Map();
             for (const [enc, plain] of newlyDecrypted) {
                 pegasusDecryptCache.set(enc, plain);
@@ -953,9 +890,6 @@ async function convertExFatToPegasusDirect() {
         );
         if (db) { try { db.close(); } catch (e) {} }
 
-        // Priority 4: throttle progress UI. Only update when the integer percent
-        // actually changes. The label flows through setProgressLabel so the
-        // spinner stays in sync and never re-parses the text.
         let _lastPercent = -1;
 
         for (let i = 0; i < allGames.length; i++) {
@@ -991,7 +925,6 @@ async function convertExFatToPegasusDirect() {
 
         const _tJson = performance.now();
 
-        // Priority 3: emit the timing + cache report.
         const _decryptedUrls = pegasusDecryptCache.size;
         const _keyStats = (window.PippoExfatConverter && PippoExfatConverter._getKeyDeriveStats)
             ? PippoExfatConverter._getKeyDeriveStats()
@@ -1427,21 +1360,32 @@ function showDownloadModal(content, downloadUrl) {
     const pwHint = document.getElementById('downloadPwHint');
     const pwValue = document.getElementById('downloadPwValue');
     const passwordBox = document.getElementById('downloadPasswordBox');
+    const footerDiv = document.querySelector('#download-modal .download-modal-container > div:last-child');
     
     modal.classList.remove('hiding');
     const container = document.querySelector('#download-modal .download-modal-container');
     if (container) container.classList.remove('closing');
     
-    if (passwordBox) passwordBox.style.display = 'block';
-    if (finalBtn) finalBtn.style.display = 'block';
-    if (pwHint) pwHint.style.display = 'block';
-    if (pwValue) pwValue.style.display = 'none';
+    // RESETTA IL FOOTER ALLO STATO ORIGINALE
+    if (footerDiv) {
+        footerDiv.innerHTML = `
+            <a id="downloadFinalBtn" target="_blank" class="download-final-btn">DOWNLOAD</a>
+        `;
+    }
     
-    const existingAprBtn = document.querySelector('#download-modal .apr-emu-download-btn-container');
-    if (existingAprBtn) existingAprBtn.remove();
+    // Ricarica i riferimenti dopo il reset
+    const newPasswordBox = document.getElementById('downloadPasswordBox');
+    const newFinalBtn = document.getElementById('downloadFinalBtn');
+    const newPwHint = document.getElementById('downloadPwHint');
+    const newPwValue = document.getElementById('downloadPwValue');
+    
+    if (newPasswordBox) newPasswordBox.style.display = 'block';
+    if (newFinalBtn) newFinalBtn.style.display = 'block';
+    if (newPwHint) newPwHint.style.display = 'block';
+    if (newPwValue) newPwValue.style.display = 'none';
     
     if (bodyContainer) bodyContainer.innerHTML = content;
-    if (finalBtn) finalBtn.href = downloadUrl;
+    if (newFinalBtn) newFinalBtn.href = downloadUrl;
     
     modal.classList.add('show');
 }
@@ -1449,10 +1393,6 @@ function showDownloadModal(content, downloadUrl) {
 function showAprEmuDownloadModal(content, downloadUrl) {
     const modal = document.getElementById('download-modal');
     const bodyContainer = document.getElementById('downloadModalBody');
-    const passwordBox = document.getElementById('downloadPasswordBox');
-    const finalBtn = document.getElementById('downloadFinalBtn');
-    const pwHint = document.getElementById('downloadPwHint');
-    const pwValue = document.getElementById('downloadPwValue');
     const footerDiv = document.querySelector('#download-modal .download-modal-container > div:last-child');
     
     modal.classList.remove('hiding');
@@ -1461,11 +1401,7 @@ function showAprEmuDownloadModal(content, downloadUrl) {
     
     if (bodyContainer) bodyContainer.innerHTML = content;
     
-    if (passwordBox) passwordBox.style.display = 'none';
-    if (pwHint) pwHint.style.display = 'none';
-    if (pwValue) pwValue.style.display = 'none';
-    if (finalBtn) finalBtn.style.display = 'none';
-    
+    // RESETTA IL FOOTER CON I BOTTONI APR-EMU
     if (footerDiv) {
         footerDiv.innerHTML = `
             <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
@@ -1478,6 +1414,7 @@ function showAprEmuDownloadModal(content, downloadUrl) {
             </div>
         `;
         
+        // Aggiungi l'effetto shine
         const style = document.createElement('style');
         style.textContent = `
             @keyframes shineAnimation {
@@ -1598,6 +1535,256 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, 
     }
 }
 
+// ========== FUNZIONE PER PULIRE IL BADGE APR-EMU ==========
+function clearAprEmuBadge() {
+    const badge = document.getElementById('modal-apr-emu-badge');
+    if (badge) {
+        badge.innerHTML = '';
+        badge.style.display = 'none';
+    }
+}
+
+// ========== FUNZIONE UNIFICATA PER APRIRE IL MODAL ==========
+function openGameModal(game, event) {
+    if (event && event.button === 2) { event.preventDefault(); return false; }
+    if (hasMoved || window._wasDrag) { hasMoved = false; window._wasDrag = false; return false; }
+    hasMoved = false; window._wasDrag = false;
+    
+    // Aggiorna le variabili globali
+    gameTitlePlaceholder = game.title.replace(/'/g, "\\'");
+    fileAuthPlaceholder = game.credits_files || '';
+    bpAuthPlaceholder = game.credits_backport || '';
+    dlcAuthPlaceholder = game.credits_dlc || game.credits_dlcs || '';
+    hPlayPlaceholder = (game.how_to_play || "").replace(/'/g, "\\'");
+    
+    // Pulisci il badge APR-EMU
+    clearAprEmuBadge();
+    
+    // Imposta l'header del modal
+    const modalHeader = document.getElementById('modal-header');
+    modalHeader.style.backgroundImage = `url('${game.image}')`;
+    modalHeader.style.backgroundSize = 'cover';
+    modalHeader.style.backgroundPosition = 'center';
+    
+    // Imposta titolo, tags e size
+    document.getElementById('modal-title').textContent = game.title;
+    document.getElementById('modal-tags').innerHTML = (game.tags || []).map(t => `<span class="modal-tag">${escapeHtml(t)}</span>`).join('');
+    document.getElementById('modal-size').textContent = game.size || 'N/A';
+
+    // ===== GESTIONE APR-EMU =====
+    const aprEmuBadge = document.getElementById('modal-apr-emu-badge');
+    const requireAprEmu = (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true");
+    
+    // Pulisci il badge
+    aprEmuBadge.innerHTML = '';
+    aprEmuBadge.style.display = 'none';
+    
+    if (requireAprEmu) {
+        const badgeDiv = document.createElement('div');
+        badgeDiv.className = 'modal-apr-emu';
+        badgeDiv.textContent = 'APR-EMU';
+        
+        const btn = document.createElement('button');
+        btn.className = 'apr-emu-update-btn';
+        btn.textContent = '⚠️ Need APR-EMU update? Check here';
+        btn.onclick = function(e) {
+            e.stopPropagation();
+            openAprEmuModal();
+        };
+        
+        aprEmuBadge.appendChild(badgeDiv);
+        aprEmuBadge.appendChild(btn);
+        aprEmuBadge.style.display = 'block';
+    }
+
+    // ===== GENERAZIONE BOTTONI DOWNLOAD =====
+    const downloadsContainer = document.getElementById('modal-downloads');
+    
+    // Funzione per creare un bottone download nel modal
+    const createModalBtn = (url, label, isDump = false) => {
+        if (!url || url === "undefined" || url.trim() === "") return '';
+        const dumpAttr = isDump ? 'true' : 'false';
+        const isDLC = false;
+        return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', ${isDLC}, ${dumpAttr}, '${game.title.replace(/'/g, "\\'")}', ${requireAprEmu})" class="modal-btn">${label}</button>`;
+    };
+    
+    let downloadsHTML = '';
+    
+    // Verifica se ci sono backport 7.xx o 4.xx
+    const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault;
+    const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault;
+    
+    if (hasBackport7 || hasBackport4) {
+        let bp7 = '', bp4 = '';
+        if (hasBackport7) {
+            if (game.backport7xx_akia) bp7 += createModalBtn(game.backport7xx_akia, 'AKIA');
+            if (game.backport7xx_viki) bp7 += createModalBtn(game.backport7xx_viki, 'VIKI');
+            if (game.backport7xx_buzz) bp7 += createModalBtn(game.backport7xx_buzz, 'BUZZ');
+            if (game.backport7xx_data) bp7 += createModalBtn(game.backport7xx_data, 'DATA');
+            if (game.backport7xx_filek) bp7 += createModalBtn(game.backport7xx_filek, 'FILEK');
+            if (game.backport7xx_vault) bp7 += createModalBtn(game.backport7xx_vault, 'VAULT');
+        }
+        if (hasBackport4) {
+            if (game.backport4xx_akia) bp4 += createModalBtn(game.backport4xx_akia, 'AKIA');
+            if (game.backport4xx_viki) bp4 += createModalBtn(game.backport4xx_viki, 'VIKI');
+            if (game.backport4xx_buzz) bp4 += createModalBtn(game.backport4xx_buzz, 'BUZZ');
+            if (game.backport4xx_data) bp4 += createModalBtn(game.backport4xx_data, 'DATA');
+            if (game.backport4xx_filek) bp4 += createModalBtn(game.backport4xx_filek, 'FILEK');
+            if (game.backport4xx_vault) bp4 += createModalBtn(game.backport4xx_vault, 'VAULT');
+        }
+        downloadsHTML = `${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
+    } 
+    // Verifica se ci sono standard e backport
+    else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || 
+             game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault) {
+        let std = '', bp = '';
+        if (game.standard_akia) std += createModalBtn(game.standard_akia, 'AKIA');
+        if (game.standard_viki) std += createModalBtn(game.standard_viki, 'VIKI');
+        if (game.standard_buzz) std += createModalBtn(game.standard_buzz, 'BUZZ');
+        if (game.standard_data) std += createModalBtn(game.standard_data, 'DATA');
+        if (game.standard_filek) std += createModalBtn(game.standard_filek, 'FILEK');
+        if (game.standard_vault) std += createModalBtn(game.standard_vault, 'VAULT');
+        if (game.backport_akia) bp += createModalBtn(game.backport_akia, 'AKIA');
+        if (game.backport_viki) bp += createModalBtn(game.backport_viki, 'VIKI');
+        if (game.backport_buzz) bp += createModalBtn(game.backport_buzz, 'BUZZ');
+        if (game.backport_data) bp += createModalBtn(game.backport_data, 'DATA');
+        if (game.backport_filek) bp += createModalBtn(game.backport_filek, 'FILEK');
+        if (game.backport_vault) bp += createModalBtn(game.backport_vault, 'VAULT');
+        downloadsHTML = `${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
+    } 
+    // Altrimenti usa i link standard
+    else {
+        let btns = '';
+        if (game.akia_url) btns += createModalBtn(game.akia_url, 'AKIA');
+        if (game.viki_url) btns += createModalBtn(game.viki_url, 'VIKI');
+        if (game.buzz_url) btns += createModalBtn(game.buzz_url, 'BUZZ');
+        if (game.data_url) btns += createModalBtn(game.data_url, 'DATA');
+        if (game.filek_url) btns += createModalBtn(game.filek_url, 'FILEK');
+        if (game.vault_url) btns += createModalBtn(game.vault_url, 'VAULT');
+        downloadsHTML = btns;
+    }
+    downloadsContainer.innerHTML = downloadsHTML;
+
+    // ===== DUMP =====
+    const dumpSection = document.getElementById('modal-dump-section');
+    const dumpContainer = document.getElementById('modal-dump');
+    let dumpHTML = '';
+    const hasDump = game.dump_akia || game.dump_viki || game.dump_buzz || game.dump_data || game.dump_filek || game.dump_vault;
+    if (hasDump) {
+        const dumpBtn = (url, label) => {
+            if (!url || url === "undefined" || url.trim() === "") return '';
+            return createModalBtn(url, label, true);
+        };
+        if (game.dump_akia) dumpHTML += dumpBtn(game.dump_akia, 'AKIA');
+        if (game.dump_viki) dumpHTML += dumpBtn(game.dump_viki, 'VIKI');
+        if (game.dump_buzz) dumpHTML += dumpBtn(game.dump_buzz, 'BUZZ');
+        if (game.dump_data) dumpHTML += dumpBtn(game.dump_data, 'DATA');
+        if (game.dump_filek) dumpHTML += dumpBtn(game.dump_filek, 'FILEK');
+        if (game.dump_vault) dumpHTML += dumpBtn(game.dump_vault, 'VAULT');
+        dumpSection.style.display = 'block';
+        dumpContainer.innerHTML = dumpHTML;
+    } else {
+        dumpSection.style.display = 'none';
+    }
+
+    // ===== DLC =====
+    const dlcSection = document.getElementById('modal-dlc-section');
+    const dlcContainer = document.getElementById('modal-dlc');
+    let dlcBtns = '';
+    if (game.dlc_akia) dlcBtns += createModalBtn(game.dlc_akia, 'AKIA');
+    if (game.dlc_viki) dlcBtns += createModalBtn(game.dlc_viki, 'VIKI');
+    if (game.dlc_buzz) dlcBtns += createModalBtn(game.dlc_buzz, 'BUZZ');
+    if (game.dlc_data) dlcBtns += createModalBtn(game.dlc_data, 'DATA');
+    if (game.dlc_filek) dlcBtns += createModalBtn(game.dlc_filek, 'FILEK');
+    if (game.dlc_vault) dlcBtns += createModalBtn(game.dlc_vault, 'VAULT');
+    if (dlcBtns) {
+        dlcSection.style.display = 'block';
+        dlcContainer.innerHTML = dlcBtns;
+    } else {
+        dlcSection.style.display = 'none';
+    }
+
+    // ===== CREDITS =====
+    let parts = [];
+    const fileAuthor = game.credits_files, bpAuthor = game.credits_backport, dlcAuthor = game.credits_dlc || game.credits_dlcs;
+    
+    if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
+        if (dlcAuthor) {
+            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
+        } else {
+            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
+        }
+    }
+    else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
+        parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
+        if (bpAuthor && bpAuthor !== fileAuthor) {
+            parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+        }
+    }
+    else {
+        if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
+        if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
+        if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
+    }
+    
+    let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
+    document.getElementById('modal-credits').innerHTML = creditsText;
+
+    // ===== INSTRUCTIONS =====
+    const instSection = document.getElementById('modal-instructions');
+    if (game.how_to_play) {
+        instSection.style.display = 'block';
+        document.getElementById('modal-instructions-text').innerHTML = game.how_to_play;
+    } else {
+        instSection.style.display = 'none';
+    }
+
+    // ===== UPDATES =====
+    const updatesSection = document.getElementById('modal-updates');
+    const updatesList = document.getElementById('modal-updates-list');
+    const updates = allUpdates[game.title];
+    if (updates && updates.length > 0) {
+        updatesSection.style.display = 'block';
+        updatesList.innerHTML = updates.map(upd => {
+            const dp = upd.date.split('-');
+            const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date;
+            return `<div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:12px; margin-bottom:8px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+                    <div>
+                        <strong>${escapeHtml(upd.version)}</strong> <small style="opacity:0.6;">(${upd.size || 'N/A'})</small>
+                        <br><small style="color:var(--cyan-neon);">Released: ${formattedDate}</small>
+                    </div>
+                    <div style="display:flex; gap:8px;">
+                        ${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">AKIA</a>` : ''}
+                        ${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VIKI</a>` : ''}
+                        ${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">BUZZ</a>` : ''}
+                        ${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">DATA</a>` : ''}
+                        ${upd.filek_url ? `<a href="${upd.filek_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">FILEK</a>` : ''}
+                        ${upd.vault_url ? `<a href="${upd.vault_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VAULT</a>` : ''}
+                    </div>
+                </div>
+            </div>`;
+        }).join('');
+    } else {
+        updatesSection.style.display = 'none';
+    }
+
+    // ===== RANDOM BUTTON =====
+    const modalRandomBtn = document.getElementById('modalRandomBtn');
+    if (modalRandomBtn) {
+        modalRandomBtn.style.display = isRandomModeActive ? 'flex' : 'none';
+    }
+
+    // Mostra il modal
+    document.getElementById('game-detail-modal').style.display = 'block';
+}
+
+// ========== FUNZIONE UPDATE MODAL (per il random) ==========
+function updateModalContentWithRipple(game) {
+    // Usa la stessa funzione openGameModal per mantenere consistenza
+    openGameModal(game, null);
+}
+
 // ========== INIT ==========
 
 async function init() {
@@ -1670,167 +1857,6 @@ let bpAuthPlaceholder = '';
 let dlcAuthPlaceholder = '';
 let hPlayPlaceholder = '';
 
-function updateModalContentWithRipple(game) {
-    if (isTransitioning) return;
-    isTransitioning = true;
-    gameTitlePlaceholder = game.title.replace(/'/g, "\\'");
-    fileAuthPlaceholder = game.credits_files || '';
-    bpAuthPlaceholder = game.credits_backport || '';
-    dlcAuthPlaceholder = game.credits_dlc || game.credits_dlcs || '';
-    hPlayPlaceholder = (game.how_to_play || "").replace(/'/g, "\\'");
-    const modalHeader = document.getElementById('modal-header');
-    const modalBody = document.getElementById('modal-body');
-    const modalTitle = document.getElementById('modal-title');
-    const modalTags = document.getElementById('modal-tags');
-    const modalSize = document.getElementById('modal-size');
-    const downloadsContainer = document.getElementById('modal-downloads');
-    const creditsContainer = document.getElementById('modal-credits');
-    const instSection = document.getElementById('modal-instructions');
-    const instText = document.getElementById('modal-instructions-text');
-    const updatesSection = document.getElementById('modal-updates');
-    const updatesList = document.getElementById('modal-updates-list');
-    const dlcSection = document.getElementById('modal-dlc-section');
-    const dlcContainer = document.getElementById('modal-dlc');
-    const dumpSection = document.getElementById('modal-dump-section');
-    const dumpContainer = document.getElementById('modal-dump');
-    
-    modalHeader.classList.add('modal-header-ripple-out');
-    modalBody.classList.add('modal-body-ripple-out');
-    
-    setTimeout(() => {
-        modalHeader.style.backgroundImage = `url('${game.image}')`;
-        modalHeader.style.backgroundSize = 'cover';
-        modalHeader.style.backgroundPosition = 'center';
-        modalTitle.textContent = game.title;
-        modalTags.innerHTML = (game.tags || []).map(t => `<span class="modal-tag">${escapeHtml(t)}</span>`).join('');
-        modalSize.textContent = game.size || 'N/A';
-
-        const aprEmuBadge = document.getElementById('modal-apr-emu-badge');
-        const requireAprEmu = (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true");
-        if (requireAprEmu) {
-            aprEmuBadge.innerHTML = '<div class="modal-apr-emu">APR-EMU</div><button class="apr-emu-update-btn" onclick="openAprEmuModal()">⚠️ Need APR-EMU update? Check here</button>';
-            aprEmuBadge.style.display = 'block';
-        } else {
-            aprEmuBadge.innerHTML = '';
-            aprEmuBadge.style.display = 'none';
-        }
-        
-        const createModalBtnLocal = (url, label, isDump = false) => {
-            if (!url || url === "undefined" || url.trim() === "") return '';
-            const dumpAttr = isDump ? 'true' : 'false';
-            return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, ${dumpAttr}, '${game.title.replace(/'/g, "\\'")}', ${requireAprEmu})" class="modal-btn">${label}</button>`;
-        };
-        
-        let downloadsHTML = '';
-        const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault;
-        const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault;
-        if (hasBackport7 || hasBackport4) {
-            let bp7 = '', bp4 = '';
-            if (hasBackport7) {
-                if (game.backport7xx_akia) bp7 += createModalBtnLocal(game.backport7xx_akia, 'AKIA');
-                if (game.backport7xx_viki) bp7 += createModalBtnLocal(game.backport7xx_viki, 'VIKI');
-                if (game.backport7xx_buzz) bp7 += createModalBtnLocal(game.backport7xx_buzz, 'BUZZ');
-                if (game.backport7xx_data) bp7 += createModalBtnLocal(game.backport7xx_data, 'DATA');
-                if (game.backport7xx_filek) bp7 += createModalBtnLocal(game.backport7xx_filek, 'FILEK'); if (game.backport7xx_vault) bp7 += createModalBtnLocal(game.backport7xx_vault, 'VAULT');
-            }
-            if (hasBackport4) {
-                if (game.backport4xx_akia) bp4 += createModalBtnLocal(game.backport4xx_akia, 'AKIA');
-                if (game.backport4xx_viki) bp4 += createModalBtnLocal(game.backport4xx_viki, 'VIKI');
-                if (game.backport4xx_buzz) bp4 += createModalBtnLocal(game.backport4xx_buzz, 'BUZZ');
-                if (game.backport4xx_data) bp4 += createModalBtnLocal(game.backport4xx_data, 'DATA');
-                if (game.backport4xx_filek) bp4 += createModalBtnLocal(game.backport4xx_filek, 'FILEK'); if (game.backport4xx_vault) bp4 += createModalBtnLocal(game.backport4xx_vault, 'VAULT');
-            }
-            downloadsHTML = `${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
-        } else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault) {
-            let std = '', bp = '';
-            if (game.standard_akia) std += createModalBtnLocal(game.standard_akia, 'AKIA');
-            if (game.standard_viki) std += createModalBtnLocal(game.standard_viki, 'VIKI');
-            if (game.standard_buzz) std += createModalBtnLocal(game.standard_buzz, 'BUZZ');
-            if (game.standard_data) std += createModalBtnLocal(game.standard_data, 'DATA');
-            if (game.standard_filek) std += createModalBtnLocal(game.standard_filek, 'FILEK'); if (game.standard_vault) std += createModalBtnLocal(game.standard_vault, 'VAULT');
-            if (game.backport_akia) bp += createModalBtnLocal(game.backport_akia, 'AKIA');
-            if (game.backport_viki) bp += createModalBtnLocal(game.backport_viki, 'VIKI');
-            if (game.backport_buzz) bp += createModalBtnLocal(game.backport_buzz, 'BUZZ');
-            if (game.backport_data) bp += createModalBtnLocal(game.backport_data, 'DATA');
-            if (game.backport_filek) bp += createModalBtnLocal(game.backport_filek, 'FILEK'); if (game.backport_vault) bp += createModalBtnLocal(game.backport_vault, 'VAULT');
-            downloadsHTML = `${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
-        } else {
-            let btns = '';
-            if (game.akia_url) btns += createModalBtnLocal(game.akia_url, 'AKIA');
-            if (game.viki_url) btns += createModalBtnLocal(game.viki_url, 'VIKI');
-            if (game.buzz_url) btns += createModalBtnLocal(game.buzz_url, 'BUZZ');
-            if (game.data_url) btns += createModalBtnLocal(game.data_url, 'DATA');
-            if (game.filek_url) btns += createModalBtnLocal(game.filek_url, 'FILEK');
-            if (game.vault_url) btns += createModalBtnLocal(game.vault_url, 'VAULT');
-            downloadsHTML = btns;
-        }
-        downloadsContainer.innerHTML = downloadsHTML;
-        
-        let dumpHTML = '';
-        const hasDump = game.dump_akia || game.dump_viki || game.dump_buzz || game.dump_data || game.dump_filek || game.dump_vault;
-        if (hasDump) {
-            if (game.dump_akia) dumpHTML += createModalBtnLocal(game.dump_akia, 'AKIA', true);
-            if (game.dump_viki) dumpHTML += createModalBtnLocal(game.dump_viki, 'VIKI', true);
-            if (game.dump_buzz) dumpHTML += createModalBtnLocal(game.dump_buzz, 'BUZZ', true);
-            if (game.dump_data) dumpHTML += createModalBtnLocal(game.dump_data, 'DATA', true);
-            if (game.dump_filek) dumpHTML += createModalBtnLocal(game.dump_filek, 'FILEK', true); if (game.dump_vault) dumpHTML += createModalBtnLocal(game.dump_vault, 'VAULT', true);
-            dumpSection.style.display = 'block';
-            dumpContainer.innerHTML = dumpHTML;
-        } else dumpSection.style.display = 'none';
-        
-        let dlcBtns = '';
-        if (game.dlc_akia) dlcBtns += createModalBtnLocal(game.dlc_akia, 'AKIA');
-        if (game.dlc_viki) dlcBtns += createModalBtnLocal(game.dlc_viki, 'VIKI');
-        if (game.dlc_buzz) dlcBtns += createModalBtnLocal(game.dlc_buzz, 'BUZZ');
-        if (game.dlc_data) dlcBtns += createModalBtnLocal(game.dlc_data, 'DATA');
-        if (game.dlc_filek) dlcBtns += createModalBtnLocal(game.dlc_filek, 'FILEK'); if (game.dlc_vault) dlcBtns += createModalBtnLocal(game.dlc_vault, 'VAULT');
-        if (dlcBtns) { dlcSection.style.display = 'block'; dlcContainer.innerHTML = dlcBtns; } else dlcSection.style.display = 'none';
-        
-        let parts = [];
-        const fileAuthor = game.credits_files, bpAuthor = game.credits_backport, dlcAuthor = game.credits_dlc || game.credits_dlcs;
-        
-        if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
-            if (dlcAuthor) {
-                parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
-            } else {
-                parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
-            }
-        }
-        else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
-            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
-            if (bpAuthor && bpAuthor !== fileAuthor) {
-                parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
-            }
-        }
-        else {
-            if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
-            if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
-            if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
-        }
-        
-        let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
-        creditsContainer.innerHTML = creditsText;
-        
-        if (game.how_to_play) { instSection.style.display = 'block'; instText.innerHTML = game.how_to_play; } else instSection.style.display = 'none';
-        
-        const updates = allUpdates[game.title];
-        if (updates && updates.length > 0) {
-            updatesSection.style.display = 'block';
-            updatesList.innerHTML = updates.map(upd => { const dp = upd.date.split('-'); const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date; return `<div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:12px; margin-bottom:8px;"><div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;"><div><strong>${escapeHtml(upd.version)}</strong> <small style="opacity:0.6;">(${upd.size || 'N/A'})</small><br><small style="color:var(--cyan-neon);">Released: ${formattedDate}</small></div><div style="display:flex; gap:8px;">${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">AKIA</a>` : ''}${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VIKI</a>` : ''}${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">BUZZ</a>` : ''}${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">DATA</a>` : ''}${upd.filek_url ? `<a href="${upd.filek_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">FILEK</a>` : ''}${upd.vault_url ? `<a href="${upd.vault_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VAULT</a>` : ''}</div></div></div>`; }).join('');
-        } else updatesSection.style.display = 'none';
-        
-        modalHeader.classList.remove('modal-header-ripple-out');
-        modalBody.classList.remove('modal-body-ripple-out');
-        modalHeader.classList.add('modal-header-ripple-in');
-        modalBody.classList.add('modal-body-ripple-in');
-        setTimeout(() => {
-            modalHeader.classList.remove('modal-header-ripple-in');
-            modalBody.classList.remove('modal-body-ripple-in');
-            isTransitioning = false;
-        }, 350);
-    }, 250);
-}
-
 function setupMobileMenu() {
     const hamburger = document.getElementById('hamburgerBtn');
     const panel = document.getElementById('mobileMenuPanel');
@@ -1889,7 +1915,7 @@ function setupModalRandomButton() {
         const randomIndex = Math.floor(Math.random() * availableGames.length);
         const randomGame = availableGames[randomIndex];
         isRandomModeActive = true;
-        updateModalContentWithRipple(randomGame);
+        openGameModal(randomGame, null);
         const btn = modalRandomBtn;
         btn.style.transform = 'scale(0.98)';
         setTimeout(() => { btn.style.transform = ''; }, 150);
@@ -1965,7 +1991,7 @@ const openFAQModal = async () => {
             data.sections.forEach(section => {
                 html += `<div class="faq-question">
                             <strong>${escapeHtml(section.question)}</strong>
-                            <p>${section.answer}</p>  <!-- RIMOSSO escapeHtml() -->
+                            <p>${section.answer}</p>
                          </div>`;
             });
             html += `</div>`;
@@ -2091,7 +2117,6 @@ async function loadLibrary() {
             console.error('[LIBRARY] Errore parsing JSON:', jsonError.message);
             console.log('[LIBRARY] Prime 300 caratteri:', text.substring(0, 300));
             
-            // Mostra errore più dettagliato
             const errorMsg = document.getElementById('pw-error') || document.createElement('div');
             errorMsg.style.cssText = 'position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.95); color:#ff4444; padding:30px; border-radius:20px; z-index:999999; text-align:center; border:2px solid #ff4444;';
             errorMsg.innerHTML = `<h2>❌ ERRORE FATALE</h2><p>Il file exFAT.json è corrotto o malformato.</p><p style="font-size:0.8rem; margin-top:20px;">${jsonError.message}</p><button onclick="location.reload()" style="margin-top:20px; padding:10px 20px; background:#ff4444; border:none; border-radius:10px; color:white; cursor:pointer;">RICARICA</button>`;
@@ -2100,7 +2125,6 @@ async function loadLibrary() {
             return;
         }
         
-        // Verifica che data sia un array
         if (!Array.isArray(data)) {
             console.error('[LIBRARY] exFAT.json non è un array!', typeof data);
             if (isFlagged) {
@@ -2122,7 +2146,6 @@ async function loadLibrary() {
         
         console.log('[LIBRARY] Caricati', allGames.length, 'giochi');
         
-        // Inizializza i filtri
         const fwFilter = document.getElementById('fw-filter');
         const fwCurrent = document.getElementById('fw-current');
         if (fwFilter) fwFilter.value = '99';
@@ -2143,7 +2166,6 @@ async function loadLibrary() {
         if (mobileSortFilter) mobileSortFilter.value = 'default';
         if (mobileSortCurrent) mobileSortCurrent.innerText = 'Sort: Default';
         
-        // Applica filtri e renderizza
         applyFWFilterWithSort();
         renderPopularGames();
         renderGames();
@@ -2154,7 +2176,6 @@ async function loadLibrary() {
         console.error('[LIBRARY] Errore fatale:', e);
         hideSkeletonLoader();
         
-        // Mostra errore visibile
         const grid = document.getElementById('game-grid');
         if (grid) {
             grid.innerHTML = `
@@ -2292,104 +2313,6 @@ function performSearchOnGridExternal(term) {
 function escapeHtml(str) {
     if (!str) return '';
     return str.replace(/[&<>]/g, function(m) { if (m === '&') return '&amp;'; if (m === '<') return '&lt;'; if (m === '>') return '&gt;'; return m; });
-}
-
-function openGameModal(game, event) {
-    if (event && event.button === 2) { event.preventDefault(); return false; }
-    if (hasMoved || window._wasDrag) { hasMoved = false; window._wasDrag = false; return false; }
-    hasMoved = false; window._wasDrag = false;
-    gameTitlePlaceholder = game.title.replace(/'/g, "\\'");
-    fileAuthPlaceholder = game.credits_files || '';
-    bpAuthPlaceholder = game.credits_backport || '';
-    dlcAuthPlaceholder = game.credits_dlc || game.credits_dlcs || '';
-    hPlayPlaceholder = (game.how_to_play || "").replace(/'/g, "\\'");
-    const modalHeader = document.getElementById('modal-header');
-    modalHeader.style.backgroundImage = `url('${game.image}')`;
-    modalHeader.style.backgroundSize = 'cover';
-    modalHeader.style.backgroundPosition = 'center';
-    document.getElementById('modal-title').textContent = game.title;
-    document.getElementById('modal-tags').innerHTML = (game.tags || []).map(t => `<span class="modal-tag">${escapeHtml(t)}</span>`).join('');
-    document.getElementById('modal-size').textContent = game.size || 'N/A';
-
-    const aprEmuBadge = document.getElementById('modal-apr-emu-badge');
-    const requireAprEmu = (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true");
-    if (requireAprEmu) {
-        aprEmuBadge.innerHTML = '<div class="modal-apr-emu">APR-EMU</div><button class="apr-emu-update-btn" onclick="openAprEmuModal()">⚠️ Need APR-EMU update? Check here</button>';
-        aprEmuBadge.style.display = 'block';
-    } else {
-        aprEmuBadge.innerHTML = '';
-        aprEmuBadge.style.display = 'none';
-    }
-    
-    const downloadsContainer = document.getElementById('modal-downloads');
-    const createModalBtnLocal = (url, label, isDump = false) => { if (!url || url === "undefined" || url.trim() === "") return ''; const dumpAttr = isDump ? 'true' : 'false'; return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', false, ${dumpAttr}, '${game.title.replace(/'/g, "\\'")}', ${requireAprEmu})" class="modal-btn">${label}</button>`; };
-    let downloadsHTML = '';
-    const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault;
-    const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault;
-    if (hasBackport7 || hasBackport4) {
-        let bp7 = '', bp4 = '';
-        if (hasBackport7) { if (game.backport7xx_akia) bp7 += createModalBtnLocal(game.backport7xx_akia, 'AKIA'); if (game.backport7xx_viki) bp7 += createModalBtnLocal(game.backport7xx_viki, 'VIKI'); if (game.backport7xx_buzz) bp7 += createModalBtnLocal(game.backport7xx_buzz, 'BUZZ'); if (game.backport7xx_data) bp7 += createModalBtnLocal(game.backport7xx_data, 'DATA'); if (game.backport7xx_filek || game.backport7xx_vault) bp7 += createModalBtnLocal(game.backport7xx_filek || game.backport7xx_vault, 'FILEK'); }
-        if (hasBackport4) { if (game.backport4xx_akia) bp4 += createModalBtnLocal(game.backport4xx_akia, 'AKIA'); if (game.backport4xx_viki) bp4 += createModalBtnLocal(game.backport4xx_viki, 'VIKI'); if (game.backport4xx_buzz) bp4 += createModalBtnLocal(game.backport4xx_buzz, 'BUZZ'); if (game.backport4xx_data) bp4 += createModalBtnLocal(game.backport4xx_data, 'DATA'); if (game.backport4xx_filek || game.backport4xx_vault) bp4 += createModalBtnLocal(game.backport4xx_filek || game.backport4xx_vault, 'FILEK'); }
-        downloadsHTML = `${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
-    } else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault) {
-        let std = '', bp = '';
-        if (game.standard_akia) std += createModalBtnLocal(game.standard_akia, 'AKIA'); if (game.standard_viki) std += createModalBtnLocal(game.standard_viki, 'VIKI'); if (game.standard_buzz) std += createModalBtnLocal(game.standard_buzz, 'BUZZ'); if (game.standard_data) std += createModalBtnLocal(game.standard_data, 'DATA'); if (game.standard_filek) std += createModalBtnLocal(game.standard_filek, 'FILEK'); if (game.standard_vault) std += createModalBtnLocal(game.standard_vault, 'VAULT');
-        if (game.backport_akia) bp += createModalBtnLocal(game.backport_akia, 'AKIA'); if (game.backport_viki) bp += createModalBtnLocal(game.backport_viki, 'VIKI'); if (game.backport_buzz) bp += createModalBtnLocal(game.backport_buzz, 'BUZZ'); if (game.backport_data) bp += createModalBtnLocal(game.backport_data, 'DATA'); if (game.backport_filek) bp += createModalBtnLocal(game.backport_filek, 'FILEK'); if (game.backport_vault) bp += createModalBtnLocal(game.backport_vault, 'VAULT');
-        downloadsHTML = `${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
-    } else {
-        let btns = '';
-        if (game.akia_url) btns += createModalBtnLocal(game.akia_url, 'AKIA'); if (game.viki_url) btns += createModalBtnLocal(game.viki_url, 'VIKI'); if (game.buzz_url) btns += createModalBtnLocal(game.buzz_url, 'BUZZ'); if (game.data_url) btns += createModalBtnLocal(game.data_url, 'DATA'); if (game.filek_url) btns += createModalBtnLocal(game.filek_url, 'FILEK'); if (game.vault_url) btns += createModalBtnLocal(game.vault_url, 'VAULT');
-        downloadsHTML = btns;
-    }
-    downloadsContainer.innerHTML = downloadsHTML;
-    const dumpSection = document.getElementById('modal-dump-section');
-    const dumpContainer = document.getElementById('modal-dump');
-    let dumpHTML = '';
-    const hasDump = game.dump_akia || game.dump_viki || game.dump_buzz || game.dump_data || game.dump_filek || game.dump_vault;
-    if (hasDump) { if (game.dump_akia) dumpHTML += createModalBtnLocal(game.dump_akia, 'AKIA', true); if (game.dump_viki) dumpHTML += createModalBtnLocal(game.dump_viki, 'VIKI', true); if (game.dump_buzz) dumpHTML += createModalBtnLocal(game.dump_buzz, 'BUZZ', true); if (game.dump_data) dumpHTML += createModalBtnLocal(game.dump_data, 'DATA', true); if (game.dump_filek || game.dump_vault) dumpHTML += createModalBtnLocal(game.dump_filek || game.dump_vault, 'FILEK', true); dumpSection.style.display = 'block'; dumpContainer.innerHTML = dumpHTML; } else dumpSection.style.display = 'none';
-    const dlcSection = document.getElementById('modal-dlc-section');
-    const dlcContainer = document.getElementById('modal-dlc');
-    let dlcBtns = '';
-    if (game.dlc_akia) dlcBtns += createModalBtnLocal(game.dlc_akia, 'AKIA'); if (game.dlc_viki) dlcBtns += createModalBtnLocal(game.dlc_viki, 'VIKI'); if (game.dlc_buzz) dlcBtns += createModalBtnLocal(game.dlc_buzz, 'BUZZ'); if (game.dlc_data) dlcBtns += createModalBtnLocal(game.dlc_data, 'DATA'); if (game.dlc_filek) dlcBtns += createModalBtnLocal(game.dlc_filek, 'FILEK'); if (game.dlc_vault) dlcBtns += createModalBtnLocal(game.dlc_vault, 'VAULT');
-    if (dlcBtns) { dlcSection.style.display = 'block'; dlcContainer.innerHTML = dlcBtns; } else dlcSection.style.display = 'none';
-    
-    let parts = [];
-    const fileAuthor = game.credits_files, bpAuthor = game.credits_backport, dlcAuthor = game.credits_dlc || game.credits_dlcs;
-    
-    if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
-        if (dlcAuthor) {
-            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
-        } else {
-            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
-        }
-    }
-    else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
-        parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
-        if (bpAuthor && bpAuthor !== fileAuthor) {
-            parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
-        }
-    }
-    else {
-        if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
-        if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
-        if (bpAuthor) parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
-    }
-    
-    let creditsText = parts.length > 0 ? "Thanks to " + parts.join(", ").replace(/, ([^,]*)$/, ' and $1') : "Thanks to the community.";
-    document.getElementById('modal-credits').innerHTML = creditsText;
-    
-    const instSection = document.getElementById('modal-instructions');
-    if (game.how_to_play) { instSection.style.display = 'block'; document.getElementById('modal-instructions-text').innerHTML = game.how_to_play; } else instSection.style.display = 'none';
-    const updatesSection = document.getElementById('modal-updates');
-    const updatesList = document.getElementById('modal-updates-list');
-    const updates = allUpdates[game.title];
-    if (updates && updates.length > 0) {
-        updatesSection.style.display = 'block';
-        updatesList.innerHTML = updates.map(upd => { const dp = upd.date.split('-'); const formattedDate = dp.length === 3 ? `${dp[2]}/${dp[1]}/${dp[0]}` : upd.date; return `<div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:12px; margin-bottom:8px;"><div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;"><div><strong>${escapeHtml(upd.version)}</strong> <small style="opacity:0.6;">(${upd.size || 'N/A'})</small><br><small style="color:var(--cyan-neon);">Released: ${formattedDate}</small></div><div style="display:flex; gap:8px;">${upd.akia_url ? `<a href="${upd.akia_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">AKIA</a>` : ''}${upd.viki_url ? `<a href="${upd.viki_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VIKI</a>` : ''}${upd.buzz_url ? `<a href="${upd.buzz_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">BUZZ</a>` : ''}${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">DATA</a>` : ''}${upd.filek_url ? `<a href="${upd.filek_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">FILEK</a>` : ''}${upd.vault_url ? `<a href="${upd.vault_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VAULT</a>` : ''}</div></div></div>`; }).join('');
-    } else updatesSection.style.display = 'none';
-    const modalRandomBtn = document.getElementById('modalRandomBtn');
-    if (modalRandomBtn) { if (isRandomModeActive) modalRandomBtn.style.display = 'flex'; else modalRandomBtn.style.display = 'none'; }
-    document.getElementById('game-detail-modal').style.display = 'block';
 }
 
 function attachPopularCardEvents() {
@@ -2633,8 +2556,20 @@ function setupPageJump() {
     if (modalInput) modalInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') executeJump(modalInput.value); });
 }
 
-document.getElementById('modal-close-btn').onclick = () => { document.getElementById('game-detail-modal').style.display = 'none'; isRandomModeActive = false; };
-window.onclick = (e) => { if (e.target.classList.contains('game-modal')) { e.target.style.display = 'none'; isRandomModeActive = false; } };
+document.getElementById('modal-close-btn').onclick = () => { 
+    document.getElementById('game-detail-modal').style.display = 'none'; 
+    isRandomModeActive = false;
+    clearAprEmuBadge();
+};
+
+window.onclick = (e) => { 
+    if (e.target.classList.contains('game-modal')) { 
+        e.target.style.display = 'none'; 
+        isRandomModeActive = false;
+        clearAprEmuBadge();
+    } 
+};
+
 window.addEventListener('DOMContentLoaded', init);
 window.addEventListener('scroll', () => { const nav = document.querySelector('nav'); if (nav) { if (window.scrollY > 20) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); } }, { passive: true });
 document.getElementById('next-page').onclick = () => { currentPage++; renderGames(); scrollToTop(true); };
