@@ -1,5 +1,27 @@
 [
    {
+    "title": "Ninja Gaiden 4",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ninja_Gaiden_4.avif",
+    "tags": [
+      "PPSA25258",
+      "v01.004",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiejZ2U21UU3ZaMTVjZ1ZFa0VEYUwrZTBuWDI0V2hFYTNNNXM1OGhBVFNmVm12NEZ0SUxnVlNmdFlKcGtVOGhETnNBPT0iLCJzIjoibWU0L2tRcVFkaUgrTGZCazk0cElnUT09IiwiaSI6IndGb1Vlc2EwbXgwaEZaeFgifQ==",
+    "filek_url": "",
+    "vault_url": "",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "Psykzhack",
+    "credits_backport": "BestPig",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "64GB"
+  },
+   {
     "title": "Gotham Knights",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Gotham_Knights.avif",
     "tags": [
