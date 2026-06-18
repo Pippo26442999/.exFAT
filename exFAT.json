@@ -1,5 +1,29 @@
 [
    {
+    "title": "Assassins Creed Shadows",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Assassins_Creed_Shadows.avif",
+    "tags": [
+      "PPSA20397",
+      "v01.019.076",
+      "EUR",    
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidy9qaXo4K2xHMnVhSVNySGJ3MVQwMEk0V3g5OEEwbmcvTjZoOWlWaDFyRit2b3lsdS9kcy92cUtuVjNWYTFoazJ3PT0iLCJzIjoiZG10OW9hSFRWMjMrd3BEcFJOSkZjZz09IiwiaSI6Ik5jWDNIM2h4RmkxcHprdkQifQ==",
+    "filek_url": "",
+    "vault_url": "",
+    "dlc_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUTRPZU9FdkxVNUNHN1JCbzAxN1hqTzE4V0xWbytJSGlQTStMZjRZaGdjcXZZYWJyQ1VWOVhtWUlwNkNpUG1UNjJNM3AiLCJzIjoiQnVObjBHZjNPelZFdjhtWnFFb2xLQT09IiwiaSI6IkFMc09MbkJJU0pYSlVUdmwifQ==",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoic2dDcXhXeXd6UnJsU1dnTmEwemp5bjFEOExCQ0Q5ZVVGTjFoV2xpL0V3RTRYcXgxM3hZQmY1LzdjMC9idDhBNy9nPT0iLCJzIjoiQ1llY0RTNkRTRXRjRkUyQnFUQXNPdz09IiwiaSI6InhBYVBiNkZPOHhNc1FhQ1oifQ==",
+    "credits_files": "DUPLEX & VanBuuren",
+    "credits_dlc": "DUPLEX & VanBuuren",
+    "credits_backport": "kerrdec97",
+    "how_to_play": "Audio 3D must be off for avoid the crash on Initial Settings.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "294GB"
+  },
+   {
     "title": "WILD HEARTS",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/WILD_HEARTS.jpg",
     "tags": [
@@ -864,25 +888,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "75GB"
-  },
-   {
-    "title": "Assassins Creed Shadows",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Assassins_Creed_Shadows.avif",
-    "tags": [
-      "PPSA20396",
-      "v01.019.076",
-      "USA to EUR Languages",    
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidVdEVCtmcEsrNTBvMUF3eEZaOG43TTFxZEI5cGxibXBZOXF4TDhIZlYrNEp2SXZHUkxEMnVyYW81QU9SR1F0K2dZYkxUUWpQIiwicyI6ImswZG9KeHRzTE1OTmIrNHVjR2ZzbWc9PSIsImkiOiI1YU5RQ3pldjhTZ3JVL1ZtIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTisxTHJlUjVGVnlXTFh4R1YzRlhGblBWN2dUM0c2U1ZjR1FJaVYvdVI3VUVPWXA3aW1UeVFaL2pvd3BBKy9KOE1sdXciLCJzIjoid3JnNEZXNHNKRnZLc2MrN2NPRnBRdz09IiwiaSI6IjlZZVVydXVLUWtSenJSSUcifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaTZWMmtVMjhLNTJyK2NPWkRwbGE3anB2ZHRvYlZKOUNpYWROemtmL3gwdkpNWDJMWXYvOGNFalFmVU5TckNySnBnPT0iLCJzIjoiZW0vMVpYbzM1OFk1ZHBBZFltY2pZdz09IiwiaSI6Im56cENhNGVTOVVhWjZRL0MifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "how_to_play": "Audio 3D must be off for avoid the crash on Initial Settings.",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "262GB"
   },
    {
     "title": "Ratchet & Clank Rift Apart",
