@@ -15,6 +15,8 @@
     "filek_url": "",
     "vault_url": "",
     "credits_files": "DUPLEX & SiESPta",
+    "credits_dlc": "DUPLEX & SiESPta",
+    "how_to_play": "The game could stutter during cutscenes depending on your USB / SSD, specially toward the end of a cutscene when loading assets for the next level.",
     "apr_emu": "on",
     "popular": "on",
     "size": "295GB"
