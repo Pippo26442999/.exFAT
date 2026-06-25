@@ -1,5 +1,43 @@
 [
    {
+    "title": "Bendy and The Ink Machine",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Bendy_and_The_Ink_Machine.avif",
+    "tags": [
+      "PPSA27616",
+      "v01.000.100",
+      "EUR",
+      "7.xx BackPort"
+    ],
+    "backport7xx_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaVYvc1lJTzg0c3d3MXFNVGx4VlQwS1JVREszeWNoT2NxZTVPM1VmNjNrYWZvSU9iZml1RDVBS1lwVUViNHJYSFV2Szh4NTBhIiwicyI6IkYxTm9BYlFJcEVScVg1WVZkZ1lVelE9PSIsImkiOiJ3VmZYN0VjVG0xSXdyNjNzIn0=",
+    "backport7xx_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiemhUYXM0MFBUcjNxZWl2T3pSU3k1dStyR2NwTGxxdXgzWFFXVTVJZ00welhNb1VRNThZaUNMU1cwY0d5T3VuZDlEQisiLCJzIjoib2ZibG1HajdQN1ZrQnk2ODkrSTRyQT09IiwiaSI6ImlqOUJ4Ryt0YkZacmNRU1cifQ==",
+    "backport7xx_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWVFBSHdHNzJYT2JvanhEa2g2NXFiK1hMeWF2NmFuYTRoaGVLbWlXQzFzWmdqVGhEaUNzcTZYQzNYWEhkMHA2SXJBPT0iLCJzIjoiVTYvRlZ5V1diZnNTWE5PNFVrb0xRQT09IiwiaSI6ImFaSHRibU5pWmRXeXBPSDAifQ==",
+    "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiM0RMUDRaWUZ4Y3krcXZiYkIwdU9RV05YSmVwWG5RVldpTmxPdTU4WXhzY2pBNFk3d0hpd3JUQmNvOWhYNlA0Sk9QYXEiLCJzIjoiVHpDOVVjOVhGank3UmNwWEQ4WnBaZz09IiwiaSI6Iit3MG8vMTY5UGRyM0VKYTEifQ==",
+    "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMXlDRDBlMkJReWcxNFJuU3pxTkFQYzBtVzZsZkhFcGhhVk82R010UmxZL3NSeFRBcXhtelpoYk9Ua25EY2I1TWE3dz0iLCJzIjoiUWw0amllYnJuMnhXWHd2eitYOEttUT09IiwiaSI6IjB1VUFyWWVCdXpuQy9zYlMifQ==",
+    "credits_files": "Amiibohound",
+    "credits_backport": "kerrdec97",
+    "apr_emu": "on",
+    "size": "3GB"
+  },
+   {
+    "title": "NAIAD",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/NAIAD.avif",
+    "tags": [
+      "PPSA09904",
+      "v01.001.100",
+      "USA",
+      "7.xx BackPort"
+    ],
+    "backport7xx_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMG0zT2VPcDVaUDVxUGNsUVV4aW5PcUsxMk9EekFsdjF4Q0Yzb1VSeXNNb2JWa1R1TGF0SnlEVHZUNHZOUlR1aW16aWxLREFsIiwicyI6IlUxMTd4RWNtOHpDb1VlQVQ2YVBqM2c9PSIsImkiOiJlU1Z0dmZFSktyZ3NtZ0N3In0=",
+    "backport7xx_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiekdJWUVFeXNGVVR1dUszM21CMmF5b1c0YnJFN0ErMlBkakhVWmk5TytWb3BHU0JxME8xZDJ3QjFETVJwSzRxUFVWcy8iLCJzIjoicGFZVXZXS1VmcXk1WDRXaTNOYkkvUT09IiwiaSI6IkdHa2lXaEc0MC8vajJ3aDAifQ==",
+    "backport7xx_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNEw4Z3ZVY1Q5MWdyb0tQUU1BbUkxeDQxaW5SNDc2bjhvZUFQaldnMmsxS2FXbUZ1eGRIVW1WVDlYdk1qUDlCajZ3PT0iLCJzIjoiZUZFNTY3SVRpWXRaL1V6NWVjMjZUUT09IiwiaSI6Ilc3dUgyU3BocG4vOTJ5RlYifQ==",
+    "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaVVaN25wY2toUUEvakRBakN1cEE1THZVYzlwUkdVVERCMUZUZUlFSmJuam91WHN2aXYvZXA3b0lVZ0tRa0NqMVZqcnoiLCJzIjoieCtGM0did1hFRG91WU5BdmgzN0hJdz09IiwiaSI6IkV6b25hMVdPa1dzOFIvWmUifQ==",
+    "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTDRoaHBTcU5UUXJCQTU0QmJSS3pmZkF0N0hVd2FPWk9hRnJqdUxLUmxROFFOakJObGlrS0Y5ZmEzNTIwbDhiY2xqYz0iLCJzIjoicWdPa2NZcDRESDZ2a05mSGN4M2Nkdz09IiwiaSI6IlRRMmxWN3pwN3FPQmdPNG8ifQ==",
+    "credits_files": "Amiibohound",
+    "credits_backport": "kerrdec97",
+    "apr_emu": "on",
+    "size": "1GB"
+  },
+   {
     "title": "NBA 2K26",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/NBA_2K26.jpg",
     "tags": [
