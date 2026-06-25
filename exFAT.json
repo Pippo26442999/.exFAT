@@ -1,5 +1,25 @@
 [
    {
+    "title": "The Plucky Squire",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Plucky_Squire.avif",
+    "tags": [
+      "PPSA15319",
+      "v02.002",
+      "USA",
+      "7.xx BackPort"
+    ],
+    "backport7xx_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVGpNaXhac3N1SVRSR05PL2lQRTc1VEQ2b2VkVE5odENaK0N5VkJRU05xL05hMW55Y3l6Zmp5NlZDVlFJMDBrRWdFTnpoZUdpIiwicyI6IlFnVGJTQ2NyWW1XU3cvRTF4MU9adHc9PSIsImkiOiJZeGVKemVhVzNNTVRxcWxuIn0=",
+    "backport7xx_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSU1MZkdvbzVQeVJKKzBxd0lIbXgyMkJTcFM2UUxXZmF6QThiTVQ0bGNaSzEvWWZDVFpndkl6R2RsSEY5MkR5dzlpMUkiLCJzIjoiYjV1Q1Y5Q1ZWazNUdmtCRTNSMktFZz09IiwiaSI6Ilh1dm5VaUhvaVZPQzROVkgifQ==",
+    "backport7xx_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUmpPZWM1R1FKSlpPc2xlYUQ0WmhuSTdtVWR5V2krUkhDWmRJY3JWRVVtOTNyb3pkSFZYcklaMVBBS1cxZmhzQVZnPT0iLCJzIjoiWkpUZzhzR3VXTysyeW1mWVpncUdKUT09IiwiaSI6IlFMd2wrWWNGUlBpbUdzZ0YifQ==",
+    "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMTNRdjkyVm5BYlh3QjZ0cVpBc1l0SndRT3U0SUZseWxzYXoxait5cTdIQWRjWldxMkkzL0FYR3BualVUVThnTFozY2YiLCJzIjoicmhoUzVFNUtsc2x5N3h3WllWVzQvdz09IiwiaSI6Ii9yWkN3Y0dwM0R0OGlvMmoifQ==",
+    "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSC9tVFgwNHRpa2tuWEdEWVhHVTNQMU9WUS9xWnJreEpDdUJ3Y1lLMmhGSnpab2F4YUVRR1dobDFTM0ZFU0Jsa0lkRT0iLCJzIjoiNnBpZUdBY1B3L3BWNG1yb3FjWFpvUT09IiwiaSI6Ik0xT2V4bkxHTmdVdk52azMifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "kerrdec97",
+    "popular": "on",
+    "apr_emu": "on",
+    "size": "18GB"
+  },
+   {
     "title": "Turok 3 Shadow of Oblivion",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Turok_3_Shadow_of_Oblivion.webp",
     "tags": [
