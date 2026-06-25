@@ -1,5 +1,24 @@
 [
    {
+    "title": "Turok 3 Shadow of Oblivion",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Turok_3_Shadow_of_Oblivion.webp",
+    "tags": [
+      "PPSA19936",
+      "v01.000",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR2JsNGJvUkl1MGxSZ0gwVGtiL1g4RXVGZHV1NFFuenpvSjkvZDIwTGxqSlBTT3hIaDBOSzdWZ1RrbnVlc29maVBvMVd0TXJEIiwicyI6Inp3QkFsM3gvdmk4bjdsWXlGdmZLbnc9PSIsImkiOiJPVDhXWjhSY3pLYkFZRGtYIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTGltZUF2UlZhOEEwM2RLVkwrc2Y5TTlRQWhjZWt4S0RydW00YWlLR1ptcnlHY1J3WnA0RU0waUpkRXU3RnZlMldhRDMiLCJzIjoieHZOVU9Ra2RwQVltaUw4ZDBqRDJBdz09IiwiaSI6ImNVUVFtU0ZsYUY1M3hyQUoifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVVdLTnpxc0x3ZzIyU2g3eGgrbUhNa3BuVW9YMnFlY3N6NHQ1K09tK3FxQmRKZDhURnZZdisyMXRQYXI4eVROZDZnPT0iLCJzIjoiZXdiTjBVU2ZoQ3B1QldwN1B6N2phUT09IiwiaSI6IkJBbVBSSHdDeXZnRXJ0VU4ifQ==",
+    "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibFZoWHJHakZrVHBGaDZoSE1UR3FrZ3cyT2Uwb21xUFoxZGpmSmhZOHRRVTNJZlVLYmY3eTIwMVp6WG5DYnJkcFg0VWIiLCJzIjoidjFlZGhTdHpRRGZJYmUrb25jVFFZdz09IiwiaSI6IitRNFRGK0wvdkp2ZjBrVEEifQ==",
+    "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYWh3ZDExM0xodEN1TXpmcUIxVm96NGtzSEI2L3o5RUN6Vmw3VGZnY003OUJxVk1GVTAxdkZJNlRNVkxJOVhMUVg5TT0iLCJzIjoidFJQY1drVWhvTllOVEt5NHpNejZ6dz09IiwiaSI6IndCN1BzcHF3N3VWWEsrWkgifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "kerrdec97",
+    "apr_emu": "on",
+    "size": "1GB"
+  },
+   {
     "title": "FANTASIAN Neo Dimension",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/FANTASIAN_Neo_Dimension.avif",
     "tags": [
