@@ -1600,12 +1600,14 @@ function openGameModal(game, event) {
     // ===== GENERAZIONE BOTTONI DOWNLOAD =====
     const downloadsContainer = document.getElementById('modal-downloads');
     
-    // Funzione per creare un bottone download nel modal
+    // Funzione per creare un bottone download nel modal - CORRETTA
     const createModalBtn = (url, label, isDump = false) => {
         if (!url || url === "undefined" || url.trim() === "") return '';
         const dumpAttr = isDump ? 'true' : 'false';
         const isDLC = false;
-        return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', ${isDLC}, ${dumpAttr}, '${game.title.replace(/'/g, "\\'")}', ${requireAprEmu})" class="modal-btn">${label}</button>`;
+        // Usiamo una versione sicura del titolo senza apici che potrebbero rompere l'HTML
+        const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', ${isDLC}, ${dumpAttr}, '${safeTitle}', ${requireAprEmu})" class="modal-btn">${label}</button>`;
     };
     
     let downloadsHTML = '';
@@ -2388,40 +2390,87 @@ function renderGames() {
         if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge" style="position:absolute; top:15px; left:15px; background:var(--green-neon); color:#000; padding:4px 10px; border-radius:8px; font-weight:900; font-size:0.7rem; z-index:20; box-shadow:0 0 10px var(--green-neon); animation: pulseRed 2s infinite;">UPDATE</div>`; }
         const hPlay = (game.how_to_play || "").replace(/'/g, "\\'");
         const dCredits = game.credits_dlc || game.credits_dlcs || '';
+        
+        // Funzione per creare bottone nella card - CORRETTA
         const createBtn = (url, label, isDLC = false, isDump = false) => { 
             if (!url || url === "undefined" || url.trim() === "") return ''; 
-            return `<a onclick="openDLWithAprEmuCheck('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', ${isDLC}, ${isDump}, '${game.title.replace(/'/g, "\\'")}', ${requireAprEmu})" class="btn-dl">${label}</a>`; 
+            const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            return `<a onclick="openDLWithAprEmuCheck('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', ${isDLC}, ${isDump}, '${safeTitle}', ${requireAprEmu})" class="btn-dl">${label}</a>`; 
         };
+        
         let downloadHTML = '';
         let dlcBtns = '';
         let dumpBtns = '';
+        
+        // DUMP
         if (game.dump_akia) dumpBtns += createBtn(game.dump_akia, 'AKIA', false, true);
         if (game.dump_viki) dumpBtns += createBtn(game.dump_viki, 'VIKI', false, true);
         if (game.dump_buzz) dumpBtns += createBtn(game.dump_buzz, 'BUZZ', false, true);
         if (game.dump_data) dumpBtns += createBtn(game.dump_data, 'DATA', false, true);
-        if (game.dump_filek) dumpBtns += createBtn(game.dump_filek, 'FILEK', false, true); if (game.dump_vault) dumpBtns += createBtn(game.dump_vault, 'VAULT', false, true);
+        if (game.dump_filek) dumpBtns += createBtn(game.dump_filek, 'FILEK', false, true);
+        if (game.dump_vault) dumpBtns += createBtn(game.dump_vault, 'VAULT', false, true);
+        
+        // DLC
         if (game.dlc_akia) dlcBtns += createBtn(game.dlc_akia, 'AKIA', true);
         if (game.dlc_viki) dlcBtns += createBtn(game.dlc_viki, 'VIKI', true);
         if (game.dlc_buzz) dlcBtns += createBtn(game.dlc_buzz, 'BUZZ', true);
         if (game.dlc_data) dlcBtns += createBtn(game.dlc_data, 'DATA', true);
-        if (game.dlc_filek) dlcBtns += createBtn(game.dlc_filek, 'FILEK', true); if (game.dlc_vault) dlcBtns += createBtn(game.dlc_vault, 'VAULT', true);
+        if (game.dlc_filek) dlcBtns += createBtn(game.dlc_filek, 'FILEK', true);
+        if (game.dlc_vault) dlcBtns += createBtn(game.dlc_vault, 'VAULT', true);
+        
+        // BACKPORT 7.xx e 4.xx - AGGIUNTO VAULT
         const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault;
         const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault;
+        
         if (hasBackport7 || hasBackport4) {
             let bp7 = '', bp4 = '';
-            if (hasBackport7) { if (game.backport7xx_akia) bp7 += createBtn(game.backport7xx_akia, 'AKIA'); if (game.backport7xx_viki) bp7 += createBtn(game.backport7xx_viki, 'VIKI'); if (game.backport7xx_buzz) bp7 += createBtn(game.backport7xx_buzz, 'BUZZ'); if (game.backport7xx_data) bp7 += createBtn(game.backport7xx_data, 'DATA'); if (game.backport7xx_filek || game.backport7xx_vault) bp7 += createBtn(game.backport7xx_filek || game.backport7xx_vault, 'FILEK'); }
-            if (hasBackport4) { if (game.backport4xx_akia) bp4 += createBtn(game.backport4xx_akia, 'AKIA'); if (game.backport4xx_viki) bp4 += createBtn(game.backport4xx_viki, 'VIKI'); if (game.backport4xx_buzz) bp4 += createBtn(game.backport4xx_buzz, 'BUZZ'); if (game.backport4xx_data) bp4 += createBtn(game.backport4xx_data, 'DATA'); if (game.backport4xx_filek || game.backport4xx_vault) bp4 += createBtn(game.backport4xx_filek || game.backport4xx_vault, 'FILEK'); }
+            if (hasBackport7) {
+                if (game.backport7xx_akia) bp7 += createBtn(game.backport7xx_akia, 'AKIA');
+                if (game.backport7xx_viki) bp7 += createBtn(game.backport7xx_viki, 'VIKI');
+                if (game.backport7xx_buzz) bp7 += createBtn(game.backport7xx_buzz, 'BUZZ');
+                if (game.backport7xx_data) bp7 += createBtn(game.backport7xx_data, 'DATA');
+                if (game.backport7xx_filek) bp7 += createBtn(game.backport7xx_filek, 'FILEK');
+                if (game.backport7xx_vault) bp7 += createBtn(game.backport7xx_vault, 'VAULT'); // <-- AGGIUNTO
+            }
+            if (hasBackport4) {
+                if (game.backport4xx_akia) bp4 += createBtn(game.backport4xx_akia, 'AKIA');
+                if (game.backport4xx_viki) bp4 += createBtn(game.backport4xx_viki, 'VIKI');
+                if (game.backport4xx_buzz) bp4 += createBtn(game.backport4xx_buzz, 'BUZZ');
+                if (game.backport4xx_data) bp4 += createBtn(game.backport4xx_data, 'DATA');
+                if (game.backport4xx_filek) bp4 += createBtn(game.backport4xx_filek, 'FILEK');
+                if (game.backport4xx_vault) bp4 += createBtn(game.backport4xx_vault, 'VAULT'); // <-- AGGIUNTO
+            }
             downloadHTML = `${bp7 ? `<p class="ver-label"><b>BP 7.xx:</b></p><div class="download-container">${bp7}</div>` : ''}${bp4 ? `<p class="ver-label"><b>BP 4.xx:</b></p><div class="download-container">${bp4}</div>` : ''}`;
-        } else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault) {
+        } 
+        // STANDARD e BACKPORT
+        else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault) {
             let std = '', bp = '';
-            if (game.standard_akia) std += createBtn(game.standard_akia, 'AKIA'); if (game.standard_viki) std += createBtn(game.standard_viki, 'VIKI'); if (game.standard_buzz) std += createBtn(game.standard_buzz, 'BUZZ'); if (game.standard_data) std += createBtn(game.standard_data, 'DATA'); if (game.standard_filek) std += createBtn(game.standard_filek, 'FILEK'); if (game.standard_vault) std += createBtn(game.standard_vault, 'VAULT');
-            if (game.backport_akia) bp += createBtn(game.backport_akia, 'AKIA'); if (game.backport_viki) bp += createBtn(game.backport_viki, 'VIKI'); if (game.backport_buzz) bp += createBtn(game.backport_buzz, 'BUZZ'); if (game.backport_data) bp += createBtn(game.backport_data, 'DATA'); if (game.backport_filek) bp += createBtn(game.backport_filek, 'FILEK'); if (game.backport_vault) bp += createBtn(game.backport_vault, 'VAULT');
+            if (game.standard_akia) std += createBtn(game.standard_akia, 'AKIA');
+            if (game.standard_viki) std += createBtn(game.standard_viki, 'VIKI');
+            if (game.standard_buzz) std += createBtn(game.standard_buzz, 'BUZZ');
+            if (game.standard_data) std += createBtn(game.standard_data, 'DATA');
+            if (game.standard_filek) std += createBtn(game.standard_filek, 'FILEK');
+            if (game.standard_vault) std += createBtn(game.standard_vault, 'VAULT');
+            if (game.backport_akia) bp += createBtn(game.backport_akia, 'AKIA');
+            if (game.backport_viki) bp += createBtn(game.backport_viki, 'VIKI');
+            if (game.backport_buzz) bp += createBtn(game.backport_buzz, 'BUZZ');
+            if (game.backport_data) bp += createBtn(game.backport_data, 'DATA');
+            if (game.backport_filek) bp += createBtn(game.backport_filek, 'FILEK');
+            if (game.backport_vault) bp += createBtn(game.backport_vault, 'VAULT');
             downloadHTML = `${std ? `<p class="ver-label"><b>STANDARD:</b></p><div class="download-container">${std}</div>` : ''}${bp ? `<p class="ver-label"><b>BACKPORT:</b></p><div class="download-container">${bp}</div>` : ''}`;
-        } else {
+        } 
+        // LINK SEMPLICI
+        else {
             let btns = '';
-            if (game.akia_url) btns += createBtn(game.akia_url, 'AKIA'); if (game.viki_url) btns += createBtn(game.viki_url, 'VIKI'); if (game.buzz_url) btns += createBtn(game.buzz_url, 'BUZZ'); if (game.data_url) btns += createBtn(game.data_url, 'DATA'); if (game.filek_url) btns += createBtn(game.filek_url, 'FILEK'); if (game.vault_url) btns += createBtn(game.vault_url, 'VAULT');
+            if (game.akia_url) btns += createBtn(game.akia_url, 'AKIA');
+            if (game.viki_url) btns += createBtn(game.viki_url, 'VIKI');
+            if (game.buzz_url) btns += createBtn(game.buzz_url, 'BUZZ');
+            if (game.data_url) btns += createBtn(game.data_url, 'DATA');
+            if (game.filek_url) btns += createBtn(game.filek_url, 'FILEK');
+            if (game.vault_url) btns += createBtn(game.vault_url, 'VAULT');
             downloadHTML = `<div class="download-container" style="margin-top:15px;">${btns}</div>`;
         }
+        
         let dumpSectionHTML = dumpBtns ? `<p class="ver-label"><b>DUMP:</b></p><div class="download-container">${dumpBtns}</div>` : '';
         let dlcSectionHTML = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
         
