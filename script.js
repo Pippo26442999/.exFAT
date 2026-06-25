@@ -1155,7 +1155,8 @@ async function loadAprEmuFiles() {
     if (cachedAprEmuFiles) return cachedAprEmuFiles;
     
     try {
-        const manifestRes = await fetch('ampr-emu-drakmor/manifest.json');
+        const timestamp = Date.now();
+        const manifestRes = await fetch('ampr-emu-drakmor/manifest.json?v=' + timestamp);
         if (manifestRes.ok) {
             const manifest = await manifestRes.json();
             if (manifest.files && Array.isArray(manifest.files)) {
