@@ -1,5 +1,25 @@
 [
    {
+    "title": "Warhammer 40000 Space Marine 2",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Warhammer_40000_Space_Marine_2.webp",
+    "tags": [
+      "PPSA04451",
+      "v01.010.002",
+      "EUR",
+      "7.xx BackPort"
+    ],
+    "backport7xx_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR1p3T21EOW9JZ21BUUk4NWxhby9ad25sMmVLS2dNWHdNcE1LSFMwbCtUVWFqaU5RUUNPbkczZzUwdEMrV1JPaGJTbXFNOGsyIiwicyI6IjR5ZlpPRW9wOU1DeFpYR3JkditxcUE9PSIsImkiOiJsUDlQME9lZDZpK09XcSthIn0=",
+    "backport7xx_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSXplOVZrZ3prWGZQTHpOeVdtWFJMY1FOMTlUWWRNVTFmTjBocXZWTENqRGxJQnU0cTRGRVJLUTZVL044RnlTSVorT3ciLCJzIjoiZk5JVnZXc3ZITXMwM0Rlb0RiWUdGdz09IiwiaSI6IkIvRDJJc2x4QWNxeEFETTUifQ==",
+    "backport7xx_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVmZMKzNMa3M4NWE0ZFRCUldRVzUxcmxWTVR4dndDMGZGcHViM3lNa0VUTTlBUlE1bWRqN2ZtWjVFUkJ3NVNncUpBPT0iLCJzIjoiVG80bkFkZUwzL3lrTm5LYjFMNEVIZz09IiwiaSI6Ik43SllGN1lTWHNRZHBUMEEifQ==",
+    "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidVBjaTljQ2NHeXZjSyszWEp6L1lYd20rcW5JWXQ1OWVGS3piNmdGL3FVdEQvVG5neU1GcjJVUzdGbWs2T1FpWlBOSWwiLCJzIjoiSGxsS0pjTk1RZHBXNnh3enYydUdNQT09IiwiaSI6Ik40R1hwekZSMlF6Z2RXZUsifQ==",
+    "backport7xx_vault": "",
+    "credits_files": "SiESPTA",
+    "how_to_play": "kstuff can be paused after 120sec or the game will crash. Game can take sometime for loading depending on your SSD/NVMe.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "95GB"
+  },
+   {
     "title": "Outward Definitive Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Outward_Definitive_Edition.avif",
     "tags": [
