@@ -15,6 +15,7 @@
     "vault_url": "",
     "credits_files": "SAMAR-KSA",
     "credits_backport": "SAMAR-KSA",
+    "how_to_play": "DUPLEX have some issue related with saves (dead loop) and is also 5.xx +, tested SAMAR-KSA one and it work fine, thx for all feedback, enjoy.",
     "popular": "on",
     "size": "149GB"
   },
