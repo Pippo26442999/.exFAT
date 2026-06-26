@@ -1,5 +1,32 @@
 [
    {
+    "title": "Horizon Zero Dawn Remastered",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Horizon_Zero_Dawn_Remastered.avif",
+    "tags": [
+      "PPSA13427",
+      "v01.008.001",
+      "EUR",
+      "DLCs Merged",
+      "Standard (9.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR2gxRnhNREowM2kxTEFiSkRpeWNad0kwSVIvWUpHMUxyLzkyendTUVEwZFFha3JKNFBvVnZMbzB4djBYVGpPRVg3RnZVYWVVIiwicyI6IkNmRS8yZnNNMDRCTUdiT3RBT2QrU1E9PSIsImkiOiJOdmZIRVZCNjhhTmtZTGNMIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieWU5RVFBa2JJUlJWaUhXUzMzY2pIQzh2cTFiZlV3VXloVWNMTkZHcUFTRUhiRnRONDZ3THQ0WEpSVjAvNmJFSEcxM24iLCJzIjoiS3hncTFHY2tDelI4ODF1dG5vOHQxZz09IiwiaSI6IjZ1Tll2a2U4TnVoN0NYRVEifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWnNVNGNuV0VXNTlpOE5EUGJUZXAxQlR5bWFEWkpOcDE0UCtMYTRYaUtESXhOam5LaStmUlhyUGdpLzNXa2hxaDlnPT0iLCJzIjoiaHp2UndXa1I5VER3bS8xU0I3ZkNiUT09IiwiaSI6IjVaSWVHYWxMeXdTNmdqWHAifQ==",
+    "standard_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTVF3MDJtNGI3NlBLT1dnMU1NUHk4SHVTNEtteERiZ1l5NGtCT0tVQk9LVHgvYVQ1Q2t2bVpYRHBFUG9UM3ZLZElRMkwiLCJzIjoiQldjMU5ld3BLWkMrVkJWMWpER0hTQT09IiwiaSI6IndEeS9vZkpWZUpQc3NPT28ifQ==",
+    "standard_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL0I2cXF6cU5ldDRBeXBCL2JYM1N4d0Z3cG56bWd1SE1JOGYxVWNZQ0lXdGNwcG1RN2F4d01FQmh1SWVRYU1wTFFHcz0iLCJzIjoiL2hsR0JJT1dVUHFubVpEV08vY1ZWZz09IiwiaSI6IlpRWWxDM1hqaHdDZVRlemIifQ==",
+    "backport_akia": "",
+    "backport_viki": "",
+    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidmFDcVZjYWFGcVN6QjRSTjYwSVNaWjIxc3hLeFpIOWxzZWVQSG5CclE5OWx1S0N2b1JkN0VsZ0xDd3psY2xBOG9nPT0iLCJzIjoiTElxQlZHcGRFVlJyTm1RMTF5dmN5dz09IiwiaSI6Im5ESWJHTk9JWUhjbnlseS8ifQ==",
+    "backport_filek": "",
+    "backport_vault": "",
+    "credits_files": "SiESPTA",
+    "credits_dlc": "SiESPTA",
+    "credits_backport": "ManwonHp",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "135GB"
+  },
+   {
     "title": "REYNATIS",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/REYNATIS.avif",
     "tags": [
