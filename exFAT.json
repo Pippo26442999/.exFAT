@@ -1,5 +1,23 @@
 [
    {
+    "title": "Uncharted Legacy of Thieves Collection",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Uncharted_Legacy_of_Thieves_Collection.avif",
+    "tags": [
+      "PPSA05684",
+      "v01.002",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRHF0RmFob084OTRzQUNlVW5Wc0Fsb1A3Zk9rNG1LV2o2bjF2eHZKWnhVd3NxNEU2SW5mR3k1MWZabCtCQXV3bkJ3PT0iLCJzIjoidDlUeXF3bWZVY3JsR3d6bWJ3RVBIZz09IiwiaSI6InlBc0RJS3JkUlhOS0VqTjAifQ==",
+    "filek_url": "",
+    "vault_url": "",
+    "credits_files": "DUPLEX & VanBuuren",
+    "popular": "on",
+    "size": "149GB"
+  },
+   {
     "title": "REYNATIS Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/REYNATIS_DE.avif",
     "tags": [
@@ -5435,22 +5453,6 @@
     "credits_backport": "BestPig",
     "popular": "on",
     "size": "185GB"
-  },
-  {
-    "title": "Uncharted Legacy of Thieves Collection",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Uncharted_Legacy_of_Thieves_Collection.avif",
-    "tags": [
-      "PPSA05684",
-      "v01.002",
-      "EUR",
-      "4.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidkZBVnBWbk9NK21SK1IySnhhUDNxbE82K1dXd2habTQzVDcwNlB0ak9IU3VkbXFDZkk2VE1Lc0thM0JNZmwwZ3lFc1I0aU5TIiwicyI6ImNTYW5CMjE4QWhDSXFCdG9CRDNQVlE9PSIsImkiOiJTQ1dGaTMyOUhhNzRERWlTIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYUdwU1ZrM1pSZjZSRGFIYktMd3Y2MjJ1TXhmQmZCYXNpaXVwMlJsRHFmaDhZWFU3alBIM2EwcVMyaHJZWFZrNlIyVG8iLCJzIjoibGlCUEpGNkNlSXNUSUh6M1BnamdIQT09IiwiaSI6IlBxOGNKd25aQm1YZ2llZkUifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaGZXcVBJRlYyeDdLVXZiakEybjlMRGl1MUM2ZkJHVUVrNWlvV2NVUlFJK0lkSklBcWhZVjF5dkY5Z0F0UVFWK0tGMEtKQT09IiwicyI6IklFZWgxNGZjbFRtNE1VZHZ5UEgyd0E9PSIsImkiOiJpRlJTQVpJcHk2UXdoZjVRIn0=",
-    "credits_files": "DUPLEX & VanBuuren",
-    "popular": "on",
-    "size": "149GB"
   },
   {
     "title": "Life is Strange Double Exposure Ultimate Edition",
