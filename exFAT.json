@@ -1,5 +1,27 @@
 [
    {
+    "title": "Roadcraft",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Roadcraft.avif",
+    "tags": [
+      "PPSA09845",
+      "v01.009.610",
+      "USA",
+      "DLCs Merged",
+      "7.xx BackPort"
+    ],
+    "backport7xx_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibUlqZnlMWXF1bUxybWxLbVE1UUNjYjk5MU0wTHJwbDhFOFZhQStmLzRQd21ub01GVDZDMEFudUVQYStycHpWR0VFQXJjaXZ1SDV2djhCMEVvM1ZyM3Z5Y3pSN1JCUjNFVDVzPSIsImkiOiJHKzRxQXlidnVLREFIR0E2IiwibiI6IkFraWEifQ==",
+    "backport7xx_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUXoyRGFZY2hKTHI4N0NSRndMZ3VQZUI3UnMxTFIxaWwwNVlENzJlQktCRmlWTkp3T0VYRjFrVHg0dEdaYUdmSGVxUHlqdXg4bnJZWGRYeDhIR1Mza0pxblRJcVJpUVE9IiwiaSI6Im5FdUFoVlJEdVhoNk5RK24iLCJuIjoiVmlraSJ9",
+    "backport7xx_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidFV2cEpPcnhvRzh2MXArV1U1RTVMd2llVEZWM2JNQTVvZHd2bjU4YUVEWHRGY21keHIyL2xDN3RYempzNUNSc3NrRjRBSTVtM0pxZDhPS3RyN3hveDJzcHpOcEQiLCJpIjoiQW9rVjZiUXEwamdVb3hBWiIsIm4iOiJEYXRhIn0=",
+    "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZElCQVVRdzh3bHRvWWtIdmJRMEczbG13Q0E3Q3VOSkdqZ295S1N1SDNvN0hsZXJTUm02SlhsMUtFSmVvRHduM2lTdElUTThrTkhmSXJMMXZyQ1h5RUtsRi9YeGdlVmc9IiwiaSI6IjBNc2ZhTDZlaEpjalFxVE4iLCJuIjoiRmlsZUsifQ==",
+    "backport7xx_vault": "",
+    "credits_files": "High-Speed007",
+    "credits_backport": "kerrdec97",
+    "credits_dlc": "Pkykzhack",
+    "how_to_play": "kstuff can be paused after 120sec or the game will crash. Game can take sometime for loading depending on your SSD/NVMe.",
+    "apr_emu": "on",
+    "size": "55GB"
+  },
+   {
     "title": "Warhammer Age of Sigmar Realms of Ruin Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Warhammer_Age_of_Sigmar_Realms_of_Ruin.avif",
     "tags": [
