@@ -293,7 +293,7 @@
     "title": "FANTASIAN Neo Dimension",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/FANTASIAN_Neo_Dimension.avif",
     "tags": [
-      "PPSA27616",
+      "PPSA22265",
       "v01.300",
       "EUR",
       "7.xx BackPort"
@@ -1147,7 +1147,7 @@
     "title": "Cris Tales",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Cris_Tales.avif",
     "tags": [
-      "PPSA05324",
+      "PPSA02121",
       "v01.000",
       "USA",
       "3.xx and beyond"
@@ -2052,7 +2052,7 @@
     "title": "Dead Rising Deluxe Remaster",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dead_Rising_Deluxe_Remaster.avif",
     "tags": [
-      "PPSA02257",
+      "PPSA18259",
       "v01.000",
       "EUR", 
       "DLCs Merged",  
@@ -4267,7 +4267,7 @@
     "title": "The Medium",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Medium.jpg",
     "tags": [
-      "PPSA08804",
+      "PPSA03718",
       "v01.007",
       "EUR",
       "2.xx and beyond"
@@ -5508,7 +5508,7 @@
     "title": "Life is Strange Double Exposure Ultimate Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Life_is_Strange_Double_Exposure.avif",
     "tags": [
-      "PPSA03717",
+      "PPSA16106",
       "v01.002.000",
       "EUR",
       "4.xx BackPork"
@@ -5789,7 +5789,7 @@
     "title": "Phantom Breaker Battle Grounds Ultimate",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Phantom_Breaker_Battle_Grounds_Ultimate.avif",
     "tags": [
-      "PPSA18010",
+      "PPSA13794",
       "v01.000",
       "EUR",
       "9.xx and beyond"
@@ -6116,20 +6116,6 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMDNycm5ZdWMxZUp4T3dCVCt6dkZMYzVzb1ZEWGdMRmJzSVRRZGhsR29HdzlEWWJzRUZJWHFFNGpGVEZuRWJ1aENQSHoiLCJzIjoiNDlhV0psTld1SlMzYkpRaUNDbXJJQT09IiwiaSI6IjB5UEFRZ0d1YXdPRjNzZGwifQ==",
     "credits_files": "SiESPTA",
     "size": "32GB"
-  },
-  {
-    "title": "Rugrats Adventure in Gameland",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Rugrats_Adventure_in_Gameland.png",
-    "tags": [
-      "PPSA23396",
-      "v01.000",
-      "ASIA",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMzk1dWdkSVlpd0dvMEJSSzdMaXBxOWhxMUQ4b3FSbWM4NHR4aDFXTlZxT1VrWXpHSzhKY2F2ZmtqSWtBc0MyNTlwUFdrY29RIiwicyI6ImtaYVErb0hYeURwallHWEliMHBUYlE9PSIsImkiOiJJTCt1OFN1djN4SDYzKzZFIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidVdZV3Q0SmNKM3VHV0pBNEJickJaNjM3QXBSZnFqMUl0cFhsLzU1RVRsN2REY0JGZ0d3Nnpwc0lYeWdpMnpvSVo1UVciLCJzIjoiK1hxWnQyMkRXZU16bVNNUCtkSmtjUT09IiwiaSI6ImwvSi9TQ3g4RnlVbXZ1WWkifQ==",
-    "credits_files": "SiESPTA",
-    "size": "6GB"
   },
   {
     "title": "Treasures of The Aegean",
@@ -6461,7 +6447,7 @@
     "title": "Fallout 4",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Fallout_4.png",
     "tags": [
-      "PPSA08260",
+      "PPSA09016",
       "v01.002",
       "USA",
       "4.xx BackPork"
@@ -6502,7 +6488,7 @@
     "title": "The Binding of Isaac Repentance",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Binding_of_Isaac_Repentance.avif",
     "tags": [
-      "PPSA03717",
+      "PPSA03311",
       "v01.000",
       "USA",
       "3.xx and beyond"
