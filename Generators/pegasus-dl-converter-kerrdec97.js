@@ -8,6 +8,17 @@ const LINK_LOCK_HOST = "pippo26442999.github.io";
 const LINK_LOCK_PATH_PREFIX = "/link-lock-pippo/";
 const LINK_LOCK_VERSION = "0.0.1";
 
+// --- Link Lock V2 (library-decrypt) -----------------------------------------
+// The catalog migrated some links to a new "library-decrypt" scheme. Same host,
+// new path, and a different payload: the fragment is base64 of a *compressed*
+// object {v,e,s,i,r,rs,n}, AES-GCM uses 600000 PBKDF2 iterations (not 100000),
+// the default salt/IV are all-zero buffers (not the legacy byte arrays), and the
+// decrypted plaintext is JSON {v,u} with the real URL in `.u`.
+const LINK_LOCK_V2_PATH_PREFIX = "/library-decrypt/";
+const LINK_LOCK_V2_ITERATIONS = 600000;
+const LINK_LOCK_V2_DEFAULT_SALT_B64 = "AAAAAAAAAAAAAAAAAAAAAA"; // 16 zero bytes
+const LINK_LOCK_V2_DEFAULT_IV_B64 = "AAAAAAAAAAAAAAAAAAAA";    // 12 zero bytes
+
 const GROUP_ORDER = {
   files: 0,
   standard: 1,
@@ -43,6 +54,10 @@ const MIRROR_LABELS = {
   gofile: "GoFile",
   pixe: "PixelDrain",
   pixeldrain: "PixelDrain",
+  filek: "FileKeeper",
+  filekeeper: "FileKeeper",
+  vault: "DataVault",
+  datavault: "DataVault",
 };
 
 const TITLE_ID_RE = /\b([A-Z]{4}\d{5})\b/;
@@ -140,7 +155,47 @@ function _clearKeyCacheForBenchmark() {
   _derivedKeyCache.clear();
 }
 
+// Decrypt a Link Lock V2 (library-decrypt) URL. The fragment base64-decodes to a
+// compressed payload; missing salt/iv mean the all-zero defaults; 600k iterations.
+async function decryptLinkLockV2Url(encryptedUrl) {
+  const parsed = new URL(encryptedUrl);
+  if (parsed.hostname !== LINK_LOCK_HOST || !parsed.pathname.startsWith(LINK_LOCK_V2_PATH_PREFIX)) {
+    throw new Error("not a Link Lock V2 URL");
+  }
+  if (!parsed.hash) throw new Error("Link Lock V2 URL has no fragment");
+
+  const compressed = JSON.parse(new TextDecoder().decode(base64ToBuffer(parsed.hash.slice(1))));
+
+  const encrypted = base64ToBuffer(compressed.e);
+  const saltB64 = compressed.s || LINK_LOCK_V2_DEFAULT_SALT_B64;
+  const ivB64 = compressed.i || LINK_LOCK_V2_DEFAULT_IV_B64;
+  const salt = base64ToBuffer(saltB64);
+  const iv = base64ToBuffer(ivB64);
+
+  const key = await deriveKeyCached(LINK_LOCK_PASSWORD, salt, LINK_LOCK_V2_ITERATIONS);
+  const ciphertext = encrypted.slice(0, encrypted.length - 16);
+  const tag = encrypted.slice(encrypted.length - 16);
+
+  const decrypted = await crypto.subtle.decrypt(
+    { name: 'AES-GCM', iv: iv, tagLength: 128 },
+    key,
+    new Uint8Array([...ciphertext, ...tag])
+  );
+
+  const plaintext = new TextDecoder().decode(decrypted);
+  // V2 wraps the real URL in JSON {v,u}. Fall back to raw plaintext if it isn't.
+  try {
+    const obj = JSON.parse(plaintext);
+    if (obj && typeof obj.u === 'string') return obj.u;
+  } catch { /* not JSON, use as-is */ }
+  return plaintext;
+}
+
 async function decryptLinkLockUrl(encryptedUrl) {
+  const probe = new URL(encryptedUrl);
+  if (probe.hostname === LINK_LOCK_HOST && probe.pathname.startsWith(LINK_LOCK_V2_PATH_PREFIX)) {
+    return decryptLinkLockV2Url(encryptedUrl);
+  }
   const parsed = new URL(encryptedUrl);
   if (parsed.hostname !== LINK_LOCK_HOST || !parsed.pathname.startsWith('/link-lock-pippo/')) {
     throw new Error("not a Pippo Link Lock URL");
@@ -170,7 +225,9 @@ async function decryptLinkLockUrl(encryptedUrl) {
 function isLinkLockUrl(value) {
   try {
     const parsed = new URL(value);
-    return parsed.hostname === LINK_LOCK_HOST && parsed.pathname.startsWith('/link-lock-pippo/');
+    if (parsed.hostname !== LINK_LOCK_HOST) return false;
+    return parsed.pathname.startsWith(LINK_LOCK_PATH_PREFIX) ||
+           parsed.pathname.startsWith(LINK_LOCK_V2_PATH_PREFIX);
   } catch {
     return false;
   }
@@ -417,4 +474,4 @@ async function convertExFatToPegasus(exFatData) {
   };
 }
 
-window.PippoExfatConverter = { convertExFatToPegasus, decryptLinkLockUrl, isLinkLockUrl, _getKeyDeriveStats, _resetKeyDeriveStats, _clearKeyCacheForBenchmark };
+window.PippoExfatConverter = { convertExFatToPegasus, decryptLinkLockUrl, decryptLinkLockV2Url, isLinkLockUrl, _getKeyDeriveStats, _resetKeyDeriveStats, _clearKeyCacheForBenchmark };
