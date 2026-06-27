@@ -1,5 +1,29 @@
 [
    {
+    "title": "ASTRO BOT",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/ASTRO_BOT.avif",
+    "tags": [
+      "PPSA21564",
+      "v01.018",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTUo0WWNnQ3N5M1lDK3p5REVscjNucXE1cGNBVnNQZE9HS2l2SUhjNkd1TDNkc0NvMnllSE5ybkQveDhObWFNVWhrU1dkS0JZYTRwWDY3S0xaODdac1REQXhsNStMVSthcnJzPSIsImkiOiJidzBqNE1sS3VkSFNOOC96IiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYUVhSGVhRmd4ZU1VbG1ER1hPNmo0cHhVRzZlOHhQb0FFUUc3b04rUWJYQUFQcGozNnpRa21KZGVPeTBjdmJVQmZ6SENscmVQLzdWd2VkQSt0SHA3bmR1M2JwRi90TmM9IiwiaSI6IlpaQUZURDB4cjBxYWIyVmQiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaTJzWXJYUGhvc1c3bXRYelZxdXA2RVZyTWpKZXUwcDdNNHJtKzVnaEJCeTVmYmFTL2t0MThtMGkwdjNqaHZqeWJCK1lOQ3QwZ040OEk2b3JMK2ViNWVXVy85cloiLCJpIjoiVWw5WnpJY3JMM3BYN3l6TSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSTlSTko1VGZ3L1NOQjdrNmpPanBadDEzU2tRaVJ6Q3NnS04vazI4SlVyS1JodVoxSG9xUmhxQUN6T3lkSVQ3WHJ2cnkvVVZpRkV4dVhkZTZDajMzSGw1aVpQMzVmeHc9IiwiaSI6Ii9Xa3RvNU16U2ZhSDgxczUiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY1BKTU9VK20wMUlVYnVJYWp1MXI5YkxGY1BGanJLbk1KMkFUOGVNQ3VXMXU1aE95QkIwRlQxZG03UVFqYWRtbG1yYzZjTnYzaVpsRDJ1cEpURjA3aHNuYmpRaEI3UT09IiwiaSI6InYxSUVXdnIxQnlKZEpEQ3EiLCJuIjoiVmF1bHQifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidmpqaGtMbTRmd1RJV2hYVTY3M1NLQ3ljcDRERys2RHFyd1VjTkRrYmdXbU8rQkcxSTlzZnJHcWx4aW1xNTBHV3ArMlBWTnVTNEI5YWFnd2hLU2Yrd0VPckZaYm0raG96bHk4PSIsImkiOiJaNkV3RlRLOW9RQnpDZ3JQIiwibiI6IkFraWEifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYmM5M2ZxeGtmK0JOSGJ0dkxyMGhadlhCSjVqbGRUM2lQdGwzZCt4QnZmSFVMMndFd1VUNVkyVXVHc244UjEzZWdLdU1SbnpzSDlJQ3BRQjJPQmVldk1SUEhXalUiLCJpIjoiT21rckNpVk16cHdiVWdNUiIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMXo1V1dEeXdGbUg4RFdURmlTSDVPc28xS0JlQXVrRmp4dkljT3BXZTlXOFdmV21vOFc2OTIxOHlKSExMa05oL0Q5RElwNGhxNXRBY0JuU2M0VmV2UjBQS0hVRUhVUFk9IiwiaSI6ImEzaE8zMzBGVUFOaGEvSzgiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "SiESPTA",
+    "credits_dlc": "Pkykzhack",
+    "credits_backport": "ManwonHp",
+    "how_to_play": "Totally converted into USA, progress will be no lost from v01.007 (No need anymore Garlic Saves Manager), enjoy.",
+    "popular": "on",
+    "size": "152GB"
+  },
+   {
     "title": "Roadcraft",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Roadcraft.avif",
     "tags": [
@@ -2143,26 +2167,6 @@
     "credits_files": "SiESPTA",
     "credits_backport": "Kira",
     "size": "8GB"
-  },
-   {
-    "title": "ASTRO BOT",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/ASTRO_BOT.avif",
-    "tags": [
-      "PPSA21564",
-      "v01.007",
-      "USA",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia0VLb0dYUHVPYVZpWHBnVnk1a05hWDhLbHNDbllkMFhHcVQvcVJsTjJaeVVSVWc2NEI3eWVJeTI4YWUveW1Xd0IrK2ZPNFV6IiwicyI6ImpMdit5bWNDU1ZCeTUycDFzK0FrVVE9PSIsImkiOiJrYm5ZVmw3MDVTRDJTalVwIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiKzNjVVliSkt6cjI5dUtnUUNhRUMwWVNYdlZ1bkp4c1c0UmhHOHA2YzVjUGhOeUtCZUE1aVRLbTlYT1NndmZQdkVybnAiLCJzIjoiMk5nZmk5cmUxN2N1cU9RelN6WUZjZz09IiwiaSI6Ink1MXdVK2k4eVVxdUltc2sifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOERZck0xMzZ6OEY2bWp3bWZlS1hZN1NZUUdNMjJZSmJDT0EwdmhGaEo2L09UTFlvQmZpWVdxVWRtU2xzOFE1N2dRPT0iLCJzIjoiR2RmeSs0U2NxZnVoTXBSWUtmYm5wdz09IiwiaSI6ImNQdWg0YzJMQWRHU0NYZW8ifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiKzdVYUd5U1Z3NzRDKytJWjdhZCtpVmhWY2FOZmxGK0VaNmJoS1FLQ21tek4ySkt5MVY1VjVaRzZtMVhaR0hkYlRSWG9wYmRDIiwicyI6Ill1eTdGRnFZSDZkdXRCNHJTeHR3RWc9PSIsImkiOiJhelFlL2ZmWGdhanBTNlE0In0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVVpXMUs0N3N0R0RpOGNXWlV4QUhHcTg3QUxGZU5ma0lubFp3QkMybFVqNzhCY2ZkZmh4V2dWeUxxSGZjZmpWaW1nPT0iLCJzIjoiMDZzWTlsTmZnYVA2TjVFa1laS21udz09IiwiaSI6IlNHc2hmMXo4Und6aC9ncnkifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "Pkykzhack",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "152GB"
   },
    {
     "title": "Visions of Mana",
