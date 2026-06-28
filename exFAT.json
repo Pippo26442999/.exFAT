@@ -1,11 +1,32 @@
 [
    {
+    "title": "Darksiders 2 Deathinitive Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Darksiders_2_Deathinitive_Edition.webp",
+    "tags": [
+      "PPSA23806",
+      "v01.002",
+      "EUR",
+      "DLCs Merged",
+      "7.xx BackPort"
+    ],
+    "backport7xx_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieWQrM2p0T0RuUUhjTzd6Lzg5eE5QYW1SdkkzMjhlWEk0UW85QzZnN0VPTUkyY3ZuQ0lva2NRVWtRV0Y2Tm5wbGpaaGMzcGZDSG5haGRxOFdFbWJhajVqREVrbTRoVjM2cWdRPSIsImkiOiJZR3J2UDJaRnk5Q29ydmpvIiwibiI6IkFraWEifQ==",
+    "backport7xx_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSDRGV2FsNWpZR3Y0aElucGRHK09PbHFBdzhMMUV0OWo4dGRBL3pFeWFGRlg1MDcxVElWeHVSL1BPRGFMUlVBZ0lOcG1pNm05N0NuK2lkSENUMnAwdVJaMjh5L0g1YkU9IiwiaSI6IlNrUGUvNGM3OXdraTRTWXMiLCJuIjoiVmlraSJ9",
+    "backport7xx_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZTMzQU50dE9kSlhIcitVeE9hV1BOWjlSQ3BzMXdyRGVXVW1mL3o3eTI5N3ZVdTI4SXpqZlNKU2FtaXhEa0lYQU9aTWJML01OSXIvYzd0OGNuVjRGSjlsR2ZpWHIiLCJpIjoicEZRUzlGSnNyN3dBUmVaaSIsIm4iOiJEYXRhIn0=",
+    "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNzlXak11N0huWi93eW9BbUlLRE9Yd3IvengxZ0szaTVkYnJzOWtqUkpnNlR3NzMyc0NzSDFZV3JaVjVuTnUxYlU1TVNzYXJWbXdKb01aUExaMHZzN3c1bEJBaE9nbm89IiwiaSI6IitzbU5mR0c4SVp5aFBXdTMiLCJuIjoiRmlsZUsifQ==",
+    "backport7xx_vault": "",
+    "credits_files": "DUPLEX",
+    "credits_dlc": "DUPLEX",
+    "credits_backport": "kerrdec97",
+    "apr_emu": "on",
+    "size": "20GB"
+  },
+   {
     "title": "Unknown 9 Awakening Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Unknown_9_Awakening_Deluxe_Edition.avif",
     "tags": [
       "PPSA17841",
       "v01.003",
-      "USA",
+      "USA to EUR Languages",
       "DLCs Merged",
       "4.xx BackPort"
     ],
