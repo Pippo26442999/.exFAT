@@ -1,5 +1,27 @@
 [
    {
+    "title": "Unknown 9 Awakening Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Unknown_9_Awakening_Deluxe_Edition.avif",
+    "tags": [
+      "PPSA17841",
+      "v01.003",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOXBpTFFodE1sdHQ3SWRBL0lNbWpxY25STlo0NDQ1T0dlWE4xUVRseml1T0hkdVNCMFJJbnhGVEdRTEl3YlF2NTk4Q29NTTBUNitsMEljd2lPSlZuOXRKWXdEd0wiLCJpIjoiUDRqWlo5N0I2NlNseWpsdCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "",
+    "vault_url": "",
+    "credits_files": "SiESPTA",
+    "credits_backport": "kerrdec97",
+    "credits_dlc": "Pippo",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "58GB"
+  },
+   {
     "title": "UFC 5",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/UFC_5.avif",
     "tags": [
