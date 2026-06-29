@@ -1,11 +1,34 @@
 [
    {
+    "title": "Saints Row Gold Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Saints_Row_GE.avif",
+    "tags": [
+      "PPSA02813",
+      "v01.017",
+      "EUR",  
+      "DLCs Merged", 
+      "4.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiLzVlZ0dhRzgrWVhkN1dTdzRkYzZnTnJzSDlacE9xN01Ma05XeVE3Ty9jUVlJbUtaYzl6eitKRy9KR0ppangrZXdpRGJFbXJWQVp2L0tVQU1WeEdpMm9LYUphUjciLCJpIjoiNmlxTlh5NzVXU3p2VURTUSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "",
+    "vault_url": "",
+    "credits_files": "DUPLEX",
+    "credits_dlc": "DUPLEX",
+    "how_to_play": "Loading infinite when starting a new game is now fixed.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "75GB"
+  },
+   {
     "title": "Like A Dragon Pirate Yakuza in Hawaii Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Like_A_Dragon_Pirate_Yakuza_in_Hawaii_Deluxe_Edition.avif",
     "tags": [
       "PPSA24478",
       "v01.014",
       "JPN",
+      "DLCs Merged",
       "4.xx BackPort"
     ],
     "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ3RGbldvYnRiZTBqeDVteGZnd0xtUjZpQWh3VnQ4amkrWllDMGdvaFZ2QWxRc1RoZ21mdkZHMHZzUGJkbkQzUEpFTmZmMDFERjVLT0gyNzhmK2Z4QVd1V1dIZkx0YkY3NlNrPSIsImkiOiJTUysyazBYT01qZzdQU05sIiwibiI6IkFraWEifQ==",
@@ -2043,27 +2066,6 @@
     "credits_dlc": "romhunter",
     "popular": "on",
     "size": "113GB"
-  },
-   {
-    "title": "Saints Row",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Saints_Row.jpg",
-    "tags": [
-      "PPSA02807",
-      "v01.017",
-      "EUR",  
-      "DLCs Merged", 
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieWZYWXFZQ1FiUHMxeG4wTVZuZ1FPRzNvTHNWNVZqOE1WWUUyL0t3VVdLdHYvTmRNSkRqLzN1Nm9lWEU2anU0a3FhbWk1OTFBIiwicyI6ImtIZXpyRmhFOFFnQVovNDJ6MVY4T1E9PSIsImkiOiIyV3B5bTdPWStuaFJxZFFjIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNWZEbTJQQTVpQnZldTR5U1pLajFrVWJscW1LbUFmZGlYdXV1a0tJRzlHc3dKWU9jblhHUnNYZWU1WWNFLzlGcTdZL2MiLCJzIjoiMXNCQnlHQS9NNk9Rc3dDZ2NMcVg0dz09IiwiaSI6IktoVGR6TWtaWjNTaGpiaGkifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN1JTdnVvZ1Joa1pNWmhLQ2FrMzVKNnhCRXloNUorUGZJRFIrRG1CbFduNDBsQWtWaVZiNnNWR1czU2xvajNJYlRnPT0iLCJzIjoiS25DcHdiMEdpOG9aYUFCcHJ2WEhhZz09IiwiaSI6IlAzTXBBQW9NcG41YW15SmMifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "credits_dlc": "Pippo",
-    "how_to_play": "Totally Converted in EUR thx to NazkyYT & kerrdec97.",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "75GB"
   },
    {
     "title": "Ratchet & Clank Rift Apart",
