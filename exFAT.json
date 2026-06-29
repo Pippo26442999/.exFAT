@@ -1,5 +1,28 @@
 [
    {
+    "title": "Alan Wake 2 Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Alan_Wake_2_Deluxe_Edition.avif",
+    "tags": [
+      "PPSA02572",
+      "v01.200.007",
+      "EUR",
+      "DLCs Merged",
+      "4.xx BackPork"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMlp1cGJ2Qmw1d1YvWFZjYlBDWFdldXhGZ1hJeUtFNTNSK1pwWE01THFQV0RpY0xDelprYXpwVHMxU2NPNkpacnYyTkRxQXpzblNjN2JncXNKZ2hRUkMwQ2ljWXZIZjg9IiwiaSI6IldMS1Mzano3UHNMeGJZV0EiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQy9tYnVyY044YVBBbms3UTBWdFMrUkkvTnRiemh3NDg1VFdtbkFnL0U2S0plQmZtTnVEWng5QjhvRmwzSnVFYnNDaUN2K0FkNm15T1ZMSFRXZ1BwTzQ1RFA1MEUiLCJpIjoidU5IcmloWlpvRlMyZmt1bCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYktTMko3ejNqT1l6YjdTWWVjVUpTYy9Ld1RBODV0clVWNEZncGtubVgvdE1hS1BDdGZ6eHg2Wk5SaHdCZ0tTU3pQcXkrMVhkM3RTOTRubGNkb0RmNENlRS9VOFpOWXM9IiwiaSI6IlVtWGN1b2FzY1VMaStIRFAiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "",
+    "credits_files": "SiESPTA",
+    "credits_backport": "BestPig",
+    "credits_dlc": "Pkykzhack ",
+    "how_to_play": "Ignore Trophy problem popup at the beginning, saves work fine and can be loaded.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "137GB"
+  },
+   {
     "title": "Darksiders 2 Deathinitive Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Darksiders_2_Deathinitive_Edition.webp",
     "tags": [
