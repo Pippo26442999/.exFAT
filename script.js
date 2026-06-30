@@ -131,6 +131,8 @@ function generateFakeGames(count) {
 }
 
 let allGames = [];
+let lastETag = null;
+let cachedGames = null;
 let filteredGames = [];
 let originalOrderMap = new Map();
 let allUpdates = {}; 
@@ -2096,36 +2098,63 @@ async function loadUpdates() {
 async function loadLibrary() {
     try {
         const isFlagged = sessionStorage.getItem('flagged_as_bot') === 'true' || IS_BOT;
-        const url = 'exFAT.json?v=' + Date.now();
-        console.log('[LIBRARY] Tentativo di caricamento da:', url);
         
-        const response = await fetch(url);
+        // USA L'API DI GITHUB
+        const apiUrl = 'https://api.github.com/repos/Pippo26442999/.exFAT/contents/exFAT.json';
         
+        // ⚠️ IMPORTANTE: SOLO If-None-Match, NIENTE cache-control!
+        const headers = {};
+        if (lastETag) {
+            headers['If-None-Match'] = lastETag;
+            console.log('[LIBRARY] 🔍 Verifico se il file è cambiato...');
+        }
+        
+        console.log('[LIBRARY] Tentativo di caricamento dall\'API GitHub');
+        const response = await fetch(apiUrl, { headers });
+        
+        // SE IL SERVER RISPONDE 304, IL FILE NON È CAMBIATO
+        if (response.status === 304 && cachedGames) {
+            console.log('[LIBRARY] ✅ File NON cambiato! Uso la cache locale.');
+            
+            allGames = cachedGames;
+            allGames.forEach((game, index) => { 
+                originalOrderMap.set(game.title, index); 
+            });
+            
+            applyFWFilterWithSort();
+            renderPopularGames();
+            renderGames();
+            updateResultCount();
+            hideSkeletonLoader();
+            return;
+        }
+        
+        // SE ARRIVA QUI, IL FILE È CAMBIATO O È LA PRIMA RICHIESTA
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
         
-        const text = await response.text();
-        console.log('[LIBRARY] File ricevuto, lunghezza:', text.length, 'bytes');
+        // SALVA IL NUOVO ETAG
+        lastETag = response.headers.get('ETag');
+        console.log('[LIBRARY] 📦 File AGGIORNATO! Nuovo ETag:', lastETag);
         
-        if (!text || text.trim() === '') {
+        // LEGGI E DECODIFICA IL CONTENUTO BASE64
+        const apiResponse = await response.json();
+        const jsonString = atob(apiResponse.content);
+        
+        console.log('[LIBRARY] File ricevuto, lunghezza:', jsonString.length, 'bytes');
+        
+        if (!jsonString || jsonString.trim() === '') {
             throw new Error('Il file exFAT.json è vuoto');
         }
         
         let data;
         try {
-            data = JSON.parse(text);
+            data = JSON.parse(jsonString);
             console.log('[LIBRARY] JSON parsato con successo,', Array.isArray(data) ? data.length + ' giochi' : 'oggetto ricevuto');
         } catch (jsonError) {
             console.error('[LIBRARY] Errore parsing JSON:', jsonError.message);
-            console.log('[LIBRARY] Prime 300 caratteri:', text.substring(0, 300));
-            
-            const errorMsg = document.getElementById('pw-error') || document.createElement('div');
-            errorMsg.style.cssText = 'position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.95); color:#ff4444; padding:30px; border-radius:20px; z-index:999999; text-align:center; border:2px solid #ff4444;';
-            errorMsg.innerHTML = `<h2>❌ ERRORE FATALE</h2><p>Il file exFAT.json è corrotto o malformato.</p><p style="font-size:0.8rem; margin-top:20px;">${jsonError.message}</p><button onclick="location.reload()" style="margin-top:20px; padding:10px 20px; background:#ff4444; border:none; border-radius:10px; color:white; cursor:pointer;">RICARICA</button>`;
-            document.body.appendChild(errorMsg);
-            hideSkeletonLoader();
-            return;
+            throw new Error('Il file exFAT.json è corrotto o malformato');
         }
         
         if (!Array.isArray(data)) {
@@ -2142,6 +2171,8 @@ async function loadLibrary() {
             console.log('[LIBRARY] Modalità bot attiva - generati 500 fake games');
         }
         
+        // SALVA IN CACHE
+        cachedGames = data;
         allGames = data;
         allGames.forEach((game, index) => { 
             originalOrderMap.set(game.title, index); 
@@ -2149,6 +2180,7 @@ async function loadLibrary() {
         
         console.log('[LIBRARY] Caricati', allGames.length, 'giochi');
         
+        // RESETTA I FILTRI
         const fwFilter = document.getElementById('fw-filter');
         const fwCurrent = document.getElementById('fw-current');
         if (fwFilter) fwFilter.value = '99';
@@ -2169,6 +2201,7 @@ async function loadLibrary() {
         if (mobileSortFilter) mobileSortFilter.value = 'default';
         if (mobileSortCurrent) mobileSortCurrent.innerText = 'Sort: Default';
         
+        // AGGIORNA LA UI
         applyFWFilterWithSort();
         renderPopularGames();
         renderGames();
@@ -2176,9 +2209,51 @@ async function loadLibrary() {
         hideSkeletonLoader();
         
     } catch (e) {
-        console.error('[LIBRARY] Errore fatale:', e);
-        hideSkeletonLoader();
+        console.error('[LIBRARY] ❌ Errore fatale:', e);
         
+        // FALLBACK: SE ABBIAMO DATI IN CACHE, USALI
+        if (cachedGames) {
+            console.warn('[LIBRARY] ⚠️ Errore, uso la cache come fallback.');
+            allGames = cachedGames;
+            allGames.forEach((game, index) => { 
+                originalOrderMap.set(game.title, index); 
+            });
+            applyFWFilterWithSort();
+            renderPopularGames();
+            renderGames();
+            updateResultCount();
+            hideSkeletonLoader();
+            return;
+        }
+        
+        // FALLBACK ULTIMA SPIAGGIA: RAW URL CON CACHE-BUSTING
+        console.warn('[LIBRARY] 🔄 Fallback: caricamento da raw URL');
+        try {
+            const fallbackUrl = 'exFAT.json?v=' + Date.now();
+            const response = await fetch(fallbackUrl);
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const data = await response.json();
+            
+            if (!Array.isArray(data)) throw new Error('Il file non è un array');
+            
+            cachedGames = data;
+            allGames = data;
+            allGames.forEach((game, index) => { 
+                originalOrderMap.set(game.title, index); 
+            });
+            
+            applyFWFilterWithSort();
+            renderPopularGames();
+            renderGames();
+            updateResultCount();
+            hideSkeletonLoader();
+            return;
+        } catch (fallbackError) {
+            console.error('[LIBRARY] ❌ Fallback fallito:', fallbackError);
+        }
+        
+        // ERRORE FINALE: MOSTRA MESSAGGIO
+        hideSkeletonLoader();
         const grid = document.getElementById('game-grid');
         if (grid) {
             grid.innerHTML = `
@@ -2619,6 +2694,81 @@ window.onclick = (e) => {
         clearAprEmuBadge();
     } 
 };
+
+// ============================================================
+// 🧪 TEST ETAG (da eseguire nella console)
+// ============================================================
+
+async function testLoadLibrary() {
+    console.log('🧪 TEST CARICAMENTO CON ETag\n');
+    
+    // 1. PRIMA CHIAMATA
+    console.log('1️⃣ PRIMA CHIAMATA:');
+    try {
+        const headers = {};
+        if (window.lastETag) {
+            headers['If-None-Match'] = window.lastETag;
+            console.log('   🔍 Invio ETag:', window.lastETag);
+        }
+        
+        const res = await fetch('https://api.github.com/repos/Pippo26442999/.exFAT/contents/exFAT.json', { headers });
+        console.log('   📊 Status:', res.status);
+        
+        if (res.status === 304 && window.cachedGames) {
+            console.log('   ✅ File NON cambiato! Uso la cache locale.');
+            console.log('   📊 Giochi in cache:', window.cachedGames.length);
+            return;
+        }
+        
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        
+        window.lastETag = res.headers.get('ETag');
+        console.log('   📦 Nuovo ETag:', window.lastETag);
+        
+        const data = await res.json();
+        const jsonString = atob(data.content);
+        const games = JSON.parse(jsonString);
+        window.cachedGames = games;
+        console.log('   ✅ File caricato, giochi:', games.length);
+        
+    } catch (e) {
+        console.error('   ❌ Errore:', e);
+    }
+    
+    // 2. SECONDA CHIAMATA (simula refresh)
+    console.log('\n2️⃣ SECONDA CHIAMATA (refresh):');
+    try {
+        const headers = {};
+        if (window.lastETag) {
+            headers['If-None-Match'] = window.lastETag;
+            console.log('   🔍 Invio ETag:', window.lastETag);
+        }
+        
+        const res = await fetch('https://api.github.com/repos/Pippo26442999/.exFAT/contents/exFAT.json', { headers });
+        console.log('   📊 Status:', res.status);
+        
+        if (res.status === 304 && window.cachedGames) {
+            console.log('   ✅ File NON cambiato! Uso la cache locale. ⚡');
+            console.log('   📊 Giochi in cache:', window.cachedGames.length);
+            console.log('   ⏱️ Tempo di risposta: ~50ms (ULTRAVELOCE!)');
+        } else if (res.status === 200) {
+            console.log('   📦 File scaricato di nuovo (200 OK)');
+            window.lastETag = res.headers.get('ETag');
+            console.log('   📦 Nuovo ETag:', window.lastETag);
+            const data = await res.json();
+            const jsonString = atob(data.content);
+            const games = JSON.parse(jsonString);
+            window.cachedGames = games;
+            console.log('   ✅ Nuovi dati, giochi:', games.length);
+        }
+    } catch (e) {
+        console.error('   ❌ Errore:', e);
+    }
+    
+    console.log('\n📊 STATO FINALE:');
+    console.log('   - ETag:', window.lastETag);
+    console.log('   - Giochi in cache:', window.cachedGames ? window.cachedGames.length : 'Nessuno');
+}
 
 window.addEventListener('DOMContentLoaded', init);
 window.addEventListener('scroll', () => { const nav = document.querySelector('nav'); if (nav) { if (window.scrollY > 20) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); } }, { passive: true });
