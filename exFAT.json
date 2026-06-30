@@ -1,5 +1,23 @@
 [
    {
+    "title": "Castlevania Dominus Collection",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Castlevania_Dominus_Collection.avif",
+    "tags": [
+      "PPSA15645",
+      "v01.003",
+      "JPN",    
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaGg0c004OE8zMUtjT2FGcXhKZVRFclVaVHp2b2ZZT1lZancrNy9CT1owWHpydGxiMFdqWjVJUUViYWk4anhxd0hxYW5wRmVPdm1PclNERHZNSUthWlFzLy9XRGZDUFp3U0prPSIsImkiOiJQUjJYNzFjUU85bGNrSHVsIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRm0rK2RnSW1xYk9za0FnbFdFcXMzNXJNZ29lQytRdjVIOUgxMHE0cFUvZDFJNTRHTXlBcW1IWDA4YVpXcUJLSTBGZGVhSHBGcXNxQitKTlNIRzVWSWcremhPNE1KSHc9IiwiaSI6ImZsbjRwSmY2UXpuVXp6b08iLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQUdxRVFIa3Y4bXVyNDZXVFlKTFJycS9LL0hIZkhVWkRaNUdYUmowL3BVVlVZTGhjWXZ3RHIwUVZFcWZ6K2hPVWdGdzk4YnZtc25pTGtWQ3h2czVocGd1Zm9NdE8iLCJpIjoiNVRGS2ZjSUIvVVRZekNXeSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNEg3ZkIvQXdNRGtJYzgyWTZtTStLUExkZU1JWldiVmI1S3NsSVdXZnNyR2dRSWFqbTkwZXhsMldnOGNDSWg2cHRaOTF3NW1XNXN6QitZYTFzN3I1TUlxZHFxSHdhWE09IiwiaSI6IlZwTmlCaFErNG8xSCtjWTEiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOVRhRnlCMzE1M2s1aURLcXpBK0tMNGNlVFJiTzVuVm5yZTE0ZmVERjRFNEZqMGVPWWl1Y3dMMDhPazQ3VU5jank0bHBUL2VudUtwbTlzUEh3TnVsWTlOdWdUK004Zz09IiwiaSI6IjNpSkNJWUpHUjdhMDVvZ2IiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "ManwonHp",
+    "size": "1GB"
+  },
+   {
     "title": "Dying Light 2 Stay Human Ultimate Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dying_Light_2_Stay_Human_Ultimate_Edition.png",
     "tags": [
