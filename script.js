@@ -131,8 +131,6 @@ function generateFakeGames(count) {
 }
 
 let allGames = [];
-let lastETag = null;
-let cachedGames = null;
 let filteredGames = [];
 let originalOrderMap = new Map();
 let allUpdates = {}; 
@@ -2098,69 +2096,36 @@ async function loadUpdates() {
 async function loadLibrary() {
     try {
         const isFlagged = sessionStorage.getItem('flagged_as_bot') === 'true' || IS_BOT;
+        const url = 'exFAT.json?v=' + Date.now();
+        console.log('[LIBRARY] Tentativo di caricamento da:', url);
         
-        // 1. USA L'API DI GITHUB INVECE DEL RAW URL
-        const apiUrl = 'https://api.github.com/repos/Pippo26442999/.exFAT/contents/exFAT.json';
+        const response = await fetch(url);
         
-        // 2. HEADERS PER LA RICHIESTA CONDIZIONALE
-        const headers = {
-            'Cache-Control': 'no-cache',
-            'Pragma': 'no-cache'
-        };
-        
-        // 3. SE ABBIAMO UN ETAG, LO USIAMO PER LA VERIFICA
-        if (lastETag) {
-            headers['If-None-Match'] = lastETag;
-            console.log('[LIBRARY] 🔍 Verifico se il file è cambiato...');
-        }
-        
-        console.log('[LIBRARY] Tentativo di caricamento dall\'API GitHub');
-        const response = await fetch(apiUrl, { headers });
-        
-        // 4. SE IL SERVER RISPONDE 304, IL FILE NON È CAMBIATO
-        if (response.status === 304 && cachedGames) {
-            console.log('[LIBRARY] ✅ File NON cambiato! Uso la cache locale.');
-            
-            // Usa i dati in cache
-            allGames = cachedGames;
-            allGames.forEach((game, index) => { 
-                originalOrderMap.set(game.title, index); 
-            });
-            
-            applyFWFilterWithSort();
-            renderPopularGames();
-            renderGames();
-            updateResultCount();
-            hideSkeletonLoader();
-            return;
-        }
-        
-        // 5. SE ARRIVA QUI, IL FILE È CAMBIATO O È LA PRIMA RICHIESTA
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
         
-        // 6. SALVA IL NUOVO ETAG
-        lastETag = response.headers.get('ETag');
-        console.log('[LIBRARY] 📦 File AGGIORNATO! Nuovo ETag:', lastETag);
+        const text = await response.text();
+        console.log('[LIBRARY] File ricevuto, lunghezza:', text.length, 'bytes');
         
-        // 7. LEGGI E DECODIFICA IL CONTENUTO BASE64
-        const apiResponse = await response.json();
-        const jsonString = atob(apiResponse.content);
-        
-        console.log('[LIBRARY] File ricevuto, lunghezza:', jsonString.length, 'bytes');
-        
-        if (!jsonString || jsonString.trim() === '') {
+        if (!text || text.trim() === '') {
             throw new Error('Il file exFAT.json è vuoto');
         }
         
         let data;
         try {
-            data = JSON.parse(jsonString);
+            data = JSON.parse(text);
             console.log('[LIBRARY] JSON parsato con successo,', Array.isArray(data) ? data.length + ' giochi' : 'oggetto ricevuto');
         } catch (jsonError) {
             console.error('[LIBRARY] Errore parsing JSON:', jsonError.message);
-            throw new Error('Il file exFAT.json è corrotto o malformato');
+            console.log('[LIBRARY] Prime 300 caratteri:', text.substring(0, 300));
+            
+            const errorMsg = document.getElementById('pw-error') || document.createElement('div');
+            errorMsg.style.cssText = 'position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.95); color:#ff4444; padding:30px; border-radius:20px; z-index:999999; text-align:center; border:2px solid #ff4444;';
+            errorMsg.innerHTML = `<h2>❌ ERRORE FATALE</h2><p>Il file exFAT.json è corrotto o malformato.</p><p style="font-size:0.8rem; margin-top:20px;">${jsonError.message}</p><button onclick="location.reload()" style="margin-top:20px; padding:10px 20px; background:#ff4444; border:none; border-radius:10px; color:white; cursor:pointer;">RICARICA</button>`;
+            document.body.appendChild(errorMsg);
+            hideSkeletonLoader();
+            return;
         }
         
         if (!Array.isArray(data)) {
@@ -2177,8 +2142,6 @@ async function loadLibrary() {
             console.log('[LIBRARY] Modalità bot attiva - generati 500 fake games');
         }
         
-        // 8. SALVA IN CACHE
-        cachedGames = data;
         allGames = data;
         allGames.forEach((game, index) => { 
             originalOrderMap.set(game.title, index); 
@@ -2186,7 +2149,6 @@ async function loadLibrary() {
         
         console.log('[LIBRARY] Caricati', allGames.length, 'giochi');
         
-        // 9. RESETTA I FILTRI
         const fwFilter = document.getElementById('fw-filter');
         const fwCurrent = document.getElementById('fw-current');
         if (fwFilter) fwFilter.value = '99';
@@ -2207,7 +2169,6 @@ async function loadLibrary() {
         if (mobileSortFilter) mobileSortFilter.value = 'default';
         if (mobileSortCurrent) mobileSortCurrent.innerText = 'Sort: Default';
         
-        // 10. AGGIORNA LA UI
         applyFWFilterWithSort();
         renderPopularGames();
         renderGames();
@@ -2215,51 +2176,9 @@ async function loadLibrary() {
         hideSkeletonLoader();
         
     } catch (e) {
-        console.error('[LIBRARY] ❌ Errore fatale:', e);
-        
-        // 11. FALLBACK: SE ABBIAMO DATI IN CACHE, USALI
-        if (cachedGames) {
-            console.warn('[LIBRARY] ⚠️ Errore, uso la cache come fallback.');
-            allGames = cachedGames;
-            allGames.forEach((game, index) => { 
-                originalOrderMap.set(game.title, index); 
-            });
-            applyFWFilterWithSort();
-            renderPopularGames();
-            renderGames();
-            updateResultCount();
-            hideSkeletonLoader();
-            return;
-        }
-        
-        // 12. FALLBACK ULTIMA SPIAGGIA: RAW URL CON CACHE-BUSTING
-        console.warn('[LIBRARY] 🔄 Fallback: caricamento da raw URL');
-        try {
-            const fallbackUrl = 'exFAT.json?v=' + Date.now();
-            const response = await fetch(fallbackUrl);
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
-            const data = await response.json();
-            
-            if (!Array.isArray(data)) throw new Error('Il file non è un array');
-            
-            cachedGames = data;
-            allGames = data;
-            allGames.forEach((game, index) => { 
-                originalOrderMap.set(game.title, index); 
-            });
-            
-            applyFWFilterWithSort();
-            renderPopularGames();
-            renderGames();
-            updateResultCount();
-            hideSkeletonLoader();
-            return;
-        } catch (fallbackError) {
-            console.error('[LIBRARY] ❌ Fallback fallito:', fallbackError);
-        }
-        
-        // 13. ERRORE FINALE: MOSTRA MESSAGGIO
+        console.error('[LIBRARY] Errore fatale:', e);
         hideSkeletonLoader();
+        
         const grid = document.getElementById('game-grid');
         if (grid) {
             grid.innerHTML = `
