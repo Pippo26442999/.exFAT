@@ -1,3 +1,38 @@
+// ============================================================
+// 📱 MOBILE DETECTION & CACHE CLEANER
+// ============================================================
+
+function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+        || window.innerWidth < 768;
+}
+
+function clearBotCache() {
+    // Pulisce tutti i flag del bot indipendentemente dal dispositivo
+    const items = [
+        'flagged_as_bot',
+        'honeypot_clicked',
+        'bot_detected'
+    ];
+    
+    items.forEach(key => {
+        sessionStorage.removeItem(key);
+        localStorage.removeItem(key);
+    });
+    
+    console.log('✅ Cache bot pulita');
+}
+
+// Se è mobile, pulisci SUBITO
+if (isMobileDevice()) {
+    console.log('📱 Dispositivo mobile rilevato - pulizia cache automatica');
+    clearBotCache();
+}
+
+// ============================================================
+// VARIABILI GLOBALI
+// ============================================================
+
 let allGames = [];
 let lastETag = null;
 let cachedGames = null;
@@ -1661,6 +1696,18 @@ function updateModalContentWithRipple(game) {
 // ========== INIT ==========
 
 async function init() {
+    // 📱 PULISCI CACHE SU MOBILE (forzato)
+    if (isMobileDevice()) {
+        console.log('📱 Dispositivo mobile - pulizia cache forzata');
+        sessionStorage.removeItem('flagged_as_bot');
+        sessionStorage.removeItem('honeypot_clicked');
+        localStorage.removeItem('bot_detected');
+        sessionStorage.removeItem('bot_detected');
+        localStorage.removeItem('flagged_as_bot');
+    }
+    
+    // ✅ NON c'è più il controllo anti-bot
+    
     if (!checkIntegrity()) return;
     const unlocked = sessionStorage.getItem('unlocked');
     const unlockedTime = sessionStorage.getItem('unlocked_time');
@@ -1950,7 +1997,15 @@ async function loadUpdates() {
 
 async function loadLibrary() {
     try {
-        const isFlagged = false;
+        // 📱 Se è mobile, forza isFlagged = false
+        const isFlagged = isMobileDevice() ? false : (sessionStorage.getItem('flagged_as_bot') === 'true' || IS_BOT);
+        
+        // Se è mobile e c'è ancora il flag, puliscilo di nuovo
+        if (isMobileDevice() && sessionStorage.getItem('flagged_as_bot') === 'true') {
+            sessionStorage.removeItem('flagged_as_bot');
+            sessionStorage.removeItem('honeypot_clicked');
+            localStorage.removeItem('bot_detected');
+        }
         
         // USA L'API DI GITHUB
         const apiUrl = 'https://api.github.com/repos/Pippo26442999/.exFAT/contents/exFAT.json';
