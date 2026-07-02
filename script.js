@@ -8,7 +8,7 @@ function isMobileDevice() {
 }
 
 function clearBotCache() {
-    // Pulisce tutti i flag del bot indipendentemente dal dispositivo
+    // Pulisce tutti i flag del bot
     const items = [
         'flagged_as_bot',
         'honeypot_clicked',
@@ -59,6 +59,8 @@ let isLoading = true;
 
 let pegasusDecryptCache = new Map();
 let cachedAprEmuFiles = null;
+
+// ... il resto del codice (Pegasus, etc.) rimane invariato
 
 // ============================================================================
 // Pegasus decrypt acceleration: IndexedDB persistent cache + Web Worker pool
@@ -1997,20 +1999,11 @@ async function loadUpdates() {
 
 async function loadLibrary() {
     try {
-        // 📱 Se è mobile, forza isFlagged = false
-        const isFlagged = isMobileDevice() ? false : (sessionStorage.getItem('flagged_as_bot') === 'true' || IS_BOT);
-        
-        // Se è mobile e c'è ancora il flag, puliscilo di nuovo
-        if (isMobileDevice() && sessionStorage.getItem('flagged_as_bot') === 'true') {
-            sessionStorage.removeItem('flagged_as_bot');
-            sessionStorage.removeItem('honeypot_clicked');
-            localStorage.removeItem('bot_detected');
-        }
+        const isFlagged = false; // ⚠️ IMPORTANTE: anti-bot disabilitato
         
         // USA L'API DI GITHUB
         const apiUrl = 'https://api.github.com/repos/Pippo26442999/.exFAT/contents/exFAT.json';
         
-        // ⚠️ IMPORTANTE: SOLO If-None-Match, NIENTE cache-control!
         const headers = {};
         if (lastETag) {
             headers['If-None-Match'] = lastETag;
