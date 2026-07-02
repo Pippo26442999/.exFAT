@@ -1,5 +1,82 @@
 [
    {
+    "title": "GRIS",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/GRIS.webp",
+    "tags": [
+      "PPSA09804",
+      "v01.001",
+      "EUR", 
+      "Standard (5.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV2h6U1FOTHErclQ0N0YvUTBQaktUTFRTRTgzUUFsUkZycjRieG9jeUVISGJqMHlnQ21uM2tXc01IaFdybVEwaXlvbjhQeklnIiwicyI6ImdkTUVkb2U5WEFGN0dDNG1CcHhWUUE9PSIsImkiOiJZd2ZiSVorUnA5VDdKSnF2In0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQzRKdlJaWkRST2dveHVWaVBYa3VwWFFiYlk1cDBlNVFjM09YS1M0WmRMaytTZ3dwaE5ibmtvakZtUWptNlZqR0VGRy8iLCJzIjoiczlVUXp6M2Nsd0ZOOGJJY0VMNUl3UT09IiwiaSI6IjE5Wjh4L1laajFHUTNBcWEifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUDRKR0lMdFNRUy8reC9ESERlQVZ2UFpFYy9qUEhyTXNiTUZtb21pNEYxYlJiNnlNZ28waUJ0b2QyTTNtUk9FQjRRPT0iLCJzIjoiNnJZWDFBNU9NM2J4ckJReGl5UlEwUT09IiwiaSI6Ikpqc2JxZm4zR2VpM2V0QzcifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaGZiTEZrQ1FxOUVsRjV3UjRYanlKc3RldTZxdGIvNWdnVmgySktmbmN6R3M3NWRRSHFDRnl5THpUeGZ3KzJNZElkUVVvS1FZbi9CRnFkSW9iczBjaHpUbWZndGgyTDhzZ1hNPSIsImkiOiJENXU3akZKS3JSd0VrZU5UIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZUl3K3BhUnRtV2ZPOEp4aHUzU0RLWjNxaUl3SHl4dmp4UmZORjNpaHlHcmdsL0lUT24rMk54Z2xrUXlUUVM0NTZzZzZEQkpieVdjZWI0S2VQWml1djhsYm1VdjFjL2M9IiwiaSI6ImNvVW41Z25heEplZ0kxNXAiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidUM0aUZObEpHYmZyVnFLSG43WWlrQnBwaGVMQ3B2WGZISGZDNnlMajQxa1E5Y2k0SGVWVGp1RzkvUGpFZllyYlNDYWduZE9WeStHb25nNk8zQ2tMMEUrWTlydTkiLCJpIjoiNkVrb3ZGN0YxSHdwcVZzTSIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaVIrTG9vNTJrcW8xK2tFbnlzVkNvc2Jpdm8za0kzL2FLZWdOUGp2MUpWTXk5czkwYVNDS24rMHZwb2FrNHIycmZFK0UvZ2lKOGYyaW5rakx4U3lXRUJRei8rQXJwNjA9IiwiaSI6IkpyVmRic1lZZUt5Q01JVFciLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMWFzUFlDamZkaS9vR2hzT2tjbThRL1ZUdFZuY2pYWmo4NkhRYWcxei83RnBvbGsrc2ExUXlJQmFEcUlwb3RSbGF2YWVzUFBMcE02SkFGbkZrcWh3Mkx1VFJNSWN3Zz09IiwiaSI6IjVmckRPQU1mUTRseUJ1ZFciLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "kerrdec97",
+    "size": "6GB"
+  },
+   {
+    "title": "The Crown of Wu",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Crown_of_Wu.avif",
+    "tags": [
+      "PPSA09149",
+      "v01.008",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSW9wYmR6d25qZ1hYcHAybCtkeUZmTmcxV0laRE1oSTQxQVdWTEdTVktwUnJqY2xXajE2VFdyL2lkQ1JLVGVrQmgxSFF3YW4xSGVtSGNNOXVPOFNkemoxT25JV0VTdXR1cnpVPSIsImkiOiI0b1p5ZjRzc0JkV1ZWNXpxIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidVVxYnNHY0FYQnA2aFJZYmJ0MHZSUzdDUDA2SG5VR3FzM0h6QlJ2UDA4SWRGTXgzS3ZlZnR2aVl2clMxUFpSZmx0ckVPSTB5RlBYQWF4M054ZTlzYUpXZURZTFc1ZWM9IiwiaSI6Ijd2S2ZFZ0FGaVN4QW5tVEMiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNDE0d2wxaERTVUg3S2hIbVFCcHYwUEhkRkhCTXlqSm9rQ2gwL3FrQmNJdUl0NnRTYWIycHhmT1ZoeVVEYUJpTXdkZWExcWZFbmV4ZHFDUmt4a3llZjYveC9mOUwiLCJpIjoiMmVyUkU0b0VqNkJjSHlYNSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaEQwdnl5Yms5NXRNZDRJdnZ1RnZZd2pzcWVFeFV4bE5yUnRsWnU3MHFCN2xMMEtXSHVDS1F3VndxdE8rTjZ2NzFUTVNsZ0p1YXloTDRhb0tXcWEwdEE1Wi8vMk1KbnM9IiwiaSI6ImxDejNTbzVEQll3dFFoVmQiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib2hyMkEyVEFRSm04VFM1Z3FpV2VZMlJQZ29GaGZucWZPVU0yOW5aNms4c2Vaei8vaEpyVXJramFBQ1dNblZRS1VkQjcwUVlOUkR5U3dTRE9zY0VkclUvRys2cUk1Zz09IiwiaSI6IkRUM1ZXUFNpd3FJenozNTciLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX & VanBuuren",
+    "credits_backport": "kerrdec97",
+    "size": "20GB"
+  },
+   {
+    "title": "Super Sami Roll",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Super_Sami_Roll.avif",
+    "tags": [
+      "PPSA03491",
+      "v02.005",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUk5jK2RSbHFtQys1Mm9qV0xMSXRraXRGWFlTRWdOUnJud2tCVThJQjRoQWdNTllCMEkvZXA0bUdldC9ITXBQVTZJTUtNSGNpdmFmS25PTU5sMHBuNUx4MURPSnd1M2czeDZBPSIsImkiOiJYNXk3NW0zcEVpY3daVGpiIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSVJIR25lbXJ1aGEvOFErYWR6ejNVdU9UVytvaVRGRHZKKzhzRnNZVy8veWlzV3lYV0MzUnB5MHc2WFdMaC9sQVZCaW5ENm1jeXFFNm9JNzM1Q0ZpZzZ3aVpUOThyd3M9IiwiaSI6IlJUVVA2UnpzLzNJS0lCTUgiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT21CajV4Q0ljV0U4dE83YjVYV2lCbHEycVUzOVZjQzZWSDNzeEJ0MTl1bjB2V1pLR2hHcTRhbW9Wdy9PM1VtSlpZbEcrbXQ0ZTRuQkoxdXExaUhCVkhzOXVUQ2ciLCJpIjoidldleDBGQkdoYldIOGlyYiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS2VZRHlVOW9CbW4vbGxHai9kVDVHZG5KampoajlZVVdhL3VSNDA5MUZ4ay9BTEExaVVlMTI0VTdUemY0V21BRldhODJSc1BHc1djVjY1UEdMenNZMkpyQWcrdlRqaXM9IiwiaSI6ImpCU3NzZDdZSjhHZ3V0ZnIiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNzBMZ28yOHE1dEZMd01JbExsbFptaUkrMmV5L09SNkd0TnNPTi9wejNHZFpJZDdTYklrUHYxVHB6Vk4vaVZsd243d0lUdUl3SEt3ai90QzZjWnE3MGFlN1RKRVdzUT09IiwiaSI6Iko0eTJaeE9RTXdEcGw0S3YiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Amiibohound",
+    "credits_backport": "kerrdec97",
+    "apr_emu": "on",
+    "size": "3GB"
+  },
+   {
+    "title": "Unpacking",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Unpacking.webp",
+    "tags": [
+      "PPSA07117",
+      "v01.000",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZEZzQjVXVGdJQ2ZWcGpjYUF1SGJMbmc4dk9nZUlsWGZOUFlwNWU1QXQxcy9URGRvMlovMlpXdUlhaWR5aEFNTGZ2RFJMVjdYMVZFQ3lQWitITS80SkhWbXpjSG5zV2pxcUJFPSIsImkiOiJHSVB0dEEzRDNXMzJ6U2pVIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRmF2dnFFVmdGeVc3NWFuSGg0d095WEZPN3dQTlVTeTF3R3lHd0xsZE81RUhqdm9ObE1MYnlKTTN1eTJNSExMczZOcktjZVFwT1FUTnN3bUNPT1AyN1A1S0wySVdLY0E9IiwiaSI6IkhqemRaMW9HQytSSFR4N2oiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV3kwRnBZSDBkd3ZXUElpN3JtUnZNanhCWnV6THNPb1ZtYk1XSy9KbysrOVMxWFc3b2s1WGZUYjhnYlB6UmVaVGJ0cTFDYkZMZVZUZEVpVUtDc0lLOW95bjFhVTAiLCJpIjoiVjMrMVpPNGg2MnRxOTlrUSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidkRQV1JZN01TenhaNDdEOU9JdzIzTm9rNGQ4OU4vS0h5ZW1veVlxMzZpZll6NGlLc2hDcndzbjU2UWxCTUxuc0F0WmpKZnJpSjZxZkpEL3AyMGg0VjZZd0NKbDBLdm89IiwiaSI6IkZTK0dzSEVBL0Y0R2FKZjQiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMW80eGVJK1h6OXphMGZnV1NMdzh1d1Y2c0VlNCtUR3hXcGRzMEc1S0YxWkhOc0lGVnVEbUNSQUlVazlGRllwelV0djdxUjJxblBmNmlkV1RMeDFTZE1TRnFGRmdsdz09IiwiaSI6IkNYKzVpQmZBUm9RS0E5aFUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Amiibohound",
+    "credits_backport": "kerrdec97",
+    "apr_emu": "on",
+    "size": "1GB"
+  },
+   {
     "title": "Jurassic World Evolution 3",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Jurassic_World_Evolution_3.avif",
     "tags": [
@@ -3004,21 +3081,6 @@
     "credits_files": "SiESPTA",
     "credits_backport": "kerrdec97",
     "size": "13GB"
-  },
-   {
-    "title": "GRIS",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/GRIS.webp",
-    "tags": [
-      "PPSA09804",
-      "v01.001",
-      "EUR", 
-      "5.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV2h6U1FOTHErclQ0N0YvUTBQaktUTFRTRTgzUUFsUkZycjRieG9jeUVISGJqMHlnQ21uM2tXc01IaFdybVEwaXlvbjhQeklnIiwicyI6ImdkTUVkb2U5WEFGN0dDNG1CcHhWUUE9PSIsImkiOiJZd2ZiSVorUnA5VDdKSnF2In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQzRKdlJaWkRST2dveHVWaVBYa3VwWFFiYlk1cDBlNVFjM09YS1M0WmRMaytTZ3dwaE5ibmtvakZtUWptNlZqR0VGRy8iLCJzIjoiczlVUXp6M2Nsd0ZOOGJJY0VMNUl3UT09IiwiaSI6IjE5Wjh4L1laajFHUTNBcWEifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUDRKR0lMdFNRUy8reC9ESERlQVZ2UFpFYy9qUEhyTXNiTUZtb21pNEYxYlJiNnlNZ28waUJ0b2QyTTNtUk9FQjRRPT0iLCJzIjoiNnJZWDFBNU9NM2J4ckJReGl5UlEwUT09IiwiaSI6Ikpqc2JxZm4zR2VpM2V0QzcifQ==",
-    "credits_files": "SiESPTA",
-    "size": "6GB"
   },
    {
     "title": "Undisputed",
