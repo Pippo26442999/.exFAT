@@ -1,3 +1,135 @@
+const DEFENSE_VERSION = "2.0";
+const DEFENSE_TIMESTAMP = Math.floor(Date.now() / (1000 * 60 * 60 * 24 * 14));
+const DEFENSE_SALT = "pippo2644_secret_" + DEFENSE_TIMESTAMP;
+
+const DEFENSE_VARIANTS = {
+    0: function() {
+        let score = 0;
+        if (navigator.webdriver === true) score += 10;
+        if (navigator.userAgent.toLowerCase().includes("headless")) score += 10;
+        if (navigator.plugins && navigator.plugins.length === 0) score += 5;
+        if (!navigator.languages || navigator.languages.length === 0) score += 5;
+        return score > 15;
+    },
+    1: function() {
+        let score = 0;
+        try {
+            const canvas = document.createElement('canvas');
+            const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+            if (gl) {
+                const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+                if (debugInfo) {
+                    const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+                    if (renderer && (renderer.toLowerCase().includes('swiftshader') || renderer.toLowerCase().includes('llvmpipe'))) score += 10;
+                }
+            }
+        } catch(e) { score += 5; }
+        if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 2) score += 5;
+        if (!window.chrome && !navigator.brave) score += 5;
+        return score > 10;
+    },
+    2: function() {
+        let score = 0;
+        if (window.outerWidth === 0 || window.outerHeight === 0) score += 10;
+        if (screen.width < 800 || screen.height < 600) score += 5;
+        if (!document.hidden) score += 3;
+        if (performance && performance.timing) {
+            const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+            if (loadTime < 200) score += 8;
+        }
+        return score > 12;
+    },
+    3: function() {
+        let score = 0;
+        if (sessionStorage.getItem('honeypot_clicked') === 'true') score += 20;
+        if (localStorage.getItem('bot_detected') === 'true') score += 15;
+        if (!navigator.cookieEnabled) score += 8;
+        if (window.__playwright__ === true) score += 10;
+        if (window.__webdriver_evaluate) score += 10;
+        return score > 15;
+    }
+};
+
+const variantIndex = DEFENSE_TIMESTAMP % Object.keys(DEFENSE_VARIANTS).length;
+const IS_BOT = DEFENSE_VARIANTS[variantIndex]();
+
+(function setupHoneypot() {
+    const honeypot = document.createElement('div');
+    honeypot.id = 'honeypot-link-' + DEFENSE_TIMESTAMP;
+    honeypot.style.cssText = 'position:absolute; left:-9999px; top:-9999px; width:1px; height:1px; opacity:0;';
+    honeypot.innerHTML = '<a href="#" id="fake-download-link-' + DEFENSE_TIMESTAMP + '">Download</a>';
+    document.body.appendChild(honeypot);
+    
+    const fakeLink = document.getElementById('fake-download-link-' + DEFENSE_TIMESTAMP);
+    if (fakeLink) {
+        fakeLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            sessionStorage.setItem('honeypot_clicked', 'true');
+            sessionStorage.setItem('flagged_as_bot', 'true');
+            localStorage.setItem('bot_detected', 'true');
+            document.body.innerHTML = '<h1 style="color:red; text-align:center; margin-top:20%;">Access Denied</h1><p>Automated access detected. Your IP has been logged.</p>';
+            throw new Error("Bot detected via honeypot");
+        });
+    }
+})();
+
+let mouseMoved = false;
+let touchEvents = false;
+document.addEventListener('mousemove', () => { mouseMoved = true; });
+document.addEventListener('touchstart', () => { touchEvents = true; });
+
+const startTime = Date.now();
+setTimeout(() => {
+    const timeSpent = Date.now() - startTime;
+    if (timeSpent < 2000 && !mouseMoved && !touchEvents && !IS_BOT) {
+        sessionStorage.setItem('flagged_as_bot', 'true');
+    }
+}, 3000);
+
+if (IS_BOT || sessionStorage.getItem('flagged_as_bot') === 'true') {
+    const originalFetch = window.fetch;
+    window.fetch = function(...args) {
+        if (args[0] && String(args[0]).includes('exFAT.json')) {
+            console.warn("[Anti-Scraper] Blocked exFAT.json request");
+            return Promise.reject(new Error("Access denied"));
+        }
+        return originalFetch.apply(this, args);
+    };
+    
+    const originalOpen = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function(method, url, ...rest) {
+        if (url && String(url).includes('exFAT.json')) {
+            throw new Error("Access denied");
+        }
+        return originalOpen.call(this, method, url, ...rest);
+    };
+}
+
+function generateFakeGames(count) {
+    const fakeTitles = ["FAKE_SCANNER_TRAP", "HONEYPOT_DETECTED", "SCRAPER_BLOCKED", "ACCESS_DENIED_001", "BOT_TRAP_ACTIVE", "DUMMY_DATA_INJECTED", "ANTI_SCRAPER_2026", "PIPPO_TRAP_" + DEFENSE_TIMESTAMP];
+    const fakeHosts = ['https://httpbin.org/status/404', 'https://example.com/fake', 'https://httpbin.org/delay/10'];
+    const fakeGames = [];
+    for (let i = 0; i < count; i++) {
+        fakeGames.push({
+            title: `${fakeTitles[i % fakeTitles.length]}_${i}_${DEFENSE_TIMESTAMP}`,
+            image: "https://placehold.co/400x400/0a0a1a/red?text=SCRAPER+BLOCKED",
+            size: "999 GB",
+            tags: ["FAKE", "HONEYPOT", "BLOCKED", "DELETE_ME"],
+            akia_url: fakeHosts[i % fakeHosts.length],
+            viki_url: fakeHosts[(i+1) % fakeHosts.length],
+            buzz_url: fakeHosts[(i+2) % fakeHosts.length],
+            data_url: fakeHosts[(i+3) % fakeHosts.length],
+            filek_url: fakeHosts[(i+4) % fakeHosts.length],
+            vault_url: fakeHosts[(i+5) % fakeHosts.length],
+            credits_files: "Anti-Scraper System v" + DEFENSE_VERSION,
+            credits_backport: "Detection active",
+            how_to_play: "You are a bot. Access denied. Your activity has been logged.",
+            popular: i < 5 ? "on" : "off"
+        });
+    }
+    return fakeGames;
+}
+
 let allGames = [];
 let lastETag = null;
 let cachedGames = null;
