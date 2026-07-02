@@ -1661,19 +1661,6 @@ function updateModalContentWithRipple(game) {
 // ========== INIT ==========
 
 async function init() {
-    // 📱 PULISCI CACHE SU MOBILE (forzato)
-    if (isMobileDevice()) {
-        console.log('📱 Dispositivo mobile - pulizia cache forzata');
-        sessionStorage.removeItem('flagged_as_bot');
-        sessionStorage.removeItem('honeypot_clicked');
-        localStorage.removeItem('bot_detected');
-        sessionStorage.removeItem('bot_detected');
-        localStorage.removeItem('flagged_as_bot');
-    }
-    
-    // ✅ NON c'è più il controllo anti-bot
-    // Il blocco if (isFlagged) è stato RIMOSSO
-    
     if (!checkIntegrity()) return;
     const unlocked = sessionStorage.getItem('unlocked');
     const unlockedTime = sessionStorage.getItem('unlocked_time');
@@ -1719,34 +1706,6 @@ async function init() {
         startProtection();
     }
 }
-
-function isMobileDevice() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
-        || window.innerWidth < 768;
-}
-
-function clearBotCacheOnMobile() {
-    // Se è un dispositivo mobile, pulisci i flag del bot
-    if (isMobileDevice()) {
-        console.log('📱 Dispositivo mobile rilevato, pulizia cache bot...');
-        
-        // Rimuovi tutti i flag del bot
-        sessionStorage.removeItem('flagged_as_bot');
-        sessionStorage.removeItem('honeypot_clicked');
-        localStorage.removeItem('bot_detected');
-        
-        // Rimuovi anche eventuali altri flag
-        sessionStorage.removeItem('bot_detected');
-        localStorage.removeItem('flagged_as_bot');
-        
-        console.log('✅ Cache bot pulita su mobile');
-        return true;
-    }
-    return false;
-}
-
-// Esegui la pulizia IMMEDIATAMENTE all'avvio
-clearBotCacheOnMobile();
 
 // ========== REST OF FUNCTIONS ==========
 
