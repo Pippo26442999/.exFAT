@@ -1,5 +1,23 @@
 [
    {
+    "title": "Everspace 2",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Everspace_2.avif",
+    "tags": [
+      "PPSA15671",
+      "v01.020",
+      "USA",
+      "7.xx BackPort"
+    ],
+    "backport7xx_akia": "",
+    "backport7xx_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQTJubnBqRUd6RDloam9HK2JuVkZRQzhDWXBRQWNlNXVGMkdVTFpHU240akpvTVhTZXFVM1BoN2ZRbnhIOE1RdWZOT1Mvc0ozWVRQMjRaanJLSGczSEMranAwQ0ZXMEU9IiwiaSI6ImpUTmc5K3B2SkdrYWdUZHoiLCJuIjoiVmlraSJ9",
+    "backport7xx_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXQ5c21XOUhTUmN4OEFYWHRkVFZWSXUwWGc5YTBLM3lxZHVrOWo1M0JHaG9OeExNbE1tcTFDRUZ6UWpUSXZoVU5oUlUvVnJvN0Z2cGRaampzNzRqbEdtWFFTZkoiLCJpIjoiZ1JUSFVGanRXTTlsUFZZRCIsIm4iOiJEYXRhIn0=",
+    "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOFhJQlQwdVQwanZsTDlPNHhDTm94UnAveWdLZnBGMmRieExXNTlmUVExU3Ivam96ZURLVW4xUm1WSk5qdE5XQlpCZGxPSDRkbmQ5RnVaci9CcVZUcFNuWWJhdUdUejg9IiwiaSI6IkNzWTYvRGNVcWR0bDVEc0giLCJuIjoiRmlsZUsifQ==",
+    "backport7xx_vault": "",
+    "credits_files": "High-Speed007",
+    "popular": "on",
+    "size": "67GB"
+  },
+   {
     "title": "The Forgotten City",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Forgotten_City.webp",
     "tags": [
