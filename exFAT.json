@@ -1,5 +1,29 @@
 [
    {
+    "title": "Saga of Sins",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Saga_of_Sins.avif",
+    "tags": [
+      "PPSA10050",
+      "v01.000",
+      "USA",
+      "Standard (6.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiajhMVStoa1NweXRZY1AvQzdkdjNoOEVBMUk1c1RERWJUczdQV1pOMnNCcU9pM1ZHd2crL3RQekJhWlBhZlo1cFFpbkNyRlFPIiwicyI6IlpYQUxZWmhadURWNFphWU5LNWprVmc9PSIsImkiOiJaUU5LWWFSa055VFZPUWM5In0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSnYvWlg5VDN1Z2RoZDdjb29pQlQwdGJuQVdENTVzaGhtSmU4bTc4REJzRTlVN3YzNVYwQjI0ZFZueUo4L2cwbkN6S3EiLCJzIjoiZGFxNmU3TG5rUDZkRktDaWZUN2NjQT09IiwiaSI6Ims1Lzc5V3JWaHJVVjdOa1EifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaUJVaDFFbXFwV3pZSktlY2lkQmRjeFpFQW96V1BMUklweEFJd2NPUmhsMXAxcmhXYzRNNGtoQ0JXTnUxQmdPSVZnPT0iLCJzIjoiRjRjMWhOZjAzWU5GOEowa1hCV2JRUT09IiwiaSI6IlVHUldrUzQxa0w2VlY3bFAifQ==",
+    "standard_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVXpVbDcyb3lKdGh1ejRUaHNvYng2c2pmL2JFVE1wWlp0eUNBOWYxL2JHaEhBaW5iQ0hVdzFXTkVuZnMrc3BMTXB6UnEiLCJzIjoieVhCRHptbTZ6dnljUmtyclpma29OQT09IiwiaSI6IjFhZGdHOGFVVFVENkt1NTAifQ==",
+    "standard_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSDJvVkdwclM4akNFMWVCR2QwV2lZQUFxSStSNW82VTVEa1p1U3ZKUW5kRStUVGo3WGV0UmlXWGQ5UHd6MDd4ODMraz0iLCJzIjoiQUFtZTUyaTJGNnpIclFncDRRQ29xUT09IiwiaSI6ImxoeVAzWlZuTlNYVldzZ2MifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWHpKekRka2s5VzczYzdvK3lFb2hHNVI1SW0vV0JVSTRvTDJuTFVmbDVtNDNiMUVGbkdvb1ZuY3JmVmMvU1VJQmZWeFVNeVpuTHJVWWlxNkt1T29ibUllYkZNN2w4SE54ZG5ZPSIsImkiOiJqUFoyMXFYdTNYZmdmc1JvIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL3ZzYkIxVCtSZENqNHM2WjNmdkdGZFVNOVI3QUxyRHlrdkJJM0taSHpqM2pNWjlOWGtiRnVHWGQybnRRTVJlb3ZVQXFIV0JLNldaQm15bmFTOEt2cGdyNUlBRmlIU009IiwiaSI6InBJSjl6SlJva3BnVWdCV2siLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiR2J2V1laZEVLa1FaMVdXWVRJZzc5ZkVMRWh3RzhiMnhFanFrWk5OMmZibHlpWHRybXFqK1ZWUGU5RHdxQlF2OWcyMUw1eWtoZ3hBcjFWRG1CZEUrdmpDamVJazEiLCJpIjoiaFJwNXhkQVp2L0RSNm9ZMyIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieFJ6RVhpVS9obGttaEVmbHI3dklvNUR0R2xaQ0gzcjJoeFRGQ1k0Z2M2bEFOZzEyVUZ6dzFXZGlHLzVuZGRhVkNWTy9pV3Vsb1cvY0s3VkRDTmZyUXN5d2ZnY0RpTnc9IiwiaSI6IlNIdHlpbC9FV3l6N2s3bEwiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRWRKOW1kVWlWNUY5Z1c3akoyeUFPYWFOamhrSmpLUHRkUjhzSXBubXZEdFFlS0pRM0xyeEdPRFlaL2ZwVkNGaVBFcTE4Q0ZvSXk4TkNrMmJCa1A2T3FXZ0tXRkpIZz09IiwiaSI6IkNiSzJEZTNjRmdVTk01MjUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Amiibohound",
+    "credits_backport": "kerrdec97",
+    "apr_emu": "on",
+    "size": "9GB"
+  },
+   {
     "title": "Death Stranding 2 On The Beach Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Death_Stranding_2_On_The_Beach_Deluxe_Edition.avif",
     "tags": [
@@ -1491,24 +1515,6 @@
     "how_to_play": "Must be installed the DLC Unlock for play, mandatory.",
     "popular": "on",
     "size": "167GB"
-  },
-   {
-    "title": "Saga of Sins",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Saga_of_Sins.avif",
-    "tags": [
-      "PPSA10050",
-      "v01.000",
-      "USA",
-      "6.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiajhMVStoa1NweXRZY1AvQzdkdjNoOEVBMUk1c1RERWJUczdQV1pOMnNCcU9pM1ZHd2crL3RQekJhWlBhZlo1cFFpbkNyRlFPIiwicyI6IlpYQUxZWmhadURWNFphWU5LNWprVmc9PSIsImkiOiJaUU5LWWFSa055VFZPUWM5In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSnYvWlg5VDN1Z2RoZDdjb29pQlQwdGJuQVdENTVzaGhtSmU4bTc4REJzRTlVN3YzNVYwQjI0ZFZueUo4L2cwbkN6S3EiLCJzIjoiZGFxNmU3TG5rUDZkRktDaWZUN2NjQT09IiwiaSI6Ims1Lzc5V3JWaHJVVjdOa1EifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaUJVaDFFbXFwV3pZSktlY2lkQmRjeFpFQW96V1BMUklweEFJd2NPUmhsMXAxcmhXYzRNNGtoQ0JXTnUxQmdPSVZnPT0iLCJzIjoiRjRjMWhOZjAzWU5GOEowa1hCV2JRUT09IiwiaSI6IlVHUldrUzQxa0w2VlY3bFAifQ==",
-    "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVXpVbDcyb3lKdGh1ejRUaHNvYng2c2pmL2JFVE1wWlp0eUNBOWYxL2JHaEhBaW5iQ0hVdzFXTkVuZnMrc3BMTXB6UnEiLCJzIjoieVhCRHptbTZ6dnljUmtyclpma29OQT09IiwiaSI6IjFhZGdHOGFVVFVENkt1NTAifQ==",
-    "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSDJvVkdwclM4akNFMWVCR2QwV2lZQUFxSStSNW82VTVEa1p1U3ZKUW5kRStUVGo3WGV0UmlXWGQ5UHd6MDd4ODMraz0iLCJzIjoiQUFtZTUyaTJGNnpIclFncDRRQ29xUT09IiwiaSI6ImxoeVAzWlZuTlNYVldzZ2MifQ==",
-    "credits_files": "Amiibohound",
-    "apr_emu": "on",
-    "size": "9GB"
   },
    {
     "title": "Assassins Creed Valhalla Complete Edition",
