@@ -1,5 +1,24 @@
 [
    {
+    "title": "Bendy Lone Wolf",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Bendy_Lone_Wolf.avif",
+    "tags": [
+      "PPSA28609",
+      "v01.000",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiR21XVm1rbExWWm56Y3BwUlBscnl1SmZYaktqTmowTytmbGlLMjVOU2JybWNidWsxQ2V4bXRNS2x4OXFONXRITklabHlQOVVLSlpWZjY2MWswZ0pMTGpSZzg1bWxtYi80c0gwPSIsImkiOiJ2YTdMclhlYXhCbk5yNllVIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3laOVBqRmJtTFZvTE1zcnV1ODBOYkt6bGVyVCtQeGluWWd4MEJMbDI1ZFgxYTZRL0x4eEs2eGtGcGVoN0NjR2FaT3hWR05rUVcwUVJFQnhrVkYyWmlxTTQzTGdHQ1k9IiwiaSI6Ijkxa2JpMTVUcUtXUCtXdWoiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidEJvZTJhRUFEUVFudE9jVS9CTUpIRHRYcG5yVHFlVnBsb2l4amFCMHhON25oaUxJL1d5RStEclUxQ1RaNXF1WmFLMmVtWDV0Wnd5S1RLYjBqOUlpZHc4OXNCOFgiLCJpIjoidUd0V0EzS2g0dnRaSzE5eSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTWJqcXVmTGZLditSb1djYzZOZmVFRTh5UHk5Q0toNjJLUTdMVmpDZnZES0M4dGwxOWhRYjFaSk4vWXh5VGRPQ2JkRkNvQ1BJc0pBRHYrRW5lMmh3Skl5WkgzeUI0MFk9IiwiaSI6IkFwNVhNbjRIY2F1N2RuTXUiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMllOQUhSTFlRcjRrSDA0L25WMTRQdWxBeDRUZWo2eVcwSHVUTGVGeEFBeWZtaTNKZjYyS3I4WmMrcCtNMDM0SzFJZVpjTjFDMXYycEhjMHVySDJ1MitNT2tWK2R4Zz09IiwiaSI6ImZ0ZEtxK2NjV3NRdTFwbXIiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Amiibohound",
+    "credits_backport": "kerrdec97",
+    "apr_emu": "on",
+    "size": "1GB"
+  },
+   {
     "title": "Greyhill Incident",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Greyhill_Incident.webp",
     "tags": [
