@@ -58,26 +58,6 @@
     "size": "5GB"
   },
    {
-    "title": "Kingdom Come Deliverance 2 Royal Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Kingdom_Come_Deliverance_2_Royal_Edition.png",
-    "tags": [
-      "PPSA21704",
-      "v01.052",
-      "EUR",
-      "9.xx and beyond"
-    ],
-    "akia_url": "",
-    "viki_url": "",
-    "data_url": "",
-    "filek_url": "",
-    "vault_url": "",
-    "credits_files": "DUPLEX",
-    "credits_dlc": "DUPLEX",
-    "how_to_play": "Note that the DLCs won't work if the account you are launching the game from was never online before. You would need to run the payload np-fake-signin-ps5 before then.",
-    "popular": "on",
-    "size": "162GB"
-  },
-   {
     "title": "Bendy Lone Wolf",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Bendy_Lone_Wolf.avif",
     "tags": [
