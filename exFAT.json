@@ -1,5 +1,28 @@
 [
    {
+    "title": "Rise of The Ronin",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Rise_of_The_Ronin.jpg",
+    "tags": [
+      "PPSA04539",
+      "v01.009",
+      "USA to EUR Languages",
+      "4.xx BackPort"
+    ],
+    "ffpkg_akia": "",
+    "ffpkg_viki": "",
+    "ffpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibm83V0VKaHo3WG5BOHhRMFlXNlppakZ2bDN2Wlp0ZUx1UUdBWFllVWtXdGxjYm40WnRSRzNwMU5DL3dlRUc5QlI3WllMcUFOMTVndEtPK21QSHc1Qno4S0xBcm4iLCJpIjoiWHVOTDhSUTFYMDJZM09KTCIsIm4iOiJEYXRhIn0=",
+    "ffpkg_filek": "",
+    "ffpkg_vault": "",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNGVkZHBXVXVSdlh3bGVzMWJJVmFqTGNDaHg4U0ZNdFIrVmJOYzhVM3lCVTdScHI4QlJqSmFNWnZJbUxuWWt2eTA2RkJwSDVoYmNDWjlCSStCTVVDdlh5SDdUTGIiLCJpIjoiR2NOcEVjdnZ2clg2bUhNeiIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVS95UTZtWmJmeDd2TUlqRUlnKzFCVUZ3ZGpPSStHdklvSmI1cEQ2VHpwTWZ0Rnk3SHdIejBYZlVjNkpYSUpOYnorMVRPNXcwSnZHT2plR0pmeEhQcmhiUE12WHJBK0k9IiwiaSI6IlZNVWZWL3ZjWHFQWnZSVmoiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX",
+    "credits_dlc": "DUPLEX",
+    "credits_backport": "zhwenx",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "244GB"
+  },
+   {
     "title": "Devil May Cry 5 Special Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/DMC5SE.jpg",
     "tags": [
