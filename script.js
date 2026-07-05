@@ -60,8 +60,6 @@ let isLoading = true;
 let pegasusDecryptCache = new Map();
 let cachedAprEmuFiles = null;
 
-// ... il resto del codice (Pegasus, etc.) rimane invariato
-
 // ============================================================================
 // Pegasus decrypt acceleration: IndexedDB persistent cache + Web Worker pool
 // ============================================================================
@@ -602,6 +600,7 @@ async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
         else if (key.includes('backport')) group = 'backport';
         else if (key.includes('dlc')) group = 'dlc';
         else if (key.includes('dump')) group = 'dump';
+        else if (key.includes('ffpkg')) group = 'ffpkg';
         
         if (key.includes('akia')) mirror = 'akia';
         else if (key.includes('viki')) mirror = 'viki';
@@ -1508,17 +1507,27 @@ function openGameModal(game, event) {
     // ===== GENERAZIONE BOTTONI DOWNLOAD =====
     const downloadsContainer = document.getElementById('modal-downloads');
     
-    // Funzione per creare un bottone download nel modal - CORRETTA
+    // Funzione per creare un bottone download nel modal
     const createModalBtn = (url, label, isDump = false) => {
         if (!url || url === "undefined" || url.trim() === "") return '';
         const dumpAttr = isDump ? 'true' : 'false';
         const isDLC = false;
-        // Usiamo una versione sicura del titolo senza apici che potrebbero rompere l'HTML
         const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
         return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', ${isDLC}, ${dumpAttr}, '${safeTitle}', ${requireAprEmu})" class="modal-btn">${label}</button>`;
     };
     
     let downloadsHTML = '';
+    let ffpkgHTML = '';
+    
+    // ===== FFPKG (usa createModalBtn identico agli altri) =====
+    if (game.ffpkg_akia) ffpkgHTML += createModalBtn(game.ffpkg_akia, 'AKIA', false);
+    if (game.ffpkg_viki) ffpkgHTML += createModalBtn(game.ffpkg_viki, 'VIKI', false);
+    if (game.ffpkg_buzz) ffpkgHTML += createModalBtn(game.ffpkg_buzz, 'BUZZ', false);
+    if (game.ffpkg_data) ffpkgHTML += createModalBtn(game.ffpkg_data, 'DATA', false);
+    if (game.ffpkg_filek) ffpkgHTML += createModalBtn(game.ffpkg_filek, 'FILEK', false);
+    if (game.ffpkg_vault) ffpkgHTML += createModalBtn(game.ffpkg_vault, 'VAULT', false);
+    
+    let ffpkgSectionHTML = ffpkgHTML ? `<div style="width:100%; margin-bottom:10px;"><strong>FFPKG</strong></div>${ffpkgHTML}` : '';
     
     // Verifica se ci sono backport 7.xx o 4.xx
     const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault;
@@ -1542,7 +1551,7 @@ function openGameModal(game, event) {
             if (game.backport4xx_filek) bp4 += createModalBtn(game.backport4xx_filek, 'FILEK');
             if (game.backport4xx_vault) bp4 += createModalBtn(game.backport4xx_vault, 'VAULT');
         }
-        downloadsHTML = `${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
+        downloadsHTML = `${ffpkgSectionHTML}${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
     } 
     // Verifica se ci sono standard e backport
     else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || 
@@ -1560,7 +1569,7 @@ function openGameModal(game, event) {
         if (game.backport_data) bp += createModalBtn(game.backport_data, 'DATA');
         if (game.backport_filek) bp += createModalBtn(game.backport_filek, 'FILEK');
         if (game.backport_vault) bp += createModalBtn(game.backport_vault, 'VAULT');
-        downloadsHTML = `${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
+        downloadsHTML = `${ffpkgSectionHTML}${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
     } 
     // Altrimenti usa i link standard
     else {
@@ -1571,7 +1580,7 @@ function openGameModal(game, event) {
         if (game.data_url) btns += createModalBtn(game.data_url, 'DATA');
         if (game.filek_url) btns += createModalBtn(game.filek_url, 'FILEK');
         if (game.vault_url) btns += createModalBtn(game.vault_url, 'VAULT');
-        downloadsHTML = btns;
+        downloadsHTML = `${ffpkgSectionHTML}${btns}`;
     }
     downloadsContainer.innerHTML = downloadsHTML;
 
@@ -1707,8 +1716,6 @@ async function init() {
         sessionStorage.removeItem('bot_detected');
         localStorage.removeItem('flagged_as_bot');
     }
-    
-    // ✅ NON c'è più il controllo anti-bot
     
     if (!checkIntegrity()) return;
     const unlocked = sessionStorage.getItem('unlocked');
@@ -1888,22 +1895,22 @@ function setupFAQModal() {
     if (closeBtn) closeBtn.onclick = closeModal;
     if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
     
-const openFAQModal = async () => {
-    try {
-        const res = await fetch('FAQ.json?v=' + Date.now());
-        const data = await res.json();
-        const bodyContainer = document.getElementById('faqModalBody');
-        if (bodyContainer) {
-            let html = `<div class="faq-text"><h3 style="color:var(--cyan-neon); margin-bottom:25px; text-align:center;">${data.title}</h3>`;
-            data.sections.forEach(section => {
-                html += `<div class="faq-question">
-                            <strong>${escapeHtml(section.question)}</strong>
-                            <p>${section.answer}</p>
-                         </div>`;
-            });
-            html += `</div>`;
-            bodyContainer.innerHTML = html;
-        }
+    const openFAQModal = async () => {
+        try {
+            const res = await fetch('FAQ.json?v=' + Date.now());
+            const data = await res.json();
+            const bodyContainer = document.getElementById('faqModalBody');
+            if (bodyContainer) {
+                let html = `<div class="faq-text"><h3 style="color:var(--cyan-neon); margin-bottom:25px; text-align:center;">${data.title}</h3>`;
+                data.sections.forEach(section => {
+                    html += `<div class="faq-question">
+                                <strong>${escapeHtml(section.question)}</strong>
+                                <p>${section.answer}</p>
+                             </div>`;
+                });
+                html += `</div>`;
+                bodyContainer.innerHTML = html;
+            }
             if (modal) {
                 modal.classList.remove('hiding');
                 const container = modal.querySelector('.faq-modal-container');
@@ -2317,7 +2324,18 @@ function renderPopularGames() {
     const isMobile = window.innerWidth <= 768;
     if (cachedPopularGames && cachedIsMobile === isMobile) {
         let htmlContent = '';
-        cachedPopularGames.forEach(game => { let updateBadge = ''; const updates = allUpdates[game.title]; if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; } htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`; });
+        cachedPopularGames.forEach(game => { 
+            let updateBadge = ''; 
+            const updates = allUpdates[game.title]; 
+            if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; }
+            
+            let ffpkgIndicator = '';
+            if (game.ffpkg_akia || game.ffpkg_viki || game.ffpkg_buzz || game.ffpkg_data || game.ffpkg_filek || game.ffpkg_vault) {
+                ffpkgIndicator = `<div style="position:absolute; bottom:70px; left:15px; z-index:5; background:rgba(255,0,128,0.9); color:#fff; padding:3px 10px; border-radius:4px; font-size:0.6rem; font-weight:900; box-shadow:0 0 10px rgba(255,0,128,0.5);">FFPKG</div>`;
+            }
+            
+            htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}${ffpkgIndicator}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`; 
+        });
         track.innerHTML = htmlContent + htmlContent;
         attachPopularCardEvents();
         return;
@@ -2330,7 +2348,18 @@ function renderPopularGames() {
     cachedPopularGames = selectedGames;
     cachedIsMobile = isMobile;
     let htmlContent = '';
-    selectedGames.forEach(game => { let updateBadge = ''; const updates = allUpdates[game.title]; if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; } htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`; });
+    selectedGames.forEach(game => { 
+        let updateBadge = ''; 
+        const updates = allUpdates[game.title]; 
+        if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; }
+        
+        let ffpkgIndicator = '';
+        if (game.ffpkg_akia || game.ffpkg_viki || game.ffpkg_buzz || game.ffpkg_data || game.ffpkg_filek || game.ffpkg_vault) {
+            ffpkgIndicator = `<div style="position:absolute; bottom:70px; left:15px; z-index:5; background:rgba(255,0,128,0.9); color:#fff; padding:3px 10px; border-radius:4px; font-size:0.6rem; font-weight:900; box-shadow:0 0 10px rgba(255,0,128,0.5);">FFPKG</div>`;
+        }
+        
+        htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}${ffpkgIndicator}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`; 
+    });
     track.innerHTML = htmlContent + htmlContent;
     attachPopularCardEvents();
 }
@@ -2362,13 +2391,14 @@ function renderGames() {
             aprEmuHTML = `<div class="game-apr-emu">APR-EMU</div>`;
         }
         
+        
         let updateBadge = '';
         const updates = allUpdates[game.title];
         if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge" style="position:absolute; top:15px; left:15px; background:var(--green-neon); color:#000; padding:4px 10px; border-radius:8px; font-weight:900; font-size:0.7rem; z-index:20; box-shadow:0 0 10px var(--green-neon); animation: pulseRed 2s infinite;">UPDATE</div>`; }
         const hPlay = (game.how_to_play || "").replace(/'/g, "\\'");
         const dCredits = game.credits_dlc || game.credits_dlcs || '';
         
-        // Funzione per creare bottone nella card - CORRETTA
+        // Funzione per creare bottone nella card (IDENTICO PER TUTTI)
         const createBtn = (url, label, isDLC = false, isDump = false) => { 
             if (!url || url === "undefined" || url.trim() === "") return ''; 
             const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
@@ -2378,8 +2408,19 @@ function renderGames() {
         let downloadHTML = '';
         let dlcBtns = '';
         let dumpBtns = '';
+        let ffpkgBtns = '';
         
-        // DUMP
+        // ===== FFPKG (USA createBtn IDENTICO agli altri) =====
+        if (game.ffpkg_akia) ffpkgBtns += createBtn(game.ffpkg_akia, 'AKIA', false, false);
+        if (game.ffpkg_viki) ffpkgBtns += createBtn(game.ffpkg_viki, 'VIKI', false, false);
+        if (game.ffpkg_buzz) ffpkgBtns += createBtn(game.ffpkg_buzz, 'BUZZ', false, false);
+        if (game.ffpkg_data) ffpkgBtns += createBtn(game.ffpkg_data, 'DATA', false, false);
+        if (game.ffpkg_filek) ffpkgBtns += createBtn(game.ffpkg_filek, 'FILEK', false, false);
+        if (game.ffpkg_vault) ffpkgBtns += createBtn(game.ffpkg_vault, 'VAULT', false, false);
+        
+        let ffpkgSectionHTML = ffpkgBtns ? `<p class="ver-label"><b>FFPKG:</b></p><div class="download-container">${ffpkgBtns}</div>` : '';
+        
+        // ===== DUMP =====
         if (game.dump_akia) dumpBtns += createBtn(game.dump_akia, 'AKIA', false, true);
         if (game.dump_viki) dumpBtns += createBtn(game.dump_viki, 'VIKI', false, true);
         if (game.dump_buzz) dumpBtns += createBtn(game.dump_buzz, 'BUZZ', false, true);
@@ -2387,7 +2428,7 @@ function renderGames() {
         if (game.dump_filek) dumpBtns += createBtn(game.dump_filek, 'FILEK', false, true);
         if (game.dump_vault) dumpBtns += createBtn(game.dump_vault, 'VAULT', false, true);
         
-        // DLC
+        // ===== DLC =====
         if (game.dlc_akia) dlcBtns += createBtn(game.dlc_akia, 'AKIA', true);
         if (game.dlc_viki) dlcBtns += createBtn(game.dlc_viki, 'VIKI', true);
         if (game.dlc_buzz) dlcBtns += createBtn(game.dlc_buzz, 'BUZZ', true);
@@ -2395,7 +2436,7 @@ function renderGames() {
         if (game.dlc_filek) dlcBtns += createBtn(game.dlc_filek, 'FILEK', true);
         if (game.dlc_vault) dlcBtns += createBtn(game.dlc_vault, 'VAULT', true);
         
-        // BACKPORT 7.xx e 4.xx - AGGIUNTO VAULT
+        // ===== BACKPORT 7.xx e 4.xx =====
         const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault;
         const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault;
         
@@ -2407,7 +2448,7 @@ function renderGames() {
                 if (game.backport7xx_buzz) bp7 += createBtn(game.backport7xx_buzz, 'BUZZ');
                 if (game.backport7xx_data) bp7 += createBtn(game.backport7xx_data, 'DATA');
                 if (game.backport7xx_filek) bp7 += createBtn(game.backport7xx_filek, 'FILEK');
-                if (game.backport7xx_vault) bp7 += createBtn(game.backport7xx_vault, 'VAULT'); // <-- AGGIUNTO
+                if (game.backport7xx_vault) bp7 += createBtn(game.backport7xx_vault, 'VAULT');
             }
             if (hasBackport4) {
                 if (game.backport4xx_akia) bp4 += createBtn(game.backport4xx_akia, 'AKIA');
@@ -2415,7 +2456,7 @@ function renderGames() {
                 if (game.backport4xx_buzz) bp4 += createBtn(game.backport4xx_buzz, 'BUZZ');
                 if (game.backport4xx_data) bp4 += createBtn(game.backport4xx_data, 'DATA');
                 if (game.backport4xx_filek) bp4 += createBtn(game.backport4xx_filek, 'FILEK');
-                if (game.backport4xx_vault) bp4 += createBtn(game.backport4xx_vault, 'VAULT'); // <-- AGGIUNTO
+                if (game.backport4xx_vault) bp4 += createBtn(game.backport4xx_vault, 'VAULT');
             }
             downloadHTML = `${bp7 ? `<p class="ver-label"><b>BP 7.xx:</b></p><div class="download-container">${bp7}</div>` : ''}${bp4 ? `<p class="ver-label"><b>BP 4.xx:</b></p><div class="download-container">${bp4}</div>` : ''}`;
         } 
@@ -2451,7 +2492,7 @@ function renderGames() {
         let dumpSectionHTML = dumpBtns ? `<p class="ver-label"><b>DUMP:</b></p><div class="download-container">${dumpBtns}</div>` : '';
         let dlcSectionHTML = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
         
-        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'"><div class="tags-overlay">${tagsHTML}</div><div class="game-badges">${aprEmuHTML}${sizeHTML}</div></div><div class="download-section">${downloadHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
+        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'"><div class="tags-overlay">${tagsHTML}</div><div class="game-badges">${aprEmuHTML}${sizeHTML}</div></div><div class="download-section">${ffpkgSectionHTML}${downloadHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
     });
     const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
     document.getElementById('page-info').innerText = `Page ${currentPage} of ${totalPages || 1}`;
@@ -2595,81 +2636,6 @@ window.onclick = (e) => {
         clearAprEmuBadge();
     } 
 };
-
-// ============================================================
-// 🧪 TEST ETAG (da eseguire nella console)
-// ============================================================
-
-async function testLoadLibrary() {
-    console.log('🧪 TEST CARICAMENTO CON ETag\n');
-    
-    // 1. PRIMA CHIAMATA
-    console.log('1️⃣ PRIMA CHIAMATA:');
-    try {
-        const headers = {};
-        if (window.lastETag) {
-            headers['If-None-Match'] = window.lastETag;
-            console.log('   🔍 Invio ETag:', window.lastETag);
-        }
-        
-        const res = await fetch('https://api.github.com/repos/Pippo26442999/.exFAT/contents/exFAT.json', { headers });
-        console.log('   📊 Status:', res.status);
-        
-        if (res.status === 304 && window.cachedGames) {
-            console.log('   ✅ File NON cambiato! Uso la cache locale.');
-            console.log('   📊 Giochi in cache:', window.cachedGames.length);
-            return;
-        }
-        
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        
-        window.lastETag = res.headers.get('ETag');
-        console.log('   📦 Nuovo ETag:', window.lastETag);
-        
-        const data = await res.json();
-        const jsonString = atob(data.content);
-        const games = JSON.parse(jsonString);
-        window.cachedGames = games;
-        console.log('   ✅ File caricato, giochi:', games.length);
-        
-    } catch (e) {
-        console.error('   ❌ Errore:', e);
-    }
-    
-    // 2. SECONDA CHIAMATA (simula refresh)
-    console.log('\n2️⃣ SECONDA CHIAMATA (refresh):');
-    try {
-        const headers = {};
-        if (window.lastETag) {
-            headers['If-None-Match'] = window.lastETag;
-            console.log('   🔍 Invio ETag:', window.lastETag);
-        }
-        
-        const res = await fetch('https://api.github.com/repos/Pippo26442999/.exFAT/contents/exFAT.json', { headers });
-        console.log('   📊 Status:', res.status);
-        
-        if (res.status === 304 && window.cachedGames) {
-            console.log('   ✅ File NON cambiato! Uso la cache locale. ⚡');
-            console.log('   📊 Giochi in cache:', window.cachedGames.length);
-            console.log('   ⏱️ Tempo di risposta: ~50ms (ULTRAVELOCE!)');
-        } else if (res.status === 200) {
-            console.log('   📦 File scaricato di nuovo (200 OK)');
-            window.lastETag = res.headers.get('ETag');
-            console.log('   📦 Nuovo ETag:', window.lastETag);
-            const data = await res.json();
-            const jsonString = atob(data.content);
-            const games = JSON.parse(jsonString);
-            window.cachedGames = games;
-            console.log('   ✅ Nuovi dati, giochi:', games.length);
-        }
-    } catch (e) {
-        console.error('   ❌ Errore:', e);
-    }
-    
-    console.log('\n📊 STATO FINALE:');
-    console.log('   - ETag:', window.lastETag);
-    console.log('   - Giochi in cache:', window.cachedGames ? window.cachedGames.length : 'Nessuno');
-}
 
 window.addEventListener('DOMContentLoaded', init);
 window.addEventListener('scroll', () => { const nav = document.querySelector('nav'); if (nav) { if (window.scrollY > 20) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); } }, { passive: true });
