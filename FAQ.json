@@ -19,7 +19,7 @@
     },
     {
       "question": "❌ The game doesnt launch, what can i do?",
-      "answer": "Make sure you have a good external drive, such as an NVMe SSD; a low-quality SSD is often the cause of the problem. If that doesn’t help, move the .exFAT to an internal drive (ext1 or /data/homebrew). All the games in the catalog have been tested on 9.00 (etaHEN with kstuff 1.6.7 + ShadowMountPlus and <a href='https://git.etawen.dev/soniciso/uds-trophy-unlocker' target='_blank'>Trophy Unlocker</a> by soniciso), so you’ll never encounter games that won’t launch."
+      "answer": "Make sure you have a good external drive, such as an NVMe SSD; a low-quality SSD is often the cause of the problem. If that doesn’t help, move the .exFAT to an internal drive (ext1 or /data/homebrew). All the games in the catalog have been tested on 9.00 (etaHEN with kstuff 1.09 and ShadowMountPlus, alternatively if you still use kstuff 1.6.7 then need <a href='https://git.etawen.dev/soniciso/uds-trophy-unlocker' target='_blank'>Trophy Unlocker</a> by soniciso), so you’ll never encounter games that won’t launch."
     },
     {
       "question": "🔄 What does FW: 4.xx / 7.xx / 9.xx mean?",
