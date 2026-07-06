@@ -1,5 +1,25 @@
 [
    {
+    "title": "Grand Theft Auto V",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Grand_Theft_Auto_V.jpg",
+    "tags": [
+      "PPSA04263",
+      "v01.010.002",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYmFIUFE3TW4xTktacEw2Ykp0WG5Hc2p3bS9SK0pyV2VlcHpjamFWdGx4WkwvdVRBNXdSV0grNnlOMDJwMUlTNERuL3JaN0xLQmY5MG5qK2x5TVZLa1Y1UUJ5QTQiLCJpIjoiTjV2MHFSSE5rVGl3OFcxaSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "",
+    "vault_url": "",
+    "credits_files": "DUPLEX",
+    "credits_backport": "Ciss84",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "96GB"
+  },
+   {
     "title": "Sword Art Online Fractured Daydream",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sword_Art_Online_Fractured_Daydream.avif",
     "tags": [
