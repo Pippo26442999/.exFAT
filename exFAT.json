@@ -1,5 +1,27 @@
 [
    {
+    "title": "Sword Art Online Fractured Daydream",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sword_Art_Online_Fractured_Daydream.avif",
+    "tags": [
+      "PPSA10829",
+      "v01.001",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiLy9KVUpjREZUNDdMSjB2QTJxOEg5NkJwSUozbFRvL2RXS0pFNnFFR0JTcFVhVW5GVnlnUzJHbmlHd2UxaG1xUlIyUjRNUTJ5cTIxeE1lT1c2SEQxY3p5eFU3L3oiLCJpIjoiTWY5V0tTdUpKeUhOK0lEdCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "",
+    "vault_url": "",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVXVURGpydURITkxmYjJvSEhpbHRSQ0NiUDJsTjhjWDVJd0ZGdGVqOGNPaEk0bUoxZFhkWHNkVlI5cnJxOFFuZUZLYW5aZE93aGVWcGNWWUZjUmJ5Z29uSDdwdnciLCJpIjoiVkZSM1BVM2sxWTRCd2dOeiIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRlpkNE9UL2l3WUsxcFFVTkg2Sy9QM1JmbVdyQS8reElDWjF2WDdpOU4zSHE1NW5IQVQ5SFlkT1h6NjBRZW8wbFdGNnBWMUNBaVZTbmhsOWJYWHgxSXM3NnJpMFRuU0U9IiwiaSI6InVFZkY3VGtYL0FJZHVZTU8iLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "kerrdec97",
+    "credits_dlc": "Pkykzhack",
+    "popular": "on",
+    "size": "75GB"
+  },
+   {
     "title": "Mothmen 1966",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Mothmen_1966.avif",
     "tags": [
