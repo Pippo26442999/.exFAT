@@ -1,5 +1,24 @@
 [
    {
+    "title": "Mothmen 1966",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Mothmen_1966.avif",
+    "tags": [
+      "PPSA10829",
+      "v01.001",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWlZTeGgwZklqNS94UjRubVM0OTF2VWhjWUZieDZWSXlHRzhLTE1ra0FqUWZCbmh0REY5N0w2YU53WWRwUXljVGoxQ2lsS1N2M2Vva0UrQUdZbjd0ZWVINUZ3WjBYZ25tejNZPSIsImkiOiIyRzF0Y3E2T0ZoM1B0UDcyIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNXE4NVFHMThBREJMdy94TEwyWUcrakdGaXhZVmRxUVB0Z1NFd01qUmRSWHVaZ05BcDM5YW1LK1YySDYxL0xCNmFlNThlczZRK3VIbUNra05FWHJrTW95ci8raW5lSE09IiwiaSI6InFTbGMwZnhCYWp4dG5TblMiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT25qUG1QeUswQmU4OC9PMkhaVFNsSC9LelhGTEs2OEhuOUd2azE3RHhOekNhU1NlRlBVVmJqZmdXVUY4alRncldMOFlFc2pvRHhGV2xXN1lMVS91MDNLREc3UDAiLCJpIjoid0xDSEJ3OHNwdWxWd0tpNCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUmNuc3FUbHZId0VLRkE5OEJ5QUFVRlFtcFpIMFFOSHQ3QU5IMkpockhleDJiVm1GTU9QZUhyd0o2YXM3RDV3KzhsR3NTamdNWTR0WEJZU1dwS3hsZmpMSHVWcENJZjQ9IiwiaSI6Im9KSGFqK3JkV0NSTS9pVWoiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNWJ2TEFEODZPeEhvdUlMcW1SaUYyRmRiY3JYQkxKS3JSRkpsRUdjb0hud1RmNEFRV2JLc1NBMHBkd2ZzNFFydFF3SWJyQjNhRVdCL013ZEQ2amdBWHpkM09ObDRFZz09IiwiaSI6IjBmbEF3alFNVnZQRGdwcGkiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Amiibohound",
+    "credits_backport": "kerrdec97",
+    "apr_emu": "on",
+    "size": "711MB"
+  },
+   {
     "title": "Neko Rescue Tale",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Neko_Rescue_Tale.avif",
     "tags": [
