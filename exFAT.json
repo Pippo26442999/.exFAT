@@ -1,5 +1,53 @@
 [
    {
+    "title": "Neko Rescue Tale",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Neko_Rescue_Tale.avif",
+    "tags": [
+      "PPSA13871",
+      "v01.000",
+      "EUR",   
+      "Standard (5.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUmJxSHg5dWRlMXpaWHdMVHUvUGpvWm43d2RYUVhlcytPVWdMNXdKZjdVMS8vT3V3M0piZWorbjVOZy9KQUtmWEp6eHl2M3ZBIiwicyI6IlR6S2NLVmt1TnRnVjhUVm1mdVE1MXc9PSIsImkiOiJuVHF0NVFPYitaZXpOM2FtIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMi9GWGJ1Z3REeGJCQkpzK0ZSR2ZwR2dIYW0yL2FpOG91QjhSSmNsZWVtUUhSWlVUNTRTcUpPNjVNenZSWHlrTStuZHMiLCJzIjoiRjhONi9BSnZIY2t6dldwNC9VU0NTQT09IiwiaSI6ImtOY2J1SzRKbzh6MThuaVcifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVHg0L1FSRlhPLzFxUVJHMjhaT0hOUWFOWTVoZVRJTldibEJ0UkZKNTNaNm5lTGhHTHdYa3NkUG11WGNRQU4zTC9BPT0iLCJzIjoiRWpUck5WWncwL3IvaWt2OVhyNHhaZz09IiwiaSI6InRJWUszdjJScEZpRWk3UGIifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic0FiNk9zemZyUlRMT2I3YUNWallNMllBUVFFeEp5dWlaeUo3NlV1OXJYc3ZyMFF1d2xqbFArQ3R2RHgrODBSZGFDb2R3YWFabUg0SEdycWV4VWhlQWlJdXl5YTdrMDJsUzlRPSIsImkiOiJaS2lZTDA4cjVQTzdXM3N2IiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNlZ3aHhUTWt2QWR3NXhJWDU1dWhPV2hzUmRtbExDTlNCWE82Q1FnVVdGOEdLT0sxbHF3Y3lKeUlNekw1TmJtdC9OVVBjWEFTOGN4V3VYR2RwRVVIUVdSNitQVU5RR009IiwiaSI6IjRxVlFIU3RtdEw3RExoOUIiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibzF2cy9FdTRTODhKM2JzTVJLSk0rWC91TEFUWjRTS0lmNnBDZjE2bkpQNFNSMGJDNjNlWXIvMXQ4alNlTUtYcFlwUmQzMktxMlpVdmRlMVd6VDhHSzhJVUdndVAiLCJpIjoicFdIdXVoUkpLdnZvZ21PSCIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV21SRFUwaVpyNGJwZ3J5VjQ3N29tN2NjMTluSEt5cWExYnlOOXlVczlwbE1MYkdDTkswVWQ0b3BnMkhhZi9jbDMraGtWeUNGbU0xc0Vid0kzL3BzQWJJdUJjSVU3YTA9IiwiaSI6IjNoMXYxYlErZlRSK2ZLNmQiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUJLaFQ1ZzAzaS8zN0pXM0R0S1g1UEJZS3VCdHFzeFgxcnAxQ2d3enUxbVFiWUVOZ2JKSlBGZGhsZ0x3RmlObDRIMGh6MVdONDlkNUlpNkkwMkdReXZJNmE5ajcwQT09IiwiaSI6IlQyd3Y3eGkvUUhISW1LSW8iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "kerrdec97",
+    "size": "207MB"
+  },
+   {
+    "title": "Persona 5 Tactica Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Persona_5_Tactica.avif",
+    "tags": [
+      "PPSA09706",
+      "v01.000.300",
+      "JPN to EUR Languages",
+      "DLCs Merged",
+      "Standard (6.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic05MT0tyMlNEb00xcy9NamJ2YkFucVlCZTE3MTZUbFhFMHdKKzlKa2owZ2RlSGFkZ2hKRk5MRTF4V1ZXVGozWXpuRndRbmpaVE1qSWYwelNOR0REa1ZCdjhLdkQrTGpmcWpvPSIsImkiOiJOcGJnbGNDV20rVE5HS1k3IiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZUxodXc0MWU5M0MreTVHTG1KUFA1TVpLa2V3RUJoTFV0cGdZUVI0aDZac2xTdE11bE5QdEZEZm5xbXRhOFdFcUVnc3ZDSlFsN0JhdmhaK210ZFkwdnBUczlTUXovVzQ9IiwiaSI6InJUTm9FcXlYRWx2LzlEK0IiLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTm94dktGSDR0L1JBQTNMMzZqekFZbFNXWFBrUjFLQzN2L3UrMmFrcFhoejhkdkJNTGMrTE9TaWtySVFwNFdjaVRRbTFlM0c1dmRvNkljRFMrMUs2Q2d6elMydU8iLCJpIjoiaFRZRm5NZ3pkNXBTV3NGRyIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZlljWldnV0tIUlpWQ25CaWF4c0lkclkxTFBnV2tHL0NFeGN0Y1BIZXVNRU1maHVxR0t4OVFoTlF5VHUyMFhWNjM1eG9Tc3JtTlQ5RFl1NHkwdlhPYm5NZTc4RVc2OFE9IiwiaSI6IkFEbGt3YklOOE5MM0l4a2IiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRUE3MEh5MXlzcUpwNDdIVE9VTFR6U0lNNzFwUUdvY2s3SGRuK2xTc1dyciszakNoTnNRajlpWEt2SE1hTS9PK054eTE1RkRMbGZIYnE5cXA5dTlTRDBjZkhkTG10QT09IiwiaSI6Ill5cXNHemh3eGdsQjV1eEgiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXlLRXlvMW5McEYvN0JtVmhwWVBiQ2tFVGdVTXNpSFpDWW9ocWJSbGN1b0hNcmtGZ25vbjVWQmVhS0xpR0FTeWZVclhUWUNNSjY4L0YvS0pDK1VmbzByMTExMnNqSE0wRkJBPSIsImkiOiIvWXVQUERvaHJwdngvSm9FIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZEFJUzBBYUxaMGUyKy9rbTJpTmgwQnoyelJpaVJpV1NXTnplUU9wallrK2VhVEZqWitPdGNpZmk3UVkwa2FIY0hFK0tTTkRPUWFWMUxFWUxpa1lEZ3AzRUFPdnk0djQ9IiwiaSI6IjAvNGg5RE44aFhwMUdrQWkiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieUl3Ykh0bG5YSjRIdjN2ZnVtLytFTWtob3lkYW02Q3ZVZWFRK2g4L0hpamVjSzhxQXlqTnZHbS94SHc3R1F1cDM0TnlYZlZMaDN3dVdranJweWIvWWdObzEvV2YiLCJpIjoiSTh6MVFsbVIvNUxZT0dMciIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRXBUZmVhend6MlRCYm1aRVJwY25CUmx1ZTlWNFRkK1JoaHFsVlhSbEo3WTd4cTVqK3hZMlJPUjVOQnM3MkcyTWFkS2hiWk4zN1ZDVTN4dHBZdUVuUW5SdlMwalJ2dmc9IiwiaSI6InF2YkxmTEJnZFZwWjZqTjkiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZlJ1UFhONEdrUWJBMHRVc3JRZEJuSjZjUjRqK3ViSm1RQlViNHhmdG5FVHA1dExFU3V0ZzBkMWlLV012aDlqZDdIYitrYzhhMEx0djRBTkk4d3N3ZVI4MlNNS3NIUT09IiwiaSI6IkZnT0Y2SzQyV0NTSmZJNG0iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_dlc": "SiESPTA",
+    "credits_backport": "kerrdec97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "24GB"
+  },
+   {
     "title": "Bud Spencer Terence Hill Slaps And Beans 2",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Bud_Spencer_Terence_Hill_Slaps_And_Beans_2.avif",
     "tags": [
@@ -175,27 +223,6 @@
     "credits_backport": "kerrdec97",
     "apr_emu": "on",
     "size": "1GB"
-  },
-   {
-    "title": "Persona 5 Tactica Deluxe Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Persona_5_Tactica.avif",
-    "tags": [
-      "PPSA09706",
-      "v01.000.300",
-      "JPN to EUR Languages",
-      "DLCs Merged",
-      "6.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic05MT0tyMlNEb00xcy9NamJ2YkFucVlCZTE3MTZUbFhFMHdKKzlKa2owZ2RlSGFkZ2hKRk5MRTF4V1ZXVGozWXpuRndRbmpaVE1qSWYwelNOR0REa1ZCdjhLdkQrTGpmcWpvPSIsImkiOiJOcGJnbGNDV20rVE5HS1k3IiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZUxodXc0MWU5M0MreTVHTG1KUFA1TVpLa2V3RUJoTFV0cGdZUVI0aDZac2xTdE11bE5QdEZEZm5xbXRhOFdFcUVnc3ZDSlFsN0JhdmhaK210ZFkwdnBUczlTUXovVzQ9IiwiaSI6InJUTm9FcXlYRWx2LzlEK0IiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTm94dktGSDR0L1JBQTNMMzZqekFZbFNXWFBrUjFLQzN2L3UrMmFrcFhoejhkdkJNTGMrTE9TaWtySVFwNFdjaVRRbTFlM0c1dmRvNkljRFMrMUs2Q2d6elMydU8iLCJpIjoiaFRZRm5NZ3pkNXBTV3NGRyIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZlljWldnV0tIUlpWQ25CaWF4c0lkclkxTFBnV2tHL0NFeGN0Y1BIZXVNRU1maHVxR0t4OVFoTlF5VHUyMFhWNjM1eG9Tc3JtTlQ5RFl1NHkwdlhPYm5NZTc4RVc2OFE9IiwiaSI6IkFEbGt3YklOOE5MM0l4a2IiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRUE3MEh5MXlzcUpwNDdIVE9VTFR6U0lNNzFwUUdvY2s3SGRuK2xTc1dyciszakNoTnNRajlpWEt2SE1hTS9PK054eTE1RkRMbGZIYnE5cXA5dTlTRDBjZkhkTG10QT09IiwiaSI6Ill5cXNHemh3eGdsQjV1eEgiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "SiESPTA",
-    "credits_dlc": "SiESPTA",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "24GB"
   },
    {
     "title": "Puyo Puyo Tetris 2",
@@ -2950,21 +2977,6 @@
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVlpObVpuZjg1Z1ZBQWR6dXpYVzIyQXMrMCs4dlR5US9MRTUreWZYZURKSzVOOS8vZ045NVhCVVJ2WlkzR1hVdkF3PT0iLCJzIjoicXo2SEZtVGQ3c3NsVEtuam1MZjNWUT09IiwiaSI6InZFTzU4UEJUT2lUTHVMK2IifQ==",
     "credits_files": "C4our20",
     "size": "19GB"
-  },
-   {
-    "title": "Neko Rescue Tale",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Neko_Rescue_Tale.avif",
-    "tags": [
-      "PPSA13871",
-      "v01.000",
-      "EUR",   
-      "5.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUmJxSHg5dWRlMXpaWHdMVHUvUGpvWm43d2RYUVhlcytPVWdMNXdKZjdVMS8vT3V3M0piZWorbjVOZy9KQUtmWEp6eHl2M3ZBIiwicyI6IlR6S2NLVmt1TnRnVjhUVm1mdVE1MXc9PSIsImkiOiJuVHF0NVFPYitaZXpOM2FtIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMi9GWGJ1Z3REeGJCQkpzK0ZSR2ZwR2dIYW0yL2FpOG91QjhSSmNsZWVtUUhSWlVUNTRTcUpPNjVNenZSWHlrTStuZHMiLCJzIjoiRjhONi9BSnZIY2t6dldwNC9VU0NTQT09IiwiaSI6ImtOY2J1SzRKbzh6MThuaVcifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVHg0L1FSRlhPLzFxUVJHMjhaT0hOUWFOWTVoZVRJTldibEJ0UkZKNTNaNm5lTGhHTHdYa3NkUG11WGNRQU4zTC9BPT0iLCJzIjoiRWpUck5WWncwL3IvaWt2OVhyNHhaZz09IiwiaSI6InRJWUszdjJScEZpRWk3UGIifQ==",
-    "credits_files": "SiESPTA",
-    "size": "207MB"
   },
    {
     "title": "Aeterna Noctis",
