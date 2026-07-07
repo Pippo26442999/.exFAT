@@ -1,5 +1,26 @@
 [
    {
+    "title": "Ghost of Tsushima Directors Cut",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ghost_of_Tsushima.webp",
+    "tags": [
+      "PPSA03210",
+      "v02.024",
+      "ASIA to EUR Languages",
+      "Standard (5.xx) + 4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQlpHV3ROVzdIcnNvdnh1Z00xVlhIZ3dRVURrMGRTbS9FcFlqMzJrdW41QUxuMnR5YXhxTG00amlEMDJuTkgxYXBoZ3k5eXBIIiwicyI6IkZzdG1vN3Z0Q2ZWUlUwdFpmSUdsbkE9PSIsImkiOiJuVnJSRnNFRDhsNXc0NjN1In0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYURlWGJGL0FhcFJzUUFkbVA1c09IL01URExJMm9DWHFvV0RiUWk5c25yNkFxVHU2NjQwU3V6TWNuREU3YWNlWXhwMTkiLCJzIjoiRzJPQ0UwTkIyRmJuY1k2dnFDNStjZz09IiwiaSI6Ikp4TVhySU1wY2FibUZUUmgifQ==",
+    "backport_akia": "",
+    "backport_viki": "",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRHRIMFNHZlVneTErVlpOelhEZDAxK0JOTFhTeU9xMGlNL2poRDd0V2E0eDBXdjV5ZWJ1T1BnL1pTQWFOMWdxcUJqVTNrNGVqM1EyWUhIYTd5MjNxWHUvU21CVVoiLCJpIjoiRi96STBTcWE3RHBURS9RZCIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "",
+    "backport_vault": "",
+    "credits_files": "SiESPTA & YenGr3sS",
+    "credits_backport": "kerrdec97",
+    "popular": "on",
+    "size": "111GB"
+  },
+   {
     "title": "The Eternal Cylinder",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Eternal_Cylinder.avif",
     "tags": [
@@ -6902,21 +6923,6 @@
     "credits_files": "SiESPTA",
     "credits_backport": "BestPig",
     "size": "11GB"
-  },
-  {
-    "title": "Ghost of Tsushima",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ghost_of_Tsushima.webp",
-    "tags": [
-      "PPSA03210",
-      "v02.024",
-      "ASIA to EUR Languages",
-      "5.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQlpHV3ROVzdIcnNvdnh1Z00xVlhIZ3dRVURrMGRTbS9FcFlqMzJrdW41QUxuMnR5YXhxTG00amlEMDJuTkgxYXBoZ3k5eXBIIiwicyI6IkZzdG1vN3Z0Q2ZWUlUwdFpmSUdsbkE9PSIsImkiOiJuVnJSRnNFRDhsNXc0NjN1In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYURlWGJGL0FhcFJzUUFkbVA1c09IL01URExJMm9DWHFvV0RiUWk5c25yNkFxVHU2NjQwU3V6TWNuREU3YWNlWXhwMTkiLCJzIjoiRzJPQ0UwTkIyRmJuY1k2dnFDNStjZz09IiwiaSI6Ikp4TVhySU1wY2FibUZUUmgifQ==",
-    "credits_files": "SiESPTA & YenGr3sS",
-    "popular": "on",
-    "size": "111GB"
   },
   {
     "title": "NINJA GAIDEN 2 Black",
