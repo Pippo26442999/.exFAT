@@ -1,5 +1,25 @@
 [
    {
+    "title": "Disney Epic Mickey Rebrushed",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Disney_Epic_Mickey_Rebrushed.jpg",
+    "tags": [
+      "PPSA15657",
+      "v01.000",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK2lBbDh4TTNnaC9nVldhRVJianRJckxjZStxdE5lRWRnSDlDcUZFVmZQelNSNkVJYlFuTTR3NytTSmx1MVZ0RjZIeDFKUVRtclAwUEVZb2JCRVVVUHd6eDM4b2ZVbE09IiwiaSI6IlZ4Um9YeUEybmhRRHd5WkoiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWkg5T0cyRlJwYnFkQkhZeXQ4WXZpdTVIMlhyeWdXMUh5cG82ZE5MSDdqaFJhNllDby9IZFRJZks2SG9vcVZZZVJrYkhXckdJWGh6Vk41cExJYTBuS3UyQlM3eEgiLCJpIjoiRWRKejZJcmFnVlpRZ3VydiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYUV1NnRTaVZBSFU1ak9iWDJPbXJ4aXl2U1hpYit0SlliTVRkSVRnUC83UjV5bHZBaVY4QUxzcjh5LzRteGNEUlNDQ1ZjWDRPcm9aQ05KSUNVTUwrNllLOExUNDZ3VHc9IiwiaSI6IlFHZnV0enZkVFBGV2hSYXgiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidWhIaytDK3luaHZoMHV0V2FiS3c4TzMzWnZmU2VXLzJ1bG9uemtQdWlheW4xRFBnUFpnZ2VPMDI2bjVmcEl6eG5zd2xyQlQramVpTVRnTFVUem8zemxDNUpJbWsiLCJpIjoiRERQcmpCRHUvdVZBdEdmWSIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaVJYd0gzb3E2dnpHVTh5MjVnMEhvUWU3TWViL3NsUUkyT0RLdFJYQVVkRUpXQTRLdGI4YTRHeDl5ZGlhYzdoZjhQc09oNHpkeEtaUWt5RUpsWTJPdEY5eVpxaEEzMTg9IiwiaSI6InQxUStSNVN4Y2hCMW1rNDIiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX & José Carrión",
+    "credits_backport": "kerrdec97",
+    "size": "35GB"
+  },
+   {
     "title": "Nioh 3 Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Nioh_3_DE.jpg",
     "tags": [
