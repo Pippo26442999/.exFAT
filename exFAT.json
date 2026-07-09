@@ -1,5 +1,27 @@
 [
    {
+    "title": "Banishers Ghosts of New Eden",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Banishers_Ghosts_of_New_Eden.webp",
+    "tags": [
+      "PPSA10053",
+      "v01.005",
+      "EUR",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibXhmdXJDTjRpbUduNUh3T280MlVPNkJNaWxMT2d3eEpLOGtaaU9vcnh5ZU1SZ3dBSThObEpCLzhFdmxvaVRWSmQ2ME1CRHZDalpSTDZSdnlNTUtWQkZ6SzhFbkYiLCJpIjoiSkxubWtMQmtMZHJibTlZNSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSEE2U0RMOFBXZ0x1c2w1Q1F2UWVOTjJOTFVtZnNhSjFqdmJ5Y2VjeVhVVWI3SzNJZldHTnVqc0J0RlE0cGFOV0JzN1haQnZEQldDK0kzM3ZnWHdBQ3VBUm5KTVltM009IiwiaSI6Ik1WYzBJMlp4K1pWdmZBMkMiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "",
+    "credits_files": "DUPLEX & Jose Carrion",
+    "credits_backport": "kerrdec97",
+    "credits_dlc": "Pippo",
+    "how_to_play": "Fix the problems discovered after the prologue that does not let you advance. Also included an optional 60FPS patch for PS5 Pros. Wanderer Set is Unlocked in this release.",
+    "popular": "on",
+    "size": "112GB"
+  },
+   {
     "title": "EA Sports WRC",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/EA_Sports_WRC.webp",
     "tags": [
