@@ -1,5 +1,30 @@
 [
    {
+    "title": "PRAGMATA Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/PRAGMATA_DE.jpg",
+    "tags": [
+      "PPSA02530",
+      "v01.200",
+      "USA",
+      "Standard (5.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK3l3ZWlrTU14Tll2V3RZNEtwaDNxRWFreUo0NkkwQWpIeUt2TXEwcjN2Z08zb2dtazdwRm1GNFRicVEvcXJudmVudSsyRlZqIiwicyI6ImthM3JIS2ZFRmhENlJKbjJtZ0tBbkE9PSIsImkiOiJRdWc2eVk3ZFFucmFoVVFZIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidkk4OExvWUdOUUt2UVFEakVsbjNJRHlUU0EyUngvR0RRTnBGV05zbVMwOENvLy9sVWxWbG1kZ2FNUHF0U3BTWERGSWEiLCJzIjoiRnQzY1dDSndTRTJnQm01WXE0T2FaQT09IiwiaSI6IkZ0MDVnZzUvekY0Mmk0ZzcifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibVRMcHZzaG02NXc0b1NKUEY3MVJzZDlNZTk4b3BCQmxTRkp1cmYyMnpKVzU1WmRWVFdFMTNOTThCb0tqTldJK09BPT0iLCJzIjoiYmRBRjJRVm5uaWY0UWhjUCtqb0JLdz09IiwiaSI6ImhSdUN1eFRaWFJqT2tHcmkifQ==",
+    "backport_akia": "",
+    "backport_viki": "",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT2ViMndReEFIb0VwVFI1MGpydTNvK2xPdlI3WXhVVlJ6MTVZT3N2YVR4OTZBYzlZM09JSjhldlBnd3VQZEJuZHBSV0RzdjJzTjJJMzQzT1loQkdIUWY5R0NYMlEiLCJpIjoiZWEwQU9JSmtQMG1CeFJDdiIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVTU1c1ZNMXZEV05PRnFwMmtVRHVQTEVsbDVNRnBWODJBRGxOdVFSc0NVQjI4Qjk5WXlQTFNzMFI4Vk1ETS9JUllsd0pPZjRlVHcvRlNHYnRub09UQ2NSK1lOLzdrNEk9IiwiaSI6IjZDNDZRLy85M2cyOFBoTnIiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQVMrMSt1QTBmTVg5d1d0SDQ1dVhVaTdjb3c5Z2lZbktNTm5sa0hVQ3RHZXU3VjNiemxmblNWaFUrUEIyYTRSSEZvZW81bTcvIiwicyI6InBxNHpIdnhiTkliK2xGODU5ZTA3dlE9PSIsImkiOiJEaUo1RVZMc05EYkdnMFpPIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVTcrcUZVbWU0Z28ralJUdUVMT0l3U0oxR2hSbnVBMkQrY3l1enlSNlpuVEZWaHVlQnJVZlo5bUUrb3orRGRJMXBRPT0iLCJzIjoiR293KzRXZTRaS2F3S1o4V3pubFJwZz09IiwiaSI6InhHUW90WENuT0RMQ0kxamIifQ==",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWFFIV2pOVk92eU1rZVZnMGtkald6NkF6OEh1REZSSHdtak42OUpPbG5uMnZMSmttVm0valBwMlNuUWJrQlBrbXE3OHQ2TWhhRm9NWVh3UUJTVzFHTER3MFlHUnJDeUk9IiwiaSI6Ikl4VDZJOEhrZ1ExTDlSa3giLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "SiESPTA & DUPLEX",
+    "credits_backport": "BestPig & rocknard & ManwonHp",
+    "popular": "on",
+    "size": "85GB"
+  },
+   {
     "title": "Metaphor ReFantazio",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Metaphor_ReFantazio.webp",
     "tags": [
@@ -5018,25 +5043,6 @@
     "credits_dlc": "Pkykzhack",
     "popular": "on",
     "size": "41GB"
-  },
-  {
-    "title": "PRAGMATA Deluxe Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/PRAGMATA_DE.jpg",
-    "tags": [
-      "PPSA02530",
-      "v01.200",
-      "USA",
-      "5.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK3l3ZWlrTU14Tll2V3RZNEtwaDNxRWFreUo0NkkwQWpIeUt2TXEwcjN2Z08zb2dtazdwRm1GNFRicVEvcXJudmVudSsyRlZqIiwicyI6ImthM3JIS2ZFRmhENlJKbjJtZ0tBbkE9PSIsImkiOiJRdWc2eVk3ZFFucmFoVVFZIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidkk4OExvWUdOUUt2UVFEakVsbjNJRHlUU0EyUngvR0RRTnBGV05zbVMwOENvLy9sVWxWbG1kZ2FNUHF0U3BTWERGSWEiLCJzIjoiRnQzY1dDSndTRTJnQm01WXE0T2FaQT09IiwiaSI6IkZ0MDVnZzUvekY0Mmk0ZzcifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibVRMcHZzaG02NXc0b1NKUEY3MVJzZDlNZTk4b3BCQmxTRkp1cmYyMnpKVzU1WmRWVFdFMTNOTThCb0tqTldJK09BPT0iLCJzIjoiYmRBRjJRVm5uaWY0UWhjUCtqb0JLdz09IiwiaSI6ImhSdUN1eFRaWFJqT2tHcmkifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQVMrMSt1QTBmTVg5d1d0SDQ1dVhVaTdjb3c5Z2lZbktNTm5sa0hVQ3RHZXU3VjNiemxmblNWaFUrUEIyYTRSSEZvZW81bTcvIiwicyI6InBxNHpIdnhiTkliK2xGODU5ZTA3dlE9PSIsImkiOiJEaUo1RVZMc05EYkdnMFpPIn0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVTcrcUZVbWU0Z28ralJUdUVMT0l3U0oxR2hSbnVBMkQrY3l1enlSNlpuVEZWaHVlQnJVZlo5bUUrb3orRGRJMXBRPT0iLCJzIjoiR293KzRXZTRaS2F3S1o4V3pubFJwZz09IiwiaSI6InhHUW90WENuT0RMQ0kxamIifQ==",
-    "credits_files": "SiESPTA & DUPLEX",
-    "credits_backport": "BestPig & rocknard",
-    "popular": "on",
-    "size": "85GB"
   },
   {
     "title": "Biomutant",
