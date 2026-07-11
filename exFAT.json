@@ -1,5 +1,30 @@
 [
    {
+    "title": "Metaphor ReFantazio",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Metaphor_ReFantazio.webp",
+    "tags": [
+      "PPSA20800",
+      "v01.013",
+      "USA",
+      "Standard (8.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib0FpM2VUL2RXVXJ2VFRiRENORnREVzUvWGJBK0czT1FHNDFXWlhHWk1wWnJBcVVRMHhKMzdIVlFUYXVHMVBnTWlXRHduNlEwIiwicyI6IkoyaXFtaFB5SzFXWDl2bndOMTV5dXc9PSIsImkiOiJJR2xYZHo0QkdKSFhpeVJyIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUVRudlVVTVZiTEE1MXF2OVIzT2Y0SFlFcHJmMTA5UGpQSkFBc2MyQzFjR21iaVd0RTkyQllTTHZrMUJvTWtpYjRyUGgiLCJzIjoiVTVDNURraDg5U1FBZWt5TzlGdFhEdz09IiwiaSI6IjlCNmRCc2xnUVh0cW0vVlQifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNVAyY1dESWwwM014b2xFdWpUZGdLQ2NqVy90TFRtQTlNeGFQR3VsVWNHWE44Y1NmbUtqdnhLRG5ob0FYaGZnQnJnPT0iLCJzIjoidzJpMEVuMCtNNTl3SEk3SGVGbXAyUT09IiwiaSI6IkVOY2hjTjBocmVOYkN6MTQifQ==",
+    "standard_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK1JuMGg5T1pVc3crZElTU3plVDVrMlFGRzZBVGtNemJrKzlCZXkyeGxxcDdHZnVZdTBGdXluLzQ4cFFDazhrbmVmdnoiLCJzIjoiVE1hVVc3TkFzeW1xWldQOHdlbk9ndz09IiwiaSI6InZHVk9SRUpWcDRpa3pHN20ifQ==",
+    "standard_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibmxNU0JuYmdTUWtJUjlwYWxKRFY5cTVGc0NlVDgreVRqMEtyMTF4WnNhb0lWWGxxWFJwVzYreGtKc2dZTkNodGdkYz0iLCJzIjoiOEhQTzVtaG5VY2xjdW15WXpXTldDZz09IiwiaSI6InQ4bU4vWFRHR05tT1p6bGEifQ==",
+    "backport_akia": "",
+    "backport_viki": "",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQW4vdHBoK2VmSmk1TUpxUWZQKzZaUGxRd1BvWVdkL0h1OS9iK1lvNTdFaHRIUUNOaDJtalFVQlc1YTEwdEpTRTVxYmxuY0w4a2htcG8vTDgzS1J0L2RYQU1JVWQiLCJpIjoiRlNsdUp1NE8wNUlVMDRYWCIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQjYwQ3MrU0hBOUszbnlqUTQxa1VwbzF3LzNuVXlYYlB0cmFORkVCVmM0Rm5PVzc0RktlUmd2VGpMQi90OG91RFNzTzRLd3dIYTkwMjdiTkhCME5qWENWSHJTdGVkRFE9IiwiaSI6ImpKeE1CaVZJUkNYVGkyTmMiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "",
+    "credits_files": "SiESPTA",
+    "credits_backport": "ManwonHp",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "71GB"
+  },
+   {
     "title": "Grand Theft Auto San Andreas The Definitive Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/GTASADE.avif",
     "tags": [
@@ -551,26 +576,6 @@
     "credits_backport": "ManwonHp",
     "popular": "on",
     "size": "74GB"
-  },
-   {
-    "title": "Yakuza 0 Directors Cut",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Yakuza_0_Directors_Cut.avif",
-    "tags": [
-      "PPSA31327",
-      "v01.015",
-      "JPN",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZHMzZlhveVBJM1RjNmY5dGdwdU0zWnZPcUxnZTd5cTZPRWppZ0VjK1JMYTFCOFJTMzloTUxXZFpMRmFiV1JqOFhNdVpLdkRrcXdVSDlCSGQ0aGxmVVN5OHp0bGNqb2I0ZDhBPSIsImkiOiJ0QStMc2ZnbENZU0VzZENGIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNjNDaG1Gb0p0NGI3OTUxZnVPcDZZcTNzV2xQaWdpUWE1by9iTTZiditiekZnV0tPWTVQVFp3VUl0NjhGOWZHRWdQMHQzblpsOW0vWm8zd3BEUVRkUytOZ3plTVNtTE09IiwiaSI6IkExRmVPcFhaUlA1bENOLzYiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRUIzODIydTlaanZCanRhekt0YkZTdVZwbFhlWWxZdys2ZjRyKytxelg2SmRuR003cS9nbjF1elN1eForOXk4TklCQWJpWjF1R0FMeHdkK21NanJLZVdaQ3pkWXkiLCJpIjoiT3AwRFNleGtaclN5eUp1QSIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicTFvS05kRHBaM1BkRG1ZRmdkSTRlbW0wOStmN0NlWW5SbjRaNkNKcEU5QS9CSndoVjVLdWk2L28rWitGbWJ6ZWd0WFVSbVMwejVsKytmZUVLSm1yYmF6R1lqakNkbVU9IiwiaSI6ImI2ekVsS1J5Q0ZRc01wWVMiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicElveDlLOEZUQWZKWVVwMGhIYmpIYlVFZDBjV21ucWZ1K3RJQThueHpSV21NczF5djlDZ0Z3Nmkzc1NYZnp5aGlBRlFRVlNHOXYreEZCb2FiQThVN2s3eXpEeE52Zz09IiwiaSI6ImhyTDI4NVYvcHk4QmlqMWYiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "ManwonHp",
-    "popular": "on",
-    "apr_emu": "on",
-    "size": "52GB"
   },
    {
     "title": "Rise of The Ronin",
@@ -2015,25 +2020,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "10GB"
-  },
-   {
-    "title": "Metaphor ReFantazio",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Metaphor_ReFantazio.webp",
-    "tags": [
-      "PPSA20800",
-      "v01.013",
-      "USA",
-      "8.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib0FpM2VUL2RXVXJ2VFRiRENORnREVzUvWGJBK0czT1FHNDFXWlhHWk1wWnJBcVVRMHhKMzdIVlFUYXVHMVBnTWlXRHduNlEwIiwicyI6IkoyaXFtaFB5SzFXWDl2bndOMTV5dXc9PSIsImkiOiJJR2xYZHo0QkdKSFhpeVJyIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUVRudlVVTVZiTEE1MXF2OVIzT2Y0SFlFcHJmMTA5UGpQSkFBc2MyQzFjR21iaVd0RTkyQllTTHZrMUJvTWtpYjRyUGgiLCJzIjoiVTVDNURraDg5U1FBZWt5TzlGdFhEdz09IiwiaSI6IjlCNmRCc2xnUVh0cW0vVlQifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNVAyY1dESWwwM014b2xFdWpUZGdLQ2NqVy90TFRtQTlNeGFQR3VsVWNHWE44Y1NmbUtqdnhLRG5ob0FYaGZnQnJnPT0iLCJzIjoidzJpMEVuMCtNNTl3SEk3SGVGbXAyUT09IiwiaSI6IkVOY2hjTjBocmVOYkN6MTQifQ==",
-    "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK1JuMGg5T1pVc3crZElTU3plVDVrMlFGRzZBVGtNemJrKzlCZXkyeGxxcDdHZnVZdTBGdXluLzQ4cFFDazhrbmVmdnoiLCJzIjoiVE1hVVc3TkFzeW1xWldQOHdlbk9ndz09IiwiaSI6InZHVk9SRUpWcDRpa3pHN20ifQ==",
-    "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibmxNU0JuYmdTUWtJUjlwYWxKRFY5cTVGc0NlVDgreVRqMEtyMTF4WnNhb0lWWGxxWFJwVzYreGtKc2dZTkNodGdkYz0iLCJzIjoiOEhQTzVtaG5VY2xjdW15WXpXTldDZz09IiwiaSI6InQ4bU4vWFRHR05tT1p6bGEifQ==",
-    "credits_files": "SiESPTA",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "71GB"
   },
    {
     "title": "Nioh Remastered The Complete Edition",
