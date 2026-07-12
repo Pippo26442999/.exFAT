@@ -1,5 +1,27 @@
 [
    {
+    "title": "SAROS",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/SAROS.avif",
+    "tags": [
+      "PPSA07631",
+      "v01.000",
+      "EUR",
+      "Standard (5.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWlM3N2RJN2VLcjVjV3QzeGU1NlNUL0F4b0ZweWF2T1hXUGtWbGxTL2J1QklkNjUycG5VUDdmYW9KdDd6ajFtVGZmbVZwaGkwIiwicyI6IjZ2K0ZHMm54QkJWQ0JoSnJxdzBUSXc9PSIsImkiOiJXMm5VSVI1Y3RXYnQvTTJuIn0=",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUkZ0aC9yZG0xVHhvMEg0emQwZTBmc3ZpaWdRSFE4SzI0cEF0cStBQ0tzU3JwaTUvQjc1cEtxSW5QY1RjdStwcTJRPT0iLCJzIjoiSnFyc1oyQWt1TWdRZnJhUTJOWWd3QT09IiwiaSI6Ijd6aHNwYkRqamV5N29tUDcifQ==",
+    "backport_akia": "",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic2lSejZFZTJ4aTZiMHpiQ3FsaFVHZTF3bytEMElyL0VsRHpUeGczTzhXSzQ3TDNYZzJ0Q2pUc2VVMEZJZkRyZ0RBdnJQU0FWZzN3Tyt3UDBobmZQM1BlM21jR0FYRWM9IiwiaSI6IlYrL3Y2S1dTVWREZWFnekoiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicHdzQUV2MCtpWVdyM21lS3ZhOTZPd2JqamU2YjVpQ2FXREZTdUxLaHpaa3NYZncrZVRvbVZFUXlaNWpYRnpvZkVpcmJDZ0Evc1JuakFCOVI0SXVHUVYzWEdFRk4iLCJpIjoiTlQ4ZWJHL3pmSXRVUE9uciIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicHdtUW53Nk1PVnBqZzg1WGpuZ0tKUUlPSnVZNVNlTWVndFUyTkZzRU03RjRBbjcrVmF3Q2NBRjRXZU8wUWREQmZzZ1JJYzg4UHI2Tzc0Y3UzTEdxTDNPZ3VUTXhSSDA9IiwiaSI6IkpXMllZc3FTTmthU2V5OWIiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRmt3a0FGU3lEQ2JjRGlWNWNiRTJEaXVkaHpHY2FKcjgzd3pXRUcxbmptOEhpMkUzN29SRkhGSnlYTzZhZU53QW1VTjJqYVFnbGw5c2VLdkhxRjJsT3FoNGs5MVVMUT09IiwiaSI6IlFpTCtkUTRndEJua2ZnUzkiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "BestPig & Zhwenx",
+    "how_to_play": "English Audio Only. Audio issue fixed by ManwonHp.",
+    "popular": "on",
+    "size": "151GB"
+  },
+   {
     "title": "Cygni All Guns Blazing",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Cygni_All_Guns_Blazing.jpg",
     "tags": [
@@ -5536,23 +5558,6 @@
     "how_to_play": "Press START/Options - Add-on right after starting a new game. You can equip them after the prologue.",
     "popular": "on",
     "size": "154GB"
-  },
-  {
-    "title": "SAROS",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/SAROS.avif",
-    "tags": [
-      "PPSA07631",
-      "v01.000.000",
-      "EUR",
-      "5.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWlM3N2RJN2VLcjVjV3QzeGU1NlNUL0F4b0ZweWF2T1hXUGtWbGxTL2J1QklkNjUycG5VUDdmYW9KdDd6ajFtVGZmbVZwaGkwIiwicyI6IjZ2K0ZHMm54QkJWQ0JoSnJxdzBUSXc9PSIsImkiOiJXMm5VSVI1Y3RXYnQvTTJuIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicEVsY0pRQXdRUWNLUTR4S2xhU1ExUEVrT1lQN2hOZnI2RzFFRGlnYW5vUkJybGMrbmp4RkI4SVd3TndqMUpDTTNxNEYiLCJzIjoibS90aWhJNExrbUdHYVVVajQ3SDdlUT09IiwiaSI6Ikx1L0p1aitzY2Z3SmRvZjEifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUkZ0aC9yZG0xVHhvMEg0emQwZTBmc3ZpaWdRSFE4SzI0cEF0cStBQ0tzU3JwaTUvQjc1cEtxSW5QY1RjdStwcTJRPT0iLCJzIjoiSnFyc1oyQWt1TWdRZnJhUTJOWWd3QT09IiwiaSI6Ijd6aHNwYkRqamV5N29tUDcifQ==",
-    "credits_files": "DUPLEX",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "151GB"
   },
   {
     "title": "The Last of Us Part II Remastered",
