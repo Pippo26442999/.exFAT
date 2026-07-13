@@ -15,6 +15,8 @@
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiallMMTcwMkxaWS9TWU5LK1BpRnJYRXYxWmNqUDFyMVFuK1hkNWE4ekd5ZFREL3dCby81K1doNFdOTjRYekdobEd6b2NtaDlwL2Jmd2tuWTFYSkdIMGVpQzJab1ZyUT09IiwiaSI6IjFMZlVqa09sNGlmeHRqWEIiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
     "credits_backport": "ManwonHp",
+    "apr_emu": "on",
+    "popular": "on",
     "size": "15GB"
   },
    {
@@ -34,6 +36,8 @@
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSWNEd2lHaEx5eHpOaEdGRWxEQlMxTnJJZjJDcVVnSmQ1c2ZqS1hyYzlwZm1vU2Z0MHk0Yms4aDBqNklVMjM2bGVNcWp0VzBsTUtYaFRXMGorODNZbUU1S2t4RUNmQT09IiwiaSI6IkxUd2Z4TkgrUEtiaVg0VUsiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
     "credits_dlc": "Pkykzhack",
+    "apr_emu": "on",
+    "popular": "on",
     "size": "37GB"
   },
    {
@@ -55,6 +59,7 @@
     "credits_files": "DUPLEX",
     "credits_backport": "ManwonHp",
     "how_to_play": "Must be installed the DLC Unlock for play, mandatory.",
+    "apr_emu": "on",
     "popular": "on",
     "size": "182GB"
   },
