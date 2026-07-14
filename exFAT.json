@@ -1,5 +1,23 @@
 [
    {
+    "title": "System Shock",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/System_Shock.avif",
+    "tags": [
+      "PPSA06389",
+      "v01.000",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiODdkYzhlNkRVVlhaK0pOcWNPSWZsQ0pUd3dydGF2WnFGNmFucmVqT2ZyV05WM3pOOTFjaUdoL2xMR3RJeEFLRUJPWDhzUUZmMisydnU1MVU3amthK3pDanVmSExYOWUwcURZPSIsImkiOiI0VHhsNEZsbWJDZ29sNWlGIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU0hoVVZzVWdJWUFSejBTREpBbG9Ialhua1MrM1FOQmFBdFZIRzB4ajNBd2M5QzNBb0hoUnFzVmZvRnJaSEs4SnQrZzVJMlZRWXA0NWxZQ3BISTd4dlJnanBTS1krZjg9IiwiaSI6Im85RUp6UVBqL21qRFFYQ3YiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV0x5SThHTHhpem5MTm5CYkpPYXJJWmNzZmh6SFhNT0V4N3pjK0xGazVoU3E0K3NGM01OSjVmQ3VwbXpFVjAyS2x0dUxEaXJLenp2THJPQVFJVlcxd0VXTm9wZ2kiLCJpIjoiMWdOWE1BS2U0ZGdvcDB3SiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVFIyUDdML0oyUWxza2F5RExwQy9BazFiQi80R2lZTENoQWVUeEUzd1lubkU5dlpyc3ZJL1pKb0NzVW9uK25sdVAyeUlGNVNmWi9zRkpSeFczNGllczNHTmhSMHRrSW89IiwiaSI6ImdGM1dvUXI0QWJiYi96R2YiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK0R5dG1JWlF3WHJuM29UVnl4dVlJcnhOdjg5WmtVUmJsNFM1QzkyYlpVQTNoN2JpNVNEQUMyWmo5TDRyVUZ3Y2tpeTZna3B3cmw4YUZjd3VueFFXNGQzZ0NJOUFOQT09IiwiaSI6ImpPaDNteGl1MGdLT3l3TzUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Lucran & SiESPta",
+    "credits_backport": "kerrdec97",
+    "size": "8GB"
+  },
+   {
     "title": "Puzzle Bobble 3D Vacation Odyssey",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Puzzle_Bobble_3D_Vacation_Odyssey.webp",
     "tags": [
