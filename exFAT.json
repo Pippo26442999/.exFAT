@@ -1,5 +1,23 @@
 [
    {
+    "title": "My First Gran Turismo",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/My_First_Gran_Turismo.avif",
+    "tags": [
+      "PPSA24157",
+      "v01.010",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVDN0ckVvNXVZMWxaQS80dDh6K002K1A5SWk0WDBYd0lSNnh6cGxndWgwejlUb29FSks0aWJRd0twWTdKaGZLWXZVSURqS0JVaEZNY0NBcDFDZkZiVEx6VldtK2Eydzg9IiwiaSI6ImJiT2YrcEhOZVZEY3VsdDEiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMTJLT1FmVXQzcm1kSEFtMUt4eEU2YlNLYzA1MW1rNHNOd1FNby8vUlNJUVVNZmR4YTV5Ty8xVU0zN1VsdXcvL3BxbFcvOGdHVUVndmlMeERneVNaL011MklkeEsiLCJpIjoiS29wSmxld3Q0K3M5Y2JMUCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTXU2UkprOGd3eGMrR2hjc2VZUFk0OGM1UXB0b3gvL3JPRGdETnV6S1UwOWptN0hBR0NCQ3Nxa0x0VlM2L0RRR2RrUDdrTUhCYmJsekswWjNkeHU4UnZqN0Rmb01yZz09IiwiaSI6InhMWXFWejdsOFFqMnJNa0EiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "kerrdec97",
+    "size": "24GB"
+  },
+   {
     "title": "Outcast A New Beginning",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Outcast_A_New_Beginning.avif",
     "tags": [
