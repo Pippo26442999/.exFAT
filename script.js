@@ -2331,7 +2331,6 @@ function renderPopularGames() {
             
             let ffpkgIndicator = '';
             if (game.ffpkg_akia || game.ffpkg_viki || game.ffpkg_buzz || game.ffpkg_data || game.ffpkg_filek || game.ffpkg_vault) {
-                ffpkgIndicator = `<div style="position:absolute; bottom:70px; left:15px; z-index:5; background:rgba(255,0,128,0.9); color:#fff; padding:3px 10px; border-radius:4px; font-size:0.6rem; font-weight:900; box-shadow:0 0 10px rgba(255,0,128,0.5);">FFPKG</div>`;
             }
             
             htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}${ffpkgIndicator}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`; 
