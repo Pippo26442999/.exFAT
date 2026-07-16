@@ -2391,6 +2391,91 @@
             .mobile-menu-panel, .mobile-menu-overlay { display: none !important; }
             .hamburger { display: none !important; }
         }
+
+        /* ===== FIX BUTTON STYLES ===== */
+        .btn-dl.fix-btn {
+            background: rgba(255, 200, 0, 0.2) !important;
+            border-color: rgba(255, 200, 0, 0.6) !important;
+            color: #ffcc00 !important;
+        }
+
+        .btn-dl.fix-btn:hover {
+            background: #ffcc00 !important;
+            color: #000 !important;
+            box-shadow: 0 8px 25px rgba(255, 200, 0, 0.5) !important;
+        }
+
+        /* FIX Modal Styles */
+        .download-fix-card {
+            background: rgba(255, 200, 0, 0.08);
+            border-radius: 20px;
+            padding: 18px;
+            margin-bottom: 18px;
+            border-left: 3px solid #ffcc00;
+        }
+
+        .download-fix-card .fix-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .download-fix-card .fix-title span:first-child {
+            font-size: 1.5rem;
+        }
+
+        .download-fix-card .fix-title .fix-label {
+            font-weight: 900;
+            font-size: 1rem;
+            color: #ffcc00;
+        }
+
+        .download-fix-card .fix-text {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        .download-fix-note {
+            background: rgba(255, 200, 0, 0.05);
+            border-radius: 20px;
+            padding: 18px;
+            margin-bottom: 18px;
+            border-left: 3px solid #ffcc00;
+        }
+
+/* ===== LIBRARY MODE INDICATOR ===== */
+#library-mode-indicator {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(12px);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    z-index: 9998;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    user-select: none;
+}
+
+#library-mode-indicator:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    #library-mode-indicator {
+        display: none !important;
+    }
+}
     </style>
 </head>
 <body>

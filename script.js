@@ -1451,6 +1451,97 @@ function clearAprEmuBadge() {
     }
 }
 
+// ========== FUNZIONE PER APRIRE IL MODAL FIX ==========
+function openFixModal(url, fixGuide, gameTitle) {
+    const modal = document.getElementById('download-modal');
+    const bodyContainer = document.getElementById('downloadModalBody');
+    const footerDiv = document.querySelector('#download-modal .download-modal-container > div:last-child');
+    const pwBox = document.getElementById('downloadPasswordBox');
+    const pwHint = document.getElementById('downloadPwHint');
+    const pwValue = document.getElementById('downloadPwValue');
+    const finalBtn = document.getElementById('downloadFinalBtn');
+    
+    modal.classList.remove('hiding');
+    const container = document.querySelector('#download-modal .download-modal-container');
+    if (container) container.classList.remove('closing');
+    
+    // Nascondi la password box (non serve per i fix)
+    if (pwBox) pwBox.style.display = 'none';
+    if (pwHint) pwHint.style.display = 'none';
+    if (pwValue) pwValue.style.display = 'none';
+    
+    // Costruisci il contenuto del modale
+    // Formatta il fixGuide per avere ogni step su una nuova riga
+    // Formatta il fixGuide per avere ogni step su una nuova riga
+    let formattedGuide = '';
+    if (fixGuide && fixGuide.trim() !== '') {
+        // Gestisci sia il formato "1." che "1:" 
+        formattedGuide = fixGuide.replace(/(\d+[\.:])\s*/g, '<br>$1 ');
+        // Rimuovi il primo <br> all'inizio se presente
+        formattedGuide = formattedGuide.replace(/^<br>/, '');
+        // Sostituisci eventuali ':' con '.' per uniformare
+        formattedGuide = formattedGuide.replace(/(\d+):/g, '$1.');
+    } else {
+        formattedGuide = 'No specific instructions provided for this fix.';
+    }
+    
+    // Costruisci il contenuto del modale
+    let contentHTML = `
+        <div class="download-fix-card" style="background:rgba(255, 200, 0, 0.08); border-radius:20px; padding:18px; margin-bottom:18px; border-left:3px solid #ffcc00;">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                <span style="font-size:1.5rem;">🔧</span>
+                <span style="font-weight:900; font-size:1rem; color:#ffcc00;">How to apply Fix</span>
+            </div>
+            <div style="font-size:0.85rem; line-height:1.8; color:#ddd;">
+                ${formattedGuide}
+            </div>
+        </div>
+    `;
+
+    if (bodyContainer) bodyContainer.innerHTML = contentHTML;
+    
+    // RESETTA IL FOOTER CON I BOTTONI
+    if (footerDiv) {
+        footerDiv.innerHTML = `
+            <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
+                <a href="${url}" target="_blank" class="download-final-btn" style="background: linear-gradient(135deg, #ffcc00, #ff8800); border: none; color: #000; padding: 14px 20px; border-radius: 50px; font-weight: 900; font-size: 0.9rem; cursor: pointer; width: 100%; text-align: center; text-decoration: none; display: inline-block; position: relative; overflow: hidden; box-sizing: border-box; animation: none;">
+                    DOWNLOAD FIX
+                </a>
+            </div>
+        `;
+        
+        // Aggiungi l'effetto shine
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes shineAnimation {
+                0% { transform: translateX(-100%); }
+                20% { transform: translateX(100%); }
+                100% { transform: translateX(100%); }
+            }
+            .shine-effect {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+                pointer-events: none;
+                animation: shineAnimation 3s ease-in-out infinite;
+            }
+        `;
+        document.head.appendChild(style);
+        
+        const downloadLink = footerDiv.querySelector('.download-final-btn');
+        if (downloadLink) {
+            const shine = document.createElement('span');
+            shine.className = 'shine-effect';
+            downloadLink.appendChild(shine);
+        }
+    }
+    
+    modal.classList.add('show');
+}
+
 // ========== FUNZIONE UNIFICATA PER APRIRE IL MODAL ==========
 function openGameModal(game, event) {
     if (event && event.button === 2) { event.preventDefault(); return false; }
@@ -1623,6 +1714,94 @@ function openGameModal(game, event) {
         dlcSection.style.display = 'none';
     }
 
+// ========== FUNZIONE PER APRIRE IL MODAL FIX ==========
+// ========== FUNZIONE PER APRIRE IL MODAL FIX ==========
+function openFixModal(url, fixGuide, gameTitle) {
+    const modal = document.getElementById('download-modal');
+    const bodyContainer = document.getElementById('downloadModalBody');
+    const footerDiv = document.querySelector('#download-modal .download-modal-container > div:last-child');
+    const pwBox = document.getElementById('downloadPasswordBox');
+    const pwHint = document.getElementById('downloadPwHint');
+    const pwValue = document.getElementById('downloadPwValue');
+    const finalBtn = document.getElementById('downloadFinalBtn');
+    
+    modal.classList.remove('hiding');
+    const container = document.querySelector('#download-modal .download-modal-container');
+    if (container) container.classList.remove('closing');
+    
+    // Nascondi la password box (non serve per i fix)
+    if (pwBox) pwBox.style.display = 'none';
+    if (pwHint) pwHint.style.display = 'none';
+    if (pwValue) pwValue.style.display = 'none';
+    
+    // Formatta il fixGuide per avere ogni step su una nuova riga
+    let formattedGuide = '';
+    if (fixGuide && fixGuide.trim() !== '') {
+        // Sostituisci i numeri con step (1., 2., 3., ecc.) in modo che siano su nuove righe
+        formattedGuide = fixGuide.replace(/(\d+\.)/g, '<br>$1');
+        // Rimuovi il primo <br> all'inizio se presente
+        formattedGuide = formattedGuide.replace(/^<br>/, '');
+    } else {
+        formattedGuide = 'No specific instructions provided for this fix.';
+    }
+    
+    // Costruisci il contenuto del modale
+    let contentHTML = `
+        <div class="download-fix-card" style="background:rgba(255, 200, 0, 0.08); border-radius:20px; padding:18px; margin-bottom:18px; border-left:3px solid #ffcc00;">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                <span style="font-size:1.5rem;">🔧</span>
+                <span style="font-weight:900; font-size:1rem; color:#ffcc00;">HOW TO APPLY FIX</span>
+            </div>
+            <div style="font-size:0.85rem; line-height:1.8; color:#ddd;">
+                ${formattedGuide}
+            </div>
+        </div>
+    `;
+    
+    if (bodyContainer) bodyContainer.innerHTML = contentHTML;
+    
+    // RESETTA IL FOOTER CON I BOTTONI
+    if (footerDiv) {
+        footerDiv.innerHTML = `
+            <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
+                <a href="${url}" target="_blank" class="download-final-btn" style="background: linear-gradient(135deg, #ffcc00, #ff8800); border: none; color: #000; padding: 14px 20px; border-radius: 50px; font-weight: 900; font-size: 0.9rem; cursor: pointer; width: 100%; text-align: center; text-decoration: none; display: inline-block; position: relative; overflow: hidden; box-sizing: border-box; animation: none;">
+                    DOWNLOAD FIX
+                </a>
+            </div>
+        `;
+        
+        // Aggiungi l'effetto shine
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes shineAnimation {
+                0% { transform: translateX(-100%); }
+                20% { transform: translateX(100%); }
+                100% { transform: translateX(100%); }
+            }
+            .shine-effect {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+                pointer-events: none;
+                animation: shineAnimation 3s ease-in-out infinite;
+            }
+        `;
+        document.head.appendChild(style);
+        
+        const downloadLink = footerDiv.querySelector('.download-final-btn');
+        if (downloadLink) {
+            const shine = document.createElement('span');
+            shine.className = 'shine-effect';
+            downloadLink.appendChild(shine);
+        }
+    }
+    
+    modal.classList.add('show');
+}
+
     // ===== CREDITS =====
     let parts = [];
     const fileAuthor = game.credits_files, bpAuthor = game.credits_backport, dlcAuthor = game.credits_dlc || game.credits_dlcs;
@@ -1716,6 +1895,13 @@ async function init() {
         sessionStorage.removeItem('bot_detected');
         localStorage.removeItem('flagged_as_bot');
     }
+    
+    // ===== INIZIALIZZA LA MODALITÀ DI CARICAMENTO =====
+    const mode = getLibraryMode();
+    console.log(`[LIBRARY] Modalità di caricamento: ${mode.toUpperCase()}`);
+    
+    // Mostra l'indicatore (solo su desktop)
+    showLibraryModeIndicator();
     
     if (!checkIntegrity()) return;
     const unlocked = sessionStorage.getItem('unlocked');
@@ -2006,65 +2192,33 @@ async function loadUpdates() {
 
 async function loadLibrary() {
     try {
+        // ===== LEGGI LA MODALITÀ DAL localStorage =====
+        const USE_LOCAL = (getLibraryMode() === 'local');
+        console.log(`[LIBRARY] Modalità: ${USE_LOCAL ? '📁 LOCALE' : '🌐 API'}`);
+        
         const isFlagged = false; // ⚠️ IMPORTANTE: anti-bot disabilitato
+        let data = null;
         
-        // USA L'API DI GITHUB
-        const apiUrl = 'https://api.github.com/repos/Pippo26442999/.exFAT/contents/exFAT.json';
-        
-        const headers = {};
-        if (lastETag) {
-            headers['If-None-Match'] = lastETag;
-            console.log('[LIBRARY] 🔍 Verifico se il file è cambiato...');
+        // ===== CARICAMENTO DA FILE LOCALE =====
+        if (USE_LOCAL) {
+            console.log('[LIBRARY] 📁 Tentativo caricamento da file locale...');
+            try {
+                const localResponse = await fetch('exFAT.json?v=' + Date.now());
+                if (!localResponse.ok) throw new Error(`HTTP ${localResponse.status}`);
+                data = await localResponse.json();
+                console.log('[LIBRARY] ✅ File locale caricato con successo');
+            } catch (localError) {
+                console.error('[LIBRARY] ❌ Errore caricamento locale:', localError);
+                console.log('[LIBRARY] 🔄 Fallback all\'API GitHub...');
+                // Se fallisce il locale, usa l'API
+                data = await loadFromApi();
+            }
+        } else {
+            // ===== CARICAMENTO DA API =====
+            data = await loadFromApi();
         }
         
-        console.log('[LIBRARY] Tentativo di caricamento dall\'API GitHub');
-        const response = await fetch(apiUrl, { headers });
-        
-        // SE IL SERVER RISPONDE 304, IL FILE NON È CAMBIATO
-        if (response.status === 304 && cachedGames) {
-            console.log('[LIBRARY] ✅ File NON cambiato! Uso la cache locale.');
-            
-            allGames = cachedGames;
-            allGames.forEach((game, index) => { 
-                originalOrderMap.set(game.title, index); 
-            });
-            
-            applyFWFilterWithSort();
-            renderPopularGames();
-            renderGames();
-            updateResultCount();
-            hideSkeletonLoader();
-            return;
-        }
-        
-        // SE ARRIVA QUI, IL FILE È CAMBIATO O È LA PRIMA RICHIESTA
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
-        
-        // SALVA IL NUOVO ETAG
-        lastETag = response.headers.get('ETag');
-        console.log('[LIBRARY] 📦 File AGGIORNATO! Nuovo ETag:', lastETag);
-        
-        // LEGGI E DECODIFICA IL CONTENUTO BASE64
-        const apiResponse = await response.json();
-        const jsonString = atob(apiResponse.content);
-        
-        console.log('[LIBRARY] File ricevuto, lunghezza:', jsonString.length, 'bytes');
-        
-        if (!jsonString || jsonString.trim() === '') {
-            throw new Error('Il file exFAT.json è vuoto');
-        }
-        
-        let data;
-        try {
-            data = JSON.parse(jsonString);
-            console.log('[LIBRARY] JSON parsato con successo,', Array.isArray(data) ? data.length + ' giochi' : 'oggetto ricevuto');
-        } catch (jsonError) {
-            console.error('[LIBRARY] Errore parsing JSON:', jsonError.message);
-            throw new Error('Il file exFAT.json è corrotto o malformato');
-        }
-        
+        // ===== VALIDAZIONE DATI =====
         if (!Array.isArray(data)) {
             console.error('[LIBRARY] exFAT.json non è un array!', typeof data);
             if (isFlagged) {
@@ -2173,6 +2327,73 @@ async function loadLibrary() {
                 </div>
             `;
         }
+    }
+}
+
+// ===== FUNZIONI PER GESTIRE LA MODALITÀ DI CARICAMENTO =====
+function setLocalMode() {
+    localStorage.setItem('library_mode', 'local');
+    console.log('[LIBRARY] 📁 Modalità LOCALE impostata');
+    location.reload();
+}
+
+function setApiMode() {
+    localStorage.setItem('library_mode', 'api');
+    console.log('[LIBRARY] 🌐 Modalità API impostata');
+    location.reload();
+}
+
+function getLibraryMode() {
+    return localStorage.getItem('library_mode') || 'api';
+}
+
+function showLibraryModeIndicator() {
+    // DISABILITATO
+    return;
+}
+
+// ===== FUNZIONE PER CARICARE DALL'API (estratta da loadLibrary) =====
+async function loadFromApi() {
+    console.log('[LIBRARY] 🌐 Tentativo caricamento da API GitHub...');
+    const apiUrl = 'https://api.github.com/repos/Pippo26442999/.exFAT/contents/exFAT.json';
+    
+    const headers = {};
+    if (lastETag) {
+        headers['If-None-Match'] = lastETag;
+        console.log('[LIBRARY] 🔍 Verifico se il file è cambiato...');
+    }
+    
+    const response = await fetch(apiUrl, { headers });
+    
+    // SE IL SERVER RISPONDE 304, IL FILE NON È CAMBIATO
+    if (response.status === 304 && cachedGames) {
+        console.log('[LIBRARY] ✅ File NON cambiato! Uso la cache locale.');
+        return cachedGames;
+    }
+    
+    if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+    
+    lastETag = response.headers.get('ETag');
+    console.log('[LIBRARY] 📦 File AGGIORNATO! Nuovo ETag:', lastETag);
+    
+    const apiResponse = await response.json();
+    const jsonString = atob(apiResponse.content);
+    
+    console.log('[LIBRARY] File ricevuto, lunghezza:', jsonString.length, 'bytes');
+    
+    if (!jsonString || jsonString.trim() === '') {
+        throw new Error('Il file exFAT.json è vuoto');
+    }
+    
+    try {
+        const data = JSON.parse(jsonString);
+        console.log('[LIBRARY] JSON parsato con successo,', Array.isArray(data) ? data.length + ' giochi' : 'oggetto ricevuto');
+        return data;
+    } catch (jsonError) {
+        console.error('[LIBRARY] Errore parsing JSON:', jsonError.message);
+        throw new Error('Il file exFAT.json è corrotto o malformato');
     }
 }
 
@@ -2390,17 +2611,21 @@ function renderGames() {
             aprEmuHTML = `<div class="game-apr-emu">APR-EMU</div>`;
         }
         
-        
         let updateBadge = '';
         const updates = allUpdates[game.title];
         if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge" style="position:absolute; top:15px; left:15px; background:var(--green-neon); color:#000; padding:4px 10px; border-radius:8px; font-weight:900; font-size:0.7rem; z-index:20; box-shadow:0 0 10px var(--green-neon); animation: pulseRed 2s infinite;">UPDATE</div>`; }
         const hPlay = (game.how_to_play || "").replace(/'/g, "\\'");
         const dCredits = game.credits_dlc || game.credits_dlcs || '';
+        const fixGuide = (game.fix_guide || "").replace(/'/g, "\\'");
         
         // Funzione per creare bottone nella card (IDENTICO PER TUTTI)
-        const createBtn = (url, label, isDLC = false, isDump = false) => { 
+        const createBtn = (url, label, isDLC = false, isDump = false, isFix = false) => { 
             if (!url || url === "undefined" || url.trim() === "") return ''; 
             const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            // Se è un fix, usa openFixModal
+            if (isFix) {
+                return `<a onclick="openFixModal('${url}', '${fixGuide}', '${safeTitle}')" class="btn-dl"> ${label}</a>`;
+            }
             return `<a onclick="openDLWithAprEmuCheck('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', ${isDLC}, ${isDump}, '${safeTitle}', ${requireAprEmu})" class="btn-dl">${label}</a>`; 
         };
         
@@ -2408,8 +2633,19 @@ function renderGames() {
         let dlcBtns = '';
         let dumpBtns = '';
         let ffpkgBtns = '';
+        let fixBtns = '';
         
-        // ===== FFPKG (USA createBtn IDENTICO agli altri) =====
+        // ===== FIX =====
+        if (game.fix_akia) fixBtns += createBtn(game.fix_akia, 'AKIA', false, false, true);
+        if (game.fix_viki) fixBtns += createBtn(game.fix_viki, 'VIKI', false, false, true);
+        if (game.fix_buzz) fixBtns += createBtn(game.fix_buzz, 'BUZZ', false, false, true);
+        if (game.fix_data) fixBtns += createBtn(game.fix_data, 'DATA', false, false, true);
+        if (game.fix_filek) fixBtns += createBtn(game.fix_filek, 'FILEK', false, false, true);
+        if (game.fix_vault) fixBtns += createBtn(game.fix_vault, 'VAULT', false, false, true);
+        
+        let fixSectionHTML = fixBtns ? `<p class="ver-label"><b>FIX</b></p><div class="download-container">${fixBtns}</div>` : '';
+        
+        // ===== FFPKG =====
         if (game.ffpkg_akia) ffpkgBtns += createBtn(game.ffpkg_akia, 'AKIA', false, false);
         if (game.ffpkg_viki) ffpkgBtns += createBtn(game.ffpkg_viki, 'VIKI', false, false);
         if (game.ffpkg_buzz) ffpkgBtns += createBtn(game.ffpkg_buzz, 'BUZZ', false, false);
@@ -2491,7 +2727,7 @@ function renderGames() {
         let dumpSectionHTML = dumpBtns ? `<p class="ver-label"><b>DUMP:</b></p><div class="download-container">${dumpBtns}</div>` : '';
         let dlcSectionHTML = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
         
-        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'"><div class="tags-overlay">${tagsHTML}</div><div class="game-badges">${aprEmuHTML}${sizeHTML}</div></div><div class="download-section">${ffpkgSectionHTML}${downloadHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
+        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'"><div class="tags-overlay">${tagsHTML}</div><div class="game-badges">${aprEmuHTML}${sizeHTML}</div></div><div class="download-section">${ffpkgSectionHTML}${downloadHTML}${fixSectionHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
     });
     const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
     document.getElementById('page-info').innerText = `Page ${currentPage} of ${totalPages || 1}`;

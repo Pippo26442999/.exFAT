@@ -120,8 +120,11 @@
     "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMkUzamhFTVlsRlFLenRJWjk1K09BWkdPYVY1MWU5Y0VyclRHbkxpSEJtcUU0OVkrWlZ3K0QzTDBDOUF6MnpPeTJsdVY0SDJ5MXg0ZnVPMkZxc0dVYjE0aytPUDEiLCJpIjoiSmkya1laWUNaQ0RIR0VhQiIsIm4iOiJEYXRhIn0=",
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOEpMdTdDVTAvZFhPb0Fkd3NHZFhXTlJwMExNdUd3UXg2NkN5TjhyMnJHY3ovR0lpRlRLVVZyODE1YThIb0VVbkNqZFU0OWdYQ1RvWWxtUEI5U0c4Mm8zVzFKZExJOUE9IiwiaSI6ImNMTUkxMFAvSU8xbmN6N1ciLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRDVJSU1iZlgxV3RTdWFsM1FtVzVjYzM2S0RBM2hxM1MraXk1am9XRXp3R1gyMXMzRXYvWGhIdlJzYnM4NlNTcDRFaGRFYitoUGJzMHJtMEtMdXdWckRkUGptRDlQSXgwdjJ6S1E2K2VhVTRCQitCZWRGK0pJZWdpZnBvPSIsImkiOiJCckdTZnBJVkJCQnZPVVBMIiwibiI6IlZhdWx0In0=",
+    "fix_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM0xKd291eEdRcUtNMVhENExTZ1p1Szh2ZjliaDFud0tXUkNtdFlNejhKbG1talJrQkM0MHZjMTd0OUd4T2tXVThFeHByVTBUSS8yKy91SHM1SjZLSmlJT0daWjQiLCJpIjoiQkpIUG9VNk53dWFncWhSdiIsIm4iOiJEYXRhIn0=",
+    "fix_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMC9pUHptSEY4VU9zdGVheUVVY0tLa3J1NU1DdGhmUnY4c2NROUx6V3lZZmsyRE00SklxdWkzUFVURkVjYlJvY1ZpNzN2NnJRb293S3AvRllxTVZndDJ3RXFmSGdHS2c9IiwiaSI6Ii9RSURtcERQMk1lZU9EdVkiLCJuIjoiRmlsZUsifQ==",
     "credits_files": "High-Speed007",
     "how_to_play": "Mode Available: Campaign, Zombie and Multiplayer. np-fake-signin required for playing.",
+    "fix_guide" : "1. Open FTP Port 2. Go to ./data/shadowmount/ and open config.ini 3. add this line: mount_read_only=0 4. Restart the console 5. Go to /mnt/shadowmnt/PPSA01628/ and drag and drop the attach ampr_emu.index and replace on the root. 6. Enjoy.",
     "apr_emu": "on",
     "popular": "on",
     "size": "608GB"
