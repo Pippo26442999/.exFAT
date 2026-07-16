@@ -1,5 +1,31 @@
 [
    {
+    "title": "FATAL FURY: City of the Wolves",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/FATAL_FURY_City_of_the_Wolves.jpg",
+    "tags": [
+      "PPSA19359",
+      "v01.009",
+      "JPN",
+      "Standard (9.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib09SUzdyVkJpeEFESjZ0dEN0RGdiSEZKVzJmekk5TlJ1cWJ6TmxRa1VGaERYbGlMejFDZjlYTjBtbExZaDB6MmFJbnVvaDNyIiwicyI6IlR1TEJJbjVxbkRuUFQvY3VBWW9CV1E9PSIsImkiOiJWakpiUnQ5TEJ5RmNQdHptIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWExucFdVWm5wYjRMM3BaNElKaEYxakJ1aTNsM2Vwd0RVYzV0MlUvVDNpTlo1d0VMczdHczJEU0loK3lDcU5yTG45YTUiLCJzIjoiNTRFOWthTGlVK0FGMEMvTHVoY3pDdz09IiwiaSI6InhKQlpGN0lmMktZRFBIZGYifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTUgrRWRhRjBDVm1QRHowT3F3TnhENW9kVzBkYkZoMDNOZjVFVzFiUDFpQzZYOUFSSGRxQ0hXUzdvZkF1UkgwWUZBPT0iLCJzIjoiSHBEb2JWZ1dsME1oUmVOeWszelVaUT09IiwiaSI6IlJOWGZHNDlQZ1BDMEx4Mk0ifQ==",
+    "backport_akia": "",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicWVVVGZYRnZucDJwM0ZmOWJvMVN2U0JQbDNmM0J0T0V2c2JGSXFKaU00QnpzRTU1MEROWXBsem5pY0JDTFJWT2YvVDlxTkd5aU1LZkhSQisrazNxd2hySmEraHVKTmM9IiwiaSI6Ik1UeWRhUVlibzdhVEFXYk8iLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibDBvbjlrVXFkQ1ZhTVA5dnA3WXpYS09xcFhKVlNBeVhEeDZ4ZWRMT2JBNjl0c1V2bnlYaGxXSW5KQzQwdElMQmRnRDZHSFBRenM0VDY0NUNLMlBCQjUydEtTNy8iLCJpIjoidTZoMGNvNVNNcm5Cdjg2NSIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRG9qNENnVzIrbmxGQVV6Uy9nZ1NYY29tYklOM2xaQUtSd1lOU2ttNWRiSHpCZVo0WktYNmhTa0Q3YkI2dDUzRndrNWdUMG04OGdlRXg3dGFUZ2F3UDNDYkVKTjloeG89IiwiaSI6InpSL3FhWW1RdWU3b0ZCT1kiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZXdRSVRzdFh1aEo0Q3QvRGxSdktUWmlycGlMRmNROWVVVVlpS1ZiTW5xTU4xR0pIYUhuOHN4NGxiM2RSL2pPd2pJUjRpMU9SZXlmYkV3KzNwTnhLWXR5WXV6cE42dz09IiwiaSI6Ilg1N3dLbUYvTXBjemUzZnoiLCJuIjoiVmF1bHQifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaUttZmorRnQ5VXhpY0lCY0c5T2xFdmQvSkNORTZQU0g2dnE5c1JWQ3Vmbmp5WmdzbnBRbWY4ZGxldUE2cXBXZURFSlVrY1YrIiwicyI6IkdMMmMxZDVJTnFxMU91MW1PRjJySXc9PSIsImkiOiJqeWFPSFhvb1g0NVJWS1V4In0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN2ZhcnBicTluWmJ3VDF2YUwyOWhaSnc3QkNDSmh4VVJGZXdabEhvdjlnd05MQTRNYitNeDFMZS9ibHJTYnBxUXhBPT0iLCJzIjoiUi9laFdFdjlDaHpXaDY1MGJ5cm1hZz09IiwiaSI6IkxMVC9wQkJRUkNNelNQTUMifQ==",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaE5VbHhaQ09RT29LNWhkekxiTFQzdHJrY1hoNnR0dHBWWFRnbkd5VlRDVVR4bklFV0E5TTNqNGZ3OCtPOW42bDBlcE5qUGRWZW1td1JpZnBJRHUyekdmcFZYZ3pKbms9IiwiaSI6IkkwT3Ftb1BRdXBVUStEbEwiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "SiESPTA",
+    "credits_dlc": "realromhunter",
+    "credits_backport": "DecKerr97",
+    "popular": "on",
+    "size": "61GB"
+  },
+   {
     "title": "Jurassic World Evolution 2 Premium Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Jurassic_World_Evolution_2_Premium_Edition.jpg",
     "tags": [
@@ -5991,25 +6017,6 @@
     "credits_files": "High-Speed007",
     "popular": "on",
     "size": "125GB"
-  },
-  {
-    "title": "FATAL FURY: City of the Wolves",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/FATAL_FURY_City_of_the_Wolves.jpg",
-    "tags": [
-      "PPSA19359",
-      "v01.009",
-      "JPN",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib09SUzdyVkJpeEFESjZ0dEN0RGdiSEZKVzJmekk5TlJ1cWJ6TmxRa1VGaERYbGlMejFDZjlYTjBtbExZaDB6MmFJbnVvaDNyIiwicyI6IlR1TEJJbjVxbkRuUFQvY3VBWW9CV1E9PSIsImkiOiJWakpiUnQ5TEJ5RmNQdHptIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWExucFdVWm5wYjRMM3BaNElKaEYxakJ1aTNsM2Vwd0RVYzV0MlUvVDNpTlo1d0VMczdHczJEU0loK3lDcU5yTG45YTUiLCJzIjoiNTRFOWthTGlVK0FGMEMvTHVoY3pDdz09IiwiaSI6InhKQlpGN0lmMktZRFBIZGYifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTUgrRWRhRjBDVm1QRHowT3F3TnhENW9kVzBkYkZoMDNOZjVFVzFiUDFpQzZYOUFSSGRxQ0hXUzdvZkF1UkgwWUZBPT0iLCJzIjoiSHBEb2JWZ1dsME1oUmVOeWszelVaUT09IiwiaSI6IlJOWGZHNDlQZ1BDMEx4Mk0ifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaUttZmorRnQ5VXhpY0lCY0c5T2xFdmQvSkNORTZQU0g2dnE5c1JWQ3Vmbmp5WmdzbnBRbWY4ZGxldUE2cXBXZURFSlVrY1YrIiwicyI6IkdMMmMxZDVJTnFxMU91MW1PRjJySXc9PSIsImkiOiJqeWFPSFhvb1g0NVJWS1V4In0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN2ZhcnBicTluWmJ3VDF2YUwyOWhaSnc3QkNDSmh4VVJGZXdabEhvdjlnd05MQTRNYitNeDFMZS9ibHJTYnBxUXhBPT0iLCJzIjoiUi9laFdFdjlDaHpXaDY1MGJ5cm1hZz09IiwiaSI6IkxMVC9wQkJRUkNNelNQTUMifQ==",
-    "credits_files": "SiESPTA",
-    "credits_dlc": "realromhunter",
-    "popular": "on",
-    "size": "61GB"
   },
   {
     "title": "The Last of Us Part I",
