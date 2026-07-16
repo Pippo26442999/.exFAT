@@ -1,5 +1,30 @@
 [
    {
+    "title": "Brothers A Tale of Two Sons Remake",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Brothers_A_Tale_of_Two_Sons_Remake.avif",
+    "tags": [
+      "PPSA14501",
+      "v02.000",
+      "USA",
+      "Standard (7.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiczVuMmVuNDkvTWdUY3M4bXh2TWNZcUZSSDB0V21ZdDEwejk2T2I4ZkFhYVBpK0s0SUV4RVVxZXNkeGdRSXRONlB5TG5VSDY2IiwicyI6Im9PL05uR2JXSmh5SXRFUlZqdTdhM3c9PSIsImkiOiJEZGtReUV4OXJGT0FGbXhPIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVWVjb0E3dzVCMkRkcE9oMEVsQ0ErQVhXZE5DOHJVZS82dklXVVc5M3FmWFNXZ3BFcjArRmxnT1VZU2FGRnkraDgxKysiLCJzIjoiMGRhOC9GWnZqaWh2TUdaZE1BYnlNUT09IiwiaSI6IlArUEptNm8reWFwU3plY0EifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY21RaHJiR2Q0cHRjbnBzekZZakkwTE1lRW5xMjlOTURjaDZtR3hsNUR0WmcxbXFpZjR6cFdDWmZoc0YvL2ZCWklnPT0iLCJzIjoiOGViUVUzNU9vdUREMWpRSlV5OU1uQT09IiwiaSI6ImVZTWJvcmpoTVFRdXBEYlYifQ==",
+    "standard_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibGhPTElGbGVIZjNucWpoWmZXTFhVcGhvNUtiMXFIZFpEZWdLeGxMdGF0MU9ZaXNqWmlxZERrZUdDM1dGOFVCeGVFZXkiLCJzIjoia0dodE1BOXRLd0k4ZTkyRnV3RGkrdz09IiwiaSI6Im1oNGg4SGhZMEt6RjdmZXMifQ==",
+    "standard_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieWhzRVMvUm1KL1ZCSFdRSVBwUlpEZGV1dWpWNklHdFE3cVBheUptYzlBZytxcnk0ZXU3a0dXa3NSc3pTK1ZGY2VTVT0iLCJzIjoiNmRVNlhCaGFzclZFYm5OS1lyQlZZZz09IiwiaSI6Ik96dWQ1WmlYclIzMTd1VmoifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibFZ0VittR0tTdnAxTFFBQ2prRXlMUzA2WDlmOHpNUHVYazREeExuZ1E5WU5CdDBiZCtiTUliQ1V5bmdHWEpDT1ZZUjJoTm1rekpNeGxGakVxQ2ZIRVhlOXM3SVA3dm4ycnR3PSIsImkiOiJURE1Mb1JRb0F4Z0QyVFRJIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoid0tRemkyMnAxZ2l5UFN6clc4Y2RrUjE0R0NsVC94QTgxek0zSlhTV3JiWXVyMXlOb3NJMDdhaHVWRkVHYXFOL3JGcFQ0eDdiaU01QVg3ZTlVWkVvUS9CQUR5L1pJSUU9IiwiaSI6IkNLb0ZvMkliRWs3NEx3aGEiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiakhoK3pvaWlEM0NjMzZlTVc4SU16Ynp3dUZrZHY5VEpYdHljVjNNUVN2WUxvaGpMbXg0YzltNUhwc2gwL0cwdlFtdlc2K1IvUDBOVURsSW1udEp3Q0QyTlVzT3IiLCJpIjoiUVdiMUJtTlBBdU05NGJMViIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT0hHTko5RVpBcDVWZHloc28xT0tDUU8vdElzSGlWTit2ZXJjS3RNcURhZTNpWExQOGtxUlJPWFpRWGFGU3lDWU5ESUNzTnoyR3JpSEZMM1dMYy9lUDVkZkUrOWFCdFE9IiwiaSI6IkJJZ1NMd2pDYkZiVXRSeDciLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVzc2eFUzSlFuSDdyNy9xeSt6U29WTjNvbGZHb3c3RVB1WEJqcC82SjFxNkhaVGpXZEhTTVpXbHNybXowRjhyVXd0MWZ5cVgvRVh4MTlzU2M4SzgxcnVkcmlFa2FQdz09IiwiaSI6Inl3a1FCcExtZStrWXpDQW8iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "27GB"
+  },
+   {
     "title": "Gex Trilogy",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Gex_Trilogy.avif",
     "tags": [
@@ -14,7 +39,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVjUzempESk9KRkNDczNCR2xrSm5LYTZWR1MzYTYxRzQ0RTZnWWdxRkZzSCtqMG5BWURPNXlWSzNMMHZwYkwwVTJ3TkR3UUJxdEdRQXFSMGpKWTFhTzZqSUVRUFZsYWs9IiwiaSI6Im1oSFpQU0IxOC9FWnNsR3QiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMmxSdm1DNE5wZmk4M0d5N0U5NHdZaFlxYjBTR0NUaFdpa0hobE9EQjFTNjgrQWF4a1h1eVhPN1pxWUtwVVJNNmVncHlYNHhiSXJ0Y1BlT0ttWVh0MHEyTmRucTJvUT09IiwiaSI6ImcyYlBROTJaOXk2NG53TXoiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "3GB"
   },
       {
@@ -32,7 +57,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieVRXcmRCLzl3WFZSQTMxM1NRaWVRazdjQWQ3UlExZjFRVG9Ha0lPa2xmbHBlN04zMjVCcGpZZ3M3NlE4RHJuQnV3ZmJzeDBuL0cyRk1NZnltNGxMSm9IcGJlVzJMelE9IiwiaSI6ImRWRHVkZzdOTS9kNGZIVXAiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZEtUVk5vUnA4RFRhY3BHeHdQdHUvZEZGcW02TDMzL2VOSGdNbDhqeFB6L3Y2Z2hMNzU4T3UyNEhSVTVoYno1aW14ekZNdXQ2SmFtSUR4NEtpZzJWMnhmY1BheUw5QT09IiwiaSI6ImlnckFlWllUR1JmejdlWFciLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "27GB"
   }, 
    {
@@ -114,7 +139,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVFIyUDdML0oyUWxza2F5RExwQy9BazFiQi80R2lZTENoQWVUeEUzd1lubkU5dlpyc3ZJL1pKb0NzVW9uK25sdVAyeUlGNVNmWi9zRkpSeFczNGllczNHTmhSMHRrSW89IiwiaSI6ImdGM1dvUXI0QWJiYi96R2YiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK0R5dG1JWlF3WHJuM29UVnl4dVlJcnhOdjg5WmtVUmJsNFM1QzkyYlpVQTNoN2JpNVNEQUMyWmo5TDRyVUZ3Y2tpeTZna3B3cmw4YUZjd3VueFFXNGQzZ0NJOUFOQT09IiwiaSI6ImpPaDNteGl1MGdLT3l3TzUiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Lucran & SiESPta",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "8GB"
   },
    {
@@ -151,7 +176,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaTI3c0hCTkFNQ3ZoZUZzQStiYjFmTWVDbzErN2xqOE5YRlRST0lpRFREMmpnTnFoejlmbXczVnhZVXdoSmR6S1hwclVvdmJ3Y3Zxd3FLcUtRaC9FVStiNDdXVGt2MUk9IiwiaSI6ImFIMHJoSEUyY0VUQlozclEiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTXU2UkprOGd3eGMrR2hjc2VZUFk0OGM1UXB0b3gvL3JPRGdETnV6S1UwOWptN0hBR0NCQ3Nxa0x0VlM2L0RRR2RrUDdrTUhCYmJsekswWjNkeHU4UnZqN0Rmb01yZz09IiwiaSI6InhMWXFWejdsOFFqMnJNa0EiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
     "size": "24GB"
@@ -171,7 +196,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNkg4M1FaV204enNNcEdPekZTMDRmYUQrUWwvUVYzRWp2YW9CRmNIOEpBb29pdTdrazJWaExhY0tzalJhMU4zcTFqUnI3bEFmbDViOEJ1K2FFL1J0ZTFHV0hmbWNiKzg9IiwiaSI6IjRVRmo5NzRrN0FXK3JEclAiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL0ZGMHdrUWs0azJQSDB1YnFVNjJLK3VPMVltaG4yM21IZlUrcmZ1czlNY1VLV0Q5Wk5SUG9RQkcwZUZscW9qZFFlMjNVQm1tNjVaL3hQUEFCa3JsZFRpbnh5eHB2Zz09IiwiaSI6IjcxeVNxZUxUTmJvSldPWVgiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "50GB"
   },
    {
@@ -189,7 +214,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicDIrRzVJK055ZFVuaE1HTCtTOFNsOU9sYXVEaU5INVMvY2lUNExPTnpnMWtuNXVObnBLZU5CeEsyTDRQME1RRUpIRzZxK0lrQ0NWS1E4OEY4dWROZ0wwbVRkc3BXY2s9IiwiaSI6ImM1VzVXV2llaklNVE5pWWQiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMWlxY2Zuem1nM05TRmpTZExkdVFWL1BwRlJyNnI5Qis0M2VCVnllZU5sSmthUXpxRVEraU81RzNiQ1h2SU0yWTY4Q3R0c3FES1dSMk81eGNqZlZpTk9JN0M0eXowQT09IiwiaSI6IlJTVThtSktEakVIbG9LdmEiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "25GB"
   },
    {
@@ -230,7 +255,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNE1XVFhLZlBCZG44KzJqcXJJNldOZkRtaEdHdDZlcHBNYVlqbmx4L0pOUGdZRG9DMjJOSkVGeEZKdFk3Zm9vUVU2dFBQbTNITXFwcVMvM0ZDK3NkWjVSWnNjejJJVWM9IiwiaSI6Ijk1TDZGUnZsbnFhTVo4NGMiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS0F0V2lKOGtZT2VDdlZWVHNrcVhCMDlQMEVVbGNVTWt2Y0VFV0FWcXJQamp5c0s2Kzk2M2lZR0RkLzVoQmo1UFJoMjFvckJrelpjK3pZcjVhUno1ZVBPcm54TmRidz09IiwiaSI6IjJqa3JpZkp4NnlZNWhjZHUiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "12GB"
   },
    {
@@ -248,7 +273,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT0thK3JYQlZ4V3V6dVFIWnR5YURyeDQ1d0wrMVBkN1VQc0puemhXSFRoVEM3L2gyWDkzVS93Ylp1ZzB2UWZydVdVZ0ZqSis5MmNsZ2hwK3B0YkF4bDNmTloxRXViRmc9IiwiaSI6Inc2aU5QN3NqQ3R1U056RzciLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQktoT3ZMQUpqUFY5YWprOEJ5bTVtZHZHSmVrYlVqdkRSSE12TmNkOHBvNzRCZHNiaGF4Z1E0UU9MT0tVTytOa2RQWW94NTJodXpMcUZ4QVlBMWRQNWQ4NW9xZEYvQT09IiwiaSI6InIrQW4rWTRhMDZvNkhjVXYiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "14GB"
   },
    {
@@ -266,7 +291,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidHJuQ2FIVzJWWUozR1d6V25pOEpPYmE1QURHaG4xOElGVHFienFMbXdZU1BVS2prVDJtQ0dPc29rSEN2VlQxempPNUcwajBkSG55UTVHQ1FaYS9NWGo5bnVpdkc0N2M9IiwiaSI6IlZNWmlsNEFuQnd4emNON0kiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUlh2b3lDOXg1NEZuRnBmRXQ3bFRIWEl5L2huNHNFNGNza0t5VE5CbHZKZjZyZkRDMlpGRWhrSFZxMzNjd211QWk3TWs1QllGek5yWHhPbU1rUkNtR0NwMk9adXovZz09IiwiaSI6IktEMWdiS1FKaVJTSkRVN00iLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "2GB"
   },
    {
@@ -284,7 +309,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXlyc2dUM3dNSUNDVTk2bmJFSnFUZmo2NzdJNExrUStKd0dmTXRLTGUrNEpxdytEeWp4azhvVnJOT0RSeFlkZUw2QUgzcTRRZmV4MWRtdHMrZjRYL05OcWJxb0hqM1U9IiwiaSI6IktndGlPZU1MR2tkZGNYU0IiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibzRpRGZXZDMrOHAwTzJTNUxuOGxyQVNnOFpzQjN4cUQrZkZPOWRheDJGL2d0SWRKSFlmRFFEeUFackRuU3FLRkF5RG00TmJRKzVmV2lmeFFBWHgwUUxwZXA2akJYdz09IiwiaSI6Ik8xbmJ3QzFOa2J1K1hPczEiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "8GB"
   },
    {
@@ -302,7 +327,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWWd4emtiL0NqYjg4Y1N2QStoUVA4NXZxOXNZSHhuSzJKdWZIVHBtSmhCcDVYbFQyMFVOWmNxUU9DbS9laTdQdHNuNDQ5VWY2ZmVYZjVRRnQ0akRLcEt1a2laK1FHVHM9IiwiaSI6IjhmZElNTjBLRWhOZ0dhUVAiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicXJTRmpINW1qMDJtRENSSTJCQXpmYjY3dE54REgxY0ppT3pEcGxsSzMyb3UwV0IvZ1JET1R6NStGSGZJeVpjRDdyQmVpa1lFU255RlUzRnBWaExaVW0zK01tSnNMUT09IiwiaSI6ImZ5bzF5STBETGZjSjhTNkwiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Lucran & SiESPta",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "15GB"
   },
    {
@@ -384,7 +409,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNXhLd1NrR1JqajhPS2Jham1CUEU1VC9mS0tWbGhseTViYTFIN2FoUkU4dmxhcjc1L3J3a1dQN0taa0ZoT3NIQjNSQnFWOG02ZEZtWVloWUVhSUZoaWRadHBKTE9Rdkk9IiwiaSI6Ikh1b0VUeUNjZ016R3d1amEiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ3NBRm5ZVWh5cUlYUnU0THgwY3ZFS2V6R0ZleU1EU0ZqM29vM1dZeEo0akdSeHBWaDg0Q0p6RzE4ekNwMmxMWTZ0akZEY3lIUTFuVlVxTHVWeHpPaUpXY1kyNWJZQT09IiwiaSI6IlR1bWpmNUJrcER5c0IwYUkiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "31GB"
   },
    {
@@ -424,7 +449,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibXYyanVKaUxRTk1lYmdRSzU3TzhSR0JwK0lIeHhYR1l0ODM2djczNUNBdjg2OExvL093UW4yaE1ZSG5OUEdIZ3R3b01HTUVGaXZxZ3E1ajFiZXU1c0o1MWhCdGFxRWs9IiwiaSI6IjBkRnl1Z3RCQXNtaFhieXQiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYU5JVWdIcFZiSTJudHFrNXBMNVkrOHRpSW5HTmQ2a0svZE9VZktuWjg2MloyemJ4bXhDOXgyKytsUmNpMFQ2WkZxS0VBWHdlUGRNV1U4TEYrOHVyTUZHTTlFdzhSUT09IiwiaSI6InovR3ZPTzJzZExkVWJHTVIiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "50GB"
   },
    {
@@ -442,7 +467,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVkg2VFZMSk05c1AxR1IzQjRSaWdwbVRqQ2NIVVFtRlRDaW4xaUpsRS9oYmE2U1RLcTl3SnlGeXNyTWt3NStwSUZ5NzBDZnoyQkl2SHprOFEwZEhJRndkdDVWelBHbHc9IiwiaSI6IjkreStrTUdBdldDMzR1d3QiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicFVtenlNSDF0b0JacHNOZzVNbmpNa2VVMVY0dkI2Wk1UZit0b3RuZE9zamxWVHZYZVNuTUdncU95QzlWL1c1cEdNaWh4QlJPbFVWbEl3Vng0QUIxbGoycUgvZVI4Zz09IiwiaSI6ImtRR3pBNjBLbzZoWGNQaUEiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Uchiha Dare Nial & High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "1GB"
   },
    {
@@ -460,7 +485,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSWQ3NHVyMlZQUUE5T0YxQVFxSVhPU241bG5xSDNWUDNFL0xESkJxWGExV2RkUGdzamlYNzByaE56YmZiYzhlRmtFUWdzNGdFdU5td0RHaWcyWkFRSGNENlpYZ01jQU09IiwiaSI6IkZHU3lmcGlJSlJkYmxRK2IiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYkp2d0ZYRXg4eVlGL1NPUlFUTHBVelBFajdnQk0ySDloMnUrY1VNdHNxVGZrUGFmc3dZSUhGTUlZeTRTTXpzMmcvdmdjM3gvYWN2OStxeW9qYWErSndPWXU1QVBvdz09IiwiaSI6Im0vVUJYaGpYam9wVFdjd20iLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Uchiha Dare Nial & High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "2GB"
   },
    {
@@ -478,7 +503,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ2xOTlBaYXZXYlBRYmRDOE5PNDREV3NwK2llYUxDUE9uMkhPSjFYQmFPdm9mNWV1L3RDR3kxVGFpOUttTy9pcE9PM2JrWnFsOTF5b05uZlFub1N3d1ZXK1lmd0x2YjQ9IiwiaSI6ImRkVndNdmg2R2pvb1MvUFEiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ21KNTdKek5rMlcwV0VVVHRXZlJVVVZMSTFtL1pJeHhwY3FYOXArRkZ5bGtGcXNWMDNBdVBFK25QcDBlMUFQbHllS01FKy9KVmRwcEdQVi9sckdFMzR2RGdDd0xQdz09IiwiaSI6ImxxUEYzMGQ0ck9OZGI0UngiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Uchiha Dare Nial & High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "952MB"
   },
    {
@@ -533,7 +558,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiejZsVllBU1RlMngvL3VzbnhmTEhtR0VUYVEzRDZyaGlWdDhPMm13cE10VjgzZlh0WXlRaTE2RDdsUi8wa3Y2Sjlrd3hLdGQ0dFFlMTlLM05TV3plZlVlTkhtd1dYR3c9IiwiaSI6IkJhMnAxdEJkZk5ra3ppV1QiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV1QzTCt5QjBKMWlQU2FKSlpWYUE2ckRCaUJ4T05Nb3IrRVlQSmZnWnNJek95bHJEaEl1UmpLRmpNWXF1Z09PaU5QYktkTkpMaXhMODB0THNBT28zUUd2M1pOano1dz09IiwiaSI6InZyUzVFYU14VWtxdXVaQXQiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007 & UchihaDareNial",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "2GB"
   },
    {
@@ -551,7 +576,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidEpNaTdXamxFbkViWTdYb0tEekEwc2YzRVFBNWk3V1VpNUFpVlZiV25uRlVuNDc5blk2d2I3SGZQZ0RBZlZPTis1YUN5U3hrRkRuVXEwZ2xIbFBiNm1Qbmg4dXZLSjg9IiwiaSI6IjNyWWxkNG1Yci9ueW5tSVMiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUktiUVVhSGluZzVRSTVxS2lVR2hiaytnVnFlQ3BCN0RvMUp6S083c2JVNmdNN05ESS9WVE5YMDkyRXo0NnhmZXp0Nno1eC9GSy9pWEkyMjBPZGlPa2V4ek9aRkpyZz09IiwiaSI6IkcvTENCT1UxejlkcW8xaksiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "2GB"
   },
    {
@@ -569,7 +594,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMm55dmlVVGN1MjIvSDBvWUlRRk5EOGdtNHY3YU9kRkdTK25zbDc1SUdBbS95c0l1TlJ1YXlnYkZhQ3RBWkVZTmI2R0xab2txQU5HeE1ya2VUR08zU3dZSStzVUdYWnc9IiwiaSI6Ii9ML2ZYVHU5bkR3aHNDemgiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVlZnZ2FKb3hOcDN5MkpuMEdsMjhiVUFUR2JWWjJzZHhuNkVwT1NUemZ2MkZwVEp1a3N4RXlLVDAyQjYxNVJqd2xWenE2WFJ1bTAwODdmcUlwVGpmYkVETElDcEgwQT09IiwiaSI6IlhiQ0R1T0UyQmg2cnhhK3AiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX & SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "6GB"
   },
    {
@@ -587,7 +612,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic05VQmRrZEJwcjZtMm9keW9Jb0xFV1YzY0hXaXZIc3NTZWZaQXJHR29UT2RFL2lQYUg5WU1LekNiOElNdG1FY2tXenNoOWg2T21IejRlZ2F1eWNXUExDV3dGU0VoakE9IiwiaSI6InoxQmtTdG1PK3FKZ0dVbXMiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicllRVndtcG1XaE9QMHdSREVYMEZEcE5XZmtQbWowbzBybkxaN0dGTzZVZ0xGb0xZNnV5Rm9yYS80cUIydHFWSFNtVGVnMnM3R2gxSGF6Tjl4NnhheUN5ZmxrdnVwZz09IiwiaSI6IkUxTEdrRXVWcG0vd3I2TloiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "8GB"
   },
    {
@@ -768,7 +793,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSVlJL054ZGIxTS9mNFRWVFZiYmNzNlR0NmNHS0NiNnlpdUpBc21TNUk4bXhHSXdGeUp1dDg0elpITU81S3E2UnRJU0hnT2UwVlZSaFhPK01yRE9ObGMrTnlueWp4NG89IiwiaSI6Ii9DZy9XNmNDVlBUVTJ3RU0iLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMG9tN1dIdzM5cDlZQUZxNXcwSFNkRDVVeFRVVHZpWSt4REhTYVJJdTNhUU9LZTVCRDJUMDBDZ3ROWG9XQk1ncmg0RXFQNWlBM1MwRXg1QndVTEZrS2FZd2FSbFY1Zz09IiwiaSI6IjFhS0g4MU5oK3czRjlWVjUiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX & SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "115GB"
   },
@@ -787,7 +812,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia0ZmdXRnWjZST1FuR01tdm8zRWU4NzdqaXdiQTZJbFI0TUhWWFU0QnhFaU16SUxoV0VWbnZ0a0NZYWNza1d3dytkSFMwRDlMT01KYnZjSmtSWVZ1QjRMcG1NdSsvZ1k9IiwiaSI6ImVnL0hBa0Z4aFJWQU4zN3kiLCJuIjoiRmlsZUsifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiditSclQzSVZBSXhJdFpnenQ4RmRsZlhaNiszVEw5NnV0WTg5bWJtL21JSjcvQzNSZXBJRklBNHZrdks2STNnQkFXQ3NWU3hGc0NMVjRPU094Y0V3dXE3d2QvamRwdz09IiwiaSI6IlVkRDVqSVlDYTlJOU5zdnUiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
     "size": "154GB"
@@ -808,7 +833,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSEE2U0RMOFBXZ0x1c2w1Q1F2UWVOTjJOTFVtZnNhSjFqdmJ5Y2VjeVhVVWI3SzNJZldHTnVqc0J0RlE0cGFOV0JzN1haQnZEQldDK0kzM3ZnWHdBQ3VBUm5KTVltM009IiwiaSI6Ik1WYzBJMlp4K1pWdmZBMkMiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicHdhR1B5Y1NFdTdTd1cxaUM1QUZNMzZxOUZBR1JqRUFIeHViaFFQV25RR0N5L2Z1dFhwRXh2cEhtMXliT1lCWUJNVU03OG85ZFRnYnByRTE4SXQxdERhSUR2QXFIZz09IiwiaSI6IndVTUw1MVdGS0RBSE1XSi8iLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "Pippo",
     "how_to_play": "Fix the problems discovered after the prologue that does not let you advance. Also included an optional 60FPS patch for PS5 Pros. Wanderer Set is Unlocked in this release.",
     "popular": "on",
@@ -829,7 +854,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaEtmWThuM3RkbkFJZXJYaUFlbVdteWIwRkhBbkp2S1hhdWMzb0xIeEI3bmFIRWU1MUxmcmlTS1g1RmdrVFlvUXovMDRZU2loV1RHa1ZGMUd3Slo4ZkM4UDN6ckNYMUU9IiwiaSI6InhJT202c2dNa2ZvTDVIT3UiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaWRwZHFBSHV2TWFOZk5yYkl0RVFSRUNvRjRyR25kY05zZVJzYlptK085R1BzS3N5RVlrSWNkbVJhaVJNUnFBLzExT25BNXdSeVZXTjdUelVrYitzeGJPL0JMd0pidz09IiwiaSI6Im03UnBDUDR3eUVqMDdaTEgiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "209GB"
   },
@@ -851,7 +876,7 @@
     "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiei9mRGthaTFlSGRHWVZKQzRMYW9pTUNVVTNudEtkTzhxRGZDZlovYzRqYmpocDdmbkJidndqWU5wbStMaUJQOEdFZWptd3RFajdHUWZuMFZZYnBzdXpxdkZyZlZVeXc9IiwiaSI6InpvanNNdzc5NnRacEx2dGIiLCJuIjoiRmlsZUsifQ==",
     "credits_files": "High-Speed007",
     "credits_dlc": "Psykzhack",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "92GB"
   },
@@ -909,7 +934,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSnJGVEdRZjhCQU9iWHAwTzczVWR1N2FqTW5MUElKWEx2V3RNMEVvaXNHUVhpN3RxYmN0Wkx5NnNDbk9VQmhJd1FxVGtWUGRVWEwyc0RIT3UrTlJxVm5FR1RNWWRwdG89IiwiaSI6ImlqRTZlWERvQUNWVnd2U2YiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRG5mcVZnRGdEZGc5WFlKL2YrZThYRWlERkpoMVp2aHlLVEd0eTlETjlnTmJxMWRrNkxMb0o0bnJzQUlKb3ZvbTQ5NDVmYTFuTE1iamtxYmVFeHZCK0xvdTVHOGNCdz09IiwiaSI6InBRb1Y2bGhBekViOE92SWYiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "2GB"
   },
    {
@@ -944,7 +969,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVHFCWjhnajFFM2hjajN3anoxaGRsNXppdXZqYUFqQ0VYY0NMdnVKY3JsYUlNcHNmQytPRDRtMWR3R04vYUkyWDRoV1JuNVdrNE5uaWllUnhaMFd4eDJic29ibW9udEk9IiwiaSI6IjBmQ1FtcnhTNTFpL1ZMakYiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWVNxaHpjTlk4ZWx5WmU5dWlWZ1c3bk1FZkxtTDFWU1dQTTlJK1N3UDVFUy9nNFRHd1FVRk9PRk4ycTAzVFEvQkh6RVpvWEhkT3lJcXg0ZGZrckdwdUU1b0toRWZJZz09IiwiaSI6InJxNXN3bG04dkdVd1VZdSsiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "107GB"
   },
@@ -963,7 +988,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZi9PZGMvdmpGWlpnaERqMkFNT3czd0ZJR1dhQURidFRvbW5sR21VVWJGOGJsdEVrbmJmaFNvZjJHR0NXbzdZOFN4eWFNSHV0ckJ3U2VHSHZLM29DRVBwdXRtTDFibFE9IiwiaSI6Ii9mM2hvWGJacGtQbU1tdWgiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRzNGMG1iNmFJU3hWUk1TekhhbE1ESXE4QmVMeWRqaGxsb3JDWlBHeHIvT2pYdnF5bVZkZHVHaklSU3JlRGtIbmVCWmUwRGYzMGR2R3owcWs2aEhnTXQ3NjU1alNpUT09IiwiaSI6InlydUZvRHVKb3pESFRxNW8iLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "28GB"
   },
@@ -1002,7 +1027,7 @@
     "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidWhIaytDK3luaHZoMHV0V2FiS3c4TzMzWnZmU2VXLzJ1bG9uemtQdWlheW4xRFBnUFpnZ2VPMDI2bjVmcEl6eG5zd2xyQlQramVpTVRnTFVUem8zemxDNUpJbWsiLCJpIjoiRERQcmpCRHUvdVZBdEdmWSIsIm4iOiJEYXRhIn0=",
     "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaVJYd0gzb3E2dnpHVTh5MjVnMEhvUWU3TWViL3NsUUkyT0RLdFJYQVVkRUpXQTRLdGI4YTRHeDl5ZGlhYzdoZjhQc09oNHpkeEtaUWt5RUpsWTJPdEY5eVpxaEEzMTg9IiwiaSI6InQxUStSNVN4Y2hCMW1rNDIiLCJuIjoiRmlsZUsifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "35GB"
   },
    {
@@ -1022,7 +1047,7 @@
     "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMkZTcXhsRWl5R0huZXVxR0NlOGxYY3pPbFZhaVNPeWJRZjFtT1hQREk1TFJLRGhjN2ZWS1VGVzBaUGVTKzllMlcxYUxQTXJON2NpZHhLUVdLS3kvL3MzbDVXclB1T3c9IiwiaSI6Im9qclpNcnRDUGw0MWIreHQiLCJuIjoiRmlsZUsifQ==",
     "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYjhITXhEeS9qNkpZQ3psRW9TSTZkR1gyWUJvNzdVVm4vNVBaZlhwdE11QUpaUzAwUlZyeWlqaURoWW9NUGNyaXVTZGp5T29iNHNscDhSMXFBQ0NRSzlrdmE0QWp1UT09IiwiaSI6ImU4QzRNSkszNWdiQnRvanYiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA & YenGr3sS",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "111GB"
   },
@@ -1103,7 +1128,7 @@
     "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVXVURGpydURITkxmYjJvSEhpbHRSQ0NiUDJsTjhjWDVJd0ZGdGVqOGNPaEk0bUoxZFhkWHNkVlI5cnJxOFFuZUZLYW5aZE93aGVWcGNWWUZjUmJ5Z29uSDdwdnciLCJpIjoiVkZSM1BVM2sxWTRCd2dOeiIsIm4iOiJEYXRhIn0=",
     "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRlpkNE9UL2l3WUsxcFFVTkg2Sy9QM1JmbVdyQS8reElDWjF2WDdpOU4zSHE1NW5IQVQ5SFlkT1h6NjBRZW8wbFdGNnBWMUNBaVZTbmhsOWJYWHgxSXM3NnJpMFRuU0U9IiwiaSI6InVFZkY3VGtYL0FJZHVZTU8iLCJuIjoiRmlsZUsifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "Pkykzhack",
     "popular": "on",
     "size": "75GB"
@@ -1123,7 +1148,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUmNuc3FUbHZId0VLRkE5OEJ5QUFVRlFtcFpIMFFOSHQ3QU5IMkpockhleDJiVm1GTU9QZUhyd0o2YXM3RDV3KzhsR3NTamdNWTR0WEJZU1dwS3hsZmpMSHVWcENJZjQ9IiwiaSI6Im9KSGFqK3JkV0NSTS9pVWoiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNWJ2TEFEODZPeEhvdUlMcW1SaUYyRmRiY3JYQkxKS3JSRkpsRUdjb0hud1RmNEFRV2JLc1NBMHBkd2ZzNFFydFF3SWJyQjNhRVdCL013ZEQ2amdBWHpkM09ObDRFZz09IiwiaSI6IjBmbEF3alFNVnZQRGdwcGkiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "711MB"
   },
@@ -1145,7 +1170,7 @@
     "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV21SRFUwaVpyNGJwZ3J5VjQ3N29tN2NjMTluSEt5cWExYnlOOXlVczlwbE1MYkdDTkswVWQ0b3BnMkhhZi9jbDMraGtWeUNGbU0xc0Vid0kzL3BzQWJJdUJjSVU3YTA9IiwiaSI6IjNoMXYxYlErZlRSK2ZLNmQiLCJuIjoiRmlsZUsifQ==",
     "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUJLaFQ1ZzAzaS8zN0pXM0R0S1g1UEJZS3VCdHFzeFgxcnAxQ2d3enUxbVFiWUVOZ2JKSlBGZGhsZ0x3RmlObDRIMGh6MVdONDlkNUlpNkkwMkdReXZJNmE5ajcwQT09IiwiaSI6IlQyd3Y3eGkvUUhISW1LSW8iLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "207MB"
   },
    {
@@ -1170,7 +1195,7 @@
     "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZlJ1UFhONEdrUWJBMHRVc3JRZEJuSjZjUjRqK3ViSm1RQlViNHhmdG5FVHA1dExFU3V0ZzBkMWlLV012aDlqZDdIYitrYzhhMEx0djRBTkk4d3N3ZVI4MlNNS3NIUT09IiwiaSI6IkZnT0Y2SzQyV0NTSmZJNG0iLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
     "credits_dlc": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
     "size": "24GB"
@@ -1190,7 +1215,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicjU1S1pWS0xyT0VRQXlzL28xSGxoQXh0U1dEZWJOUWZZS21PMU9TNE5Wdm1IYWZ4REJlYllQeDhOSDR2aDFzcEVscjZLelNOWlVDS3VzMHZFWWkyUDRkdUtxVUprNWM9IiwiaSI6InNrcCtBancxZ2l5cElxSlQiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNXpFcDJHd2NwNkY5M2o0VEI4NGo0TnMwNHF5bFRoYTRmWG42QXk0bjU2UTE4STdQNWRWYXFXZjl3Lzd4Vlgzd2FiL1JxV0tYbjh2RitpRVdoZ0J4SG10eDNxS2c3dz09IiwiaSI6IkVsQnh0TmFHZnFrOTVTVDYiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "3GB"
   },
@@ -1305,7 +1330,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNmZOTDRlN0lPY0pwZzMrbm1WSXlQRDQ0dEFvNkxVZEZvdHVTRHc0eHdnZUJGNDNCM3ZsaDF5UmFMSFRyWjR6bFRiSS9SdHFDQ0tVTjhJYkFNWHNLcFlyTW9nb0FBQ2c9IiwiaSI6Ilc3Z0tSbVkwRjRvMHNVU2UiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic2ZHejlaSDdXd3RBZEJuZEMyeTN6VDUvSUFyUkM5YTJxaTlyZ3duV2N0NERnTFoxN2Q3QmI3ZnVTeXpJQy9ZdTJpRzRGdldRRW9QUkxlQlRrRkJBZi9uRlhZRjltUT09IiwiaSI6InBsVzF1RnBEMjZrK2tiWDIiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "1GB"
   },
@@ -1342,7 +1367,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTWJqcXVmTGZLditSb1djYzZOZmVFRTh5UHk5Q0toNjJLUTdMVmpDZnZES0M4dGwxOWhRYjFaSk4vWXh5VGRPQ2JkRkNvQ1BJc0pBRHYrRW5lMmh3Skl5WkgzeUI0MFk9IiwiaSI6IkFwNVhNbjRIY2F1N2RuTXUiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMllOQUhSTFlRcjRrSDA0L25WMTRQdWxBeDRUZWo2eVcwSHVUTGVGeEFBeWZtaTNKZjYyS3I4WmMrcCtNMDM0SzFJZVpjTjFDMXYycEhjMHVySDJ1MitNT2tWK2R4Zz09IiwiaSI6ImZ0ZEtxK2NjV3NRdTFwbXIiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "1GB"
   },
@@ -1361,7 +1386,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRERyUTIvUU91eDNoQ0V2SUdVeGhQenNFWCt3eExiMytITkpPTkFnRVhwcnlNZlMwdDlGVVRxYXowTksxVU1PNVhpTHVUYzRyVmhXTklyaXpnUWloeGpwc0dRc2lJTG89IiwiaSI6IjJTMEJzQTd3Ui9RZ3p1U3giLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYjhsRU1kVktyTWcwN1pXY3FLYnRaeVdSZUd5Mmd2VVJuaU1qTWRTZit5UzllVm1wS1B2QmJZWUxKOVI5OGVSdXFwVzFsajViYThBTEdjTlJCZXhGSXRhR1hDZkFJZz09IiwiaSI6ImVKbEdNTTEzcTFsSk95OSsiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX & VanBuuren",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "5GB"
   },
    {
@@ -1379,7 +1404,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQVJVSjllam8zOWRzSGFTNFVnWllFRHlVdUwvWWlBWXVhSlg2TzU5blZ4NVNISzlIYzhTRy82Q1dzNEhqNHRkMi9TU00wd1BnbFV2NXlRQkloVWNrWDBsTEVoVis2VmM9IiwiaSI6ImZSc3ZOaE4zVnl0ckNVNXYiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWndpK3BaMjFJd3Z0cmpBOXFvelREM1lOdnFtZnkwdnZPT0lNVW9Ua0FiOUZwWXkxeGozWjNrMGFQOVpiaWdJUGZvQ2QwODd6WlpUbkhlZG5mRG1HSy96NFpGUldpUT09IiwiaSI6Im1jbmQyQzV1UncwN2VtY28iLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "26GB"
   },
@@ -1403,7 +1428,7 @@
     "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieFJ6RVhpVS9obGttaEVmbHI3dklvNUR0R2xaQ0gzcjJoeFRGQ1k0Z2M2bEFOZzEyVUZ6dzFXZGlHLzVuZGRhVkNWTy9pV3Vsb1cvY0s3VkRDTmZyUXN5d2ZnY0RpTnc9IiwiaSI6IlNIdHlpbC9FV3l6N2s3bEwiLCJuIjoiRmlsZUsifQ==",
     "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRWRKOW1kVWlWNUY5Z1c3akoyeUFPYWFOamhrSmpLUHRkUjhzSXBubXZEdFFlS0pRM0xyeEdPRFlaL2ZwVkNGaVBFcTE4Q0ZvSXk4TkNrMmJCa1A2T3FXZ0tXRkpIZz09IiwiaSI6IkNiSzJEZTNjRmdVTk01MjUiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "9GB"
   },
@@ -1484,7 +1509,7 @@
     "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMExkM1d1anlidDhDOElEd053SDlVdUpZSm9mZkFtSW5jbHZWTFdKWWlJL3RrTlFCMTk2eHU3Z0JCM09NMHN5QWFwRkxGZmMxYkdrZkZWaXl5RzlDUUVsdW1SNThYT1k9IiwiaSI6IlFpaCt6cjAzUWlVcDcwMHkiLCJuIjoiRmlsZUsifQ==",
     "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS0lTV0t5WDlSVGVaVnlIUFRQbk8rZkkyUEpiZzBUbjhPOTZDMzJOMzRwZEg4aFNGaENnOHhKZFVUQWgxZVBOK2YyYTVVQTZNVXpwL0xzVTEvaStxQmFRd3NnL2JSZz09IiwiaSI6InV2K3ZBZGJjTDhtYUM5UTEiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
     "size": "34GB"
@@ -1504,7 +1529,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOFhJQlQwdVQwanZsTDlPNHhDTm94UnAveWdLZnBGMmRieExXNTlmUVExU3Ivam96ZURLVW4xUm1WSk5qdE5XQlpCZGxPSDRkbmQ5RnVaci9CcVZUcFNuWWJhdUdUejg9IiwiaSI6IkNzWTYvRGNVcWR0bDVEc0giLCJuIjoiRmlsZUsifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNzlaZjZKaHAvUFpEZW0yUnNrQW5HQzhVMWE1MFhxVjlPSjVOMEwySjBlM0xBSVVWRjZGQTVYQ3ZYTTRTdnk5VFJWTVh0dDVuOXpoV1Z0UWFjUEk2UHU0WkhjMkxXQT09IiwiaSI6ImswQ3FycVZaalRhNE1CUHIiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "67GB"
   },
@@ -1544,7 +1569,7 @@
     "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaVIrTG9vNTJrcW8xK2tFbnlzVkNvc2Jpdm8za0kzL2FLZWdOUGp2MUpWTXk5czkwYVNDS24rMHZwb2FrNHIycmZFK0UvZ2lKOGYyaW5rakx4U3lXRUJRei8rQXJwNjA9IiwiaSI6IkpyVmRic1lZZUt5Q01JVFciLCJuIjoiRmlsZUsifQ==",
     "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMWFzUFlDamZkaS9vR2hzT2tjbThRL1ZUdFZuY2pYWmo4NkhRYWcxei83RnBvbGsrc2ExUXlJQmFEcUlwb3RSbGF2YWVzUFBMcE02SkFGbkZrcWh3Mkx1VFJNSWN3Zz09IiwiaSI6IjVmckRPQU1mUTRseUJ1ZFciLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "6GB"
   },
    {
@@ -1562,7 +1587,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaEQwdnl5Yms5NXRNZDRJdnZ1RnZZd2pzcWVFeFV4bE5yUnRsWnU3MHFCN2xMMEtXSHVDS1F3VndxdE8rTjZ2NzFUTVNsZ0p1YXloTDRhb0tXcWEwdEE1Wi8vMk1KbnM9IiwiaSI6ImxDejNTbzVEQll3dFFoVmQiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib2hyMkEyVEFRSm04VFM1Z3FpV2VZMlJQZ29GaGZucWZPVU0yOW5aNms4c2Vaei8vaEpyVXJramFBQ1dNblZRS1VkQjcwUVlOUkR5U3dTRE9zY0VkclUvRys2cUk1Zz09IiwiaSI6IkRUM1ZXUFNpd3FJenozNTciLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX & VanBuuren",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "20GB"
   },
    {
@@ -1580,7 +1605,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS2VZRHlVOW9CbW4vbGxHai9kVDVHZG5KampoajlZVVdhL3VSNDA5MUZ4ay9BTEExaVVlMTI0VTdUemY0V21BRldhODJSc1BHc1djVjY1UEdMenNZMkpyQWcrdlRqaXM9IiwiaSI6ImpCU3NzZDdZSjhHZ3V0ZnIiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNzBMZ28yOHE1dEZMd01JbExsbFptaUkrMmV5L09SNkd0TnNPTi9wejNHZFpJZDdTYklrUHYxVHB6Vk4vaVZsd243d0lUdUl3SEt3ai90QzZjWnE3MGFlN1RKRVdzUT09IiwiaSI6Iko0eTJaeE9RTXdEcGw0S3YiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "3GB"
   },
@@ -1599,7 +1624,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidkRQV1JZN01TenhaNDdEOU9JdzIzTm9rNGQ4OU4vS0h5ZW1veVlxMzZpZll6NGlLc2hDcndzbjU2UWxCTUxuc0F0WmpKZnJpSjZxZkpEL3AyMGg0VjZZd0NKbDBLdm89IiwiaSI6IkZTK0dzSEVBL0Y0R2FKZjQiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMW80eGVJK1h6OXphMGZnV1NMdzh1d1Y2c0VlNCtUR3hXcGRzMEc1S0YxWkhOc0lGVnVEbUNSQUlVazlGRllwelV0djdxUjJxblBmNmlkV1RMeDFTZE1TRnFGRmdsdz09IiwiaSI6IkNYKzVpQmZBUm9RS0E5aFUiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "1GB"
   },
@@ -1620,7 +1645,7 @@
     "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaHI1RXNUbE5jOFJTU2R3a0pPSUNWZ29VemtEemFmSUd4OHArcUxuK3c2QlNoVlpSOFVLTmI0dnVBVllKQ1ZkN0dKbVlKdVpiRmFLdXZKNWVHc0ZDdmNTS0ViUUgiLCJpIjoiMVBoZm5LZFB3cDlSVElQSSIsIm4iOiJEYXRhIn0=",
     "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOU80SURVbElpNER1dktKUGQyNE1rVi9yOXhHRFlQUzlzWFlYTEtkeXh6bDM1OTRRT3pYMEp6SUJqcVhCbmNVeGdBZm9DdDBlMHBLQ3NvaUl2cWxJV3RXUWZqc05vTDg9IiwiaSI6IlBuN2taU1d2UzZISnRnTHAiLCJuIjoiRmlsZUsifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "realromhunter",
     "apr_emu": "on",
     "popular": "on",
@@ -1648,7 +1673,7 @@
     "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibldDeG1vZm1VMWNsdk10SDIwd0kxWHk1cmFYdzlnVXczTmF5b3ZxekZsOWlqcmFPL3IzYlhIQUZRR3hCNFg1MUdOZmJmTWpuYlIxZGRFUDNqNWEzSlI1K1VCNEVnZz09IiwiaSI6IkVwR3I3T09hd0FDK29ncDIiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
     "credits_dlc": "Pippo",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "how_to_play": "Need Trophy Unlocker (if use etaHEN - Check the FAQ) or kstuff lite 1.07+ for avoid the loading infinite.",
     "apr_emu": "on",
     "popular": "on",
@@ -1686,7 +1711,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMzZ3aG40RDNXdlFlT0gxV2FEUTBtQ0s0SGowMTJVR2pEYWVaZ0lxMjRsZ2JJeHRmdXZGVFp3Nk9sQ245aGl5cVVIdFpoaVdDUGdDWXd5MnZrMEJHR3hyc3U2NEV0Mmc9IiwiaSI6ImpmTWd4b3BnSzJ3alpXQmoiLCJuIjoiRmlsZUsifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZHNJd1FoYWxQdVpTck9Cc1FVNURYZkhVSWJFUGpMdmlXTU4vODlkWnljRzNxOFFVSEs3NUVRS1dXenMxRldiTWJhWXExM1lhVk1HT0J3VFJLdXI1QWxVZ2F0SlQ2UT09IiwiaSI6IktYZnJQVWl0NVVUWTBpNnAiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Boredslappy & SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "5GB"
   },
    {
@@ -1704,7 +1729,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYklCUVJ0SDlranlQMXp1b2RjVXYzSi9XRnQ4REpjZVQvcnRtVVFOZFdVK1F3cjJVNk1Pc1E3R3JiMDFDZWFJOGFhenZTUnNVTkN5akI0RlltVWJMTjh3cldDUEVBMk09IiwiaSI6InVGYzhBbytuY28yREpvczUiLCJuIjoiRmlsZUsifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVUFYYVU0bG9ZZGM4Ujh6WWx4cXc0RHd6dEhzYmpTR2N4RzN0bU9CTU14NmhWYldnZS9Ob0ZOelUybXJiSDJYNmRIbmlLRVNpbkk2bm5QTTcvSXZoVi9zZ0VYU2lEdz09IiwiaSI6IkpaMlR4aTRoM2dSSUFiZTQiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Boredslappy & SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "4GB"
   },
    {
@@ -1722,7 +1747,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib1RDKytlRUM2K1h5RlNQN09tTUI4Z0xUeDIwbDZvNDVTa1oycjM0eVVjVUV5T3NOejhiL2U5USsrMWVMRHBreHFUM0FBNnRCcGgxcDRhc1ZVUWZVMTkyU0NCL0lRY2s9IiwiaSI6ImM2WG5hd1lGRndkTzBBOG8iLCJuIjoiRmlsZUsifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3VFL1hGRCs2NFhoWVF4UDIya2xUZjd1ZGMxN05nTVVMZTZacENNS0ZYaEd1TWxUOFNpdFhEaVRydHN6Y2pUTHo2M0NHWkVpRlpyM3l6K01WVGIrdVVrMEZXUDhKUT09IiwiaSI6InA0MXNBU1NzQktQcmJYQ3UiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX & SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "how_to_play": "kstuff can be paused after 120sec or the game will crash. Game can take sometime for loading depending on your SSD/NVMe.",
     "size": "26GB"
   },
@@ -1742,7 +1767,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUC9jakxvRnVVQzF6bGpEUEFNcmkxMitVUk9qdCtkZjZwRHhZcUdlZXY0bUl5T2pBQXRDMXZ1LzVHVCtUbmdidXErWXVCSXJQUkRLWndKNDF6MkxadWVmZlhCWVFDR0U9IiwiaSI6IlQ2RVQ4UXFhdSsyS2h6aDQiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaU4wWjRpZThzSW9wWnhYajR0UWdnd29PVVAraDZDTisvL0RqVFVUL2FnUGFpNW52aXF4M1g1cGM3SldoZU9IVkJ2NWxOYURFakFQVk03MkhlVC8rc1lSYlQ3emZZUT09IiwiaSI6InBza3pueXd1dnRIVWRZZzIiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "Pkykzhack",
     "size": "17GB"
   },
@@ -1779,7 +1804,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQXJ4VVZWbnpmNkVWNUVRUUhOaTM3clA0ME9QR3pPUmRCK2FwMHpGMkdCaVNhZmlPY2dnc054b3FmNEhQV3pTSkhoT1ZQbHZJZ0dLbXg0d2dUS2hnMi9OZ0UyYVhPL2s9IiwiaSI6ImF0cDJVSkxoeXdwUzhVNlciLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZkxjRG4xNXRjaEtkbmJ6eHl1VFlMSXpyZXZmZHFXd3A0eSs1VHplU2VCdDJmTk9wOFBxUDVQejNjVUlodjl6TEVEalFTNkdzSzdyTm9uWGVyV1lKVEVaazRKbG1aQT09IiwiaSI6IlhicHQrL3RjUjhvTUMzcmciLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "1GB"
   },
    {
@@ -1938,7 +1963,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV0tTd0ptL3pqU25yWHVzRmZiN21NRlcvU0FCblNtaE56Smw4M3U0Z0hxR3pWUUI3MEZYRUNWMm5hRSttNnBaZGR4ZG5pUURwV3JIL3hLTmlJbzg3d3Vucm9tcmFlUlE9IiwiaSI6IkN5T2lDbDJ4Y1RTUU1WNDIiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib0VrbkhtTU0xbVFIU05ZRzh1OGdadG1UcFdOYVdXTEhVWnFHeWpNbVJPSnpiNElRYzc2TFNwcUpEM1NKL0pENXpqTTV1ZWNEbVNmanllVERkVkFvSzcyZ2lWTHY4QT09IiwiaSI6IkVCcmZlODhpN0xtbys4N3kiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "UNLiMiTED",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
     "size": "168GB"
@@ -2052,7 +2077,7 @@
     "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWHltQmtSNjcySTkvdDV0Ulo5MmR0QkhUY3V0ZHU5eVRoQ256L2xVTFFXSDk2M1M4eUZlR3N3UHNTNGNNY3F0ZG94bzRYeGFaTDF3RDVING43NGhYRExQY0txckpsdz09IiwiaSI6IjBITmhQSTN3MEpCOU50TjciLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DUPLEX",
     "credits_dlc": "DUPLEX",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "20GB"
   },
@@ -2072,7 +2097,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOFFOL3ViSmM2UVVrK1JwTmtNRTI0TTRZbVhxeHdSeHdHY1ZFS2NzSXg1cEtUSVp0SGdtMm83K1JaU0FNalBLZnFYaGdVUUs5MW1zYzlkUDdyR0ZjNEg0WU9POGh3VDg9IiwiaSI6InQwUlNieHFFY3FSSDNhME0iLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiakNXcUhaSWV0SThHd3MvcC83Q0E2OWZ1bzZtbVhNUmtHb2gybnFHeSthdzJOSTVnMlNCNTFBeFVhR0dBVFp4K0J4WFdHSkdxTlZURDErcm5nZTAwYWh0c3pmb3NZZz09IiwiaSI6IjdjNUV2WWJNTkNXTU5yWVEiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "Pippo",
     "apr_emu": "on",
     "popular": "on",
@@ -2180,7 +2205,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZElCQVVRdzh3bHRvWWtIdmJRMEczbG13Q0E3Q3VOSkdqZ295S1N1SDNvN0hsZXJTUm02SlhsMUtFSmVvRHduM2lTdElUTThrTkhmSXJMMXZyQ1h5RUtsRi9YeGdlVmc9IiwiaSI6IjBNc2ZhTDZlaEpjalFxVE4iLCJuIjoiRmlsZUsifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYWU1OExEWFFBaDF5M0U4TEhjMmtjZTY5bWxCd0lCTlVNUnBuQzRscm5wZEJDUUsvNWloMWtiMDNsdWZCSFE4VUtyM3V0c1hGb3AzMUhJVldPMU9saXN5cEtUUU1TUT09IiwiaSI6IkF2TEl6b1BsSXVFSGVuclQiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "Pkykzhack",
     "how_to_play": "kstuff can be paused after 120sec or the game will crash. Game can take sometime for loading depending on your SSD/NVMe.",
     "apr_emu": "on",
@@ -2290,7 +2315,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidVBjaTljQ2NHeXZjSyszWEp6L1lYd20rcW5JWXQ1OWVGS3piNmdGL3FVdEQvVG5neU1GcjJVUzdGbWs2T1FpWlBOSWwiLCJzIjoiSGxsS0pjTk1RZHBXNnh3enYydUdNQT09IiwiaSI6Ik40R1hwekZSMlF6Z2RXZUsifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNkZNV2hoVW1OcjRNT1I2bko5QllrTHVEMnc5MU43M1UzVXIvZFA4ajgwZ3ZRVHViTXUyWTROME1zTE0yNnJvTi84TT0iLCJzIjoiTVlqcEgvU3huQmxoL1ZvRnZyUm9vQT09IiwiaSI6Imt2TlhyckgvaFdhcW1kREkifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "how_to_play": "kstuff can be paused after 120sec or the game will crash. Game can take sometime for loading depending on your SSD/NVMe.",
     "apr_emu": "on",
     "popular": "on",
@@ -2367,7 +2392,7 @@
     "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVXRnaExjVGYrbDlWR0tNNzNETC9IUHFINGpuNXliaHZ5aDBPNFlrSkk5U0hDSEd2bXhJbkhOV3BuQWJSWkQ2NWNKSjciLCJzIjoiUEp5TGNYeHN3VEZHR3hiODRkRnQwZz09IiwiaSI6Ii9kODdON2dJT0R5bWRQQTEifQ==",
     "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV2p4NkxVQzc4RmFSNDI0dnBkS1R6UytDbmxyNm1wS050YlF1V2FyeVNjalBLYzRXY2RiTTVZODF6RWZRZEZpd1R4ST0iLCJzIjoiZjdHVVBValhIVkFMTGg1RUhrb3NOZz09IiwiaSI6IncyTGFTTG50Y1o5cDhDTjgifQ==",
     "credits_files": "DUPLEX",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "apr_emu": "on",
     "size": "17GB"
@@ -2387,7 +2412,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMitVZGJva253UHZOOHZNdkZQVEhvdEhvZ2ZTQ1A1dDdkODIvWHlNQStLZW1lYkRjRVEvdHdxWno4Ry84ck4yRmlpb3oiLCJzIjoic2JOd09WUDZDNTJuTTJXMGVLV0FUUT09IiwiaSI6IngwYjJWLy80TUQvWjBkbzcifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMWo0eWo0dUlpdGxNZU94THdEZGg3Q1FqdUFadjdyVlJXenhiR2dEU2ZiakxNelFzajdHOENhVjNWc29BNWdaQmJoQT0iLCJzIjoiL3hIcFJzWlppamtnVEU0cHlhVDQ4UT09IiwiaSI6IkRHTWRpUTgvaU9PdXp1UkwifQ==",
     "credits_files": "DUPLEX",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "8GB"
   },
@@ -2406,7 +2431,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS0p3dytZcm4raWU0TlJ6L29HcmFIWHAyaU5sWnVaRnF3bUx6M0IvSGpRQlh1K0R2TVp6VkpIK0EvNkJxUVFlMENzYk4iLCJzIjoiejFpRkpuTnN1VkE2VmxUWnNFSU1TZz09IiwiaSI6IjF1Tlg1bDNXdUEybUhVSWEifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSmV2L1JjdTdNbk1JWExMV0pnZjB4QkRzOGdlQ1J0TERsS3dEYjNNWW1wK0NURVRjTlFzUEVYRzR3a1JqOGF4UzVrQT0iLCJzIjoiV0hkcHRmandoTzVjVkd4a3orNmRqUT09IiwiaSI6IkVQSFFVeDhnUzY2c21pVkcifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "18GB"
   },
@@ -2425,7 +2450,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoickpzYVRORW0zQk43Q1dlUG9Jb01zYjJOb3A3TTVoTmpvbnN1cDBOelZJNEdaR2JIZjhuaDlYYTY4UVpBbTdVdUFiVUQiLCJzIjoiS3BQWkdJYUJwYTBPK2hBNnZzVVZGdz09IiwiaSI6IjNxenY4SVVTSzc0anhvNncifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUGF3Q2hYaFNESGM3dDhJRy9NTlhybTFBeU4wT3Z4Y2VuUU1oejR5T2hDV2poeWNrNm5UQnRhYU5rbndFdVNzdW9xcz0iLCJzIjoidVN4cmozM2FrclZTR05VcDhpMjBpdz09IiwiaSI6Im5aNVVuRUxHMG1xdUVjRU0ifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "1GB"
   },
@@ -2444,7 +2469,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNVE1aElENUc1eHYwSUxzTkRCbVNDTUVXOHpNUkNvdkVTNEZhZEF5MHVzYTQ3OXdmNWdtdDBUUU9pMVdxVEFxSVJDbGIiLCJzIjoiV0VGV0VqdHI1Q0tIUFVOd0ZjRVA4Zz09IiwiaSI6ImVkaUhldXNoTGw0SU9sZEYifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZFBvblhIVlh2U2x3cmdudGsxNkFVWS95MXJGU3BXWnJqNWZpTi9oZkhseEp6V3kycDU5SVl3STZkWU52N3lLMUFTdz0iLCJzIjoickU5TUFPZlIvN3B2RUczQ1dmdXp1QT09IiwiaSI6IkVrSmNQSDBVdjBsQ2IzbE8ifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "apr_emu": "on",
     "size": "13GB"
@@ -2464,7 +2489,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiM0RMUDRaWUZ4Y3krcXZiYkIwdU9RV05YSmVwWG5RVldpTmxPdTU4WXhzY2pBNFk3d0hpd3JUQmNvOWhYNlA0Sk9QYXEiLCJzIjoiVHpDOVVjOVhGank3UmNwWEQ4WnBaZz09IiwiaSI6Iit3MG8vMTY5UGRyM0VKYTEifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMXlDRDBlMkJReWcxNFJuU3pxTkFQYzBtVzZsZkhFcGhhVk82R010UmxZL3NSeFRBcXhtelpoYk9Ua25EY2I1TWE3dz0iLCJzIjoiUWw0amllYnJuMnhXWHd2eitYOEttUT09IiwiaSI6IjB1VUFyWWVCdXpuQy9zYlMifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "3GB"
   },
@@ -2483,7 +2508,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaVVaN25wY2toUUEvakRBakN1cEE1THZVYzlwUkdVVERCMUZUZUlFSmJuam91WHN2aXYvZXA3b0lVZ0tRa0NqMVZqcnoiLCJzIjoieCtGM0did1hFRG91WU5BdmgzN0hJdz09IiwiaSI6IkV6b25hMVdPa1dzOFIvWmUifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTDRoaHBTcU5UUXJCQTU0QmJSS3pmZkF0N0hVd2FPWk9hRnJqdUxLUmxROFFOakJObGlrS0Y5ZmEzNTIwbDhiY2xqYz0iLCJzIjoicWdPa2NZcDRESDZ2a05mSGN4M2Nkdz09IiwiaSI6IlRRMmxWN3pwN3FPQmdPNG8ifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "1GB"
   },
@@ -2502,7 +2527,7 @@
     "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiU000VEhmWFlSWm1xY2VldnZrbkxRZDU5TU1FOUU5ZG9USUQxTFRqUU5hR1QxbWRBaHVOUXUyTyt6Q2w1S0tIRjBBSjgiLCJzIjoiQjlPbjJsTGJSSjlseW9LbXIxUUcxdz09IiwiaSI6ImhMN1BtT3IvL1dMdTlPczEifQ==",
     "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMzg1UnZvU2N3bEY0K1ZpeXBzQ01KeFp5MXZuSTU4U09FK0NCck1LanNJWHZKQ1dpS2FyVGlRaVk2eCtuMVgrT2hNYz0iLCJzIjoiNWZ6NVBSY0dZYWN4bXBjWHd0a2ZBQT09IiwiaSI6IjZGbU1OR080YjZ3UXhWZmoifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
     "size": "377GB"
@@ -2527,7 +2552,7 @@
     "backport_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVWFhZHB2dHlEdmZNVXJNYUQxOW56WGJaOUQ3VmRVZUJiL2k2dlpXRGg3YitINEZ4NzZqOWFmQjNITGlQTUJ4R0ljMGkiLCJzIjoiTzlnZjVmQUFNODlFMHlhQU55L3ZVQT09IiwiaSI6IjBib1Q2MDA3L25oSkNqR3gifQ==",
     "backport_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY09ETXV0WVdFMGxmK09XYlBrZ1h6QlRLNWlZY09nTEoya0dyRmVXU0luT3VCR1RQUFRXbGU0RWFLdkk3dnkyZlBXYz0iLCJzIjoiTlJRKzl1dy85K3lZbGNpMSt2eTM3Zz09IiwiaSI6Ik1WUDh1cDFDR2xkQm42U2EifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "3GB"
   },
@@ -2551,7 +2576,7 @@
     "backport_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV1lVNi91eTJ1OXhCc2xRQVNSVE9mY3hHVE02U3NHdm1UMCtFVHBSTldkZnB1ekVYMnJSTHhmVC9Fc3lMZ1JKOHJxdEoiLCJzIjoiUVhXeEgveEZGeU1NY3g5UUdLdTFsZz09IiwiaSI6Inh6SWNJUXM2V2VGbjZFZWgifQ==",
     "backport_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia0FuK3Z0T1E2Qkt6N3NjZzhvYzRXZ2h0N0l0NnJOWXByMTB1QWxMZzBKb1JxSmtrc2FsQXdoZ2JiN09WQ1pqd05tND0iLCJzIjoiS0RZSUwvbEhHdTIxeWgrNFZncDA2dz09IiwiaSI6IjVqSm5OYU81YTFTSmRlQUgifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "3GB"
   },
@@ -2594,25 +2619,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "82GB"
-  },
-   {
-    "title": "Brothers A Tale of Two Sons Remake",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Brothers_A_Tale_of_Two_Sons_Remake.avif",
-    "tags": [
-      "PPSA14501",
-      "v02.000",
-      "USA",
-      "7.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiczVuMmVuNDkvTWdUY3M4bXh2TWNZcUZSSDB0V21ZdDEwejk2T2I4ZkFhYVBpK0s0SUV4RVVxZXNkeGdRSXRONlB5TG5VSDY2IiwicyI6Im9PL05uR2JXSmh5SXRFUlZqdTdhM3c9PSIsImkiOiJEZGtReUV4OXJGT0FGbXhPIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVWVjb0E3dzVCMkRkcE9oMEVsQ0ErQVhXZE5DOHJVZS82dklXVVc5M3FmWFNXZ3BFcjArRmxnT1VZU2FGRnkraDgxKysiLCJzIjoiMGRhOC9GWnZqaWh2TUdaZE1BYnlNUT09IiwiaSI6IlArUEptNm8reWFwU3plY0EifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY21RaHJiR2Q0cHRjbnBzekZZakkwTE1lRW5xMjlOTURjaDZtR3hsNUR0WmcxbXFpZjR6cFdDWmZoc0YvL2ZCWklnPT0iLCJzIjoiOGViUVUzNU9vdUREMWpRSlV5OU1uQT09IiwiaSI6ImVZTWJvcmpoTVFRdXBEYlYifQ==",
-    "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibGhPTElGbGVIZjNucWpoWmZXTFhVcGhvNUtiMXFIZFpEZWdLeGxMdGF0MU9ZaXNqWmlxZERrZUdDM1dGOFVCeGVFZXkiLCJzIjoia0dodE1BOXRLd0k4ZTkyRnV3RGkrdz09IiwiaSI6Im1oNGg4SGhZMEt6RjdmZXMifQ==",
-    "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieWhzRVMvUm1KL1ZCSFdRSVBwUlpEZGV1dWpWNklHdFE3cVBheUptYzlBZytxcnk0ZXU3a0dXa3NSc3pTK1ZGY2VTVT0iLCJzIjoiNmRVNlhCaGFzclZFYm5OS1lyQlZZZz09IiwiaSI6Ik96dWQ1WmlYclIzMTd1VmoifQ==",
-    "credits_files": "SiESPTA",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "27GB"
   },
    {
     "title": "Subnautica",
@@ -2713,7 +2719,7 @@
     "backport_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMTU3U1ZEWHlPQklZWUhPdkhzZ3JnNXNuZlhWQzRwVWszakNQTjVOQUF5TDhhQkxOV3dDNEgrYVpHNXpacDY1ZG5yMEsiLCJzIjoiTzVsNnVOZmJpaUxDQVk0ZmhVb3JFUT09IiwiaSI6IlBVN2ROK2xFSDBlMTNLVXEifQ==",
     "backport_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieDc4QjBETkU3eGtLV3NSdklzT3VhRExNVUdZcDh0SEJKdmxZenZGRU5WZ2ZPL2l1WUs4SUdVTXlMbUhtOXd3RkZ6cz0iLCJzIjoidGxrZHNlV2RaUE45N3cwcWl0ZHVJZz09IiwiaSI6IkRlbDk5dndYSG9RWjdHZVYifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "893MB"
   },
@@ -2737,7 +2743,7 @@
     "backport_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiU1M4Yy9MdmxRc0dMb2gwY3YzVUx4d05SV2gzTEdqdnFQNnZUb2VYRVZzZmVkeURHUS80Q3AwYUhzQ2FvbEtkN2pVRFoiLCJzIjoiYm1UZ3R3cmROaVROOEFhMkd2R1BDZz09IiwiaSI6Ik5hU3I3VDlqWjBYVVV2S2QifQ==",
     "backport_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMWJDcDU0WkY5cU9jTFdqZVJqSlNqUzd0SHFhYnMvMWdoK0ZzZ2tqSTltK2xveFFzVkpUYytocjhsR2xtbHg3ZEJoRT0iLCJzIjoicFU3bmpyL1ZoNjhxMndiQ3FNcHNXdz09IiwiaSI6IjJyMS83UEk5V2MweCtaZjEifQ==",
     "credits_files": "Amiibohound",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "14GB"
   },
@@ -2931,7 +2937,7 @@
     "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoic2pvcU1wUE44cE5xUXdZeHNnM1dwb1hVYWxTUDMxdGQwSWhiMGJpbE9WR2M0TVozSW5YMUdYSTVIb1Y4Y29qdER2eU4iLCJzIjoiVDNEVkc4RHJONEo2Tmk5NDdjb05oUT09IiwiaSI6IndHbVNTcHQyUW1kK3pKdHQifQ==",
     "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRzBpdDkxQ3FIbU8ydDRDancxT1psblRyVnRNUHVoTE81NjBTQUVWMC8vd092SDRTVUdHU1RkVEgwb21oMHVXMTZyRT0iLCJzIjoiSUlJVGZxbnBkY1Z3VlRFQUxyR1g2Zz09IiwiaSI6ImhiaGxpMnlKSzFXS1FjRG4ifQ==",
     "credits_files": "DUPLEX & SiESPta",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "how_to_play": "Italian Mod replace Spanish (Mexico).", 
     "size": "29GB"
   },
@@ -3159,7 +3165,7 @@
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoic2dDcXhXeXd6UnJsU1dnTmEwemp5bjFEOExCQ0Q5ZVVGTjFoV2xpL0V3RTRYcXgxM3hZQmY1LzdjMC9idDhBNy9nPT0iLCJzIjoiQ1llY0RTNkRTRXRjRkUyQnFUQXNPdz09IiwiaSI6InhBYVBiNkZPOHhNc1FhQ1oifQ==",
     "credits_files": "DUPLEX & VanBuuren",
     "credits_dlc": "DUPLEX & VanBuuren",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "how_to_play": "Audio 3D must be off for avoid the crash on Initial Settings.",
     "apr_emu": "on",
     "popular": "on",
@@ -3292,7 +3298,7 @@
     "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYys5bkpqMG5KK0ZsRVFXMkRjWXlnWitFVHltVEVwZmoxUVlHdjQrVVRDR3pIbW9SaXcrbFNrUGwzSmw2RTU0RHg0U3AiLCJzIjoiZnpKWk1VZVhadC9EK25Ed3dzczVIQT09IiwiaSI6ImhhTjRRc1Rlem90ZU9od0kifQ==",
     "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTndySTJZZmhtR1grd2I2RU11NVQrYnJyazFraHZsUWlWK0lhYXVmQ1lkREVOajVPa0pjcHYxQmlqZlFzajVIUDJuTT0iLCJzIjoibXZOVHRqOWFSQkJ2ZFdsR1VnWjRkZz09IiwiaSI6IlJSY0F3aWtIa05Cdk9SMnQifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
     "size": "61GB"
@@ -3317,7 +3323,7 @@
     "backport_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOXJGcTZJVy9WcUg4OXUwTUhnKzA4czBjeU9LTXJiMWNJUHRLNEczcnp3WE5VZUR0cG5VWC9RRnphUFNpd1dUbENrTFIiLCJzIjoicC82R2dTNExaNXY4ZmQ5dXo0SFhMZz09IiwiaSI6IlpPVGRlQUZORG9odS9sN0kifQ==",
     "backport_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicDZYZWFRbGtYNnF3RTkvVGpPb2dGWG9yVHhZS1k4blJQeDg3VlhiKzdVVTYrVFNqZHpYdUZjaGhISFczaDgvS3ByZz0iLCJzIjoiaGxoa0swSGxkRVp3SXFWYTFHVnJzUT09IiwiaSI6Ik9ZUzZkRDd3U1crUFV0WWYifQ==",
     "credits_files": "DUPLEX & VanBuuren",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "how_to_play": "Need Trophy Unlocker (if use etaHEN - Check the FAQ) or kstuff lite 1.07+ for avoid the loading infinite.",
     "apr_emu": "on",
     "size": "1GB"
@@ -3377,7 +3383,7 @@
     "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoickRHeWtIbDZjY2Zjb1BiRlVUSTUwSUE3WEkrVGN2cDR5VndNQUtiTWhoKzNqVXE4dWVWY3lvNkpteDJMNWUrMUUwWT0iLCJzIjoicHY0eWs0d1BsVFZOSmpFUitHYVpJdz09IiwiaSI6IitBaThiMk9jamlXSzUxdlYifQ==",
     "credits_files": "Psykzhack",
     "credits_dlc": "Psykzhack",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "how_to_play": "Need Trophy Unlocker (if use etaHEN - Check the FAQ) or kstuff lite 1.07+ for avoid the loading infinite.",
     "apr_emu": "on",
     "popular": "on",
@@ -3576,7 +3582,7 @@
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieHY1OUVIK3g5WDY1ajgyQmJFQzdLRS9xSng0Uk1TOHNiVVU1bDFyK1pnTXJMUTFxc3RYWkpPM082aE94bnlDZ1N3PT0iLCJzIjoiL3ZSOGRuSUtpeWlWRG5nVGxRVmE0dz09IiwiaSI6IndIcnlISmhOdVJPa05hdU4ifQ==",
     "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoic0trU1p2R2ZoR2RZeGpsLzNHc3NFTUw4NHduMis0WUJlTGdTR3lTekxSdUNXSlNkTTBiK3ZvbkRpZERDSU1BRFJMd3FoNjl1Q2FYZDZENnBnMHdJSGc9PSIsInMiOiJyNVpSbG5lVmtGR0tHRWV2MVNPclF3PT0iLCJpIjoiNDJLNTR6alNuTDQySmQybyJ9",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
     "size": "107GB"
@@ -3594,7 +3600,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSy9JZ3UyZkxNWlpxbXlHVStub2pOd0JrdExsdFpqMG9wVjNXeWs2WFJJY2J5cjhDcE5qSWJoNk1XUmd0NWZCaUtXdnciLCJzIjoiWHB4OEgvNlA4Mnprb2RYQ3MrL01Tdz09IiwiaSI6ImsvOXYvcUhodStiRUdhVloifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidy90Y2tubGlpT3dxUzlzeTVLWURhQlFwd0h2YkFCNDlKWnU2cTh1UGxTUTdkYW0zT3Z1NVJCWGphdWhHTGMyMUR3PT0iLCJzIjoiUDlubVZlUVpVK0JKaEhYTnNua1BwUT09IiwiaSI6IktqZGJGRERud2NiTkxicUQifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
     "size": "60GB"
@@ -3612,7 +3618,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRnBhQkMzZ014anBoYXZlNjQ2SGRLTHVNYWY4UkV3VFRkYUNZNEI2ejJoeGhDZjAxTEc0M05aWXlvT3FLT1d0ZFh4VjciLCJzIjoiV0g4WmVMMHgzNWtJd2F2cWJWTVBnUT09IiwiaSI6InUxK3ZsSG0rN2UxTGdzdkcifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS1FPTFdwV3dxeDE3V0EyYW9laGFLV2drS2NkVnFPK2FqVzA1WTEraHNWeFpTYlNTYkRXVDlNODNYRXNxTWdnSTFRPT0iLCJzIjoiUHhJaEZVSURyZVR1UHJvSkZrR2padz09IiwiaSI6Ii81OGxYKzlpR3NXenlwdW8ifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
     "size": "79GB"
@@ -3630,7 +3636,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTTMxYTU4U3dTM2dDSTlqNXNMVHMrS3ErS1V6YnQ1UWk1VEsvSHdBU1J1K2pPQkVRRWN3bjYxcVgwTTFrQ29GVW5SOUYiLCJzIjoiMXZXWStwQm5yd3FMZkMxVTNtY005Zz09IiwiaSI6ImNOWm1SYU4rV3NXdWgyd0wifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidUtEWUI0V3JHbkpiMVc4RSs0TFRHQ1dyTlFlUmk5bU9FNnNHdUp3aFdodTlqN21oNDZ4d3ZMK3lmSEhlSmlUMGh3PT0iLCJzIjoiQkNWQzFTdlpVNURuckZRemNkTGVnZz09IiwiaSI6IlJ5cUx6K1pyeHV6czdIRzEifQ==",
     "credits_files": "DUPLEX & VanBuuren",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "340GB"
   },
@@ -3649,7 +3655,7 @@
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiemVWMVJpNktiRHZObmpudGxXUlVrSVdKci9wTUdjRzlVQmdKQmc0UlBQNlpyUHhwS2JmVkM1eGFYZFR0NlZRbFpRPT0iLCJzIjoiU3hyTkNPWjhOUUtlZWw1SExpSFhHdz09IiwiaSI6IlpveU1aaGVtbU9DdWFSUXcifQ==",
     "credits_files": "Psykzhack",
     "credits_dlc": "Psykzhack",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "how_to_play": "For some reason is not possible select other Audio than English, all Subs work fine.",
     "apr_emu": "on",
     "popular": "on",
@@ -4340,7 +4346,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVDVuN2dxNmNoUmMzNGc5NEdQZmRRVG43RzcrOXVsVTZmbDVZM2pYNFpMZml1M1dxU1JtYmNka3lacE0zbUg4Yk91YXgiLCJzIjoidUhGSTlxREtQK2NFK1JVelQrWFdzUT09IiwiaSI6Ikw5bWI2cGFIKzY3cVFBN08ifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTTdLd051d1BUZUphS3hJQ0ZETVhmWnc2WHU4WlBkQ0czYy93bUQzcENQZWdBbGZ6eVZIL1VGamo5eWg4WDVQUWJnPT0iLCJzIjoienkxZ1dTVWdGUUV6bFc3YzMrOHk5Zz09IiwiaSI6IjIza281My9OakRtSkVRangifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "8GB"
   },
    {
@@ -4356,7 +4362,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV2d6MUk4SElJWEZ0Q004anZ1WWJvUng1bG42bVJkdnhkVnlCM2gxZEhTSXZsSUF0UVF3QklWT1dnaHFpeTE4TUtndWciLCJzIjoicVYvK2RTTG1TM1p1WE43KzUwdUt3QT09IiwiaSI6IlJHamd6NlRhelhrSDNNazYifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieFpDN3JMZk9XMENFa2NKLzVveDhjbXNuZ3hpc1NyWXFpa2dwVEU5S0MyWGNOc3NCVThZQzlPem83ek1KTDNndmRnPT0iLCJzIjoiVm5kRFJFM2EvUnpzaHdXdC9rd2piZz09IiwiaSI6Ik5Ud1kyZkMzR2NhcUtSZWUifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "27GB"
   },
@@ -4375,7 +4381,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicnI3K0FtdDQ5R0NzdVlXL1phK2FpcWV6ODVjcHVQbjU0TSthcUVlUE5aOEUrSUpucHpOaG5BQVFVaVlxV1I4L2RaNERINURTIiwicyI6InhXTWRvMkluSFRySytmbVZhVmV0ckE9PSIsImkiOiJ0c1lHYnplNGh4eTJweEpBIn0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY0dQUDE2RHZmUXk2aERNajlXVEp4Z0ViaWJIcHA3NWJnbGJXZEx5bUZjRHFFZU50ak9Gb2dJSDdhcE5hR3hqc1BRPT0iLCJzIjoib01YRTdvd3lqQkZ4aHErZFdQTGQzZz09IiwiaSI6ImpjK1B6eGRuR3l5MTI1OGcifQ==",
     "credits_files": "DUPLEX & SiESPta",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "DUPLEX & SiESPta",
     "size": "3GB"
   },
@@ -4392,7 +4398,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoid2R1bWNzR0JHMC9RQXFsYjNQelEzRXM5YmxqcWc1QlNKY291aFllRS9ObFlIWGdsNVZKZ3VPSVQyRFFhcCtkd05jS2wiLCJzIjoieHkxeW9SYWdOeVhRRFpSejZvVU1pZz09IiwiaSI6IjJBUG9QWFNGdDZLbDY0eUkifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVUZBNWpBNk16WWhnZnpraWladWd3MkxQWXI5SnFQcmJtYmdkQkpOTDFhMmROUjNCZFUvRGU1RExaU3lISlRVVXVRPT0iLCJzIjoiUjBESHlscGJnR0VxQWVPWkV5VisvZz09IiwiaSI6IlJBT2toemdqeGh3cWRMQS8ifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "53GB"
   },
    {
@@ -4446,7 +4452,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaC8ram9pMGFibUZGeEZFWm56N1FJblZYT1AvUTlESU1FYk41SE1RWndXa3RINE1wZmo5ZWVWYk1RU0JHUlJIV1BmQnEiLCJzIjoiK3lOZ0VFWmFCSzVFdFY4UXpUM3pqZz09IiwiaSI6IkFaSU5RZStocmd5LytRY0UifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVk9GTW5BeWpia01mcm1CSzhzMmlPbFFjOVNpWFJoQXpncjQ1SHlWTmtpVnNsdkJWWVZoYm8va2FFYk5hUHdMUUNBPT0iLCJzIjoibi9BTU5ERTdzeHlQTWhJNmo1VTlSUT09IiwiaSI6IlhzOFNQdlBCbjlyS3BCZ2MifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "6GB"
   },
    {
@@ -4462,7 +4468,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQ3N0ZlN0alhaNjl2N1EreFJGUmdBMGxqMVJnODlIQUlMclk3NW0wMlE4TGpFV3J5R05NdmV3OEw2TDlxNHJzYUpFMnciLCJzIjoiZ1hiN0lOV2VOY1h6Q0N6T2xGS2xnUT09IiwiaSI6IjNybE43WGhSUmxya0pWV2kifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoianB2Z2xWN2dxVW4rbGF5TU9CV0Q1WkhzK0FWbUtWM1dNay9yeEl2enBBMEU3eVIycXJHK0NyNll5ZjRMZFZFL2l3PT0iLCJzIjoiU1RYTVZ3b3ViSVZtUDVxMEJ1VlNudz09IiwiaSI6ImJwN3M5MmZoSnY3OWJvaG8ifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "6GB"
   },
    {
@@ -4478,7 +4484,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidHJ2T282QitxUVRSelkvUnBudS9qNndpVld1U1NIdGtDVGZTbk9UTk0rcGRwUTR0MmlYYWplRlpGbzRQVmxmOUlGLzAiLCJzIjoiYWV4WlpjdCsvTUszSGNvZjJSNG1MZz09IiwiaSI6ImgvVEhWbFJIQTdsdHIwVkUifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNzc4REpySjY0SEs4UTM3K1ZVdi9uRDFYek1oV3dsdkFIWmpSQXE0RGN1UGNER2xkRUI1Y3FVTnZaQjhBeUFmWmNnPT0iLCJzIjoiaVhMRU9YR283U3NtYUp3QlM1clpWZz09IiwiaSI6ImFvL3Nqb2dJb05rcXJNOHYifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "48GB"
   },
@@ -4495,7 +4501,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMUdTbXdGOEhycWxhV0Rzc0VEZ2hmTm1FbC96ZEtackg2NTl2dUJCNUx1cFVxdHZkNWVmSUZBK1JyZTRzTVJYU21QMFoiLCJzIjoiZkVyUmdzbmhwaGtpVitKSVo4dHdKZz09IiwiaSI6ImJrcCtuTWxGYUdHb29qYVQifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS1NmMzVVWmV1cWxXcUczdE5JWWwxbUtVM0U3UnMvdkVJRklLME5ZUWVkU2dMZWt6T0NIRjBDZ2xuSDhkVGpOaVFnPT0iLCJzIjoidFVaTzZGSWpRTVJzNjN5Smw1ZnZndz09IiwiaSI6InRDbE5iZUdScGNpc2VLZ2EifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "39GB"
   },
@@ -4512,7 +4518,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib3pPd0VEWTNCT3NjNTNYTUJMRXBRc3oyWXVPWnVDeWxZWFdITlZCc2JJUTlkN3g5N3Zya3QxVUFXS2ZOUFNEdnpacDEiLCJzIjoieGJnQkVVUWhaNTNQYmc3VVI5aWNIQT09IiwiaSI6ImZ0eWF6RUZKcVZDU1NEV0EifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicTh6bVExdHZtcVlsT2FoQnVPOU9rS1g3bVpWV2I4YVZVMEVzaGcvSUpwSU1ZUm1KaDJNVXRWelU0bDNpc2hsRHRnPT0iLCJzIjoiZGlaeWtpdEw5bndtM004Y05OZm5CQT09IiwiaSI6IjViSldmaDN2SFR4Q2dJN3oifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "13GB"
   },
    {
@@ -4547,7 +4553,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidjhPT2NmcDJLMUN4U3M3S0ZCK0hDTFNMTkF5SCtYZVB5emhPb25mWUNWYmlKOGlGWXNoc0cvbCtDQWhBa3BnL3dyL0ciLCJzIjoiTFJpMkVFL0VrM1BqcW1US2FRMnh3dz09IiwiaSI6IlFhcmhsN0V3WUV5NThvQWEifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTWhUazR3dWNGL1JEU0IrbXVwdG1PU0pkOUNySE8zZUE3N0dwYXJTQ1ZDYkNlUEJid2pyRmtZanZ6WStFWE1qU0pRPT0iLCJzIjoiRWtiN1VPemJ6YzYrams1NlI0OWc4UT09IiwiaSI6Ik52MytMWWZlMVJZSE8vVkgifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "27GB"
   },
    {
@@ -4565,7 +4571,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV0Z6Qjc1M3lrcGo3UkE4TVYrajZtbXFua1pSUVBiNVBIVFV1eXVQK0RiTWh4R2Z2MVJOZC9YdDRFT1F0TG1oMU9yN2s4VWFmIiwicyI6Im9yRmxFK1RianZaTFNmdVo0TXFUeXc9PSIsImkiOiJPTkZDci9ralVxdjQ3b1psIn0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibXhUbUoyZFlJMWpxRUZCU3YzSGxiUzVyNXlISlNkYWFHbm9QMFo0d21VNFBoQnZQYk5LclZBdFdiMzVINzFUdE1RPT0iLCJzIjoiRStlcWxNWTFsOU8yTmdkQkkveVFSQT09IiwiaSI6IjlYYTBod2RoblVmVTdNSU4ifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "Pkykzhack",
     "popular": "on",
     "size": "31GB"
@@ -4585,7 +4591,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibW5OK1NGYnFkcXFnNHg3b3I2d2svUnh5bHFZZFcyeFZUZHpabWJNd1JuZEVnUVFpdmt3Yzl5aGdwM2hmdzBmdENGM2t0bVhvIiwicyI6IkZLZUFBWDNVRkJJR01QVUVJRUhEaGc9PSIsImkiOiJYNCs1eVYrQjVadVI4L0J0In0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTE5UcWhoVU82MnNOUlZ6VzVoY0dLaUxJQkY0WG5PbU1TOHpOUVg5aU8zcTRWWS9oYkQ5N0RSUi9EWDYyQ1IrNE1BPT0iLCJzIjoib2RqVDMydEtWTStYWVJPeXJmNHpkdz09IiwiaSI6IkJhWVNUWDJSakNnVHlpYXcifQ==",
     "credits_files": "Lucran & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "Pkykzhack",
     "size": "37GB"
   },
@@ -4602,7 +4608,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiajB6OEJRRXNsWnpXQS9TZ0xWQXo2YmFGUitFc1o0ZGhtWFUySHdIRnc5UXR5U2RmaFdpSDE0UlVMNlVkNUFwWUpNSUsiLCJzIjoiVWxRaGRXcG42YVdmaW43UTlIZnRvQT09IiwiaSI6IlR2VWRQUzRiMWYvaW95SVcifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUG90cjcwQUFaaXI5aUdZMHRTbG5PQnUwVk00Qm5YTGh4eCt3MTVQODFxL3JzUHRuMlJRbzNGS3crM3dxYTR1MXZ3PT0iLCJzIjoiQnQ5aGtxaFJHd1Y5TStVR2dRODJ1Zz09IiwiaSI6Ims5MWVpNlZLcnc1QTRaZDEifQ==",
     "credits_files": "SiESPta",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "81GB"
   },
@@ -4619,7 +4625,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidkxaMkJJcnlQNTBVMGd0SlorSEJTK3l0elZ1L0ZSVlZ3TUI5eUlGSXdWUFBxNEhBNzJrcGFjek1HaXVReGJXeldxdTQiLCJzIjoiUEF5TGdSbGVVelVtalZHdkpuZGh0QT09IiwiaSI6IjVLRzNaSTh3MHNQLytzNDcifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQU5jcEhsRnlnV245dVRDVDU1TE5QazBiaFU5Zzd3NUhkODhlL2ZHdEQvcUZRZnUvNWNvK1hLU21VMG5tSDc1cThRPT0iLCJzIjoieFduanV3Rk5kU0gzV3FXbCtPcmZ1UT09IiwiaSI6IjRnSTY4UXdpQy9zdjVrTDkifQ==",
     "credits_files": "Lucran & SiESPta",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "21GB"
   },
    {
@@ -4638,7 +4644,7 @@
     "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMjl5TVJvNGg2a3V1T1QvU01CV2tnUlhzTFNHOElhU2F5OGhXWjdEdGVsNkRMT0ppTGNiZzNJeGkvUkpMMjJMbU5hdGMiLCJzIjoiZXBiZ1Nxckt1ZGpVNVlUK0RUL1pTdz09IiwiaSI6Iml3TzZPKzRFRlFZYVd1WHMifQ==",
     "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT285MHZSOEsybkk4aFBrWHpETmo1S2RnckpsWmRqaWhjNWtjQ05NK2s2ditJOG9yUSsrT0RuZlUxVjdmZGtDNWJnPT0iLCJzIjoidHNKMXNES3dqNkIvTlJxVDBGMlU3UT09IiwiaSI6IklrejlKc1RISzFLRFBZcTUifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "4GB"
   },
    {
@@ -4659,7 +4665,7 @@
     "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN01YVkhENVZ3Zy8vYythT0pBamt5SVpxWitUbnhaQnRZdkFjRkF4SXBJWE94dUlGd1U2Q2hsQU1OQUcyWllUc1dnPT0iLCJzIjoiRGgvZlBzblhXRTIxTTFoTkJ0K3hrQT09IiwiaSI6IkJGclUvSmdHU2M4RXRRbEgifQ==",
     "credits_files": "High-Speed007",
     "credits_dlc": "Pippo",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "79GB"
   },
@@ -4875,7 +4881,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaWxQc2E2SXR0bWowRmRuMGlGT3NsQnl0RnVaNE51MnpXcG4xb1BBU0tkTGl6N1oxdmRiRnkyYzVvRnJTckhoWGdxNVgxWi9JIiwicyI6ImRZbVUxbnVrTWlDcUttbkN2RGZFZkE9PSIsImkiOiJELzhKdWhDVG8yRDd1ZHNVIn0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOXpNYXd5MThvbXpFb2ZDeHg0d2h4S29YSm5GZitaVnJaRWFzcTFkajkvZm52TmV4OVIzSzNRN0d6WUtER0JSQjZnPT0iLCJzIjoiSHdUaDJrN0tyL01NT3hnUmhQcmRidz09IiwiaSI6InhjZnFaT0Irclg5RFIvakcifQ==",
     "credits_files": "DUPLEX & VanBuuren",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "DUPLEX & VanBuuren",
     "size": "33GB"
   },
@@ -4892,7 +4898,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1V0T3p6Z3h6RHJRb3VMM1BXVElWak83Yk9rc1JsUnpSaU53bm9tSG03djk4Nk00bStVR0trMFNseXdqdXRRbmpOVHIiLCJzIjoiODhNR0VKdU5PbFFPcUt0N0g5WGIxZz09IiwiaSI6IkJrVFQ0T2RHR3ZJYVoxRGMifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZjZoM3N0TytvQzU5cWVuQzFlRjUxRnlxckVWRHdPUHFmUjBFVkdvaHM3SnM5MGF3YU1MamZ2alZjYW12Y0JiS3RRPT0iLCJzIjoiZktYbWgzeVkzZkJVcVlSdVo2L2JYdz09IiwiaSI6Ik1wU0o4KzhMQjRGdU0veG8ifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "177GB"
   },
@@ -4940,7 +4946,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiREM3U3ROUG5vRVF2QXpEbktpR1VZcXduY0gyU29wOVUxVTRFbzY4WGFOSFM1VllVQm1DeUF5ZzRtUzE3ampiemZOa3MiLCJzIjoiVm5rSjFGUjlVRllkTkZmNEw1bTJUQT09IiwiaSI6Inp6ZDI5LzUySzRmdGUwMEsifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNXhpM3ZVdXRhUHpHSnN2TjlCK2E5aUNUZFVodDVWN2lmN3NEbDhTY3lMNXNhV0loTWRBNFk0WFl1YkZwbU9hM2lRPT0iLCJzIjoiaHRVVFdodjhLUVBpKzdrMit5OVY5Zz09IiwiaSI6ImlKQmFvS0VlYldTQmIrNVEifQ==",
     "credits_files": "DUPLEX & VanBuuren",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "11GB"
   },
    {
@@ -4956,7 +4962,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWTBYNktLaGxyNGp2elBoUjBaWWZDeTc0a3ovLzBWNDJMem1DVTYwMnVxbHV0ZGhZV2F5S2Q2cThsdUhaUC9IbDFZZUoiLCJzIjoibEpYZGthNStPZWZ1Y2RZbEMwbTBoQT09IiwiaSI6Ii9wbVJrTzViK3pITXBjcEgifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiM3RZWVNRdXNqdmxkMXg1OWVHQmZzRDNCZlhuU3VxWHcrMnlTZWVjT3dWRW9yakFkVjEza1dOL3lyTGVwUGVld0VBPT0iLCJzIjoiNi9aK0pCTHpsbDdtRXlrTXE1cko1dz09IiwiaSI6IkcyRmNpT2cwWGE1VXRicncifQ==",
     "credits_files": "DUPLEX & VanBuuren",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "29GB"
   },
   {
@@ -5011,7 +5017,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieis1Um55N0wzOWNGeldKYk5pMU03NXMrd2NJV1hqcmN4d0h6dXJzcmczZWNQellVcFZiTEsxMUFkaHFkZW15M0FsNFIiLCJzIjoiNm45VTFOVUlhcHF4VUs0LzJPSUtPZz09IiwiaSI6InIwK2NaQ2xROVRXMlpCNDcifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR281RkF6YW5kRmpRQmJnOVhBbFB1TlZwd0l3R0NwcHNFRVZHSm4rN1Z2UlRPY0VEWUhZd3hUSDVPOXBlME1lVFVnPT0iLCJzIjoiL1hNd0hhcmRxc3Jab283bjlYb29xdz09IiwiaSI6Im8reS9UUVZwVTFDTjk1dnIifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "13GB"
   },
   {
@@ -5029,7 +5035,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibTlRT2VRVmpoR25tdHVjbHFFMFZkWXFndGJzeGNhenBlVnN3TjlET3VzMis5SjBIVnY0Y0tWdGZkV0pLM2pRc3N6L0JoSGR6IiwicyI6IkJoaHBhaHF4RStoMzF4NlFDUW5GaGc9PSIsImkiOiJ2aVE2YnMxczd4cDh1dnI1In0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicHlCZmVwV0MxcDVQVmVGakpnUXZMcjlCUllhM3FremZqRjRsb1BWNSszZ2ZPWEVSUW5ENGZYYmpld2E1a3hQODR3PT0iLCJzIjoiNitkU3g3RXJ4OXd1OEdpWFlPZlBwZz09IiwiaSI6ImZDSEV3VUhhOGRWMkcwL1MifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "DUPLEX & Jose Carrion",
     "size": "3GB"
   },
@@ -5046,7 +5052,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTXNqM205WVQ5YmthbTM3NDNlSDNtZktmazZTbmE2OXZuY080QW5LS21mdW4xM3FWdU0xaXlOOFV5UlRVWFIzbDdUOEwiLCJzIjoiL1ZlVWF0Q3JCbFlZNlZmOFc5bkYvQT09IiwiaSI6IjlzcmxBaXBNdUhzbmlMNTYifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNHRIR053dGVTT0FiMitScU1QM3QvelZGaUZrMGpkNFJsVU1xakV5RVVGdjcwSXhOY2pmTU1sdzk2a1djeVFkOHJ3PT0iLCJzIjoiQWNKS2E0RHJ5QnRrelZmcHdWWUZUZz09IiwiaSI6IkxoQmVpZCtaQytiY0o0dGQifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "21GB"
   },
   {
@@ -5136,7 +5142,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN01pT3VGY2UxdlBySm9SajFCd084N2pmMDBNRXB5UXJTNTVWT281b1dKQTRUMGNoZGdGTko0SUtac2VMMGdpMlJPVUUiLCJzIjoiNGJ0WDRReU9CaWxBbHkrKytpS2JqZz09IiwiaSI6IjR4OXRzc1V2dXdvWEFLQ0kifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoid3JXNjZPOW5XL1Y3Vi9VUUZSS08vYkJyWllrTCtPWVJtSG13YlF6S3VaT1BzOTZyNnozVHl3OExKMGhqdktjcyt3PT0iLCJzIjoiZERWeG9CYytCcFFvZmhOWEZuRFVXZz09IiwiaSI6IktyMVpPc2FvenNsQ1NmRUQifQ==",
     "credits_files": "DUPLEX & SiESPta",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "12GB"
   },
   {
@@ -5152,7 +5158,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaVp3RitqZGh6bUE1ZWtBaHlvL1dzSDdkWmR3c3RLeDhlcW9jTXRyb0tYODkxQTdJdStoQ3VVM2pKQTdNN08waWdDOCsiLCJzIjoiOWUvcHVGMDd0OXg4dnkxRXJ2Q09OZz09IiwiaSI6InpKSzd6OThjS2Nyci84R1oifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV0Vack00V2xpN0ZpSXJ0M2MxQUpWaHlybzhIOURUMWdJQnZpOWR3UWdqdFBDbElzY1JMaEJmckhIS1duUUZlOFdnPT0iLCJzIjoiemsrSVVBMzQ2em5uWjNSTmRwQTB5dz09IiwiaSI6IlZhVWlqa0M1dC91LzdnSVgifQ==",
     "credits_files": "DUPLEX & SiESPta",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "13GB"
   },
   {
@@ -5188,7 +5194,7 @@
     "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieFFjWHJ5RWZpVUxYS0h0eWJ2TmczQlFzc3FvTmdRN0pMbE5EbjBZTUVDd05VYlloK1c4dVMyWDlTaWN2YjRsbVJyZk8iLCJzIjoiN3oxbXgySHVRaG81VXdzU1k0Rndodz09IiwiaSI6IitoZG13V3FvdjlHdW5ZWHMifQ==",
     "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK2NIWUFZQjN2MWtMY2JTRWFkakRITW5Va2t0cUV1NHRxVVJiQlJ0UVMxRDNjZlZ1RHRzVnhwZFNmZjRONVNpekd3PT0iLCJzIjoiSG1FQmk2aWxzQ2dhUXZPMGpzSXJUUT09IiwiaSI6Ik0wanBqTjliUEhMUE8vVkwifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "1GB"
   },
   {
@@ -5235,7 +5241,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaXZaQ29UUjBKTnRMcEJFQWN5SDQ5QzU4cEg5Q0lUWm8yczlnK2MyVm5jUnNtaTBGcmlkbTJBYXhhcFRJZEswMVRiQXYiLCJzIjoiNHBiVHExWUtSVkZlZ3hBbXFjcUFNQT09IiwiaSI6IjF2ZzBhUDdiTzdZWXhzMXMifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNCt5WW1KZWxPd1Rnank2ZkZSMzgrTGs0b1h1K0VPcUVuNzV5VFdQQVEwSk4wNDdrbnl3WDJ0Z3h6WksvbWwwMCtRPT0iLCJzIjoiRjUrTmcxaFB3QXVaM2ZWZUlRbnJVZz09IiwiaSI6Ik83VEgxV3BaZXI4MWJ6bzEifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "5GB"
   },
   {
@@ -5536,7 +5542,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicVhaYjllY243bmhqZFRPVDRUeWZZZ3NIa21GSkJtWFVMd3BEendPVjluTWgxY1AvbVBvWWIvSEJZeElTZjNBT1BjdEEiLCJzIjoiNFd3ZVVBSjFjVi9UUkxZeE9DanZhUT09IiwiaSI6IjZhZWkzWHRBMVV2anVPWTYifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidjYrenA5czJPQ0dNa0w0Y2dZNVBVSmJDV3hKaE9FemtKa3VuVTNSS2Vhc1I5c0dLdk10aWhGc0pRQXRxZjJqL3p3PT0iLCJzIjoiSWE1QWc5T2VlMzR2VGo3WFlzK2Jwdz09IiwiaSI6InBnU0VzU1lST29uRm5FZ3cifQ==",
     "credits_files": "DUPLEX & SiESPta",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "14GB"
   },
   {
@@ -5587,7 +5593,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS2FKbWtId0Z3eGNBSTByZjVZZ3VXb3Jpbm9YbW1ITlFkREpwWTRiT0JMWXZRVmlLbmc4UzV1SmZMYWZ5QXl2dHprYTUyTXBMIiwicyI6IjA5K1FpR0gxenJWVXV6UGtuY0pLcGc9PSIsImkiOiJwRE1jd0tOSUN3V3BscENmIn0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaE1wa1Q2K0s4THdBelJvMUVPbXJoVDN3YjR1b1FmWk1LMzJDU0hEUjVTTHdzMytpSGNBZmcrRDdRdlJWdlpNMFFnPT0iLCJzIjoiSXZFYmgxdmMvSGJYWUxDTTV4c09VZz09IiwiaSI6IjNSYVlVZloxR0JGcC9oWW8ifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "Pkykzhack",
     "size": "9GB"
   },
@@ -5604,7 +5610,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSkNacm4xSTJ0VGo0S3JPc2E5RjVsaEdmOVZHMEM2OXZGbjdHL1lhTXpFWDRLaG40OFFiTTZIa04zUFo5NVc5ZmVabFoiLCJzIjoiWE4vMTNCclZhdjVKR2ZqM3J3TE1mQT09IiwiaSI6IlVNNi8xNDg5Y1dzanNMaUkifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1B6K1QyczJ6N3hwU0JvaVdqdnNIOVc0VGZJSzFqdFUrYzZnc21xeFpnSjNxbXBFcm1CbEJWM2NVbTY2OVNiY3VRPT0iLCJzIjoiR0p6ZVZzNVhYVkdNcmlHZ0tmNWd0QT09IiwiaSI6Ikg0TUZ4QXdJNTVMWHcrd0gifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "14GB"
   },
   {
@@ -5622,7 +5628,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidU5WNkZYYnNxdERmQVFJUVd0U09ySlJ4M0Y4SFdPaGI1SGdPZDVYSGR6M2JubWluWFozVVpqVk9pU1c1VzlsL0FoRzNMOHdaIiwicyI6ImpGUEcvWWg1OVFNa1FVV2paRUo0TEE9PSIsImkiOiJJMUp5SzRtSEFvQ2ZaRGx5In0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVzlIUWc5WkdQVm1aOCtDcW94QXkwMGR6UmVXNjlKM0l5WktCekNxVi81a2pZTVUzT3MzZE5paE1Ic2NTcExQSjJRPT0iLCJzIjoiTkhIanhKV0JWSjNEUHZyMFJOOVFKUT09IiwiaSI6Im9VYzdOWC93bTlKQ2pqSTIifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "Pkykzhack",
     "popular": "on",
     "size": "41GB"
@@ -5706,7 +5712,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNXY1djMwSkFSRVBkNzVqckpWS09Oc1pndG1BY0JDUlpWWlJvZmZFM1hLMFRtOU5TZDNkaVpuUEhGbHBFV2R0US8ya1BaNzRNIiwicyI6Ik9PSEFSTEdrM3JRdXdEQkZpRHA5M2c9PSIsImkiOiJROTBLcXhjbkVoOFo4V0M2In0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia2w5bE9MTUpqeXJNTmo4T0Jpa3ByME5jREh1cmlOTmt0c0NJQlM0cm1NMzB3eXR5ZGc4WDNIYlhUQUlXc09rdzZ3PT0iLCJzIjoia2FDTG5SUzV5K0ZORlcrRlFUVk13UT09IiwiaSI6IlN2MURmbDBpWW9KNHJwdUMifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "44GB"
   },
@@ -5893,7 +5899,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWnRJWnZUbDRGVUhRbEllY2ZPQlpRRS81OXJmT081S1hmMFZXa2VwR1lNdFo4N3NNMm1GdnVUMVJONVdoZCtNUDYyRVAiLCJzIjoicVBraGFlbE5aSXdESUFXQTdnODhnQT09IiwiaSI6IjV5N2hESE1pZWkzZ1BTaUoifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1d5WUthTGlkR2EwMkx3aCt3WnhCdWVZb1dva2JzTUYxdDBON2tyQllWN0g1SjBSUkMwWENnUk5ZczNTRHdQVlJRPT0iLCJzIjoieTlyUjFQTkVYTXptM2Y2UG83ZFNNZz09IiwiaSI6ImphWTFIRHFVY1laWmsxQWkifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "BestPig & kerrdec97",
+    "credits_backport": "BestPig & DecKerr97",
     "popular": "on",
     "size": "155GB"
   },
@@ -5925,7 +5931,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSU5JbGhnSEx5RVMydGJkVC9taWlnU0haMGJNNkdtNFV6ajZOcFhXeTRMQ3FndkszWkZxWGNRRzMvYlNGejgvMTNwMTUiLCJzIjoidE9rUzg5MTc3RGtTZHdveWs2OW9hUT09IiwiaSI6IjVhLzFyanp0QzBVQnJqdXQifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMzJwN2Q4VG9sb0hBS0xIdzRQdTAyaFZDUTZVaWUwZWM5QlBMVUgrVngwa2ZBcGMrRUZ5WThXa3A0b3E0bng5b3J3PT0iLCJzIjoiaTBIdHVKMVZldnIwY3BlcmxVRCtoZz09IiwiaSI6IlcxMzJwZUFzd0pUWUlubEkifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "244GB"
   },
@@ -6056,7 +6062,7 @@
     "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaElEL3BOS2JuVjNZdkpQbTZYazZSZTZXc1pHTGwrTGRvZjdVcEJya3RpNHZWZGIwVWJkN3ZTZ1o4ZVFMV0tySUtKUFoiLCJzIjoiSEp0QVc0RVh0ZGhBVkNzOVZ5S05TUT09IiwiaSI6IkMyV1dxUTdQNFJYWXdxZG0ifQ==",
     "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiM2dLMXQxUXdtcE01eDAvSGVnZ2lYbDVER1BQY3hxM2dDa1VQeFYwR2s0RmtqSDh0akpOWGlYSFRjSmVhZHUzQXpnPT0iLCJzIjoiZnBaNExCRmZ4bjJCSlZqeHFQV0ZZQT09IiwiaSI6InRnakpmbS8wSmRSUmdHdzEifQ==",
     "credits_files": "DUPLEX",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "2GB"
   },
   {
@@ -6087,7 +6093,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib3pjT094SjNEV1N5NkIwZWFMTy96U3psWkswcEhkNUVKbVFuSWhmY3J6VnJ1Tm9QTWJPS3dENmRoQ0JKcnVXM1hJRnMiLCJzIjoiVWZ3MElaUGVOVENqSW90N2FIZy9JQT09IiwiaSI6Imo5Y2k1R2RiSGhQMkRVQ2UifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOXJtQSs5M0hOOHU0UVhicm9Vbmt0TjcyeUtRekRFT3BnL1ZCaWtoU3BHdDJQNmZZcVNHUE56OVJJOG5vc2NVMWt3PT0iLCJzIjoibGVLci9CUVdsWEROcnpwMkZrYXUvUT09IiwiaSI6InMxRkVTazBiZDhTbEtDZk0ifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "45GB"
   },
   {
@@ -6103,7 +6109,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMUtFUzM5TWw0YXAzd2xqSXR6QWFDR1lBbzJpdVU4MEVOV3lvL1FYaHNsQ05TOUxlOEhLN2dUQTl1NjFqellUemY5akMiLCJzIjoiS2N2OTdkR1BKRHpkcUk4M2JiNEVwZz09IiwiaSI6InhiSVBVL3U4MTRLMm4xc2sifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQWlOZXdmVTEwd3dqZGQ0TG9tMEVRdlQybjhUNFB3eGh1L1FVWm1pS09UL0xrUm8wUnNrT01zNUFnbVo5VXpkNGl3PT0iLCJzIjoibWlTSG1nUHhmYS9SdkxFUU1GY2NIUT09IiwiaSI6IjZmc2NFZHN3UVVXb3Yvb2IifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "21GB"
   },
   {
@@ -6140,7 +6146,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOTB3aHBnaEpuVEpaeXFXYjBjWkpCTy9xNDRhRFUwVUt1L2xMR3hUOWJrUzdVenRBWERVWTQyQUtIeG9GMjBNYmZPNThZdk1iIiwicyI6IlN0cGVRWDdTWjRoZHdjeTBEQU4zVFE9PSIsImkiOiJvaEJ4ZC9MMldFRFZiTHdCIn0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVUF1ZHZYZWJOZGZKbGI4cHY3MmhidnhBYURqOVlTbGhYYVJwSmlXNVU1bWo4WkkrOGFON1RZNHdyM1VnUCs1MHNnPT0iLCJzIjoiaUVaaXI4Vlp4SmRpVGc3QzlVOWZUQT09IiwiaSI6InR0OVd5S1krVkFtMjJFNDkifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "Pkykzhack",
     "size": "12GB"
   },
@@ -6192,7 +6198,7 @@
     "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOVhEWUNvM2d3dkJNdzlET1hHWXR0elhYdGtGM3IyYTdDTXpsWmtHalZvb09wZnhTdU1TY2xqVVJVL2t2SFZaNFNROVkiLCJzIjoiNnFGbFNka0VVZGNCVmp0d1VVSy84Zz09IiwiaSI6IjdWMG01emhUcjJlWWR2T1gifQ==",
     "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidzNwUE9aakpjL09uTERoa1lhaDUvKzlSK2RrTkMrUWV2ZXUrc3c3TkE2ZHgrR1BndlFzS0t2a2cxSm5VV3IzbDhnPT0iLCJzIjoiLytKSXFKUm9WbnUxN09NTFB1dlg4UT09IiwiaSI6ImRMVHZKdmNJaDMwVTcwcnkifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "72GB"
   },
@@ -6212,7 +6218,7 @@
     "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTUdneTQ2Y1lwWmQvWGhwSk9aOVBOL3lYYkgwNzQzdUhCemtzZ2RjYjdGL2pxQVYzT2o5SG55R010V1BjaUtTN2wraDciLCJzIjoiZHVQOThNbjNHSlhuOFQyMWcyaE9zdz09IiwiaSI6ImRVdFg1YTV2MGJ1eG9sdXQifQ==",
     "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS0U5dFFUbHdXMExtaDVYNE91Ti9lU3orM1g1QlNGaEY0OStLRGJta3djOHZpMDQ1c1pYY3VZTWdsdWRRK0hOKzZRPT0iLCJzIjoiTVk2S1dsamlKbDBQWXF0dVNiVUdVUT09IiwiaSI6Inp3QlhkUkFwMDJPUk1WM2MifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "60GB"
   },
   {
@@ -6244,7 +6250,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicjQ0RTZTdmJHS25Fb00raEtoWENMeEErUis4cnBTTTFMYXc2eXBYWTZ6cml5NnNXT2VIRGtSSFRoZDJaeVEyOUc1UkkiLCJzIjoidlpTR0d1YytSWWROd1Q0cGZ1V2FiUT09IiwiaSI6Iks5aVZ2R00rWHcxSURhQ24ifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTU1XOEVTR1hvR3B4U2QwbGYvS3JXTmVmLzZPZlBDTHN3ZzF5NzdkcG5OSUxXYmJ6cnQ5cFJVQ3BBZlVpVy8vSmhRPT0iLCJzIjoieHgxemFjWmFwdTlndVhqNUE1U2pJQT09IiwiaSI6Ii9zVFR1RURNeDhYbHE1VncifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "159GB"
   },
@@ -6440,7 +6446,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidndXdGdwRnl5Qks1S2RHSmZGK3o3N1JwMEsxd2dwUDcxRmo2OGp1NFY3SElPbkhUK3V5K3VZS3pFOHB1YTRabHRrN1giLCJzIjoiWlM0UnByTWxhMGpvN3o5NDFVd0VGUT09IiwiaSI6IlAvUWFWeUFjTGI4Sy81V1AifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS2pCS0NVWGdQcUhOTGJ3UWsveFdIWUFPUnNrVXlac1F1cWU1bjI3UmJNOXQ4aUd6a2tSejhpbkwrMFVXdy92bCt3PT0iLCJzIjoiTnI4ci9ZVnd3VkdCSXdTcjhGdnVhZz09IiwiaSI6IkN3WVd1Ym1kT2h0R1VoVTcifQ==",
     "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "20GB"
   },
   {
@@ -6456,7 +6462,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVjQwZEFEMkpaWUhaL2hRaVozdTNjdHg4RlR6Sy9YODFhR0pTdkVneG95bDkyeXlQMW9wdTIzNDBRdWNSYStrNTA3NS8iLCJzIjoiclZzYlIwYmdha0ZaQVJGVk5rSEx6Zz09IiwiaSI6Imd2LzhIeU16TDZ5akVtYWQifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR3pkWW1DNHdzWWkvZ1RDV3lUbjdPWmUzT29OWWc4ZEl3c2pONWNvTTBXeEdPMi9nRzBjSlpLWXFOcUZ2N1RCLzBRPT0iLCJzIjoiY3JISUtTNWhyQW1XdndHK2w5Qkkydz09IiwiaSI6Ikc0WHlIeDdyNG4rQzV4ZHgifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "10GB"
   },
   {
@@ -6507,7 +6513,7 @@
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNFhFanBaRHJlU0NSRDBmQ3NGUHFjREZ1S043SFZjazRtMjRDbkpERm9uZitOSmRUZm42VTU1K0hoNG9JdE1Wd3RBPT0iLCJzIjoia1F0amgrQjJFZmxJbXdVRVM5VVFXZz09IiwiaSI6IjNNUG5heFo2TDJxSjE2WHIifQ==",
     "credits_files": "High-Speed007",
     "credits_dlc": "Pkykzhack",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "48GB"
   },
   {
@@ -6544,7 +6550,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVGF4MmY3eHhkM1VYSGFsUjZQMHp1OUdJUDJ5cGh4cFVGT0JLTHZHWmd4aEtkcDhnT3J0SkRxMW1tdDkyNzlOc29zNGYiLCJzIjoidUF4NzQrSDRMQWkvWnFKVURTNno3dz09IiwiaSI6InN0Y0N3YXdoamtrUmFvUmYifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiU2dyUXlaQ0greStPb0sxbTZvUTBHSDR0L3cwcjViWWVwK01PRFkvbmFDTG9xcStzcXR3UzVIM3FXZTUxNUttTWpRPT0iLCJzIjoiZWxLVng3SXhiS0xLQmRTTFp3U1Jqdz09IiwiaSI6InRQQ0cycEpuUzlSZWl6YTkifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "72GB"
   },
   {
@@ -6672,7 +6678,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidEtGeEd3ZnZESStQbEdKOThUdXNKMEgyd0YzM1pFMzlQZWZ1VDVtQUZ3SVJ5cjlSRzVwQ0ZHM2w1MFN2L20velhaMTRvZ2ZnIiwicyI6IjlkdUV4eGNydjVuVGdMSjdUYUNzdUE9PSIsImkiOiI1YXhJSmpCaEt2cjlmTXJJIn0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibU1VT2ZoK0ZIY0ttMWJuNnBpL2xVMGdBMzhjZE1LSERmSU8zaGV0VnZpMTRkWXhCbzhYeGZBVElQSVh5K2xranN3PT0iLCJzIjoiTzd0VnB6QUd1RExkV0ZlSXZvQndOUT09IiwiaSI6IllCakFGc0d1aGJCS0lsZGEifQ==",
     "credits_files": "High-Speed007",
-    "credits_": "kerrdec97",
+    "credits_": "DecKerr97",
     "credits_dlc": "Pkykzhack",
     "size": "51GB"
   },
@@ -6689,7 +6695,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOFBaWlFaN1JGMHRoa3gzU1A1TjhHVXVJRXBsR0xENk50ZVVpUUJjTHUzamZ0Nm1yUGxOeVJONkNnOUU5a3pMOXNYTXUiLCJzIjoiSFNKYXg0WG5xMllwUzZJeFhGOXd4dz09IiwiaSI6Ijg5Yk9uZXVaemNIZTNGeG8ifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRHlYa3ZUZ1RWMThML0dEVWxqeTZLQ0ZTK0xvOE9vMnpHaTV1QWxIVmRjbUZ0cGRyeE9jNTM1Sk1GNm82ZzRRclRnPT0iLCJzIjoiMVcvRi9ZT083bnl5RjZvSGlFT0ovZz09IiwiaSI6InZ4c25mWnQ2cWQ2QXdiaVkifQ==",
     "credits_files": "DUPLEX & VanBuuren",
-    "credits_": "kerrdec97",
+    "credits_": "DecKerr97",
     "size": "36GB"
   },
   {
@@ -6726,7 +6732,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRXdsYVAxcjU5b0NLeEgvK3dMSkI1WHlkS2dMM0ZiV08vb1RVbjlhcmwwY0E4LzFXZ3ZVMUVCeFlmRmUxYVFZMU5CZ2kiLCJzIjoiZEJGenpzUzd5MjJhd1dOazE4MXBDdz09IiwiaSI6IlhMRlB6dExwUzVza1VOcmsifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRncveG16elkxejVJTk1Lanl6cXhRalJKWEpSSXFIR2I0N2hUdjZLUytRREkvSUFnYUxTRGVMMGc4YnZvTmlYOUp3PT0iLCJzIjoiWXJ0dTRjQTYwRFdPMVhMZjIzNzhzUT09IiwiaSI6IndEMU5NTkdlSHhXanVTemEifQ==",
     "credits_files": "SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "how_to_play": "Italian Mod replace German Text.",
     "size": "40GB"
   },
@@ -6743,7 +6749,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidEh4cW95L01nT2xUSEN0MU0vck1aMWlVTUgwSnRiOFQ5OHBVUm5FeHI1RktMUW84K2VJc1hpbkppQm1mbU56R2d3MksiLCJzIjoiRURCNUxlek9wNlo2a3VhMVhjZUgwZz09IiwiaSI6IlpxL08zYmpsd0Vpb0JXVUUifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicDdFQ1BIM2d5TWh3VHUzaGJJcjFDL3o5cHgwZ2xLVEV1Q0hBZ3JTMlh6c3JPVUZ2V0t6S3JlMUhyV3J3YkN6Z013PT0iLCJzIjoiMFN3cTU5Qjh3WUJqaWJlaTZseUZzUT09IiwiaSI6Ilg3dEFIRDVwdFNXRUVjWVIifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "38GB"
   },
   {
@@ -6761,7 +6767,7 @@
     "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR0J5eEVwbzE0aTlnMWdpb0VZY2VsV2xJKzNDZ3JBbEJ6aVYzakFjem5lazNrVzFjQjhxS3EvZ0x3cHEwSWVhTnB2VFdoak9wIiwicyI6IjZDY2Z3TmF5L1VxUmpQMVlZWWlOVXc9PSIsImkiOiJhU2FwTFovWVdiYUZQZFY0In0=",
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQkQ3RkFPY1ZZQmVzemc5TTlsQ2ZlZHEzazl5aVNuWm9HbG90OFZncHFOVURUYUFNaFFjU08rcTF3MlNpdHBZQVd1MUtodnpvYTJLZlVMOVQvcmszbU5OZ05xYmJOamk4S3RnPSIsInMiOiJaZnhwb0I2MktFQTk3cEJEYTZuTjRRPT0iLCJpIjoiWEU3RkVPMlNndTh3MFduOCJ9",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "credits_dlc": "Pkykzhack",
     "size": "56GB"
   },
@@ -6778,7 +6784,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiekduYjM5bWZBZEttcE9ZYmhpUnBOQitTK3pxNWFxRS9LY1MzOVMrZTYreTFCcXIrU3VEL1VjUlUzUWg1VGo2RDNreUQiLCJzIjoicGFvODZwT2VPdUZMdjFyei8zcHJrQT09IiwiaSI6IkpaTlMydlptUUJzdXBDOC8ifQ==",
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTWVVcWQrMDVidmJoZ05LeTJPa1RoMWVIOG5KTVR1TXYyMSthOGNyam1PNld5SE5DSjI5SW55eVkrbDFqcVVrSVF3PT0iLCJzIjoiWFQ0SkVZZ2hpclNvNnZEK09FVitsZz09IiwiaSI6ImtKb0lXWHN5Si9vUzVQVWQifQ==",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "124GB"
   },
@@ -7171,7 +7177,7 @@
     "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia2pqaE82TitacHdNaGVBS0tNZmlEbUtIUmJJYUloMlk3UHBvcGJ4TyswYXE2RERDRU0vN29CN3YzZVE1YWdzejBlYWEiLCJzIjoib3dQWHlJVVpvTW9Ub1J3bk9aenRyZz09IiwiaSI6IlhCeFRJbjFJYVZmRFN5QVIifQ==",
     "backport_buzz": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMzVtNzVVZS81ZWJzVTllYU5GendoeTRud2ZuTWFnblJkRUxUSmpUbWlHZUk1UmN5UjlwN0lHc2VwK29mV1JvKzdFakIvZz09IiwicyI6Inh3TGU3NldFODE5TE55dDNES2wrdkE9PSIsImkiOiJvS0pEK2ZFa0ZBcGVoQ2ZGIn0=",
     "credits_files": "High-Speed007",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "how_to_play": "Italian Mod replace German texts.",
     "size": "23GB"
   },
@@ -7271,7 +7277,7 @@
     "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT2ZlZGhadEFNQUxTTkZNZHVDZnZCWHFqTUphM1FsdXVpQVV1My9BOGlFK3d5ZDRkbElDNnNrQjMyazF6T2xPNXpBQi8iLCJzIjoiOG8xdTA5ZHVyVkNpYWJ5b0JPNkZjdz09IiwiaSI6IlFzaUtpdERybDlNQlpTdnMifQ==",
     "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibG52Sk1LODA0NHpJMkR4aXcrL2trS3FTUHhCNGpkaG1aeGRoWHJsOFBHM2RHclNCMGJ0Vkp0R3RQMVBzbXQwUDZqdjV0UT09IiwicyI6IjZtdWRwODByRTlsNTFObHVjSk5YY0E9PSIsImkiOiJmMU5qUFgwQkdidnpzTmpEIn0=",
     "credits_files": "DUPLEX & VanBuuren",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "how_to_play": "Need connection disabled or 127.0.0.1 applied.",
     "size": "71GB"
   },
@@ -7295,7 +7301,7 @@
     "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK0tUbHM0TUtEUGhTYWR1L29FS2xyaUp4M3IycTRyS21Ob2RmZ3lld2FMMHpkeUNpRVVlbmsyZVFYOXFnTy9MMXE4eGwiLCJzIjoib0k0U1JVdHZJanMveXh2U01VblErQT09IiwiaSI6ImNGZ29kcFBkVVAvOEtyWmIifQ==",
     "credits_files": "DUPLEX & SiESPta",
     "credits_dlc": "DUPLEX",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "how_to_play": "Only BackPort have 4K Patch.",
     "size": "26GB"
   },
@@ -7349,7 +7355,7 @@
     "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNkJYODhhTVI5Nlk1ejJ4UTRPVzB0bDRjc0ZSVld2bS9YMzMrL1ZHVUN1T3lBbTJCd3RLTG9JaVIvempDZU9BOWFXcmEiLCJzIjoiRmVqcFFIelpxaG1wTjZlU2xDVDRsQT09IiwiaSI6InVsV3Nvcnc2NExDVmF6OHEifQ==",
     "backport_buzz": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMENVN2pLdGxyL00wTVVnSlpHUHNKcmMwTHQvYlVQcWNreFJ4V0pFN0NCUGluMDltRVRqTHAwdUtRYUJvVlMwZEgxSTcvdz09IiwicyI6Iit6NkhvT0ZpbUhmaVE2NzIvTTVjS2c9PSIsImkiOiI3blpsY2JwRENhV3B1VzFSIn0=",
     "credits_files": "DUPLEX & SiESPTA",
-    "credits_backport": "kerrdec97",
+    "credits_backport": "DecKerr97",
     "size": "19GB"
   },
   {
