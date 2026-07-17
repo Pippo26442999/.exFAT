@@ -1,5 +1,26 @@
 [
    {
+    "title": "Lost Soul Aside",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Lost_Soul_Aside.png",
+    "tags": [
+      "PPSA26358",
+      "v01.012",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUkQyTHVqM2FJdVVxbTQ1SWNWOHpTZzJidk5QbFNSRjg2TW5XZXVuckxQb1UxN3lRVjYxdTd5Nmk1MStxbGlXamo5cGNra0RmeE1VRkw4N3dRNVVxR1IvYXRNYS9rUEE9IiwiaSI6ImVVUTlFT21XT1VHOXBtaUwiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWXRvOFlnN0JrV1IxOWRTTWRLZ1JqWnlCV1M2ZnI4eTlMTTlYRi82T3FlRmU5V05jUVVmY0hNTVhUMzlXYkhvd01ZUXg2T3pWUDFSSlY1YkdtN2lCU29NNUt2NW0iLCJpIjoiWDJlYy9JUzdTOEc2RkYrOSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "",
+    "vault_url": "",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL3JFaXdlV0RqOUlRdXRPODhndlZSUXV1MTFBZkVxZjZaN0ROVjM3QzBuYkVXa2F2UzJwUFY2bHlueFNLMmlXamVSVjNtUGlxYjNadEYvdzNnQXFXMmxRdWhTVTQiLCJpIjoiYUg1Q1A4T0VjNjQ3OFR1YiIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNGFBMWlqc0dPZDdLY1EyVmZleDBWaThVM1BtYXhwc1hjWnFuS3VzcmpoYWxLNjJkdVBmRmVuREIvZ3UrN0ZOVGQ1OVdoaGcwUmc3V0pueDFHSFdYbFF5UzFmSEt0T1k9IiwiaSI6IndaRDlCbG15azd5MlB1MFoiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "popular": "on",
+    "size": "162GB"
+  },
+   {
     "title": "Prince of Persia: The Lost Crown Complete Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Prince_of_Persia_The_Lost_Crown.avif",
     "tags": [
@@ -8021,23 +8042,6 @@
     "credits_backport": "Kira ",
     "popular": "on",
     "size": "102GB"
-  },
-  {
-    "title": "Lost Soul Aside",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Lost_Soul_Aside.png",
-    "tags": [
-      "PPSA26358",
-      "v01.000",
-      "USA",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiU0Rtd1RNdFY2VUxwRU9PWTJhdis4S0NUR2ZmK095VE0xRC91NnhCa0NWcTJkUUxYa0tOdU9mbU1qM1ZEVWZzSnR6NnVLaVJDIiwicyI6IjJ2aGUrbk9HZ2tWeEVPQ3RyOWlmYmc9PSIsImkiOiJHSzJOR3JhNFRhMTdvQTBCIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiV1lIZDUxalB3dnpEU0FtWUozWDBIY3YyTjJHaWI3RElJZkUvQTUyYWpNZEZ3V0MrV2lGOEtVT0owWVFtbXR3Zm1zZE0iLCJzIjoiQWp3ZkZORlFLUXFhVjg2Wm9XUXNKUT09IiwiaSI6IlpQUVdXczJxWnlrMkM2SFAifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig ",
-    "how_to_play": "Audio 3D must be ON, tested on 9.00. Enjoy",
-    "popular": "on",
-    "size": "157GB"
   },
   {
     "title": "Demon Slayer Kimetsu no Yaiba The Hinokami Chronicles: Ultimate Edition",
