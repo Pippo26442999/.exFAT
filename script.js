@@ -1714,7 +1714,34 @@ function openGameModal(game, event) {
         dlcSection.style.display = 'none';
     }
 
-// ========== FUNZIONE PER APRIRE IL MODAL FIX ==========
+    // ===== FIX (nel modal dettaglio) =====
+    const fixSection = document.getElementById('modal-fix-section');
+    const fixContainer = document.getElementById('modal-fix');
+    const fixGuide = (game.fix_guide || "").replace(/'/g, "\\'");
+    let fixBtns = '';
+
+    const createFixModalBtn = (url, label) => {
+        if (!url || url === "undefined" || url.trim() === "") return '';
+        const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        return `<button onclick="openFixModal('${url}', '${fixGuide}', '${safeTitle}')" class="modal-btn">${label}</button>`;
+    };
+
+    if (game.fix_akia) fixBtns += createFixModalBtn(game.fix_akia, 'AKIA');
+    if (game.fix_viki) fixBtns += createFixModalBtn(game.fix_viki, 'VIKI');
+    if (game.fix_buzz) fixBtns += createFixModalBtn(game.fix_buzz, 'BUZZ');
+    if (game.fix_data) fixBtns += createFixModalBtn(game.fix_data, 'DATA');
+    if (game.fix_filek) fixBtns += createFixModalBtn(game.fix_filek, 'FILEK');
+    if (game.fix_vault) fixBtns += createFixModalBtn(game.fix_vault, 'VAULT');
+
+    if (fixBtns) {
+        if (fixSection && fixContainer) {
+            fixSection.style.display = 'block';
+            fixContainer.innerHTML = fixBtns;
+        }
+    } else {
+        if (fixSection) fixSection.style.display = 'none';
+    }
+
 // ========== FUNZIONE PER APRIRE IL MODAL FIX ==========
 function openFixModal(url, fixGuide, gameTitle) {
     const modal = document.getElementById('download-modal');
