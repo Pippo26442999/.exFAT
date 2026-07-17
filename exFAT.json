@@ -1,5 +1,30 @@
 [
    {
+    "title": "Sonic Superstars",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sonic_Superstars.avif",
+    "tags": [
+      "PPSA06888",
+      "v01.001.008",
+      "USA",
+      "Standard (7.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZkR6V1ZBRTN0aHRWaFh0ekp5WUtUbllDTk9IY2pxMW1rNzUvR2tRb092QzNKRWd6MnY5SmhYZ3NwR3J4bWpwYmhlamNrZjZrIiwicyI6InJQejdnb3QvekNBRHJ2dXI2KzRaMVE9PSIsImkiOiJhL2E1THliY0dqMmN2NjJzIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWWFKcnd6Vmt3NHNTZ3QyeXh1OUVDV3E4UE5jV21EcUVlYStMVjMvc2dja2crK0U3a2huVjVOMHJmOEg4ZzFmck43dlEiLCJzIjoiVDhONXo3UUFOMGRNNmNkb2gvbHJ6QT09IiwiaSI6ImUxSG9aUVRQU1ZxcTFLcEYifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZGhWMkozTnJFS1V3T2lUSWJHekNDZXhad1lCY0tpNUNyVVpCdWpqVUU0QUpqODNYWTM0eWRybzJ4eEFwYW44ZUFnPT0iLCJzIjoiMmFZT2Nia1Vqd2dyNGRQWm9mb1FHZz09IiwiaSI6InJIVkNqTS94SHc2eEF2NjgifQ==",
+    "standard_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieFFaVlllTmQ2YjBlR1Y5akI4a2ZHdTFCZUNBbkVlRk9tSzNhOFNGL3RmWHM2V2M2V3dxU21udVZSYTkwOExXQ25nbkciLCJzIjoiK0htSEs2NWJud3FTVi9zZkMvK09vUT09IiwiaSI6ImR1ZzFwRkhyb3c3S2RXVVAifQ==",
+    "standard_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiME9zbEN3Z1pQeFQyTjVRVS9SZzllK0dwT1NINy9WVktOSCtaT0JkSTlucklvUG9RaHh2SU01ZUh2QlZhVklaTE1vTT0iLCJzIjoiWkVUc09Cb3p3VFRqNi8vcEhabFcwUT09IiwiaSI6IjlTTWdVdzU3V0RXZmJEVEQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoianZNcEw1M1F6NnhWNkxNV0UrN255OXEzTmQrYXpxN2RHYkFpVHUzUS8yNWxzc2RMRnVyRUxsOEI4N3hQckJVTDFEMnp3MFpFMVJzcm5kRXd0RWNmWHdLMkdibzVWakJLVlZjPSIsImkiOiJTci95SEZTV3gwam5nWjJtIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRk04S1plMUJ0SnNIVy9MRDRyby9sTnA5ZHVEVUl4TFJHZEtEOEM4eWlnVlZ6Vk5OMUdwQmpvaG8wck1IL2xhNmFZYW1mTHZJOVBDMmU3UVUwdGhBdVNSK3NlVGZrem89IiwiaSI6Imk2Y2crMnVLalVBazVFNVkiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTWtPOE02U3VhRHBtazRIUWlob2NobzNDSklqTzVIQ0FuYTNKa3RVRWd1TmV5OUc0M251dzR1SHhXeTk2UWlzQ2lPL1Bhb3ZVNmZ6dzdUancvY1BzQmUxK0h0c0EiLCJpIjoiYlR2NmhGbmVjOUZLLzFGcSIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSVY5Y3ROMGtOeDFyZ1dSUWZOZ1hKRmhHeEJRdHV3a3ZvNDU2R3ZGRkRvV2pEemN5VkVhdkkzbEQzaHNjYUZUcHhuM2N3MjhMU2Q4WjVzT2Q0bU1zZFhHTFNRZlcraDA9IiwiaSI6ImRHMWdtbkR0MWwwSStNU3ciLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZjJjR0N6TzBiU1R2aHVlTFRpbUJpcTNSUUdEL01GR0RkWEJ4R0hVbGFpT3VuclJNemVRWWNXRU5zWHVid1JZZnBoM3NybStjR3d0UEtGMmEyNE5lUHFxUVorSUErQT09IiwiaSI6IkJiL1V3UXhtZ2F4OElKWkMiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "10GB"
+  },
+   {
     "title": "Asterix and Obelix Babylon Mission",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Asterix_and_Obelix_Babylon_Mission.avif",
     "tags": [
@@ -2758,25 +2783,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "6GB"
-  },
-   {
-    "title": "Sonic Superstars",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sonic_Superstars.avif",
-    "tags": [
-      "PPSA06888",
-      "v01.001.008",
-      "USA",
-      "7.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZkR6V1ZBRTN0aHRWaFh0ekp5WUtUbllDTk9IY2pxMW1rNzUvR2tRb092QzNKRWd6MnY5SmhYZ3NwR3J4bWpwYmhlamNrZjZrIiwicyI6InJQejdnb3QvekNBRHJ2dXI2KzRaMVE9PSIsImkiOiJhL2E1THliY0dqMmN2NjJzIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWWFKcnd6Vmt3NHNTZ3QyeXh1OUVDV3E4UE5jV21EcUVlYStMVjMvc2dja2crK0U3a2huVjVOMHJmOEg4ZzFmck43dlEiLCJzIjoiVDhONXo3UUFOMGRNNmNkb2gvbHJ6QT09IiwiaSI6ImUxSG9aUVRQU1ZxcTFLcEYifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZGhWMkozTnJFS1V3T2lUSWJHekNDZXhad1lCY0tpNUNyVVpCdWpqVUU0QUpqODNYWTM0eWRybzJ4eEFwYW44ZUFnPT0iLCJzIjoiMmFZT2Nia1Vqd2dyNGRQWm9mb1FHZz09IiwiaSI6InJIVkNqTS94SHc2eEF2NjgifQ==",
-    "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieFFaVlllTmQ2YjBlR1Y5akI4a2ZHdTFCZUNBbkVlRk9tSzNhOFNGL3RmWHM2V2M2V3dxU21udVZSYTkwOExXQ25nbkciLCJzIjoiK0htSEs2NWJud3FTVi9zZkMvK09vUT09IiwiaSI6ImR1ZzFwRkhyb3c3S2RXVVAifQ==",
-    "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiME9zbEN3Z1pQeFQyTjVRVS9SZzllK0dwT1NINy9WVktOSCtaT0JkSTlucklvUG9RaHh2SU01ZUh2QlZhVklaTE1vTT0iLCJzIjoiWkVUc09Cb3p3VFRqNi8vcEhabFcwUT09IiwiaSI6IjlTTWdVdzU3V0RXZmJEVEQifQ==",
-    "credits_files": "High-Speed007",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "10GB"
   },
    {
     "title": "Nioh Remastered The Complete Edition",
