@@ -1,5 +1,32 @@
 [
    {
+    "title": "Prince of Persia: The Lost Crown Complete Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Prince_of_Persia_The_Lost_Crown.avif",
+    "tags": [
+      "PPSA10528",
+      "v01.004.001",
+      "EUR",
+      "Standard (7.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUlpDbExiRVVLQ3E1LzFnNEZIL0dNZ3lzN0V3SnFJS2NRZzlwbXVhV0lTeWZldUpxSHJtK2NSRElWWUtUOEtFUS9pVkJpQzBrIiwicyI6InlEVS9mUlZqT05iZjcvT0FUV2kwc1E9PSIsImkiOiJFbEkyTVZhZ3pOOW4yTEVmIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVm1lSFRocjlvOW4vZHIybmovQm1iSTZsWTdJR1dQd00veTdpRnQxZUtDT2lpejRJTmdrU0dLNWdQaFk4UERuNWdEUDYiLCJzIjoibktyR3o0aFZoZmVBUEMxT3QwdDA3Zz09IiwiaSI6IlEyZ1Ivc2dGS1dpK1VvcWkifQ==",
+    "standard_buzz": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZzNoZWpjRDUvTlFnUzlyOFd1UGprUG5hUFo2dEpaak1YQ3MwUUxIZHBHcDZRTHBtSlhodnJjY0xQbmtSb1M3ZERya3lTdz09IiwicyI6IjV6RkFtenN4VTIwc29mYVZ3U09YRnc9PSIsImkiOiJuS29ScHl0eDk1N0JsUmxsIn0=",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWlYvOU5oSXJ0Z1RSRkY2aVZRUUVPMTRvVXhuaG5EU25pR29oblJ1a3JlSERzamliWmNkcjJlZ3l5NFh4cFI2VUNzNCtsVlJjTjlXQ3A1MTkzZG1UczZ2YldYeTNBK1l0cGtZPSIsImkiOiIvZGVqbVFuYXYvTkl4ckRjIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ3ZoVFFLRHIrT2hmbjB5bC9uTnB6ZTFpdU1IbWRNakw5RWp2aE5hWW4wS3dDejlyWTNvQllTT3UxSjQxLzIwUFpwbGZVSkFFM2wxZ0RROE9RTlZiSjNNZ3l0M2xJWFE9IiwiaSI6InplN3BNQk9GOGoranpjTzAiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVW5yc2VwOWhNWFhYUUwyeEtDSkpJNE16b1dQbUQzK2gzU0lrbDlZQlNGTzBMNENNZkUzS0hrdkVHZTlpSUlDWXlGeFp5MGpLNk9qTk40QTMzY0kzUCt1TjFGY2UiLCJpIjoiZEZncUZSeGFlOVpPUnBRaiIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVnhJc3dBRjFqc3pOeHZYazlyOUY3ZjJFdW1nV2htc2NINkZFSDFoWTBVUFVGMGoySTJNaVdmNE5aSVZXR1NVYm5VdytMUVF5NVVxL1A0NnVGaS9HZUxJTHFOSXM1ek09IiwiaSI6IjN0cFdSVVV1YjhEejZYYXoiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiajdkeEN1VGFkNVdiaTNKMmdRRnVqV1hFZlJFcU10WHdtYXk4UndpemN0YmhmWDJrK3JGZ1hyQ2p2c2NtZjh3ckxsclZKOEdqSHJidXlWRHNCQmlOSjNVNG5GTERYUT09IiwiaSI6IjllOGo2dStFeWhYRElFOVkiLCJuIjoiVmF1bHQifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUjhiQy80bVBhd01Wb3grNDBwQnFzQnFYcWw0NEJpbEwxUHFUMU44WWdjNHFwMDFlWkFENVN1QUhQTHpZa254S3dBeE9ZTDFTIiwicyI6IklhYTh3RHBDc3U5SkVmVFRZSUVRemc9PSIsImkiOiJtdmhuRUkyV1dqM1JpeXNxIn0=",
+    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQjVmYkRiaHVtOFVsMEV6WVNuMUEyZG1TTHVjcXNJRGVpeEJSSWtsM3hwREJocjVXUXpLdU1aR0Y1N2hLOXZPTm1DZ2ciLCJzIjoiNWZjbG1nTERjSkR4ckZibFdsTlJYZz09IiwiaSI6IlpzT244TXBabCttNDRDQkMifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNWo3bnp4Z3hkQnlQUFJEVGNOMXdhYnVwOE9rWkhabGlHNFovWVdhOVE1TzM5d3RKek8wMFVGODVmNUI0aU1RdGQwUE1lbW1PNFJIc0Y4THRHYlRqSlRiVmhOSzEiLCJpIjoiRVZEbGFseFAwbnhRQVFTZCIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZXZaT1VaWXkvQU9MdWxhRlFFVVFXWG1GR0JHOGJIVFZuM1VrWUt6dmN4MnV6cVhVZmRDb21XT0hPWUYyMDdDYXdjVmk4dlNEMEFzcXIvNFVscUQ0c0lkRThOaVF3bnc9IiwiaSI6IlQwK3B6cVlQM0QwckZFU0kiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "SiESPTA & DUPLEX",
+    "credits_dlc": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "popular": "on",
+    "size": "57GB"
+  },
+   {
     "title": "Sonic Superstars",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sonic_Superstars.avif",
     "tags": [
@@ -7392,25 +7419,6 @@
     "credits_backport": "DecKerr97",
     "how_to_play": "Only BackPort have 4K Patch.",
     "size": "26GB"
-  },
-  {
-    "title": "Prince of Persia: The Lost Crown Complete Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Prince_of_Persia_The_Lost_Crown.avif",
-    "tags": [
-      "PPSA10528",
-      "v01.004.001",
-      "EUR",
-      "7.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUlpDbExiRVVLQ3E1LzFnNEZIL0dNZ3lzN0V3SnFJS2NRZzlwbXVhV0lTeWZldUpxSHJtK2NSRElWWUtUOEtFUS9pVkJpQzBrIiwicyI6InlEVS9mUlZqT05iZjcvT0FUV2kwc1E9PSIsImkiOiJFbEkyTVZhZ3pOOW4yTEVmIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVm1lSFRocjlvOW4vZHIybmovQm1iSTZsWTdJR1dQd00veTdpRnQxZUtDT2lpejRJTmdrU0dLNWdQaFk4UERuNWdEUDYiLCJzIjoibktyR3o0aFZoZmVBUEMxT3QwdDA3Zz09IiwiaSI6IlEyZ1Ivc2dGS1dpK1VvcWkifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZzNoZWpjRDUvTlFnUzlyOFd1UGprUG5hUFo2dEpaak1YQ3MwUUxIZHBHcDZRTHBtSlhodnJjY0xQbmtSb1M3ZERya3lTdz09IiwicyI6IjV6RkFtenN4VTIwc29mYVZ3U09YRnc9PSIsImkiOiJuS29ScHl0eDk1N0JsUmxsIn0=",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUjhiQy80bVBhd01Wb3grNDBwQnFzQnFYcWw0NEJpbEwxUHFUMU44WWdjNHFwMDFlWkFENVN1QUhQTHpZa254S3dBeE9ZTDFTIiwicyI6IklhYTh3RHBDc3U5SkVmVFRZSUVRemc9PSIsImkiOiJtdmhuRUkyV1dqM1JpeXNxIn0=",
-    "dlc_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQjVmYkRiaHVtOFVsMEV6WVNuMUEyZG1TTHVjcXNJRGVpeEJSSWtsM3hwREJocjVXUXpLdU1aR0Y1N2hLOXZPTm1DZ2ciLCJzIjoiNWZjbG1nTERjSkR4ckZibFdsTlJYZz09IiwiaSI6IlpzT244TXBabCttNDRDQkMifQ==",
-    "credits_files": "SiESPTA & DUPLEX",
-    "credits_dlc": "DUPLEX",
-    "popular": "on",
-    "size": "57GB"
   },
   {
     "title": "Ghostrunner",
