@@ -1,5 +1,27 @@
 [
    {
+    "title": "Painkiller",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Painkiller.jpg",
+    "tags": [
+      "PPSA27676",
+      "v01.007",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaG9zL2ZRcGt3R0t1L0xMK2xXT3A5K2pNcDFONTFVODJaMVJvZmdQckE5STR0NWIycm5ycG90UUJhWkREUWE0ZTArSlY5UnMyLzU5KzB0M2N5dmxXc0xKU1dPdGJQTWM9IiwiaSI6IjQvdjNtOHJ6ZHBvNHFMbWgiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibDBMdmJWYmtLZ241TGNrSjhqTHQ1Z2VhSzFmclVGTE4wMFhmS3RmWjRXNFRxQzNuUktvUThyWlhsaDgyaEN0NnpBMGUraUlhaFFLWkZCcklzWjE3UWp1Q2MvSUMiLCJpIjoiQnA4ZGlob0V6c2tSQktJaiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVjI4eTN4Ylk5eFoyb05XUkMwcTZDOWh5Qk9kYjQ2NGtvRW5kd2h2WTdrek9KT1hXNjVLQ1FPdnRpQStGT0paeWdRYzJiY01LQkdsMVA2SmI0MkZmdG5ObFVIcVVGRVU9IiwiaSI6InhwcGtNaFE0ZzlxSm1FTU8iLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM0Uxb01VNWdlMmd6anJnSVViWTJCaTRUdnl4U3N6QnpyTjM3NW15WXV4Z1oyZjFyK0o2Q1dRMHNYVG1lK3czUkljNVVxajdzZkpuTmZXb0pTUU9DT08yN0EvNzI5dz09IiwiaSI6IjRpb1dRTWNvUXAvQkYyV1AiLCJuIjoiVmF1bHQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL0tDVGJsZmd1bndxZ0UvN1dYUy9xTUpBOTlhMnlIZ0Q2UVdhQm5UKzZlK2oydGpNYUV3dThVVnJMMW02bWhEeEpOZTJpdEJZcmhiWjFFRUZ4MEl4QlVrM3lKcUQiLCJpIjoiWktPNnA0UDNNRDAyM2VoSyIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVmtkbFNFWWtCUUYzODYwSnVRbGdTU2UrdmcvTGNKRDYvT0tYUjV0RCs0b3NudjFSN2dYKzUvZVA1Rm82Rk9iMURkOTgwNVpJNjBqSTVGZHlIL0FqRzFlTGFTdnVOQlk9IiwiaSI6ImFxZXZkRVpBSHZsOWY4VlIiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX & SiESPTA",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pkykzhack",
+    "size": "43GB"
+  }, 
+   {
     "title": "WWE 2K26",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/WWE_2K26.avif",
     "tags": [
