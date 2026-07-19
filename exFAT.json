@@ -1,5 +1,25 @@
 [
    {
+    "title": "Syberia Remastered",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Syberia_Remastered.avif",
+    "tags": [
+      "PPSA30140",
+      "v01.003",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib3dEakpGQ0JhR1R0MmtRSjZJSlN4V1V3OGtCcmtyeDlsRlQ3cEpnQjJsQlg2MVRvV2NDYWhrZDVLYUJEK1VzM1pqbVB1M01TVmFjbmo3Z2JRVW4yNldPNk1BMWZhaUU9IiwiaSI6IlMyK2cwbWFncHZUajdLTDciLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic1VrSjlCZ1E3U1ZlaCtBdXBYMit1ZXhCNlNPOUU1RnY1aU5BWjQrcDU1UlJyQmc3UDBVaWl1T09KSG9iVVUwWUVyMndBL1UydzlHS0NMcEJtNEVrNXR5dlI5cXciLCJpIjoiZlZ1c2lHamZzU3FGOHFzbSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZXdwNjRGRFlHVndaVlVkR1B5TFpOWkFpcjBkWWdMR2ZvbmhBM0RpQ0tET1pMV1o2UXdaVkZEQktUOE9yUFVzL2lLUk1STmtybWFmem85bFB4TkRVZGt3MkUybHI1eUE9IiwiaSI6ImdUK3JiNmtYMEc2di9sWHIiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOEh3eGJFVi9Od2FTTkl3aUY1WnlNQ0VhcmczNXhDTDB1SFNOeFpWMGFYYVcyS1MvaTZBSFQ2aFZxN29KVmROYThyZWVQRlIrT1AxdmVtaFgwWm9JdVpybjErSHk3UT09IiwiaSI6Iit5Tit2aEFDbWVxZ1F6R0wiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "UNLiMiTED",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "20GB"
+  }, 
+   {
     "title": "Painkiller",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Painkiller.jpg",
     "tags": [
