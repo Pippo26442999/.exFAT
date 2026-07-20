@@ -8,9 +8,9 @@
       "EUR",  
       "Standard (7.xx) + 4.xx BackPork"
     ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQkQwTmlTaUVtdXBFWXZ2SEJZTG02N2VDZWxnVEd6NFVPL0RNSzV1VVhHMTFNT1g4dG5JUCtiNHFqaG8xV1phZ3pDY2NHR0FBIiwicyI6InlXbE5KM2R3L29YdmtBQWhpenFOakE9PSIsImkiOiJPTkdsL1Vpbk1oZitJY2NlIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibDRTQXFNQkFFMlBtT3E1UXBuNFJoazB1UUlBMzJQSG13OVN5NXFMR0xaKzQ1bkd6WGFLamQzOXZlMnRsWWNpVzZzaFUiLCJzIjoiWGMwVmQzRFBJS3R1b1VnWm1Hb2RrQT09IiwiaSI6InE0SjJxdEZBZnBEQ0l2NS8ifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNEliZ2w2bDhINlVHdkJCV08vVFdoTUdFb0tWVzZpcVZUU0VrY3dwbEpIa0NldGFPN1hGM0RpRDE5R0dSWFk2Tk5BPT0iLCJzIjoiNU5ld3NsWCt0bmwwejNkODBlN29Qdz09IiwiaSI6IlgwcGsydkFRR2ZteGZ1cFgifQ==",
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQkQwTmlTaUVtdXBFWXZ2SEJZTG02N2VDZWxnVEd6NFVPL0RNSzV1VVhHMTFNT1g4dG5JUCtiNHFqaG8xV1phZ3pDY2NHR0FBIiwicyI6InlXbE5KM2R3L29YdmtBQWhpenFOakE9PSIsImkiOiJPTkdsL1Vpbk1oZitJY2NlIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibDRTQXFNQkFFMlBtT3E1UXBuNFJoazB1UUlBMzJQSG13OVN5NXFMR0xaKzQ1bkd6WGFLamQzOXZlMnRsWWNpVzZzaFUiLCJzIjoiWGMwVmQzRFBJS3R1b1VnWm1Hb2RrQT09IiwiaSI6InE0SjJxdEZBZnBEQ0l2NS8ifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNEliZ2w2bDhINlVHdkJCV08vVFdoTUdFb0tWVzZpcVZUU0VrY3dwbEpIa0NldGFPN1hGM0RpRDE5R0dSWFk2Tk5BPT0iLCJzIjoiNU5ld3NsWCt0bmwwejNkODBlN29Qdz09IiwiaSI6IlgwcGsydkFRR2ZteGZ1cFgifQ==",
     "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNk9yM01uNkZLd0preWJQNkRSbmVKRnl5Q1VjdGZ3Y0hzNlRnTkU5RlhVNmdZS0ViYS84NkJWYmN5QlE0SEw5bUl4bkR5V1JqMTVjOGExcFh0WTUrOSsvMEF3VmxwL3oyd0tRPSIsImkiOiJla0p5WThnakpTdnp0bXB3IiwibiI6IkFraWEifQ==",
     "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZGZrOVBKTTdJcXFGRW9KMzdEZVAxcmEyclcwVkdJVG9qdFBHeTJVRlBubFFqOVJITlZLbVdmMHNxaVJmVW0vZXIvdTRvNEpSdzdLOHhEdTZBYXphZ1Zvc29OZVBlNjQ9IiwiaSI6IlJ1c01kd0Vjd0FRZG5XYXkiLCJuIjoiVmlraSJ9",
     "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTm9PbjhIWGl3NkFEdFZjb0Q2VUhkSVdpL0RXUzU4S3JheHdza2t0WjMxUEcyU2tBNkM5YW91YmhDLy9BVWQzeWdmbHlOOHVpNTcxWmM0VlJQV2RhTy9LRjNoTXIiLCJpIjoiQVNjQXpkdXN1enduODZVQSIsIm4iOiJEYXRhIn0=",
