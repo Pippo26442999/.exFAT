@@ -1,5 +1,28 @@
 [
    {
+    "title": "Resident Evil 4 Gold Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/RE4_Gold_Edition.avif",
+    "tags": [
+      "PPSA07411",
+      "v01.590",
+      "USA",
+      "DLCs Merged",
+      "Standard (7.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicmJtb25YZ3ZqWmFYN3hEU0VMQ0FTd0RGWVQyc3hhUnVLLzF5OWxrV0FoQXVkUDZubjh1VXAvZVo5aTdvMXFHemlqRk8xTVlwIiwicyI6IkZBejIzMFoyZkpNZlI2WmdMdFI4OXc9PSIsImkiOiJsOVdZU2FNN25qeHBNc0FsIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK1JxTVdIRDg0NWJCcmVLUUxyL0NxUDBrS2Q2akdyVmppRTRkVC9Ca1VEeGpEcVlETnVRVWR1T1JuRDhsa3FzeEpyMGYiLCJzIjoiRnhxakplQUg3K21laE5SMjdVWkRjZz09IiwiaSI6InhGc2RXcVNOZUN1aHBVZFgifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZTNMMTM4SHhVNGk4TytaTG5tenl3emJHTXJvUDFwTU5ySUpVenN1UzVVNmcrZ1B3MjdqL09SOExyM3VzU094QlZRPT0iLCJzIjoiMUtiTUNoanRVaHphWkRKaVdiZ3lEUT09IiwiaSI6IlhudzMvOFlHbXVSWXN5Y00ifQ==",
+    "backport_akia": "",
+    "backport_viki": "",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVndBSTliUnp1bEx0OUJQYkMvczlTRVdtLytQandSR0dkZitsRFI5dlh6V011MUNMTWxUUjZ0MTBmSyt3cG9SK0ZXQVFaTEhqMExJamROWkNLR0FtYmlwdFdTdXQiLCJpIjoiOHEyVE1EczRKdWJVcTJXMyIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNVh6NXdacXRPelNPeFVyTCs0TUNEZnlBM2ZLL2xXTU5HWXU5My81dVg3Q2hOOGZSUVdGK0xJcXFNWjI4NVhSaDFxd3h5cnZjVm10Q2x3aVVhNUlBWGFWU0Y1YmpkQT09IiwiaSI6IkJBeVUwc1JvMHNQSnRRR2IiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "popular": "on",
+    "size": "125GB"
+  },
+   {
     "title": "Outer Wilds",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Outer_Wilds.webp",
     "tags": [
@@ -6742,23 +6765,6 @@
     "credits_dlc": "DUPLEX",
     "popular": "on",
     "size": "135GB"
-  },
-  {
-    "title": "Resident Evil 4 Gold Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/RE4_Gold_Edition.avif",
-    "tags": [
-      "PPSA07411",
-      "v01.590",
-      "USA",
-      "DLCs Merged",
-      "7.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicmJtb25YZ3ZqWmFYN3hEU0VMQ0FTd0RGWVQyc3hhUnVLLzF5OWxrV0FoQXVkUDZubjh1VXAvZVo5aTdvMXFHemlqRk8xTVlwIiwicyI6IkZBejIzMFoyZkpNZlI2WmdMdFI4OXc9PSIsImkiOiJsOVdZU2FNN25qeHBNc0FsIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK1JxTVdIRDg0NWJCcmVLUUxyL0NxUDBrS2Q2akdyVmppRTRkVC9Ca1VEeGpEcVlETnVRVWR1T1JuRDhsa3FzeEpyMGYiLCJzIjoiRnhxakplQUg3K21laE5SMjdVWkRjZz09IiwiaSI6InhGc2RXcVNOZUN1aHBVZFgifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZTNMMTM4SHhVNGk4TytaTG5tenl3emJHTXJvUDFwTU5ySUpVenN1UzVVNmcrZ1B3MjdqL09SOExyM3VzU094QlZRPT0iLCJzIjoiMUtiTUNoanRVaHphWkRKaVdiZ3lEUT09IiwiaSI6IlhudzMvOFlHbXVSWXN5Y00ifQ==",
-    "credits_files": "High-Speed007",
-    "popular": "on",
-    "size": "125GB"
   },
   {
     "title": "The Last of Us Part I",
