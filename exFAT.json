@@ -1,5 +1,28 @@
 [
    {
+    "title": "Atomic Heart Premium Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Atomic_Heart_PE.webp",
+    "tags": [
+      "PPSA10695",
+      "v01.015.100",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaGhWSGQzLzFjUFNCVVhHeU9JUHZaUEdIcTBsUlJMZnh2aXNqcHFwYm1DU0RCaXVQUWRVOXEzd2tWL2hUMEl0UXF4T2ltMTRlMTZYS2ttdjNnb3hPeXFhaDBEbVNjZGFKZHhNPSIsImkiOiJFczJqTHNMTDdOSVBvVExmIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUEx1Yk40aTlmb09JWWpoMHE5ci9ZU1hzTWZUdS9GMTZYZ05ZaHBlQkhNQ0ZhdDZNN2thY0ZycWRXWjF5ZWZlWnJQcHl1VkdoOENScFBHdVEvUHpqdGVQSG9sVXZIRVk9IiwiaSI6InZDamtNSFR6WW1qQm4rcWsiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidTZjem9Sb0piQXEzSnVIcnZsVTFpNjZNdmJDT1ArQS9oRUI5SGJYeHNBeGlTMEZuUWNmSHp2OGFCbTYxR1RHWEhETFh6dGc4djd4M0RTWEw0UGFpN3V5Qlpub2wiLCJpIjoiTkwwRkgzejdQdEVzd3RQaSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia0FySTl1ZlJiMHBYUHE2dHhBRXJLSXRyM1RuWEthcTZrK3ZrbnFwSEVWZDhJUit5MmNzOVo5OE5yUExOdFRXSldMeGN1S2dCcEI2VVNQNzJ6U1BWQjczN05rS045dUU9IiwiaSI6InFBQkY1WlZWZnI5V3Y4L1UiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOFU4V1NiVWJGbmtZbEZEeUFvRWpOMm1LRXR5cDFuQU5pc0VXVlBqM1VKVncyT3V2NndBSGQxdzBYdmNXWExwYS9JZHFGWXN4dmtZc3pRc0F2ZGZocGVCdkVSdDNuQT09IiwiaSI6InZWLzBIWGYzOWJ5U3NFVW0iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_dlc": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "Blood on Crystal Expansion need higher update (13+).",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "114GB"
+  },
+   {
     "title": "Resident Evil 4 Gold Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/RE4_Gold_Edition.avif",
     "tags": [
@@ -1820,28 +1843,6 @@
     "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "209GB"
-  },
-   {
-    "title": "Atomic Heart",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Atomic_Heart.avif",
-    "tags": [
-      "PPSA10695",
-      "v01.014.400",
-      "USA",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia1k4c3NPVXpydUZGL1BNYWkwbzNjN2VJcnVkMUs1MnUvblNKdHdmV0FvNE1UR0ExM3F3MzBFRTl4YU52RXpRMnVHUWF3MHhJMnhkaWtLOWxYUm5STFNZbnBBQ3FzSURxS2FFPSIsImkiOiJ0QUN4b1c0UVJxc0xIV0E1IiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYUlpcmxrMW9hMitxNFNGdS9rNVNXR1AyeHBkaWR2Q3RDclBnN2l1dnNnbXVUbmhGRmlsa2ovb1ZlYVZaM0pPaVgwMUlPNjFxYXc5dmVqWEgzN1JPcnl4L1dKQkdsWlU9IiwiaSI6IjkzMUtVWm1LSzRzK2tPcmgiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS1JETUlVNmxsbkRoMktWc0Fha1V6NkFZUXZ5WlZxZTdsTTdReHpYZ1hNaXZQMUNTMk9tamlQNXRxbmlHWjhMakJQS2lIMGVPVTJUMTZrdFBnaXlmZ3lheVk3WjEiLCJpIjoieGx5OWhaM1R1ZnNjQWZ5TyIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNmlNbFBLQ24zNks1TkpHREZyUDhMMktvU3lKVmljVUJDdHNOakd2NDJvb3ZkSnROL2xZekNkWWFiMWo2YjBNQ3BDVktjL1RFbUM4ZlpFNG1YZWF0QzZ2YVdxZW43L1E9IiwiaSI6Im9CT2RvQ3lLeVlzTzBXdGkiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ0VObC8wVHBjSi9xdmZhdG52MFdQWGJKeS9yUmFLU0JBbC9NK2RzR0R0SHJmS01mZDhwc1NnRzJJcFZjSFYxSGxkeG5QQ1VJc0F2YnZ2bWdZNm5vR21iNmsrTW5xUT09IiwiaSI6Ik85QVVmZ3UwUTB5UGdGaFciLCJuIjoiVmF1bHQifQ==",
-    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRE5IdTY3TkxPSVJVSUh3QmJGeVloTklrckpHNG9mZHJGZXlYUzJ4V3N6V253ZE10N2ZlekFIVTJuWFNXRDJsMnpJQjBIY2d0emZ5RXExTDVlUlhIMzJDRWJPV0UiLCJpIjoiNUUzRGtsSVkxYlU4YmlGNyIsIm4iOiJEYXRhIn0=",
-    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiei9mRGthaTFlSGRHWVZKQzRMYW9pTUNVVTNudEtkTzhxRGZDZlovYzRqYmpocDdmbkJidndqWU5wbStMaUJQOEdFZWptd3RFajdHUWZuMFZZYnBzdXpxdkZyZlZVeXc9IiwiaSI6InpvanNNdzc5NnRacEx2dGIiLCJuIjoiRmlsZUsifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "Psykzhack",
-    "credits_backport": "DecKerr97",
-    "popular": "on",
-    "size": "92GB"
   },
    {
     "title": "EA SPORTS College Football 25",
