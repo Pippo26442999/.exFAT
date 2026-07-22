@@ -1,5 +1,79 @@
 [
    {
+    "title": "Graven",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Graven.avif",
+    "tags": [
+      "PPSA09614",
+      "v01.001",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOTY4T2RhcEd5LzFURUlEL1JPdXRoT25XL2V5MnNsemlGVTJnZ29wc2RSOHJYQk02aHNFWTJjdjZ5dEVZbGE2SjRaazM2dmZJRlFTaUtBL00weU0rVXlUakZUOWN3emNJNlBVPSIsImkiOiJyenpkRVJxcU1FOTJGUElpIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQWNTdmQ2aWFOM0VocDNoVVZEMUc5My9NenBqWHVMaVdLTEZuZnFjWkcvVlZXdFIwTkJnTTltTW4zekc3UTlBaEdzSXN4bVZZUmxuS2huYXB6bDh1WXBaeWtvM3B2a009IiwiaSI6IkFPZ3M5UTROUHlHS2FMUGoiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU1UyckVyaXl5T2NSYURYMCtZVkpzdHJ5cWxZdkUwY0lFbUJQU3JGcGhObjNiN2lwNFZoN0hlUDIrVUFoOTZsaUxZWVB4T2M1TkM3NVMvVEhNdmw1ZnZtb3Yzay8iLCJpIjoiYjB0eHlsR3l6ekJUVDA2YiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSjhrUjhFR3ppcG5VaTB5WDFJaHpLd2cyNEFZNHRISkZXTThyaEJHeU41djNJVk4xOG1ZU2cweHVCcG1YVkZJeUgzbTNmU2N3WjNBR0cvVnpIdWlyazR6dU1ZOXIwSGc9IiwiaSI6ImhoVzhwalRQZU5Xem1BRFoiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYTFuUUg0MjB6aWl2NmxXNWdpUVlmekE1bkF3emNmWkVjVHlXbnYvK1Q3WWhCZGJlRTFoaFVKUGJyOERLZzZzNTRtVnJvUGdFcE1kM1ZSeTJCM25xU2FKdVN5RVcvUT09IiwiaSI6Imp0QVREcy9PcEErdFJRZWoiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX & Jose Carrion",
+    "credits_backport": "DUPLEX & Jose Carrion",
+    "apr_emu": "on",
+    "size": "6GB"
+  },
+   {
+    "title": "Love is all around",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Love_is_all_around.avif",
+    "tags": [
+      "PPSA22999",
+      "v01.000.002",
+      "ASIA",
+      "7.xx BackPort"
+    ],
+    "backport7xx_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRkRlQ3o0eUt4UTRLQjQzYjFVUUQzV0N6ZWpvbVFjZnhPZThlZUNtdTFzZ3A2d3krVXhUQUF6akpINzFjbXVramw4Sm1qRzRuV1kwSVh0R0VSQkNjTXBRNnhOQlJMVnIxUGZvPSIsImkiOiJSb0RaUGNXcENXRWR0UXQzIiwibiI6IkFraWEifQ==",
+    "backport7xx_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUWM5eC9xYzVubE1zd0hCb3JNL0xHSjRSRjNtUHo4ZklUcUluRVZtSVk2bUNOSmFETGZPUWVQVHJQR1RJamlReGJoQ2ZKRC8zbnFwYmkrU2xYRGZoay9DNkl3NEtETzQ9IiwiaSI6IlVPYkZmeUg1T1ZySTRianciLCJuIjoiVmlraSJ9",
+    "backport7xx_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMVhNUWFMZXpmVUJHOVUrb2tUZ25iR3lIN25IZXVsNThKWE1Gb1VCYVhKZ0Q0cmFYL2g5UDVubGNYWDEzR1gwQVMzS0lCQzVpZytLeEhUeE1DYzVnMXNpeWtRVkMiLCJpIjoiYnBVMWw4VUtGK2ZCZUh0dyIsIm4iOiJEYXRhIn0=",
+    "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUXZGN1dYVmRNY0tRVC9VSFJDdEM2SHFmRE5oQUp1eWFETDhUcEFvWEtORnVrMTNwVURHd1hEaHBqSEV6NnB2WFNYVmt0dWVqWlkyYjFsNUlYdHYrV05mTlNOMzBzeTg9IiwiaSI6Im1hQ3JIZFA2T1NMOWxBVUkiLCJuIjoiRmlsZUsifQ==",
+    "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiR3k3dlU3WFh0ckJ6ZkJpNFhHVFdvWEswelo4UFBLMTl4UFF0MDRaQmtOMGFqWEFGbXoxNW9sTUt4d0JGWEJuNmMyWFNvNzl1U1UrRG54c1JWM05URUIyN3ZVVnE1QT09IiwiaSI6ImtJUlJqSFN0L1dCMndFU0YiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "R3c0iL",
+    "credits_backport": "R3c0iL",
+    "apr_emu": "on",
+    "size": "19GB"
+  },
+   {
+    "title": "63 Days",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/63_Days.avif",
+    "tags": [
+      "PPSA21022",
+      "v01.090",
+      "EUR",
+      "9.xx and beyond"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieG8wQ0FsaENNYm1KRVpEYWxlN1lSaktHN3o2RVduOExYUVF4K0JUTVN2L3QxQ3liOFk5L3NaTGpTbWtXV0VtTHBXWll0SVA3Z2RrWXNqa0ltWmxWNCtodDBGOTFBRzU1SnVZPSIsImkiOiJZU0Q4NnQwckJpbVJnVG5JIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibkZqempJOGNMamx6Q284QXBQRkh0Rm9Pd2FjVDBiQWRVVWRiZjk0QVptR3RwQzRvMGJ5bTRDTWRjUWpiRmdFQlVYdDJBazd2V2lRdTllV1dZWldOeTdnY0VpMmdxeGc9IiwiaSI6Ikd6QWVRT3JMUWZOU0VkQWkiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYThNSmJPU3JNMkNUVHYrUThMTk1hUjhWV1JaTE9pRzM5RTdicjdLb3R0NlZ4eUsyUDU4aDU4L0RlaHF4OW85dk5ScVJtV3lBaHpoU3ZGY0h1RjlSNzhESzhqY0QiLCJpIjoiZlRJVVM4RStpc2ZzVVErbSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicmxNM1VTK21ZVnpYQ09ZakZBbGxMSkhrR214eTZlWXBZcHNCRWNmM01YWjAyenBnd3BoZGRpdGpBWUpDTUpod3hoeWhRKzNQNWFuWkdXWjhoUE0ySEcrTG1LUStzSTg9IiwiaSI6IjB3RnZmNDRNYmtmdmZ4QTciLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWnovSnJTWVNvbFBxMDZHNGRueFJjc2RmN3hpakhBYW9PVUNrdERSWlBLb2l4SndRVVdBeUJEbmhwaFBsVzlsN2hsRWNQRm9LWVZ6Y2V2eTdxQjRETlE3ZExUSXhTUT09IiwiaSI6ImNMajZVeVl5ZThTTlZTRE4iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "apr_emu": "on",
+    "size": "18GB"
+  },
+   {
+    "title": "Blacksad Under The Skin",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Blacksad_Under_The_Skin.avif",
+    "tags": [
+      "PPSA22420",
+      "v01.001",
+      "EUR",
+      "8.xx and beyond"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicm9CUHhrVWlTSjZ3VWd2NWlnVm8wY0tNU210K0szak1zKzFYQzV5KzlGSUhQK0JsSWJ0SkVoWUtEWHdjL1d0ZDlyNzcxM1IzbVpTQ1IxZzdJb1FxU0lXcnUveTRJZCt3QWFFPSIsImkiOiI4OGpCZFdqdHpUWWRCczlsIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWjM4NVI1aWU2eTI0VURRQmkwVDRGa0REVjFpeWt3QXhwWXJGazRGWmlnbTNqcmFBV0NSZllTNWZlTG9MU09VRlA3TnFLaTQvUG96T28rTmNpaTdGUXBQV1UwQjJnQ2c9IiwiaSI6Iitjamg4UlROaEY5STJlU2giLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYUpuVitIRXRGUzFwWSt1WEJBdGhrNysrRHdaaVd3cG9FdWZKQ2tXUGRUM2tSNlFBdUpzcEJHa2pYQ3hsN3Q1Vm1aSWE4STJIZm1ySDlPRVp2djNDWkkyUWVqQUIiLCJpIjoibHJLck1SYVlIdzExeEEwMyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT2dKcysvVHhjUzBvTmJXVmpJcGxnblZta3lsNWdNbFh3Z1ZBdi9MVVZxSWpSM0RUaWhtYU84YWxNZW0vZ25pT0Y0VE5MaUNrVmM5QmQzSllVSXRXVXlYcHp2SHZQZmc9IiwiaSI6Im91UjhGRE5WVGtaT2xkcGMiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicnllN0dNNmZXUlJZclMzWnpJK0FkMWdlNmJENWpFN1pLQkJ2S0hLay9aVkR4NzBScmhCUUhjK1ZSNXJlNDZqYzdmL2RGWTBTbG1lT0I0YWY2Z3dwQ1VpVGVvRk9DZz09IiwiaSI6InBxcTdFMFhCOThraWpsaFkiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "apr_emu": "on",
+    "size": "15GB"
+  },
+   {
     "title": "ELDEN RING NIGHTREIGN Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/ELDEN_RING_NIGHTREIGN_DE.avif",
     "tags": [
@@ -16,9 +90,9 @@
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZzArYVZneFA0UWFvd0FMTmhoZ2lWaEx2VzRrUTY0dXJuYXZWZ21EVUJXNi83eXhEWGtnZ0J2YnVuTnVwYmVuemJ5cUNZaVhzRUZyb0MxVi81OG04MmNQOUQxWFRudz09IiwiaSI6IlhIMGpVUXpUTjlHSXoxV04iLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
     "credits_dlc": "High-Speed007",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
-    "credits_backport": "DecKerr97",
     "size": "55GB"
   },
    {
