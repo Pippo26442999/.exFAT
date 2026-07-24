@@ -1,5 +1,26 @@
 [
    {
+    "title": "Warhammer 40000 Space Marine 2 Gold Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Warhammer_40000_Space_Marine_2_GE.webp",
+    "tags": [
+      "PPSA04452",
+      "v01.010.002",
+      "USA",
+      "9.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOG5DYlB3eXpOaGJXR05nK1I0eS9ESENUWlRZWlZ5UXIybXVteGFQMUFjcXBzeGdiV1R0WHJIZ05NOXUySm9uRjA4ak1JOCt1KzlUaGpTSThUaWZEMXJBUEZKbU03UDg9IiwiaSI6ImtBTzZOY2VUazRBb1lMT1giLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNnVkZzFiWWI5Q09FSjhnQjUvVFJFenRhOUNvSmc3S1FCVU1RbyttM3dmSlZBNEorK29BSG9BeGh3UkRlby9uakZEbkxYaENObTMzS1FmU2xJc2FWOFM1L0hBeUgiLCJpIjoiUTRac2V2R3FaaGRNVHJNUiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "",
+    "vault_url": "",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "High-Speed007",
+    "how_to_play": "kstuff can be paused after 120sec or the game will crash. Game can take sometime for loading depending on your SSD/NVMe.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "95GB"
+  },
+   {
     "title": "Dragon Ball Fighter Z",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dragon_Ball_Fighter_Z.avif",
     "tags": [
@@ -3548,27 +3569,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "135GB"
-  },
-   {
-    "title": "Warhammer 40000 Space Marine 2",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Warhammer_40000_Space_Marine_2.webp",
-    "tags": [
-      "PPSA04451",
-      "v01.010.002",
-      "EUR",
-      "7.xx BackPort"
-    ],
-    "backport7xx_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR1p3T21EOW9JZ21BUUk4NWxhby9ad25sMmVLS2dNWHdNcE1LSFMwbCtUVWFqaU5RUUNPbkczZzUwdEMrV1JPaGJTbXFNOGsyIiwicyI6IjR5ZlpPRW9wOU1DeFpYR3JkditxcUE9PSIsImkiOiJsUDlQME9lZDZpK09XcSthIn0=",
-    "backport7xx_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSXplOVZrZ3prWGZQTHpOeVdtWFJMY1FOMTlUWWRNVTFmTjBocXZWTENqRGxJQnU0cTRGRVJLUTZVL044RnlTSVorT3ciLCJzIjoiZk5JVnZXc3ZITXMwM0Rlb0RiWUdGdz09IiwiaSI6IkIvRDJJc2x4QWNxeEFETTUifQ==",
-    "backport7xx_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVmZMKzNMa3M4NWE0ZFRCUldRVzUxcmxWTVR4dndDMGZGcHViM3lNa0VUTTlBUlE1bWRqN2ZtWjVFUkJ3NVNncUpBPT0iLCJzIjoiVG80bkFkZUwzL3lrTm5LYjFMNEVIZz09IiwiaSI6Ik43SllGN1lTWHNRZHBUMEEifQ==",
-    "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidVBjaTljQ2NHeXZjSyszWEp6L1lYd20rcW5JWXQ1OWVGS3piNmdGL3FVdEQvVG5neU1GcjJVUzdGbWs2T1FpWlBOSWwiLCJzIjoiSGxsS0pjTk1RZHBXNnh3enYydUdNQT09IiwiaSI6Ik40R1hwekZSMlF6Z2RXZUsifQ==",
-    "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNkZNV2hoVW1OcjRNT1I2bko5QllrTHVEMnc5MU43M1UzVXIvZFA4ajgwZ3ZRVHViTXUyWTROME1zTE0yNnJvTi84TT0iLCJzIjoiTVlqcEgvU3huQmxoL1ZvRnZyUm9vQT09IiwiaSI6Imt2TlhyckgvaFdhcW1kREkifQ==",
-    "credits_files": "SiESPTA",
-    "credits_backport": "DecKerr97",
-    "how_to_play": "kstuff can be paused after 120sec or the game will crash. Game can take sometime for loading depending on your SSD/NVMe.",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "95GB"
   },
    {
     "title": "Outward Definitive Edition",
