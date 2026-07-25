@@ -1,5 +1,96 @@
 [
    {
+    "title": "Blacksad Under The Skin",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Blacksad_Under_The_Skin.avif",
+    "tags": [
+      "PPSA22420",
+      "v01.001",
+      "EUR",
+      "Standard (8.xx) + 4.xx BackPork"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicm9CUHhrVWlTSjZ3VWd2NWlnVm8wY0tNU210K0szak1zKzFYQzV5KzlGSUhQK0JsSWJ0SkVoWUtEWHdjL1d0ZDlyNzcxM1IzbVpTQ1IxZzdJb1FxU0lXcnUveTRJZCt3QWFFPSIsImkiOiI4OGpCZFdqdHpUWWRCczlsIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWjM4NVI1aWU2eTI0VURRQmkwVDRGa0REVjFpeWt3QXhwWXJGazRGWmlnbTNqcmFBV0NSZllTNWZlTG9MU09VRlA3TnFLaTQvUG96T28rTmNpaTdGUXBQV1UwQjJnQ2c9IiwiaSI6Iitjamg4UlROaEY5STJlU2giLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYUpuVitIRXRGUzFwWSt1WEJBdGhrNysrRHdaaVd3cG9FdWZKQ2tXUGRUM2tSNlFBdUpzcEJHa2pYQ3hsN3Q1Vm1aSWE4STJIZm1ySDlPRVp2djNDWkkyUWVqQUIiLCJpIjoibHJLck1SYVlIdzExeEEwMyIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT2dKcysvVHhjUzBvTmJXVmpJcGxnblZta3lsNWdNbFh3Z1ZBdi9MVVZxSWpSM0RUaWhtYU84YWxNZW0vZ25pT0Y0VE5MaUNrVmM5QmQzSllVSXRXVXlYcHp2SHZQZmc9IiwiaSI6Im91UjhGRE5WVGtaT2xkcGMiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicnllN0dNNmZXUlJZclMzWnpJK0FkMWdlNmJENWpFN1pLQkJ2S0hLay9aVkR4NzBScmhCUUhjK1ZSNXJlNDZqYzdmL2RGWTBTbG1lT0I0YWY2Z3dwQ1VpVGVvRk9DZz09IiwiaSI6InBxcTdFMFhCOThraWpsaFkiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSGFqd3YvZmNqUFhNSTlWTHBoV3NUUFB0bXltSDh4QXdjMSs0NDBOTzFqYTI1czRXRElYRm0vNkVvdzZuRzh3SCtJRVpYMnl6enZnRFFueVc0dTFrTXBTZHBQSFBYNjY5SzlFPSIsImkiOiJiK05CSnVmaUxYM3hXWTFGIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieldTUlJTREZzZXo1UjNpWGFpRmZmNHZOZlEwSDB2ZmNqaHVOb05NT0Q4cldFL2VieGVDdkZ2WHFaWkNTUTBRclk0RmZ4QlBVRDAxWjhzRXVKcG56QWZSUm1GZnJnZ3M9IiwiaSI6Ii9BcUFxUVppZ1h3TnU2YjgiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia1lJTkVPQU8reWJWQ21GMFN3SEpNV2l6NVlhVlpGNEExT2JudE5wWHZ0TUxpeWZ6RHpuUUtFMVJmNFRzd1hodTlGSTQ0bWlneEdmY3ZzQWxDelFJVVlBTUlXMEEiLCJpIjoiY2M2clJXUkdYQld5SGdMNyIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQjdJSWs0T0YvNHppQ0RWL1V1eUMvQUVYWnFwZmZlQ0JzZjBIYmNJNEFKaFRiQ2ZvKy95K3NicVpyQmNuME9qQzNOdTVFS2EzdWcwZFVXZ0ROc2ZpOHNjeG9pUG03eU09IiwiaSI6InFJeFMwczNOb2R3R2J2OGQiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSXN4WnNvQ3ZObkl4Y3dQNFRwS2pIdFdacDd1WTBsZS8vRkRybkg5YXFTZTdnYm9wRmVYWEZCazFyV1ByWDdJYTlLQ1FYRUhycWNIbmNmaVhWSmdKNlhVUGRmYjhWZz09IiwiaSI6ImlTVFEyRDhqYTUwU1pPOUoiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "BestPig",
+    "apr_emu": "on",
+    "size": "15GB"
+  },
+   {
+    "title": "Tales of Graces F Remastered",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Tales_of_Graces_F_Remastered.avif",
+    "tags": [
+      "PPSA19990",
+      "v01.000.006",
+      "EUR",
+      "Standard (9.xx) + 4.xx BackPork"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZW1rZ0syZ3VEN0U0U3ZFbG5MelVQMW84WEUwTW9XaGhscjl0SjJWd1JraS9sMUxjK2I0c09ObHV2NCtnajF4NDVSbmxYZHhrckt5aTFQNzFwSm1rK3d0dnN5SWt2a2EvblFrPSIsImkiOiJka0ZkM3Q5Mm5wbE5NbzJPIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXMxZ2lKcE9QcmlpOHN5b1A1OU1RdlM1VUdoK2RlcDRSNlo4WS9MVnhWMm9kM1M0dTdLNW41QllmVzM3NVhVWUdEWTFxamI3eTZrYTZBOEtrMkVDZFhNMFBUak5BZ2M9IiwiaSI6IkJhbFpyUG9nYnZRcnRYMWciLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRnRjanJQM3BnUzdiNWE3cy9rZ0FvU05TZW5mSDVVbWZXMXoyUlREVzJocEtrZzdnWFRlbU15VEs2R3ovQ2UyajJyd0hGMkZNVHpRSEhwYTVuQTVyR1JpekpDWjkiLCJpIjoieEVIVUlyMzkvTXJ0ZVEvUSIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK2c1eVN3aXd4eXBTbk5sMmRXMUp5YmY0UGdRUjkvYU1ZK0V1R0xNMCtzdEQxcFQ5NjlLMnVsODBNSzZMNnpDZGo1MDVEUWFKaXpsU29XOStOTXMzelJTcjhuSkY5Rms9IiwiaSI6InB2Y01XalFtZjZxSTRvQjgiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT3p4YnJodEV3RnNxNnZoWS9SS3hiYTZDZmJITVFieDJOVlRhZ2JtNlNGRGwyL3JGeEFiTkxaaE9rTmE4V3daT0xnQUsxK1FXY3F0ZWtwVUZjNlRmYTY0V1p3d3VkZz09IiwiaSI6Ik11WmI3MExicXhacjNJOXEiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL3BiQzNocFJQZ1pNNlBTLzdwbktvTHpFcVRrZnQ2cWphS1J3N2ZLaG4wNVgxNm1Wa2lGMUNBQ09NanpDdlE0UnJnamY2OWpYMzJpR3ZJdjdic3R6ZzRCaUJvcDVMRFd1RUJzPSIsImkiOiJUQkxxUTZ1aWo1dEt3T0VwIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicDMzVzZ3UUxydEVNSUJhS0JEYkpaa3Y0RGxibkZKT1hCQ3FQWjJuMjZIbVRKSFlweXh1R0xVVHU4TnZTa1RsU2Y3R210aXYwMmxEK3VBWDNLeEIwUVowWTJlY2M0U2s9IiwiaSI6IldFanRGN2hpWS9udnhpZzEiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYm1SdkhBa29DdVd0UzB1TTltdjJEQ3NzSGx5OVB5NVJLR0ZkRmZ1Q2hzckdlNU9sRHVaV2h2UTA3QnEzVStHUnVhUnJxY2NkdkFocjZhVytBeHlmNzhreDFqSmEiLCJpIjoiR21aT096K0c1T0UrTEYyZiIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib3RLNnFCKzc1L2RmZUF1U0VXU2JCRkY1ZGVhbncxVVFBSVJaa3ZqM2tidTVDOVJ3cnNSVkEwYm51R3U5RDN6SVp4bVcvbmpZWG5xWElsSGV5bHFoMWtTcFJXMUpWV2s9IiwiaSI6Im1UK0s4cDd3Qmd6WForMWUiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZCtQdHdhNUN3SUZ3N3lFYlNLZXlWWUNZUTdhY0xqZEE4UTF1NGptVVNzQlhobVBjSE8yOGNwT0NCNGh0TDZUa1pYcUIyeHJ3RGJiWGY3Ny94ZHdSdXVnNk4rYVdBQT09IiwiaSI6Im13Q29kQWpzY2l1SzI2WDgiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "BestPig",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "12GB"
+  },
+   {
+    "title": "Kong Survivor Instinct",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Kong_Survivor_Instinct.jpg",
+    "tags": [
+      "PPSA20289",
+      "v01.004",
+      "EUR",
+      "Standard (9.xx) + 4.xx BackPork"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaFc0djdZL0hVaThCUUN6dGVUUXovNUFjVEdwK0F5dGM0R1VkUmFuK3poQjQzcHl6T2xOc0cwVWNVc241KytkSzNEbWN6S2ZCUHBIWmt6emxiRktjSTFXMy9DTXNGRFhTWWVJPSIsImkiOiJySTFxMThSSTJ1VDM2THRMIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK2M2ZWo4WkIxa3BveXpxaGVFZWJkQ1RMSVFGd3FBRnVGUTQraG5MaGZYZCs2Wld2R0k3U29NeWtvU25ob05BbXZwcUJNVENHNFNNWFVPNG13RU10UTFra3A5MTZpNTA9IiwiaSI6ImY3WXkrMXk4dTBCazFPY28iLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ0lkSWpJVDNGRWszMXY2elU3QmVCaHRCb2dkSVlINmg2V3V1RytwT3VTRGE5QS9MczhTeUtRclZXbU5tWGg5VWZCN05EdDJuQUJub0g0Ry9kQ3FRYnVxSm55eSsiLCJpIjoieHVJRzhCcTdpSWtGUGkwOCIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYStjQ3RER3JuRFU2SGJKMHh5UUdyWXU4TU5ZcnV4QzJ0bDEwbHhmUldabmdMNnJvT3JGa0xjWFBCQ1BOOU9RcHpsMmJKakw1RzI0SEJDUk1tZG9BM1BXMVRCTFhnYjA9IiwiaSI6InBlRTAwM09KUURoMm55T3MiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVUlLelJFUWNKNUdBWTJTWU5ac3h2OWNudlVvQzlBNlN2YTJxYUh6cHpOdnJzeTFCWlFCM29vQUlBTTZNeldUdWRWZWM1b28vWmxTUDFpN3BPRE1HMVYxbld5VEpXUT09IiwiaSI6InhZR0lQOEREaVhaN08zenQiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiekhTaW91ZHRsZS9mdkZUanB0QlIxclc2bDlFVEFQbkY3RVBKWDB1cGU5N0tzSHQ4Y2g1TmVEbFFtZmQ1VmVnSGw5TktCQ004aFF6OTQxWmROQ0JNcytKdFJKbkE5c2IrMlhBPSIsImkiOiJiMWVDT0VxYVYvaCthN0d4IiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNGttdVZLVW5RazVDc05EQVNQeUZKd0w0T1ZESURtL1FzS1BzMnB2RWNYcHYyVFhWQlVrakM0eFVPVDV4cTZkQmRWV1ExTWFsQXpKT216ME5vT2ZLYll0M0l0ek1nalE9IiwiaSI6IjVCMlNXUFEzRWJHcGpDSnoiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVmZ6ditPdmltNWZablBhdUNhL2VxOExCQnZEZUNvVmd4MVRlWmJaWkMrUm9HVmU5cTgrUlVlQ2JXbUdzeDBVaCtOeEhNajkyMEVOamVaUmFidXZxK0ZmOUs1dlAiLCJpIjoiM2N2VmdwWStCUEpRbUdvQSIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiKytxN0tIY0drR0RhcCtGdFE0blZ0WUpzb3BzYm1ONG15Si9tTFpxdU00ck04bWQrWHE0cjF6aWhVZEg5UVFyaFkvRWFnVWRBdXM1eDV3aXZEZ2dFSzdyUkcrcDZMUTQ9IiwiaSI6InFWMUtFMGJRQlJlYjNaV1UiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibmRkRnM5QjA0bFp2REVzOWUrb01oTTJaSWZSbUR0TVIwd3JBZUpFNDRWcHRGMC9EQi9PWG1mcHpObUVSMVNPV1E4LzRJamdERHpKcVpWMXJycm04T01GVW1pbUpiQT09IiwiaSI6ImZ6b0dwOEYrbU9iVUt4ZXAiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "BestPig",
+    "apr_emu": "on",
+    "size": "18GB"
+  },
+   {
+    "title": "New Super Luckys Tale",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/New_Super_Luckys_Tale.webp",
+    "tags": [
+      "PPSA34823",
+      "v01.001",
+      "EUR",
+      "4.xx BackPork"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWlQwbFhOYlVpNk0zSjJWMTQ2NDExazR0bUgxdnd1SE9odDRhUkdzUnBDYmlCL0tUQ0RVRUpvaXkybUQxWlM2cFBOTDBlM3ZKSXdLOWZDaEJxNzVVOUIzSDI1bTZHVXRpdmZnPSIsImkiOiJaVlFrRE9KcExOQ1F2Snk1IiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUGMxamtVeG8xTGhBMTRRblR6Ky9VT295OFhWZytmR1l4dC8zOEJLS3lHTU1tUENja00rajI0WHhUTnhBZWdSR3Q0Vjk1Vkpmb25CeElNYyt1TkNxSHh0TkZWREZKWTA9IiwiaSI6ImhNYnp0QVExMjdTckJCakkiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVFJDWUQzUlBHSWpwQlV5bHZNRkh0blZSaWVBY1FuRHFFY2xBVU0zWGhnRWdzZXJWUTBNaXlvZDArUlAwb25jcTBVd2NBT2pUV2xtYlg1Z212bmFCNnN0YkFFbi8iLCJpIjoiSmlzWG5XZGpVaXpKRjBsNyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM0hkZTJvMElBeGFwcThaVEpxdERpYjhJYjFhMlFWSFZUcGo2UFBWVVJmeDBHdXhGUjBQZ2p3MkdIRXNhU1lBckRDbC9MU0h2Ukc5TTMxME1jb2VBM0F3d1YxVXM3ZlU9IiwiaSI6ImhTKzlLS2lmRzR5VTkxSVkiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS3FuUlZrM21WSzRTeWhNMFhNVEwzaDZwTEU1T3o5a0RKVE9qa1Z6eURWSUlOS01DeGt4OVhWcUs0b29kanFCZFFBNmJaVk82SHJzYkV1eG1WMWNBNlJvT2x1OU1oQT09IiwiaSI6IndPL0RmZ25UaXEyV3dTanQiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "BestPig",
+    "size": "5GB"
+  },
+   {
     "title": "Dragon Ball Fighter Z",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dragon_Ball_Fighter_Z.avif",
     "tags": [
@@ -437,24 +528,6 @@
     "credits_files": "SiESPTA",
     "apr_emu": "on",
     "size": "18GB"
-  },
-   {
-    "title": "Blacksad Under The Skin",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Blacksad_Under_The_Skin.avif",
-    "tags": [
-      "PPSA22420",
-      "v01.001",
-      "EUR",
-      "8.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicm9CUHhrVWlTSjZ3VWd2NWlnVm8wY0tNU210K0szak1zKzFYQzV5KzlGSUhQK0JsSWJ0SkVoWUtEWHdjL1d0ZDlyNzcxM1IzbVpTQ1IxZzdJb1FxU0lXcnUveTRJZCt3QWFFPSIsImkiOiI4OGpCZFdqdHpUWWRCczlsIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWjM4NVI1aWU2eTI0VURRQmkwVDRGa0REVjFpeWt3QXhwWXJGazRGWmlnbTNqcmFBV0NSZllTNWZlTG9MU09VRlA3TnFLaTQvUG96T28rTmNpaTdGUXBQV1UwQjJnQ2c9IiwiaSI6Iitjamg4UlROaEY5STJlU2giLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYUpuVitIRXRGUzFwWSt1WEJBdGhrNysrRHdaaVd3cG9FdWZKQ2tXUGRUM2tSNlFBdUpzcEJHa2pYQ3hsN3Q1Vm1aSWE4STJIZm1ySDlPRVp2djNDWkkyUWVqQUIiLCJpIjoibHJLck1SYVlIdzExeEEwMyIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT2dKcysvVHhjUzBvTmJXVmpJcGxnblZta3lsNWdNbFh3Z1ZBdi9MVVZxSWpSM0RUaWhtYU84YWxNZW0vZ25pT0Y0VE5MaUNrVmM5QmQzSllVSXRXVXlYcHp2SHZQZmc9IiwiaSI6Im91UjhGRE5WVGtaT2xkcGMiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicnllN0dNNmZXUlJZclMzWnpJK0FkMWdlNmJENWpFN1pLQkJ2S0hLay9aVkR4NzBScmhCUUhjK1ZSNXJlNDZqYzdmL2RGWTBTbG1lT0I0YWY2Z3dwQ1VpVGVvRk9DZz09IiwiaSI6InBxcTdFMFhCOThraWpsaFkiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "SiESPTA",
-    "apr_emu": "on",
-    "size": "15GB"
   },
    {
     "title": "ELDEN RING NIGHTREIGN Deluxe Edition",
@@ -931,24 +1004,6 @@
     "credits_backport": "BestPig",
     "apr_emu": "on",
     "size": "3GB"
-  },
-   {
-    "title": "Kong Survivor Instinct",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Kong_Survivor_Instinct.jpg",
-    "tags": [
-      "PPSA20289",
-      "v01.004",
-      "EUR",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaFc0djdZL0hVaThCUUN6dGVUUXovNUFjVEdwK0F5dGM0R1VkUmFuK3poQjQzcHl6T2xOc0cwVWNVc241KytkSzNEbWN6S2ZCUHBIWmt6emxiRktjSTFXMy9DTXNGRFhTWWVJPSIsImkiOiJySTFxMThSSTJ1VDM2THRMIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK2M2ZWo4WkIxa3BveXpxaGVFZWJkQ1RMSVFGd3FBRnVGUTQraG5MaGZYZCs2Wld2R0k3U29NeWtvU25ob05BbXZwcUJNVENHNFNNWFVPNG13RU10UTFra3A5MTZpNTA9IiwiaSI6ImY3WXkrMXk4dTBCazFPY28iLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ0lkSWpJVDNGRWszMXY2elU3QmVCaHRCb2dkSVlINmg2V3V1RytwT3VTRGE5QS9MczhTeUtRclZXbU5tWGg5VWZCN05EdDJuQUJub0g0Ry9kQ3FRYnVxSm55eSsiLCJpIjoieHVJRzhCcTdpSWtGUGkwOCIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYStjQ3RER3JuRFU2SGJKMHh5UUdyWXU4TU5ZcnV4QzJ0bDEwbHhmUldabmdMNnJvT3JGa0xjWFBCQ1BOOU9RcHpsMmJKakw1RzI0SEJDUk1tZG9BM1BXMVRCTFhnYjA9IiwiaSI6InBlRTAwM09KUURoMm55T3MiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVUlLelJFUWNKNUdBWTJTWU5ac3h2OWNudlVvQzlBNlN2YTJxYUh6cHpOdnJzeTFCWlFCM29vQUlBTTZNeldUdWRWZWM1b28vWmxTUDFpN3BPRE1HMVYxbld5VEpXUT09IiwiaSI6InhZR0lQOEREaVhaN08zenQiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "SiESPTA",
-    "apr_emu": "on",
-    "size": "18GB"
   },
    {
     "title": "Syberia Remastered",
@@ -2119,25 +2174,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "10GB"
-  },
-   {
-    "title": "Tales of Graces F Remastered",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Tales_of_Graces_F_Remastered.avif",
-    "tags": [
-      "PPSA19990",
-      "v01.000.006",
-      "EUR",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZW1rZ0syZ3VEN0U0U3ZFbG5MelVQMW84WEUwTW9XaGhscjl0SjJWd1JraS9sMUxjK2I0c09ObHV2NCtnajF4NDVSbmxYZHhrckt5aTFQNzFwSm1rK3d0dnN5SWt2a2EvblFrPSIsImkiOiJka0ZkM3Q5Mm5wbE5NbzJPIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXMxZ2lKcE9QcmlpOHN5b1A1OU1RdlM1VUdoK2RlcDRSNlo4WS9MVnhWMm9kM1M0dTdLNW41QllmVzM3NVhVWUdEWTFxamI3eTZrYTZBOEtrMkVDZFhNMFBUak5BZ2M9IiwiaSI6IkJhbFpyUG9nYnZRcnRYMWciLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRnRjanJQM3BnUzdiNWE3cy9rZ0FvU05TZW5mSDVVbWZXMXoyUlREVzJocEtrZzdnWFRlbU15VEs2R3ovQ2UyajJyd0hGMkZNVHpRSEhwYTVuQTVyR1JpekpDWjkiLCJpIjoieEVIVUlyMzkvTXJ0ZVEvUSIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK2c1eVN3aXd4eXBTbk5sMmRXMUp5YmY0UGdRUjkvYU1ZK0V1R0xNMCtzdEQxcFQ5NjlLMnVsODBNSzZMNnpDZGo1MDVEUWFKaXpsU29XOStOTXMzelJTcjhuSkY5Rms9IiwiaSI6InB2Y01XalFtZjZxSTRvQjgiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT3p4YnJodEV3RnNxNnZoWS9SS3hiYTZDZmJITVFieDJOVlRhZ2JtNlNGRGwyL3JGeEFiTkxaaE9rTmE4V3daT0xnQUsxK1FXY3F0ZWtwVUZjNlRmYTY0V1p3d3VkZz09IiwiaSI6Ik11WmI3MExicXhacjNJOXEiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "SiESPTA",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "12GB"
   },
   {
     "title": "The Witcher 3 Wild Hunt Complete Edition",
