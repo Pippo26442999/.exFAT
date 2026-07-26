@@ -1,5 +1,29 @@
 [
    {
+    "title": "GreedFall The Dying World",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/GreedFall_The_Dying_World.avif",
+    "tags": [
+      "PPSA21840",
+      "v01.004",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibUp0K2YraTBkOVBrUVVYN2N4NnpQM3RkdktBQmJNbXFaeDdTY2Vka0Y2a3NmM0FyZjRrcTlWc2J6VnRwMVJZRktLNVdBZmNCYkpwV3ppV3pPckNIMFp4N1FrWHZQL2VZUEM4PSIsImkiOiJmSkZTcjN6SWhOK2JIc0JjIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ0tmRVNBZzFhS1VpeUh5NGthTGZvK25mbi8veEY1bjUrTFg5U3ZKS2NYWnM4c2g1QVBjb0Q0c29IMUhwNVJ4aXJQVDZBc1I0TEEwVjgrN3B2NjFXSk9zTUZKb3U5aFE9IiwiaSI6Imxac0NvejFxNEpGYlJBb3EiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieEdsb3BlQjhaY0wrczdybi9HUnc1dmlDeU1kQXF6czBWRTArSFRBTWhLSnFKT0V1WlN4ay9hM09aU1dubDc1ZmxFL1YyM3FFNWJmN3JINnVMeVg3RDlsdWpBWjEiLCJpIjoiL0hUeFF3ZFRMUko4bmllWiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQy9OdlZONlVBd0tWKzE2UDI5V0RhMCt0bUMxeHZIbkQ5U3YyR1dXWXFEWDRpWVNqQ0R5dFhHSjUxTVdyQi9BRm9mZlpBY2VLRWczdTEyT2J4d0J3K1JwcHFlWi9iL289IiwiaSI6Im1kWW5qajkzMks5K0k5MC8iLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRm1kNU5xTURNZDRndEF0NkZjUjhYWFRKUURqTk9abmVwNmtubjc1RXZFSkVlZWc0dXU3OHR1TTN6QzhBSjBBTzVkNGxBRXpoTFBhS3ZRWVlkTXp5THBndEtHbG1MZz09IiwiaSI6IlVacXBRMDNxMmxycmNtQ2wiLCJuIjoiVmF1bHQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ1R3bi85dWQ4K2tsQjhSU0JYeWRhWUZ4RVdpMVpGYSttYUJBUUw3cVRuZTZpdzFvRjNxS3VDcDFpZ2VVY1NDYmdIRUdpSVRHY09qTGtyMHFqbXFMOHg1bHhtRXoiLCJpIjoiWjZpcWJSM0VlcTJOMmtqSiIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoianhLRGdEcUluQmY1eWx1b3Y1M1NQZ3BvbWJVS21tbHpNOExFd29pZ3hjM3hTWEhWeXFZcWNja2I4TnN3WDZMdDIvaERxVmI4K0k4Qjl4T0d0cG5XM0ZQc3pHd0MzZGs9IiwiaSI6IklRcWZESWRiWHMvOGZlcXQiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pkykzhack",
+    "how_to_play": "Textures missing fixed.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "51GB"
+  },
+   {
     "title": "Fatal Frame 2 Crimson Butterfly Remake Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Fatal_Frame_2_Crimson_Butterfly_Remake_Deluxe_Edition.avif",
     "tags": [
@@ -79,6 +103,7 @@
     "credits_files": "High-Speed007",
     "credits_dlc": "Pippo",
     "credits_backport": "DecKerr97",
+    "how_to_play": "All DLCs until 2025 are unlocked, 2026 DLCs need higher patch (13+).",
     "popular": "on",
     "size": "115GB"
   },
