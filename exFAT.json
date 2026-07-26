@@ -1,5 +1,91 @@
 [
    {
+    "title": "Lollipop Chainsaw RePoP",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Lollipop_Chainsaw_RePoP.jpg",
+    "tags": [
+      "PPSA21837",
+      "v01.017.001",
+      "USA",
+      "Standard (8.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiak50QXdVYWRRZmUveElXYjRWRDh5dldiUVloRFBqd2paVGRscnUrZVlPVVFSNzFmVCtESncwVmg4SFJXYnNMNWFoY1hEZWZnVGFBYmVIWDVieGxHSGRXNjJRT3NOelJoMkZJPSIsImkiOiJSOGFhanRBVFV5ZnRWUXRzIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZGNVblZoMVg1MEhRZFFrTFpJR1BWdWJyRnFuRFd6b29sNWxQMFkvZDF3KzJmY0RTbE55bnZZSzdtRFJVVXhsMHdCVVV4OEFEUG5YcTZyeEtPMGZnRjhvT2dGSi9LOVk9IiwiaSI6IiswNzRISDAvcXpUYnUxdHciLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRG4ySUZGZkxicDNIYkU4Uys1VHl0b29vbjZEOEU5aG9ZaVNUR2xnSTdYN1hoNXUrNXR4RTJxaitvdGFmRGdsM2J1UUdsVHlUd0ljQnZXblRTOWczUDNUS3FvTEMiLCJpIjoiOXdGQW9hMFMwQUMxaVFwUyIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib3dLc3VDMDJWb2pwbWJET1U3VkZIbFBBV1EyM29FcWs3T0Z1a0lYQmFaU1VoK3d4UllYV1BEd0ZRV2tyay9MZm9CbG56VGpOZ1g2bFZBd3laVXNpNXIyT2xvY3o4K2c9IiwiaSI6IjNlQVNFRGZCWWFUcTN4a3EiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL3MyZ05zSlZsbVYwR2xkN1F1K1Z2VkNCNDZyRFZKajFmWllzUlNVWDhPUnFtTnUxRzBDOGFFRUR3SCtmRC9YWEdRU2picEhQbElZR0VkZzVRVFdxWE8zNTJrS0w1dz09IiwiaSI6IlRRSVFVSUlZdHlPMGxxV1EiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQkhDMjllU255RFZOODQvcURVbmVHQk1PTmY0SEp2QlpoTnFQSEtyVTZRWmVLZ1FnU2Q4Zi94SlFVKzVVVm9hZnVZcWR4WEpQc1NwQmJuNGxWUzM3ZFJXOXFEU21ReGozT1lBPSIsImkiOiJleUZpNVlicjJOdTE5NS9XIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibm9PWTVIRTcwbE81OHJWTzQ3L3FiTFR1bVlKK1hZQ1pMRUw4b3lublB4S0Vhajc4ZGlaTGFRQkE2MnNZdGVtTFg3UWhDNWRlQkxCWWlvamtSbFRjb2FJV0tVMXZDVEU9IiwiaSI6Imd6TkpXU1JKWHBIaFd1ZXAiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidjZmUkUxL1c4UFRacHQ4Q1AzelppdE94THZ4YWZMKzZOcWZkMnZTY25oTFp1MEl3MmM2M0tCRUdQejJJcStFVmo1SFdrQzM1UEFwR2pFM1JIS0ZLOVdNV05aalgiLCJpIjoiUG5tRWNCa0xZWnRHZzFLWSIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU1V0UlE0UUppMjU0bVBRcGZHd1lZV2orSjBkMjNxUmN0bFM0TFNkTnl1bFJiaHgxb2xSTnYrMS9TczVmb2RhT0hhOFduUDIyWHpGa1JXN0kzTzFsYUJINzZWNmtOOGs9IiwiaSI6IlhvTTVRWEI3S0tUTTFjNkoiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiemhmbTQ3TlZJdk5DcmVuL3k2Nnl2dzNZZjRLNUhzQ1VTTktjMWZFeDdhZnNtVFdUZmJjd3VPd1p1UUlkODBSNGFXU1BYZnN3NTluZ3FyRi96eDRmdWJscXhSOTVSQT09IiwiaSI6ImZkTklEenZsZmdhZTI2b3kiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "size": "36GB"
+  },
+   {
+    "title": "MindsEye",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/MindsEye.png",
+    "tags": [
+      "PPSA28209",
+      "v01.017",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibnEyQ1ZsVkYzb2NCM01kWm9Va0lNdWFwbnF1Q1c4MGtuRTBWQVZ2dUpSZi9aZXBKNTk3aWJ0cWUyWlRpd3JLZUZzYWptbEpCU25KWU9MakhRSkNMNU9DNkxNYjBLN2tWQjJzPSIsImkiOiJ0RW5BU09LUmtZTzBKYzhYIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTERrSG9jNTg2OFMzR0tDWmQ0b243dGE0TjdoVFJtSEpWQ1ZKZ0syc1BZcFR5UXRiOENsTUo0YTdoOEMrNWNhK01QeEllSVh6eUR4ekRtd1dTbFJvYnVPdWcvMm1ja1E9IiwiaSI6IkxwWlBEVzQ0RnVpVVBhVkEiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSjRIcGxkMGEwSVV0YVB3Q3UrTFVQelYya3BEVGwweHJHeXpRTmY5TmU5THprZFd2c1kwb1paMEZLY1YweTlEdHZSbnJvWUVtNENmd1d5N1NobFBNdTVlcDJVTDUiLCJpIjoiY3h0WW13WSttd2RyUWtucSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia0JWdmJNd29POGppaWFDVkt4dHFRUkJDVk1LcWNqazI4UWliT2RhOUVDNFdNam5rZGpwaEtjWldDUzFzRmFUNzJST1dEQ1p5SEp1SUJESGo1cUtJSHgwb1FlbkE4QlE9IiwiaSI6IlBSUFArdDFMeTRnT3ljVGUiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTjhqb0FKNFJLWlA1NVJKVG9FMXVEV29id2grZmV5WkQ3cTdLZDJ1WGk0WUhEaTZmaVJVeDNNN3AyRXRHSFd6MlA4UWgzWWQrb1hlWFhXU3pYb3dMNHV5UUJhOHhhdz09IiwiaSI6Ild1a25xcFFKVlRyWlhoNWQiLCJuIjoiVmF1bHQifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVC94bndVS3pvbVJ3eVJ3RUpPQXl5NDVmQzEzR1dUZk54VUxNYktKUm5ObHgyT3V0eC9BNEdBUTRlaUp0dUFlT3FGc1diMUtSIiwicyI6IlRsVXVxRFJtVEFoSk0vYzI0TmN5T3c9PSIsImkiOiJxYnlUZmVqK2REZWF3YnZRIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia0hLbVlGSm5rZ2dhS3BVaTNaVC9OdWxzTkd6dXhzMUYyaXo2ckJzVWlManVabUI4T29kNEZXakxYYUx2NDU2S0F3PT0iLCJzIjoiRk12OE1KMU1xUVN4eW9UNXErZG1SZz09IiwiaSI6IlByZkIzdEJyRndwb3NtZXgifQ==",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUWR3MnhsZEFteERUMmRObEJvTEUwM3hMaE5DMnFNS0Q4MkVFM1psT2NjYStHa2VGd3d3dGNkUjZGZjMvSldtdjFaMUQ0UFVpeDRPOWkyMUp3ZG1GOWVVR3NqU1gyV2M9IiwiaSI6IlUzaC80bll2MGZ5LzlrMG8iLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "popular": "on",
+    "size": "88GB"
+  },
+   {
+    "title": "Mafia The Old Country Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Mafia_The_Old_Country_Deluxe_Edition.png",
+    "tags": [
+      "PPSA14251",
+      "v01.008",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSytwaThUbzVHMlVybnplTU5xU0t6ZXBtUTB3NGRwOWEwU1BRaTZqa0pOK0VwRU44VzV1RVlKY3R1RGRzby83T1M3WjdQa3ZzWE1FbTFla3cxcS9rbEpERllXbHZsdHJTS0hRPSIsImkiOiJ0TWcrbmtGNWhuN0pSZm9YIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ0ErSWtRZmtVTjBJZjk4TEcvLzJ3TFRFYzJJTzJjbVZxaUx4Z3BmS0hSRVdNaUxxK0E3dEovOGUrREU1b2pvT2JPcGVneVBnOWVDWnVjSWJpNzJ5bUFWZ3lxb2NJMGM9IiwiaSI6ImNPYUNRVW1seFdQK3J4MWsiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMG5oNlllb09PbzV5ZkxEeFJyRXd2dU9WWUxIVmx0VEFhNGxpanZWaUFaWktEc1FndFJtRkY5Q3NzRFAwVVJDbDk5eWRlMDltK3NkcU1pQVFyMGd6Z0ZyZzBPUG0iLCJpIjoibGN4K3VvVVM0T0Q4VGxnaCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicm5YMDd2dTJqLzRuZ1lpWmxOY2FrL2lxTlZGRzlnaWdURWE2c3pIOGk3ZjVVQ29KakxwUXhQK0drbk42YmgrQ1VqRnBiaUNuNGV1MHMxQksxU0YwbGx4VG9sV0hHWk09IiwiaSI6IlkwRWZtdVNZY2hnaFJGRTAiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaUJ4Q1JUMVdZODRTT3RwdGVRMFpSNzQxaFJDd1d2bFVyc1k0U3U2emVFNUVhYy9LVzZROEwvVEN1aHJFbVdkNHRtTTk2V0dZdjVNTFZMdUpMQXB1dklBa2p3ZWRGUT09IiwiaSI6InhvNUJLSVFKdlJlaXJNc2EiLCJuIjoiVmF1bHQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN1FzYUZrbU01NWY0YjY3TzkzOU5zaEc0ZWdLNHJ2ZTUxV1BQbXpyQktDWG1OTDlCRVJTVTU4Zy9QdWh3aU9yNmk1dmM4bGpYeDVCb21qbm5MLzNHNG5SVHhKZnciLCJpIjoibVNNWmQ1Q1ltdXdYZlRZdCIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTEZyM0JVUXFCYlVmcmlmNDA4UUNJWnUzOWVIV0hXK3B6MStVMEhjRGpmaFNTY3dQejdndXA4SnlhVlZiV3hqa2Z3YUpqUm1POURQeXpHZzZjUGZJYnlYVXVZTlpvWkk9IiwiaSI6IlVPWXl5dnJFQ0k3MGlKNTAiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pkykzhack",
+    "popular": "on",
+    "size": "70GB"
+  },
+   {
+    "title": "Mortal Kombat Legacy Kollection",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Mortal_Kombat_Legacy_Kollection.png",
+    "tags": [
+      "PPSA28068",
+      "v01.007",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN1Y5Ui92M2NFYmRqdXBDMi9Mdm8weE1rNGpyUEd0VGd0RFNweU5BMytPYkJROHF1UVN5QmNOL0k2VWRLQkhpY0ZZcnJ5TnpMUTdlZzBBc0lEY1RyZVU2K0tlUWxjN093M3c0PSIsImkiOiJoc2MrSVAxeFVMM1hQZXQ4IiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZEVnUkR6RTMxVGNDSHZVV2haeEtYZ1JXekhuN1Z6N1JCenY0c3VsTDI2YzJFTnpLRi9MK3NVMzhqNHBtZjVRYWF4M0JScnhlbm45UjhQMUpxODhMd296d3NUWnU2UDg9IiwiaSI6IllnaU0xN2JEVVY3dFVwdFkiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiREs2eCtrTFozY2tNZVhFUHhXSHIxVGQvb2I2dFlKWlFnVXkwU3BsajZSNjFOUmRtSnRYNjhOMGUyTWJLeC9uWTdHUXRjMm5WckMzYWlwQ1V0eFRiV1llQlZ5bVYiLCJpIjoiWnpqTjZFZXJuVkFYd1N1UCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoid0M2alhUbG45UkVEQm1udXZEUXMvTCtvdWhDeUV0Tzd5MjRsdjV4VWZVdUdjTlhMWmt0aEE1L0M1T1pvbktleFlMQkJwNWNBeERIMmd0blVQWDNnUFA3Y3FjQldVMkk9IiwiaSI6ImZzQVVhVUZlSHlRM2d2aVQiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicnViZXdyVmxNMktueXBKWDBkQ0Jib0NVbHp1bXYvUzhJNDdYODMwKzBxUk9palprbzAyc1owUkF2ZlkvSkFUR3RwOXFCUkY3SDhMVVhEdWFBc0pRMVJvTVdmR2psZz09IiwiaSI6InFxcDJNUllwTzVrWEE4cG8iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "size": "13GB"
+  },
+   {
     "title": "Blacksad Under The Skin",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Blacksad_Under_The_Skin.avif",
     "tags": [
@@ -150,23 +236,6 @@
     "credits_files": "DUPLEX",
     "credits_backport": "BestPig",
     "size": "4GB"
-  },
-   {
-    "title": "Lollipop Chainsaw RePoP",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Lollipop_Chainsaw_RePoP.jpg",
-    "tags": [
-      "PPSA21837",
-      "v01.017.001",
-      "USA",
-      "8.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiak50QXdVYWRRZmUveElXYjRWRDh5dldiUVloRFBqd2paVGRscnUrZVlPVVFSNzFmVCtESncwVmg4SFJXYnNMNWFoY1hEZWZnVGFBYmVIWDVieGxHSGRXNjJRT3NOelJoMkZJPSIsImkiOiJSOGFhanRBVFV5ZnRWUXRzIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZGNVblZoMVg1MEhRZFFrTFpJR1BWdWJyRnFuRFd6b29sNWxQMFkvZDF3KzJmY0RTbE55bnZZSzdtRFJVVXhsMHdCVVV4OEFEUG5YcTZyeEtPMGZnRjhvT2dGSi9LOVk9IiwiaSI6IiswNzRISDAvcXpUYnUxdHciLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRG4ySUZGZkxicDNIYkU4Uys1VHl0b29vbjZEOEU5aG9ZaVNUR2xnSTdYN1hoNXUrNXR4RTJxaitvdGFmRGdsM2J1UUdsVHlUd0ljQnZXblRTOWczUDNUS3FvTEMiLCJpIjoiOXdGQW9hMFMwQUMxaVFwUyIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib3dLc3VDMDJWb2pwbWJET1U3VkZIbFBBV1EyM29FcWs3T0Z1a0lYQmFaU1VoK3d4UllYV1BEd0ZRV2tyay9MZm9CbG56VGpOZ1g2bFZBd3laVXNpNXIyT2xvY3o4K2c9IiwiaSI6IjNlQVNFRGZCWWFUcTN4a3EiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL3MyZ05zSlZsbVYwR2xkN1F1K1Z2VkNCNDZyRFZKajFmWllzUlNVWDhPUnFtTnUxRzBDOGFFRUR3SCtmRC9YWEdRU2picEhQbElZR0VkZzVRVFdxWE8zNTJrS0w1dz09IiwiaSI6IlRRSVFVSUlZdHlPMGxxV1EiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "High-Speed007",
-    "size": "36GB"
   },
    {
     "title": "Deep Rock Galactic",
@@ -7746,26 +7815,6 @@
     "size": "184GB"
   },
   {
-    "title": "MindsEye",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/MindsEye.png",
-    "tags": [
-      "PPSA28209",
-      "v01.011",
-      "EUR",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWmFJU0YrM1JMSHpyQjg1V0RTcnJWVFZCazlOMzFyMWxVSHlrcW96WTkxQnN4Qjk4WEtFNy9YSFhveGxSaEVDR25iUDd2YWdGIiwicyI6Im9Oc2J2c2l0Z2IxYVBWelNaVUpobVE9PSIsImkiOiIwazNHZlYrcEJyZ1QvVXJzIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoick9hRWdid3BqcmN5UWw0N0VKRXFxcVM1bEMrU2RvTVlCKzhHdm12cE54bjNCVDlOdzlhRlg3eEs0Q3hLcDQ4OFlVOHIiLCJzIjoicm5XSjltb2VMWlduUi9iZEdZWklPZz09IiwiaSI6ImV5dFlXNnBOYStTMXlNQkcifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUURYTThYV1M1TVdOTTVvbS9kZ2J6eFFpd1FNcEN6NmppRS9vNGhsSTUxUUlaelEvNE9aNytYbUR5N3hZMGhXcE9RPT0iLCJzIjoiaFN4TzhMK3dBcElWcTNTSzRwTlYrZz09IiwiaSI6IldHalVVQlByWXRDM2JocTMifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVC94bndVS3pvbVJ3eVJ3RUpPQXl5NDVmQzEzR1dUZk54VUxNYktKUm5ObHgyT3V0eC9BNEdBUTRlaUp0dUFlT3FGc1diMUtSIiwicyI6IlRsVXVxRFJtVEFoSk0vYzI0TmN5T3c9PSIsImkiOiJxYnlUZmVqK2REZWF3YnZRIn0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia0hLbVlGSm5rZ2dhS3BVaTNaVC9OdWxzTkd6dXhzMUYyaXo2ckJzVWlManVabUI4T29kNEZXakxYYUx2NDU2S0F3PT0iLCJzIjoiRk12OE1KMU1xUVN4eW9UNXErZG1SZz09IiwiaSI6IlByZkIzdEJyRndwb3NtZXgifQ==",
-    "credits_files": "SiESPTA & DUPLEX",
-    "credits_dlc": "DUPLEX",
-    "credits_": "BestPig",
-    "popular": "on",
-    "size": "85GB"
-  },
-  {
     "title": "WUCHANG Fallen Feathers Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Wuchang_Fallen_Feathers_Deluxe_Edition.avif",
     "tags": [
@@ -9128,21 +9177,6 @@
     "size": "26GB"
   },
   {
-    "title": "Mortal Kombat Legacy Kollection",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Mortal_Kombat_Legacy_Kollection.png",
-    "tags": [
-      "PPSA28068",
-      "v01.000",
-      "USA",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTFdkbXpZeDFORE5HZnJ3cDhZbUFWY0hXTkRuMDdGRzhkWjJ5enVuK29tRlJ2TE1XQ25icHF5ZkFNc0NzOGVMb1dYTU9CVFpuIiwicyI6IklVN09sYjZqaVJrRC96TEx3VVlXN0E9PSIsImkiOiJDa2pCY0szQk93OVNjb0tTIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNDdFUjdma1VBaXJxZzgwRU43aFk5eFZ0RzI4RVBKSmxRS3QzTUY5U0FteFZJd0Y4VFNMU0kxdFJFdjB1S0wxQjdPMXkiLCJzIjoiWXhHQVdaLzh6VjdHWDRXdDVGYkNvQT09IiwiaSI6InlZT0hNUU1jUXBQSU5haGcifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "size": "12GB"
-  },
-  {
     "title": "Ghost of Yotei: Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ghost_of_Yotei_Deluxe_Edition.png",
     "tags": [
@@ -9190,23 +9224,6 @@
     "credits_backport": "BestPig",
     "popular": "on",
     "size": "201GB"
-  },
-  {
-    "title": "Mafia The Old Country: Deluxe Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Mafia_The_Old_Country_Deluxe_Edition.png",
-    "tags": [
-      "PPSA14299",
-      "v01.006",
-      "EUR",
-      "4.xx BackPork + Sound Fix"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicENZVWxrYjhjSjV2Uy9qd0M3eVFOdjRlcnBLNzVKR0U1RFRpb2RoR0Vza2xxVDU2bkNLSTYxbWRTc3V1NGxHSTdXb0Z2Ti9PIiwicyI6Imo4QWxMMkJPM2k5Sm5zRGNwa2NJdVE9PSIsImkiOiJlRUFGMzU4bVR5Y3FWTlYrIn0=",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiM0Z1WlFPaHp4WlA2QTBta1RtV3h5aEJsQmVCcDgrSGt5K256dVUzUFQwbnFlcVhMS1FzeUt1YnBPbHQzaUFtR1dvNzQ5TlM2T2dnPSIsInMiOiJzeWY1dDJnemJpK044WjQ3dGlnamRBPT0iLCJpIjoiWEQ0QmdDYXhiVnlCRENBcyJ9",
-    "credits_files": "DUPLEX & SiESPTA",
-    "credits_backport": "BestPig",
-    "credits_dlc": "DUPLEX",
-    "popular": "on",
-    "size": "70GB"
   },
   {
     "title": "QUBE 10th Anniversary",
