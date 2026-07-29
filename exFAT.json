@@ -1,5 +1,48 @@
 [
    {
+    "title": "Gamedec Definitive Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Gamedec_Definitive_Edition.png",
+    "tags": [
+      "PPSA12363",
+      "v01.000",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMENhbU5KS2U0R2JjU3VOdTI3VUl6U0hLOTJQOHkwbU9VZHgyMlJJZVNjVnRjYlNWYlJjTHhyMnF0ckd1ZFJjcmlkTEdxT3JsZUpxbmtuSjgwV3BYbHQvZHFZUXQzTlhkempvPSIsImkiOiJiMFZ1bTZIQWhvY2RUSDZDIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWnJIdEFTWjg3TVZlNVhwTHNnajhwb0FRcCsrNDlVK3hkVE5SZGJUaWwvWHpkYitDa1dkeDFBeXloMWZSckNWRTRsa29GamVoOHhxYXBlVWlIeTA1b2JHOUZjR1N0ejA9IiwiaSI6ImpocUE3Ry9uUXpzL2V1UVkiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZGdOVVhVb0JUaENGK0FGK2ZxTGsrWmlQUVlZQTliaWFIREV4cEdiZjg3VUQzRXFJMFkreWNLUWE3bmdkQklBQ3FIUllmaERRb1N5OU5yMldGTjFHZm96VGZyOXYiLCJpIjoib1Q2cEducHhOSVk4TGpGcSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMUp0eDdlV0s2NkJPWGJtSnlhN1dWNWJwU2IxVUZYaTRIbFVMOG1QenRpMkVVb1czTTFVQ0MxOVUwcFF5YWdLTDd2cEpjT0RyUXl3ZmdOOGpDTngzL0lBb1F6Qm10Q2c9IiwiaSI6IjJKWFBaNllJc3dDREwrbUwiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblVRTWxScGFiSFpHaWJJZGczY21Lb2F5LzNmcnNPclhHc0FaQ0gxVERmZlV6RnVZWThGY28zSG5UK21sSDcxdTdsVXFPbUppazk2R3NzVjJOblQvdWpmWE00eU11Zz09IiwiaSI6IktlQzRDRDliZkJHYjl6NDkiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX & Jose Carrion",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "Polski is the default language, if you wish change this you can do this on Settings.",
+    "size": "14GB"
+  },
+   {
+    "title": "Gori Cuddly Carnage",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Gori_Cuddly_Carnage.avif",
+    "tags": [
+      "PPSA07393",
+      "v01.009",
+      "USA",    
+      "Standard (6.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNGdqSDZXRjJyZGxaNzF5REY4T240UmQvTi9VK201STN2cHVKdnRjM0pZVW1LMUtrbVBFSkI5ZHFFa01NbXRPMzd2TDVIV2dSIiwicyI6IlQ4TE1wRlNsTjNQYkNHbHE5QitJTFE9PSIsImkiOiJCUXFuSlhnN1MrdFRSYkV5In0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWENRcklaTExUZC90bEovSUtKTkp1U2V3NEVjL3FtOVJ3emhJdm80YitIZ25GSDJMRjQ4L3g1RktPWCtYOEVuQTUvVnIiLCJzIjoiU25CVHNjWit4enljMmk3ZmphWUVUZz09IiwiaSI6IjIrTU9DWStwMG5XdFh2YzAifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiclQ2dWlvTkorcHI5b0dpUjdMcEg1Qlg1emRsQ3ZMWUlFVWgrWWs4YUZTQSs4amwwZitxQ3Q3cTluODZLZXBzck1wU1phRHdFenJDeWhXYjhaT3Z0bDMwcjBVNzNOMFoxdDZ3PSIsImkiOiJNTUtWVnFLL2s2dTFvaHVMIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ2lTWk9Tc2JjQTVUY1g2UHAwczBOSE5yelJrcFd0Y1QxK3hwNThhamRWdXFQMU1kbnR3a282MnQxdGw3MXZmU24yVXl6cS9rOXdkWXF3amptT1d5cVNhSXN2L2VzTVE9IiwiaSI6ImI0T283R0Q2YjlZNk5GUDEiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV2FPRWhza2VtQmoyNFVTNkZMbU1BRjJFL2hzQ1JqVGlaKzMwRms3UGlUWjVzMFR1M0lrcWhoTkpnWFdVWnBKbEpvdUxDSUZtcVErMWRqRXI2aGFpVXdLZnNJdWoiLCJpIjoidTJkRXV2Q3h1U0pIVjFIQiIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSGdFK0htZUdWYUN3SHo0ZGpIWWl3cGVkNFZqUGF4VUtaWno4MHU2Nm1VMG5CTFYzQTA1dkFTcXNKMzB6dzZSOE9VWFM0UVlBVXNlOGM2N2JMZjJ1eTFnOENBN2xWM2s9IiwiaSI6IitwU3JGRzBxaUtaNGM4enQiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ2lZQ1ZwTEIrN2RBV3AvSy9iNnpucFVxTUwrRWRobmYrV3ZoT1Vxd2Z0bUV6WldkcVhuS0lZbnZlM1J0RnNLMzNHU3B3V3YwajRNOEQvN2RNT216M1UxQmwydGpCQT09IiwiaSI6Imd4aUpIc2hJQzh3K09BZ0giLCJuIjoiVmF1bHQifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidC9FcHFIVjY2NE56c2hJWnFENktLalVMUHF5aWRDMEZrRDVwN25lTHBxY0V0Und6dEl1a1U1RDN4NFpXSEdQbFYwWkRSUjBDIiwicyI6IkI3VE9kUzlXTmtJRW90ancwcmtNVmc9PSIsImkiOiJjcEhYNndnbVdyLzdaVzhuIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQW5MRzR6Q09qRzRiM1lZTWR1Ylhlams4MUlVVUZLZFRlY1R2NnBjTTRrMUhTYVlEbVNmT1o5dTdEbEFwdXVwTnJ3PT0iLCJzIjoidTdReUJibi92V0hHM3Y4Qll3VlNVZz09IiwiaSI6IlphQjN5RWJYZWxVU1A3QnYifQ==",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidDdWVWlpd1E4Q2M5bHZsNU1MTEo1U2NQbTBDdE41NGdXZ2hNWW8wYnBGSDcxZCtpVzJDeUtSbzJlbkFLaFlwYkxnV05xUHN1cVQ4L0thL1Z3ai9DNHNjVzA1a3VvVlU9IiwiaSI6IkFQTVlCVGl0OEsvYmV0RWIiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX",
+    "credits_dlc": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "size": "24GB"
+  },
+   {
     "title": "SILENT HILL The Short Message",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/SILENT_HILL_The_Short_Message.jpg",
     "tags": [
@@ -5720,24 +5763,6 @@
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOThsRTNhYWhjRitEanBFcHdKWExlM2pwZlVQQXMxRjZKQjA0M3RBZGhsc0JRYzdNYVgrNE1zR3Z0S0RPeUM2L3VBPT0iLCJzIjoidWpmNEhiYTRvUmp6bFFMWTZadnFhZz09IiwiaSI6IlNLZFpDcWJrMTVwMFNGdlYifQ==",
     "credits_files": "DUPLEX",
     "size": "8GB"
-  },
-   {
-    "title": "Gori: Cuddly Carnage",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Gori_Cuddly_Carnage.avif",
-    "tags": [
-      "PPSA07393",
-      "v01.009",
-      "USA",    
-      "6.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNGdqSDZXRjJyZGxaNzF5REY4T240UmQvTi9VK201STN2cHVKdnRjM0pZVW1LMUtrbVBFSkI5ZHFFa01NbXRPMzd2TDVIV2dSIiwicyI6IlQ4TE1wRlNsTjNQYkNHbHE5QitJTFE9PSIsImkiOiJCUXFuSlhnN1MrdFRSYkV5In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWENRcklaTExUZC90bEovSUtKTkp1U2V3NEVjL3FtOVJ3emhJdm80YitIZ25GSDJMRjQ4L3g1RktPWCtYOEVuQTUvVnIiLCJzIjoiU25CVHNjWit4enljMmk3ZmphWUVUZz09IiwiaSI6IjIrTU9DWStwMG5XdFh2YzAifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidXJhVDR4Nk1CYWlnUjVoL2NUYXcrdU9DMjQ0U1VYS1lBRkFoU0p2U3ppK3VOeFNwWUtlQytyYk9Gako1UGlRU0NBPT0iLCJzIjoiS0dqNFVsZm8vNndEK2d6Mk5ZT3V3UT09IiwiaSI6IjBHZFVIempYSkdwTU1McDcifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidC9FcHFIVjY2NE56c2hJWnFENktLalVMUHF5aWRDMEZrRDVwN25lTHBxY0V0Und6dEl1a1U1RDN4NFpXSEdQbFYwWkRSUjBDIiwicyI6IkI3VE9kUzlXTmtJRW90ancwcmtNVmc9PSIsImkiOiJjcEhYNndnbVdyLzdaVzhuIn0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQW5MRzR6Q09qRzRiM1lZTWR1Ylhlams4MUlVVUZLZFRlY1R2NnBjTTRrMUhTYVlEbVNmT1o5dTdEbEFwdXVwTnJ3PT0iLCJzIjoidTdReUJibi92V0hHM3Y4Qll3VlNVZz09IiwiaSI6IlphQjN5RWJYZWxVU1A3QnYifQ==",
-    "credits_files": "DUPLEX",
-    "credits_dlc": "DUPLEX",
-    "size": "24GB"
   },
    {
     "title": "Asterigos Curse of The Stars",
