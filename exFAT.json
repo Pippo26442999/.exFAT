@@ -15,6 +15,7 @@
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQmtaYTRDOEFaWTdhUGVPWWI1V3RPQndhL0krUlc4Z1RWWUQ1aEVyMlJ6T0UycVVwL25lOU5UaTdVd25GTk9iMDQxUHFFNVZYYVR4KzhpSFVEN05tZmt1R2k1b0Nmdz09IiwiaSI6IjAvVFo5b2pobDdvVGdXZDIiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Andrei Trubnikov",
     "credits_dlc": "Andrei Trubnikov",
+    "credits_backport": "DecKerr97",
     "how_to_play": "All DLCs unlocked included Hitman 1, Hitman 2, Hitman 3. Enjoy.",
     "apr_emu": "on",
     "popular": "on",
@@ -7332,26 +7333,6 @@
     "credits_files": "SiESPTA",
     "credits_backport": "BestPig",
     "size": "24GB"
-  },
-  {
-    "title": "Life is Strange: Reunion",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Life_is_Strange_Reunion.jpg",
-    "tags": [
-      "PPSA28101",
-      "v01.000",
-      "EUR",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQlJhTHB5N0FjVTNqMFg3T0xCNzJWUXJxbFVKRUlyai9MRUpScXZGTmthbGFPY2pNT3Y1d1BqVmxsNUNXZG5QcGllSi9OdHdqIiwicyI6IkxPUWNBMHdpZnFGdEdVcm1wdnJBN1E9PSIsImkiOiJJRjEwa05FZlRaT2J2M1R6In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYmdZTWZHbTN3RFYyTm5lVUZrcHduYnBIVEU1T1BaV0lmVGZKdGtKOHA4V0pTRVBCODNGc0lESThIc0p0aHh3Rjcyc1MiLCJzIjoiQjZQWTBlVDdKSGk2Y2grMFBGbkcwUT09IiwiaSI6IjJPYStwQWo2WHNHZmxrNlQifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT1RIeEFrK3UzZElCQkMzVVFKR3lHbFhOTndyWmNJOEc0QWdjL293UWFzMVdHV0xvWEhDUFRTQk9sOTRPUTYxSkFBPT0iLCJzIjoiRXdES0oxeW41SDhTQ1hCWVVHWVVXUT09IiwiaSI6InVGUVc4K2hIam9KYnZReWEifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNkFleGtDbnBDbTZ1VWhnRDg1L1FPaUk0UExmbmZUUTZ6Y0hUWWJSSGhrcllsMXRad29RbjZWcmtpckVEUVFTZFZoMER1ZnkrIiwicyI6ImRubmxXYWF5WHYrU3hPbUlJVEU3WEE9PSIsImkiOiJTSWJPMXFqZ1NxcmJ1VVNjIn0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicWpwZWJVV3VhOFVodUZ5M0dFSmNEVGFWZ0RFMmpPanZEY2NwRldsSUhqcWxERnZuT1hjVlQzU1ZSUWFSWlk1emNBPT0iLCJzIjoiODlRTUJkWDB5c3NldFEyUmtqZnl5QT09IiwiaSI6Im1tSFZOb1U0WkV5RFl5M00ifQ==",
-    "credits_files": "DUPLEX",
-    "credits_backport": "BestPig",
-    "credits_dlc": "DUPLEX",
-    "popular": "on",
-    "size": "44GB"
   },
   {
     "title": "Reanimal",
