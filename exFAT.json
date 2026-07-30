@@ -1,4 +1,23 @@
 [
+  {
+    "title": "DiRT 5",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/DiRT_5.avif",
+    "tags": [
+      "PPSA01552",
+      "v06.005",
+      "USA",
+      "2.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaFdESzROT1M1Z243UG1lR0NtZmNBdm5HL1ViUThMdUgzVjZjeFF3UEdGTmRuYVJHRmxrZUI1UnEyVURrcmZzNTNUT1E5ZEkzVVJiRHFQKzFQTzRIcFpodUtWeEc5T0k9IiwiaSI6Im9CMnFKUEFpdlJZUW11UXciLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRU56OWloQmI1bVlQK3ltcUxWQVErMmVpTzFUQjRIU1RWeWp1Q0tqL005SjNXWngzWWlmYmY3alNYSzVuS3hvOUtIcSt1c3ZHc2tvclVqMkRreDgvQlZNVnMxOS8iLCJpIjoiN1o2ZnhVVkhlZ3VFSWY3SyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM2drM3hMT1d3U1pnSjdMYUNtMjVqM01QZSs0NGN0T0ZQOTkxWllSeTFaTWliYmNWV1d0Z0hjSEZXS3F5cWtEL29NV2hXNzQ5WE5MeXc0ZnBFMVl6cTBhd1JlWGV4QT09IiwiaSI6IjRUZ3Jad2pUS0d3U2xmSXIiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "popular": "on",
+    "size": "97GB"
+  },
    {
     "title": "Marvel Cosmic Invasion",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Marvel_Cosmic_Invasion.jpg",
@@ -660,7 +679,7 @@
     "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVkZ6cERWc1hsdEdpaHV2TnpFNmQxZ2VsdEhORHJEZnoyUXFqUXZXMm5YR0tCaGtVNGRFNjMrTno4OWZUWDJwakZyeitKWE9LZUJXRXY0NWRyMVd6NVpFZ3NLbjYiLCJpIjoicGNiaXFWcjRUc0VoeXpWUiIsIm4iOiJEYXRhIn0=",
     "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWGFkZlh0a0YzbHFiK2FmcjJFR092ZWdGOEx0eGt1V3lZcWl6Q1ZwdzdiY2lYU04wQmtVVFA3cUowQkZHelY0aENKeUM4ZjdVYlg4TnZVcUVMMUFOTk85clhZNGtXUVE9IiwiaSI6Ildkb01JRTZVNDJKYlVwVXUiLCJuIjoiRmlsZUsifQ==",
     "credits_files": "High-Speed007",
-    "credits_dlc": "realromhunter",
+    "credits_dlc": "romhunter",
     "apr_emu": "on",
     "popular": "on",
     "size": "43GB"
@@ -2067,7 +2086,7 @@
     "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN2ZhcnBicTluWmJ3VDF2YUwyOWhaSnc3QkNDSmh4VVJGZXdabEhvdjlnd05MQTRNYitNeDFMZS9ibHJTYnBxUXhBPT0iLCJzIjoiUi9laFdFdjlDaHpXaDY1MGJ5cm1hZz09IiwiaSI6IkxMVC9wQkJRUkNNelNQTUMifQ==",
     "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaE5VbHhaQ09RT29LNWhkekxiTFQzdHJrY1hoNnR0dHBWWFRnbkd5VlRDVVR4bklFV0E5TTNqNGZ3OCtPOW42bDBlcE5qUGRWZW1td1JpZnBJRHUyekdmcFZYZ3pKbms9IiwiaSI6IkkwT3Ftb1BRdXBVUStEbEwiLCJuIjoiRmlsZUsifQ==",
     "credits_files": "SiESPTA",
-    "credits_dlc": "realromhunter",
+    "credits_dlc": "romhunter",
     "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "61GB"
@@ -3607,7 +3626,7 @@
     "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOU80SURVbElpNER1dktKUGQyNE1rVi9yOXhHRFlQUzlzWFlYTEtkeXh6bDM1OTRRT3pYMEp6SUJqcVhCbmNVeGdBZm9DdDBlMHBLQ3NvaUl2cWxJV3RXUWZqc05vTDg9IiwiaSI6IlBuN2taU1d2UzZISnRnTHAiLCJuIjoiRmlsZUsifQ==",
     "credits_files": "High-Speed007",
     "credits_backport": "DecKerr97",
-    "credits_dlc": "realromhunter",
+    "credits_dlc": "romhunter",
     "apr_emu": "on",
     "popular": "on",
     "size": "21GB"
@@ -4143,7 +4162,7 @@
     "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib2czOWNBUkxSWHNsT01EbjZZZjVBMWF3NmJwL2M4RGxlK3RPNHZTZjQ1SVhGOTN4eVE4VWVaR1pNVXE2THQ4bGdwbW05OXZOVWlvUG1OMDdNMDI3TE5RYWFHRUgiLCJpIjoiT2JSSUVYa0l0OXlYRnFUTiIsIm4iOiJEYXRhIn0=",
     "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQXJPVHRTenR5TnY4Yko2ZlNvbk9XNHg4YmZqSDlNVlVkK1daYXJQSVpwQ3drTmVZUldsWTh4Zm1yRVVua0xPcENTNXIzd0c2UWh1UnhobWdPUHZDV1RwWWx2elNOdkE9IiwiaSI6InlKUWZiVllYNGJOa3VIbTEiLCJuIjoiRmlsZUsifQ==",
     "credits_files": "SiESPTA",
-    "credits_dlc": "realromhunter",
+    "credits_dlc": "romhunter",
     "credits_backport": "ManwonHp",
     "how_to_play": "Totally converted into USA, progress will be no lost from v01.007 (No need anymore Garlic Saves Manager), enjoy.",
     "apr_emu": "on",
