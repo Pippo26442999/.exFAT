@@ -1,5 +1,23 @@
 [
    {
+    "title": "BUBBLE BOBBLE Sugar Dungeons",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/BUBBLE_BOBBLE_Sugar_Dungeons.jpeg",
+    "tags": [
+      "PPSA26356",
+      "v01.000",
+      "JPN",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL1lZQWFhZFhJd1A4SC9PWTZjQ3h6TWlTbmlWU2JJYUpRTmtHakY1ejhUcWc2YVVjcHlaRkVQL0RSaWR2ZHpGS08ybnpxQ2l0b1NUcXg3elc3Sm03YXdmbWsxclRUL2NyNDVrPSIsImkiOiIrUkxKL1l2dTdacWIzR3lZIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiR3JtbUN5V0luTERKQlY4VWw3c0FuaVVVdnF1TnptSXhEakhISDRsbG5tNlQ5SGlMMU93MW5pbGRhcWxyWVlBZUVqSXVWMFhLb1lLa1k0dUJxVjJwMGVFS20xNGRXazA9IiwiaSI6Im82d0dFZTlBNER6M2k3UUsiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTUFlTkxvdEEvMkdFVjZjZEMzM3ZWZkhkMEJKOEtJOUNqUjVJUmt1ZU55OXAzeFAxNzRkMlVqTjBldGFVQUsrb2xNb1ZkMngvTENUUk5wbXltYkVreHVGaldqcUMiLCJpIjoiZWwyM1RKS2ZhZVQ1aFoyZSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieDdGbjVTazlqWElJamZzMG1HTzUrOWZaWUhIaFg0QVRCeTl6ZWpHb3hSeEtxb0JsZG5jaUNxUFJGMm1wbzJxRmZUblQrT052enJ0eUNpcU1PcTlkdVNNT3h4OEVQR1E9IiwiaSI6IlZGTThYZDFpcUYzMTRkYVgiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaGZWSXFrNU5ya29EQmRVTUw5UjFXVVEwZmxwT1Y1T0R1Tm12UG1kcGRlM0JVeERIeTgrRzI2bW9jSC8yZVBKbGRGRFI1eXd3bTBEWW40ajdGZjZybElkeHp2NnUrUT09IiwiaSI6Ill3Znc1WERlMitVNDJvMDYiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Amiibohound & SiESPta",
+    "credits_backport": "DecKerr97",
+    "size": "1GB"
+  },
+   {
     "title": "Rez Infinite",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Rez_Infinite.avif",
     "tags": [
@@ -8761,22 +8779,6 @@
     "credits_dlc": "DUPLEX",
     "credits_backport": "BestPig",
     "size": "41GB"
-  },
-  {
-    "title": "Revenge of The Savage Planet",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Revenge_of_The_Savage_Planet.avif",
-    "tags": [
-      "PPSA20154",
-      "v01.021",
-      "USA",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidXNyckVsL3haSUhWaXpDQzBMVFZHcU8va1NqMExHbHE3SGdQZ09NbG5EbU0xNnE2bVR1NHdSTDZyTVY5RytlNG5xNDRKTHZCIiwicyI6IjZuaVAyaVl6MTB2Tm1UTnYwdFNiaUE9PSIsImkiOiJSckNBYnZHZE5wT3ZWWlRuIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibEtybkNWd1JwaTkybnphYkw5ODliR1o2QTNDMmpNZ2o1WnFMMklmS3JCNXF0NS93aG9FSnExclc2aHNsMyt6bTJtVVEiLCJzIjoiVFBaVDZPRUUySkx1Z2JaMmlsZWNJdz09IiwiaSI6ImVxcDJBVjJyNWtCb01nNTEifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiM0QxR1VWNEY4dEFIdnN5LzdDYmVVL2ZPSUQxenQ3Q3hFREJWaktldGNCNEttZnYyNXp5K0VUc3U3UDJPMklVSVh0Q0ZnQT09IiwicyI6InJxT3FuNXpBVXA1clNZQTUzM0poZHc9PSIsImkiOiJqeDdCc1IvbWRXVmg0cGxFIn0=",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "size": "25GB"
   },
   {
     "title": "Morbid The Lords of Ire",
