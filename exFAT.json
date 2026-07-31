@@ -1,5 +1,32 @@
 [
    {
+    "title": "Warhammer 40000 Space Marine 2 Gold Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Warhammer_40000_Space_Marine_2_GE.webp",
+    "tags": [
+      "PPSA04452",
+      "v01.012.002",
+      "USA",
+      "Standard (9.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYU9ZdUtjWmcwVXFTaEVnY2RRakRUVU83TTF4SEpmSG83YmQxdFdodVlxYjBKNWdvTnQ1VGQyV0lKOWVYQ1BFbEJxdEdJeVB5dTgraUdwenh6UmZjcWNIeVlYaWhwMTdQdE00PSIsImkiOiJqdHlIZjVVc291T3dMWmNwIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOG5DYlB3eXpOaGJXR05nK1I0eS9ESENUWlRZWlZ5UXIybXVteGFQMUFjcXBzeGdiV1R0WHJIZ05NOXUySm9uRjA4ak1JOCt1KzlUaGpTSThUaWZEMXJBUEZKbU03UDg9IiwiaSI6ImtBTzZOY2VUazRBb1lMT1giLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNnVkZzFiWWI5Q09FSjhnQjUvVFJFenRhOUNvSmc3S1FCVU1RbyttM3dmSlZBNEorK29BSG9BeGh3UkRlby9uakZEbkxYaENObTMzS1FmU2xJc2FWOFM1L0hBeUgiLCJpIjoiUTRac2V2R3FaaGRNVHJNUiIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNjVBV3ArQ0luSFBnMG96RFdxcUtXMzZEMXZtTnBEcW9DRldmY3V2eTBvMThTdzVRWFFpUUZWL2Z1bEVHcnYvU1MwMlhyZkRuakNRL3M4R2pNeFNNdVR5U0hhQ2hyTkU9IiwiaSI6IlBadjZaaHl0OSt6bkNySmoiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic0hHbWp4dmgwZlZIc01ZLzhTQVo1cWJwUEsvSXJnaW4yTGRYTFJULzZ2RTl6K3A4RkkwZnlVTGNlbjR3bU8weHZsc1JybmhWTXp4THNlZnVpNTZsU1JkcWZHVGtmQT09IiwiaSI6Ii9rTkxidzBIWnVQUGxHc3EiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQTRTb1Z2c1lZVzRTcHFJNU1qeTdkL2YvQldXdDN6TENGZ1hOZ1BNS2gzVXBORmRNcWRDc2MvZjZXaXpEbE5CcHNyQ0ZQWjBLWFNlK0JYNUdvTzkzaHNBV1pOcW9jMms9IiwiaSI6InZPcTY0T0xwNjFLaFB1Q1EiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVnpUS0FlcjJTM2ZDMEx6VG44NDA4c0I2SDJyaEYyTXc1WUY4QXhKWVVDTzdzeXBZcTlsajRTZ3NmaVhKZzBUUGxzWUwrcFZlMGtWaUlWSnIzWnlZdnJrRjZZT3giLCJpIjoiWTJtYmJIajk0bDRiYVlsUSIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV08xOWZpajFCd0JaTFRXMWJqR3ZYRVNIbC9tdDNXWWk2Y1lMNlFjdFRaK1ZjSmhGa0NNOSt4Y3BqR25Ka2lUN1FhaDQ3UVBOb3BkUDZ2QSt1OU4yRVdqYWpTbzd1Nms9IiwiaSI6IkE1TUxNSDRrOTZnQUlwbVYiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieEttSlNUOXhncXdLZEM1S3Ivc08vdksrbWRUWU5lNER2QkNiTEZnMmZlbjZWQjc1cHM5QTFmMnZ6UHRjWkM4dlcvOVhrVURnWXgvY1kyem5vT2FRTCs2SU1IZXRiZz09IiwiaSI6IkFudTR2ZkVuSzFHRW5BSmUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "kstuff can be paused after 120sec or the game will crash. Game can take sometime for loading depending on your SSD/NVMe.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "102GB"
+  },
+   {
     "title": "Wreckreation",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Wreckreation.avif",
     "tags": [
@@ -1023,27 +1050,6 @@
     "credits_files": "High-Speed007",
     "apr_emu": "on",
     "size": "1GB"
-  },
-   {
-    "title": "Warhammer 40000 Space Marine 2 Gold Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Warhammer_40000_Space_Marine_2_GE.webp",
-    "tags": [
-      "PPSA04452",
-      "v01.012.002",
-      "USA",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYU9ZdUtjWmcwVXFTaEVnY2RRakRUVU83TTF4SEpmSG83YmQxdFdodVlxYjBKNWdvTnQ1VGQyV0lKOWVYQ1BFbEJxdEdJeVB5dTgraUdwenh6UmZjcWNIeVlYaWhwMTdQdE00PSIsImkiOiJqdHlIZjVVc291T3dMWmNwIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOG5DYlB3eXpOaGJXR05nK1I0eS9ESENUWlRZWlZ5UXIybXVteGFQMUFjcXBzeGdiV1R0WHJIZ05NOXUySm9uRjA4ak1JOCt1KzlUaGpTSThUaWZEMXJBUEZKbU03UDg9IiwiaSI6ImtBTzZOY2VUazRBb1lMT1giLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNnVkZzFiWWI5Q09FSjhnQjUvVFJFenRhOUNvSmc3S1FCVU1RbyttM3dmSlZBNEorK29BSG9BeGh3UkRlby9uakZEbkxYaENObTMzS1FmU2xJc2FWOFM1L0hBeUgiLCJpIjoiUTRac2V2R3FaaGRNVHJNUiIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNjVBV3ArQ0luSFBnMG96RFdxcUtXMzZEMXZtTnBEcW9DRldmY3V2eTBvMThTdzVRWFFpUUZWL2Z1bEVHcnYvU1MwMlhyZkRuakNRL3M4R2pNeFNNdVR5U0hhQ2hyTkU9IiwiaSI6IlBadjZaaHl0OSt6bkNySmoiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic0hHbWp4dmgwZlZIc01ZLzhTQVo1cWJwUEsvSXJnaW4yTGRYTFJULzZ2RTl6K3A4RkkwZnlVTGNlbjR3bU8weHZsc1JybmhWTXp4THNlZnVpNTZsU1JkcWZHVGtmQT09IiwiaSI6Ii9rTkxidzBIWnVQUGxHc3EiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "High-Speed007",
-    "how_to_play": "kstuff can be paused after 120sec or the game will crash. Game can take sometime for loading depending on your SSD/NVMe.",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "102GB"
   },
    {
     "title": "Kingdom Come Deliverance 2 Royal Edition",
