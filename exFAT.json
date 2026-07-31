@@ -1,11 +1,87 @@
 [
    {
+    "title": "Art of Rally",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Art_of_Rally.avif",
+    "tags": [
+      "PPSA03686",
+      "v01.007",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaDRxN0JtNUtEMUR2RmhZMVg5ay9KTGJEMjhTSkJxNml0UnlHa2JUNDYyS1ovS3JtTG1rU3Q4NFpxT3o2bVlFdjdiT040Vmd1THJSc2dLYWU4TnJiZG12Q0phUHVPSzhnb3JRPSIsImkiOiJFaGhVdWFoV3RuR0NYNnVrIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSTJ5S3ZIL1dUUGhjT1FJWVJFZTVLREtaUmlpanlJUGRBTitvRGtFczJMZVNHVlNiWUt4Y0tQOXdWZU96MGlBZXZXNmozN2ZLMlprcjRHMjRXMG9CVDVUNm9DRlZRN0k9IiwiaSI6Im8xRXdrNnk0aXFWUjhzUm0iLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZS9BbGg4K1l5ajgxRkphZ2xuMWdkRVB6VW9hbFVFaE0vQm9pL1dQQ3UrMkk3RzNSMm43OTNEMkNtS3ZBRkFJREdvdTJna1l1WEFyVjAvdnRCT29nWkZoR2tqSUQiLCJpIjoib0hMYm12US9qd0xxZU8yUCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYjc1eHR1eVFkdmRMYWg0TW5ySVBEM3dValhMK1dDVTBrTW9uMEJDQ212K0tGemhsSGMyZWxqRTJjdW1Jb3VlelEyVi9aU0NRUkZ5bnhqNjRnMUViUmREY2xxVXJWMTA9IiwiaSI6IjhsaC9wRGhZMG9FMU91dzQiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTHRlRjlOWnJLRVM1TmFYZllCTHdZcllWTU5uR29WdlIvOCtXZGhjYnpaMkF5MjM4K0hvSDlXdldPbExaek9RNXRxVzV4SzVGZXRLa2Z5WkMwckVHaXR0MjN0YkQzQT09IiwiaSI6IjVSS3dubGpCMllYcGd4ZisiLCJuIjoiVmF1bHQifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibTlRT2VRVmpoR25tdHVjbHFFMFZkWXFndGJzeGNhenBlVnN3TjlET3VzMis5SjBIVnY0Y0tWdGZkV0pLM2pRc3N6L0JoSGR6IiwicyI6IkJoaHBhaHF4RStoMzF4NlFDUW5GaGc9PSIsImkiOiJ2aVE2YnMxczd4cDh1dnI1In0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicHlCZmVwV0MxcDVQVmVGakpnUXZMcjlCUllhM3FremZqRjRsb1BWNSszZ2ZPWEVSUW5ENGZYYmpld2E1a3hQODR3PT0iLCJzIjoiNitkU3g3RXJ4OXd1OEdpWFlPZlBwZz09IiwiaSI6ImZDSEV3VUhhOGRWMkcwL1MifQ==",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZTJvSlh2Z1N3VlJvWGtpL29Cc0hZSGZCMEFBNzlhNlZiUUR0dWRvZ3FFMktyYTNDQ0dHdXdxTnpMM1UzYVl3K2c2OUFzblVUWU12OWxJQU5zbkpkQnNNbjZTMlJUSmM9IiwiaSI6IllmZkQ4cUhPbG9GU2kyWEYiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "DUPLEX",
+    "size": "4GB"
+  },
+   {
+    "title": "Earthion",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Earthion.avif",
+    "tags": [
+      "PPSA28061",
+      "v01.006",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRFBVSUZEN3lKV2g2a29DYTJzaTRSMFFubi8wYXFKNE9OMm1GNGp0Q3JHdkMxRlpzNlJGSXZFa1RtN0N4VWZPRE5wekNmN3VqNEluTWdSZnNrdGFDZXZpeG9yam1qWkVHSXAwPSIsImkiOiJDZzkvblZvTHVXNkdIeVZEIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia2JxVWVEYTJBWTJvWTRpQ3J4UHJLa0RHSTFXTkRBbElWYWZjZUlSQnF4SDArNHpkZWYvTUpRNWxZNkJpRTZrY1hKNTI1ZzE3bkNhZWsrV1l0cmd4a2t4c0pDOUlLQ1E9IiwiaSI6InBrVjA5NVl6ZXZsWE9oeHkiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOUNoRW5RV01sQ2JEQkpRdEl2WC9pcWpiK1RvUG94Nk9YVStVZlRGOVRqbjlCTkpYSVVPYnBSL3g4Y0wzU2UyK1lvaFB4SC9NRHR0QUpYVlg1WVhTNG5ROE41S0ciLCJpIjoiTHQ2OGZpTkdEZExjVkdmViIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZFBEU2RiVnRlR3VQVEN4RHc0Smc3L1hYWndSN1B2VG1kbkVJbE0wNDRpYWh0UG02RVpZZlV1a2E4ZW9FV3JFZm80OGYwV0s1T081VVdoeTlYOXhmOFlzUGI5US9jZ2M9IiwiaSI6IkF6OEkxNmFxSE1BMUxpRUMiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaU1LZGZPSHZ5ZzJLWFdzNFpIQTdBSENTSVZmR0FUREJqcGZNd09EM3Q2RWdNQS9SR0t5bnplaVFqRmx1S3dNR2l6TTZsb3hIYmNFM1dNV1RPUXpvZnV1NjdiTStSZz09IiwiaSI6Ijk3aFhQZHlJT3RsWnNBbk4iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "UNLiMiTED",
+    "credits_backport": "DecKerr97",
+    "size": "178MB"
+  },
+   {
+    "title": "Choo Choo Charles",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Choo_Choo_Charles.avif",
+    "tags": [
+      "PPSA17313",
+      "v02.000",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMkh5Tm84U1ZXY1E4UThRY3BLVFJmZ0R0QVEzWlZqTzNvUWk2T082RG9zajcrWjlvVkxlWWdsSWorNXdzdGVDcDRsaXdCSlBXNC93Zm9FOVhEZGxBSEJBamJZL1lwSm9pVis0PSIsImkiOiI5SzNtWUZVWHFlc1QrRnczIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidTlFWSs1MXZZNnpmZzhjUGZlOXhxMmhVYU9UaEc4bXlCbmJYTXdXRDlZV2xwSlJmQ2kxZ1lheWc1dW43SjRPc2hETU9rYkNpWVFVTVJsTWZKNTRzWENWU2ZIdUkwSlk9IiwiaSI6IlMySVNSQll2RkcwR09ETEIiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidi9CUUF3UElSY2NBWVFsYW5iWjQ5VVJmc014SXZma0RnWTFCMlM5VHVaOTdJNjdaREpoZlg1Y3AwMDYwK0hVRUJRNWFLVi9iL1VITGd6R3Q3aGRRdXlua3NZdUUiLCJpIjoibGtpMnRVNHVzUUxmUE9RdCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRHlkQ0g2bDNrT3VEQllvcFo1Mm5INmNMSjlqdzJ3c0d5eVJDMWVLaEljRFdxdzhpUnliMmo3UTRTd2xmVkpwQmFld3ZSUzdvcDFKWWlLOExTZGtnMTRaRDhJMkNTRDQ9IiwiaSI6Ino3SHNWU3BSdW1KcGR1TFciLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTlRvMXVIQTFkS0VtQjgrZll2aUFNMDBiaDBkUHMvVCtwR00zdlowb0xldVNXdE9WbVowYmRhNnYxNWZ3R2N0dncwOVlWZ0RKejFYczZLZlBRS3lHR3RNNlB4SWtPZz09IiwiaSI6IlNCaExpVXJXUThuUGZrTE4iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "size": "4GB"
+  },
+   {
+    "title": "Fast and Furious Arcade Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Fast_and_Furious_Arcade_Edition.jpg",
+    "tags": [
+      "PPSA30138",
+      "v01.001",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTURTajAyZE1tK0FaNkxoODlqT1F5TjFSVUdUYkNRTUlLb0tnK1U3VGdoRU5oa29aeFUzeVhqOUlDM1RYQWM4VG9pbmd5L0FLQzR6c09kQWNXUEkzUTVCRGs5YllvMjhuRU9FPSIsImkiOiJ2ZGdYL1hVUEg2czcrWEZvIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZHFnNlpQSmYrNDRTOEhXaW5yeHIxU014eU9BWldXOGR1d3BQcUE5TDRUVFFxMGRXQmFFdlBFT1NkYTkzMU5WUnRibFFXRjI5Sy93Zm0xbWcrNGg0amtJWWE1SDFvMGs9IiwiaSI6Ikg0OEJqYkZKY1FNUFhwVTYiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTVErb3k3SjdueW0zc3g2dFIzWTAzaklOUUp3YjVTS1o0TktITkd0SmRuL1Z5SExqK082b3RWZTNxZUt1VEM4dElsa3VOeVErcXk2eTJwUFFmVTlSSjhhbzlMblgiLCJpIjoiOG9yVGozc3E0d0o3Q1lYMyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWTE0cnVablJxcm4wOEUvcUNNdVlNR2toQTV5cC9mbEtkMFBHZzdYbWcvemNKN0JIbU9vVUNpVFVBRDhHZnowRHR2L3o5TTVPNTNZdm00K0c1WUxDdmQ5UnFkamt3bDg9IiwiaSI6Ing1M3NpSkRQaEdLdEtoVTAiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic3V6ZWdoVytDY2pXcUdXOTJGdEg1SmpLVXBtS0lpdUluUlFRbTRPcWw4UHlQM0tSQ2JSQmNLOStGTjRITXRtN25FSFFBVklvV3lMK0V0OXNIUFhUdEpMc3o2dGVYUT09IiwiaSI6ImErbTNWd3JIKzZpMWl2T2UiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "size": "6GB"
+  },
+   {
     "title": "Crime Boss Rockay City The Complete Collection",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Crime_Boss_Rockay_City_TCC.jpg",
     "tags": [
-      "PPSA06382",
+      "PPSA06381",
       "v01.049",
-      "EUR",
+      "USA",
       "DLCs Merged",
       "4.xx BackPort"
     ],
@@ -6972,25 +7048,6 @@
     "credits_files": "DUPLEX & Jose Carrion",
     "credits_backport": "DecKerr97",
     "size": "13GB"
-  },
-  {
-    "title": "Art of Rally",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Art_of_Rally.avif",
-    "tags": [
-      "PPSA03659",
-      "v01.006",
-      "EUR",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQnV0aTNQa1d0eHdUTUhaR3EvSG90dXRyclpkYWhiOHhNS0VZdngyTzZjNTZaU2tkNUhSTUpMUUIwTGI4WWkvNHVKUDJNUTJpIiwicyI6IlpBN3N5ZGhaeDNnV2FjQUlrQTNVUFE9PSIsImkiOiJJdDBOQzlta1c4ODd0d1JUIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMUJmTkFtZzBFSi91eFhIQzFBRWlXanlYc21NcllJWmMxaFBXM3YrUGRPZ1A4RmMweXBnUStkWEhRcVp5a210MkJOcWciLCJzIjoidTZERUkxU1dPMVlzQkt4TE1PY3Yxdz09IiwiaSI6IlJaWUhpQzlQYXhJZmtrUW4ifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicS83YUtwT0MyRDZhT1NWV2wwekt4L0lUZVNpR0JodVJwOTFraTQ0ZFJZcC94TTRnb1dmTWZHTFJNa2p2TmRBK1Z3PT0iLCJzIjoiM09LTzZVSUt3YWVXMEloY1dncTR1dz09IiwiaSI6IlhkbTZnalRXb3Q2UWRjcVIifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibTlRT2VRVmpoR25tdHVjbHFFMFZkWXFndGJzeGNhenBlVnN3TjlET3VzMis5SjBIVnY0Y0tWdGZkV0pLM2pRc3N6L0JoSGR6IiwicyI6IkJoaHBhaHF4RStoMzF4NlFDUW5GaGc9PSIsImkiOiJ2aVE2YnMxczd4cDh1dnI1In0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicHlCZmVwV0MxcDVQVmVGakpnUXZMcjlCUllhM3FremZqRjRsb1BWNSszZ2ZPWEVSUW5ENGZYYmpld2E1a3hQODR3PT0iLCJzIjoiNitkU3g3RXJ4OXd1OEdpWFlPZlBwZz09IiwiaSI6ImZDSEV3VUhhOGRWMkcwL1MifQ==",
-    "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "DecKerr97",
-    "credits_dlc": "DUPLEX & Jose Carrion",
-    "size": "3GB"
   },
   {
     "title": "Miasma Chronicles",
