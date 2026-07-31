@@ -1,5 +1,98 @@
 [
    {
+    "title": "Marvels Midnight Suns Enhanced Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Marvels_Midnight_Suns_Enhanced_Edition.webp",
+    "tags": [
+      "PPSA03603",
+      "v01.013",
+      "EUR",
+      "Standard (7.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWWNHOW1Ra29LVlExZWZDK3J1eHJXd0ZVQjNqTmFacGRmZjdXVGwrNnRYQmRGZ0JEbjV3U3BpNlQxZ055RTFWL0pYTVMrMWRMIiwicyI6IkNQNU5ra3kySEoyUTdjZ2JPbWdUVmc9PSIsImkiOiJDRnhKU0JZMTNFZWE1YWkxIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibUlCdk4wbkI3Z0pyY0VtKytieksxMmNmcFlsZUtiaVFPaWJaY1VoU2ltVURpU3ZWRnFWYnNmMkZhTlA5YmdKNnFUUUciLCJzIjoiZ2xLYlhtOEgrc29LUElHdHNwSWd4Zz09IiwiaSI6IkNTVG1PaTBvMGNiK3JIUGsifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUEx1UTRES3RTMDN0VU1uTE1RbjluMFBYbmp2amNlQXQ3ZFc4NGdQK1V0eU9mR3BkeUhSNExuT0pXTnBOZVRLRkJBPT0iLCJzIjoiSm1xRFpMV1E4NFFGTUVqaGJWMDBEUT09IiwiaSI6InN1dlBMeDg1a3hueExrd24ifQ==",
+    "standard_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibE1raStWb0NBUlhTanRTSWthTEsyaGFEemFSWnJZUjFNTDYzeVpnS0s1SmE3VmZQaUk2UzRiazd2aVdpNnhTZnN3R0oiLCJzIjoiMlZpVW1IV2lqZ3BOVyt4bXUyWG9YZz09IiwiaSI6IndoTHp2WFkzd2FXZVkvUnkifQ==",
+    "standard_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicUxjK09RaktMaUVnTTl5TXBhS0d3ZDcvUzQ5enNZbTltMDV5ZUhqb28rM0R4eFJVd2RkQ3c4Yjcyb3ppVDZRVjJIZz0iLCJzIjoiTFExNVB1bmhYVEwyR0JZWVdJSElTdz09IiwiaSI6InVpVEtKMWlLVzQyVTNaNXAifQ==",
+    "backport_akia": "",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWUJTcmhMTERHUGRNWSt0TW50NTA3R3d0VTRZY0ZJUmdJekV2U0ptUUVpQjFTWmFKeFNiYm9zMzB1U2RWUGZWcDRFMGJoZG1lSG96citNclJXcFdjc0pTbjJCUkNCR1k9IiwiaSI6IjZ2QytLTEwxOVFFcEVoVnkiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSVU5T2lNK1NCeFE2ZEkvdVJ6QjB2eWQvRmI4bTArVGV0bGJ1TlRXWDg2RWh0eitZQml3bm9OaGQ5VmtpZEc1WUJZUEN0RFpnMXJpU3RJMW80YkMvSGthRFc3UVMiLCJpIjoiUWpWdXpWaGJ4alNLdFRkbCIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRjEybnZlaHFTdUo5b0svazVjZ1BQclhENGw1dzRrVkZCVHVlTkdUeTltVWE3L0t5VTBCQUdiS2QwNGpsdFlzWGdLYTRRd2QyNjBSRkdKU2pGQTNDNlRUd3k5cE1BVUk9IiwiaSI6IkRtWjIyL0pCcDBobnpyOUYiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZHRweGxoUGY3QXZOb0NiNHNvRXpFNnFlTUtTcVZGYnVoNEVNT0NMVXp0WVFuZVY3bitxZmQyeVNOc0hjRWhZL3I0UnFxOHNuR054UkhQcDJBZVVxOFV0T3Y5ZUpvZz09IiwiaSI6Ii9scmZENnRxaFY2aWx6NTkiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Psykzhack",
+    "credits_dlc": "Psykzhack",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "79GB"
+  },
+   {
+    "title": "Nikoderiko The Magical World Directors Cut",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Nikoderiko_The_Magical_World_Directors_Cut.avif",
+    "tags": [
+      "PPSA23760",
+      "v01.000.012",
+      "EUR",
+      "Standard (9.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSkdOaEdNL3NrejM0Zlp2Y09yS0Z6eUZsbVp6cHZEK3NYNkpJYWNvVWlNaWNpd2lYZytVcFFZWFlYNHNtZU5IYzJoNWIrTWJLVW9ySDhYWXdIbmZkVG5wSnVOTVpEMlYxMGN3PSIsImkiOiJZN0VjZkZubkpWemZZSWtsIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicWpYemNXd3lKdXJNTGszeFlJaE0wQ0twYThlS09iUmdwTGlUZG1ydUZWSkNPQlRPVDhKNkZvSDFSekQ0L0FvNEFyd0M1cHlrUnl2VWd0V0gzR3pqWHYxWU9UV2krTVU9IiwiaSI6IjV5SmZqZlYreXdSdUVJWi8iLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidVN2QkZGYkdPdk4rMk14TXJDTDFQb2tHekJzbGszZG5nS2MrWklWcW9Gc0tEN0hKWU9kanJPUzVRM0U4ZmFtZVEzRUtzRzkrMk5yeUI2NGYwUnhRUkEyMGo5S3UiLCJpIjoiSzlPWVpsL0FLVGFtUUpmayIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZlVFMHpzL1VEVGFNRDBmRnk2NFloTDV0NFhScnFBenpMVUwrRCtkR1ZHaXhjbzQxY1VjY213dWhNd29PYUg4RmxaeE54RXJIYlBUTmpRcjdvVG15c1BXWWRkcGRqek09IiwiaSI6InNqT0s5NVgyNjhXWE8wMjUiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTVoyam5GaWFEZWZMNE5BaU40dlhuZzhBUWZpOTZaM1BmK05vYmE4YzNZd1NLNHNOblNNQWw5U3FCYzdSbjhZWUFQSy9ESm54WXJzSFJTakNlRlpFaWNJemMzY3hidz09IiwiaSI6IkhKTm0wNm9ST2UvUjllSEkiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY05qS0JKbXVFZ2h3emZsVTFocDVaWmFHRnZvWXBzM2d5MCt3akZxenVzMXdmU1ViYUZBM1pDK0tKajJ5TXF2K0xZYjVTeVFKYnJ3ZGR4YlhZdnh2ZVNscnByeHppU2FUUmo4PSIsImkiOiIrV2gwckJmMkFBRTFFV0YvIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVjlXb1FzUXFjYit2ZVpsVW04a1g3ZjN6V2JEYXJrWjZabXdDWUdRZTJXNnkrWFUvWVlhYTdvV1ZDckY1OGZzQ1RrYkZCemZSL2dHaVhCRFB0Qys0c0lsejJ0MFFCK289IiwiaSI6Ik5XOUk2bzZNTW1EcW9ibjAiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibld1a0NNRWJpTm1FQlJnZkFuK0hRMDgyZjhWWWsrZlpUaXhLKzFocDUrczQxTkREdFQvTzNzZ3ROTVAwRWZ2RkZTL3Q1L2IzRU9xK2srajR5cG1pZXNDdnBaMy8iLCJpIjoia3d1ZHc3MWdxNExuNjg1SSIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiak1LVUZxVGRGMm16c2ZocjZXSjMwVmpDNTR3ZEJWTDFBMkN5RUUzTTlhUTJJd0VFa1Bpb1o2V01OSE1Yb2ovdUsvMnVUWmhKYnkxYjBrdXFDQlVsNHZQK3pXTElMTzg9IiwiaSI6Im5VVWg1NmlxeDFQZENIcEgiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQk1MRVlzRWRUelQzZUtGNFg3bjRrSUJ3b2w1M0dlbjVNdU5tQVFzRWJTdVR5cmEzQjUveTdMSUZMVEppcWFEd3JyTmNZdmJDbGFsLzdXWWpaUzVUMG1kMmxGOHdMUT09IiwiaSI6ImRpdUFLMyt1d2VHT0ppblEiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "size": "20GB"
+  },
+   {
+    "title": "63 Days",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/63_Days.avif",
+    "tags": [
+      "PPSA21022",
+      "v01.090",
+      "EUR",
+      "Standard (9.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieG8wQ0FsaENNYm1KRVpEYWxlN1lSaktHN3o2RVduOExYUVF4K0JUTVN2L3QxQ3liOFk5L3NaTGpTbWtXV0VtTHBXWll0SVA3Z2RrWXNqa0ltWmxWNCtodDBGOTFBRzU1SnVZPSIsImkiOiJZU0Q4NnQwckJpbVJnVG5JIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibkZqempJOGNMamx6Q284QXBQRkh0Rm9Pd2FjVDBiQWRVVWRiZjk0QVptR3RwQzRvMGJ5bTRDTWRjUWpiRmdFQlVYdDJBazd2V2lRdTllV1dZWldOeTdnY0VpMmdxeGc9IiwiaSI6Ikd6QWVRT3JMUWZOU0VkQWkiLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYThNSmJPU3JNMkNUVHYrUThMTk1hUjhWV1JaTE9pRzM5RTdicjdLb3R0NlZ4eUsyUDU4aDU4L0RlaHF4OW85dk5ScVJtV3lBaHpoU3ZGY0h1RjlSNzhESzhqY0QiLCJpIjoiZlRJVVM4RStpc2ZzVVErbSIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicmxNM1VTK21ZVnpYQ09ZakZBbGxMSkhrR214eTZlWXBZcHNCRWNmM01YWjAyenBnd3BoZGRpdGpBWUpDTUpod3hoeWhRKzNQNWFuWkdXWjhoUE0ySEcrTG1LUStzSTg9IiwiaSI6IjB3RnZmNDRNYmtmdmZ4QTciLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWnovSnJTWVNvbFBxMDZHNGRueFJjc2RmN3hpakhBYW9PVUNrdERSWlBLb2l4SndRVVdBeUJEbmhwaFBsVzlsN2hsRWNQRm9LWVZ6Y2V2eTdxQjRETlE3ZExUSXhTUT09IiwiaSI6ImNMajZVeVl5ZThTTlZTRE4iLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiczdQK001YmN6MmZvcjViaEVKbUxmVkxZcFp0YlF3OWpTdDc3TmJEbnVHcXlDd2RHODRQYU1DaGdOYnRVaGg3cXlja2lBQ3hSZ2djTTNqVENKUUxXMzREc3lScHhKbzlMNDlBPSIsImkiOiI1QzdvZFdmTkhhcjIvYmhkIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic0Evc1UrUzhqT1RpKy9xK2FseDIrNTZsNW9UeHlBdlRHNGRZeWxhL1M2TDFwS2huKzQyQ1RxUHhJVlFtRFUyY0VuVUo1TVRxb0ZiNGZ0RURJeXUvWVVuNThJN0RmMlU9IiwiaSI6IlZJbnhFTGJQTllTaDJSMWgiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiemRBcHJERFVHWEVQZGpsKzBUZFpXYmZjUUZ1U3RQOXV2NTBrcXc1ZXFXdGZiNTlNd1d3Q3Z4RFk3MUR0VkY0SXpnZUpmS2hHdjBnbitIclBobEJnbWVGbS9PaUEiLCJpIjoiQ01nKzg2c3IvNElrclNYaCIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL2V0Z3BwOHIyaDB2SDBzVWJ0YkVjbjBIV29oSGd2ZjdsZUswQkhpYlNVbldGZXR5bFNaU1RSRW15QituZVdIelp2Y3RiYytDTmpNWkN2c2hMc0NGUW9mUHVaam8xbFk9IiwiaSI6IngwTzV0RVJTbktCdHVhNm0iLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYWJxZElaYnRPdXNGZElBeEQ5V2gxcjA3REZaeHcyeFlsZzhCK2J3aFFmckora29wSTNUb0tzMHVHT24wRUMySVF1eUZieUhHMGhmRjFPUjVoWjAwdHBHaUZKcXZwdz09IiwiaSI6Ijd5WTVlREduNWdCeWROZUIiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "size": "18GB"
+  },
+   {
+    "title": "Revenge of The Savage Planet",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Revenge_of_The_Savage_Planet.avif",
+    "tags": [
+      "PPSA20154",
+      "v01.030",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT00yeVRJS1ZoQXdVZFdyRTJYakt5alNMMHhuNklVMUJYRS9JdjFFRTJDa1hWdDQrdU9BaHcwaFNuNG04NWdaRGR4L0lkQWNnZVEydm5vZDFzOXZzN29Iai8yNDgxemRhQ2lRPSIsImkiOiI4UVIra3JMVlVVbE9sKzVTIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUNNNlBxbDZTL2VKc2FoQjhxUGxRNSttNHBaejVORlE5eGUyYkhTWDhZZHZMQUFoYm8rU0dKL1BES0ZhVkxzY2lsa1RVc1BpYld6SEFUSmttY0lHcTdabXYxaHBKZEE9IiwiaSI6ImN4eWlXM0xIMjlKeVQ1TC8iLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibDI4amlMUG50TGFSeXpLRWV3ZWtJSFVZbFhyeWU1K0RtUlk5TzZya3I1MmNFUm5DZGQ4ZDNMeVRrUE4rWmg1QnUvZW5RQTg0clNEWWpHZHpabU42QUYzRktKVUoiLCJpIjoiS1U4cnF6S0tOb1pBUlFHVSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTk9BV0ZJd3IwUVFlQ3lkY1dxTG5BNlc1TEE0VXo5bjhhbnhwMDZVcGRkalc2UXlXaVU1M3FQZDBNZEJETWNVeVZwMm5raStGRnpwMXBGMnhGbGUwOG8vNWxreDA1Q1k9IiwiaSI6IlJVVFNkeWVOeEUxR0x3RXoiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSEhFcVFTNjM2ZjZma2ZGbXFQVFZpR1d0WlltMG9zaU5ydGwxMWI0V2FqUDlnVGlmbXFsQnFUY0RuS1FLYlY1U2xDbGNOS3lOMzI0bS9VRjlZajdOTFdhck5rSnVhQT09IiwiaSI6IlVaMWVWa01aLy81YkpMc3YiLCJuIjoiVmF1bHQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWk9YNFdlcHpHajB4Ni9OcGNzRHJUVWQ2OVM3MmcxZHpFdjBsZzBNdm0xNmswQ0Yrb3hCTUxndHQyL2x5QmdraGdLSVhQNFpRMmIydFRyWE9YL0xnT1ZJRXBBMTUiLCJpIjoiT0xEc0NwV1pVc25uRmFtWiIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVzVOV08zZFp2ZGF0VUszZm42K0dQeWNFbTlZOE9XRE80N0t5UGYvdkdlUXo4VjFzcWErd3pQLzc2alB0WGhRT2txWlRYWDlZRTdnVDZVZDg2cHZzbUl3d2FBVk1RU3c9IiwiaSI6ImdheklDZFIwa281TGU5SWoiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pkykzhack",
+    "size": "23GB"
+  },
+   {
     "title": "BUBBLE BOBBLE Sugar Dungeons",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/BUBBLE_BOBBLE_Sugar_Dungeons.jpeg",
     "tags": [
@@ -1125,24 +1218,6 @@
     "credits_backport": "R3c0iL",
     "apr_emu": "on",
     "size": "19GB"
-  },
-   {
-    "title": "63 Days",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/63_Days.avif",
-    "tags": [
-      "PPSA21022",
-      "v01.090",
-      "EUR",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieG8wQ0FsaENNYm1KRVpEYWxlN1lSaktHN3o2RVduOExYUVF4K0JUTVN2L3QxQ3liOFk5L3NaTGpTbWtXV0VtTHBXWll0SVA3Z2RrWXNqa0ltWmxWNCtodDBGOTFBRzU1SnVZPSIsImkiOiJZU0Q4NnQwckJpbVJnVG5JIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibkZqempJOGNMamx6Q284QXBQRkh0Rm9Pd2FjVDBiQWRVVWRiZjk0QVptR3RwQzRvMGJ5bTRDTWRjUWpiRmdFQlVYdDJBazd2V2lRdTllV1dZWldOeTdnY0VpMmdxeGc9IiwiaSI6Ikd6QWVRT3JMUWZOU0VkQWkiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYThNSmJPU3JNMkNUVHYrUThMTk1hUjhWV1JaTE9pRzM5RTdicjdLb3R0NlZ4eUsyUDU4aDU4L0RlaHF4OW85dk5ScVJtV3lBaHpoU3ZGY0h1RjlSNzhESzhqY0QiLCJpIjoiZlRJVVM4RStpc2ZzVVErbSIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicmxNM1VTK21ZVnpYQ09ZakZBbGxMSkhrR214eTZlWXBZcHNCRWNmM01YWjAyenBnd3BoZGRpdGpBWUpDTUpod3hoeWhRKzNQNWFuWkdXWjhoUE0ySEcrTG1LUStzSTg9IiwiaSI6IjB3RnZmNDRNYmtmdmZ4QTciLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWnovSnJTWVNvbFBxMDZHNGRueFJjc2RmN3hpakhBYW9PVUNrdERSWlBLb2l4SndRVVdBeUJEbmhwaFBsVzlsN2hsRWNQRm9LWVZ6Y2V2eTdxQjRETlE3ZExUSXhTUT09IiwiaSI6ImNMajZVeVl5ZThTTlZTRE4iLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "SiESPTA",
-    "apr_emu": "on",
-    "size": "18GB"
   },
    {
     "title": "ELDEN RING NIGHTREIGN Deluxe Edition",
@@ -2658,23 +2733,6 @@
     "credits_dlc": "Pippo",
     "apr_emu": "on",
     "size": "11GB"
-  },
-   {
-    "title": "Nikoderiko The Magical World Directors Cut",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Nikoderiko_The_Magical_World_Directors_Cut.avif",
-    "tags": [
-      "PPSA23760",
-      "v01.000.012",
-      "EUR",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSkdOaEdNL3NrejM0Zlp2Y09yS0Z6eUZsbVp6cHZEK3NYNkpJYWNvVWlNaWNpd2lYZytVcFFZWFlYNHNtZU5IYzJoNWIrTWJLVW9ySDhYWXdIbmZkVG5wSnVOTVpEMlYxMGN3PSIsImkiOiJZN0VjZkZubkpWemZZSWtsIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicWpYemNXd3lKdXJNTGszeFlJaE0wQ0twYThlS09iUmdwTGlUZG1ydUZWSkNPQlRPVDhKNkZvSDFSekQ0L0FvNEFyd0M1cHlrUnl2VWd0V0gzR3pqWHYxWU9UV2krTVU9IiwiaSI6IjV5SmZqZlYreXdSdUVJWi8iLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidVN2QkZGYkdPdk4rMk14TXJDTDFQb2tHekJzbGszZG5nS2MrWklWcW9Gc0tEN0hKWU9kanJPUzVRM0U4ZmFtZVEzRUtzRzkrMk5yeUI2NGYwUnhRUkEyMGo5S3UiLCJpIjoiSzlPWVpsL0FLVGFtUUpmayIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZlVFMHpzL1VEVGFNRDBmRnk2NFloTDV0NFhScnFBenpMVUwrRCtkR1ZHaXhjbzQxY1VjY213dWhNd29PYUg4RmxaeE54RXJIYlBUTmpRcjdvVG15c1BXWWRkcGRqek09IiwiaSI6InNqT0s5NVgyNjhXWE8wMjUiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTVoyam5GaWFEZWZMNE5BaU40dlhuZzhBUWZpOTZaM1BmK05vYmE4YzNZd1NLNHNOblNNQWw5U3FCYzdSbjhZWUFQSy9ESm54WXJzSFJTakNlRlpFaWNJemMzY3hidz09IiwiaSI6IkhKTm0wNm9ST2UvUjllSEkiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "DUPLEX",
-    "size": "20GB"
   },
    {
     "title": "System of Souls",
@@ -4759,26 +4817,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "15GB"
-  },
-   {
-    "title": "Marvels Midnight Suns Enhanced Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Marvels_Midnight_Suns_Enhanced_Edition.webp",
-    "tags": [
-      "PPSA03603",
-      "v01.013",
-      "EUR",
-      "7.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWWNHOW1Ra29LVlExZWZDK3J1eHJXd0ZVQjNqTmFacGRmZjdXVGwrNnRYQmRGZ0JEbjV3U3BpNlQxZ055RTFWL0pYTVMrMWRMIiwicyI6IkNQNU5ra3kySEoyUTdjZ2JPbWdUVmc9PSIsImkiOiJDRnhKU0JZMTNFZWE1YWkxIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibUlCdk4wbkI3Z0pyY0VtKytieksxMmNmcFlsZUtiaVFPaWJaY1VoU2ltVURpU3ZWRnFWYnNmMkZhTlA5YmdKNnFUUUciLCJzIjoiZ2xLYlhtOEgrc29LUElHdHNwSWd4Zz09IiwiaSI6IkNTVG1PaTBvMGNiK3JIUGsifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUEx1UTRES3RTMDN0VU1uTE1RbjluMFBYbmp2amNlQXQ3ZFc4NGdQK1V0eU9mR3BkeUhSNExuT0pXTnBOZVRLRkJBPT0iLCJzIjoiSm1xRFpMV1E4NFFGTUVqaGJWMDBEUT09IiwiaSI6InN1dlBMeDg1a3hueExrd24ifQ==",
-    "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibE1raStWb0NBUlhTanRTSWthTEsyaGFEemFSWnJZUjFNTDYzeVpnS0s1SmE3VmZQaUk2UzRiazd2aVdpNnhTZnN3R0oiLCJzIjoiMlZpVW1IV2lqZ3BOVyt4bXUyWG9YZz09IiwiaSI6IndoTHp2WFkzd2FXZVkvUnkifQ==",
-    "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicUxjK09RaktMaUVnTTl5TXBhS0d3ZDcvUzQ5enNZbTltMDV5ZUhqb28rM0R4eFJVd2RkQ3c4Yjcyb3ppVDZRVjJIZz0iLCJzIjoiTFExNVB1bmhYVEwyR0JZWVdJSElTdz09IiwiaSI6InVpVEtKMWlLVzQyVTNaNXAifQ==",
-    "credits_files": "Psykzhack",
-    "credits_dlc": "Psykzhack",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "79GB"
   },
    {
     "title": "VIEWFINDER",
