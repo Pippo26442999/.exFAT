@@ -1,5 +1,26 @@
 [
    {
+    "title": "ARK Survival Ascended",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/ARK_Survival_Ascended.avif",
+    "tags": [
+      "PPSA16810",
+      "v01.084.021",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ3FOSHNadGVvZGlDWlcwNlpwYzAxelFDQkUxbnh3WHJ5TktMUGZzcDRBdTNNRWhKL2phVUpxcFVBdEhRempUY3c1b0k0MTBFWVF3ejNSN0NXQTdZd2NmZE9EdjYiLCJpIjoicVpwL2prK1lTMlVRSzNiUSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUmo2MCtoZ2lHNmtLUHZVRHhoQVgrZGhXeWJJN2VDNk5vbWFYa2hJS2NWUGdXSVkwb1Rhdktic1hLYThncTBRb2UzckVMRFBtMGEreWxGaXdRSm80SWJ4Y3U5TCtSZk09IiwiaSI6IjJIVDRQbHlmVEZ2azlleTgiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZnRPRW56ZDUzUjlZc0hUcWRVaStQT0lmTVhCb2RzUGE4TVlnOUt2QXViNldiZ0VVb2ZaaGo1NDZWUWhpQ1FnSnpyQms4ZEJkdnNpanNsWlFNU0RnM1VVQW1VTUpYUT09IiwiaSI6ImtYTkNuTlZWc1VHZjAySHkiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "High-Speed007",
+    "popular": "on",
+    "size": "386GB"
+  },
+   {
     "title": "Art of Rally",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Art_of_Rally.avif",
     "tags": [
@@ -8865,23 +8886,6 @@
     "credits_backport": "BestPig",
     "popular": "on",
     "size": "159GB"
-  },
-  {
-    "title": "ARK Survival Ascended",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/ARK_Survival_Ascended.avif",
-    "tags": [
-      "PPSA17101",
-      "v01.073.007",
-      "EUR",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNTJVcXVJdDl1RTNVQkphcU5zMXRlVHAzSGk3ZktSbStvOGtiYVM0aCtZQVJucG5nay83RkRnc0UyV21hS0tBeThmZGt4S202IiwicyI6InhBQlllZWljbWxKSzBpTEM0Z2VqSWc9PSIsImkiOiJOQ0F3clRXREV1QWQwU0h4In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQ2tYL3dRdFRQTjYvQ3kzei85K2h0UG9DMnB0VkgyNjBTMzFIZjkxOWZxSHkyTDhUV29aZXZRZ0l4Vk5kWlFXRkZDcEgiLCJzIjoiZW1VbUUvUWptZG94RTVydmVyNWtWQT09IiwiaSI6Ilgva1BYRG9iRjJNUTZTNkkifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiemkzZHVJeXN1SVRvOVM1WlRPbU9mYXM3eFJ4Y29JYVhzQ2R6dGpuQTZHeWRWb1VweU1JSnJPdGgwZ2JQaytsWW5pWHZHZz09IiwicyI6IkhWM3lJVmdhY3dsRWFsUUR2ekEzdUE9PSIsImkiOiJVKzNaS09ETGIzK1dJeStvIn0=",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "236GB"
   },
   {
     "title": "Resident Evil Village Gold Edition",
