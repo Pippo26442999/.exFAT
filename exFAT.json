@@ -1,5 +1,27 @@
 [
    {
+    "title": "Death Stranding Directors Cut",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Death_Stranding_Directors_Cut.jpg",
+    "tags": [
+      "PPSA01969",
+      "v01.005",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY2VLcXFaMVUrZG1WemV3ZXg5MncvdFFoZmtkM3hrRldPdFlCRDVaOVc5c01PVEcxSTdqN3RjUXNGQlZobld5WUVOSy9aUlFPVzdmZVJYQ2JhczEzeFVaOHhnaVJnSmc9IiwiaSI6IlpGUzRQN2gydkNNZ0l1WFYiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSWtLNHkyMzJKZDMyVFpGMlRBdlJsVmVQZlNqeW5nNC9XVFpMeER4SDlUcXozZGdHb05EaFl4OXBiZU1UeDV5bnN1ZWF3cWFkZ054elB2R0xrL2J4TkYraUlKSjkiLCJpIjoibURxVkxrbnFBRksycWFLWCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoialRsblhLS080WTFqUG1ZLzNRdE9CTGJvbzNiZlJaRzJadjdSRmFuaTVHaklweTNyZlZEU0xZMVZ2eWk0d2V2RkdJVDlpRDdEdUN0N2pTem82QWhSQmlQRGE5bjBFa009IiwiaSI6InFxaENFeUFqWnFkMUZwRzQiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZDFBYmVIdDJUMEI3WnFaR1VMOGx3aEFlMUtVVkJreTlrT291aGwraG5CdVoyMWlmbFNteWs0T3doR0pMbURiRHpkM1kyUlZMd0pMWFRzQ3daRDNZcmM3R2hSVkM2QT09IiwiaSI6InF0NHoxSE10dnFFYmRDWCsiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pkykzhack",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "116GB"
+  },
+   {
     "title": "Dead Island 2 Ultimate Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dead_Island_2.avif",
     "tags": [
@@ -5307,26 +5329,6 @@
     "credits_files": "Amiibohound",
     "apr_emu": "on",
     "size": "15GB"
-  },
-   {
-    "title": "Death Stranding Directors Cut",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Death_Stranding_Directors_Cut.jpg",
-    "tags": [
-      "PPSA01968",
-      "v01.004",
-      "EUR",
-      "2.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNHpXTEFCaHZOSGltVWRrZktJdjBVY3FJS1dYYytMd1RDb0gwS3FwYzNibVpNMTAvV3A2VURscU1nN0s3NkRCRkhqQ3hqaWgzIiwicyI6IkVhVldGU2FRRU1PSU9WenplZEJmcVE9PSIsImkiOiJUZ0xPMG4rMmY1NE5iNjdZIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOEc4UVFGSWRTcGNHL0ljckRtclZoWUFZMDc5dzR1K1E5VHI1RlFNaHpjZm9pTTFPcDZjYjlqM201WFBTSGg4cTZ6NjMiLCJzIjoibkZSZGJsc2pHV2kxaUVBZ3ZIRUk5UT09IiwiaSI6Im8wZ2M4akpkbXBkNW1MckQifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieXg4THhSaWFIUDBnZmgzQXFjNjBzdE5mOTZxNG9FbzZrS00vWml3OVUyRGJSbkhXMzkyYnJTS3F6Wm5aL01TVmdBPT0iLCJzIjoibUxScTV0eXRlblRTY1REUk1OMll1Zz09IiwiaSI6ImM1YisvY0puS2ZIVWFaWmIifQ==",
-    "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiazgzRVhCaERiTzNva1MwRTBIRlNpNVBKM2RWR2IxYkdlN1pUL3kwMklaTWJMQkQxL2NTeC9yVmk0Y1Rmam83Sjc2VVEiLCJzIjoiWnEvejhWajVGT1lTOWxweDRFTXgzdz09IiwiaSI6IkpJMHBsSWJWOHl0M1BsdVUifQ==",
-    "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZkx0bkNzSmVtUEhLd1NWWEVrdno0NVRhZVkwRTVERnJTQUlSRmFBVWlmVkNsM2FkeEhURE05Qkg2Y0dveUJKNi9oND0iLCJzIjoiN0xmM3NxRmIvQTBSSDZrVkl1L1JUZz09IiwiaSI6IlE1a2tiOGc4UUU0d3BHSjcifQ==",
-    "credits_files": "SiESPTA",
-    "how_to_play": "Is recommended to use my Setup with kstuff 1.6.7. (Check the FAQ).",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "119GB"
   },
    {
     "title": "Riders Republic",
