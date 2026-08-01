@@ -1,5 +1,27 @@
 [
    {
+    "title": "Dead Island 2 Ultimate Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dead_Island_2.avif",
+    "tags": [
+      "PPSA03098",
+      "v01.000.011",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQVdvbmtVa3hRbzVFVEdmVFY2a1YyQVFQZ3k4OEdKcWhvcklBSlRuMU1ZNlJZa3I5TXpLdzJEWkNjMkI0SUpCTzREcjdBU2Zxb2pLcDhaQXpWTTZKcG44SmhQM3AiLCJpIjoiQ3lEZktXb09JUlVxenJCaSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTTBzVy9XRCttRmIxWDgwcnRCNWRIZ3RxcUR6VldEeHhBc09rc09YOUl4Z1JQbXVzMGNZcE9vK3EvRnUzaDdTUHVjSUowUzlIZGE2VE9BUHJDTGZyVWIrVkxVQmFOcFU9IiwiaSI6IjkvZFFJRjZEZ0pTVUJPWHkiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRk43TWgwaTE2Y24rUXphakRncnFES09uY053QzYzbmNSdnRzbkIxS1lzQ05HU1ZUZkFFNDQ1MHRvamVtbEdpUkNpdHFmc3U0RTQ1RC9zSGsrZVZ0TkpMaXBwZEZMZz09IiwiaSI6InRBRTNPT2ZPMHFyc0hOZjUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "how_to_play": "All DLCs, included SoLA & Haus Expansions.",
+    "popular": "on",
+    "size": "159GB"
+  },
+   {
     "title": "EA Sports College Football 26",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/EA_Sports_College_Football_26.avif",
     "tags": [
@@ -8932,24 +8954,6 @@
     "credits_backport": "BestPig",
     "popular": "on",
     "size": "172GB"
-  },
-  {
-    "title": "Dead Island 2 Ultimate Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dead_Island_2.avif",
-    "tags": [
-      "PPSA03098",
-      "v01.000.010",
-      "USA",
-      "DLCs Merged",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWjM1cjdsR01LSVErTlN0c0MyOWgwMjJaNVkvWmV4M01QRnFzWFBmYXFuekJjcld2dlQrVU9LWStPdi93MVRvWU8xTjdoLzRWIiwicyI6InBnTlNwbHZ5dkN5WDFtRGRJTVRVUWc9PSIsImkiOiJUQVpvdnlKRTQyVy93bGl1In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiU0pGcXJiRGRKS1JqeWhaaVQzV3FKR0FOMHVYUmFPWHlRQWxzL3dUMnRvOUFuZEVESnh4UWV0VmMyQVRhN3VWcDkrTWUiLCJzIjoiYTc5YVZ5eWx3K2FRbVdKVFpNcFB3Zz09IiwiaSI6IjhrNE1nNi9TaW5KaHVGWkYifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVXBVM0lXZzFRdGU2ZnR3RGJUWTAvSUJSbElhSUUxU1B0Zkw5NFhIMjBwNVg1LzRnZTJtMi85RWR2dEdUOVpHSUF6MG84UT09IiwicyI6Iks5NFpRMnFVY0UvcVQ0VDNNOG1MdVE9PSIsImkiOiJtNm1BOXBYVTZzVlVGTHJ1In0=",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "159GB"
   },
   {
     "title": "Resident Evil Village Gold Edition",
