@@ -1,5 +1,27 @@
 [
    {
+    "title": "Funko Fusion Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Funko_Fusion_DE.avif",
+    "tags": [
+      "PPSA19345",
+      "v03.004.001",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSGtTcnhMZ3BaZ1I5T2hzNmprNVF1UDFXQjFhaXJjUjhCUmJsYzFkdFUyZDMwSDhLd2tQcjQyQWZkNnpsWS8wNzM1L2JQd1VlS2d0ZU91R3hYV28yNVFRdUhQR3kiLCJpIjoidkNNc1pFeWZTQzFwaXNvaCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV3JRLzZCMTlDWXZIQ0NXcGQ5dThEL3lYTEIvT2xmK3RCZnBNeTY4MlhNWGhVSUd3a2hGRDliT3BlQWlLYjJ5QjJ6SWx3MGVmRENQa1dLZHpyM0xBc2dtQys2bkJSeTQ9IiwiaSI6IkhpVVJIckdFakpobXlhT2UiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidmlMdk5ZOGo1WmtubTAwSnFYeGZHUm84KzVEVVVQVEJrMTVlVGxKOG5MNE41VzB0dnR5aWpKb2xuTEVYVEE2RG9na1doL01MZ0ZaNDloODBjbVptOWcvdnVIY1NDUT09IiwiaSI6Imx2RnRDNlFHbUh2MytvMTgiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "114GB"
+  },
+   {
     "title": "Death Stranding Directors Cut",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Death_Stranding_Directors_Cut.jpg",
     "tags": [
