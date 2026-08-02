@@ -1,5 +1,25 @@
 [
    {
+    "title": "Everspace 2 Complete Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Everspace_2_CE.jpg",
+    "tags": [
+      "PPSA15671",
+      "v01.027",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3R3RkI0Z0lrbmtzZzdqSVd2N21NZHpPRURoZ011dkdjWExvQTRDSHpudm9sZ2lXZjEwUy9tWDhxRUtQZm9mSHdqTlhpQ01UazBoM1R1NmJ5RGNnenUwNGxudnciLCJpIjoiYnFZTXAyQUVoNWt4SmJvSyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWlBhdEkwZzRDM1ROcVFBWFBJdWJhNWJKc1EwUUk3U0k2dFlEaUIzY1JONU1aV0YrcFozQjBEWEd1MlA1WjVlTTFYNlhqajUraXlOckVFdkVabXlJY3dzelpPRG1RQT09IiwiaSI6Ijg5QUtrOTJKcGZNWnFuaUQiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "popular": "on",
+    "size": "78GB"
+  },
+   {
     "title": "Funko Fusion Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Funko_Fusion_DE.avif",
     "tags": [
@@ -1406,30 +1426,6 @@
     "credits_files": "High-Speed007",
     "credits_backport": "BestPig",
     "size": "1GB"
-  },
-   {
-    "title": "Everspace 2",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Everspace_2.avif",
-    "tags": [
-      "PPSA15671",
-      "v01.020",
-      "USA",
-      "7.xx BackPort + 4.xx BackPort"
-    ],
-    "backport7xx_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS05aVTVaeitKRVNFT2RpV2lUU2JXNTNpVWpjTDF3aFBZTTlOZGY0aGFZdlNUOVpKc2RhMVJ5ZUFKZ1FuckFEOS9JMG9ydStIMGs0cUdPd1VxelVIVFhhRmJOckFIelk2NkNRPSIsImkiOiJhWnk0N09BTVdWOFJORmhjIiwibiI6IkFraWEifQ==",
-    "backport7xx_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQTJubnBqRUd6RDloam9HK2JuVkZRQzhDWXBRQWNlNXVGMkdVTFpHU240akpvTVhTZXFVM1BoN2ZRbnhIOE1RdWZOT1Mvc0ozWVRQMjRaanJLSGczSEMranAwQ0ZXMEU9IiwiaSI6ImpUTmc5K3B2SkdrYWdUZHoiLCJuIjoiVmlraSJ9",
-    "backport7xx_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXQ5c21XOUhTUmN4OEFYWHRkVFZWSXUwWGc5YTBLM3lxZHVrOWo1M0JHaG9OeExNbE1tcTFDRUZ6UWpUSXZoVU5oUlUvVnJvN0Z2cGRaampzNzRqbEdtWFFTZkoiLCJpIjoiZ1JUSFVGanRXTTlsUFZZRCIsIm4iOiJEYXRhIn0=",
-    "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOFhJQlQwdVQwanZsTDlPNHhDTm94UnAveWdLZnBGMmRieExXNTlmUVExU3Ivam96ZURLVW4xUm1WSk5qdE5XQlpCZGxPSDRkbmQ5RnVaci9CcVZUcFNuWWJhdUdUejg9IiwiaSI6IkNzWTYvRGNVcWR0bDVEc0giLCJuIjoiRmlsZUsifQ==",
-    "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNzlaZjZKaHAvUFpEZW0yUnNrQW5HQzhVMWE1MFhxVjlPSjVOMEwySjBlM0xBSVVWRjZGQTVYQ3ZYTTRTdnk5VFJWTVh0dDVuOXpoV1Z0UWFjUEk2UHU0WkhjMkxXQT09IiwiaSI6ImswQ3FycVZaalRhNE1CUHIiLCJuIjoiVmF1bHQifQ==",
-    "backport4xx_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQzhMbEs0WG1hYXNPT01ZL1RDTTZEVW9iQ051cmdtL0ViMndWQjBmeW13ZFMrelRuWGMyOWFGbzZDZmtuZXlWM2lyZ1FYTU8xL21kRGZrdzJrS3lNZXhDNHlrSnBNWGxESzVrPSIsImkiOiIxb1pudTBQM1pGT0xYTk1kIiwibiI6IkFraWEifQ==",
-    "backport4xx_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiczhsaXJwSE5ZMW80VmxFM01iS2NENUZGWkZpSTdPZ0pmK2NpK3k1MmNldWlURHptUDhwMHdZTkdTeFFoVXhHd2R5NTBwS2l0M0lCekZhL1RmSG9vcEF3K1YvWGE5d3M9IiwiaSI6ImJ4ZVlvTERubytyWmdzOTQiLCJuIjoiVmlraSJ9",
-    "backport4xx_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ1ZrRlk3dkRVZGw0WEZnbWtEUkNDOU5adEpzVENPaFRJUUhKNWYyL1p1eEdwVVlCRFJsbHNhMW1nYkEza2hTWW80N1JhQnBXMFBrV0hYRmlTeWNHUGpEVGZiVGEiLCJpIjoiOTZvclNjOHpoSzR4cjRPSiIsIm4iOiJEYXRhIn0=",
-    "backport4xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ2pkNVN6UnJwSHNqOHJzTHVFZFBUb1daRHAxYi8wZTZUVUpTcGpRT0ZwYTlaUVdWdmNHeGpEVjFYQjZERExCUEIvbGoralJNVjVTRVM2c3JSYU1ydWt4bmlPa3FvUEE9IiwiaSI6Im9YUmJ2ZVBJOW9xVW5qMU4iLCJuIjoiRmlsZUsifQ==",
-    "backport4xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVDV6R3RKaXhReDVvMXBBeUpGbHNUakNYdE9mVG5OcHZXRnE1L1c1L0dqci9pKzdqbGw0Z1ZTcHAyU3NYaHF2OW80aEdhd2kxYmNOdTUrOGYzV1ROSm81REticmpSdz09IiwiaSI6IkMzMkNjbnJ6UmdudEsxd0wiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "DecKerr97",
-    "popular": "on",
-    "size": "67GB"
   },
   {
     "title": "Ninja Gaiden Ragebound",
