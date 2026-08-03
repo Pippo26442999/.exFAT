@@ -1,5 +1,48 @@
 [
    {
+    "title": "Everspace 2 Complete Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Everspace_2_CE.jpg",
+    "tags": [
+      "PPSA15671",
+      "v01.027",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZUdSdEJLcnJNVk10WU56QXFoRUJwQWw2Q1RZcGtKRXNDMlIralppT3pZQWQ0byt6ekgwdGEvd0lGOUE2VEx0RUV3Z29kTFBPZVZ4cWZqWTJrbDM4Zk1zMFFEZ09OOFFNNGtrPSIsImkiOiJMUEtXSVhGY2RQcVFDVlByIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVnhibFFMVlJSTmtVclNKNXF1U3REMmVJSUEvcDFuazN2aHVBZE91bFRjdmtHa0FiYk1uZGZYdkllUDREVjQrektNbEFuRmlZUU9qSm5oK05TSkwvMno2U215TEExVG89IiwiaSI6IjI0dmNCTDVsUUJPNHpsbXciLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3R3RkI0Z0lrbmtzZzdqSVd2N21NZHpPRURoZ011dkdjWExvQTRDSHpudm9sZ2lXZjEwUy9tWDhxRUtQZm9mSHdqTlhpQ01UazBoM1R1NmJ5RGNnenUwNGxudnciLCJpIjoiYnFZTXAyQUVoNWt4SmJvSyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT2JHMDFhVFdOTTlWVTJwVDA4R2l0dWc0Mnc3WWFaYXJibm9HTTZJbmplcEM4T1RkSHVpTFgza2FPZjdEcHZ0ZFE0UVU0V0RNZm9KenR1ejJmMXZ0WWlidzYxZG5XbWc9IiwiaSI6IkJwNUJGc01uOHZadHQya2IiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWlBhdEkwZzRDM1ROcVFBWFBJdWJhNWJKc1EwUUk3U0k2dFlEaUIzY1JONU1aV0YrcFozQjBEWEd1MlA1WjVlTTFYNlhqajUraXlOckVFdkVabXlJY3dzelpPRG1RQT09IiwiaSI6Ijg5QUtrOTJKcGZNWnFuaUQiLCJuIjoiVmF1bHQifQ==",
+    "fix_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNmFhQnVHaFhRdTd6RmJ3WW0veHRGNUprQklSbmJ5VUFKRVVsN3RidlcrRDRxdWgySCtiNDFUTkp3UGlSVzIxYnpJTi93d21iQll3Yi9wNmpGOG5lY0x3RlVja3AiLCJpIjoiNnZjVTRmcXQxUERrY21VWiIsIm4iOiJEYXRhIn0=",
+    "fix_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSUZUaHlRVjVKQTJOVTBMQm51YXlIb2R1dytCR3RTMCtKMnNTODc0NzFsWjQwWDhQZ3duQnpJcGxab2lpaytUYkRrRUxvT2xJNmtPSDRGdStYYjJIRGdNenU0dEZEQ2M9IiwiaSI6Ii9vVHhSc3h4aG54OEhob1EiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "fix_guide" : " 1. Open FTP Port (if you dont want do through FTP go on Step 6) 2. Go to ./data/shadowmount/ and open config.ini 3. add this line: mount_read_only=0 4. Restart the console 5. Go to /mnt/shadowmnt/PPSA15671/ and drag and drop dlc_emu.ini + fakelib folder on the root and replace all the files. 6. Is possible also use OSFMount instead FTP for replace the files, enjoy.",
+    "popular": "on",
+    "size": "78GB"
+  },
+   {
+    "title": "The Outer Worlds Spacers Choice Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Outer_Worlds_Spacers_Choice_Edition.png",
+    "tags": [
+      "PPSA07148",
+      "v1.006",
+      "USA",
+      "Standard (6.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib3daT0hxV3hhWWZDL2NseDdyY3h5c2d3ZnZGYVRJb2lyMEJYVzY1blAzM0tZdEc5Tmt4Kzl0cVVlMlZmQkNxR2pRZTM1aDFaIiwicyI6InVNNVVIeXZrQjYxSmhhZTJSVjFlK0E9PSIsImkiOiJBclRFWWY4ek0xdGVZU3RKIn0=",
+    "backport_akia": "",
+    "backport_viki": "",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVTFJdEdjME9oYzAwNjNkcnJVZ1JIRGlvSVJrdmpDNE02dXd4L2JtdTBoMEY2Qis5MWdrYUh6NHJJcUdvOWNzTzQ1RCtSQXVGakhLTlA3dEhzY3ZFL045dG9EdFUiLCJpIjoiS2VaT0dKOEYvck9mb3c0YiIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZVNXWHh6SkgySkY4c09oMW1BTGp5c0RKSjZaaTFGOGZzWWtJSTBsOXVvNDY5WEhnc0xoSzM0UDlDRm5HbHVSVHo0UVlGRlZZQmNRTnU3d2V0OUVma0NDR1F1NlpZZzA9IiwiaSI6IndVa2xzVWtLMUI0WGJVdW8iLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoid01qT09xWWFRQ0pVbzhDTFMzVHNlQ1hMNFArSWRscE8rZFVwOW50WjVIUTVGNGpaaGZ2MTFtU0pqVTlqZXRNRDBWbitVeXVnL3NWd2lEdVNDbjBuUDVXcnF6RGpFUT09IiwiaSI6IkJyeUN0Mktaa3Vob0lwVlUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Amiibohound",
+    "credits_backport": "DecKerr97",
+    "popular": "on",
+    "size": "105GB"
+  },
+   {
     "title": "Call of Duty Vanguard",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Call_of_Duty_Vanguard.avif",
     "tags": [
@@ -60,26 +103,6 @@
     "credits_files": "High-Speed007",
     "credits_backport": "DecKerr97",
     "size": "8GB"
-  },
-   {
-    "title": "Everspace 2 Complete Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Everspace_2_CE.jpg",
-    "tags": [
-      "PPSA15671",
-      "v01.027",
-      "USA",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZUdSdEJLcnJNVk10WU56QXFoRUJwQWw2Q1RZcGtKRXNDMlIralppT3pZQWQ0byt6ekgwdGEvd0lGOUE2VEx0RUV3Z29kTFBPZVZ4cWZqWTJrbDM4Zk1zMFFEZ09OOFFNNGtrPSIsImkiOiJMUEtXSVhGY2RQcVFDVlByIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVnhibFFMVlJSTmtVclNKNXF1U3REMmVJSUEvcDFuazN2aHVBZE91bFRjdmtHa0FiYk1uZGZYdkllUDREVjQrektNbEFuRmlZUU9qSm5oK05TSkwvMno2U215TEExVG89IiwiaSI6IjI0dmNCTDVsUUJPNHpsbXciLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3R3RkI0Z0lrbmtzZzdqSVd2N21NZHpPRURoZ011dkdjWExvQTRDSHpudm9sZ2lXZjEwUy9tWDhxRUtQZm9mSHdqTlhpQ01UazBoM1R1NmJ5RGNnenUwNGxudnciLCJpIjoiYnFZTXAyQUVoNWt4SmJvSyIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT2JHMDFhVFdOTTlWVTJwVDA4R2l0dWc0Mnc3WWFaYXJibm9HTTZJbmplcEM4T1RkSHVpTFgza2FPZjdEcHZ0ZFE0UVU0V0RNZm9KenR1ejJmMXZ0WWlidzYxZG5XbWc9IiwiaSI6IkJwNUJGc01uOHZadHQya2IiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWlBhdEkwZzRDM1ROcVFBWFBJdWJhNWJKc1EwUUk3U0k2dFlEaUIzY1JONU1aV0YrcFozQjBEWEd1MlA1WjVlTTFYNlhqajUraXlOckVFdkVabXlJY3dzelpPRG1RQT09IiwiaSI6Ijg5QUtrOTJKcGZNWnFuaUQiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "DecKerr97",
-    "credits_dlc": "Pippo",
-    "popular": "on",
-    "size": "78GB"
   },
    {
     "title": "Funko Fusion Deluxe Edition",
@@ -10030,19 +10053,6 @@
     "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRDV1Yzg4aStKT3pOc1dXSWZ3WkRWcWVhWFlGM0J2VGtwbllFNjZQNHdEM2RiVjhWSk1qWUpIUEFxa3RTWGlvWk9lZ0c5SjM4IiwicyI6ImxHQnM3TERJUVF0SGZhaC9RRkQ2L1E9PSIsImkiOiJ5M2I4ODh6bllBK2VPL1Y0In0=",
     "credits_files": "Amiibohound",
     "size": "4GB"
-  },
-  {
-    "title": "The Outer Worlds Spacers Choice Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Outer_Worlds_Spacers_Choice_Edition.png",
-    "tags": [
-      "PPSA07148",
-      "v1.006.000",
-      "USA",
-      "6.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib3daT0hxV3hhWWZDL2NseDdyY3h5c2d3ZnZGYVRJb2lyMEJYVzY1blAzM0tZdEc5Tmt4Kzl0cVVlMlZmQkNxR2pRZTM1aDFaIiwicyI6InVNNVVIeXZrQjYxSmhhZTJSVjFlK0E9PSIsImkiOiJBclRFWWY4ek0xdGVZU3RKIn0=",
-    "credits_files": "Amiibohound",
-    "size": "105GB"
   },
   {
     "title": "Gears of War Reloaded",
