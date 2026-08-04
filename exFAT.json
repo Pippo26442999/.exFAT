@@ -1,5 +1,26 @@
 [
    {
+    "title": "F1 25",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/F1_25.avif",
+    "tags": [
+      "PPSA24662",
+      "v01.018",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieUFpQXhUUDR6V3BzTEswcHlua3E1ZVRVZDFwYVhSQ0ptM0o5MzczM0lWdkNuVm5JdWQzdWtkcXRVd0tVMTJ5RitFQ1Q0WGExL2lQamkyN1JMbzl5eDk2MFBacDdveVVacERFPSIsImkiOiJVeDluLytyVFNIOGczUFArIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaU9KRUcxa25XMjM0d2JwTU54ZEpaMmdvSk4wVGxWMlpOS0FzWmdya0RrcTFhazhtQ2pEeDhRTGFWUVpBNk1sYnU1RHRUMkwrN2xzTHdKZG8vbVA4ekdqWFNGdGxEV1E9IiwiaSI6ImRWcDNSeE8vclpwbVkwVXAiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUXl3bnkwLzZLRWxyenJTd2Zzb0YrNXB2enkvaTBEUTJzYWVOYU5XRG15RFhCSERINjJOZFV0T1hXMnZDM2Q1TUNZcnRiS1NCc0RUb091Ukh5TkZaczFtdkRtaVUiLCJpIjoiRmtUcjVmMW0vM3M2T2hvUCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQnJnVW9iZjdpbTlDUjBOTm5LaG4zS3h6a3RwdU1HckQ3S04yYkZyL29MUHRNVjNtd3o2UTVKYkp0a3VBbXlmeXFHK3FENm1CU3hWYTJIVnY2RVZYL3ZaZEpUZWpCVk09IiwiaSI6Ijh5azh4eHhlKzZRa2NSSVciLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVm1ENEl4eTJYUUV4NGE5U25TMWY5NWpLejAvcENGV2RHZThLbzByWkpSVytjd0ZwUTQ1MFNxU1ZBMTNsUkp3cXNnVU1rWGZKNERmc1FLaDJaUnlkdWh4ZktmdmJ5UT09IiwiaSI6IjJMUjdDTkhoNUw4Ti80RWQiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "etaHEN cause crash, use only kstuff lite 1.09 with ShadowMountPlus (not Alpha).",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "75GB"
+  },
+   {
     "title": "Ghostbusters Spirits Unleashed Ecto Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ghostbusters_Spirits_Unleashed_Ecto_Edition.avif",
     "tags": [
@@ -81,7 +102,6 @@
     "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZnlseUJjditWUHd3cDYzT1lldExITDJuM09aVzRSdm9NcEpGb0g3eGtDQkcwSmgwckt2MFJZT1pkWjlxalJrVlYxNFVDVzVldDVPcjVWQ3BnaHVXTldHdzBMWmhZamc9IiwiaSI6ImMxRG1WeXBIMS9mZHFtS3kiLCJuIjoiRmlsZUsifQ==",
     "credits_files": "High-Speed007",
     "credits_dlc": "romhunter",
-    "how_to_play": "All DLCs, MATURE & VICE DLC also included.",
     "popular": "on",
     "size": "115GB"
   },
