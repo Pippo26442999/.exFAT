@@ -1,10 +1,10 @@
 [
    {
-    "title": "Construction Simulator Gold Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Construction_Simulator_Gold_Edition.avif",
+    "title": "Ghostbusters Spirits Unleashed Ecto Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ghostbusters_Spirits_Unleashed_Ecto_Edition.avif",
     "tags": [
-      "PPSA04379",
-      "v01.040",
+      "PPSA04057",
+      "v01.018",
       "USA",
       "4.xx BackPort"
     ],
@@ -14,11 +14,10 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYVp6NDdpZndFNEYyaDFhWGx3QkMzUlNDVUt5ZTBjVHhsWG9sMC91cmxtQkZMQnFwcDF2Ri9XRjBwYVNwWDlieDJnNEFIa2s2MldGS0kvS2EvZHNMMEQvRVRYV2Vmb2M9IiwiaSI6Im5xRXI5UC9zMjZTbW0xMmwiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWHpKVDQyVjh3aE5VaThQRVMxNVJaOHdjSThoVkYwZU1TeGhpZ1oxMDI3UWJXRVZDTis5YS9Wb24rVDZZTzlLUDRVUWtBOWpldzRrNzd0Sm8yZXJnWGpHN1lMUEJKUT09IiwiaSI6ImtKVkxUTjd0MS84djVxOUsiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
-    "credits_dlc": "High-Speed007",
     "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
-    "size": "33GB"
+    "size": "13GB"
   },
    {
     "title": "Dragon Age The Veilguard",
