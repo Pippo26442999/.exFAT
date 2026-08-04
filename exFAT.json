@@ -1,5 +1,28 @@
 [
    {
+    "title": "Dragon Age The Veilguard",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dragon_Age_The_Veilguard.avif",
+    "tags": [
+      "PPSA01390",
+      "v01.006",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVG9nSzNHcVMyWFdldys0ekxDamhIcnIvV1piWE4rT0d4M2dTdkJ6aFYwbENTRjhvRG5Nc0NQSFVVODRucWZwanhZd05pZGFBME0xZlozNE1Ya244TWRneXpheTkiLCJpIjoiK1BkWmJiVTRCeTFJOFJ2MyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOGtMQTZldDFQNjRzNDhjeEMwVEQrc2poTFBnY1JqUEpWUnRzWDBzREtLdkJiRXg3RVpGT3RvSkxXNGlGVGx6V1pJWmVCLzJQa0U3WlpaYjd0QXI3cVVkNGwxWnFQRmc9IiwiaSI6IjREK3FxVFNwZHhoaVNtd2giLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY0h5OG15bFVhSWdZSnVHNjJWR2duNlRYSnRXWHNyc3NkSE5oNWJ6SkNCL085QjNtNXZpdmRTNTVwc2xtYU5EbkR2MnpKUWhSSXBzK2hQUTJnc3dCR016d1VrVnVWdz09IiwiaSI6ImdyaXcybjZiZS9UVzB2WGkiLCJuIjoiVmF1bHQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaWdSNkd2ZU9LUnlIdVVTdUJCOCtDNk1VRVJxNytnNEZWUWdOYUJoMEFLOUcyTko2N0tSWmFhand3TllhMW0ySDJqU29nZmRldEx1b2VQRHIwWm5xd0Fwd1orQ0oiLCJpIjoiZVArb0FTZHkzNjQ4NGpEMCIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM0c0N2o0WXZTY1BSb0hNWENkbXJVZ0JWcCtCMytrM3lQRXZzNjlJMnhQTXE0Z0VGRnlkdCtQVFF5eUdFeXkxQTZ5YWNTOW5PcWNJbE9Pa3BreTA4ZFdUT0p5QUFlSWc9IiwiaSI6IjA3YkRhdGNQWTJjcFdQREUiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "Pkykzhack",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "168GB"
+  },
+   {
     "title": "Hogwarts Legacy",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Hogwarts_Legacy.avif",
     "tags": [
