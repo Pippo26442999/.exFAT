@@ -22,6 +22,10 @@
       "answer": "Make sure you have a good external drive, such as an NVMe SSD; a low-quality SSD is often the cause of the problem. If that doesn’t help, move the .exFAT to an internal drive (ext1 or /data/homebrew). All the games in the catalog have been tested with offact + np-fake-signin on 9.00 (etaHEN with kstuff 1.09 and ShadowMountPlus, alternatively if you still use kstuff 1.6.7 then need <a href='https://git.etawen.dev/soniciso/uds-trophy-unlocker' target='_blank'>Trophy Unlocker</a> by soniciso), so you’ll never encounter games that won’t launch."
     },
     {
+      "question": "❌ Missing or invalid param.json, what can i do?",
+      "answer": "This usually happen when trying transfer the Content installed from usb0 to ext1, for fix this 1. Kill ShadowMountPlus payload 2. Uninstall the Content. 3. Restart the Console. Next time you launch ShadowMountPlus will install without any problems, perfect ways to transfer the Contents: 1. Kill ShadowMountPlus payload 2. Uninstall the Content from the Console (UI) 3.Transfer the Contents through PS5 Explorer (for example usb0 to ext1). 4. When the Content is succesfully transferred remove on the Drive (usb0) the Content. 5. Launch ShadowMountPlus and wait install the Content. 6. Restart the Console. Enjoy."
+    },
+    {
       "question": "🔄 What does FW: 4.xx / 7.xx / 9.xx mean?",
       "answer": "This indicates the minimum required PS5 firmware version. Select the filter that matches your version to see only compatible games. For example: if you have FW 4.03, you will see games for version 4.xx and lower."
     },
