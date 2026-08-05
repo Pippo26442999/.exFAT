@@ -1,5 +1,74 @@
 [
    {
+    "title": "Teardown",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Teardown.avif",
+    "tags": [
+      "PPSA15246",
+      "v01.070.100",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblBZR1puYW81SSszeHFjaWYyMjVOK0NmN0FzckZ5ZThrMGQySS9KV2FqU1dKQ0kyZVhVUkNDMFVHeVBJd0xUS0lGajVtNW5PcjZzSmFFOTFhOUNPQTMvTEMyRnJ4RjE4SHFRPSIsImkiOiJyK2NzUUZRUU02eWpkdllEIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU2pTcHRra3llL3JIT2FteTNSdTNsOFVkSmI4ZEhCeU1CbVBoVndWaGx3Q3p6SHNOdnFWOHdMZlBhM09UY1NWYUNhVUxSY0VSSmhtY3FlcWlISmE4cXJUV2s3WVdUTlU9IiwiaSI6Ikx6WXhtV2ZUZEsxYnhUZ0UiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWS9maTdLV2VuMkZoMS8vZUNUZTg0dGtlSEs4SzZSeHVKSkFPQkRMQUlLeUJzbXNBSlF2MHV1dytEWExmWGErWTYvYmFEeWEzWURkdFRxbHdyTkozR0RXK0t3OWIiLCJpIjoiTE40a05ET2VoR0w1eHhjSSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNEx6L2ZWV1prV2M4QnY5SGpUNGtlOHRuUHVqR2JuWDlZTVM1T2hNOGI0dUt0MVdrMXNqODVDS1VjUHIrYzVuR0RNeUNQYTVpc290cEpJcy9rblRxNFI5eU82czloK009IiwiaSI6IlRTaHF1YmN6cjZvRzhPK1ciLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL1JkNFB2VGVYaTgydzk4OEdWQkRZUEhkK2ZrSXFtUUo5eTJOaE43OS9kOWtWemhvMUtTTy9ZUU5mbUZIVmVQditEd05LUTlHbVhRNFYvUWFzK0FsODZNWlpQSmNPQT09IiwiaSI6IjR1L0dFa0RJK01WNUFoZm0iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "size": "3GB"
+  },
+   {
+    "title": "Jets N Guns 2",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Jets_N_Guns_2.avif",
+    "tags": [
+      "PPSA17163",
+      "v01.002",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiekxPOVdlaVNZL1NkbjFyNmR4aUYybkJaYktCeTVRUm0rWXM0cHc1SXd6UFRoZCtYSmxtYis2N21zTksyaDE4WE80TjRXeUxHcENDNVpta3R1U2tESzN0YkZtY3RtSjZWZUMwPSIsImkiOiJyQmRHSmR5MitVY0oyNVZpIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQnA2MzhGQVJmOHRkVUl1Z0Nmdzl6VGtOVFQrS0llT0QrTzk0WGtxYmRXQlpxMG56d3p4clR0OGIyM1ZaWkdaMy94elhMNWM0bFp1RmZaRXBNSlFnOURpVDlBMUl0SVU9IiwiaSI6IlczeFlGOFlyOE0yYkZ5R3giLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicExRRG1VN1BOR3BnUEpWLzZldWdnd1pKSWhXUmVHNmdVTjNoMlN0dDl3Y1VpdXREcHE2cGtaLzhYM3ZHcmpPbVpob1BZZnNlN0hnZGVMVys0L2dGK2pEOWljb0UiLCJpIjoiSlAycEc0QUcwLzZGV09XYyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMnp4YXNicTJEaE1lOGRJRlV5MnhPaVZWUGp1RHpibnpPQXNxUG40VmNHVExmUlBuU0pKTGJ6a3hvNlpqWlZhdmszeVRUa2hWd0dYUEpZSGVFYzZUbGlPelhZZFlKRlE9IiwiaSI6ImZBNm5WQTEyVlBkSDY0UTYiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM0gzVkVCTVVhRythYWpZV3U1dkhBbVZRVExwNmg3Rzhob0tZVEFGZ29oWDI1M2VMY2pvbXYxakprV2ZVRkQzQmJtcXZkam5YS3E0cUVLNVIxNjdMSHN1Z1A5MXhrZz09IiwiaSI6Ik1LUkRTQzlGdmV5TDVpRmsiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "size": "743MB"
+  },
+   {
+    "title": "One Last Breath",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/One_Last_Breath.webp",
+    "tags": [
+      "PPSA18172",
+      "v02.000",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieXJsMkVyeExSUXliaUF1R1ROOVBDdlcwU0NnVUYraDFTdzVUeTFqamdtcjJVMm5IMldyYXRHVnBFbVZIbTBDenJQSit2WUdxVzNkTGhYejRvT3BleDNUQUpudStNVmEzYnpNPSIsImkiOiJNYkRtamxVVUNHemZ6c05jIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNllnSzZjR29UR1AyTzdwaCs3VDM2ZDRhYk1QWDQ1NFBLT2VubmNrRDVNL2VMSlZWcDZ6Q2YyVFVvSFBRQzU2RTdoVGFYMFRkSldMZENpYWp3Wlh3N2FtTTFZMFFObUk9IiwiaSI6IjQ4R1hZMVd1dTQ2bU1uUUsiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZHh6TTBpcmVnZGYzZ1JSNlhJY1RudDhwWlRCZ1NBRWxwTWluRzJnaUF0azhrNWY4aHlVWVB4Uk40TXkrZzE5OHFIdnozd1A3enpBVGRnbStocHJWMUVBd0d0UUYiLCJpIjoiWGRDcUFGclpuWUR1UjhQMSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV0QwL3p6UXhkWWFmNUYrWHhFMCtjR0t1VTNUbmFoWExQdXV6cC9ubjNScEs0aWw4SjhyVHRCc0NRdTNNTklrVlorUHBwZGlRb0o3bnFZcm8wY3FEVE1jMEF6aEczMDA9IiwiaSI6Ikp5QlRua0JWMnFueWZKT3IiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYzd5cmhrZGQ3eGlhTks5bEZXK0NOd3ZIMlQ5NnBHZzI2ZnYzMWxTUEMrS2d3dGMzYnRyS3RzYWkvSWw4WDBGK1czY3NVTi9tcXJwMWtiL3pyeWhabHJCQ085ZWUxdz09IiwiaSI6IlUrTHhlY0RueGpsRjA5U2YiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "size": "9GB"
+  },
+   {
+    "title": "Monster Jam Showdown",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Monster_Jam_Showdown.avif",
+    "tags": [
+      "PPSA16160",
+      "v01.012",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieFpTUEpLVlhwRFU4YWdwb3VIRWgxYnNOZ2JMNVRlQTVMQmsvMXNuamtXSGFJMHA1MnZKYmJ0Szk3ekd4R1NqUHNDSHB2aWVSd1RvamhpUTR4eWM0akIxOUpyNjhVQjdOY3VVPSIsImkiOiJvM3F4YjhvYTdZRmJkVlRYIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNmpRM21qRWxjR0ozQjU5K1VYcHpybC8vUFpQRy9jZkV6ajB4R0pzUENJNTBPM2NHSnRMZTFoYUpQaGp2YVB0ZnNCa1RCMVY3TDBxZHBhYlFIR2oyZmZsOFBlckVoRDg9IiwiaSI6IkZZUVZTWDFqVlpDZkhwZk8iLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoielYyZ0ZDY01HeUJnaVJLVmhpcmJhaU9Pak9iOUFnNFQzdlZpdHVxeWhLWk1YdFpjVVhQdGdpTHdkbkp1MVFqSFl3OE9pUFlsY0VTaWlaamEzMjNpOVdNdTB3dmkiLCJpIjoiV1phU2hLRG44ZUFzdzEzNCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZGRENDB6UmFlLytRZStsVWRBbjV2VG5pM2l2NHRWTlJmTmVQQmZIaG0vcnJ3QmpQL01BQTA5LzRFY3krM0Q5TVUxUnhUbVFRY01uaEExdUVWbFp4RHdxQ1ZzUjFwSnM9IiwiaSI6Im5CZmxoU1BDUjlLaGttMzMiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMEgzNGRlM0VJbWo5dG1sRVZobEVwTi9jM3k5dzM0cElQeUpKQnp4dXM3cDUwSTFsOTZUZWw3KzBzLzRQSUM1TDVPRlNkSDI1K29JSHBEMkl3K0pRbE1ucTAraFhOZz09IiwiaSI6IkRMUlhuMGJmcW1xN3ZtQngiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "popular": "on",
+    "size": "25GB"
+  },
+   {
     "title": "Beast of Reincarnation Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Beast_of_Reincarnation_Deluxe_Edition.avif",
     "tags": [
