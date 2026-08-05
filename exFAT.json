@@ -1,5 +1,22 @@
 [
    {
+    "title": "Predator Hunting Grounds",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Predator_Hunting_Grounds.avif",
+    "tags": [
+      "PPSA24179",
+      "v01.017",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNHFZcGR5SndCUHJHWUM2Z0NqV1B0UkxXSnQxbFN1TnBtY2RudXRpQzRORG9wR1ltQjZXc1dhcWJnbE1YeTdPVHd2QjBqb2JuS0ZhWXNaS09Odk5iYWVXaWkvVUhMNVE9IiwiaSI6Indtemt6c0swZnVycjNWZHMiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM29naHF1U2UwWnRZQVVhSWpjemNrdXpheXlLL1ViTTROS3FDMWgvQ1lrcnd6d3pQNmE5NUhPb1o0WHp5dFFyUHhKM0hoME50RHg1MU5PV0RlbkR0YmNxd2NVNFgiLCJpIjoiNDNyWkc1NmRJSnU1d25mRiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoienFCaEVjRG9hOG92bU5JeE5Ed3I5Yi80WHJTM1RmSlg1ZU1mSEYvNVQ1Z1JBMGlraDZvbkZSNHQzZk43Sit2V3lpV2UzeWdtQSsyL0lYZkdYQU5ocTc0b3dPZlJYalU9IiwiaSI6IlhZSDF0THdNKzlCa01ScnciLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUEFnSXg2alVSQzZZa0VHS3JoYnRGTlc0ZFVLb2wyUGNtUDl5M3NOaFRpVnY0RTkyWGRiSWJHOFNaeVpPbkhjeEFXWm9XV1dKT21tSFc4ZEdNdElQTXdjeFBwSWJLUT09IiwiaSI6Im9UZHpGam84bmNqSWMycjIiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "size": "48GB"
+  },
+   {
     "title": "Teardown",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Teardown.avif",
     "tags": [
