@@ -15,6 +15,7 @@
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMlY2SWtYNGNycHVMMFBpK1ZlZE9EOVVwT3QxS09OV2J4ZzVpS3gwQlJlUTk4cmlueEoyTWNyMmdOVjlsY2pPWHp0VmtSL3o0UUJHYmVXSmdFWlhQeUNVT3RRdmxHZz09IiwiaSI6Ik1lSlIwMGhUL1BpTEVUTnYiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DLPS Team",
     "credits_backport": "DecKerr97",
+    "apr_emu": "on",
     "size": "899MB"
   },
    {
@@ -34,6 +35,8 @@
     "credits_files": "High-Speed007",
     "credits_backport": "DecKerr97",
     "credits_dlc": "Pippo",
+    "apr_emu": "on",
+    "popular": "on",
     "size": "25GB"
   },
    {
