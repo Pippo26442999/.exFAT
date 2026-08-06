@@ -1,5 +1,23 @@
 [
    {
+    "title": "MechWarrior 5 Mercenaries",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/MechWarrior_5_Mercenaries.avif",
+    "tags": [
+      "PPSA03859",
+      "v01.0019",
+      "USA",  
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVVhOUEkyMXUxN3I3b1dYS296L1VNTC9qcUsrNmh3b3R5T1BDUE9mZnZLSUJpNGpQWmsveWxNOGMzL0hXbmtlUkQvdFJqSmVtN3puYW56VU50dlpCaGNUb2tSdEVsMzA0SVlRPSIsImkiOiJOUlQ5VXc3MTVUT2ZJWDFQIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWUJKRnA1TzdjUnJOUUNuSXB1OXp2Zkh2K2hGVnFCaDBNcWhkeDhVM3NET2Z6UFpGbTQrc1JtcTltK3pUaytOY1RBZ044RWJ4ZGxUcC9rNW1GOWtTdTdjMnNMWVhpUFE9IiwiaSI6IjZLUnNWaVFhQVlVQ3hKZ2QiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRzFwZkhJVEdEWGlxQnhtTnBONy9pdC9CM29RemlMdEcwdkhBQVpUcDdjUlliOUN6T0F1enkwMXBLL2oyZnE2Y3dKYUJKS25jamVxNldQZ0ZMbXJ6cG5qQ2NKcTkiLCJpIjoiakUxVlV1bmJlYTFGNEgzbiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU09lNFR2QTVoQ0RXK0dYbUE4dCs3OFBXOWxZNVZ6TlhFanZpYmdXQVdqYWVRUjlLbEdYOU9RcWxUd01pL2Y4K3NsWWdHZkRZMCs4bnc2R01vSVFGaThmU2g2UkFrTHM9IiwiaSI6IllkMnF2cW00U1l1T1RGQkQiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN3JDcGFvaHgvb1F3WEpnZyszeDBIVk56ajFOb3ZSNHlHQmtOeWtTNCs4TTZKczNkdlZSUkp1SnAySXNmYmo3a2dnZUhJTUc0eitXeFBnb2N2OXJGeDZoTkk0OE5zQT09IiwiaSI6Im5KMDRTVmdZOG1LQ0UyY2YiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "size": "79GB"
+  },
+   {
     "title": "Atelier Marie Remake The Alchemist of Salburg",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Atelier Marie Remake The Alchemist of Salburg.avif",
     "tags": [
