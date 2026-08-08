@@ -1,5 +1,83 @@
 [
    {
+    "title": "Post Trauma",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Post_Trauma.avif",
+    "tags": [
+      "PPSA11002",
+      "v02.001",
+      "EUR",  
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS2dyUVBFRVEwN05XUTJFbFJZbVdDUXZZMjhvZm9LVTVoaURxOE1PRHh5b0l3c1dmNVEwNkJzR0lMcUEvNUdpZVZSR1pDOEtKb3FuZHphSWU5V0E5b0VLdTJiemkrL0xpVzFnPSIsImkiOiJKQzQxYjF3T1BRTlFoakY3IiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic0dxdXREYUtrbWdmWkxGdEZhVjJLZkFQTzdJTjlybDFmWVE3NVV4blIwaFk3ZFhKQm1pYiswKytqTVRNYW9sdkpvWTB4OUk0NjdjVmQ3Z3hRVFdyMzI2ajl1TDBMc3M9IiwiaSI6IlpTTlVrNTlEeVhCcXByWGUiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibGZyZ0VsWDVYSlRUSFFwYTdvWG1Cajg5Um5WTG5EWmVpQkR0RnZxZUw5cHlqNHdNQ1NML1ZnYTlxUyt3cUNNeVhmT005Tzd0c25ZYzR1MkFSdHhqeTM0NjFPN3IiLCJpIjoiSVZwT2Y0QWRTaWlZOFprRyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieDF6cDE1L2d4Zktsb2hGZTVLWFdmaHpIbURyUmJkanZ4eFhhNWFFSlpaaGlRQ2hyc2N2OGF1UVJ1ZDc3YkpyMmlXVW83c0MxNDBZNVBvQWdSdG9ycHBUUlROenVBSHM9IiwiaSI6InFsM3ZCSENBL3I5TVlac3IiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY1Y2OWRYSDFhQ1F6SlZoeHdUWkgzYVB5QW9ObFRWamRKaitrQTVMWGN0Zk52c2ROM2wvTmZPUjM1ZWk0NElOOEcrMXVpRjg2dnRrRlVLVHMxbGRUYzdRNE5GQ1pLUT09IiwiaSI6Ijkwc3RwZ3ZBdUNoby9rNXEiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "DecKerr97",
+    "size": "16GB"
+  },
+   {
+    "title": "Shadow Labyrinth",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Shadow_Labyrinth.avif",
+    "tags": [
+      "PPSA17337",
+      "v01.100",
+      "USA",  
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib3BGT3M1MCtwK0I0SUR2a1I3bXJvR0UzcUFUOGk0azVZcmYvRDhuQVFBQ2VZU3Q4S1JxYm9LT0p5SDVjVEY4alF3dytFUFhWWUJtWlBab2l3VkdlNWRjRE9KNzM0cDF3OVowPSIsImkiOiJtZ1JOVTVpV0NjWXZ2cUVyIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWjFLV0phSmowcjBOak80WkY1RGZTdGZWY2p6dURQV2czN21SNUM4YlBjK0JGbW5kZ1RiS0xpNno3ZXdjU1FOOTVkd2U1OHh2UHlUV3poakRpcXF1SkZWcXVIYVgzcDg9IiwiaSI6IkFpS0ZmM1J1dklSZE1zNUciLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidTJ2Sm9Bb1UxUTlsekZ0bzNLNks2dVVGSWxmY0Q0cnc5VHZTcEwrM3c5ME9aN1labjRrTy9kbkozMzR3ZEMvQ1V2aldjclkzZTgvMkZ5Ym4zMjAxb3BXYmI2SFkiLCJpIjoiTGVMWUd6aWx0OVZGbTAvTCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVlN3TGt6SDk1SWQ3U21pdi9NMWYyNEF3c2hnUlBGY0ZRZzM2T0VlbHNzQjhZeFY0dE5iU0FRRnBXelRUUkVHOXh0dDhVNUlXV01zcVo4bCt5QkhyT2xVeDRlUVhCaGs9IiwiaSI6Ik9RbjVlVnB3ZkpwRnBlSTUiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY01mMDEyWksvTDY5Vk9kZ3FPTVl5ODR5RFFHTVdxaVBZUzhFNC9tbDRwakZreVcvQ3JUV3pXNGdWbHF0R1JtTnBkK0p1K01YUkZOc0tBY0F2NFZJem10aS8ybytIZz09IiwiaSI6Ik1jOHdVTWRkdVdiL0tCZUgiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "size": "3GB"
+  },
+   {
+    "title": "Space Adventure Cobra The Awakening Gold Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Space_Adventure_Cobra_The_Awakening_GE.avif",
+    "tags": [
+      "PPSA17337",
+      "v01.004",
+      "EUR",  
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV1RZSzNCWitPRENwblRIYk11YnREbkJJNjdDMWdTZDYvUUZkWUlaSmJ5VUcreHBRSHNwbHRsSlc1Y0JubzF3eFg3ZG4rVmpOUVhGbHBRbUUyYUM4K2twMEFNU2tmSzhseVlvPSIsImkiOiJrL2Q0VnByWHNGUkRDK0dtIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiajdxandnTHNsUUVQdFRvOFFTVENLVERFUWQzSzdUVnNVR3dDRnBreldkTWRtTXgrWmpwMVVubEdyUnZ5THlMenFrOS81UnhnS3RiaWM4Y0JpdjNYY0xZdmhBTjUzTUE9IiwiaSI6Im1tMmVBMGlTbHhueG1pbUciLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiakZWM0hrczErOENmZDBrMFpzZEtIVHBxWStjM3hFbTNxLzVjeDkrUDZGUWhMQlJxQXdoME51ZG1aTzZXdkE4a3kveElJekw5RlJ5VElYT1ZwZVNvU3QwVXpZRVkiLCJpIjoiWGRNaHRYZEVTRHl6anZZRCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaEIxaXFGQzl0QWMwNWRJcno1RUJScWtaUmkzRjNXYTlRU1ZEd01tcTlFSFMyOGhFSnkwSERKMUs1MTFOT3pVL1k5Qlk1VWQzNnlGcnVCQXZzYXA5eWM5NnVGTnNIV0k9IiwiaSI6IlNzbnY2NlFqWUN6cWloWGMiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieXBuSjAvVHlyLzZTbUNFaGJ1bDYyRjc1SXFrUTJvRjBnaE4rcmNZd25VbWNxV3VuR3lpcDg5dnpKQmNnVGczdklFS2VSdkNGOGg5d3FhelVRSEpXSzcwNVlsNEhYdz09IiwiaSI6IlVvL1l6TGJTa21LV25WYjUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "DUPLEX",
+    "apr_emu": "on",
+    "size": "3GB"
+  },
+   {
+    "title": "Neva",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Neva.avif",
+    "tags": [
+      "PPSA16786",
+      "v01.007",
+      "EUR",  
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYmVKSWptRjlQM3cyaDNyU09ZaHR6VnM4RVA3cXZJbGpZR3VnT2M3L09CN3BLMnZNTDJVQVF1cGp6Y2ZOdFAzUWkzWjkvNS90SmMrTHlZUGVzL1lrVzVqZm5vd3I3ZXlCU3lRPSIsImkiOiJNMzZIcmlvcGZvU0IxRDNpIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ0x6UmJqL05kaGdTNVoycmhCc3dSNTBCdDFsSFpReklWdW4yVVI5OGdmbTRLUXZSM1VxK1VhNk96MCtDcTJxQWg4cmdKTlNFc3hEU3krM01iLzBKenptWjlUVFhDTjQ9IiwiaSI6Ilo2SVpvOXhNMCs0ajVzclgiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieEhOYU5xZmtFN0VwdHhwR29DQ0RxczZtbGlqQ25SSHVoanpXaFBPTmNVZDgzbXFZWVJJV04xTERlamRpaU03VWpLRGFSeUNabHlrY096ZTlNbnZRNytSdlNkdDAiLCJpIjoiZTIzbHNNc0NRUGY1WEw1biIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ1VwZ0plSUJKd0c2L3oxRFl2YmNYT1prZ3dIak10eEJQL0xEL00vQzkxV3pvWlZhRHhmcE1POFJLRm9KalgwdGpaczFqSjFUU3ZpZGhDRGtqMnVjKzc5RTdILzI4ZUk9IiwiaSI6Ik1UbUFFbTlEMGl0SHhZbEoiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieW5yZ240WENiSTMvN2UwU2xDVlVDMksvUlE1N0ZRRHNRZENJMFRvU3dFQklqWVlsSFpvbEcwMk1vWUMyd3d4Vkd1citHeCsyd3JtM2JpOUFJaU5qdFdMQnFYc1pjQT09IiwiaSI6Imh4NVh6amJyd0lNRW1pSmoiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "how_to_play": "Prologue DLC is Unlocked. Enjoy.",
+    "size": "20GB"
+  },
+   {
     "title": "R Type Final 3 Evolved",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/R_Type_Final_3_Evolved.avif",
     "tags": [
@@ -7510,24 +7588,6 @@
     "credits_files": "DUPLEX & Jose Carrion",
     "credits_backport": "DecKerr97",
     "size": "53GB"
-  },
-   {
-    "title": "Neva",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Neva.avif",
-    "tags": [
-      "PPSA16786",
-      "v01.007",
-      "EUR",  
-      "DLCs Merged",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidHA0blF3NHBKR20zYmlXSEJ0M3F3MlppYnpVNGgrVUxrU0xlcU5Ndi8zZStKNW9SS0pmS3NIMVErUnQvQ0xZd1dsMDJCcTRWIiwicyI6ImdocUg4RHhxc0l0cDdrV0tHa29COEE9PSIsImkiOiJTbUcxb1haUE5SUTJhK2NVIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaG9Va0tzcm8wYXpYY3gvZkVERGF2eVB5YXJCMmt1TjVxelhYdHAweWNteHNzdXcrdDJWbk1EWktvZW5wdDBOT3BPSFkiLCJzIjoiNk5VeWRyUmkxckk3RUpwbXRKd1dPUT09IiwiaSI6IitycUpqTFd4bUd2SFVsMC8ifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY2ljWnFSVytmNWh1WEgrMmZBMk51STFIRW1sUTFIYkNzOTA2UjJBV1BzQTJ1NzRkSWtUVWt3THJERGlhS2xaZm1BPT0iLCJzIjoiY3VJZEZUakd2emU5NjFGakJwbXZpZz09IiwiaSI6InZuUmhTQjJYMlVrMzlJdWYifQ==",
-    "credits_files": "SiESPTA",
-    "how_to_play": "Prologue DLC is Unlocked. Enjoy.",
-    "credits_dlc": "Pippo",
-    "size": "20GB"
   },
    {
     "title": "Afterimage",
