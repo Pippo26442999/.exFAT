@@ -1,5 +1,30 @@
 [
    {
+    "title": "Code Violet",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Code_Violet.avif",
+    "tags": [
+      "PPSA26528",
+      "v01.028",
+      "USA",
+      "Standard (5.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQjN5dUROQVd3ekhnZGRQZ3FtNkZXdGtkQ1ZqR2tlVnVDTEt6dGphWCt3RGxISjUxVFlCVEtaSUgyeEFKSFdRL2w3MndkNk0zckFPZmcrNlYrWmhqSWNXVlBNR1N2dnJLUk5vPSIsImkiOiJlSGdtRFFlanRoS0w0NFZoIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieWFBVlcyTWlQdzFCY0YzWm9mWEpJbUYzNTA3dEJsS1BFUi9FQ05oNmFTakVoYk9UYk8yMmRXZng3RXdUZWovLzB4UWh3aFdNTU5WbC8wdW9JUE0xZC9McENKNlgvMU09IiwiaSI6ImFHSTdyT2VTRmZ1c1p3TEsiLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMUFLM0gwMm9CWllmRHI5T0p2MXl0OStDTEVCOEszQnpJOUpQOHBpNzJ3aWVHVjVvWjcxeFFaTnFsY2dHK1RUYWFJdXg2aHpFb3M3aDVrRUR2b0xpV1ZRL2psM2MiLCJpIjoicVVVZDJ6WmlvNk13ZkcyeSIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVGZjMXkzSStZK1hsNFQ4SGc2a1I1STZnZUZUMGNZUVBKcGVXcHpCVTB2djVLaWw2Uk5tblh4aGFDWjl2bFZlSS84NStRQzFoREFCZ3lpWUptSVUrMFh6cUFMdnRMa1E9IiwiaSI6InVKYVdOc1RsbzVrZ0xwajEiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRFVoN0N0V1ZVQWVvNHJCSkpnZ3J4M2Y1OU43a1cwRXF4Y1FIMWZLZ0dYdllVTUlpdWt5YzBUM3hLU0N2VzdrOVNwRHczWHFFS0pNOVhrbjd5V1J1UXdySzFCTHRaZz09IiwiaSI6ImFLaW5yV1MrVDhZcklMcTEiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "",
+    "backport_viki": "",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ1llMnFuZ1hTSlc1RHo2dkhJR0VjSi9uTTNncE9YOFFGVFhoclVZeDh6WmR4d21YVURoNGlFZXZtTEZOMWZPUEgrREt0M1ZqMzFXL2NXa3lBbkFwQ043UWRnMnUiLCJpIjoiSVNuajkrZnRpUWpmOTQ4bCIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "",
+    "backport_vault": "",
+    "credits_files": "SiESPTA",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "Use BP 4 Ver only on 4.xx FW, BP 5 Ver for 5.xx to 12.xx instead.",
+    "popular": "on",
+    "size": "83GB"
+  },
+   {
     "title": "Yakuza Kiwami 3 and Dark Ties Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Yakuza_Kiwami_3_DE.avif",
     "tags": [
