@@ -1,5 +1,26 @@
 [
    {
+    "title": "RoboCop Rogue City Unfinished Business Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/RoboCop_Rogue_City_Unfinished_Business.png",
+    "tags": [
+      "PPSA28329",
+      "v01.009",
+      "EUR",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYWhQa1ZvUEMxRnVnWEwzTGZxMk9jSFlMano2dytIVFptaFJJUDRQcGNKdWtUeEM0bGwrSjE3dE94NHY3WlpacEpRYnNGN0lBdUdHcENGVnphM3dJSmh0RnlOZ1k4STA9IiwiaSI6Ikh1RDFGM25Tcml0S1dFRFYiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN0F2MDUxYVpMQWlMdXZiL2lWeWxzcWFLYlRURVUyT3ZEN2ROeFFjS2NrL3JnTFFQMy9nZlhPZjVtMCtwaVZsSkZRRXRvbkRZbmd3c1YyUE5YNlNWOHIwM2NXeWkiLCJpIjoiV0UxbHR2T3o0Vlh1S2VtdiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVEhxWWtkenZiTGIzNGUwLzZUQkF3MnRqMGFXVTdsdWZiRzJ3VW1idGdaSGIrL3JiM0tTVUxQNGF6MWVpeS9pODk4djJ1ekJLUVBjcEdkQ1Y5WkFCcm9uSXBRQ21xU0U9IiwiaSI6Iml2Zm9sOGhoRFhoMmFVY1IiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "popular": "on",
+    "size": "70GB"
+  },
+   {
     "title": "Remnant 2 Ultimate Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Remnant_2_UE.jpg",
     "tags": [
@@ -16,6 +37,7 @@
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUHc3bVpDRFJhUWQ5ZnE5cDI5dFJTV3J4MTd1dnFBNGV3M0FqaU9rWnkyTmtXUE9xWHA0OXVmT2gvSnVKbG1vNi9VZ3c2ZE5nZDdVQm9weVl0SDd3ekh4MUFuRzRSQT09IiwiaSI6ImlFbitOVUN0NFYzVUVRVE4iLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
     "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
     "how_to_play": "Survival Pack with all Expansions (The Awakened King, The Forgotten Kingdom and The Dark Horizon) are included.",
     "popular": "on",
     "size": "177GB"
@@ -10856,21 +10878,6 @@
     "credits_dlc": "DUPLEX",
     "popular": "on",
     "size": "154GB"
-  },
-  {
-    "title": "RoboCop Rogue City Unfinished Business",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/RoboCop_Rogue_City_Unfinished_Business.png",
-    "tags": [
-      "PPSA28329",
-      "v01.005",
-      "EUR",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZWtmMlh3NDE5VVc4YlNjdjdXTzdBZldQU1MrU0tyczRFSnFFWjVxOWk3aDNvQnUvdHo1bFFUYksvVmxwTzlYZ01jdGx0d2VxIiwicyI6ImtVd2RUQWdsVEh5SktORlNPTkd4Rnc9PSIsImkiOiJyS3B3aXBjUzNIOGtERlo0In0=",
-    "credits_files": "SiESPTA & DUPLEX",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "70GB"
   },
   {
     "title": "The Elder Scrolls IV Oblivion Remastered",
