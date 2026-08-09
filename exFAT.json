@@ -1,5 +1,33 @@
 [
    {
+    "title": "Monster Hunter Wilds Premium Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Monster_Hunter_Wilds_Premium_Edition.png",
+    "tags": [
+      "PPSA24191",
+      "v01.041.040",
+      "ASIA",
+      "Standard (10.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicEhqR0hEMVp5MFp3aHZLa256N2wxWDRZR0hzeWZSbjNuWXlkUEtNUFlRUDBMMGNqd2tvS20veVZQTUhQTlhRc3MvWHg2SlFYNkliK1FVUXV6VzVKU29oR0dTcjRpeEhYUGhzPSIsImkiOiJJaVRYUGVPWXdJaTFWcnZhIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMXdtc25veTNuT2xmTUJ2MXNYamFzS0F6YXdxMzlVRU0vcXZJaW83TTFRQjMvZFk3SlRRZTB4N2ZXRzhUM2duT29idnczZ2svU1pkdFg3QkxnWVVrbmZvK2ZvYnp4c1U9IiwiaSI6ImdmVno3MXo5T3llNGp3dTIiLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYUIvTUVneHNIS2lwZWFreWJNaEFVcTlnUUFaOEJ5Z2w1SmhETWdMbjRVOTNIOExyUFdML1NEK3UwSTBtL2RidnQ0c25tZnVEWmhLaGxkREhOQjhNUVdJczhVa0wiLCJpIjoiNUhxY2N0UkZGUk1IZG1NbiIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSlNOS3VKbTdZN3VrQ3J6TTJkVVM4T3JuY0JXMXZpWnVqRER1Qyt0Sk5sU0M2YURwZldkeElBY0R1b2lKUEZhOUJHTlpaSUk5c1VwNDZodnAxK1grYmM0VmFnR1FCYzQ9IiwiaSI6IldGYTg3eEVJVnk5ejA5dUYiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRmo0SVBJWHRFMUpQQlk0UFpLRFZFbWZxVUxQSUJ5YjZZaUtEMktxK0I2SHd6ZUd6RlVwZ2xGVkMvUmg2OGdzcjhLUTV2aTFZc3VLRURXd1gyTHUweGx2cjJSTTdzdz09IiwiaSI6Ik5uenhDbE9HaHBDYm1YcysiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNFVzRU5DcVBwMEZ5aitqR3V4SHRieEt4VjUzbWRhaWxqSVZxSFJEVFA2bW14bzQ4SVJSY2k4dFo0dHBvRFU5YjZEOEFqRitMclNpQ1Z6Tzd3OGpBNnlKSU5jRTFuYUxMOFA4PSIsImkiOiJYSUc0b1p6NVZEMWpUNnhPIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVmlPOEk4enN0NDZLY1cwdkJCSEdFbGRlclFiMUs5akhPd2lIMzlmdW5UVjJmMXlCaDRUeWdISkEzWnZDV1JVRHdkY0ZEb3hvV3NaVEtiaE9NQUI5eXNNSnpEUFY4QkU9IiwiaSI6IlR5L2JaTXNzUXBvVUwyMkkiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQTNkTW4xWG5OUVhPeWZObWR0cU1PS0tGTm1TL2F3Q3JDL05xREZSRTZvTHFyZjlHeDNNcW95Mk0ybjdMUHJEL3E0TnBtQjV2ejJUZEUvd0dQUHVuKy9mSmhKNkciLCJpIjoiUFFicFI3ZmoxWGp2Qy9QZCIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibzJXUGJ0N21CZndOVlE2OXBlUDlYZ3JrYUY4RmQyVDhEUzBod2pRNXRwd2RiWG1WTVlDa2xCOSthbEh1Z1lDT0FZc0p2ZytaWURvZlYrbFZ2dzBQNXZCdDNGVGNsNGs9IiwiaSI6Ind0T0ZkZTBSNTZ0Z0dQSEUiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWjd5UHAxSEpkc2ZiOXN1a0s0VlJBcmlDVnJtVEpLRXVKbnM2ejVXTFpCTXBNc3dYOTNXSDZNeWY1SjR2VVFlR3gyTVk5YkJZdldKYTVTQ2RaS0Y1Zi9XYy9lZzBSUT09IiwiaSI6ImNkam1QQWNHSkhoYm0wVFkiLCJuIjoiVmF1bHQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUwwQndqSkZSRHM0OElIK2Y5eG1FUkdMMWlVcDZWUWJDNHdSemNObXh5TnQvQjg1NVFyRlV0ZnhYNy9QWlZQTnBrQVB4WDdyRlQ4aVV3Yzd6M1N4aEtLcEJNYkIiLCJpIjoiblVhMkVtdXpHbE1STzFmdSIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXBHUmx5UFFCcHFSeTQ4UWFsYXVWb2RkUWFrNWRML0x3TkcrcUgvVk1pSzBSanhaMW1Sd2F6MDd0NmFKRHh1WC8wS09NZTdFVDlKRGdqQmdqcHY4N0d4bVZoWmVKMEU9IiwiaSI6InMrUHl6UEREZUtrdkVLR2YiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "SiESPTA",
+    "credits_dlc": "DUPLEX",
+    "credits_backport": "Zhwenx",
+    "how_to_play": "Standard one is for users with Higher Firmware like 10.xx +, BackPort Ver work only on 4.xx to 9.xx. Game modified to make DLCs EUR work on ASIA.",
+    "popular": "on",
+    "size": "113GB"
+  },
+   {
     "title": "Undisputed Championship Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Undisputed_Championship_Edition.avif",
     "tags": [
