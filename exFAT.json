@@ -1,5 +1,26 @@
 [
    {
+    "title": "Remnant 2 Ultimate Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Remnant_2_UE.jpg",
+    "tags": [
+      "PPSA06693",
+      "v01.039",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZDNicmVMMERPWm84dnZBazVCMVZGTjRPeDg2aWFNUk1ibm8xbEdOMldpbituYXgzbFdCRDBNSzZDTXNvYlUrd1JrclU2cVd0SFJiYlA4OVJhWXlhdys3c1QwS2hPbFU9IiwiaSI6IkUwRnNjdWZwaUNkc0o1KzIiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVktkQldoOWRZUWh0UFdkMGpHYnBGVG02TnNDeS9XVHZRM1RyeCtTa3ZUWnN5QWFGbEwra1VZOU83TlcvbHNPVzVLZFhGYlZuZHZ3czZmOWN0aldoUU02WFJyN0UiLCJpIjoiZlNiY3N1TG5uOFV1NEU3QSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaXQ4emFYeTFLM0p6MDg4ZkFiVDZzZVZlVG1pQlJncXNGd3Eyd0t3SXVDRTFCRFd5LzlrZmFNazZMN25LNFRYT0lLY2Z5OGVZVmZWNWF6Nk9uVG85dFhDRlV5aXFiUkk9IiwiaSI6Ik1zRGYvb0V3eFA0akFpcHIiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUHc3bVpDRFJhUWQ5ZnE5cDI5dFJTV3J4MTd1dnFBNGV3M0FqaU9rWnkyTmtXUE9xWHA0OXVmT2gvSnVKbG1vNi9VZ3c2ZE5nZDdVQm9weVl0SDd3ekh4MUFuRzRSQT09IiwiaSI6ImlFbitOVUN0NFYzVUVRVE4iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "Survival Pack with all Expansions (The Awakened King, The Forgotten Kingdom and The Dark Horizon) are included.",
+    "popular": "on",
+    "size": "177GB"
+  },
+   {
     "title": "Animal Well",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Animal_Well.avif",
     "tags": [
@@ -8054,23 +8075,6 @@
     "credits_backport": "DecKerr97",
     "credits_dlc": "DUPLEX & VanBuuren",
     "size": "33GB"
-  },
-   {
-    "title": "Remnant 2",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Remnant_2.avif",
-    "tags": [
-      "PPSA06693",
-      "v01.037",
-      "USA",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiajJCclJyb0tSdmJiOC82ajBVZkU4WTQyZFd0cEhkUzVEeTA2Y0VHRkdGNG1vZ2xHM2d2QkQ5dXFid1RyMDgwSm5FYlhYOXQ0IiwicyI6IkRlci9oSHIvVTA4MEFZQWdkdUF1V3c9PSIsImkiOiJURjBqYkJyMDJPRmhFZkpnIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1V0T3p6Z3h6RHJRb3VMM1BXVElWak83Yk9rc1JsUnpSaU53bm9tSG03djk4Nk00bStVR0trMFNseXdqdXRRbmpOVHIiLCJzIjoiODhNR0VKdU5PbFFPcUt0N0g5WGIxZz09IiwiaSI6IkJrVFQ0T2RHR3ZJYVoxRGMifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZjZoM3N0TytvQzU5cWVuQzFlRjUxRnlxckVWRHdPUHFmUjBFVkdvaHM3SnM5MGF3YU1MamZ2alZjYW12Y0JiS3RRPT0iLCJzIjoiZktYbWgzeVkzZkJVcVlSdVo2L2JYdz09IiwiaSI6Ik1wU0o4KzhMQjRGdU0veG8ifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "DecKerr97",
-    "popular": "on",
-    "size": "177GB"
   },
    {
     "title": "KARMA The Dark World",
