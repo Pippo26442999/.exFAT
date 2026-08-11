@@ -1,5 +1,27 @@
 [
    {
+    "title": "Baldurs Gate 3 Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Baldurs_Gate_3_DE.avif",
+    "tags": [
+      "PPSA14002",
+      "v01.800.700",
+      "EUR",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRHhyWGRoQ0hkN204TzRyeDV5NHY4ckU2OU5OdmI3UG9RRHppa1B1ZHJtd1JIZzFEVE1yOExIZG5CL3lmMTBYaDVPcWwybHlWTGxyU2d4dENEd2t1RFhtdDcvS2lTdkk9IiwiaSI6InBJMFloWGsweDFvM2VWaVMiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaDJ6bTJDODhYZi9xQWozZjEwTk9senB5WW1XYlRkRnU2Qk9IK3pUNkg5YWdjUnRFYjNDVlpHQVlHQ2JISytPdnk2RERDWTRBdDd3R3NmYmVFTEVZSU5TQWEyNDciLCJpIjoiVmFnaWN3cE1CTlRqbkxvdSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ0c4TysyQnN6eUNNQmphM2VjcXJjUGVycEdhV0JBNG96UUp5Si9xZUhsR1pqb2VzS3c4eFJmWXVna0JUeVB6MWNkbE9GeXpCNjZBc3lib2paR1l6OVU3aVJHT3BVZVk9IiwiaSI6IllpN0ZMckpIUW9UZERHNXUiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "",
+    "credits_files": "Slavkarak & Dunaevnick & DLPS Team",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "154GB"
+  },
+   {
     "title": "Born of Bread",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Born_of_Bread.avif",
     "tags": [
@@ -10980,23 +11002,6 @@
     "credits_dlc": "Psykzhack",
     "popular": "on",
     "size": "72GB"
-  },
-  {
-    "title": "Baldurs Gate 3",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Baldurs_Gate_3.avif",
-    "tags": [
-      "PPSA18463",
-      "v01.000",
-      "JPN to EUR Languages",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWTAxcEFTYlRrQXVXazlpSkl0eDdWUG1kOERTSFA4STlPYlJjcjYvSzJ1N3VtU0N6VVZwTmp0QTQyUkFmRngzK1AyeUZXTXloIiwicyI6IkMvbEFUN0JXRnRQVWtCYkFiY2Rzd1E9PSIsImkiOiIvbUhuWVEzUCtYNU1TY1NEIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWC9RZWVNQ3RlY3R6bzRYRjR5YXIxd0xZR2I2dG9UbG1waDRzR2ZmeWtFalVLSmcvR3lITVF1aGxrQTN4NWs3VCtHV1kiLCJzIjoicVhOVVVIM29SbTEvRytOTE9iaFVjUT09IiwiaSI6IldvTnQ5Z0pQUzg4dnpldjUifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidmlmSUlKYk80TlREcFZuZG1obVQ1L09Ba2xKQjRhaGVWUWJjM3AvQ1JBK3huTVpwUW9BYS94dzNZN1Z5UUJheGIwUDZYd2hFaWhmMyIsInMiOiJWK2dNeTNacVhJVkQzVktzdzRGRWxnPT0iLCJpIjoiemNJNTE3ZUNCVlBDdmtHZiJ9",
-    "credits_files": "SiESPta",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "131GB"
   },
   {
     "title": "Demon Slayer Kimetsu no Yaiba The Hinokami Chronicles 2",
