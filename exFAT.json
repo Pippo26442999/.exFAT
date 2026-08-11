@@ -1,5 +1,43 @@
 [
    {
+    "title": "Romancing SaGa 2 Revenge of the Seven",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Romancing_SaGa_2_Revenge_of_the_Seven.png",
+    "tags": [
+      "PPSA16566",
+      "v01.010",
+      "EUR",
+      "Standard (8.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL2ZHSmxCV1NrL1lZOXlKUzkrS3lOTDdLOW85Qm9ONFErL1lSYmp5TVpIZHEvdUtqU0FaRm5XWlFNUFR4a2J6VkUvbEhJbFVTIiwicyI6IjBXWUFiZVI0NzlsZENqYXVrbUp2TkE9PSIsImkiOiJBWEJ6Q0ExWWpnTjlOdmtMIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMDNycm5ZdWMxZUp4T3dCVCt6dkZMYzVzb1ZEWGdMRmJzSVRRZGhsR29HdzlEWWJzRUZJWHFFNGpGVEZuRWJ1aENQSHoiLCJzIjoiNDlhV0psTld1SlMzYkpRaUNDbXJJQT09IiwiaSI6IjB5UEFRZ0d1YXdPRjNzZGwifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiakNXUFJtV1VuNkNnWlROOG9KTWRzSVo5aFRROUg0b2NHNzJkRHhFNmxOdk5ZWHVIQ3pXL1daQys4UlhxN21JK08wc1c1eGlsOWF2MUZQenh3Zis3NU1WZjZiaEZsREhpZ0FrPSIsImkiOiJVRDVyZmpFTmEydnFVT0tuIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN2NyckFSc1VZTDM3dWtNK2pFZGtneVowZEpjVk5jMHI0T1h3RERYYjJ1ZmhsYWVnMEV0OXVFckZFK3NxYnpuS2JxcnlPcmRXZ0habHgycWFMamhnTkFGaldoaVRrb2s9IiwiaSI6Ik5Id0xqREJLaVdQZGV6WCsiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoickYrd2h5LzBOZmZQMkVENWoxT3cxWUk2WE5jdGNKZjVwTmNpMlMrTW11UHA3ZmszRFp2VXpiUzZ3WWxXSURsTmk3L0tTUnZtNVZOOWF5ZmlhU1VvQkg5TWhNYk8iLCJpIjoiS2xCTlVkTlBjY1hPcEt0eiIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidlhCOTJIVCt0UHFuYjRsZy9mUFhDbDkyUmFjODc1SXkyS0FKcUNBSjFTNWJBQzFIa3hXMk5Mc2ozc1VJM0pjVWdRazN5NWs0U2FacWxMbXV2T2Z2V0EyZ2JDUm1aRms9IiwiaSI6IlBjT1RydnhnMjFiWjNXaFMiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoielV4Q0kzU1g4b1hiYnhhNldrRlMwTE5yTTgwelFRbXlEd2REUFUwTVhTQkUwUXFWRDQwZkZIY2dnbG5lK2ZDYUFBTnRrR1ZCdFlIUG5QMnhkS1BLQWl2Nzg0dFF1dz09IiwiaSI6Ik9nTitFR3MwK085SFZpVXEiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "DecKerr97",
+    "size": "32GB"
+  },
+   {
+    "title": "Ed 0 Zombie Uprising",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ed_0_Zombie_Uprising.avif",
+    "tags": [
+      "PPSA09285",
+      "v01.007",
+      "JPN",         
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVEtBWStoQ3ZSL0g0UERDaUE3eHhsakxEVmdCVDV6UmVBc3BlVVVEVkF0RFlKSitVLzQ3czNTQVQ1Y1FZaUk3MmhLOUdlRVFGbm9NdmhlM1dGanE0Q29FU29HSzVkYzNnY1VRPSIsImkiOiIzcW9JcXlzN2UzSC81c3VLIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS05LbVJINU9LVGRLRmZ1UUU0RzlnWmk1cVdVUGh0OHB4OURLVjhuY3J4M1h4WkIwNHRRMUZ5MGczS0VyQWhPdmtyaXJwelAzYUxYbXBqY09PdUFJSW5PYVdvZGk4OVU9IiwiaSI6InZTbUhiRjg1RXYyWHpySWkiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS3hzYU1jZmZUL1pkdFl5Z0RvWWdlcnFuYVkwSWYyL1FKTEozcWNFUzJ5TkpaTE5pc1ZZYmpCSk53Yk1oejRmMTVadEFmTVZmRm5EL2J5OHB4UTJKRysxZk9KcjQiLCJpIjoiUm9rQXMrdGYzd2hEeVhsayIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM2VhWVFyWXc5Nlc0bEpLdGc0V29wYy9nNmNOV0U5dVZnUkZwVkErTlZONjRGYk5XdjRhSDlHMFA1clhmZlM4Wm1ncUlxNUxOOUsxWFpHa1JDc2NkYTJpVit4VkloMjg9IiwiaSI6IjZyYTYvUXc2Ukh3aHFvTHAiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS3REZk9udzNURTVxUEd5eXJDeEduSnA5UGJmWXJtUFRucjZTd0kvbGw2bk45b1Q2RTlBVkcyNVR5VnJBUVROL1FZMGZTR2RReDljbzRoemlUYm8xbnRHeVZrdFhWUT09IiwiaSI6InRpRkhGVVdLZGRuWURYOUUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "size": "16GB"
+  },
+   {
     "title": "Hot Wheels Unleashed 2 Turbocharged",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Hot_Wheels_Unleashed_2_Turbocharged.avif",
     "tags": [
@@ -10995,20 +11033,6 @@
     "credits_files": "High-Speed007",
     "credits_backport": "BestPig",
     "size": "19GB"
-  },
-  {
-    "title": "Romancing SaGa 2: Revenge of the Seven",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Romancing_SaGa_2_Revenge_of_the_Seven.png",
-    "tags": [
-      "PPSA16566",
-      "v01.010",
-      "EUR",
-      "8.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL2ZHSmxCV1NrL1lZOXlKUzkrS3lOTDdLOW85Qm9ONFErL1lSYmp5TVpIZHEvdUtqU0FaRm5XWlFNUFR4a2J6VkUvbEhJbFVTIiwicyI6IjBXWUFiZVI0NzlsZENqYXVrbUp2TkE9PSIsImkiOiJBWEJ6Q0ExWWpnTjlOdmtMIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMDNycm5ZdWMxZUp4T3dCVCt6dkZMYzVzb1ZEWGdMRmJzSVRRZGhsR29HdzlEWWJzRUZJWHFFNGpGVEZuRWJ1aENQSHoiLCJzIjoiNDlhV0psTld1SlMzYkpRaUNDbXJJQT09IiwiaSI6IjB5UEFRZ0d1YXdPRjNzZGwifQ==",
-    "credits_files": "SiESPTA",
-    "size": "32GB"
   },
   {
     "title": "Treasures of The Aegean",
