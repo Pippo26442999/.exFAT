@@ -2393,7 +2393,6 @@ async function loadFromApi() {
     try {
         const response = await fetch(apiUrl, { headers });
         
-        // SE IL SERVER RISPONDE 304, IL FILE NON È CAMBIATO
         if (response.status === 304 && cachedGames) {
             console.log('[LIBRARY] ✅ File NON cambiato! Uso la cache locale.');
             return cachedGames;
@@ -2404,16 +2403,28 @@ async function loadFromApi() {
         }
         
         const apiResponse = await response.json();
-        console.log('[LIBRARY] 📦 Metadati ottenuti, download_url:', apiResponse.download_url);
+        console.log('[LIBRARY] 📦 Metadati ottenuti, SHA:', apiResponse.sha);
         
-        // 🔥 USO IL download_url PER OTTENERE IL CONTENUTO GREZZO
-        const rawResponse = await fetch(apiResponse.download_url + '?v=' + Date.now());
+        // 🔥 USO L'API GIT PER OTTENERE IL BLOB (contiene il file)
+        const blobUrl = `https://api.github.com/repos/Pippo26442999/.exFAT/git/blobs/${apiResponse.sha}`;
+        console.log('[LIBRARY] 📦 Richiedo blob:', blobUrl);
         
-        if (!rawResponse.ok) {
-            throw new Error(`HTTP ${rawResponse.status}: ${rawResponse.statusText}`);
+        const blobResponse = await fetch(blobUrl);
+        
+        if (!blobResponse.ok) {
+            throw new Error(`HTTP ${blobResponse.status}: ${blobResponse.statusText}`);
         }
         
-        const jsonString = await rawResponse.text();
+        const blobData = await blobResponse.json();
+        console.log('[LIBRARY] 📦 Blob ottenuto, encoding:', blobData.encoding);
+        
+        // Il blob è in base64, lo decodifico
+        let jsonString;
+        if (blobData.encoding === 'base64') {
+            jsonString = atob(blobData.content);
+        } else {
+            jsonString = blobData.content;
+        }
         
         console.log('[LIBRARY] File ricevuto, lunghezza:', jsonString.length, 'bytes');
         
@@ -2421,7 +2432,6 @@ async function loadFromApi() {
             throw new Error('Il file exFAT.json è vuoto');
         }
         
-        // Salva l'ETag per i prossimi controlli
         lastETag = response.headers.get('ETag');
         console.log('[LIBRARY] 📦 ETag salvato:', lastETag);
         
@@ -2431,8 +2441,8 @@ async function loadFromApi() {
             return data;
         } catch (jsonError) {
             console.error('[LIBRARY] Errore parsing JSON:', jsonError.message);
-            console.log('[LIBRARY] 🔍 Prime 200 caratteri del JSON:', jsonString.substring(0, 200));
-            throw new Error('Il file exFAT.json è corrotto o malformato');
+            console.log('[LIBRARY] 🔍 Prime 200 caratteri:', jsonString.substring(0, 200));
+            throw new Error('JSON malformato');
         }
         
     } catch (error) {
