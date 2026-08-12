@@ -1,5 +1,26 @@
 [
    {
+    "title": "Dragons Dogma 2 Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dragons_Dogma_2_Deluxe_Edition.jpg",
+    "tags": [
+      "PPSA09664",
+      "v03.000",
+      "EUR", 
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRUhJSFdJUkxVWTFwT3AyczliUkluUU85Rld2MUlCUFZ1OGtOOFR4cTJuTnZuc3hGODc3SlFCRTBRR1lIaEo3RlA3b3VkT2pKVlZpcTJVT3cwM1RicDV3LzRDdWloUjQ9IiwiaSI6Inp1ZGhvamRYaXJwcUQyWTIiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNkd5VUhnMngwaGNKNEtvYXprT2JJTVFLUnp2TnlZU3JkY1ZlcHFOTzJQVHp5ZUJyMUNXdDNLd1Nzcis3ZzN5S1l5RlpzSDl3Z01leGI5YndLUjFjN1N6bjBUVFgiLCJpIjoieE9YYlAvYW9nNVZTeThtSiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQzJYQ25SVDlscitDRjM1clJuNktkZUxhZGhSK0tpaG02M2k2YVQyNkVXc0lZSGE2RnNkdEVqVEFnT1FjaGJjWW9aQjd6S3hlNmdEaGNzUFp4TzYrOFRxWXlVemlEVEU9IiwiaSI6ImRBL054MDQ4c09qVWkrY08iLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM1l4Y3c4RjhSbnF4eGFGWFZ0Ti9aNm5mRzI4MXZta2thZlNzZVhIRnJnT2ZTRlcrU3Z1WXNrRyttM1hQOHNNZWpuNHY0anVxME1UaWtQZkk4UGt5RjFLN3pUY2g3UT09IiwiaSI6Im9mTjlYNlBnbkdZY1JwL1kiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_dlc": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "popular": "on",
+    "size": "136GB"
+  },
+   {
     "title": "The Quarry Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Quarry_DE.avif",
     "tags": [
