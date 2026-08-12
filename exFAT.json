@@ -1,5 +1,25 @@
 [
    {
+    "title": "The Quarry Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Quarry_DE.avif",
+    "tags": [
+      "PPSA06225",
+      "v01.007",
+      "EUR", 
+      "DLCs Merged",
+      "4.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWG5SZG0vWHJSdmxSM3p3RmpWM3NCSHBnbm8yRVdGUmQxSURSRmFFNXBiK3UvSC8xUG5nVzBpVGZtdk9qM1lzM2tTRnprc2RPcHNmNTdWZFBwNm53L0dHRlZyMFR3TFE9IiwiaSI6Ii9od1h2dlVzZ0c2TTE1eE4iLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMlhMcEM1SUFTRmN5cFN4OU8reG83bUF6dkMvZ1dvVG5CSExmaWdqM1ZqbEdQK2ZRZ3phbHhqZGtZQVdtcTEwOHdnT0o3dGdmVlpZYjVPR2ZXTnNOb0sxNy9NMGwiLCJpIjoiMTJMcnJQWjBLaFJVMU1NQyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYTJVU2xCWTNpd0N0RlhIemJUd0RycG5qa25pZjg1YWVndFR1QitkUGVYclJOZ1B2U1pIS2oyeGg5OGJHT1dOUjVuMklzcCtMaTJBUnNDWkVHM05oejZvbGtqaG00N3M9IiwiaSI6Im5ibWJLeUhRN3pUZDlkdkwiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiR3hYTnR4cWUrZFVZNVcxYTlFNWFsSUR1eS81Vy85RFUrZm9iRTgwYlMxa0dkL3JNVUtybWZyYWZJOW1yRWFmVE56TW40eVVuT3UvTjRJQ2wwTlhvQUxubURYSTNQZz09IiwiaSI6Im9XODdnd2F0MGI5RnpFS1QiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "popular": "on",
+    "size": "77GB"
+  },
+   {
     "title": "Monster Hunter Wilds Premium Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Monster_Hunter_Wilds_Premium_Edition.png",
     "tags": [
@@ -8241,25 +8261,6 @@
     "credits_files": "SiESPTA",
     "credits_dlc": "Psykzhack & scbae80",
     "size": "8GB"
-  },
-   {
-    "title": "The Quarry",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Quarry.webp",
-    "tags": [
-      "PPSA06225",
-      "v01.000",
-      "EUR", 
-      "DLCs Merged",
-      "4.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRGZ3UUx4bGNUOTg2WmZFT2RkZGRDNXFOUXB6WjdNZ3pmS0VZUEpWQVBGNFhJcG1oMXJ2RllHbE5TQkpvdkRPRlk2VW5KTk1aIiwicyI6IjM5WDQ2NDBXVlNtTXlweHN0YytYRUE9PSIsImkiOiJlKzJKOFpDT0dPdG9Jbml0In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWVliWlFKaXNpVnRtd2R2OVZVRE1Qek0xTnN3QU9OcDlIQWsxVDdjREFGRCtFc0ZCRi8yazZ4a3hJSjJ4U3pqbGk3VG4iLCJzIjoiZXorUm85VUUydDlaeVFaUDBVZDl4Zz09IiwiaSI6IklRTGRNNlFabE9EZ3BJL2sifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUW5CMG5kWHdURHBMNSt3VnBpUzRDb3ZSVUw3Um1GdjY1WHpqQXhPTlRGSDJHWnlQVTdqVUtrM2tuemtTQXlBMlpBPT0iLCJzIjoiSFhLNHV4cFRxY0dWaktXVlh4ZmVsdz09IiwiaSI6InpDKzRBYjExc2VaYkxzeUgifQ==",
-    "credits_files": "DUPLEX & Jose Carrion",
-    "credits_dlc": "Pippo",
-    "how_to_play": "Only Horror History Visual Filter Pack is available, you can select the filter on Settings then Display. (v01.007 needed for others DLCs)",
-    "popular": "on",
-    "size": "80GB"
   },
    {
     "title": "Destruction AllStars",
