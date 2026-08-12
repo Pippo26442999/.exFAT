@@ -2390,37 +2390,54 @@ async function loadFromApi() {
         console.log('[LIBRARY] 🔍 Verifico se il file è cambiato...');
     }
     
-    const response = await fetch(apiUrl, { headers });
-    
-    // SE IL SERVER RISPONDE 304, IL FILE NON È CAMBIATO
-    if (response.status === 304 && cachedGames) {
-        console.log('[LIBRARY] ✅ File NON cambiato! Uso la cache locale.');
-        return cachedGames;
-    }
-    
-    if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-    }
-    
-    lastETag = response.headers.get('ETag');
-    console.log('[LIBRARY] 📦 File AGGIORNATO! Nuovo ETag:', lastETag);
-    
-    const apiResponse = await response.json();
-    const jsonString = atob(apiResponse.content);
-    
-    console.log('[LIBRARY] File ricevuto, lunghezza:', jsonString.length, 'bytes');
-    
-    if (!jsonString || jsonString.trim() === '') {
-        throw new Error('Il file exFAT.json è vuoto');
-    }
-    
     try {
-        const data = JSON.parse(jsonString);
-        console.log('[LIBRARY] JSON parsato con successo,', Array.isArray(data) ? data.length + ' giochi' : 'oggetto ricevuto');
-        return data;
-    } catch (jsonError) {
-        console.error('[LIBRARY] Errore parsing JSON:', jsonError.message);
-        throw new Error('Il file exFAT.json è corrotto o malformato');
+        const response = await fetch(apiUrl, { headers });
+        
+        // SE IL SERVER RISPONDE 304, IL FILE NON È CAMBIATO
+        if (response.status === 304 && cachedGames) {
+            console.log('[LIBRARY] ✅ File NON cambiato! Uso la cache locale.');
+            return cachedGames;
+        }
+        
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        
+        const apiResponse = await response.json();
+        console.log('[LIBRARY] 📦 Metadati ottenuti, download_url:', apiResponse.download_url);
+        
+        // 🔥 USO IL download_url PER OTTENERE IL CONTENUTO GREZZO
+        const rawResponse = await fetch(apiResponse.download_url + '?v=' + Date.now());
+        
+        if (!rawResponse.ok) {
+            throw new Error(`HTTP ${rawResponse.status}: ${rawResponse.statusText}`);
+        }
+        
+        const jsonString = await rawResponse.text();
+        
+        console.log('[LIBRARY] File ricevuto, lunghezza:', jsonString.length, 'bytes');
+        
+        if (!jsonString || jsonString.trim() === '') {
+            throw new Error('Il file exFAT.json è vuoto');
+        }
+        
+        // Salva l'ETag per i prossimi controlli
+        lastETag = response.headers.get('ETag');
+        console.log('[LIBRARY] 📦 ETag salvato:', lastETag);
+        
+        try {
+            const data = JSON.parse(jsonString);
+            console.log('[LIBRARY] JSON parsato con successo,', Array.isArray(data) ? data.length + ' giochi' : 'oggetto ricevuto');
+            return data;
+        } catch (jsonError) {
+            console.error('[LIBRARY] Errore parsing JSON:', jsonError.message);
+            console.log('[LIBRARY] 🔍 Prime 200 caratteri del JSON:', jsonString.substring(0, 200));
+            throw new Error('Il file exFAT.json è corrotto o malformato');
+        }
+        
+    } catch (error) {
+        console.error('[LIBRARY] ❌ Errore loadFromApi:', error);
+        throw error;
     }
 }
 
