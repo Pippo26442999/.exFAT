@@ -1,5 +1,44 @@
 [
    {
+    "title": "Blades of Fire Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Blades_of_Fire_DE.jpg",
+    "tags": [
+      "PPSA26311",
+      "v01.004.001",
+      "EUR",  
+      "DLCs Merged", 
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiREtnRUl4aTRyZFJiWGRJUXZ0V1QvRk13WWdXZW93Q2dkN1k4Tk5HT01ETVM1a0FzbDNESmNvNGtNakthcC9DbTdMTi9zbmd6SWh6encwb2duSHg5WW1tOU9HSTIiLCJpIjoiMmYwckV5OTRCcTFSaFZWeCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicmdsN09RYTcySE5heG42c1ZKY3psdDdxVkxzMXR2NmVUaWRFZ2EwTTRXeElJWE9jVVEwV2JobWVqRTZoWEhPdHFrdnZySDNTaE9jb3EwMmRBcy8zQVpyTEJJeWxVM1U9IiwiaSI6IlBOSm9JM3d3NFMrUHlmTGEiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRDZxaUt2dzJlQ0lWbEk5TWxwWXVsTURuYk9lTkFsM2E1cHJwWU5xaGxiVWJmSzVoaGRmajZ6WW5vMElVUk5LQkI2aVFHQ2d5VWRJeVgxdHowaUwzOGxveDRqeVNxUT09IiwiaSI6IkRveTNXdGVsVVNhSVBiSGoiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPta",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pkykzhack",
+    "popular": "on",
+    "size": "49GB"
+  },
+   {
+    "title": "Stroke The Snake",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Stroke_The_Snake.avif",
+    "tags": [
+      "PPSA10240",
+      "v01.000",
+      "EUR",  
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNTZwU2tnb0tDZUpQM1JrVEFTM25icUVsb2pYL2dGY1RsTlpHb0xKOUl6MnhaWmpsSmdKNUJZMWhkU0FVcDIzb0UvNFJQRTVJVW1yclJaTkNJaEtGOEI0bXQyY29LU3pzOTNjPSIsImkiOiJjOU16d0JHY2xqcmUxVDQwIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMDU2OUN1YzRRNkVRMXYveSthVzBOMTVyS043V0g3Tlc0Q2ZVQTJheGxiTUtjZzRTa013Z1ZiRDhTZXNuZVlhZ1hHZ1plR0UvQ2VGL0p2bmYrMjdNOWR0N29kUmlTMkk9IiwiaSI6Ing1VXdYcU93ZVFWNXIyVGwiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidklxbmRQMUJhTzFJYjhZUkhseldna2E4YWN4RVFKdzM4YVUrTDd5dGVLYlMzbmZ4Qmc3dVova3NwSjBob3dNVTdhRDRRc0dtZktjMDc3UzZOV0YzeDVPVmR6TEMiLCJpIjoiQVI1NlI2dnNZTzhMczBCdSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ1BrRXBXQzhvL2VXaGoxMG4rc1dWWVJXQkE5VkpQZldVZC83eStQa20xeWFlSGlYS3E3YjRUTndpa0dVNTE3Z21KNmdOOUhyamxFYzhsQ09qUy83dWUzajI2Zk9EUFU9IiwiaSI6IjlhQWEwd2U4NkttQTlJQ2ciLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiemNYVFN3bU43RVl4d0dseUl1cjc4WG1tQVNmOEdyak9TUmZhQXBoUUFMNFdwdFR6Z0ZKeFhFSURmNUVraGh6YmhIY2EyOHg0NDFsV05ZMWtBNVhScyt1Z0trZXp1Zz09IiwiaSI6IkYyRy9OZUVGTURENnhGdE4iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DLPS Team",
+    "credits_backport": "DecKerr97",
+    "size": "292MB"
+  },
+   {
     "title": "MotoGP 26",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/MotoGP_26.avif",
     "tags": [
