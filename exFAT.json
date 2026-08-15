@@ -1,5 +1,28 @@
 [
    {
+    "title": "The Dark Pictures Anthology The Devil in Me",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Dark_Pictures_Anthology_The_Devil_in_Me.webp",
+    "tags": [
+      "PPSA05921",
+      "v01.007",
+      "EUR",  
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicGFjV1hYUytkZ3lNMkZLUWNtaXBpd25ZUnZ0SmFNRTN5OHg1WEpNZUpMMlhwTXFjQ3A5cUMxazJUd0tOelloYVdNMkwwODdNbHlHOVkzZEgxWGEyM01waDM5K2FlVEdpT3JVPSIsImkiOiJQdmFZdFUyMzRQSnd3T0lGIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMzFUUlJmc3IzMGF5TjlYT2kza1VNNGF4V1R6OG13TWU0YnVtY1dJcElqWnZSbStuaVBXWUVSQi9hUFh4VUVQSU5HZ09pQlgwOW1HNnpySnZJclpUaEtDUDcyaGh4V2s9IiwiaSI6Ik5kVm8vbEpOdmxjSk9rV2ciLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoialZkb21Qa0R1OWQrTHJlS1IrSUdKcTY4U3hTUDUvT1dsT0o0czJpMzlhVEx4ek9ZU3UrWW9MUERZQTlaaklxZGVPcXN6YVNadUlnRkhZYjJLU015a29EWHlsRksiLCJpIjoibWJ2cVV2WXJ1SmZtUVJORSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYWdHSURjdmFvdk0xdFY1Z0hvSG5FV2QycGVJczdZQTdMT0lJbUVPZ0dVUTQrN1JhK2xSdFJjb3poTXhJSnl1cVl5K0NYQzk2MjBYY1JUbU9lczkyWnIrOHpwL2xJOVk9IiwiaSI6Ik5aaFo5K0Z2L3ZtOERVNmgiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL2s5WXNadlU0WmhsdHMzbGJ5SDAxa0tBNzRDUzRTMFF5OTBIL0p2WW0vRXZPRkMrdlRDNFdFUDJURHgrTG1TWmlCdHRTOEhaQk9Yc3lkZlpNcVY3T1dYUVEyZXFBdz09IiwiaSI6Ii95R0FsZ29tZzgrazU3KzUiLCJuIjoiVmF1bHQifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidUFET3M0c1dsRG5TMHh4a1JoTndzVU5EOXkvSXVnWHBMbVJCZGJkd3oyRVJyZXpiS2pvZ1p5T2JQTzg5UnlwMnRaWWxhYzV5IiwicyI6IlBzL2NLQ3dyWkd5Z2p2MXk2TmpaRlE9PSIsImkiOiJyVW5odmFZZW5oY0I5SFJXIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1VmZ014MGFmdCtOS0VaVHlDR3ljV3ZFS1l3ZjJYb1p3ZGJ1R1pZM05JTTgxQmR2RGZOWllBSGYyaUI4dVhUdkh3PT0iLCJzIjoiUjRKY2tVZHlXT3Q1YmUzUWk4T01WQT09IiwiaSI6IjBRdXdwa2szaXZnOTBRamUifQ==",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibEJPTElML0pFWmxWVjVFRHJzUVZxOVY4QVB4bEw1VGRWajZHTlBkZFduYTZmbGU3T01jMkN5M0ZYSjZPT2lSaTFzT3Z2aEF1M2h0V1hPdDFZSFRmVEFwYU1MMWJDWE09IiwiaSI6IjFpZi9sRDFzSnRXQkwvaHMiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pkykzhack",
+    "popular": "on",
+    "size": "62GB"
+  },
+   {
     "title": "Gungrave GORE",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Gungrave_GORE.webp",
     "tags": [
@@ -8247,26 +8270,6 @@
     "credits_files": "DUPLEX & Dorukhan & SuperPSX",
     "popular": "on",
     "size": "45GB"
-  },
-   {
-    "title": "The Dark Pictures Anthology The Devil in Me",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Dark_Pictures_Anthology_The_Devil_in_Me.webp",
-    "tags": [
-      "PPSA05921",
-      "v01.000",
-      "EUR",  
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRlhWRGZZUUJyMFNyWHE5TmNqN1BvNHUxeWZsb1o0TzBXTlY4LzFBMVNpKzg4blZWK2IxUG5vd2FJMlZhT0ZIbUl3WDNPR1NKIiwicyI6InE1WHJEL3AvK3lGWnU5Ym50SWZYMXc9PSIsImkiOiIzeEllUW5tN3BTU0ZWdUFKIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY08wYkZmUjBERjJSSkQwVHYwb1RvV2t5S2ZtcUdHWGcrRWY4ZXUvNnZJT0gremdkMWtYa1lWNjdXOXAzK1pCcDVZdUMiLCJzIjoiTjVTUThtOXlkQ1JMSGJ4eU1DS0Nudz09IiwiaSI6ImhSMytWS1dmeFNQRVJzYTUifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibG1sQzZHVUFlNlZ5eldsTmdPbUkrTXgva3NmcDd1RHBHM3ByT2VWaVRlRXM1UVBzS2pnSWI0eWJCUkY2Zis5eWd3PT0iLCJzIjoiSlFlL3JOR0MzZ3drYkdUUzA1YU9oZz09IiwiaSI6InB3Q0ZhMk9maDVlRTVkMXUifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidUFET3M0c1dsRG5TMHh4a1JoTndzVU5EOXkvSXVnWHBMbVJCZGJkd3oyRVJyZXpiS2pvZ1p5T2JQTzg5UnlwMnRaWWxhYzV5IiwicyI6IlBzL2NLQ3dyWkd5Z2p2MXk2TmpaRlE9PSIsImkiOiJyVW5odmFZZW5oY0I5SFJXIn0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1VmZ014MGFmdCtOS0VaVHlDR3ljV3ZFS1l3ZjJYb1p3ZGJ1R1pZM05JTTgxQmR2RGZOWllBSGYyaUI4dVhUdkh3PT0iLCJzIjoiUjRKY2tVZHlXT3Q1YmUzUWk4T01WQT09IiwiaSI6IjBRdXdwa2szaXZnOTBRamUifQ==",
-    "credits_files": "DUPLEX & C4our20 & TRIFECTA",
-    "credits_backport": "DUPLEX & C4our20 & TRIFECTA",
-    "credits_dlc": "Pkykzhack",
-    "popular": "on",
-    "size": "65GB"
   },
    {
     "title": "The Riftbreaker",
