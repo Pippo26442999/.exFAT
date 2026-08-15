@@ -1,5 +1,27 @@
 [
    {
+    "title": "Banishers Ghosts of New Eden",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Banishers_Ghosts_of_New_Eden.avif",
+    "tags": [
+      "PPSA10053",
+      "v01.006",
+      "EUR",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQldzOThPaURycUtyNmpzVS9uWGlNaFVmVDhGbDIreVJRem04alp3WEl2ajhrWU56TjBrTktNNk02c280TmF1MG85QzBGYkpOMkZJcTlHVmhqOExYYnVvMnNteTF2bmFIWmNZPSIsImkiOiJHNGhOcTJwYXVyK2xQNnUzIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSjNTdytzOWQzYVMxakNTZ3hvU0JMSzJsbENWc3lkZ3hjQittc0x5bXMrMTZac0JNM2RRaEpwenZacGRlRWdLdU5OVzd2eUNDN1BLaUZGalV3d2pwNHRtSmJNUVZGZ0E9IiwiaSI6Ik1IYkZOTzl0OUFWVFRud24iLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaSs5M0JFZmxhSWxWMVo5TjVhNHY5T1dScnNYWGkvaUNoQlBIcGo1YjBQelRwaVhicmIzRk9KNlllbUVGT2hjWmpXTzRYeUVCTXM1NkttS2N6WlZ3T2dnV0M2SkYiLCJpIjoiWVpqRGhOK1FrVzdVNC9PMSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiazE3Y3I1d1FpR2tLc0tuM2NlaGREVldlYlBUSHltSEF1am0wZWsxcm9zYWJGeE1IdlQycnQxYSt2ZUZzWFc4UWtQM2ptS0VvUWRTZVFQSnhpMTRXWWZGRTdvNUtIb2M9IiwiaSI6InkzYWdUU1lZWEM0Y0VvMGEiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYnR0bG0xZTI2cnBvOEFUMnRtRExWbnVrV0hnR2tmbkVsQzBxM0IwN3cvL0djVU5XTlRoZ1ZYNXlUd1k2dmpNVHkrTlkvSXFmWXFSLzA4amxRNVlabDhTVjJXMEhhdz09IiwiaSI6IlJQNHpBQ0RQOXRncHJiSmwiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "112GB"
+  },
+   {
     "title": "God of Rock",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/God_of_Rock.avif",
     "tags": [
@@ -5161,28 +5183,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "154GB"
-  },
-   {
-    "title": "Banishers Ghosts of New Eden",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Banishers_Ghosts_of_New_Eden.avif",
-    "tags": [
-      "PPSA10053",
-      "v01.005",
-      "EUR",
-      "DLCs Merged",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWWdGMEpEeTFET3VDN3oyck9ZVDM1eFpPYXI3RGZWMnNrSkhoQ3ZDQ3ZVaTdscmlTTXBOeXp2UjgzcGN1SDN3SlhNaFJrM3ZSdjlLV3AzUTh0WXZpNGkzTXdTRWlncThuK2U4PSIsImkiOiJ0cmpqWUJnNE5TLytyU2piIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiemIvL1pCdThta2xaSXlMLzRLRmdkV25rMHgrSHF6YWJGNXp5bXM3SkJzeW85bEUvMy9xZGtZeDJleHlhYlZwRUk0Z05oK3kvcTNrVmxrQWtmelJwQnpVVHJJcVNTYXc9IiwiaSI6IldrMERIQlE4UWxRaVJJR20iLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibXhmdXJDTjRpbUduNUh3T280MlVPNkJNaWxMT2d3eEpLOGtaaU9vcnh5ZU1SZ3dBSThObEpCLzhFdmxvaVRWSmQ2ME1CRHZDalpSTDZSdnlNTUtWQkZ6SzhFbkYiLCJpIjoiSkxubWtMQmtMZHJibTlZNSIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSEE2U0RMOFBXZ0x1c2w1Q1F2UWVOTjJOTFVtZnNhSjFqdmJ5Y2VjeVhVVWI3SzNJZldHTnVqc0J0RlE0cGFOV0JzN1haQnZEQldDK0kzM3ZnWHdBQ3VBUm5KTVltM009IiwiaSI6Ik1WYzBJMlp4K1pWdmZBMkMiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicHdhR1B5Y1NFdTdTd1cxaUM1QUZNMzZxOUZBR1JqRUFIeHViaFFQV25RR0N5L2Z1dFhwRXh2cEhtMXliT1lCWUJNVU03OG85ZFRnYnByRTE4SXQxdERhSUR2QXFIZz09IiwiaSI6IndVTUw1MVdGS0RBSE1XSi8iLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "DUPLEX & Jose Carrion",
-    "credits_backport": "DecKerr97",
-    "credits_dlc": "Pippo",
-    "how_to_play": "Fix the problems discovered after the prologue that does not let you advance. Also included an optional 60FPS patch for PS5 Pros. Wanderer Set is Unlocked in this release.",
-    "popular": "on",
-    "size": "112GB"
   },
    {
     "title": "EA Sports WRC",
