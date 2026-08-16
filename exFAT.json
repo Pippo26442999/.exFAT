@@ -1,5 +1,45 @@
 [
    {
+    "title": "Yakuza Kiwami 2",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Yakuza_Kiwami_2.avif",
+    "tags": [
+      "PPSA31333",
+      "v01.014",
+      "JPN",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibFhxOHVmYm9NQTFMNWVVTGk4anhwYVF5b0Z2M2cyZDIvenRwNUYvNUxhSTB5MHN4aDE5QzlGQWtXeGxWenlZVkZuZ01IZVRXZ1ZIVjFPc1ZBNHVHU0Rvcm0wMm5QSGc9IiwiaSI6InJFQVJmeXdUbmx2c2FHaDAiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU3VydXRHYkRNWElsaDJ1Z0VXUFRFZ21UU29nQjIyS2VvOUsrSXBBT0xaanh6dDIyUDRHQmg2dzZxWEdzWTk0RUhpbE82MFdrc3h4K1FJUFVXZWZmcDBwbURxNFoiLCJpIjoiTllKb2w4RS9OSm11b3BrVyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZktJZ1VHc1Nib3lYay9vL1pJZU9CaVJHcGtHK0tMOStKUktVNGl3dnVqOEJ4K2FSQUhxaExsVGpabENVa2NIY3BuL0c3cW9RcXd2OTNHbWFLOENTNUczdXo1emRaZms9IiwiaSI6InJvYWZ4bzhUR0plRkp1SGEiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZm5LY2F3enhUQ05SNm85QUpCNHZMR3FwVHRoNitiZm4vNzlrdnpVYjI1TTRZVUVrZlRUTlVzYXlWYXl4eWp3eXBQNzRtenkyRitTRUdjNWtkUnZyREwvSWcxZlhIQT09IiwiaSI6Ik9vQzJqTGhRQzFmM29DVUUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "36GB"
+  },
+   {
+    "title": "Yakuza Kiwami",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Yakuza_Kiwami.webp",
+    "tags": [
+      "PPSA31334",
+      "v01.012",
+      "JPN",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTUE3aGRrOXlVR2QzS01FRmM3L3VnOEExUUM2NnY4SzJUZTRNRWFES3FocFVXZGRnWUhkcVFReTdLSGJGUlhqajJROEtnaDd0dVdvU2NsNFF5bDEwUUFQN1hsdVFDdFovNHFzPSIsImkiOiJ4VnZuUmhyOUZTYkhvUHVFIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY1c3eG8wTTJqbXVIeG1lZDA0cVhYRVAyVnBtckd0QzUrV3NrR205Uk5wZGxJbjZJUCtzNk15cnRvRnJzbjloWDVIcmNvMm9QdUR3Nzd6SG96Mkl0ampoYUNtY1ZMUWc9IiwiaSI6ImplRGkxNkxNZ1VIckhKK2siLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU3FvaGZFNU51TytiRDlQTWlqQVN4UVBKTGlFWHlrTDFYUzhKRUtUQ3pyUHRJaWZuV1VyNTZVcEpsUkpvV0M4Q2I3ZFFCZnlRQ1pTNVVQUDlnMTA4L1kzVHFJME0iLCJpIjoicVQ4dVhqcVBRZE10YlZOcyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoid0FWS1k1aTRjSTcyWktlRnVZY1JOMXNmSVVxelZ2UENQNjZNWW5TRWt1b3VxRWVLUDNwNkhuRTE3Unl1SzVCT1NPUnVDNmpOWUM2WXFUVTY0NnFXWHdlaUZIR25Vd0U9IiwiaSI6Ik10dkc3ZktjeXNKUnlBd3IiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSkJEY3FOZElyRFVKamsxTm1CQldzT3ZISHgxTE8xVVh0aGlpWUxMd08vQzZQMHVvS3hQVE9JTWcydjlEOTZtSVJDRTRnU3BHSGE4VS83bDBBbUZOWXYzL0dnRXdVdz09IiwiaSI6IjBOUFhtc1NQb3U4YzFKakUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "21GB"
+  },
+   {
     "title": "Yakuza 0 Directors Cut",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Yakuza_0_Directors_Cut.avif",
     "tags": [
