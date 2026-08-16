@@ -1,5 +1,27 @@
 [
    {
+    "title": "Hi Fi RUSH Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Hi_Fi_RUSH_Deluxe_Edition.avif",
+    "tags": [
+      "PPSA17169",
+      "v01.004",
+      "EUR",  
+      "DLCs Merged", 
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiR3dHTm1aTVRSdEF4NlVZaGw2UWxtUitJSnRJdWVhWTlDVW5nMjdJRFlhdlhxYmUrNyt2Sis1dWdPN2hmajN0SmYvakhoK2Fub3h0Z1hOT3ZHaC9EZXV2RXpmb01uWjA9IiwiaSI6IktLZWowNTdlNlY3NCtTMjQiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTjUrV3MyT2wxSm9tTVpyM2FMcW43UnVYQzJlKzJXamJFVno1aDdOU0hUazFMMGEvUXZpZ3V3Rmk2cytWM1pkVXZBTGNVd3ZEWnAxZXNyQndIbzlHa2E0Y0tNdUsiLCJpIjoibWJ0Q21LdU0ydm50L243ayIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNkJUUndycFVvazZRNmUxeEhyRXlTUmVDYmFZRVY4SVVOa1FxT001QTRvY3k0eFhtNG9ON1NoR1RvU1JRTTN4WC9YMzlLZWxUQk8vN0wvS1Zqd3FKWXlhV3d0MkZSdVU9IiwiaSI6IlFTdnFyQmt3MFoxa1lYUTYiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZnNMWjdYd0t4VTdkZFJiV09ad2d4RG1TcmxCbHgvRVMwNE9SdWtGZURmaXZ1WDJLNy9hODZxaHV4cXBraThnUjJQT1BOMmJDbGNsTE9LRzVYTGRLaW1hNWdzVW9RQT09IiwiaSI6IkxnTTdzNWxsVlEzMi8weFYiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "DUPLEX",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "36GB"
+  },
+   {
     "title": "The Dark Pictures Anthology The Devil in Me",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Dark_Pictures_Anthology_The_Devil_in_Me.webp",
     "tags": [
