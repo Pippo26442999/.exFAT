@@ -1,5 +1,26 @@
 [
    {
+    "title": "Yakuza 0 Directors Cut",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Yakuza_0_Directors_Cut.avif",
+    "tags": [
+      "PPSA31327",
+      "v01.015",
+      "JPN",  
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidW16NEdpQXJGcnhYVHM0ZU5Ka3JIVE5TbXZhay9sYzh3bzNuN1JCZkQ4SE90dW1jKy9mR0g5aHZydi9NSnVSWElCQVBua2VJTCtvRWN4SUY5MXM2K2UvMXRsVEFlSEU9IiwiaSI6InRYazNXU29UVGp2V3kyQVMiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicEl0SWtnWVZ6R01ydDNldFQxdW5OdzdGUWhML2ZMQS9ZY29PbDZjUEZjbUYxZWFmTWRjWWVYSVlOTXFPVGV4Q2o0UnpSS3pRTnlReTJINHR5dEhReHppaXplVi8iLCJpIjoiU2NxMVZmTDltcDYrTWtvSiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZGVSRzI1UFExQ2M1Vll5NGJDem8zbncwQm1DSGFncjcwc2NvaDBPOXlLT3cvZERRa3g4bzF5VzJneXBGcmtGbmc3ZFRRSzAwNlFSZzRoNVhzUURVV2k3bm9lSlo4YXc9IiwiaSI6Ik02bFI3SFAzTFhtODNWNFUiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidW5UNGJ4QVRnWVZBU3dYQ0tNcUt4bEdvVHpScHBzRy8xd2lPSldpZkNsQU82eURCWHNIUFVDSW9UOW1VZEw5dTZaTGoxUUIvRnZJSjE3aENQd2lENklpVWtEWXdIUT09IiwiaSI6IllaOEVmWnFXWEVVMjlMcFgiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "Karaoke Crash Fixed.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "51GB"
+  },
+   {
     "title": "Horizon Call of The Mountain",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Horizon_Call_of_The_Mountain.avif",
     "tags": [
