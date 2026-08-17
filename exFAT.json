@@ -1,9 +1,37 @@
 [
    {
+    "title": "Call of Duty Modern Warfare 2",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Call_of_Duty_Modern_Warfare_2.jpg",
+    "tags": [
+      "PPSA23012",
+      "v01.001",
+      "USA",
+      "DLCs Merged",
+      "Standard (9.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ1FoNXZmRmZFaHI2bGtqNHQ2ejI4RnR3VTYwdHhveWVqV2ZiY2hwRHBEWTBOb1VEV2JWQUJFWi9TK2VWK3N4RnRHaTd3Qmo2Y1ZqWkJ0aVE1d0Q1SkpxeFVadVVoUEJ0NjVNPSIsImkiOiI1eEtCSmlOVW4wTDV4Z25DIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOW9uOUdRWUtudmEyditodTd6T2tCQmU3cnlPa3YxbE1BUFliY2NVdU1vY0o4U0xHMTJJdEJ4VG1IbUdYcDBLakR3K3pGV2d4aDJSNDNkK1pJUEdLOC9vTWQ0OEtBT289IiwiaSI6IjZPWFNuWnkrMmwwRjhQdTYiLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN1g3TS9QbnUxSEpnY0ZDRkdYUHVOUXp6eWFEYW1PeExYd0lHSi80d2NkOCtJb3EzY0FOUVBLWVFrdFpWdHBXYjlETUxkd0wxQVlLWTNFNTl2THlJejlEYStTR1YiLCJpIjoiNzRsdU9FTkVJbStWajA5ZiIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieEhIYVFIQUV4dVcvV01ZUXlOMnhWQ0sxalNEZW9lUnN6K1VWWTBhN3RUbmJQZFZPRC9vbjRzU1o4WEtsYnd6MlYzekZQay9YV1RMai9SWVA4WG4ySlgrTks4dGtJQ2M9IiwiaSI6ImZhQytwYXNsQ0RzNVl6VFIiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaWJBQ0hXZDd1K0UxTEVKZFBVU2VWQStVUS95U0E5dkFYU1l0Q0JpZCttYVhvYThxcmY4SmVUbzM0aGlua0NOTmdGZUpsMmpXT0FxcmtGZk9kR2Y5QXVQWGZocnp6QT09IiwiaSI6IlFPd0t5Y2xJL0dNbXB2VnAiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "",
+    "backport_viki": "",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib3FCT21LV1JqeE9qOXhoZlZjSWhaWUh3MnUrV3ZmMmtjemZhMm10UGtmeVZJc25jZ0hZbEFiUGNPQ0JlR3hSaE5BRm54TUQycnpvcDR1cWdhZUlsU0RQQ3pJR08iLCJpIjoibXBLMDhYS0tBWHdqVmR1cyIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT05iWTBDV3E3cWs1a0g5cVNQUzBmZHZVODVFcjNuNitJRGxrL3B4c1RybjNGZi9sSXJUWEFhMVp1K2lKSkhlbmx1cHVPdnFaMUdBc2d0eVBpYitYUnpMU1BTbC9jaTA9IiwiaSI6IllnVmFnanhwcG4yOTNHTkciLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUJNeWQyMm15RmNUK2hROWoxS3oxSTU2aktKOHZXY2JzREw4eUpOWFFKU0Z6b1Z3ZUxPR2w3YW8rZEdVeHcxRjJFTnJKODhUV3E2U3dDTnV5Nys0ckR2ZEdzbFFNUT09IiwiaSI6IkFkNW5HS2d2K2xuM3NFcG0iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "Mode Available: Campaign and Multiplayer. np-fake-signin required for playing.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "195GB"
+  },
+   {
     "title": "LEGO Brawls",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/LEGO_Brawls.avif",
     "tags": [
-      "PPSA18629",
+      "PPSA06406",
       "v01.000.009",
       "EUR",
       "4.xx BackPort"
@@ -4449,28 +4477,6 @@
     "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "25GB"
-  },
-   {
-    "title": "Call of Duty Modern Warfare 2",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Call_of_Duty_Modern_Warfare_2.jpg",
-    "tags": [
-      "PPSA23012",
-      "v01.001",
-      "USA",
-      "DLCs Merged",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ1FoNXZmRmZFaHI2bGtqNHQ2ejI4RnR3VTYwdHhveWVqV2ZiY2hwRHBEWTBOb1VEV2JWQUJFWi9TK2VWK3N4RnRHaTd3Qmo2Y1ZqWkJ0aVE1d0Q1SkpxeFVadVVoUEJ0NjVNPSIsImkiOiI1eEtCSmlOVW4wTDV4Z25DIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOW9uOUdRWUtudmEyditodTd6T2tCQmU3cnlPa3YxbE1BUFliY2NVdU1vY0o4U0xHMTJJdEJ4VG1IbUdYcDBLakR3K3pGV2d4aDJSNDNkK1pJUEdLOC9vTWQ0OEtBT289IiwiaSI6IjZPWFNuWnkrMmwwRjhQdTYiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN1g3TS9QbnUxSEpnY0ZDRkdYUHVOUXp6eWFEYW1PeExYd0lHSi80d2NkOCtJb3EzY0FOUVBLWVFrdFpWdHBXYjlETUxkd0wxQVlLWTNFNTl2THlJejlEYStTR1YiLCJpIjoiNzRsdU9FTkVJbStWajA5ZiIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieEhIYVFIQUV4dVcvV01ZUXlOMnhWQ0sxalNEZW9lUnN6K1VWWTBhN3RUbmJQZFZPRC9vbjRzU1o4WEtsYnd6MlYzekZQay9YV1RMai9SWVA4WG4ySlgrTks4dGtJQ2M9IiwiaSI6ImZhQytwYXNsQ0RzNVl6VFIiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaWJBQ0hXZDd1K0UxTEVKZFBVU2VWQStVUS95U0E5dkFYU1l0Q0JpZCttYVhvYThxcmY4SmVUbzM0aGlua0NOTmdGZUpsMmpXT0FxcmtGZk9kR2Y5QXVQWGZocnp6QT09IiwiaSI6IlFPd0t5Y2xJL0dNbXB2VnAiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "High-Speed007",
-    "how_to_play": "Mode Available: Campaign and Multiplayer. np-fake-signin required for playing.",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "195GB"
   },
   {
     "title": "Crimson Desert Deluxe Edition",
