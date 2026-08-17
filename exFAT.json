@@ -1,5 +1,25 @@
 [
    {
+    "title": "NHL 26",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/NHL_26.avif",
+    "tags": [
+      "PPSA06406",
+      "v01.060",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVGNMOW5sZUJ3YjRHaVdNQmhFankxa3RCMkpyUkZWbGF0VkRzdHh6Yk8zbFZsRFRscmdZb0FlU3NYNW94bWlmdmE5VkZmTUhPVjRMYVVKZE56YzVDNWtlOGd6RzVCMk5HRnY4PSIsImkiOiJNLzE0QUhPUXZ2WHZ6ZmNRIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQzFjZk1hL2c0RnFRUllKU3RSTnhGOTdBZWxMZ21wL0pPL3RSait6U3dCbDBseGd5cDFUL1JyVnZZUTV1aFNoUmcyUHhGUXRNTURzUEt2dmZaSmxDVFVjMHdxUG0raGM9IiwiaSI6IndoYjFwaU44TW1vYWpTbjUiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicW9VMS9obGkxQk5hWDBYZ2JNaGEyZyszUDR3dEhVODR1T21Lb2hKc3BZL3hhVWgzUU5vWnRJMlcrckJocnd1OE5wVkF1VDJqVCtBdkZFd3hMdFI4QUJ5ek5Yb0wiLCJpIjoiZUEralk5Y0VLK09jOXJIdSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUXZ3MXdSSHVIOWFVRUEra3UyaHV4cGJ2L2ZIWXJwYTYzWFZRMk8wNjBia1dlQnlnbFo4U1lPSGxJOTVvdG1hUjJDQVRUcEhTSUE1QWxveEpLK09VWnM3VlNTUDlMZ1U9IiwiaSI6IjZONzczMjNaRk1QV1N4ekYiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibWthS05yZHdvR2o1RzUvaGZZZWpySFAwS2NMdXR3eHV6OGtFTkRZNzFJY3RFa1lVU2tpWDF2V0JtQ0pTTnZGT0p5V2V2c2k2L3loK1JpaFhCU3hHQ09RTXVSaG1pZz09IiwiaSI6IjVaTHJidHNQelJMSElMclUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "202GB"
+  },
+   {
     "title": "Call of Duty Modern Warfare 2",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Call_of_Duty_Modern_Warfare_2.jpg",
     "tags": [
@@ -7,15 +27,15 @@
       "v01.001",
       "USA",
       "DLCs Merged",
-      "Standard (9.xx) + 4.xx BackPort "
+      "Standard (9.xx) + 4.xx BackPort"
     ],
     "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ1FoNXZmRmZFaHI2bGtqNHQ2ejI4RnR3VTYwdHhveWVqV2ZiY2hwRHBEWTBOb1VEV2JWQUJFWi9TK2VWK3N4RnRHaTd3Qmo2Y1ZqWkJ0aVE1d0Q1SkpxeFVadVVoUEJ0NjVNPSIsImkiOiI1eEtCSmlOVW4wTDV4Z25DIiwibiI6IkFraWEifQ==",
     "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOW9uOUdRWUtudmEyditodTd6T2tCQmU3cnlPa3YxbE1BUFliY2NVdU1vY0o4U0xHMTJJdEJ4VG1IbUdYcDBLakR3K3pGV2d4aDJSNDNkK1pJUEdLOC9vTWQ0OEtBT289IiwiaSI6IjZPWFNuWnkrMmwwRjhQdTYiLCJuIjoiVmlraSJ9",
     "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN1g3TS9QbnUxSEpnY0ZDRkdYUHVOUXp6eWFEYW1PeExYd0lHSi80d2NkOCtJb3EzY0FOUVBLWVFrdFpWdHBXYjlETUxkd0wxQVlLWTNFNTl2THlJejlEYStTR1YiLCJpIjoiNzRsdU9FTkVJbStWajA5ZiIsIm4iOiJEYXRhIn0=",
     "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieEhIYVFIQUV4dVcvV01ZUXlOMnhWQ0sxalNEZW9lUnN6K1VWWTBhN3RUbmJQZFZPRC9vbjRzU1o4WEtsYnd6MlYzekZQay9YV1RMai9SWVA4WG4ySlgrTks4dGtJQ2M9IiwiaSI6ImZhQytwYXNsQ0RzNVl6VFIiLCJuIjoiRmlsZUsifQ==",
     "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaWJBQ0hXZDd1K0UxTEVKZFBVU2VWQStVUS95U0E5dkFYU1l0Q0JpZCttYVhvYThxcmY4SmVUbzM0aGlua0NOTmdGZUpsMmpXT0FxcmtGZk9kR2Y5QXVQWGZocnp6QT09IiwiaSI6IlFPd0t5Y2xJL0dNbXB2VnAiLCJuIjoiVmF1bHQifQ==",
-    "backport_akia": "",
-    "backport_viki": "",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMzY3bXpOd2FJYXNNbEdLbjFjZFloZlQ2SFptVjlYMWlXNmk0dmRxUFFEUVdiYjZZT0VOYVpSRm9ObjVqMk13aEtBZnVzZEFKdkkxVzdtVlgxWUhZY2hYUUVIZTBqVHVpRjljPSIsImkiOiJXOG1tdGtJemZEMC9jUHNHIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWTR4cGhRT3lVcXF5Z0NJT2hpbGhLRGQ1NXNtKzh5Qld6Z0c0L01KN3pHR3hQUWFQbU4vb05POGcydGJnZkJUZHpocHBjbDVyQ29ZNnFvRDlEMndaZnN5L0VXaHhIS0U9IiwiaSI6ImluLzQ2T1hkcVlERHNsa0wiLCJuIjoiVmlraSJ9",
     "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib3FCT21LV1JqeE9qOXhoZlZjSWhaWUh3MnUrV3ZmMmtjemZhMm10UGtmeVZJc25jZ0hZbEFiUGNPQ0JlR3hSaE5BRm54TUQycnpvcDR1cWdhZUlsU0RQQ3pJR08iLCJpIjoibXBLMDhYS0tBWHdqVmR1cyIsIm4iOiJEYXRhIn0=",
     "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT05iWTBDV3E3cWs1a0g5cVNQUzBmZHZVODVFcjNuNitJRGxrL3B4c1RybjNGZi9sSXJUWEFhMVp1K2lKSkhlbmx1cHVPdnFaMUdBc2d0eVBpYitYUnpMU1BTbC9jaTA9IiwiaSI6IllnVmFnanhwcG4yOTNHTkciLCJuIjoiRmlsZUsifQ==",
     "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUJNeWQyMm15RmNUK2hROWoxS3oxSTU2aktKOHZXY2JzREw4eUpOWFFKU0Z6b1Z3ZUxPR2w3YW8rZEdVeHcxRjJFTnJKODhUV3E2U3dDTnV5Nys0ckR2ZEdzbFFNUT09IiwiaSI6IkFkNW5HS2d2K2xuM3NFcG0iLCJuIjoiVmF1bHQifQ==",
