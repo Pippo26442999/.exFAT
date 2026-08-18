@@ -1,5 +1,33 @@
 [
    {
+    "title": "Call of Duty Modern Warfare 3",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/CoD_MW3.avif",
+    "tags": [
+      "PPSA01649",
+      "v01.055",
+      "USA",
+      "DLCs Merged",
+      "Standard (9.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSERYK2JveThYSjY0RC9xSlhuQVpoQm5ydlBZS0Rzc3Fxd3k1aSs3VXgwYlFxRXEvTlk2K2hwMVR6Ny91aHk4SXZodkFEN3JtdzlVdjJkeGNFVGpDNC9hYjVpU0ZsNVFobkRjPSIsImkiOiJpd2ZpdFJFSmwrbU1jN0pjIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidXdDQ2JKRW5nWDU1Z1hDb0ZIaWZtSk1DMDRkbGRQUGlkNG9sT201OUxiUVBzRndRQmxqeUwxNGs3cXNZdlByOERtQzRST05vK3pXREpWVnMzQVZKUVJLZHJtbGVMakE9IiwiaSI6ImhVTVpaNTcreHYvOW9BTFEiLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSjFNQzNRa0hIQzBxc1VJWGUveFhKZUtWWFNMQWd5bDRBL3gxRWV5Mk93Mjc2Q1ljRHJ1SXN2UjM0K3htMThRZ2VxWGdDQkdTTVNGVTIzUFJQODluVW93OVZhRGMiLCJpIjoiRHBmclc0aGczckVnd3VRVyIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZmdrNitHWjdTTnE2YWZOTk0xSEVaZ0Fha21LZHRDdUZKVkJWR2tQSElHZW4wbmxNaGZRcTFMMENZY3lJUDhNM29JWEFCSEoya2d2ejJ3ZnNZVW5LaTNwWFdnR0NWSk09IiwiaSI6InByS1ZZMi9oVVR1QzVleksiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQlJoVjJOdS9tT2Rra21DaVlqS3ViZFdIang3RlptNjhnUDBpNGduY1FsZjE4SzNwN3dPT054KzFoQWk5NGc1Vjk4WThudmZIaE9nUkZmY3g0ZDR1dnpqMWV2S294dz09IiwiaSI6ImZvOVpyRTM1M3lDM0l6Mk4iLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTEZDa0VUUFZ3RDJaSTh6WG84RzdmL25FNVpRbzFqN0FZTGFCMU5tKzRtODEySjVHMUZCellUSHZ5SklBeUg0MVFvMUpBQVA1YUZBeGN1cGtveTZ0ZmZ4TmcvOURPZjQ9IiwiaSI6ImkwUERmbGNkbFJhQm5jci8iLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWHhqYThHb0FJMndxWjczZk9pSmlSNUdLQUk1ZDZhanJKdUxtaW0ycnRib21FL0RnZFpYN040VUFRYUV2alFla05lcUtVYUpPTkhDcjFLb3FvV254RWo4Y1pqSVkiLCJpIjoiMEw1NkRzNjdYTW1OZFBLMiIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVms5ckdtZGI1WTYydThIZlZ0dU5NYmVPK1g0M0RSSzB0VlZSRTBpN0xKNXNQSFhDSUdyaUVaTHprWWR0SHBucm5sYms3a01Wb1NjeW1iY1UyQmtNaUNjNkhyejVYNmc9IiwiaSI6IjMxRHdZZTZvSEVVenJqYzIiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZUNCaisrVmUycUhMaGs2Z2ZzSkdyRlZxUDVGMTZ3QXhXQkVYcmwzRG9KSVMwVmsxb3dhN1I4WFV3Q2ZZd21rekVka0pqSlJmVTE0d2w2R2RTcktLTGcyeHJ6R2RyQT09IiwiaSI6Img5N25ySFRqWldwSzZPQjYiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "There is issue with campaign not launch. How to fix first: make sure turn off internet in network settings then launch game and choose offline mode and go to campaign MW3. You need keep press X few times to launch Campaign.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "256GB"
+  },
+   {
     "title": "Battlefield 6",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Battlefield_6.avif",
     "tags": [
@@ -2280,28 +2308,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "139GB"
-  },
-   {
-    "title": "Call of Duty Modern Warfare 3",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/CoD_MW3.avif",
-    "tags": [
-      "PPSA01649",
-      "v01.055",
-      "USA",
-      "DLCs Merged",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSERYK2JveThYSjY0RC9xSlhuQVpoQm5ydlBZS0Rzc3Fxd3k1aSs3VXgwYlFxRXEvTlk2K2hwMVR6Ny91aHk4SXZodkFEN3JtdzlVdjJkeGNFVGpDNC9hYjVpU0ZsNVFobkRjPSIsImkiOiJpd2ZpdFJFSmwrbU1jN0pjIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidXdDQ2JKRW5nWDU1Z1hDb0ZIaWZtSk1DMDRkbGRQUGlkNG9sT201OUxiUVBzRndRQmxqeUwxNGs3cXNZdlByOERtQzRST05vK3pXREpWVnMzQVZKUVJLZHJtbGVMakE9IiwiaSI6ImhVTVpaNTcreHYvOW9BTFEiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSjFNQzNRa0hIQzBxc1VJWGUveFhKZUtWWFNMQWd5bDRBL3gxRWV5Mk93Mjc2Q1ljRHJ1SXN2UjM0K3htMThRZ2VxWGdDQkdTTVNGVTIzUFJQODluVW93OVZhRGMiLCJpIjoiRHBmclc0aGczckVnd3VRVyIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZmdrNitHWjdTTnE2YWZOTk0xSEVaZ0Fha21LZHRDdUZKVkJWR2tQSElHZW4wbmxNaGZRcTFMMENZY3lJUDhNM29JWEFCSEoya2d2ejJ3ZnNZVW5LaTNwWFdnR0NWSk09IiwiaSI6InByS1ZZMi9oVVR1QzVleksiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQlJoVjJOdS9tT2Rra21DaVlqS3ViZFdIang3RlptNjhnUDBpNGduY1FsZjE4SzNwN3dPT054KzFoQWk5NGc1Vjk4WThudmZIaE9nUkZmY3g0ZDR1dnpqMWV2S294dz09IiwiaSI6ImZvOVpyRTM1M3lDM0l6Mk4iLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "High-Speed007",
-    "how_to_play": "There is issue with campaign not launch. How to fix first: make sure turn off internet in network settings then launch game and choose offline mode and go to campaign MW3. You need keep press X few times to launch Campaign.",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "256GB"
   },
    {
     "title": "Teenage Mutant Ninja Turtles Arcade Wrath of The Mutants",
