@@ -1,5 +1,25 @@
 [
    {
+    "title": "Battlefield 6",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Battlefield_6.avif",
+    "tags": [
+      "PPSA19534",
+      "v01.000.016",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRndUZkltRWNwMWd3d2U4TXhlUkJ3NHByS1Iyb1FXWS9rcVhucTcyOXlNMTZLUUVCZ282YVc4YXJlZUFIc0FYY3R4eTVQMWJqRkFUSlNVcG52MVUyLzc5NXZma0siLCJpIjoibDJMSUdMNXRoQjRYRlJ3OSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM0w5TnNmQkJqVS8zZk9EQkVsQTJxcE83UXZ3YjVvSGhoZ1BmYjRuS1pxbFJnQmUvTHlEQ3dqd2hPOXlwNDA0bGNVQ0pOU0ptMmhZRGllb0crR1dubWx4NEJsem9Vemc9IiwiaSI6ImVFNXFMUVZqSmJjeWZZOWYiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZU03M1RSN0RvOG9xN1Y4M0k3UE5aZnFXcEdHcWpHR2F4RWZYUWg1QkROcllmMnlnSkJGdHl3SVBseGxqYXhGd0RJM0hzdmVVMzhxTFhLbWc5SmxPOTZyN01MRmhDQT09IiwiaSI6Ik9aT3ZlV3ExN2tuc2VocTkiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "234GB"
+  },
+   {
     "title": "NHL 26",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/NHL_26.avif",
     "tags": [
