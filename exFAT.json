@@ -1,5 +1,54 @@
 [
    {
+    "title": "Sonic X Shadow Generations Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sonic_X_Shadow_Generations_Deluxe_Edition.jpg",
+    "tags": [
+      "PPSA17597",
+      "v01.012",
+      "USA",
+      "DLCs Merged",
+      "Standard (9.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQURhUmxNREZ6b1dORm9xUDJMK00xd2h6RnY3SzlhZlRnZ2FTZWx1eEZVOE9ZVmQvK1pDb2pLNlU3RDkrTy9iYldXL3V3R2dvZ3NKZ1BmZkYzNk1ORG5wOVBQNDc0cTJTcGNVPSIsImkiOiJqU1ViMUd2Y0E4K25ZQm05IiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOERCQ0ROTDFZd21HdkhZMy9QeHo1ZnNZMVVJOVk2RVR4a1hPUEFmTjJRcXo1TzhEMVRmWnExMDZ6VWFOZTNpSHRrTmhHdmFzVTlGZDhMZ1pYUTNNRXc5QlRNSDVXZGM9IiwiaSI6Img4dVJzNU5uVHkyK2JxeGoiLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVHI1d0s2ZWJWclBzMEx5OFhwVjNKSWVKZElQZGRJYWFDcG1oL2tpb0wxU2N0bkMwZCtnOU82N0ZiRTRaa3JRZmJrWE9NNnlLdWZsekcya2xhbkU1a3ltbWwxSkciLCJpIjoicU5sWXV5ZW1BejBjb05PSiIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic25hUjRLOExmVjN6bkdBL1hKTFUwSStHa0VBZGVBMjRqRlJPU0d3WGJ2QXl5aWpOMTVQb0lGNG5TTWRVaGlLSkRVcTZwZ01QRjlSZVRGc0dBNGw5VCtLWnBOK1k2MDg9IiwiaSI6ImMvOUNkbzMvMEhLcDRKRi8iLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSWNEd2lHaEx5eHpOaEdGRWxEQlMxTnJJZjJDcVVnSmQ1c2ZqS1hyYzlwZm1vU2Z0MHk0Yms4aDBqNklVMjM2bGVNcWp0VzBsTUtYaFRXMGorODNZbUU1S2t4RUNmQT09IiwiaSI6IkxUd2Z4TkgrUEtiaVg0VUsiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidHQzUnk2d2NRY3FibmRZOUR4L3JUNWw5alFZUFc4bnBpaE9qNHRYNGhGWXZqTkhsS1lpRFE4NWQ4eHV3SCtxRkhhSCtWTlpZVlN4T3FvTEdQNFRBR3NKb2N4QVhRVHdKT3FNPSIsImkiOiJNaXhkYXRQQVJlbkdlRUpnIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibStJLzdrcS9BSlp6N2UraCtCcjc4Z0N6TytxcDFsR2VHZTEvNWlRN0VLcVVvb284U1JBRTJQQVA4SnQ2V3I3MythSEdwVjFGZ2ZXUVhBVFVPQ3dudTFDWDVDa1hxMWc9IiwiaSI6Im1TaC9wOFVFeW1CTGo2RHMiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib2licDdOeXo3VHdXSHYxSkErV3l5dmVjd1JqM256MFdtMmVNbmhSOUkvOWs0b0Mwak9LMUtUTmxFVy9sOUpNY0x1bHFGR2N1RWNBalhDSUk1alBZYUxkd3VsSG0iLCJpIjoicThUUGRNRkdsaU45SVF0UiIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSG1QRkNhMGJPVjFXcThQNWFpWWpBTDY1d2Qva0VwbWhoMFpNMVF3VzZOd0l6OCtzeDhqVHhBMHkza3NtWXZOV3FWK3VWaGljNWt1Nkg4R3lUYjhpTWV2VGVYdGk5RFE9IiwiaSI6ImlKZG5SYUdtUVpONGV2WW0iLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMWd5WXhJM1JJNHhqZ2VqQzkzS3NoQ2pOa0tXZmpsQUlveWs0dGdhR0NuUU1qS3JxSE9DeU5ZZHRGL1hQVzVSS1ZLNDI1NXo2eDF3cGZDbHpEeFpMUS9yYVR0OWkvdz09IiwiaSI6InV2QkxCa3hJL2poNWtkeEoiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "Pkykzhack",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "37GB"
+  },
+   {
+    "title": "Nickelodeon All Star Brawl 2",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Nickelodeon_All_Star_Brawl_2.avif",
+    "tags": [
+      "PPSA16745",
+      "v01.000",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV1FiUDN2ZXRrKzBialZra1Z2Qkc0b2crOW1ibWZOWDRGKy9UdmhyQ0tZYUxPSythODgwcERNTXA2UEptaktnSks2UkxBc1FkZVJkSEtuS3JGUHNTYzJkeVdsazE4cEt4VUp3PSIsImkiOiI4MnhpMkZaendseWkwV0JUIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaDdYRmZVOGFCZzE0UFNlTDlDWW1qcmgrU3JiWE5RTXcxS3NwVngwbktjckpXRDV1cXBqeis3VVFxdXQ3U2VENjZhZ0J2Wkh2WWVXRktiVXBibjdzdmZPay9LSklDNzg9IiwiaSI6IlV4OHYrMGk3T25tMHBzakQiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWXowYXRTUHAyMk9mSGtYUk5ic3htY3VyZXI4ZUloSmxFeGdxdTZGTCt6R3FHSXVwMVVwNjhaNzFpSisrTWtENkJGdmFOMjM4SEFIRU5hUjVzT29OcVkxVnk5WGMiLCJpIjoiU0tGR3UxMXVzK053blZtSiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOU53RFRianZDZktZUExHSko3VHM3VWRQdlVZb0RsbjN6Nk1VVmFiNUdXTkVicXl2dnNYMEN4R0VKRXppR29HSWFlcFkwckZSOHh4UXVtZk1xSE5zMkdORGJtbkRHdm89IiwiaSI6ImhtYjJ6dTVxV0lhTGNFSHEiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVWt2cWp6VzBWNTgxOWMrMFVKbUdlaXU1VHRBOFlXaHh5VXJmWndOaW96TzUyYnFxdG5RSmZlR3RnRkxXVnJQdWhjekNMTURjYmxSRnMrc0wzNTZKMCtDV3VRemwyZz09IiwiaSI6ImYvR1pxZys0dWVtV2lRc3kiLCJuIjoiVmF1bHQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSFc3bmNPb0xRbnI1YXU4SHVCSStaVmxhSm13ckZKZ1FaaVA3Zi9EMk9xM2d0elFwWlp0cVN0QVRURGhCZkxhTFQzR09sT1pRM25BVDJmdkpCOUk4dnI3TmY1d3kiLCJpIjoiUzBwZjU3RWJoLzhBQlNJeiIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMWdvVjUrZndzeW5aSkdvaEVFZXArR1RoNDJiUnBPQWhFWHJGWlBMWC9JL2hVQWFNMHh6R0xyRzcwSHlxU2ticU9zQnVudWdQbjBSdkpobU4rWDJwZzhzOHRTbHEyV3c9IiwiaSI6IkZETkZ3YXV4L3haUkN0eGYiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pkykzhack",
+    "popular": "on",
+    "size": "12GB"
+  },
+   {
     "title": "Call of Duty Modern Warfare 3",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/CoD_MW3.avif",
     "tags": [
@@ -5069,27 +5118,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "15GB"
-  },
-   {
-    "title": "Sonic X Shadow Generations Deluxe Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sonic_X_Shadow_Generations_Deluxe_Edition.jpg",
-    "tags": [
-      "PPSA17597",
-      "v01.012",
-      "USA",
-      "DLCs Merged",
-      "9.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQURhUmxNREZ6b1dORm9xUDJMK00xd2h6RnY3SzlhZlRnZ2FTZWx1eEZVOE9ZVmQvK1pDb2pLNlU3RDkrTy9iYldXL3V3R2dvZ3NKZ1BmZkYzNk1ORG5wOVBQNDc0cTJTcGNVPSIsImkiOiJqU1ViMUd2Y0E4K25ZQm05IiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOERCQ0ROTDFZd21HdkhZMy9QeHo1ZnNZMVVJOVk2RVR4a1hPUEFmTjJRcXo1TzhEMVRmWnExMDZ6VWFOZTNpSHRrTmhHdmFzVTlGZDhMZ1pYUTNNRXc5QlRNSDVXZGM9IiwiaSI6Img4dVJzNU5uVHkyK2JxeGoiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVHI1d0s2ZWJWclBzMEx5OFhwVjNKSWVKZElQZGRJYWFDcG1oL2tpb0wxU2N0bkMwZCtnOU82N0ZiRTRaa3JRZmJrWE9NNnlLdWZsekcya2xhbkU1a3ltbWwxSkciLCJpIjoicU5sWXV5ZW1BejBjb05PSiIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic25hUjRLOExmVjN6bkdBL1hKTFUwSStHa0VBZGVBMjRqRlJPU0d3WGJ2QXl5aWpOMTVQb0lGNG5TTWRVaGlLSkRVcTZwZ01QRjlSZVRGc0dBNGw5VCtLWnBOK1k2MDg9IiwiaSI6ImMvOUNkbzMvMEhLcDRKRi8iLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSWNEd2lHaEx5eHpOaEdGRWxEQlMxTnJJZjJDcVVnSmQ1c2ZqS1hyYzlwZm1vU2Z0MHk0Yms4aDBqNklVMjM2bGVNcWp0VzBsTUtYaFRXMGorODNZbUU1S2t4RUNmQT09IiwiaSI6IkxUd2Z4TkgrUEtiaVg0VUsiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "Pkykzhack",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "37GB"
   },
    {
     "title": "EA SPORTS FC 26",
