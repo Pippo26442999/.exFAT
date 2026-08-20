@@ -18,7 +18,8 @@
         "0.3.3.1/libSceAmpr.sprx",
         "0.3.4/libSceAmpr.sprx",
         "0.3.5/libSceAmpr.sprx",
-        "0.3.6/libSceAmpr.sprx"
+        "0.3.6/libSceAmpr.sprx",
+        "0.3.6.1/libSceAmpr.sprx"
     ],
     "description": "APR-EMU files for PS5",
     "last_updated": "2026-08-20"
