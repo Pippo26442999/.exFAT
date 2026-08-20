@@ -1,5 +1,27 @@
 [
    {
+    "title": "Split Fiction",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Split_Fiction.png",
+    "tags": [
+      "PPSA08560",
+      "v01.005",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL3JzMXB0a0tvQ2pIWTljVlRsQnJoSTFRLzZYdDN1ZDh3Q3RPc2ZFZVNjTlNwWnExbE0ySHVsM1hYMGJCR3dESHRwZDBzdG42IiwicyI6IlEvak43QjV2STVwNEVXSE9vanBRZWc9PSIsImkiOiJPM1JpVTlEb1JVYUhoajk4In0=",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicWdmSERNR2RPVFQzN0ZsUmplQXRkS0NGRzEyc1JGOFNXbTF3d0JLeVVKUTRrZk15bjVkTU5qeWZMM0RTdzFBaTIwNG91RmxrTFgxYkFZYVhWK0JWbWc2R0RtNTIiLCJpIjoiNnc2dHBFeDhxeFo0dkRBQyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibkJISHZsWnpGYUtPWlR2Y3daNjd2RnpZU2ZBNG8rVy9zMlpNcUdMMXp3RVZvR3pVaGRuVjlIMkFyRktwWnkvVzF3b0EvTEQ1L3Z1b3NNM3FGUFJQaTViWDhPdlhSM009IiwiaSI6InhpUHhSUDhpR014RzFXSloiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieFVxVGFWY2FyTWtqbzZjL0VsaHZjekJzRlZmZERiTkxNVUF1UzdpQWxrZFJ1U2I2WXFibDBZS2FxV1VQQnFpOFRIWmJmbEQydFc0NW5VbnJaQk45bTMvYnpJaHgiLCJpIjoiSFBIYWd5VzBycVhuVjBrcSIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ3lNN3lNTVpXVFNSVm1iS2U4amVRUEVZdFBzNzQwb2VodlExSFg2UytWOHVKTU1RT2RiZGQwUEl1WktiWlp5NDUxYXhQK1d0aW5oRmphblJKazZ5bktTRFNVUG5mQT09IiwiaSI6IjhzNjVzaGNUQ2IzL0dCMmciLCJuIjoiVmF1bHQifQ==",
+    "vault_url": "","credits_files": "DUPLEX & SiESPTA",
+    "credits_backport": "Kira",
+    "credits_dlc": "DUPLEX",
+    "popular": "on",
+    "size": "151GB"
+  },
+   {
     "title": "METAL GEAR SOLID Master Collection",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/METAL_GEAR_SOLID_Master_Collection.jpg",
     "tags": [
@@ -11904,24 +11926,6 @@
     "credits_backport": "BestPig",
     "popular": "on",
     "size": "133GB"
-  },
-  {
-    "title": "Split Fiction",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Split_Fiction.png",
-    "tags": [
-      "PPSA08560",
-      "v01.005",
-      "USA",
-      "Standard (9.xx) + 4.xx BackPort"
-    ],
-    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidHk3WXBic2JBZ1h5Ui9XcnBHVDhaUVZMWE9TalQ4QUl4ajNGVlZpN3lmcHNMZ1B6VnpVWTZwRFZWYWZWYzR3b1NWVjR2R3F5IiwicyI6Ik5sWSs1TmlsNWh2NXh2OHJHR3NvZnc9PSIsImkiOiJkUmhkM0gwQXRaejF4UmFtIn0=",
-    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL3JzMXB0a0tvQ2pIWTljVlRsQnJoSTFRLzZYdDN1ZDh3Q3RPc2ZFZVNjTlNwWnExbE0ySHVsM1hYMGJCR3dESHRwZDBzdG42IiwicyI6IlEvak43QjV2STVwNEVXSE9vanBRZWc9PSIsImkiOiJPM1JpVTlEb1JVYUhoajk4In0=",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMFVoc0poN21zREhFYlczZ3V6eFZkU3lHOHdZMVlscWxRdUdrbkdkdDRGVnFPNVhlV3ZTTlNwczc4cG16OGliYXU2emlmWmcxIiwicyI6Imd2NkVvTjRwTXpjMW1jQW5temFkVEE9PSIsImkiOiJSVlVNcjVUQXJpSmZVN20vIn0=",
-    "credits_files": "DUPLEX & SiESPTA",
-    "credits_backport": "Kira",
-    "credits_dlc": "DUPLEX",
-    "popular": "on",
-    "size": "151GB"
   },
   {
     "title": "Need for Speed Unbound",
