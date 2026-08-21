@@ -1,5 +1,23 @@
 [
    {
+    "title": "Sea of Stars",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sea_of_Stars.jpg",
+    "tags": [
+      "PPSA07587",
+      "v01.013",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTGFzVTV0dmxGdHZoc1o4bTNscDVuZW53VEkrcFNRWGZDUkRpYXpES2ZTMWx3SEpFSi9NOVNVZ2ZXVy9QMElRbGxvakRYZHkvbzl6SFRtemN3YjJ0MVhUaUNRUlh1SDZzempZPSIsImkiOiJMcDNrTkd1VWV6cTF4TnJMIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSXEvbjdab0ZveE9lcGpqeU9GWEpWcjJRR1N2Q1lQZXBZR1hPQVdMbTI1dmlxc0FJU0I2VE9YZmdMWEM3c2dCdmRQNmFYRWl1VFM1QUpFNzFqMnpwYWx1S1E2UnFVNTg9IiwiaSI6IlVnTWJXbUVETjJjN3lFYWYiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOVJ5dUtNam5CZVYzaU4vYyttVFZnMCs2T09WaEgrMGtxUHFSUm5CZmsxckNkTk9ZOUd2YVZtRjlhVzQ1R3p5R3RoVFFpZlBjWS9JSXFJakd5c1ZFYW15a1RVeEgiLCJpIjoieUhQMlgrSm1NV2pMRGdNYiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRzNDTk5FdWV0YVdUb0R5bUVaOTRnVTYvdjN3L1B3cUN0T0pUbVNHQXBoVmlRK2lhR09oUEwvVTYyWndHb0V2QkhpcGg2MmdMV2tqSFFRekdYRGRTdWRsWDJjUEtkekE9IiwiaSI6ImprZWNHT0NrS2d4VkpFNUciLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ3lPRGdra2NYVWUzTDZodDNWTHlxbXFYbDRUcUljNGJKVHNxSWdLK0Jib2ZrNXYyVFZIcnFXMEU3MXpQYk9ra1pXL2ZvVTJRWlEwU0Zyc0J5OWdheUNnakppQ1dQQT09IiwiaSI6IjBkRE93TVRWMDlmTDFab2siLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "DecKerr97",
+    "size": "5GB"
+  },
+   {
     "title": "Trails in The Sky 1st Chapter",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Trails_in_The_Sky_1st_Chapter.avif",
     "tags": [
@@ -14,6 +32,7 @@
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZnN6SG1xVERVbnhvQVFneW1UZ2gzTVBSTmRaemJyVzJ2MlJkU2dqMDkrRGhsSThqc2dKSmlWMGRxQ24xSjczZXF3ZU05OFdBNGQ1QitOY2NORjVaeW5NRnZGWXZvUU09IiwiaSI6Ing3L2xFTlNGMitMcmZSYTQiLCJuIjoiRmlsZUsifQ==",
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY0ZmVHp0MysxTG5QM01URDlXUXhHdlJHb3pqVGY3WVZrc24wWVNPM1g4cE5vamxHOFhBaXZBN1pqOHN1TDBkUFpzTGNyV3UyaXVqZWdZaUVEUi9QQW91WG9tc2dlZz09IiwiaSI6ImtLTzRXOXhyVW5Mdi8wU1QiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DLPS Team",
+    "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "popular": "on",
     "size": "22GB"
@@ -12129,19 +12148,6 @@
     "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSVZ0QUpoZmMzMS9tMWtHVlNLaFlvd0dPK1hQUFFLR3ZETUJnNWpRZndMZHBJb2cyc0hocGk4c2NmUzJzaXhUNkdTcCs2Yms5IiwicyI6InNkeTFmblZXaDhucXM2WlA0eWhCMGc9PSIsImkiOiJDakVrOWtiOGliUGZPQzl6In0=",
     "credits_files": "SiESPTA",
     "size": "8GB"
-  },
-  {
-    "title": "Sea of Stars",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sea_of_Stars.jpg",
-    "tags": [
-      "PPSA07587",
-      "v01.006",
-      "EUR",
-      "7.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZmNqTzdDOXJ6cjBjV0RrTHpOc1h1RVV1R3YyMWttNmpWVlFFV2V2OFdUd1Z3WVBaeWd6bUEzNyttNTB3S0RhRnplK3VQd1FoIiwicyI6IndrcFdBOVpPNm9rbUg3Rkw0NjBxM2c9PSIsImkiOiIvVElqR09aMERtMDlYTnFuIn0=",
-    "credits_files": "SiESPTA",
-    "size": "4GB"
   },
   {
     "title": "The Smurfs 2 The Prisoner of the Green Stone",
