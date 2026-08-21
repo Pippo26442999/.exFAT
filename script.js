@@ -2692,11 +2692,10 @@ function renderGames() {
         const dCredits = game.credits_dlc || game.credits_dlcs || '';
         const fixGuide = (game.fix_guide || "").replace(/'/g, "\\'");
         
-        // Funzione per creare bottone nella card (IDENTICO PER TUTTI)
+        // Funzione per creare un bottone nella card
         const createBtn = (url, label, isDLC = false, isDump = false, isFix = false) => { 
             if (!url || url === "undefined" || url.trim() === "") return ''; 
             const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
-            // Se è un fix, usa openFixModal
             if (isFix) {
                 return `<a onclick="openFixModal('${url}', '${fixGuide}', '${safeTitle}')" class="btn-dl"> ${label}</a>`;
             }
@@ -2708,6 +2707,24 @@ function renderGames() {
         let dumpBtns = '';
         let ffpkgBtns = '';
         let fixBtns = '';
+        let singleBtns = '';
+        let multiplePartsBtns = '';
+        
+        // ===== SINGLE =====
+        if (game.single_link) {
+            singleBtns += createBtn(game.single_link, 'SINGLE', false, false, false);
+        }
+        
+        // ===== MULTIPLE PARTS =====
+        if (game.multiple_parts_link) {
+            multiplePartsBtns += createBtn(game.multiple_parts_link, 'MULTIPLE', false, false, false);
+        }
+        
+        // Combinazione SINGLE + MULTIPLE PARTS sulla stessa riga
+        let singleMultipleHTML = '';
+        if (singleBtns || multiplePartsBtns) {
+            singleMultipleHTML = `<div class="download-container" style="display:flex; gap:12px; width:100%; flex-wrap:wrap; margin-top:10px;">${singleBtns}${multiplePartsBtns}</div>`;
+        }
         
         // ===== FIX =====
         if (game.fix_akia) fixBtns += createBtn(game.fix_akia, 'AKIA', false, false, true);
@@ -2801,7 +2818,7 @@ function renderGames() {
         let dumpSectionHTML = dumpBtns ? `<p class="ver-label"><b>DUMP:</b></p><div class="download-container">${dumpBtns}</div>` : '';
         let dlcSectionHTML = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
         
-        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'"><div class="tags-overlay">${tagsHTML}</div><div class="game-badges">${aprEmuHTML}${sizeHTML}</div></div><div class="download-section">${ffpkgSectionHTML}${downloadHTML}${fixSectionHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
+        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'"><div class="tags-overlay">${tagsHTML}</div><div class="game-badges">${aprEmuHTML}${sizeHTML}</div></div><div class="download-section">${singleMultipleHTML}${ffpkgSectionHTML}${downloadHTML}${fixSectionHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
     });
     const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
     document.getElementById('page-info').innerText = `Page ${currentPage} of ${totalPages || 1}`;
