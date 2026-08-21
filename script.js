@@ -1608,9 +1608,25 @@ function openGameModal(game, event) {
     };
     
     let downloadsHTML = '';
-    let ffpkgHTML = '';
     
-    // ===== FFPKG (usa createModalBtn identico agli altri) =====
+    // ===== SINGLE + MULTIPLE PARTS (vicini) =====
+    let singleMultipleHTML = '';
+    
+    if (game.single_link) {
+        singleMultipleHTML += createModalBtn(game.single_link, 'SINGLE', false);
+    }
+    
+    if (game.multiple_parts_link) {
+        singleMultipleHTML += createModalBtn(game.multiple_parts_link, 'MULTIPLE PARTS', false);
+    }
+    
+    if (singleMultipleHTML) {
+        downloadsHTML += `<div style="width:100%; margin-bottom:10px;"><strong>SINGLE & MULTIPLE</strong></div>`;
+        downloadsHTML += `<div style="display:flex; flex-wrap:wrap; gap:12px; width:100%;">${singleMultipleHTML}</div>`;
+    }
+    
+    // ===== FFPKG =====
+    let ffpkgHTML = '';
     if (game.ffpkg_akia) ffpkgHTML += createModalBtn(game.ffpkg_akia, 'AKIA', false);
     if (game.ffpkg_viki) ffpkgHTML += createModalBtn(game.ffpkg_viki, 'VIKI', false);
     if (game.ffpkg_buzz) ffpkgHTML += createModalBtn(game.ffpkg_buzz, 'BUZZ', false);
@@ -1618,9 +1634,11 @@ function openGameModal(game, event) {
     if (game.ffpkg_filek) ffpkgHTML += createModalBtn(game.ffpkg_filek, 'FILEK', false);
     if (game.ffpkg_vault) ffpkgHTML += createModalBtn(game.ffpkg_vault, 'VAULT', false);
     
-    let ffpkgSectionHTML = ffpkgHTML ? `<div style="width:100%; margin-bottom:10px;"><strong>FFPKG</strong></div>${ffpkgHTML}` : '';
+    if (ffpkgHTML) {
+        downloadsHTML += `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>FFPKG</strong></div>${ffpkgHTML}`;
+    }
     
-    // Verifica se ci sono backport 7.xx o 4.xx
+    // ===== BACKPORT 7.xx e 4.xx =====
     const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault;
     const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault;
     
@@ -1642,9 +1660,10 @@ function openGameModal(game, event) {
             if (game.backport4xx_filek) bp4 += createModalBtn(game.backport4xx_filek, 'FILEK');
             if (game.backport4xx_vault) bp4 += createModalBtn(game.backport4xx_vault, 'VAULT');
         }
-        downloadsHTML = `${ffpkgSectionHTML}${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
+        if (bp7) downloadsHTML += `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 7.xx</strong></div>${bp7}`;
+        if (bp4) downloadsHTML += `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}`;
     } 
-    // Verifica se ci sono standard e backport
+    // STANDARD e BACKPORT
     else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || 
              game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault) {
         let std = '', bp = '';
@@ -1660,9 +1679,10 @@ function openGameModal(game, event) {
         if (game.backport_data) bp += createModalBtn(game.backport_data, 'DATA');
         if (game.backport_filek) bp += createModalBtn(game.backport_filek, 'FILEK');
         if (game.backport_vault) bp += createModalBtn(game.backport_vault, 'VAULT');
-        downloadsHTML = `${ffpkgSectionHTML}${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
+        if (std) downloadsHTML += `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>STANDARD</strong></div>${std}`;
+        if (bp) downloadsHTML += `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}`;
     } 
-    // Altrimenti usa i link standard
+    // LINK SEMPLICI
     else {
         let btns = '';
         if (game.akia_url) btns += createModalBtn(game.akia_url, 'AKIA');
@@ -1671,7 +1691,7 @@ function openGameModal(game, event) {
         if (game.data_url) btns += createModalBtn(game.data_url, 'DATA');
         if (game.filek_url) btns += createModalBtn(game.filek_url, 'FILEK');
         if (game.vault_url) btns += createModalBtn(game.vault_url, 'VAULT');
-        downloadsHTML = `${ffpkgSectionHTML}${btns}`;
+        if (btns) downloadsHTML += `<div style="width:100%; margin-top:10px;">${btns}</div>`;
     }
     downloadsContainer.innerHTML = downloadsHTML;
 
