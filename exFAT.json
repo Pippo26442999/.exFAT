@@ -1,5 +1,26 @@
 [
    {
+    "title": "Metal Gear Solid Delta Snake Eater Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Metal_Gear_Solid_Delta_Snake_Eater_DE.avif",
+    "tags": [
+      "PPSA15304",
+      "v01.002.004",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidzBDZDRObFE5aEU5RHVMTkkxSzBaWnJ1RjUyaXIwcnpadDJqMHM2d01hTXkvWHQ1YUZ5cXZYc29wZXdVN1MvZURramc1UGpjYkV3bVcyTlY3YkduUFMvMFRLY1QiLCJpIjoiZE55ZzJSak1KMVRqaHR2aCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT1U4MTFBZVBnV0luUTVHNUhqVGcydWs0UXVxUWdWVVNyUGc3UGRQTW9vT3pqVGFKYXNpeE5GZkFzN1NRMjFGa0dEQUpJV09EZEtmSEtmMitxVmxPQlNkVzdIdTMwUEE9IiwiaSI6InNnUVNXVStWK2tSQWVlMFAiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieFJ5VS9RT0lNTzUyNHpOU2V5c1d3dFNlc0I4Ujk5UUIzUTVZVDNCOWJ5OFcrTkdERVFsVzJURm9MVEwzNG5xUGpXNFhXZnBSa2E3VEFZSHdaT2RGSXRKQW9MSU5PUT09IiwiaSI6Ikc2ZkU0cFVnRE5TMUpEME4iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "popular": "on",
+    "size": "225GB"
+  },
+   {
     "title": "Sea of Stars",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sea_of_Stars.jpg",
     "tags": [
@@ -11362,24 +11383,6 @@
     "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWXMzVEtWOVRhdEJ2Z0pDM3Z2blgxSkttaUpKRVJpbUxHSU9lbTNWSjBIWC96dzZaVW9FdCs2enJ3ckpWSXJzWWlVMkNzdz09IiwicyI6Ik5NcElYZWQ0WjdxSkRiYVFuT1hMNXc9PSIsImkiOiJOT2ZONitjeFhiYWUySnFXIn0=",
     "credits_files": "DUPLEX & SiESPTA",
     "size": "56GB"
-  },
-  {
-    "title": "Metal Gear Solid Delta Snake Eater Deluxe Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Metal_Gear_Solid_Delta_Snake_Eater_DE.avif",
-    "tags": [
-      "PPSA15304",
-      "v01.001.004",
-      "USA",
-      "DLCs Merged",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUkh1ajdsT3FhN2ZqR0Y3RG1Wb2tmOXNkdTNsNno5ZGEyNDhUdGluSy92OERTYnpsTXB4dUZ6dXlBdXBzUDBQcTBYemg5MlNJIiwicyI6InkyR1hMR1ZWK2FuUy9yR2dXTERlUHc9PSIsImkiOiJhdXpHNXBkWHVFQnRMT2lkIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSHFXNit2K1ZpMUpFd0hQZDFBSVpLblNMNGpDbWVINk9oMHMxRjJQUm9RVXVPandHUnByNWVJNklTeERTbFQrcUtKMjgiLCJzIjoiV1lDUlp1aEtTNGR5azVoNkV4dkNiQT09IiwiaSI6ImNJeENGNm81WklDMU1YRTMifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMm5MQXgxQnhZRjV5T0Q5QTlMQkNWSkdjQmo2V3E1eE5NRGtJTTVqc2RrWml4d2NWUjByamllQ3RjK2ZxTDg1L3lZa2Q5Zz09IiwicyI6IjNna1NNRW9EemlobGtxaE55cWZndGc9PSIsImkiOiJpTHBZYzVTUHVmT1hmM2o5In0=",
-    "credits_files": "DUPLEX & SiESPTA",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "185GB"
   },
   {
     "title": "Life is Strange Double Exposure Ultimate Edition",
