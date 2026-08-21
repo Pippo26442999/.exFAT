@@ -2717,7 +2717,7 @@ function renderGames() {
         
         // ===== MULTIPLE PARTS =====
         if (game.multiple_parts_link) {
-            multiplePartsBtns += createBtn(game.multiple_parts_link, 'MULTIPLE', false, false, false);
+            multiplePartsBtns += createBtn(game.multiple_parts_link, 'MULTIPLE PARTS', false, false, false);
         }
         
         // Combinazione SINGLE + MULTIPLE PARTS sulla stessa riga
