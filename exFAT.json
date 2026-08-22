@@ -1,5 +1,72 @@
 [
    {
+    "title": "Sonic Frontiers",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sonic_Frontiers.avif",
+    "tags": [
+      "PPSA03831",
+      "v01.041",
+      "USA",
+      "DLCs Merged",
+      "Standard (5.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia2E2NzdYQXhYZC9YWTRoeWUzK29ZUm5hT0tJcVlTa1dTQ1g3TzZ6OG1XZ2lvZmpsSWZBWVZZM3lQSkJnMUdIOWtWMHg2ZUpQIiwicyI6IkVaZ29nZ0E0TmFjenNGQ0poVjdhZmc9PSIsImkiOiIzak83ZHUyU3U0SFc3dlg4In0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieU5YNnRLMm56ak5CTGxTM1ZHWHJGWDNtdU1WRzJBRUt0YUxMcFdpdnFGMS93QWY5VlZybXJpODVMZTJuTjFVbWhpY0EiLCJzIjoiajR3Smk2U2d3RUNQanprL2tKcjhiUT09IiwiaSI6Ik5HWVpnVnh6UWVuS0cwamgifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMGduVDNQdmFMRGYwcXRCSlRBcU5UR2lNVEI1OVJnUE5qbER6UlhDM3Q0OWljTUtWUzFXRUFMbEFIUjBJYnRkRld3PT0iLCJzIjoiSCt3N1FvZFc2Q2lxNDJSVlR5MXdrdz09IiwiaSI6IkI1SjBIZ1lad3BPSzNyd20ifQ==",
+    "standard_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUWx6VndpNGxLM2hYNll2NE05OURnb1pCUW8vWkNLNk1QNDdMakVpNFo4eTZZZXpvcTFDcC93NUlMNnQwV1o5dUl5SWYiLCJzIjoiM1RqZnRkK3NZbTVLdTl3US93ZFRPZz09IiwiaSI6IkZ4eERrTFIxUENGaFJadTkifQ==",
+    "standard_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK1IzbE84UW5CeWd0dDdLNFFERGtRU0FpekhSOTdYbzErdzU2YWMrZndIY2QvcDdHcjB4UURrMEFkc21OeEVod2hWYz0iLCJzIjoiQkZGbDZnR2pxLzZmTHVJNTZEWEQ1QT09IiwiaSI6InQzTVdBMTV4VVpzZ2xvZk8ifQ==",
+    "backport_akia": "",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZVp6aWE2VEJXaFR0dUQ5bUY0RHdVTVVzcEE2TjFrUXFjS0VFdnJ2ZnNkaWYwWmF2bmFwWFlkeTF1WFhQdkp2bVJEVGI5eUYvbWpRYmpHNENjSjNtYXFtV2s1cUhzRDQ9IiwiaSI6InFUQVlhWTErWjNOUG1WUUIiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOTZ6SENHdmNWbjY0dm10aFo4eFhwTzlwaDlEOGFURjhuODBzZCtjTHNUZmJVOXBHTkFaU1ZOUFNrbVF6eW1rRlVnU1hycnZvTmZnVENoVlJ3ZVl0YTczMGdRS0kiLCJpIjoiWk45RTRmcWtVRG1EL2Y1VCIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia29mY2ppbFczL3p0V1dGN3NIU2tPS0JoU3lsVFR2cGhQbW9mWGNhYkZDZkxLY29KR0hXY1lMcTV2SVVGamg2dGtleVZXZjNwTzBjTmhUY1VtR1BSTkdFdFFaNW1ISFE9IiwiaSI6InlRNDZ0UzlHZjFwWkZFSzciLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "Psykzhack",
+    "credits_": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "39GB"
+  },
+   {
+    "title": "Rune Factory Guardians of Azuma",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Rune_Factory_Guardians_of_Azuma.avif",
+    "tags": [
+      "PPSA21165",
+      "v01.001.003",
+      "JPN",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM1NVbVNlcmxVV0NYY1pOc3B0aVdQSTg5d2FtQ1RyV2xBd085OWF1bGw3T1d5OXhvbmJISDRuZGVlUVpFTlVjV24vSndiL0pIOTlKZkcwWC9VYXg0dFhaTE9lTW5mV1k9IiwiaSI6Ilkyc3pmcG4wNlFoL2ZmdloiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNWlxa21UT084UzREVFhSZkp4MEsreDNmTTZCT0sxS1o2UTIvS3lUNzFNcFp3My9Bd3I0dEZZR1lJcDVFenlyTXpMUzV4d0F4dXhTVGJhcmM4MFpYSVZiUUlXWHkiLCJpIjoiR1NRamQwK1haWWJpS0xiTSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZXJ2UTBjYkoyVTNmS1dTTG81UU5aKzZvWlRCQm52VGVYZnZHR0luc3BsSC90cGJvdDcxM3JlcFUycFJ5U3FRc3FsajY5ejlVbmZUbXZ2aDdWdkhQdXVBTmZ1UHJudm89IiwiaSI6ImJxdjltQ3RCQmpWcUN4ay8iLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiam82Q1A5YXgzZU9Eb2RZYXN0RVBFK3RiR1J4OHJqZWJlU2pxdGJiSEF5b2J2K0JIbTcwR3E4NWVzbXZmR1I5ZE04SlZrTkxtUFZmMlQ3NldhMG1qTnFTaDkzN0lXZz09IiwiaSI6IjhsNDhSWHFHOWYzV1ZoMksiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DLPS Team",
+    "credits_": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "34GB"
+  },
+   {
+    "title": "Mandragora Whispers of the Witch Tree",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Mandragora_Whispers_of_the_Witch_Tree.avif",
+    "tags": [
+      "PPSA26917",
+      "v01.006.002",
+      "ASIA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibVh0dkxramROSWd1cElxNlcraEJ2ZzJmbjRFUVRrUU5EakxrU3JqRTFmcmZaNi9JTGM4MjJndGhNampzdmQ5T2ltSDFGVkFiOEM5U2Z5cytEeStzYVlGRXJHTkJBTmdjdUEwPSIsImkiOiJXTWpqYjhMazcwc3FnUUlKIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNU5GQmR6R0Z2cnEwRHBwL3d3U2dGTlFoY0VRaXVuYmV3N2VFQkU2b1Z2QTcyUzZJa3VIUno1TUJXYWh5WEtsWkF5UVdRVzd6emp2bkNQOXlYR0RueEVpS2s2eXpab0U9IiwiaSI6InhWbmNPZkRvR0ZlRFdZSmwiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3Z4cFY0VkVKRFlaVW50WWpJNE92SUNmZVM1V0tyTkpmVHVDMkJWNk13OEVjVTFYdGVpOTlXOCtQRm94UHl3THRnM3U4TFNCZHZYWWd5R01teG9oRHVnbU8zRnYiLCJpIjoiYnI3RnZNTldQajRiYy9BTCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNVVwUUdZeEtuaHkxMlo5NGpRb0xQL3M1bGhsRFNNTXJ4VlNlSHRmRVgwOVhKZS9VVDlYcEdFVWQ4eTJRNTQwNjJLaUxWZm5JOWlUR0tTMjZNTWxEY0J3eUNiSGtEQkk9IiwiaSI6IkRYQThPbTY4TnNQbDFQclQiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWmxaSFJJNmttZDNQc3EyUWNmOGxxM1AxZGVXbjdMUUhyeEFabktOQm1QTWptQUpZS2UxZnQraFFWRE10VW9rTEVHUUNJdm9hTzZWS1dtVXRGa3JEMFl5aWZFb1NmUT09IiwiaSI6ImxrSGZ3TkRwZG1HNHZhWG8iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DLPS Team",
+    "credits_": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "26GB"
+  },
+   {
     "title": "Mega Man Star Force Legacy Collection",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Mega_Man_Star_Force_Legacy_Collection.avif",
     "tags": [
@@ -7867,27 +7934,6 @@
     "size": "122GB"
   },
    {
-    "title": "Sonic Frontiers",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sonic_Frontiers.avif",
-    "tags": [
-      "PPSA03831",
-      "v01.041",
-      "USA",
-      "DLCs Merged",
-      "5.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia2E2NzdYQXhYZC9YWTRoeWUzK29ZUm5hT0tJcVlTa1dTQ1g3TzZ6OG1XZ2lvZmpsSWZBWVZZM3lQSkJnMUdIOWtWMHg2ZUpQIiwicyI6IkVaZ29nZ0E0TmFjenNGQ0poVjdhZmc9PSIsImkiOiIzak83ZHUyU3U0SFc3dlg4In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieU5YNnRLMm56ak5CTGxTM1ZHWHJGWDNtdU1WRzJBRUt0YUxMcFdpdnFGMS93QWY5VlZybXJpODVMZTJuTjFVbWhpY0EiLCJzIjoiajR3Smk2U2d3RUNQanprL2tKcjhiUT09IiwiaSI6Ik5HWVpnVnh6UWVuS0cwamgifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMGduVDNQdmFMRGYwcXRCSlRBcU5UR2lNVEI1OVJnUE5qbER6UlhDM3Q0OWljTUtWUzFXRUFMbEFIUjBJYnRkRld3PT0iLCJzIjoiSCt3N1FvZFc2Q2lxNDJSVlR5MXdrdz09IiwiaSI6IkI1SjBIZ1lad3BPSzNyd20ifQ==",
-    "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUWx6VndpNGxLM2hYNll2NE05OURnb1pCUW8vWkNLNk1QNDdMakVpNFo4eTZZZXpvcTFDcC93NUlMNnQwV1o5dUl5SWYiLCJzIjoiM1RqZnRkK3NZbTVLdTl3US93ZFRPZz09IiwiaSI6IkZ4eERrTFIxUENGaFJadTkifQ==",
-    "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK1IzbE84UW5CeWd0dDdLNFFERGtRU0FpekhSOTdYbzErdzU2YWMrZndIY2QvcDdHcjB4UURrMEFkc21OeEVod2hWYz0iLCJzIjoiQkZGbDZnR2pxLzZmTHVJNTZEWEQ1QT09IiwiaSI6InQzTVdBMTV4VVpzZ2xvZk8ifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "Psykzhack",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "39GB"
-  },
-   {
     "title": "Bibi and Tina At The Horse Farm",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Bibi_and_Tina_At_The_Horse_Farm.webp",
     "tags": [
@@ -10785,24 +10831,6 @@
     "credits_": "BestPig",
     "popular": "on",
     "size": "184GB"
-  },
-  {
-    "title": "WUCHANG Fallen Feathers Deluxe Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Wuchang_Fallen_Feathers_Deluxe_Edition.avif",
-    "tags": [
-      "PPSA09519",
-      "v01.011",
-      "EUR",
-      "DLCs Merged",
-      "4.xx BackPork + Dialogue Fix V2"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidU50a3FHVkNENitZRDZoaFNjOE04cVFrN01SNlRGR3o3MnNNQ2NkR2VkSXdXZXg0ZFRYSFhGdFFULzUwMGVqMXptRWpDeUMyIiwicyI6Im1ZWDhRQ2JrLzBBWTk4NEFvQWlHM1E9PSIsImkiOiJOUlpUQlZtZU9QVFhMNnAxIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYi9mQVN6b2swTEl5ajU1T2k1RjJ6NUxqREtKdDVDL1RBazVGQmZHck9GZTNhMnpGSldRRW11VUQzbUo3YXlYTi9pcjUiLCJzIjoiazVqYmF3OVdEbzgrZmJyZVlrSmluZz09IiwiaSI6ImdJaGZYcGVLVWZZUGIySDMifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSy9WYktXUlZ1L2hsdXpwY2tIbDZNQWROR1gzS0IxcmpSM29tSm5TOGFEWUZMNmZ1bVRtOW5STmRrVTlFSmZOWlZBPT0iLCJzIjoieHZpNk1FL2FnYTJ6cXVpay92T3dPdz09IiwiaSI6Ikdkc0tCNW1TUzNqN3BzU3YifQ==",
-    "credits_files": "SiESPta",
-    "credits_": "BestPig",
-    "popular": "on",
-    "size": "27GB"
   },
   {
     "title": "Darkest Dungeon II",
