@@ -1,6 +1,88 @@
 [
    {
-    "title": "The Messenger ",
+    "title": "The Plucky Squire",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Plucky_Squire.avif",
+    "tags": [
+      "PPSA15319",
+      "v02.002",
+      "USA",
+      "7.xx BackPort + 4.xx BackPort"
+    ],
+    "backport7xx_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiem5mNlRnUnhOYVAwQ2pqaGV1TStNSFpTVXVtWm8rSi93dEhKUW9VUm1OdGd6Qkl5S0xqNnl0RlJ5S2g3TjVkUnpiNmFiK0VlIiwicyI6IjlsOHpLQ0l1endGaWpSNVNFMmdyaVE9PSIsImkiOiJWM3FVUkxhWjFvQmtDc09lIn0=",
+    "backport7xx_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMmowaWR3TUJiWE0yUGhUWmZFZTdwaGRvSWFDVWJZUXNIWG8vbWlRYXY0eWdsYmlwdkVMTkt3WjZyUldpZi83T2IyN1ciLCJzIjoiSVVOK3lrUDc1YzcwYUY2dFFna2Ezdz09IiwiaSI6IkZ4UjB1ZW5DVW96TGZmR0MifQ==",
+    "backport7xx_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoid3REeVRqSDI4Yk45aEJaOGgyeVlKSGthYUs1bUhZOElvZlRTQ0dSYVlEVHZBbThqVEtwT1ZpenFSVE1maXA5V2lBPT0iLCJzIjoiS1A5WURnRGEwa3VGRXNoRDhpZURmdz09IiwiaSI6Ild6WnBWNnB4eFVuTWlCYWIifQ==",
+    "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS0p3dytZcm4raWU0TlJ6L29HcmFIWHAyaU5sWnVaRnF3bUx6M0IvSGpRQlh1K0R2TVp6VkpIK0EvNkJxUVFlMENzYk4iLCJzIjoiejFpRkpuTnN1VkE2VmxUWnNFSU1TZz09IiwiaSI6IjF1Tlg1bDNXdUEybUhVSWEifQ==",
+    "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSmV2L1JjdTdNbk1JWExMV0pnZjB4QkRzOGdlQ1J0TERsS3dEYjNNWW1wK0NURVRjTlFzUEVYRzR3a1JqOGF4UzVrQT0iLCJzIjoiV0hkcHRmandoTzVjVkd4a3orNmRqUT09IiwiaSI6IkVQSFFVeDhnUzY2c21pVkcifQ==",
+    "backport4xx_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMHRnKzVpQUFqYTljTWRFeWoxdDhTWnhPeFVhcnUyZDIxSkI3V1NWWGczODNNYWlsSEdna1hvcVJTR3N3dDdsNXZxM0RMakRzUFZrTlIyY1IrTUJsQ2R5dWQ5L1g5b1crcXBJPSIsImkiOiJpREU4NkhpWmRuTWRBNlZhIiwibiI6IkFraWEifQ==",
+    "backport4xx_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYzVtZ0F2SVRKNklJNHhnRERpVDNxRzNpK3NVNTR1UVllaktaL2lEeFNITXdGMXFsbGpzOXljUVNJZ1ljNlVIWFEvejhqWTBFN0UyYllTUW52OXZsSjRJcEkzTGppcjg9IiwiaSI6IlpsZ3BIc25sNE5DTjlQOXYiLCJuIjoiVmlraSJ9",
+    "backport4xx_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT0pFQ1EyNy9DcDZ2bUlENnI0eW5ZaFlZRm9ZT09IVXMxSTZqVERkaURTTVRiUUhMczR1VGpORVpxd0lKY2k1WWdwZDdiZDlQMWNvdUdHb0w3d29uaTJCcUcwUHQiLCJpIjoiNCtyZTRuTGZEckk0N295TSIsIm4iOiJEYXRhIn0=",
+    "backport4xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTkpwVXY1eFI0ZTJCVFNmWk1nSEhTNDdsdklRdG95VlgwOGFSYmI3Vm1JSXhqd004ZEpXT1FpVmhnZ256a3VXZTk3YmdIRVJ5WkQ0d3VDQ3o1ajVaSEpvOVp5STZNb1k9IiwiaSI6InErTU82V1I2c0JxSVNUeU4iLCJuIjoiRmlsZUsifQ==",
+    "backport4xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiemk0aGRPWElOUldIT2svMEtReW5Cb0RyYUdzdzBqejVzQTZPcmh0elVXYzQ1cERDTUhieEpMS1l0UGdaMEExdGNWZXBWUmN5ZjFWaUpKWm5na2JoQlpDNzhvSVVadz09IiwiaSI6IkRGQTQ1TTB2MEk5YmRpaGsiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "18GB"
+  },
+   {
+    "title": "Pac Man World 2 Re PAC",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Pac_Man_World_2_Re_PAC.avif",
+    "tags": [
+      "PPSA18189",
+      "v01.004",
+      "USA to EUR Langs",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNDZscXNOMTI5RGlwK1dDMFhJM2xMNGZHQy9DcWlBVHFjdXRMVGRERFgwME5DUHhZendlcUREemJvRWxkTmJ6N2NHVXNQTUJkM0hCdGRmMnBqM3dRU0ZhaHNsSURFRTk4d0dZPSIsImkiOiI4em40TnZ0ak1saSthcjAyIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSWIxdE5BYXREaDlTU2lUcTFCb3QzK3A4WDQxVk0vTnpLYVREN2FBN1FzeHZUNnBLOUI0ZkFSUThrM2hyK0FLRmwwTmhEL283MERBY3h6cG00Y0o4VjlycXdkTEZpZFk9IiwiaSI6IjBETlhpSHZsODhFZE1rUm4iLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVngwbTMvSFdNb25CL1FINDBHWmRoODlRT3VhcU0vRnRvaUV5d3ArSkZxbUxoOWRzVUlEaCtnQnNaVEc5T2YvSWRLMTZHUnlMVC9kVnlHVDBCZVdOOU94OGFZVHIiLCJpIjoiVEFHZFFiWTZKeCs4em5JWiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRXVWUllXcWV0VUorSUEvQW1aL2hIVWZxS25Pb1Fib2tNcyszR1J2L0tRWDNxN1ZzcSs0TktxMWJiODNGa2JabElrbWZCUmQ4MU8wcWNQSVdWaVowWmxEb1FmTHg5ME09IiwiaSI6ImpLV2xjMXhOZm1jeHJVdXMiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZDRZbjhlSHAxQmN0cnZQK2Y0UytldS9oR1BuemxjV1hoSDdrSU1GRTMxSUZyMW5rbGI0RCt5OWJBQ2wzN2N4cHVBMURueTZxZDNHQS9UTVdXUWQ2RUNKeG0wdjRuUT09IiwiaSI6ImM3dFVWMjh1d05qUnA1WWoiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "size": "9GB"
+  },
+   {
+    "title": "Absolum",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Absolum.jpg",
+    "tags": [
+      "PPSA28311",
+      "v01.002",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWlVzbi95SUVJeFM3dTl0TVh2d21haFBjbGJqNksxUEl4UlBhdlc2REE4UXFuOTdjM1h0bFZ1bCtaOXFQaUExdERhempuZGNNOGFRdVZWekhya24wL2NiRFZNY0RZc1ZuKzRzPSIsImkiOiJhWDJ0THpaVS9CV09mZU9WIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTm9rOEJNVGltRmtTZ3FQbjVzc2plb3R3WHhndVVhNmszRHdWZkdFV0kycWVrZEIvQXhZckNEeTJ3c1FxWEZ1dGw1WjllWHNDdGZtbVdwVXBFVXU4ZWVKRWlCcXNCSjA9IiwiaSI6Ii9sL2hMWENiK3RTQkJ4NlEiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZksxTFEyb2tsTkxTMXhSQWpvSXhrTWxvUzU0UDRBUjJUd29YV29jaS9SN0VJckUrZEFhbEMyZjJZUlVTQ0dVZEhLS053ODRROVltL1VMTlk5OGQzRHA0ZkVQU3UiLCJpIjoiUjRFM1ZoaVliZ2JMTkd6MSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVDNqUE9NcEhmTVplMUZjQTA2eWZ1ODF6SkgrREs0emxKVURieXJaNDU4VFdGREtSZ2tmOXVGZWNZRzJ4c1FzNzFycW84LzVQTFU1Q0tNalJSMHdWbmRWZDJVcnNYcjQ9IiwiaSI6Ik1lVUF6U1hHTnl1UnMzYzQiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQXo5c2tpdy80YUJFMzdwdnJ3Y0VFaERZSjBCSUY3ZmJVc1VnVVI5YnBPdGNpTHVVazduTnRNOEtHV3drVjZqenFrVG8rRFRLQ2thN0tUUXNRMlYxMDMyNk9zdWVGdz09IiwiaSI6IkNuTVdHU0ZhdCtGdW91ekgiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "size": "3GB"
+  },
+   {
+    "title": "Blazing Strike",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Blazing_Strike.avif",
+    "tags": [
+      "PPSA08408",
+      "v01.100",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQlFaaXk1Mzh5SlFNT3oreGVZU0JVK1lEczNZWW9PamhGMGw4Nmw2bFdVdlp6dTlVY2dxT1NJalFISzdWQUJOMlp1WXZ0OVViOUhkQXRnZlpaMkZnOTY2dnpmM0NBWEZpT1dJPSIsImkiOiIxK1NOR1hkcmFxUUFzYVpEIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUTJvb2dPV09WTVoxcTBYSENod3o2NWdoWE9YQ3RtSCtIVVZ6SUJJSE5kRW94ejNzaHhMQUp1SkpwZFlEajNRMWxzMnVMV2RjaldaR203bEQ4SjRmY2RZejh2dlB4T0U9IiwiaSI6ImFmamt1alh5UnVMSmlwUzkiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibWg3eE43VWR1ZDZyK3o3bGdLUEEvOVNzQ0d6WFM2Y3ZUSHd1My90Wk9icGorYzJFWEd3WEo2QXZsRlloUWgzZ3lHRjI4K2liaDJ6cXQybUY1UnMyQnlYQThyZ3oiLCJpIjoiMks0bXZ0cExoUWdMVnI4cyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS3VRU2I3M3ZBUnZHeURtdDNVczdqcmdBVFIyZ2svNUduVjBZbHBFRldqaU5sYWRwbnd1WnM5T2thZlhZcG43WWpKMk9MWkZrdHk1UFFlLzIzVFBuVVYyOHphL3hTTDQ9IiwiaSI6ImdwOTlTRXUxS2FwUG9nMFAiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSzREUzFlNDYvanBNTFFoWVZrWnRnR01EbTRSWXF0UEtYL2wxMEJjcTVkaEZJZnN3VWpheDk2Rk1sMDZxQnVSZFRoMGVuUjM5VGJRb0NMSG9aVm5BYUp4dHNGQWwxZz09IiwiaSI6IjVYUVN4bU5wS1hUSlFFcnciLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "size": "6GB"
+  },
+   {
+    "title": "The Messenger",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Messenger.avif",
     "tags": [
       "PPSA24643",
@@ -7389,25 +7471,6 @@
     "credits_backport": "DecKerr97",
     "apr_emu": "on",
     "size": "8GB"
-  },
-   {
-    "title": "The Plucky Squire",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Plucky_Squire.avif",
-    "tags": [
-      "PPSA15319",
-      "v02.002",
-      "USA",
-      "7.xx BackPort"
-    ],
-    "backport7xx_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiem5mNlRnUnhOYVAwQ2pqaGV1TStNSFpTVXVtWm8rSi93dEhKUW9VUm1OdGd6Qkl5S0xqNnl0RlJ5S2g3TjVkUnpiNmFiK0VlIiwicyI6IjlsOHpLQ0l1endGaWpSNVNFMmdyaVE9PSIsImkiOiJWM3FVUkxhWjFvQmtDc09lIn0=",
-    "backport7xx_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMmowaWR3TUJiWE0yUGhUWmZFZTdwaGRvSWFDVWJZUXNIWG8vbWlRYXY0eWdsYmlwdkVMTkt3WjZyUldpZi83T2IyN1ciLCJzIjoiSVVOK3lrUDc1YzcwYUY2dFFna2Ezdz09IiwiaSI6IkZ4UjB1ZW5DVW96TGZmR0MifQ==",
-    "backport7xx_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoid3REeVRqSDI4Yk45aEJaOGgyeVlKSGthYUs1bUhZOElvZlRTQ0dSYVlEVHZBbThqVEtwT1ZpenFSVE1maXA5V2lBPT0iLCJzIjoiS1A5WURnRGEwa3VGRXNoRDhpZURmdz09IiwiaSI6Ild6WnBWNnB4eFVuTWlCYWIifQ==",
-    "backport7xx_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiS0p3dytZcm4raWU0TlJ6L29HcmFIWHAyaU5sWnVaRnF3bUx6M0IvSGpRQlh1K0R2TVp6VkpIK0EvNkJxUVFlMENzYk4iLCJzIjoiejFpRkpuTnN1VkE2VmxUWnNFSU1TZz09IiwiaSI6IjF1Tlg1bDNXdUEybUhVSWEifQ==",
-    "backport7xx_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSmV2L1JjdTdNbk1JWExMV0pnZjB4QkRzOGdlQ1J0TERsS3dEYjNNWW1wK0NURVRjTlFzUEVYRzR3a1JqOGF4UzVrQT0iLCJzIjoiV0hkcHRmandoTzVjVkd4a3orNmRqUT09IiwiaSI6IkVQSFFVeDhnUzY2c21pVkcifQ==",
-    "credits_files": "SiESPTA",
-    "credits_backport": "DecKerr97",
-    "popular": "on",
-    "size": "18GB"
   },
    {
     "title": "Turok 3 Shadow of Oblivion",
