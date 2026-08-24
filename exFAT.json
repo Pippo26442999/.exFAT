@@ -1,5 +1,23 @@
 [
    {
+    "title": "The Chant",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Chant.jpg",
+    "tags": [
+      "PPSA03618",
+      "v01.000",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMkJFUWNrNmlGU0VEaFZRUXZKQW5VZFJtM1hiRm45bWNncHJTQ2hVMDM1aEVWRjVYQ2FYQmdCUFpTaGwvWTg3KzhYcWFmeTdRNVVOMHUwRnUwZFFza0MwaHRNVE94S1E9IiwiaSI6IjhMRzNEcUpyREZKelVMekIiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVzVWdUVWME13TG1lWUVPczR1TFBSMUtGWDFQd0Q5bjd4QkZmN3VtM0J4aHNSbHlpNzFwMU1IcU9wd29IRUVLN09nSXlmT0ZhVGNHMEJoTmI0cVJDVWkvd25jbGsiLCJpIjoiam40UGRPeFdCckd5bnBPaiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS3JWbUtqUVhtaUY1YkxPY0ZhY3kzOEhYNnNMejJxZnJWOWhEZm81bngwNFlEbmwvc0U0RDN2SGNEc1plRGZlWGQ5MWVqN1pma1c5UXZ5eFVXWGp2bEd0MmNsT0pZeDQ9IiwiaSI6ImU5bEtrZGRkcGt6RkJUUlkiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL21NOWo4aHFRalNnVUpVajlRSVFBeXIxeTh0Q1l2SUhKZGJ6OTFiWm1CcjZwNHNOYUMyYlNYVlNmSVJndFNSYXJpUU1QM0VUNmI1R1REbk5ZaWxDL04xUyt3Unhodz09IiwiaSI6IlhNNWh3T20wenptN1Zuc3IiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX & C4our20 & TRIFECTA",
+    "credits_backport": "DUPLEX & C4our20 & TRIFECTA",
+    "size": "50GB"
+  },
+   {
     "title": "Witch Spring R",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Witch_Spring_R.avif",
     "tags": [
