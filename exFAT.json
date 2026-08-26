@@ -1,5 +1,58 @@
 [
    {
+    "title": "Taxi Chaos 2",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Taxi_Chaos_2.avif",
+    "tags": [
+      "PPSA30279",
+      "v01.007",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZHE2TDM2UFpaR0h4NllXR1BNazlxYXFCZlJrSUFZOGNYYmZLalltV2pjeW5BaEtBNm9KcVhwVERTS2xxQ1dqenhuRUNDdndwdjVGY3ZJbUJUbXF4T2U4NjE2SG9iN2E1WnRNPSIsImkiOiI0L1Zwb0d0ODI2Y3g0R21EIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia3lPWEU0aEEwdXpXRzZFa0t1NDIzempoWXlEZ2toeDlKbG5jSGFaRlFsL25OTTJrendDN0ZZVUdYZms0ampzeTRqaWp0dGNJVURIbkhPRkpGQmtOcFVnNWJZWFFYc2c9IiwiaSI6IlRoSzB3cU15emphRitvZGYiLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQVBkQnhialB3RE1SMUc5ZUpjbnZudnV3blpPcHRneDBudEp4eTBhRWZjemtzVFE2T0RDNzlaT3FRczY4SFM0V2lOcXBUV3RLckVzTDUxV0o0cXRuNmZ6c2ZxM1IiLCJpIjoibzNNUWM2dDZsejZuOWVPKyIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS21Kb3ZCL3NKRW5adWNYL1VpZkVDRGkvWHRpREJ4bDVlWUJDcnYyZldIZldzZDhuY2srN3VlN2l6a2ZDQWdLamtRemVkbDJMakVBaE84MU1LSGwvQWJUcHVQN1R5MmM9IiwiaSI6IlFhSGQyUHZyMVpEVjdNQlUiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicDduWHVUbS8rcnhkc2VYNnd2UUNBVnIzS2tNditndVordW9UaVdLTFFwOHp0dzFSMFJ1bWdWN0U1WkNtMzVyb09qRkdEYlUyOEJOSkdHSlRJKzduYnorRGNDbUptZz09IiwiaSI6IkdmbGFYZ2NnY1g3TndjNWkiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTnlub3B6cWxSVU9xWGpscFc0NEVBTHdYcWFoZWlqNWZYdXNzODhSdmxVa3Y4L2hsYlMzZG0xYkV5cmQ2WGVQYkNwcFA2eDhvZnV1dmtXT1pJWjFEeXRwQ3JLN3VjdWplUDZvPSIsImkiOiI0OS80c29lNUFidFlBb2duIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiME5PdzNPRHdPWXEvcXNCbXYxYzY5THZibXNJRGJnOFJUOFB1bnBETk9SK2J2Snd6SSs2Vm9zd0tEL1d5dUllaklJSjB6dGhZZGpqYTZnUmFXc3ZLY0R0dlI4enFsTTg9IiwiaSI6Ik1VUTVyWWQwaTUrUnJNVEYiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibVdxVUZLSFVLU0JxRGoxWGY4emM5MWsxTmxwLzVzUkV0aDUvVkdsRENybStlTTNkL2JxZkJaSm4vZThvODNocGNtZ3hzcUtldUwwaWxpUENnVUhtQ0pyVlhtTDQiLCJpIjoiWlU4aEFLdS9SU1N5OXJGcSIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic3pDWVM5VkhDUXp4K1RkYUpsRFpOR3pVRnl4eS9PamVwVFp6UCsrbmJlYkZycC81RGQ5N1hMM29EcmxWNHdMbnpjeTVDTlFVK2hrNDdtdkVmSWM4L0E1Vlo2cVVBK009IiwiaSI6ImdTem9lVE51QW9mVEwybzYiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaElGWDNjVUwyOUhoUGI1K1F3M0lzOVpZWTRDeVRNNHRreFI1di91ZnRnZGJrNExUZzlJWndMclNnRXJweU1yaVAzNlQyRWJaeWd1WTk5Y29nVkVMYlFWeHQ4RFBqdz09IiwiaSI6Ind5Z3kwV1dZdERaUTlZMngiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "BP 4 Ver only on 4.xx FW, Standard Ver for 5.xx to 12.xx instead.",
+    "apr_emu": "on",
+    "size": "12GB"
+  },
+   {
+    "title": "SpongeBob SquarePants Titans of The Tide Ghostly Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/SpongeBob_SquarePants_Titans_of_The_Tide.jpg",
+    "tags": [
+      "PPSA26893",
+      "v01.400",
+      "EUR",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicm9oNjkxZjFQc2lreldhRHNQdlJPTjBpRnJYa2dsNVNRWGI3V0pzdEd5ZTh2YTNWcTlncTY2YTRMbUVpTjl4cUVPRUdwWFhMdnlpTzNUV2Iwc3daU0VXZElXZU80WUtrZU5BPSIsImkiOiI3R0srVlhaam1BOVlDa1BZIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY1ZzV2lMZGRZWk5TRmsvSngrSEVueW1GM0hocTd1U1Z3dUUvdXJ5Y2UvanVvQzB5L0o4NVpPRU1EN0pBdFo5UDI3dit3MHQvandFMGVSK0Y4ZmhJLzV3ZHg3TXhPZE09IiwiaSI6IktHMXM2RU1melA1UDJ4SGgiLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU1E1WlovKys4TXRkUmllM0E0aURjS2tSd0tIeGlBcmpUWWJhVUdrNWNIWnR2eTc1eSs0QzBjWkt2TUpZd1o3VE5kRXRFVVB6SkxKSlRGRU1uVVNlci9DbHhBMkYiLCJpIjoiYldXays1eUVCYVNVYzlBYyIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZEJIOVhUVzAzay9aUS9VTUhCQ2xCWlJIUXBxa1hHVVhWcUpJV2tzeXN1WXJkbXJSam9RSngvSElkRzJ2Sk0vKzdxRi9YME1sRVhDdm5waDJrREVIaU1TRWdKT2U0b0E9IiwiaSI6InFXMEp3eHd0V2ZkUUt5aksiLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiODJ0a0NaK2M5NVU4c3hEUlpDbjNDWVJ2cDk5OTRsRTRMa2lFbmtPQmVpaGIxNmE0N1U0NTJ0ZUY5T1pzQUkrWi9uK2tUdkpWRXZsUStEVUt1dFYzaG1DSWM3eTcwdz09IiwiaSI6IkxYeTFZM2ZKek96MU1lWkciLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL0duNkFMMjFSMzVNQkx4SWJYbzNsaXZqcjIvb1N6TFg3WTNlaXZhNDdEOEN3NFAzQXFuUTFwTUhvS0kxRkNlYlQrNnVWaGRZOERHTFQxbS90emdRMXllMDRaN3VHWkU9IiwiaSI6IlBHTXJQYkM3WVF0a1IxbFciLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNlBGczNtVktwM2phYXpWSCtVclo3ckkwZGMwOHV4bjFucFpMelg0RElUdDdHSEplcVAxWE9yYjJndXFKMVVibmFsZjgvc3UxNXcwUTdTNDM5RTMxZG5OTllmcUciLCJpIjoiYzFrWTRLb2kyTmZKWUVvSSIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiR3BBdGk4YnpvSzlJUWY3QTRaRTU0blpzMC9GaTVPajF4Q3FLUHczd1VwUGVwQTNuN1hNalQwdWdqcUpubnpSR2w5Q1MwSmQzR0NNdTlWMFFuN0UxRDBSbitUOWJlSE09IiwiaSI6Ijg1ZGgySHVJeUxXUjBzNEwiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "",
+    "credits_files": "DLPS Team",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "how_to_play": "BP 4 Ver only on 4.xx FW, Standard Ver for 5.xx to 12.xx instead.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "25GB"
+  },
+   {
     "title": "Slave Zero X",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Slave_Zero_X.avif",
     "tags": [
@@ -112,6 +165,7 @@
     "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNVh4V0RaYXhicy8vYkZ1dFVOVDZhMjVIWnJNR2hhMjFBZDEvQjkyM29LVzBGL2F3dDQ2c0lZSzRwUGJnV1N1UnBPTjhNZGlNZnkyVEd6Skw5L245YVlPTExhaWpVdz09IiwiaSI6IlRUTzFuRC9NWkFibll0MjgiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DecKerr97",
     "credits_backport": "DecKerr97",
+    "credits_dlc": "Pkykzhack",
     "popular": "on",
     "size": "44GB"
   },
