@@ -1,5 +1,33 @@
 [
    {
+    "title": "Ghost of Yotei Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ghost_of_Yotei_Deluxe_Edition.png",
+    "tags": [
+      "PPSA26344",
+      "v01.512",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRmpvQUNBQ3dEOGh0MW85b0JDQ29PZjlxb1ZGMjBwdjArQ1hmRzR0Uy95L0N2SmdNRng0RVJ0K0IzYnRpRXV2UUlWS2ZlL1R6K2VpTFA3SGF0T1U5SFNRSFg1eDFOREs4TFRrPSIsImkiOiJKalorS3p6d3lJRWY2dlJnIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSmFaSjJBdXVRS3VZbC9xelFOeDIwZDFqUDFGOGl3WGtMNlY4NWJDSmxoOTNlZklsQ1BoK3UrS3hFQVBWM0hRcUw1WnZhQUtxK0ZWc3kzYlNNZjJaN0ZHWTFGUksxR0k9IiwiaSI6IlcyRzNZSmRhTXY3UndaK0kiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOXp4dDlFeEpTVHgxZGw1Q3EyWFNQRno2Si8zR3h2cHhhTjU1aGdmc2tUenVEbmtvVGVQbXhyZ3BaUXNUcWorRjhVUm9wOG1SaVRpbjhlUjB5dXNDTXBXTUgxSDQiLCJpIjoiSUtCamVPbTkydGNRT0d4dyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ1FOdm1LWW0wLzhvUlJaYVJaVlFPOW9iQklHWDVNR0IwUit6OEpTR1BOSGxOUjU0Wlp6TVdyWkk3eG1jN2RlMm1CY2tnRDJVYklPYXB6Rk90R3FGWGFubEIxS0luV0k9IiwiaSI6IkxTb2lBT3lndVlTV3J4QTEiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWm9YZ1AyOVFOSmNORGhIbmRYNDRMS01DQjk4dVdpenZjcXRmVkdvTk5tUnlGZlBZelBRNjh2K2tweGo4RjU4a3VnTDJ3RjZjc291bWlKOUdJcXoxUndUVG13MFlEZz09IiwiaSI6IlVvbTc5RzZOM3UvdUtPcVAiLCJuIjoiVmF1bHQifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUFJNa3pHZ0FYZG9FVkRicS9rVSt6L0FXcTQ0ZTl3dWRRcXRJZDg4dFdnb2JxYTI2a0dUS3Nna3dqRXQra1FHM1E3Y0phOXR4NEpTWVhNemNYeTdLUEN6MktZVnhBcWNlUXhJPSIsImkiOiJlTmU1SFhsSjh2UFNSMmZsIiwibiI6IkFraWEifQ==",
+    "dlc_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3JsR29TU2RsQmxoaU05YlR6d1FEYlB3VzMwMHlFZTRmMXB5U3FTcUc0QkVua3JkbFQ1aVpxWXFCNFJ3c1pQNlBCWmVjYXVUbk1OUTc2OTU1ZGFhWmxSZUltR0dKQ3c9IiwiaSI6IjNXWUhoTHlFT2hnblFaNHMiLCJuIjoiVmlraSJ9",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblp3bEh2TEIvRUNCUWJkR05sa21lQlFtc2pRN29aV0p5VHdsUmpSeDduaGlsU1cvV2hlK0xMd3BJamdXWmkrQytsRkh6eWJIWFU0eUJxZnVTU3FSOUpHSHhYS3AiLCJpIjoiajN0UnVZTlpPaFN6UUhubyIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblNBMUJVMlo0UW1TbVgyMlVTL0dhc0dHc1A0WGN3K2x4eG4xQVppdmsrbFRRdVhMeHY4cEZSUENIZkMycTVhb2d6Y3hzZlBZZjBLSGRMMjdiMVJDZFdXTWVxQVJ6Zz09IiwiaSI6ImRwdVMrNVVNTEU4a0NqZVIiLCJuIjoiVmF1bHQifQ==",
+    "fix_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUnl0TW5nYldrY2JrOUREY0JPMTF3S2duOVhuYnlwSUZENy9ZaTlRT0NaK21BYVpIL2tFZ1RGaU5nR3k4VWJUaHNBRUpIc3NLVERVcEgwSnpTN2lXOTBWV2VEMy8iLCJpIjoicU8xS2NXeWh4M3BsNHVTQSIsIm4iOiJEYXRhIn0=",
+    "fix_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidGx2eVRYNERWOGhkdm5kL1VnR3pOYXRxOEdPTFZrbnc2MTFWNU9zSXdnN2l6c29nZ1JsQ043NUFZNmxGbVBJS09UR2p1SEprdXdjUFpLNi9IMCtna2lpWjZIaGV5dz09IiwiaSI6IjJVZU9GS0NTTEYrQVNoZEQiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "DUPLEX",
+    "fix_guide" : " 1. Open FTP Port (if you dont want do through FTP go on Step 6) 2. Go to ./data/shadowmount/ and open config.ini 3. add this line: mount_read_only=0 4. Restart the console 5. Go to /mnt/shadowmnt/PPSA26344/ and drag and drop ampr_emu.index on the root (where the eboot.bin is located). 6. Is possible also use OSFMount instead FTP, enjoy.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "188GB"
+  },
+   {
     "title": "Astros Playroom",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Astros_Playroom.webp",
     "tags": [
@@ -160,31 +188,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "43GB"
-  },
-   {
-    "title": "Ghost of Yotei Deluxe Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ghost_of_Yotei_Deluxe_Edition.png",
-    "tags": [
-      "PPSA26344",
-      "v01.512",
-      "USA",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRmpvQUNBQ3dEOGh0MW85b0JDQ29PZjlxb1ZGMjBwdjArQ1hmRzR0Uy95L0N2SmdNRng0RVJ0K0IzYnRpRXV2UUlWS2ZlL1R6K2VpTFA3SGF0T1U5SFNRSFg1eDFOREs4TFRrPSIsImkiOiJKalorS3p6d3lJRWY2dlJnIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSmFaSjJBdXVRS3VZbC9xelFOeDIwZDFqUDFGOGl3WGtMNlY4NWJDSmxoOTNlZklsQ1BoK3UrS3hFQVBWM0hRcUw1WnZhQUtxK0ZWc3kzYlNNZjJaN0ZHWTFGUksxR0k9IiwiaSI6IlcyRzNZSmRhTXY3UndaK0kiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOXp4dDlFeEpTVHgxZGw1Q3EyWFNQRno2Si8zR3h2cHhhTjU1aGdmc2tUenVEbmtvVGVQbXhyZ3BaUXNUcWorRjhVUm9wOG1SaVRpbjhlUjB5dXNDTXBXTUgxSDQiLCJpIjoiSUtCamVPbTkydGNRT0d4dyIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ1FOdm1LWW0wLzhvUlJaYVJaVlFPOW9iQklHWDVNR0IwUit6OEpTR1BOSGxOUjU0Wlp6TVdyWkk3eG1jN2RlMm1CY2tnRDJVYklPYXB6Rk90R3FGWGFubEIxS0luV0k9IiwiaSI6IkxTb2lBT3lndVlTV3J4QTEiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWm9YZ1AyOVFOSmNORGhIbmRYNDRMS01DQjk4dVdpenZjcXRmVkdvTk5tUnlGZlBZelBRNjh2K2tweGo4RjU4a3VnTDJ3RjZjc291bWlKOUdJcXoxUndUVG13MFlEZz09IiwiaSI6IlVvbTc5RzZOM3UvdUtPcVAiLCJuIjoiVmF1bHQifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUFJNa3pHZ0FYZG9FVkRicS9rVSt6L0FXcTQ0ZTl3dWRRcXRJZDg4dFdnb2JxYTI2a0dUS3Nna3dqRXQra1FHM1E3Y0phOXR4NEpTWVhNemNYeTdLUEN6MktZVnhBcWNlUXhJPSIsImkiOiJlTmU1SFhsSjh2UFNSMmZsIiwibiI6IkFraWEifQ==",
-    "dlc_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3JsR29TU2RsQmxoaU05YlR6d1FEYlB3VzMwMHlFZTRmMXB5U3FTcUc0QkVua3JkbFQ1aVpxWXFCNFJ3c1pQNlBCWmVjYXVUbk1OUTc2OTU1ZGFhWmxSZUltR0dKQ3c9IiwiaSI6IjNXWUhoTHlFT2hnblFaNHMiLCJuIjoiVmlraSJ9",
-    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblp3bEh2TEIvRUNCUWJkR05sa21lQlFtc2pRN29aV0p5VHdsUmpSeDduaGlsU1cvV2hlK0xMd3BJamdXWmkrQytsRkh6eWJIWFU0eUJxZnVTU3FSOUpHSHhYS3AiLCJpIjoiajN0UnVZTlpPaFN6UUhubyIsIm4iOiJEYXRhIn0=",
-    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblNBMUJVMlo0UW1TbVgyMlVTL0dhc0dHc1A0WGN3K2x4eG4xQVppdmsrbFRRdVhMeHY4cEZSUENIZkMycTVhb2d6Y3hzZlBZZjBLSGRMMjdiMVJDZFdXTWVxQVJ6Zz09IiwiaSI6ImRwdVMrNVVNTEU4a0NqZVIiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "DecKerr97",
-    "credits_backport": "DecKerr97",
-    "credits_dlc": "DUPLEX",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "188GB"
   },
    {
     "title": "Electronics Puzzle Lab",
