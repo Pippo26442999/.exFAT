@@ -1,5 +1,34 @@
 [
    {
+    "title": "Dragon Ball Fighter Z",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dragon_Ball_Fighter_Z.avif",
+    "tags": [
+      "PPSA09790",
+      "v01.010",
+      "USA to EUR Langs", 
+      "Standard (8.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNnExeHdvcmEza2lqenQ4ODNqVzBBTkFwSnQzT1B3bUU1SjlaK1pOQ3pQZ1pSZFg5SUNKSHJJZk9lU2RZbit0aGNSUEl1M0k2VFI3TlNqTnJ4MERWbmFCWEc0RWpwblN3YmJZPSIsImkiOiJXS3hxUUVZTWwwbnRlWWlSIiwibiI6IkFraWEifQ==",
+    "standard_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZkhvZnpGOFBabmxtWGJoZlc2WTc1ZGhCS3poekpYZlJ0U1NZSnJ5QUl3UWJhL0hhaGJtdHM3cDkvem5XNFdnbTRaV3ZRKzh2WGh4OVBCd3A1cmkzc0xrSVBLR1Z4SlE9IiwiaSI6IkxYOEpmcm9DVWp2NTd1SUwiLCJuIjoiVmlraSJ9",
+    "standard_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNkNLdGZXdC9uRmlLdWwzbVNtaDRUbFNOczdxWEJLWEpwWnM1N1NHclM1T29DUzJUS1ZvODAzSE1Nb2U4VkxMV3ZKelh0RlV2dkk5M2RFaW5qYmZ4eHJNS01ra3IiLCJpIjoiQTJEQWNZZjA0cU8vQTJrQyIsIm4iOiJEYXRhIn0=",
+    "standard_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3k4dzJrSVNZcGR2TklpZGViTWR6OURLbHZLbHZPR1ZDaHV4Z0hUSnBEY0ZYV1FyakUzOWVCcWtVQlRzak1vV3BlZGYrNEsyMmhLZnRSZStUeUU5di9sVm92WkZPdzg9IiwiaSI6IndFR2pjY3NzTCs3K1hHSDciLCJuIjoiRmlsZUsifQ==",
+    "standard_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMFBlakwwdnhRSWFBQ0RwWTVVdUtWV2ZaTC9ITEV3NlU3ZE8zSU9IcEVJMGVsbmR0a1hJcG5jOGJhQzJSYU1TblloQXRSbDN1QktUZTdsbEtxQzBJRytVd1BhUGlIdz09IiwiaSI6InJ0UlJ1ekl5MVB0K2FsVGkiLCJuIjoiVmF1bHQifQ==",
+    "backport_akia": "",
+    "backport_viki": "",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUTlsR2VNTmZUVXk3anFENHBSeVVUMVVUVjVHckJwNTBJaWIrYmRBd0x4MGtOd1hYTDBueHVRSTUxbTAvNnZweHFMSkgxdDh5Z2ZPdjMxaU1yNEo3cDRYRDBmdWMiLCJpIjoiMW04N3Nac01JcWtkYVc5NSIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYU1DZDZYcjhTQjhrSzBHVVh4MEsycGZ4S1BIZ1NIZEN6RHl3RERPanZ0ZU1hTXQ5dzUxNnRoZVUvcmFWU0pkUlA4ZUdjMStCMmpnbFVuWXVFQ1hoZWE1ZmRLbzMyeUE9IiwiaSI6IllsRkt6SmZPVmsyb20yZGoiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibGZOM0VhTEJCUW1OWTRpaEh0THZMemgvNk1Kb1k0Y25vV2lJcnUvR293QUd3NmxGMklwWkh6dEZyT3VsY1IyUnYrZzM4V3NRN1ozWTZJUjhXUGlSMU9henVIRzJnQT09IiwiaSI6Ik9CWjhBOEhEcXBqQmM4VmciLCJuIjoiVmF1bHQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVkZ6cERWc1hsdEdpaHV2TnpFNmQxZ2VsdEhORHJEZnoyUXFqUXZXMm5YR0tCaGtVNGRFNjMrTno4OWZUWDJwakZyeitKWE9LZUJXRXY0NWRyMVd6NVpFZ3NLbjYiLCJpIjoicGNiaXFWcjRUc0VoeXpWUiIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWGFkZlh0a0YzbHFiK2FmcjJFR092ZWdGOEx0eGt1V3lZcWl6Q1ZwdzdiY2lYU04wQmtVVFA3cUowQkZHelY0aENKeUM4ZjdVYlg4TnZVcUVMMUFOTk85clhZNGtXUVE9IiwiaSI6Ildkb01JRTZVNDJKYlVwVXUiLCJuIjoiRmlsZUsifQ==",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVzRsT1plSXo3bEhrNzdNNTdaU1d6SncxV1V2elZKQXh4YlU2ZGpZbW1GSFkwWUd6QUVtMmpicDFkbDVTYmFWbXlBMnFGUDB1SldCQm8wazhHMlRacXlZaXkycWRSZz09IiwiaSI6InNPalJqTnBYUWg4YVhvQzIiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "romhunter",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "43GB"
+  },
+   {
     "title": "Ghost of Yotei Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ghost_of_Yotei_Deluxe_Edition.png",
     "tags": [
@@ -4900,28 +4929,6 @@
     "credits_files": "DUPLEX",
     "credits_backport": "BestPig",
     "size": "5GB"
-  },
-   {
-    "title": "Dragon Ball Fighter Z",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Dragon_Ball_Fighter_Z.avif",
-    "tags": [
-      "PPSA09790",
-      "v01.010",
-      "USA to EUR Langs", 
-      "8.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNnExeHdvcmEza2lqenQ4ODNqVzBBTkFwSnQzT1B3bUU1SjlaK1pOQ3pQZ1pSZFg5SUNKSHJJZk9lU2RZbit0aGNSUEl1M0k2VFI3TlNqTnJ4MERWbmFCWEc0RWpwblN3YmJZPSIsImkiOiJXS3hxUUVZTWwwbnRlWWlSIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZkhvZnpGOFBabmxtWGJoZlc2WTc1ZGhCS3poekpYZlJ0U1NZSnJ5QUl3UWJhL0hhaGJtdHM3cDkvem5XNFdnbTRaV3ZRKzh2WGh4OVBCd3A1cmkzc0xrSVBLR1Z4SlE9IiwiaSI6IkxYOEpmcm9DVWp2NTd1SUwiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNkNLdGZXdC9uRmlLdWwzbVNtaDRUbFNOczdxWEJLWEpwWnM1N1NHclM1T29DUzJUS1ZvODAzSE1Nb2U4VkxMV3ZKelh0RlV2dkk5M2RFaW5qYmZ4eHJNS01ra3IiLCJpIjoiQTJEQWNZZjA0cU8vQTJrQyIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3k4dzJrSVNZcGR2TklpZGViTWR6OURLbHZLbHZPR1ZDaHV4Z0hUSnBEY0ZYV1FyakUzOWVCcWtVQlRzak1vV3BlZGYrNEsyMmhLZnRSZStUeUU5di9sVm92WkZPdzg9IiwiaSI6IndFR2pjY3NzTCs3K1hHSDciLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMFBlakwwdnhRSWFBQ0RwWTVVdUtWV2ZaTC9ITEV3NlU3ZE8zSU9IcEVJMGVsbmR0a1hJcG5jOGJhQzJSYU1TblloQXRSbDN1QktUZTdsbEtxQzBJRytVd1BhUGlIdz09IiwiaSI6InJ0UlJ1ekl5MVB0K2FsVGkiLCJuIjoiVmF1bHQifQ==",
-    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVkZ6cERWc1hsdEdpaHV2TnpFNmQxZ2VsdEhORHJEZnoyUXFqUXZXMm5YR0tCaGtVNGRFNjMrTno4OWZUWDJwakZyeitKWE9LZUJXRXY0NWRyMVd6NVpFZ3NLbjYiLCJpIjoicGNiaXFWcjRUc0VoeXpWUiIsIm4iOiJEYXRhIn0=",
-    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWGFkZlh0a0YzbHFiK2FmcjJFR092ZWdGOEx0eGt1V3lZcWl6Q1ZwdzdiY2lYU04wQmtVVFA3cUowQkZHelY0aENKeUM4ZjdVYlg4TnZVcUVMMUFOTk85clhZNGtXUVE9IiwiaSI6Ildkb01JRTZVNDJKYlVwVXUiLCJuIjoiRmlsZUsifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "romhunter",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "43GB"
   },
    {
     "title": "Aeterna Noctis",
