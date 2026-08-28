@@ -1,5 +1,50 @@
 [
    {
+    "title": "Ghost of Yotei Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ghost_of_Yotei_Deluxe_Edition.png",
+    "tags": [
+      "PPSA26344",
+      "v1.015",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSmFaSjJBdXVRS3VZbC9xelFOeDIwZDFqUDFGOGl3WGtMNlY4NWJDSmxoOTNlZklsQ1BoK3UrS3hFQVBWM0hRcUw1WnZhQUtxK0ZWc3kzYlNNZjJaN0ZHWTFGUksxR0k9IiwiaSI6IlcyRzNZSmRhTXY3UndaK0kiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOXp4dDlFeEpTVHgxZGw1Q3EyWFNQRno2Si8zR3h2cHhhTjU1aGdmc2tUenVEbmtvVGVQbXhyZ3BaUXNUcWorRjhVUm9wOG1SaVRpbjhlUjB5dXNDTXBXTUgxSDQiLCJpIjoiSUtCamVPbTkydGNRT0d4dyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ1FOdm1LWW0wLzhvUlJaYVJaVlFPOW9iQklHWDVNR0IwUit6OEpTR1BOSGxOUjU0Wlp6TVdyWkk3eG1jN2RlMm1CY2tnRDJVYklPYXB6Rk90R3FGWGFubEIxS0luV0k9IiwiaSI6IkxTb2lBT3lndVlTV3J4QTEiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWm9YZ1AyOVFOSmNORGhIbmRYNDRMS01DQjk4dVdpenZjcXRmVkdvTk5tUnlGZlBZelBRNjh2K2tweGo4RjU4a3VnTDJ3RjZjc291bWlKOUdJcXoxUndUVG13MFlEZz09IiwiaSI6IlVvbTc5RzZOM3UvdUtPcVAiLCJuIjoiVmF1bHQifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUFJNa3pHZ0FYZG9FVkRicS9rVSt6L0FXcTQ0ZTl3dWRRcXRJZDg4dFdnb2JxYTI2a0dUS3Nna3dqRXQra1FHM1E3Y0phOXR4NEpTWVhNemNYeTdLUEN6MktZVnhBcWNlUXhJPSIsImkiOiJlTmU1SFhsSjh2UFNSMmZsIiwibiI6IkFraWEifQ==",
+    "dlc_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3JsR29TU2RsQmxoaU05YlR6d1FEYlB3VzMwMHlFZTRmMXB5U3FTcUc0QkVua3JkbFQ1aVpxWXFCNFJ3c1pQNlBCWmVjYXVUbk1OUTc2OTU1ZGFhWmxSZUltR0dKQ3c9IiwiaSI6IjNXWUhoTHlFT2hnblFaNHMiLCJuIjoiVmlraSJ9",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblp3bEh2TEIvRUNCUWJkR05sa21lQlFtc2pRN29aV0p5VHdsUmpSeDduaGlsU1cvV2hlK0xMd3BJamdXWmkrQytsRkh6eWJIWFU0eUJxZnVTU3FSOUpHSHhYS3AiLCJpIjoiajN0UnVZTlpPaFN6UUhubyIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblNBMUJVMlo0UW1TbVgyMlVTL0dhc0dHc1A0WGN3K2x4eG4xQVppdmsrbFRRdVhMeHY4cEZSUENIZkMycTVhb2d6Y3hzZlBZZjBLSGRMMjdiMVJDZFdXTWVxQVJ6Zz09IiwiaSI6ImRwdVMrNVVNTEU4a0NqZVIiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "DecKerr97",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "188GB"
+  },
+   {
+    "title": "Electronics Puzzle Lab",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Electronics_Puzzle_Lab.avif",
+    "tags": [
+      "PPSA20931",
+      "v01.000",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTXRuMHY0WWM3SU0rUXNNTXRtVGZvYnUxOXRCNHZCL1Y4RDFPeWduNFZrU2dKeFd5Y1NwWWQ0S21hZ0FrWmpmL1AraEtNNHFrcXkzQkRvMkRPYURjbityMC95K3ZEdzFmOXFFPSIsImkiOiJxYi9CQ2lpRWxZK3NadDZZIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibHN3eHJoczYvem9FYk81aUNLKzZOVk1GSWx3Mkxvb1BZbzh3TDluajZ3bGJvZ2JsditNdUN1SC81Sk03ZXZpTWNFOEkvYVZUc2dmdGJGTEpVRkNPNFk1VHp1TDNuODA9IiwiaSI6ImR3K25pMHIveFZkOWlUM2ciLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNnpGL2ErZnhDMW0rL3l1YmV2MHVtb0NQOExzUTZkT1drd0RPMlg4dlM1cUp2RXZBNEljY3hsMlE1WGh6VzZudDQ4U2VPZDZZL01rSzFWdkV0V0U1R0JqQ3cyYUsiLCJpIjoiZDNNeHFzMkdIQ05mR2IrQyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUUV6RXFzNm5XOWFzV0paV05Ob0xya294dHpVUE4zMFY0d0E4Q1VYZ3pWTmlISFpnL3JVc3pTTHRreDNrc00veFNEenN6M2lWZGhCOHRaVkcyVGVDR3NuMFdvanU3Qzg9IiwiaSI6IkNHZ2hJZmlXNVN4NTQ1SEoiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicm9zTU5UQzMrRTdYclJpMS9qNjcvVEFXUmNCbS9hVzcxd2Q2b1NjTVFqeHhseXFTQ2JIZzJ5N2Y3bjBDWmtWR0ZMaFF6L2V0MGRieWlNcHB2dkRmU24zZFc4Tm0yZz09IiwiaSI6Ikl3NkFuaVpCRlVzbTVNSFciLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Amiibohound",
+    "credits_backport": "DecKerr97",
+    "apr_emu": "on",
+    "size": "1GB"
+  },
+   {
     "title": "Cyberpunk 2077 Ultimate Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Cyberpunk_2077_Ultimate_Edition.avif",
     "tags": [
