@@ -1617,6 +1617,8 @@ function openGameModal(game, event) {
     if (game.ffpkg_data) ffpkgHTML += createModalBtn(game.ffpkg_data, 'DATA', false);
     if (game.ffpkg_filek) ffpkgHTML += createModalBtn(game.ffpkg_filek, 'FILEK', false);
     if (game.ffpkg_vault) ffpkgHTML += createModalBtn(game.ffpkg_vault, 'VAULT', false);
+    if (game.ffpkg_filed) ffpkgHTML += createModalBtn(game.ffpkg_vault, 'FILED', false);
+
     
     let ffpkgSectionHTML = ffpkgHTML ? `<div style="width:100%; margin-bottom:10px;"><strong>FFPKG</strong></div>${ffpkgHTML}` : '';
     
@@ -1633,6 +1635,7 @@ function openGameModal(game, event) {
             if (game.backport7xx_data) bp7 += createModalBtn(game.backport7xx_data, 'DATA');
             if (game.backport7xx_filek) bp7 += createModalBtn(game.backport7xx_filek, 'FILEK');
             if (game.backport7xx_vault) bp7 += createModalBtn(game.backport7xx_vault, 'VAULT');
+            if (game.backport7xx_filed) bp7 += createModalBtn(game.backport7xx_vault, 'FILED');
         }
         if (hasBackport4) {
             if (game.backport4xx_akia) bp4 += createModalBtn(game.backport4xx_akia, 'AKIA');
@@ -1641,6 +1644,7 @@ function openGameModal(game, event) {
             if (game.backport4xx_data) bp4 += createModalBtn(game.backport4xx_data, 'DATA');
             if (game.backport4xx_filek) bp4 += createModalBtn(game.backport4xx_filek, 'FILEK');
             if (game.backport4xx_vault) bp4 += createModalBtn(game.backport4xx_vault, 'VAULT');
+            if (game.backport4xx_filed) bp4 += createModalBtn(game.backport4xx_vault, 'FILED');
         }
         downloadsHTML = `${ffpkgSectionHTML}${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
     } 
@@ -1660,6 +1664,7 @@ function openGameModal(game, event) {
         if (game.backport_data) bp += createModalBtn(game.backport_data, 'DATA');
         if (game.backport_filek) bp += createModalBtn(game.backport_filek, 'FILEK');
         if (game.backport_vault) bp += createModalBtn(game.backport_vault, 'VAULT');
+        if (game.backport_filed) bp += createModalBtn(game.backport_filed, 'VAULT');
         downloadsHTML = `${ffpkgSectionHTML}${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
     } 
     // Altrimenti usa i link standard
@@ -1671,6 +1676,7 @@ function openGameModal(game, event) {
         if (game.data_url) btns += createModalBtn(game.data_url, 'DATA');
         if (game.filek_url) btns += createModalBtn(game.filek_url, 'FILEK');
         if (game.vault_url) btns += createModalBtn(game.vault_url, 'VAULT');
+        if (game.filed_url) btns += createModalBtn(game.vault_url, 'FILED');
         downloadsHTML = `${ffpkgSectionHTML}${btns}`;
     }
     downloadsContainer.innerHTML = downloadsHTML;
@@ -1691,6 +1697,7 @@ function openGameModal(game, event) {
         if (game.dump_data) dumpHTML += dumpBtn(game.dump_data, 'DATA');
         if (game.dump_filek) dumpHTML += dumpBtn(game.dump_filek, 'FILEK');
         if (game.dump_vault) dumpHTML += dumpBtn(game.dump_vault, 'VAULT');
+        if (game.filed_vault) dumpHTML += dumpBtn(game.dump_vault, 'FILED');
         dumpSection.style.display = 'block';
         dumpContainer.innerHTML = dumpHTML;
     } else {
@@ -1707,6 +1714,7 @@ function openGameModal(game, event) {
     if (game.dlc_data) dlcBtns += createModalBtn(game.dlc_data, 'DATA');
     if (game.dlc_filek) dlcBtns += createModalBtn(game.dlc_filek, 'FILEK');
     if (game.dlc_vault) dlcBtns += createModalBtn(game.dlc_vault, 'VAULT');
+    if (game.dlc_filed) dlcBtns += createModalBtn(game.dlc_vault, 'FILED');
     if (dlcBtns) {
         dlcSection.style.display = 'block';
         dlcContainer.innerHTML = dlcBtns;
@@ -1732,6 +1740,7 @@ function openGameModal(game, event) {
     if (game.fix_data) fixBtns += createFixModalBtn(game.fix_data, 'DATA');
     if (game.fix_filek) fixBtns += createFixModalBtn(game.fix_filek, 'FILEK');
     if (game.fix_vault) fixBtns += createFixModalBtn(game.fix_vault, 'VAULT');
+    if (game.fix_filed) fixBtns += createFixModalBtn(game.fix_vault, 'FILED');
 
     if (fixBtns) {
         if (fixSection && fixContainer) {
@@ -2696,6 +2705,7 @@ function renderGames() {
         if (game.fix_data) fixBtns += createBtn(game.fix_data, 'DATA', false, false, true);
         if (game.fix_filek) fixBtns += createBtn(game.fix_filek, 'FILEK', false, false, true);
         if (game.fix_vault) fixBtns += createBtn(game.fix_vault, 'VAULT', false, false, true);
+        if (game.fix_filed) fixBtns += createBtn(game.fix_filed, 'FILED', false, false, true);
         
         let fixSectionHTML = fixBtns ? `<p class="ver-label"><b>FIX</b></p><div class="download-container">${fixBtns}</div>` : '';
         
@@ -2706,6 +2716,8 @@ function renderGames() {
         if (game.ffpkg_data) ffpkgBtns += createBtn(game.ffpkg_data, 'DATA', false, false);
         if (game.ffpkg_filek) ffpkgBtns += createBtn(game.ffpkg_filek, 'FILEK', false, false);
         if (game.ffpkg_vault) ffpkgBtns += createBtn(game.ffpkg_vault, 'VAULT', false, false);
+        if (game.ffpkg_filed) ffpkgBtns += createBtn(game.ffpkg_filed, 'FILED', false, false);
+
         
         let ffpkgSectionHTML = ffpkgBtns ? `<p class="ver-label"><b>FFPKG:</b></p><div class="download-container">${ffpkgBtns}</div>` : '';
         
@@ -2716,6 +2728,8 @@ function renderGames() {
         if (game.dump_data) dumpBtns += createBtn(game.dump_data, 'DATA', false, true);
         if (game.dump_filek) dumpBtns += createBtn(game.dump_filek, 'FILEK', false, true);
         if (game.dump_vault) dumpBtns += createBtn(game.dump_vault, 'VAULT', false, true);
+        if (game.dump_filed) dumpBtns += createBtn(game.dump_filed, 'FILED', false, true);
+
         
         // ===== DLC =====
         if (game.dlc_akia) dlcBtns += createBtn(game.dlc_akia, 'AKIA', true);
@@ -2724,6 +2738,8 @@ function renderGames() {
         if (game.dlc_data) dlcBtns += createBtn(game.dlc_data, 'DATA', true);
         if (game.dlc_filek) dlcBtns += createBtn(game.dlc_filek, 'FILEK', true);
         if (game.dlc_vault) dlcBtns += createBtn(game.dlc_vault, 'VAULT', true);
+        if (game.dlc_filed) dlcBtns += createBtn(game.dlc_filed, 'FILED', true);
+
         
         // ===== BACKPORT 7.xx e 4.xx =====
         const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault;
@@ -2738,6 +2754,8 @@ function renderGames() {
                 if (game.backport7xx_data) bp7 += createBtn(game.backport7xx_data, 'DATA');
                 if (game.backport7xx_filek) bp7 += createBtn(game.backport7xx_filek, 'FILEK');
                 if (game.backport7xx_vault) bp7 += createBtn(game.backport7xx_vault, 'VAULT');
+                if (game.backport7xx_filed) bp7 += createBtn(game.backport7xx_filed, 'FILED');
+
             }
             if (hasBackport4) {
                 if (game.backport4xx_akia) bp4 += createBtn(game.backport4xx_akia, 'AKIA');
@@ -2746,6 +2764,8 @@ function renderGames() {
                 if (game.backport4xx_data) bp4 += createBtn(game.backport4xx_data, 'DATA');
                 if (game.backport4xx_filek) bp4 += createBtn(game.backport4xx_filek, 'FILEK');
                 if (game.backport4xx_vault) bp4 += createBtn(game.backport4xx_vault, 'VAULT');
+                if (game.backport4xx_filed) bp4 += createBtn(game.backport4xx_filed, 'FILED');
+
             }
             downloadHTML = `${bp7 ? `<p class="ver-label"><b>BP 7.xx:</b></p><div class="download-container">${bp7}</div>` : ''}${bp4 ? `<p class="ver-label"><b>BP 4.xx:</b></p><div class="download-container">${bp4}</div>` : ''}`;
         } 
@@ -2764,6 +2784,7 @@ function renderGames() {
             if (game.backport_data) bp += createBtn(game.backport_data, 'DATA');
             if (game.backport_filek) bp += createBtn(game.backport_filek, 'FILEK');
             if (game.backport_vault) bp += createBtn(game.backport_vault, 'VAULT');
+            if (game.backport_filed) bp += createBtn(game.backport_filed, 'FILED');
             downloadHTML = `${std ? `<p class="ver-label"><b>STANDARD:</b></p><div class="download-container">${std}</div>` : ''}${bp ? `<p class="ver-label"><b>BACKPORT:</b></p><div class="download-container">${bp}</div>` : ''}`;
         } 
         // LINK SEMPLICI
@@ -2775,6 +2796,7 @@ function renderGames() {
             if (game.data_url) btns += createBtn(game.data_url, 'DATA');
             if (game.filek_url) btns += createBtn(game.filek_url, 'FILEK');
             if (game.vault_url) btns += createBtn(game.vault_url, 'VAULT');
+            if (game.filed_url) btns += createBtn(game.vault_url, 'FILED');
             downloadHTML = `<div class="download-container" style="margin-top:15px;">${btns}</div>`;
         }
         
