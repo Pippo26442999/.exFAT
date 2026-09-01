@@ -1624,8 +1624,8 @@ function openGameModal(game, event) {
     let ffpkgSectionHTML = ffpkgHTML ? `<div style="width:100%; margin-bottom:10px;"><strong>FFPKG</strong></div>${ffpkgHTML}` : '';
     
     // Verifica se ci sono backport 7.xx o 4.xx
-    const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault; || game.backport4xx_filed;
-    const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault; || game.backport4xx_filed;
+    const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault || game.backport4xx_filed;
+    const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault || game.backport4xx_filed;
     
     if (hasBackport7 || hasBackport4) {
         let bp7 = '', bp4 = '';
@@ -1687,7 +1687,7 @@ function openGameModal(game, event) {
     const dumpSection = document.getElementById('modal-dump-section');
     const dumpContainer = document.getElementById('modal-dump');
     let dumpHTML = '';
-    const hasDump = game.dump_akia || game.dump_viki || game.dump_buzz || game.dump_data || game.dump_filek || game.dump_vault || game.dump_filed;
+    const hasDump = game.dump_akia || game.dump_viki || game.dump_buzz || game.dump_data || game.dump_filek || game.dump_vault || game.dump_filed
     if (hasDump) {
         const dumpBtn = (url, label) => {
             if (!url || url === "undefined" || url.trim() === "") return '';
@@ -1699,7 +1699,7 @@ function openGameModal(game, event) {
         if (game.dump_data) dumpHTML += dumpBtn(game.dump_data, 'DATA');
         if (game.dump_filek) dumpHTML += dumpBtn(game.dump_filek, 'FILEK');
         if (game.dump_vault) dumpHTML += dumpBtn(game.dump_vault, 'VAULT');
-        if (game.filed_filed) dumpHTML += dumpBtn(game.dump_filed, 'FILED');
+        if (game.dump_filed) dumpHTML += dumpBtn(game.dump_filed, 'FILED');
         dumpSection.style.display = 'block';
         dumpContainer.innerHTML = dumpHTML;
     } else {
