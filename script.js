@@ -2799,7 +2799,7 @@ function renderGames() {
             if (game.data_url) btns += createBtn(game.data_url, 'DATA');
             if (game.filek_url) btns += createBtn(game.filek_url, 'FILEK');
             if (game.vault_url) btns += createBtn(game.vault_url, 'VAULT');
-            if (game.filed_url) btns += createBtn(game.vault_url, 'FILED');
+            if (game.filed_url) btns += createBtn(game.filed_url, 'FILED');
             downloadHTML = `<div class="download-container" style="margin-top:15px;">${btns}</div>`;
         }
         
