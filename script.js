@@ -608,7 +608,6 @@ async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
         else if (key.includes('data')) mirror = 'data';
         else if (key.includes('filek')) mirror = 'filek';
         else if (key.includes('vault')) mirror = 'vault';
-        else if (key.includes('filed')) mirror = 'filed';
 
         let name = mirror.charAt(0).toUpperCase() + mirror.slice(1);
         if (group !== 'files') {
@@ -1618,14 +1617,13 @@ function openGameModal(game, event) {
     if (game.ffpkg_data) ffpkgHTML += createModalBtn(game.ffpkg_data, 'DATA', false);
     if (game.ffpkg_filek) ffpkgHTML += createModalBtn(game.ffpkg_filek, 'FILEK', false);
     if (game.ffpkg_vault) ffpkgHTML += createModalBtn(game.ffpkg_vault, 'VAULT', false);
-    if (game.ffpkg_filed) ffpkgHTML += createModalBtn(game.ffpkg_filed, 'FILED', false);
 
     
     let ffpkgSectionHTML = ffpkgHTML ? `<div style="width:100%; margin-bottom:10px;"><strong>FFPKG</strong></div>${ffpkgHTML}` : '';
     
     // Verifica se ci sono backport 7.xx o 4.xx
-    const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault || game.backport4xx_filed;
-    const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault || game.backport4xx_filed;
+    const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault;
+    const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault;
     
     if (hasBackport7 || hasBackport4) {
         let bp7 = '', bp4 = '';
@@ -1645,13 +1643,12 @@ function openGameModal(game, event) {
             if (game.backport4xx_data) bp4 += createModalBtn(game.backport4xx_data, 'DATA');
             if (game.backport4xx_filek) bp4 += createModalBtn(game.backport4xx_filek, 'FILEK');
             if (game.backport4xx_vault) bp4 += createModalBtn(game.backport4xx_vault, 'VAULT');
-            if (game.backport4xx_filed) bp4 += createModalBtn(game.backport4xx_filed, 'FILED');
         }
         downloadsHTML = `${ffpkgSectionHTML}${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
     } 
     // Verifica se ci sono standard e backport
-    else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.backport_filed 
-             game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault || game.backport_filed) {
+    else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault 
+             game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault) {
         let std = '', bp = '';
         if (game.standard_akia) std += createModalBtn(game.standard_akia, 'AKIA');
         if (game.standard_viki) std += createModalBtn(game.standard_viki, 'VIKI');
@@ -1659,14 +1656,12 @@ function openGameModal(game, event) {
         if (game.standard_data) std += createModalBtn(game.standard_data, 'DATA');
         if (game.standard_filek) std += createModalBtn(game.standard_filek, 'FILEK');
         if (game.standard_vault) std += createModalBtn(game.standard_vault, 'VAULT');
-        if (game.standard_filed) std += createModalBtn(game.standard_filed, 'FILED');
         if (game.backport_akia) bp += createModalBtn(game.backport_akia, 'AKIA');
         if (game.backport_viki) bp += createModalBtn(game.backport_viki, 'VIKI');
         if (game.backport_buzz) bp += createModalBtn(game.backport_buzz, 'BUZZ');
         if (game.backport_data) bp += createModalBtn(game.backport_data, 'DATA');
         if (game.backport_filek) bp += createModalBtn(game.backport_filek, 'FILEK');
         if (game.backport_vault) bp += createModalBtn(game.backport_vault, 'VAULT');
-        if (game.backport_filed) bp += createModalBtn(game.backport_filed, 'FILED');
         downloadsHTML = `${ffpkgSectionHTML}${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
     } 
     // Altrimenti usa i link standard
@@ -1678,7 +1673,6 @@ function openGameModal(game, event) {
         if (game.data_url) btns += createModalBtn(game.data_url, 'DATA');
         if (game.filek_url) btns += createModalBtn(game.filek_url, 'FILEK');
         if (game.vault_url) btns += createModalBtn(game.vault_url, 'VAULT');
-        if (game.filed_url) btns += createModalBtn(game.filed_url, 'FILED');
         downloadsHTML = `${ffpkgSectionHTML}${btns}`;
     }
     downloadsContainer.innerHTML = downloadsHTML;
@@ -1699,7 +1693,6 @@ function openGameModal(game, event) {
         if (game.dump_data) dumpHTML += dumpBtn(game.dump_data, 'DATA');
         if (game.dump_filek) dumpHTML += dumpBtn(game.dump_filek, 'FILEK');
         if (game.dump_vault) dumpHTML += dumpBtn(game.dump_vault, 'VAULT');
-        if (game.dump_filed) dumpHTML += dumpBtn(game.dump_filed, 'FILED');
         dumpSection.style.display = 'block';
         dumpContainer.innerHTML = dumpHTML;
     } else {
@@ -1716,7 +1709,6 @@ function openGameModal(game, event) {
     if (game.dlc_data) dlcBtns += createModalBtn(game.dlc_data, 'DATA');
     if (game.dlc_filek) dlcBtns += createModalBtn(game.dlc_filek, 'FILEK');
     if (game.dlc_vault) dlcBtns += createModalBtn(game.dlc_vault, 'VAULT');
-    if (game.dlc_filed) dlcBtns += createModalBtn(game.dlc_filed, 'FILED');
     if (dlcBtns) {
         dlcSection.style.display = 'block';
         dlcContainer.innerHTML = dlcBtns;
@@ -1742,7 +1734,6 @@ function openGameModal(game, event) {
     if (game.fix_data) fixBtns += createFixModalBtn(game.fix_data, 'DATA');
     if (game.fix_filek) fixBtns += createFixModalBtn(game.fix_filek, 'FILEK');
     if (game.fix_vault) fixBtns += createFixModalBtn(game.fix_vault, 'VAULT');
-    if (game.fix_filed) fixBtns += createFixModalBtn(game.fix_filed, 'FILED');
 
     if (fixBtns) {
         if (fixSection && fixContainer) {
@@ -1897,7 +1888,6 @@ function openFixModal(url, fixGuide, gameTitle) {
                         ${upd.data_url ? `<a href="${upd.data_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">DATA</a>` : ''}
                         ${upd.filek_url ? `<a href="${upd.filek_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">FILEK</a>` : ''}
                         ${upd.vault_url ? `<a href="${upd.vault_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">VAULT</a>` : ''}
-                        ${upd.filed_url ? `<a href="${upd.filed_url}" target="_blank" class="modal-btn" style="padding:6px 12px; font-size:0.7rem;">FILED</a>` : ''}
                     </div>
                 </div>
             </div>`;
@@ -2617,7 +2607,7 @@ function renderPopularGames() {
             if (updates && updates.length > 0) { const lastUpdateDate = new Date(updates[0].date); const now = new Date(); const diffInHours = (now - lastUpdateDate) / (1000 * 60 * 60); if (diffInHours >= 0 && diffInHours <= 24) updateBadge = `<div class="update-badge-popular">UPDATE</div>`; }
             
             let ffpkgIndicator = '';
-            if (game.ffpkg_akia || game.ffpkg_viki || game.ffpkg_buzz || game.ffpkg_data || game.ffpkg_filek || game.ffpkg_vault || game.ffpkg_filed) {
+            if (game.ffpkg_akia || game.ffpkg_viki || game.ffpkg_buzz || game.ffpkg_data || game.ffpkg_filek || game.ffpkg_vault) {
             }
             
             htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}${ffpkgIndicator}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`; 
