@@ -1676,7 +1676,7 @@ function openGameModal(game, event) {
         if (game.data_url) btns += createModalBtn(game.data_url, 'DATA');
         if (game.filek_url) btns += createModalBtn(game.filek_url, 'FILEK');
         if (game.vault_url) btns += createModalBtn(game.vault_url, 'VAULT');
-        if (game.filed_url) btns += createModalBtn(game.vault_url, 'FILED');
+        if (game.filed_url) btns += createModalBtn(game.filed_url, 'FILED');
         downloadsHTML = `${ffpkgSectionHTML}${btns}`;
     }
     downloadsContainer.innerHTML = downloadsHTML;
