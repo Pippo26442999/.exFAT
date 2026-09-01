@@ -1650,7 +1650,7 @@ function openGameModal(game, event) {
         downloadsHTML = `${ffpkgSectionHTML}${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
     } 
     // Verifica se ci sono standard e backport
-    else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.backport_filed 
+    else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.backport_filed || 
              game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault || game.backport_filed) {
         let std = '', bp = '';
         if (game.standard_akia) std += createModalBtn(game.standard_akia, 'AKIA');
