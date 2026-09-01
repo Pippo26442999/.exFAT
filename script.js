@@ -608,7 +608,8 @@ async function convertSingleGame(game, itemNumber, warnings, originalDecrypt) {
         else if (key.includes('data')) mirror = 'data';
         else if (key.includes('filek')) mirror = 'filek';
         else if (key.includes('vault')) mirror = 'vault';
-        
+        else if (key.includes('vault')) mirror = 'filed';
+
         let name = mirror.charAt(0).toUpperCase() + mirror.slice(1);
         if (group !== 'files') {
             name = `${group.charAt(0).toUpperCase() + group.slice(1)} - ${name}`;
@@ -1664,7 +1665,7 @@ function openGameModal(game, event) {
         if (game.backport_data) bp += createModalBtn(game.backport_data, 'DATA');
         if (game.backport_filek) bp += createModalBtn(game.backport_filek, 'FILEK');
         if (game.backport_vault) bp += createModalBtn(game.backport_vault, 'VAULT');
-        if (game.backport_filed) bp += createModalBtn(game.backport_filed, 'VAULT');
+        if (game.backport_filed) bp += createModalBtn(game.backport_filed, 'FILED');
         downloadsHTML = `${ffpkgSectionHTML}${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
     } 
     // Altrimenti usa i link standard
@@ -1697,7 +1698,7 @@ function openGameModal(game, event) {
         if (game.dump_data) dumpHTML += dumpBtn(game.dump_data, 'DATA');
         if (game.dump_filek) dumpHTML += dumpBtn(game.dump_filek, 'FILEK');
         if (game.dump_vault) dumpHTML += dumpBtn(game.dump_vault, 'VAULT');
-        if (game.filed_vault) dumpHTML += dumpBtn(game.dump_vault, 'FILED');
+        if (game.filed_filed) dumpHTML += dumpBtn(game.dump_filed, 'FILED');
         dumpSection.style.display = 'block';
         dumpContainer.innerHTML = dumpHTML;
     } else {
@@ -1714,7 +1715,7 @@ function openGameModal(game, event) {
     if (game.dlc_data) dlcBtns += createModalBtn(game.dlc_data, 'DATA');
     if (game.dlc_filek) dlcBtns += createModalBtn(game.dlc_filek, 'FILEK');
     if (game.dlc_vault) dlcBtns += createModalBtn(game.dlc_vault, 'VAULT');
-    if (game.dlc_filed) dlcBtns += createModalBtn(game.dlc_vault, 'FILED');
+    if (game.dlc_filed) dlcBtns += createModalBtn(game.dlc_filed, 'FILED');
     if (dlcBtns) {
         dlcSection.style.display = 'block';
         dlcContainer.innerHTML = dlcBtns;
@@ -1740,7 +1741,7 @@ function openGameModal(game, event) {
     if (game.fix_data) fixBtns += createFixModalBtn(game.fix_data, 'DATA');
     if (game.fix_filek) fixBtns += createFixModalBtn(game.fix_filek, 'FILEK');
     if (game.fix_vault) fixBtns += createFixModalBtn(game.fix_vault, 'VAULT');
-    if (game.fix_filed) fixBtns += createFixModalBtn(game.fix_vault, 'FILED');
+    if (game.fix_filed) fixBtns += createFixModalBtn(game.fix_filed, 'FILED');
 
     if (fixBtns) {
         if (fixSection && fixContainer) {
