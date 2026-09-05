@@ -1,5 +1,62 @@
 [
    {
+    "title": "LEGO Builders Journey",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/LEGO_Builders_Journey.webp",
+    "tags": [
+      "PPSA07430",
+      "v03.002.583",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTjRvTEZpN0pTWEM2M1MrOS9lajUraVlFR05xLzFod3lZT1hMWGsyV084Y091a3FvUkdoVDBUSlM0Wnl2R1MyRHNpd0ZodEJTRHlLTUQwR09LNUlnMndmbU5FWDNuZHBwSE9nPSIsImkiOiJQSzdDYVZMMG45SVRXY2wyIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRlI4RThmUDcrcUdHQXE2SlZpdHAzZ2hpOHEzTzExQWt4MFhYdm8vUVEzMTEvL21GK0EwWjZpVkM1YzcvQVpSd0V2Zmhod3JyR0NZL01yWUlhdHBlNmRMU0lvR3RSZFE9IiwiaSI6IjhiQWZmdjF3ZzJsOG40Zk0iLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiR3EzVVpINDdMRnY2OUdKdTN1SUNYSE9BUGdLMHpaQWtKdlY1a1VkRjRtSk9lT0p0VlBSTUtwTkhCNFpLMlUwU2ovdmp6UVRaMzdoUmpuSnVVTlhCVUplUld6YkMiLCJpIjoiMnl2RlNnTmdvMjEwTS9wQiIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV1lHSzB3bEprd2Exb0xaWWJSWUxFOHdOUmNjbVZKK3ZGOUVIRyt5dWY0S3dBeTJGNlR6N3l1OENIcStkLy9PcU1sbHc1OE83WXV1OVhRVDd3bVFZNTlEL1I5MjltWE09IiwiaSI6Ilh5SkJNbTI3SVRTTkpZdnkiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieDhNQmk0RzF3UitabHZPU1phTkNjQy9pUU5XZE43amc4Q2g3UGx3cHIrTzFLKzBpVDlwVVRLdFl5UnlrWXZua0xGcjdjTU1EYi9uZHpRUUtLWHhNQ0haaDZPclJVZz09IiwiaSI6IjJlOXNVL0tjNzJWWEJOUWYiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Deckerr97 & dunaevnick",
+    "credits_backport": "Deckerr97 & dunaevnick",
+    "apr_emu": "on",
+    "size": "1GB"
+  },
+   {
+    "title": "LEGO Bricktales",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/LEGO_Bricktales.webp",
+    "tags": [
+      "PPSA07430",
+      "v01.007",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblJ1ZnFjelIwc2RzOEkvSjgrSHpkL0xaaitvY2JvNmZlblZaVDhyNzhhajJudW1RTHgweWlId1JRUm05UDBMZVA1Ry96cFRobFYzWjZTc2tCeHoySzFYOUgzZVFpS2xLL3ZrPSIsImkiOiJIR1dMQ21tcEN4YTBicUhvIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUjJ4OGllOEtlZVc1VDNYYXViNVpZUHRaTzlQZlhaNHRlZGFRWkVGOGdSUllYT0Q5WGxZVmVJMGNabDFOUmVxb2xyQ0dKSkdTenl0WGQxVEovdGJRZmNKcW9qNUt0OE09IiwiaSI6IkQ0T0FGS0xxSnZxaTFiTVAiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUWhseEhpUGVuNDRGMXdqa0tuemcyMklBVlBNajRjcnUzeThpaW02NEMxVGplYmFQOWcxMDcvWlpIMXdBN1lmc2M0R2pGMVhwV0MzQ3hnWnVhaWlBM1hRQlBsWUIiLCJpIjoiOTE1UXlmSytyQXcvclFOZSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNUw5SUVIYjJobGhZQTYvUEprMENpaXpXZTBSTmxZYU81MXVnKzlOTGo1MEtyMVBQUUFOZFd1MFdNNjZoajlMRDI3WHlJejNOb2NQcTB4MWRqM1pHZDhBMjIwTVhHc1U9IiwiaSI6Ilg0bHNvUVFTc0pURFhtSUIiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY2hqWHRFbnZITDF2elV6VXR3cEVoUDQzc1piTDRoQ2lpQnMzWktaU1I3L0JWZnU2dVhyUmJjSDJ5ZjJpMmVjRmgyb0M4WDYrbzB0YjV3Q0h1dllqK090dVFMaGprUT09IiwiaSI6InZiQWx5amt6eHR5M2xUbU4iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Deckerr97 & dunaevnick",
+    "credits_backport": "Deckerr97 & dunaevnick",
+    "apr_emu": "on",
+    "size": "1GB"
+  },
+   {
+    "title": "LEGO Voyagers",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/LEGO_Voyagers.avif",
+    "tags": [
+      "PPSA23732",
+      "v01.000.004",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZy85Ry82bzhWaHA2N202VjNxS2ZKZVc3K2Q4alJ1WGxKZStHZnFwd0cvUm43VmN0T2JDUHpVdUwyeUZjSkRpM1B6OUh0ZTlBeENnR1Z3ZVhGUE1DWVhxZkpVb2lWRG9IN2pzPSIsImkiOiI1YWhPcXFRYy9jb3UzeXFjIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSU1pTFNNaTl6c01taFRGNkpyVEFvOXJLU2cvL3dKWk42MEpQK0dITytscjViTXRFMWZIdU9RMm1QdUtmcWxnT0c1M2hsRk9GY2E0czRCa0VYVCtUWVhZcFM5Ylg2cGM9IiwiaSI6Ik52NGZOWDlMM25HeGV0dnQiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoid2hZRVBxa04zK0JPaGFXUThkVmpJelVJSnhuSFk0R0hpTjk3bE1HYWx5WmhaNk4wUzljdDNsZk5mQnpFbWFUL3VvYlBpT0w2L3VsSjRxNjU2UmRmWndrUEQ3SlUiLCJpIjoidUVSRE1EcG1lMlhVV01pcCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL3JGV3UvS25Jb3ltWjV2UTFLOUJVNTVwMVd5V2QzNXhRbXVIY0cxMlloL0tZRGU2L04zamRlK3czdmJoMTA2OExES3E3Tk5lMFNjNS9pS0tZR2h4TFl5U1BXMEtzTTQ9IiwiaSI6IjZEc00vUWtUMjlBSWs5WG4iLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibmFiRmdwSlRxS3NZMEZEQ0d4SXBPdGlUUmJpZXJJZG9KTXZ1Y0JFR1I3K1pUNDcwdmd4QTJvQTNEVWhCUVE5SzdBQkJlbG9IRFVNTldUS1JYWGw1cHYzRDd2RzJSdz09IiwiaSI6IjR4bDQvZWZuMWhzMG94N1EiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Deckerr97 & dunaevnick",
+    "credits_backport": "Deckerr97 & dunaevnick",
+    "apr_emu": "on",
+    "size": "3GB"
+  },
+   {
     "title": "3D Billiards Pool and Snooker Remastered",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/3D_Billiards_Pool_and_Snooker_Remastered.avif",
     "tags": [
