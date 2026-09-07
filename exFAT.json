@@ -1,5 +1,27 @@
 [
    {
+    "title": "Granblue Fantasy Relink Special Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Granblue_Fantasy_Relink_SE.avif",
+    "tags": [
+      "PPSA06955",
+      "v01.003.002",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUWE1eWZ4NzN5ai9wRGs3VnhJdXYwNUJ4bS9acVdxL3pKTDFqWG1YZ2xxRjloTXEwRXl0OU9xQUREWkZkUjhUYXRkR3YzTmZHeUo3dE5nZlQ2OGJsUGU1QXBseFBwV2w3NGljPSIsImkiOiJwSUNkWGV2Q3BaWU00WU0xIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidUFwTmQwclNqQXB3Y1RiU2J2V2d1ZnBmYnpjSWxkeHJOcnh0UXdianI3YmM4Rk9yUythYmI2L1gxRlIxYXNON0krUHo0VTZmRURBeTZneGY5ZTlHVWltUVFxa1VPMUE9IiwiaSI6IlZ4TFBFSGEzUzJqWFZVTloiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNGJlNWxSelNWdnVWcWtoRm84VkEydHpaWkhqOXZsa3k4b29KaDF4WmZtejNMTDJEcVNPT1pmdWsxeCtkaVFPbjR2OVJMU2pGQWxHUkYvZDlsM3RWYkZRYm1DWVYiLCJpIjoidDZQUThXc1AzNXM4SXcxeSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT1h2Y3J5Ky80V3Z1RFQ2TTlUcmpaL0wwTUc1cTBBLzQ0VlhRd1A4UXZvOWpzalM0MGFTRlYzVTA5QnZ1NkdiMFNGUDdlZzJpdzZCZllhT0hNZ3U3MTZSVjVUK2creFU9IiwiaSI6IlZHNE9nWmtReVM2akdUYXciLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOWxSM3BaUXlNVGVzL093clYyWDVFRFNtWTdMVE5pTjNIdExQeEJ1RHVUdUdwclFaTkRGVGFRNFhyRERjQ3hVTnJyckt0eldtRzN4OENMS3krNEJWT1BzdkMydFozUT09IiwiaSI6ImZ0MzJIRFBNc0RTM0hiaVgiLCJuIjoiVmF1bHQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRGl4UFc0WWYyYjREdldrajQ4YmlQT2FXdU9aOVRXSzN1YmY1RHFwUHVGWm9IVWVnY3NuSmNBUExoelIxK1FnSWQ3TGVOSUF2RjJUaitqQmxaMkxrRitEWndUTXQiLCJpIjoiVk1JdHVhRmhhMmFVY0JvbyIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZGsva2tHbEtOWE9HY2tCMHdFcGs1QW00THo1UWMvWGNWNnQ0THRhb21xNTF4MXliQ1E2NFFiMDNXa2JRTlFMNkxKampyWFNTWk5rL1p5UGhaNmJ3V0x1NmFQdlMxUT09IiwiaSI6Ii9tZk1hbnNNK3V5R2NONnkiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX & VanBuuren",
+    "credits_dlc": "DUPLEX & VanBuuren",
+    "credits_backport": "Deckerr97",
+    "popular": "on",
+    "size": "90GB"
+  },
+   {
     "title": "Teenage Mutant Ninja Turtles The Cowabunga Collection",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/TMNT_The_Cowabunga_Collection.webp",
     "tags": [
