@@ -1402,19 +1402,33 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, 
     const clean = (str) => (str && str !== "undefined" && str.trim() !== "") ? str.trim() : null;
     const fileAuthor = clean(fAuth), bpAuthor = clean(bAuth), dlcAuthor = clean(dAuth), playInstructions = clean(hPlay);
     
-    if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
+    // Se tutti e tre sono uguali (Files, BackPort, DLCs)
+    if (fileAuthor && bpAuthor && dlcAuthor && fileAuthor === bpAuthor && bpAuthor === dlcAuthor) {
+        parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs & BackPort`);
+    }
+    // Se Files e BackPort sono uguali (DLCs diverso o assente)
+    else if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
         if (dlcAuthor) {
             parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
         } else {
             parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
         }
     }
+    // Se Files e DLCs sono uguali (BackPort diverso o assente)
     else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
         parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
         if (bpAuthor && bpAuthor !== fileAuthor) {
             parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
         }
     }
+    // Se BackPort e DLCs sono uguali (Files diverso)
+    else if (bpAuthor && dlcAuthor && bpAuthor === dlcAuthor) {
+        if (fileAuthor) {
+            parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
+        }
+        parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort & DLCs`);
+    }
+    // Caso standard: tutti diversi o solo alcuni presenti
     else {
         if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
         if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
