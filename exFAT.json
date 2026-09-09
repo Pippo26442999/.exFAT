@@ -1,5 +1,80 @@
 [
    {
+    "title": "Cocoon",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Cocoon.avif",
+    "tags": [
+      "PPSA08766",
+      "v01.004",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicm5Wc2FqclZCMjNpWjEraG1OWjZXcWZLYmFYR0MwNzUxREh3WG96a2RPeVZhbDlWL2NJbFpyUURQbExZbTd3eTVKYWhrYXFEMzZ3VXRVRnY1Szd5dlcycTI0ZlNtV1l0SzdZPSIsImkiOiJka0FtRVdoME5VSzlOUVAzIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMUgvK1poVkY1OG9nQlpPdVZDT2liS09BOHdHc0lZRHgvYmVES1dEbWhpaWk1bE13OXZLMFhlVzY1VWdvZEp4aVRSM2xHd3RlWkZ6cG1xdVZ4andxdjdDUHhxSndMbVU9IiwiaSI6IlBlOFZZNDBIQkZoOS9KN2YiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQUZGbmh4VmR2MzdLaTJIR1RGaHVRZkFPRGN3MDN1eGU4RFh6bDlNUzk4QXZEZ3ViMVFYWkhDZWJiY1Z6REJMTGU4Y1VTY1RBVHJsR3NvNHl3Sm1ZejJVbFhKOE4iLCJpIjoiY1lrQzhIRk9vVkVVaWNJMyIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicCtULzdwTVphMWV3QzJmUUdZU1NpY3VwSmRucVY4YmtFVThycHliOTNVNy9XY2lNaUY1L3JCcUVaMkNGR0x0emwyWTdlQytwdmRqbnl3djZ2ZzlSczd5WEVYMVd3WFk9IiwiaSI6IlJXaUpvTVk2a29uMlgrTTUiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOXF3NjZuUkJNOWExczFXTE1zMnNvT2t3OFRjM0k5bjg2bjB2UjZHZTI1N091MGg5blN3RjJGeHcyTXVhQVV5OXhFeGY2WHpqUGVYaVVPcENuRVN6MGFsUGl1Q3hMZz09IiwiaSI6InFkTExCOVdYYlFPNk44WTkiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX & VanBuuren",
+    "credits_backport": "DecKerr97",
+    "size": "2GB"
+  },
+   {
+    "title": "Hotline Miami",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Hotline_Miami.avif",
+    "tags": [
+      "PPSA09682",
+      "v01.000.002",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMHZrcFgxQUYyMWppa3JvWDVLaU5JSGtSYVF1czB3bldUaVVwRTlyWExuVVRjaUxLcEp0eXl4YnVyakFWb2dwTkpRbjd5Z0JrWUIvQ0dVVkx3WXg0Y2Y2Z2NycEYrVWhQeGhvPSIsImkiOiJKY1V1S1pzOHRaRGp1ZkNiIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiemo5d0ZxYkNBRGl5K1dVelVmVlZjbmk4ZUhCejBoNytIK203YUdMK1NBTVdTZ3piQU5nbXBnMmEyQnhjRWNHUnUxUldlZjlhTzZQV002a2EyRnNIUUpuYUs0T0MvdWc9IiwiaSI6Im51cFpVc0ZMWlRhOGJjeWIiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicmlhaUM4TlF2Q0lDaDJtSlY1U2N0dWh2N29VZy9mL1JqRVR6VTI2eXJnQ1hNa3V1OU5uSnZjejBzQWw4R2NmVkpYNFRqZDJmaDZkMGdXZjlVeFZFWDlDTjNpRnciLCJpIjoia1BZV1k2ck5xdnVuVy9RaCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTkxVSXVaM05tN1NJOU5ETmlkWEFKVXRxNUFYWmIzVHU4QXV2K0hLTllzTTIrWDdhWnlhNjRJQnZsMnh0UzZkNFYrNGtUOE80WlFVWFZvbm5VZVhuVy9heXBYNjdOUDA9IiwiaSI6IlZNWE5VL2xhV2R4bFBFbXEiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWVA2UGhZbnZuMVJsL3FURm9OamhMZ2VLUU9uS2RXODZJcEpKMVh3Y1AwenVwcVhIUFdmWU5xNm5FNFlPa0RMN0VRNkhKMTF2enNYQzhHM2JXWHpzeGY3aG9UbmJ2dz09IiwiaSI6IjQvaDVhYVprcDAxZ2VTUmYiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Amiibohound",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "size": "1GB"
+  },
+   {
+    "title": "AAA Dynamic Scenes All Scenes Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/AAA_Dynamic_Scenes.jpg",
+    "tags": [
+      "PPSA22996",
+      "v01.000",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOFpqTWk3OElFaWgzWjFjbUhlampsK1VHejVweldCQVNqWVhlNkR1R0lQc0RYeUdLcUQ0Z3Z6cVVVRVlwbUI5SHlnaHBjcmowc0Q1OVFzVlREbFNYVStUajd1TE8wTWNrVU5NPSIsImkiOiJ1ZUh6b0NEeEZPNGZKZjFqIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia1hKbW81clNiK0FyTElxenFDVHBjcERVNG5rOCt0THd4Uk1mWDVUOXJwZGpBakpoR2pmRW1iNkNoR1FuQStpdzlqNWN0c3dMYjdITE9FVUxGYVJsQnB4NE9ZMDBPZDQ9IiwiaSI6Ik9ndzdJM20yd3dnRUNkNXUiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieklvTXJ0VjI2N1hTczBiM09QNDlMMmhORmh1VHFIZXZ1YlRrdXNFWU5xenBZbzFmWUxWeVAyR1UvbmxrVFR3aG5WZE91cE5mU1JsTTNyc2dlMzFWcnU1V0xMTXMiLCJpIjoiSFZVdHpveklIeDJqTmFOeSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaVR4WGNmcnZMRGNhbG1vNVE3SEkyU2JEcElYK3Q5a0pnczRPNG1oZSt4MUh0OEtTRlgxUENVSXpPblFCN2lRZldZbCszamZKSUxldXRiR1lVOStFZnZzK09SUWFoS1U9IiwiaSI6Ilp6am5zdE9NWmFMc29PdkoiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVGdDOGZCc1ROR1BPUzkzQmxHRkd0M24xSi8zSGhWN1BUMHdzMnpPN2dyOFBtTVp3VmE4cFpSZkgwb0ZEK0pEL05sSjFuRmpOdXZTcXE5OFdlUlU2MHY0TGY1UnNvdz09IiwiaSI6IkY2Q2NoSmpONktobzFhd0giLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "Amiibohound",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "size": "1GB"
+  },
+   {
+    "title": "Arcade Game Zone",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Arcade_Game_Zone.avif",
+    "tags": [
+      "PPSA19015",
+      "v01.003",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicmw2MzZwSEdIZFhMRC9tVmNvQkF1N1c5ei9ZZTd1MUZ4UElJVjN1di9OU1llNEpKaTlJdzM3cHJVWmEyZ1pzZ2VubzNSeDh0YUYzNjVTM1hRTUhmQ09BeXdOWEhCc3JUQWdjPSIsImkiOiI5a0FjSjN0cSt4Z0ZGb203IiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMUswS2tJeHB6UitHbDdzUFVId0djNEh3VFhYVFdyVzFqVjVqcURCSS9lMzRWNnFVb0R0UGZ4WEhpOHBtSDRNU3pKUXlpRDBQRGtSU3Jjckx3VUQ2MGVHcUlWcEZtQk09IiwiaSI6Ik9kNjQ5TGNjWjFSaEtHMEYiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRVk4dDRuK0tkaE1lelkxZUJ3UnR2R3QvU2RVdzJYTEF3TnJ1OGF0VVVmcWxva3FYUUNtcGpTekZVdy9OWi9KMU5ibzBkSGZvc1pnMjRtOGRlT3I5NURDOXJ0ME8iLCJpIjoiOHJhQkxwMmUxZi9qRGcvaCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWUNZU21CQWFWSm5ScVkrUytmQVl3TDUvcEg4Q3MxM3VXZU1RZWxDYWdxVjVGWFd2MEVFM2E3eDBIclkwOHcvdy9tanlaRDhlSjZScTZ3eS9HeXJvMFg1NmZHa3VOOEU9IiwiaSI6IlZhMFdVdVlyNFgwdmhkbUIiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSGduZmExaS9LWVc5MFBvb1NJQzYwQWZ2eElKTFZoU09RZ2lrZ25PUTFtY3lva1BoSDVGVm82YTFtV0FvR3pETFRPYnFiUXNMa3g0eFFPR1kxUTQvL1ZYbjVCZDZFdz09IiwiaSI6IjJldmJtNStpTHI3NVFyYUciLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "size": "723MB"
+  },
+   {
     "title": "Necromunda Hired Gun",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Necromunda_Hired_Gun.webp",
     "tags": [
