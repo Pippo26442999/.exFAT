@@ -1,9 +1,9 @@
 {
   "name": "Pippo Library",
-  "short_name": "PippoLib",
-  "description": "PS5 exFAT Game Library - Browse and download PS5 game packages",
-  "start_url": "/",
-  "scope": "/",
+  "short_name": "Pippo Library",
+  "description": "Pippo Library is a curated collection of titles for jailbroken PS5 consoles, organized in exFAT - FFPKG - Dump format for easy download and installation.",
+  "start_url": "/exFAT/",
+  "scope": "/exFAT/",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#020205",
@@ -35,15 +35,15 @@
       "name": "Random Game",
       "short_name": "Random",
       "description": "Discover a random game",
-      "url": "/?action=random",
-      "icons": [{ "src": "exFAT/random_game.png", "sizes": "192x192" }]
+      "url": "/exFAT/?action=random",
+      "icons": [{ "src": "exFAT/random_game.png", "sizes": "192x192", "type": "image/png" }]
     },
     {
       "name": "Search",
       "short_name": "Search",
       "description": "Search games",
-      "url": "/?action=search",
-      "icons": [{ "src": "exFAT/title.jpg", "sizes": "192x192" }]
+      "url": "/exFAT/?action=search",
+      "icons": [{ "src": "exFAT/title.jpg", "sizes": "192x192", "type": "image/jpeg" }]
     }
   ]
 }
