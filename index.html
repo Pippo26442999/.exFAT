@@ -2476,6 +2476,58 @@
         display: none !important;
     }
 }
+
+/* ===== IMAGE LOADING PLACEHOLDER ===== */
+.image-container.loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 255, 238, 0) 0%,
+        rgba(0, 255, 238, 0.15) 50%,
+        rgba(0, 255, 238, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: imageShimmer 1.5s infinite;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.image-container.loading::after {
+    content: '📦';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    opacity: 0.3;
+    z-index: 1;
+    animation: imagePulse 1.5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.image-container img {
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.4s ease;
+}
+
+.image-container.loaded img {
+    opacity: 1;
+}
+
+@keyframes imageShimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+@keyframes imagePulse {
+    0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 0.5; transform: translate(-50%, -50%) scale(1.1); }
+}
     </style>
 </head>
 <body>

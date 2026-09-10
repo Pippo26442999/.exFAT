@@ -1623,7 +1623,19 @@ function openGameModal(game, event) {
     };
     
     let downloadsHTML = '';
+    let fpkgHTML = '';
     let ffpkgHTML = '';
+    
+    // ===== FPKG (nuova sezione) =====
+    if (game.fpkg_akia) fpkgHTML += createModalBtn(game.fpkg_akia, 'AKIA', false);
+    if (game.fpkg_viki) fpkgHTML += createModalBtn(game.fpkg_viki, 'VIKI', false);
+    if (game.fpkg_buzz) fpkgHTML += createModalBtn(game.fpkg_buzz, 'BUZZ', false);
+    if (game.fpkg_data) fpkgHTML += createModalBtn(game.fpkg_data, 'DATA', false);
+    if (game.fpkg_filek) fpkgHTML += createModalBtn(game.fpkg_filek, 'FILEK', false);
+    if (game.fpkg_vault) fpkgHTML += createModalBtn(game.fpkg_vault, 'VAULT', false);
+    if (game.fpkg_filed) fpkgHTML += createModalBtn(game.fpkg_filed, 'FILED', false);
+    
+    let fpkgSectionHTML = fpkgHTML ? `<div style="width:100%; margin-bottom:10px;"><strong>FPKG</strong></div>${fpkgHTML}` : '';
     
     // ===== FFPKG (usa createModalBtn identico agli altri) =====
     if (game.ffpkg_akia) ffpkgHTML += createModalBtn(game.ffpkg_akia, 'AKIA', false);
@@ -1683,7 +1695,7 @@ else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.
         if (game.backport_filed) bp += createModalBtn(game.backport_filed, 'FILED');
         downloadsHTML = `${ffpkgSectionHTML}${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
     } 
-    // Altrimenti usa i link standard
+    // Altrimenti usa i link standard (EXFAT)
     else {
         let btns = '';
         if (game.akia_url) btns += createModalBtn(game.akia_url, 'AKIA');
@@ -1693,7 +1705,7 @@ else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.
         if (game.filek_url) btns += createModalBtn(game.filek_url, 'FILEK');
         if (game.vault_url) btns += createModalBtn(game.vault_url, 'VAULT');
         if (game.filed_url) btns += createModalBtn(game.filed_url, 'FILED');
-        downloadsHTML = `${ffpkgSectionHTML}${btns}`;
+        downloadsHTML = `${ffpkgSectionHTML}${btns ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>EXFAT</strong></div>${btns}` : ''}`;
     }
     downloadsContainer.innerHTML = downloadsHTML;
 
@@ -1713,7 +1725,7 @@ else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.
         if (game.dump_data) dumpHTML += dumpBtn(game.dump_data, 'DATA');
         if (game.dump_filek) dumpHTML += dumpBtn(game.dump_filek, 'FILEK');
         if (game.dump_vault) dumpHTML += dumpBtn(game.dump_vault, 'VAULT');
-        if (game.filed_filed) dumpHTML += dumpBtn(game.dump_filed, 'FILED');
+        if (game.dump_filed) dumpHTML += dumpBtn(game.dump_filed, 'FILED');
         dumpSection.style.display = 'block';
         dumpContainer.innerHTML = dumpHTML;
     } else {
@@ -2661,6 +2673,17 @@ function renderPopularGames() {
         htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}${ffpkgIndicator}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`; 
     });
     track.innerHTML = htmlContent + htmlContent;
+    
+    // Preload immagini di sfondo per rimuovere il placeholder
+    track.querySelectorAll('.popular-card-bg').forEach((bg) => {
+        const url = bg.style.backgroundImage.slice(5, -2);
+        if (!url) return;
+        const img = new Image();
+        img.onload = () => bg.classList.remove('loading');
+        img.onerror = () => bg.classList.remove('loading');
+        img.src = url;
+    });
+    
     attachPopularCardEvents();
 }
 
@@ -2677,6 +2700,10 @@ function renderGames() {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const pageItems = filteredGames.slice(startIndex, startIndex + itemsPerPage);
     if (pageItems.length === 0) { grid.innerHTML = '<p style="text-align:center; width:100%; font-size:1.5rem;">Nessun gioco trovato.</p>'; return; }
+    
+    // ✅ Usa un array per accumulare le card e assegna una sola volta
+    const cardsHTML = [];
+    
     pageItems.forEach(game => {
         let tagsHTML = (game.tags || []).map(t => `<span class="game-tag">${escapeHtml(t)}</span>`).join('');
         let sizeHTML = '';
@@ -2698,7 +2725,7 @@ function renderGames() {
         const dCredits = game.credits_dlc || game.credits_dlcs || '';
         const fixGuide = (game.fix_guide || "").replace(/'/g, "\\'");
         
-        // Funzione per creare bottone nella card
+        // Funzione per creare bottone nella card (IDENTICO PER TUTTI)
         const createBtn = (url, label, isDLC = false, isDump = false, isFix = false) => { 
             if (!url || url === "undefined" || url.trim() === "") return ''; 
             const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
@@ -2712,7 +2739,31 @@ function renderGames() {
         let dlcBtns = '';
         let dumpBtns = '';
         let ffpkgBtns = '';
+        let fpkgBtns = '';
         let fixBtns = '';
+        let exfatBtns = '';
+        
+        // ===== EXFAT (link semplici raggruppati) =====
+        if (game.akia_url) exfatBtns += createBtn(game.akia_url, 'AKIA');
+        if (game.viki_url) exfatBtns += createBtn(game.viki_url, 'VIKI');
+        if (game.buzz_url) exfatBtns += createBtn(game.buzz_url, 'BUZZ');
+        if (game.data_url) exfatBtns += createBtn(game.data_url, 'DATA');
+        if (game.filek_url) exfatBtns += createBtn(game.filek_url, 'FILEK');
+        if (game.vault_url) exfatBtns += createBtn(game.vault_url, 'VAULT');
+        if (game.filed_url) exfatBtns += createBtn(game.filed_url, 'FILED');
+        
+        let exfatSectionHTML = exfatBtns ? `<p class="ver-label"><b>EXFAT:</b></p><div class="download-container">${exfatBtns}</div>` : '';
+        
+        // ===== FPKG (nuova sezione) =====
+        if (game.fpkg_akia) fpkgBtns += createBtn(game.fpkg_akia, 'AKIA');
+        if (game.fpkg_viki) fpkgBtns += createBtn(game.fpkg_viki, 'VIKI');
+        if (game.fpkg_buzz) fpkgBtns += createBtn(game.fpkg_buzz, 'BUZZ');
+        if (game.fpkg_data) fpkgBtns += createBtn(game.fpkg_data, 'DATA');
+        if (game.fpkg_filek) fpkgBtns += createBtn(game.fpkg_filek, 'FILEK');
+        if (game.fpkg_vault) fpkgBtns += createBtn(game.fpkg_vault, 'VAULT');
+        if (game.fpkg_filed) fpkgBtns += createBtn(game.fpkg_filed, 'FILED');
+        
+        let fpkgSectionHTML = fpkgBtns ? `<p class="ver-label"><b>FPKG:</b></p><div class="download-container">${fpkgBtns}</div>` : '';
         
         // ===== FIX =====
         if (game.fix_akia) fixBtns += createBtn(game.fix_akia, 'AKIA', false, false, true);
@@ -2780,8 +2831,8 @@ function renderGames() {
             }
             downloadHTML = `${bp7 ? `<p class="ver-label"><b>BP 7.xx:</b></p><div class="download-container">${bp7}</div>` : ''}${bp4 ? `<p class="ver-label"><b>BP 4.xx:</b></p><div class="download-container">${bp4}</div>` : ''}`;
         } 
-        // ===== STANDARD e BACKPORT =====
-        else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.standard_filed || 
+        // STANDARD e BACKPORT
+        else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.standard_filed ||
                  game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault || game.backport_filed) {
             let std = '', bp = '';
             if (game.standard_akia) std += createBtn(game.standard_akia, 'AKIA');
@@ -2799,25 +2850,18 @@ function renderGames() {
             if (game.backport_vault) bp += createBtn(game.backport_vault, 'VAULT');
             if (game.backport_filed) bp += createBtn(game.backport_filed, 'FILED');
             downloadHTML = `${std ? `<p class="ver-label"><b>STANDARD:</b></p><div class="download-container">${std}</div>` : ''}${bp ? `<p class="ver-label"><b>BACKPORT:</b></p><div class="download-container">${bp}</div>` : ''}`;
-        } 
-        // ===== LINK SEMPLICI =====
-        else {
-            let btns = '';
-            if (game.akia_url) btns += createBtn(game.akia_url, 'AKIA');
-            if (game.viki_url) btns += createBtn(game.viki_url, 'VIKI');
-            if (game.buzz_url) btns += createBtn(game.buzz_url, 'BUZZ');
-            if (game.data_url) btns += createBtn(game.data_url, 'DATA');
-            if (game.filek_url) btns += createBtn(game.filek_url, 'FILEK');
-            if (game.vault_url) btns += createBtn(game.vault_url, 'VAULT');
-            if (game.filed_url) btns += createBtn(game.filed_url, 'FILED');
-            downloadHTML = `<div class="download-container" style="margin-top:15px;">${btns}</div>`;
         }
         
         let dumpSectionHTML = dumpBtns ? `<p class="ver-label"><b>DUMP:</b></p><div class="download-container">${dumpBtns}</div>` : '';
         let dlcSectionHTML = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
         
-        grid.innerHTML += `<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container"><img src="${game.image}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'"><div class="tags-overlay">${tagsHTML}</div><div class="game-badges">${aprEmuHTML}${sizeHTML}</div></div><div class="download-section">${ffpkgSectionHTML}${downloadHTML}${fixSectionHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`;
+        // ✅ Push nell'array invece di innerHTML +=
+        cardsHTML.push(`<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container loading"><img src="${game.image}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onload="this.parentElement.classList.remove('loading'); this.parentElement.classList.add('loaded');" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'; this.parentElement.classList.remove('loading'); this.parentElement.classList.add('loaded');"><div class="tags-overlay">${tagsHTML}</div><div class="game-badges">${aprEmuHTML}${sizeHTML}</div></div><div class="download-section">${fpkgSectionHTML}${ffpkgSectionHTML}${exfatSectionHTML}${downloadHTML}${fixSectionHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`);
     });
+    
+    // ✅ Assegna UNA SOLA VOLTA (parsing HTML singolo)
+    grid.innerHTML = cardsHTML.join('');
+    
     const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
     document.getElementById('page-info').innerText = `Page ${currentPage} of ${totalPages || 1}`;
     document.getElementById('prev-page').disabled = currentPage === 1;
