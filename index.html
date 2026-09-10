@@ -6,6 +6,15 @@
     <title>Pippo Library</title>
     <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex, nofollow">
+    
+    <!-- ===== PWA ===== -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00ffee">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="PippoLib">
+    <link rel="apple-touch-icon" href="exFAT/title.jpg">
+    <meta name="mobile-web-app-capable" content="yes">
     <style>
         :root {
             --bg-1: #020205;
@@ -2476,6 +2485,58 @@
         display: none !important;
     }
 }
+
+/* ===== IMAGE LOADING PLACEHOLDER ===== */
+.image-container.loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 255, 238, 0) 0%,
+        rgba(0, 255, 238, 0.15) 50%,
+        rgba(0, 255, 238, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: imageShimmer 1.5s infinite;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.image-container.loading::after {
+    content: '📦';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    opacity: 0.3;
+    z-index: 1;
+    animation: imagePulse 1.5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.image-container img {
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.4s ease;
+}
+
+.image-container.loaded img {
+    opacity: 1;
+}
+
+@keyframes imageShimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+@keyframes imagePulse {
+    0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 0.5; transform: translate(-50%, -50%) scale(1.1); }
+}
     </style>
 </head>
 <body>
@@ -2934,18 +2995,28 @@
 
     <!-- APR-EMU UPDATE MODAL -->
     <div id="aprEmuModal" class="apr-emu-modal-overlay">
-        <div class="apr-emu-modal-container">
-            <div class="apr-emu-modal-header">
-                <h2>APR-EMU Updates</h2>
-                <div class="apr-emu-modal-close" id="closeAprEmuModal">✕</div>
-            </div>
-            <div class="apr-emu-modal-body" id="aprEmuModalBody">
-                <div style="text-align:center; padding:20px;">Loading available files...</div>
-            </div>
-        </div>
+        ...
     </div>
 
     <script src=".\Generators\pegasus-dl-converter-kerrdec97.js"></script>
     <script src="script.js"></script>
+    
+    <!-- ===== PWA SERVICE WORKER REGISTRATION ===== -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then((registration) => {
+                        console.log('✅ [PWA] Service Worker registrato:', registration.scope);
+                        setInterval(() => {
+                            registration.update();
+                        }, 30 * 60 * 1000);
+                    })
+                    .catch((error) => {
+                        console.warn('⚠️ [PWA] Registrazione SW fallita:', error);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
