@@ -1,5 +1,49 @@
 [
    {
+    "title": "Big Helmet Heroes",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Big_Helmet_Heroes.avif",
+    "tags": [
+      "PPSA19943",
+      "v01.000.400",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYnM0TjhXbXhMRlF5bjBjdXJrUDRLdmJIWTRZRWdwanY2cjltUTRhYzZmQW9WNDdlSURSWjJQZ2FJSVd2VENMSHlkQ2V5djBpaXdBelc5S0pXaUN5S0orN2ZMa2hldFhTdjQ4PSIsImkiOiJJS3dGZWFDcTQrVm5MTVZlIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWnFKVkdQbFhlcTc2RHByL0k4OXgyNVpGNW1HRkprZUZPSmw3R2ZzcFNVSlhrK0gxaTNPYXJGNW9DQTl2ZVFrS24vcWpoNkptdFRWWm9mZitpRTg3SWQ1MDZnUFcyY0U9IiwiaSI6ImVlZk9nNHZkaGtIcVNyek4iLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRVRvbitFWlorWER4azJTVjEvVU1STWsxZ3VpeXVaWDN5QU5tMkVvK2phV0ZFc1VDZzJRQVV2N0FtU3pkdEZScTNELzcyMDJhNXF3UCtSMlR1bmc1dWtzUXFabVoiLCJpIjoiRDM3QUlWWWlBdXI3UGp1aSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOU1pNTZ0eHREZHBFM045YVV6TWkzcktMSWgvU2hlMGh3c0hKdi9PTFc5SHV6bUdKY1NhczhIT0xqSHlRVW1iMmF5azV5YTE0SDR2d25TSVZ3aUNYeUROSElrY2x2OGM9IiwiaSI6IjZJTDViQUlmVXdDSEtuYW4iLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQzFKMHp5VUUyWFNLQnRqQWxPajAvYWRJMmt6Q2VXNnBvN3Y2YkZIZU5mMlNQWVMySU50eFRWM09DZG1JRmV6Y0dRWFBkdThZWk8vaWNyQ01UV3lIVmVsRnRXVW0wQT09IiwiaSI6IkEvSnJHbDk0Z3B5QTlXZUIiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97 & dunaevnick",
+    "credits_dlc": "DecKerr97 & dunaevnick",
+    "size": "10GB"
+  },
+   {
+    "title": "Roadcraft",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Roadcraft.avif",
+    "tags": [
+      "PPSA09845",
+      "v01.009.610",
+      "USA",
+      "DLCs Merged",
+      "7.xx BackPort + 4.xx BackPort"
+    ],
+    "backport7xx_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibUlqZnlMWXF1bUxybWxLbVE1UUNjYjk5MU0wTHJwbDhFOFZhQStmLzRQd21ub01GVDZDMEFudUVQYStycHpWR0VFQXJjaXZ1SDV2djhCMEVvM1ZyM3Z5Y3pSN1JCUjNFVDVzPSIsImkiOiJHKzRxQXlidnVLREFIR0E2IiwibiI6IkFraWEifQ==",
+    "backport7xx_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUXoyRGFZY2hKTHI4N0NSRndMZ3VQZUI3UnMxTFIxaWwwNVlENzJlQktCRmlWTkp3T0VYRjFrVHg0dEdaYUdmSGVxUHlqdXg4bnJZWGRYeDhIR1Mza0pxblRJcVJpUVE9IiwiaSI6Im5FdUFoVlJEdVhoNk5RK24iLCJuIjoiVmlraSJ9",
+    "backport7xx_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidFV2cEpPcnhvRzh2MXArV1U1RTVMd2llVEZWM2JNQTVvZHd2bjU4YUVEWHRGY21keHIyL2xDN3RYempzNUNSc3NrRjRBSTVtM0pxZDhPS3RyN3hveDJzcHpOcEQiLCJpIjoiQW9rVjZiUXEwamdVb3hBWiIsIm4iOiJEYXRhIn0=",
+    "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZElCQVVRdzh3bHRvWWtIdmJRMEczbG13Q0E3Q3VOSkdqZ295S1N1SDNvN0hsZXJTUm02SlhsMUtFSmVvRHduM2lTdElUTThrTkhmSXJMMXZyQ1h5RUtsRi9YeGdlVmc9IiwiaSI6IjBNc2ZhTDZlaEpjalFxVE4iLCJuIjoiRmlsZUsifQ==",
+    "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYWU1OExEWFFBaDF5M0U4TEhjMmtjZTY5bWxCd0lCTlVNUnBuQzRscm5wZEJDUUsvNWloMWtiMDNsdWZCSFE4VUtyM3V0c1hGb3AzMUhJVldPMU9saXN5cEtUUU1TUT09IiwiaSI6IkF2TEl6b1BsSXVFSGVuclQiLCJuIjoiVmF1bHQifQ==",
+    "backport4xx_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS3hBTG5OMEF0UTB1anJSQlNyTm1OY2lHU21NbXdreFg2SWdDVlRUcnJSak4zTXRId2czdFVhUWl0OWN0aEVIMDlJSE9MQTQ0ZXAwMTlBZ2pNTFBSM1JMRzlRS2dLbVhoczcwPSIsImkiOiJ0UTkvSWNucjRhS2draHFnIiwibiI6IkFraWEifQ==",
+    "backport4xx_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidllMaXQyMkEyT0dEUmZPUkV4eUU3ZXZzL3RYbk1peW5GZlZGaGdkQnRNRmZrM2MvRXZ0Y3pZMjNvQ0Y4RTkxU1hBakZHdUNUN0VPeHk5SThvdDJaMmowbHhzT2N2RUU9IiwiaSI6IjFaR1RISnNKRHNlanNheVMiLCJuIjoiVmlraSJ9",
+    "backport4xx_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiajlGTGpLUmxVRkJlSzZzZ1dMaHBJM3l3ZkZFUi9Td1E4cWdTcS8xb1RBREZFV1pxUGpjeXFoOHVLNkhYcHFkTnpjSGpBY004M1VLc0VGMUkxVjA0Ti9rZUNVYVciLCJpIjoicXN4WEhGUVJ5UXgvNENxcSIsIm4iOiJEYXRhIn0=",
+    "backport4xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTUszRm5zemJKa0Q0aGdVUmtJOVQvbGxOTEFjbTlNcnhMUGFPV2FKOVZDL1BncEVtdFlza1hRT2REZGFOeXhnMUlOOFRKMDZXYlMrYjNtMVFGRTV5c2lBalVhQ0dYcTg9IiwiaSI6IlU1aG9MelBPeGtWMURZT1MiLCJuIjoiRmlsZUsifQ==",
+    "backport4xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU2JVUS81ZDhOUU90dU94OUxESWZlbjNJUGJxSVl1R2k1V0VGY05WZzRwTzBsYXFrc3hMZlRUWHJyRHM5cTFwWkRkbitFcWdJdXFudGFZWE5HTVhiakpqR0dvdnF3dz09IiwiaSI6Iml3b3B2a21lNkR2V1ZpeWIiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pkykzhack",
+    "apr_emu": "on",
+    "size": "55GB"
+  },
+   {
     "title": "Final Fantasy XVI Complete Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Final_Fantasy_XVI_CE.avif",
     "tags": [
@@ -9274,28 +9318,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "152GB"
-  },
-   {
-    "title": "Roadcraft",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Roadcraft.avif",
-    "tags": [
-      "PPSA09845",
-      "v01.009.610",
-      "USA",
-      "DLCs Merged",
-      "7.xx BackPort"
-    ],
-    "backport7xx_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibUlqZnlMWXF1bUxybWxLbVE1UUNjYjk5MU0wTHJwbDhFOFZhQStmLzRQd21ub01GVDZDMEFudUVQYStycHpWR0VFQXJjaXZ1SDV2djhCMEVvM1ZyM3Z5Y3pSN1JCUjNFVDVzPSIsImkiOiJHKzRxQXlidnVLREFIR0E2IiwibiI6IkFraWEifQ==",
-    "backport7xx_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUXoyRGFZY2hKTHI4N0NSRndMZ3VQZUI3UnMxTFIxaWwwNVlENzJlQktCRmlWTkp3T0VYRjFrVHg0dEdaYUdmSGVxUHlqdXg4bnJZWGRYeDhIR1Mza0pxblRJcVJpUVE9IiwiaSI6Im5FdUFoVlJEdVhoNk5RK24iLCJuIjoiVmlraSJ9",
-    "backport7xx_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidFV2cEpPcnhvRzh2MXArV1U1RTVMd2llVEZWM2JNQTVvZHd2bjU4YUVEWHRGY21keHIyL2xDN3RYempzNUNSc3NrRjRBSTVtM0pxZDhPS3RyN3hveDJzcHpOcEQiLCJpIjoiQW9rVjZiUXEwamdVb3hBWiIsIm4iOiJEYXRhIn0=",
-    "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZElCQVVRdzh3bHRvWWtIdmJRMEczbG13Q0E3Q3VOSkdqZ295S1N1SDNvN0hsZXJTUm02SlhsMUtFSmVvRHduM2lTdElUTThrTkhmSXJMMXZyQ1h5RUtsRi9YeGdlVmc9IiwiaSI6IjBNc2ZhTDZlaEpjalFxVE4iLCJuIjoiRmlsZUsifQ==",
-    "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYWU1OExEWFFBaDF5M0U4TEhjMmtjZTY5bWxCd0lCTlVNUnBuQzRscm5wZEJDUUsvNWloMWtiMDNsdWZCSFE4VUtyM3V0c1hGb3AzMUhJVldPMU9saXN5cEtUUU1TUT09IiwiaSI6IkF2TEl6b1BsSXVFSGVuclQiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "DecKerr97",
-    "credits_dlc": "Pkykzhack",
-    "how_to_play": "kstuff can be paused after 120sec or the game will crash. Game can take sometime for loading depending on your SSD/NVMe.",
-    "apr_emu": "on",
-    "size": "55GB"
   },
    {
     "title": "Uncharted Legacy of Thieves Collection",
