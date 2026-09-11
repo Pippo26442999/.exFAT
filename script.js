@@ -1386,7 +1386,11 @@ window.revealDownloadPassword = function() {
 };
 
 function openAprEmuModalFromDownload() {
-    openAprEmuModal();
+    if (typeof openAprEmuModal === 'function') {
+        openAprEmuModal();
+    } else {
+        console.error('openAprEmuModal non è definita');
+    }
 }
 
 function startDownloadFromModal(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle, requireAprEmu) {
@@ -1485,12 +1489,10 @@ function openFixModal(url, fixGuide, gameTitle) {
     if (pwHint) pwHint.style.display = 'none';
     if (pwValue) pwValue.style.display = 'none';
     
-    // Costruisci il contenuto del modale
-    // Formatta il fixGuide per avere ogni step su una nuova riga
     // Formatta il fixGuide per avere ogni step su una nuova riga
     let formattedGuide = '';
     if (fixGuide && fixGuide.trim() !== '') {
-        // Gestisci sia il formato "1." che "1:" 
+        // Gestisci sia il formato "1." che "1:"
         formattedGuide = fixGuide.replace(/(\d+[\.:])\s*/g, '<br>$1 ');
         // Rimuovi il primo <br> all'inizio se presente
         formattedGuide = formattedGuide.replace(/^<br>/, '');
@@ -1610,7 +1612,6 @@ function openGameModal(game, event) {
         aprEmuBadge.style.display = 'block';
     }
 
-    // ===== GENERAZIONE BOTTONI DOWNLOAD =====
     const downloadsContainer = document.getElementById('modal-downloads');
     
     // Funzione per creare un bottone download nel modal
@@ -1619,7 +1620,11 @@ function openGameModal(game, event) {
         const dumpAttr = isDump ? 'true' : 'false';
         const isDLC = false;
         const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
-        return `<button onclick="startDownloadFromModal('${url}', '${fileAuthPlaceholder}', '${bpAuthPlaceholder}', '${dlcAuthPlaceholder}', '${hPlayPlaceholder}', ${isDLC}, ${dumpAttr}, '${safeTitle}', ${requireAprEmu})" class="modal-btn">${label}</button>`;
+        const safeFileAuth = (fileAuthPlaceholder || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        const safeBpAuth = (bpAuthPlaceholder || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        const safeDlcAuth = (dlcAuthPlaceholder || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        const safeHPlay = (hPlayPlaceholder || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        return `<button onclick="startDownloadFromModal('${url}', '${safeFileAuth}', '${safeBpAuth}', '${safeDlcAuth}', '${safeHPlay}', ${isDLC}, ${dumpAttr}, '${safeTitle}', ${requireAprEmu})" class="modal-btn">${label}</button>`;
     };
     
     let downloadsHTML = '';
@@ -1779,92 +1784,6 @@ else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.
         if (fixSection) fixSection.style.display = 'none';
     }
 
-// ========== FUNZIONE PER APRIRE IL MODAL FIX ==========
-function openFixModal(url, fixGuide, gameTitle) {
-    const modal = document.getElementById('download-modal');
-    const bodyContainer = document.getElementById('downloadModalBody');
-    const footerDiv = document.querySelector('#download-modal .download-modal-container > div:last-child');
-    const pwBox = document.getElementById('downloadPasswordBox');
-    const pwHint = document.getElementById('downloadPwHint');
-    const pwValue = document.getElementById('downloadPwValue');
-    const finalBtn = document.getElementById('downloadFinalBtn');
-    
-    modal.classList.remove('hiding');
-    const container = document.querySelector('#download-modal .download-modal-container');
-    if (container) container.classList.remove('closing');
-    
-    // Nascondi la password box (non serve per i fix)
-    if (pwBox) pwBox.style.display = 'none';
-    if (pwHint) pwHint.style.display = 'none';
-    if (pwValue) pwValue.style.display = 'none';
-    
-    // Formatta il fixGuide per avere ogni step su una nuova riga
-    let formattedGuide = '';
-    if (fixGuide && fixGuide.trim() !== '') {
-        // Sostituisci i numeri con step (1., 2., 3., ecc.) in modo che siano su nuove righe
-        formattedGuide = fixGuide.replace(/(\d+\.)/g, '<br>$1');
-        // Rimuovi il primo <br> all'inizio se presente
-        formattedGuide = formattedGuide.replace(/^<br>/, '');
-    } else {
-        formattedGuide = 'No specific instructions provided for this fix.';
-    }
-    
-    // Costruisci il contenuto del modale
-    let contentHTML = `
-        <div class="download-fix-card" style="background:rgba(255, 200, 0, 0.08); border-radius:20px; padding:18px; margin-bottom:18px; border-left:3px solid #ffcc00;">
-            <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-                <span style="font-size:1.5rem;">🔧</span>
-                <span style="font-weight:900; font-size:1rem; color:#ffcc00;">HOW TO APPLY FIX</span>
-            </div>
-            <div style="font-size:0.85rem; line-height:1.8; color:#ddd;">
-                ${formattedGuide}
-            </div>
-        </div>
-    `;
-    
-    if (bodyContainer) bodyContainer.innerHTML = contentHTML;
-    
-    // RESETTA IL FOOTER CON I BOTTONI
-    if (footerDiv) {
-        footerDiv.innerHTML = `
-            <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
-                <a href="${url}" target="_blank" class="download-final-btn" style="background: linear-gradient(135deg, #ffcc00, #ff8800); border: none; color: #000; padding: 14px 20px; border-radius: 50px; font-weight: 900; font-size: 0.9rem; cursor: pointer; width: 100%; text-align: center; text-decoration: none; display: inline-block; position: relative; overflow: hidden; box-sizing: border-box; animation: none;">
-                    DOWNLOAD FIX
-                </a>
-            </div>
-        `;
-        
-        // Aggiungi l'effetto shine
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes shineAnimation {
-                0% { transform: translateX(-100%); }
-                20% { transform: translateX(100%); }
-                100% { transform: translateX(100%); }
-            }
-            .shine-effect {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-                pointer-events: none;
-                animation: shineAnimation 3s ease-in-out infinite;
-            }
-        `;
-        document.head.appendChild(style);
-        
-        const downloadLink = footerDiv.querySelector('.download-final-btn');
-        if (downloadLink) {
-            const shine = document.createElement('span');
-            shine.className = 'shine-effect';
-            downloadLink.appendChild(shine);
-        }
-    }
-    
-    modal.classList.add('show');
-}
 
     // ===== CREDITS =====
     let parts = [];
@@ -3004,6 +2923,17 @@ window.onclick = (e) => {
         clearAprEmuBadge();
     } 
 };
+
+// ============================================================
+// 🌐 RENDI GLOBALI LE FUNZIONI USATE NEGLI onclick INLINE
+// ============================================================
+window.openAprEmuModalFromDownload = openAprEmuModalFromDownload;
+window.startDownloadFromModal = startDownloadFromModal;
+window.openDLWithAprEmuCheck = openDLWithAprEmuCheck;
+window.openDL = openDL;
+window.openFixModal = openFixModal;
+window.clearAprEmuBadge = clearAprEmuBadge;
+window.revealDownloadPassword = revealDownloadPassword;
 
 window.addEventListener('DOMContentLoaded', init);
 window.addEventListener('scroll', () => { const nav = document.querySelector('nav'); if (nav) { if (window.scrollY > 20) nav.classList.add('scrolled'); else nav.classList.remove('scrolled'); } }, { passive: true });
