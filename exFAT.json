@@ -1,5 +1,29 @@
 [
    {
+    "title": "Final Fantasy VII Remake Intergrade Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Final_Fantasy_VII_Remake_Intergrade_DE.avif",
+    "tags": [
+      "PPSA01911",
+      "v01.005",
+      "EUR",   
+      "2.xx and beyond"
+    ],
+    "akia_url": "",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidE0rOUFiTkhrdU9seE1OQ2lwZWoyTGZvYnNBUkp0OUZDQmtQL1hpb3p1QmdDWnlBMFBISWlPYWlrMnNEbDZJT2NvRFFpakY1Sks1bDA4d3NuOHB5dVJOY1dUTHpFTW89IiwiaSI6ImhyM0JEWjV2c0dWeElZZGoiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiODEwUkxUc293SGpTOTFqdVhZbzUxdGZZTWNUb1YvTVVOSm5lMUdNM1V5bzNyeWNuNnZRS1Y1a0tqb1dlUmE4K2lEQUhqUUZMRWVPMEZrMlJWMUlIcG9jM2xZK1MiLCJpIjoibzY3UmdTUytyNUN5SUoybCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWG9wdUZxM29oQmpFZGN0T21ycXZKc25JQ2Z6ang4dFhZSWcrR25JR1ZYQnhlbndvY1R0QVUweXB0Q1dJNkxxWmlmbGpmS0cwZURyZ0dKZmlkTXdYV3M5YTJPcHk0eVU9IiwiaSI6ImtnUmdmOW9UbTJ2aEZpblIiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiclFZd1psRWdHa0d5SlJZV25TN3piR3h6OUVJY0l0NUdRZGYrRUp2S3FHc2FPVDZ1RlpoQU9zcnJsQi9WK1dWZmdJai9KWjZuS2xZTDVMRGhsRmcyRTNoSEFuM2czdz09IiwiaSI6InBCS3NnRW5MdEVwbWh4cE4iLCJuIjoiVmF1bHQifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1dHcVZmMTRySmxOdWZkbFBFWVdiaWJnUjhyUGE5bk9IbllNaXQ4SFNQakNwU05VOS9jMDlXUmZBcjlzNW9NR1Z1ZGFjbmlXIiwicyI6Im05ZEVKSms1UWZOTFRkQXpLMkhXY0E9PSIsImkiOiJmb01MTlorNGdiMlpoV3E1In0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMXFnZkc3VEFSZ0hCVzBHVTRibjNMTEY2K1RLQUZoem1keTI3K29kWmZWZnorUmFhbFZxSENIakdTV09aR0hLQlB3PT0iLCJzIjoiYllrYlhPaSswcFVRM1lHeERWLy9Ldz09IiwiaSI6IkZDWDJtY1d3cWl1M1ZPbU4ifQ==",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU09vQkE5OGF5OGFyVTBrWVB1clg4ZzJIS1o4L0o2OUR5YzlOeGsvVnI1VVU5ZllIVnp0aTdLRW9KU3REYW43dCttNjBDUXNWVGN4NkZVSHU1aU5QenBWays3VjcyUT09IiwiaSI6Ik5LOEEzZ3pVK0lCL3MxekEiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_dlc": "DUPLEX",
+    "how_to_play": "Game Modified for make DLCs USA work into EUR.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "201GB"
+  },
+   {
     "title": "Kid A Mnesia Exhibition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Kid_A_Mnesia_Exhibition.webp",
     "tags": [
@@ -10622,26 +10646,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "191GB"
-  },
-   {
-    "title": "Final Fantasy VII Remake Intergrade",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Final_Fantasy_VII_Remake_Intergrade.jpg",
-    "tags": [
-      "PPSA01903",
-      "v01.003",
-      "USA",   
-      "2.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiU1JVSUdLT0VQanhibWVheHVCM2VQZkE5L0l0THhTTisyakNSS2RyQ1N0RXFSM3RyTTBGY1h0VjdmUk05cWNuek0yRXRTNlRXIiwicyI6Im9QeDA4d2hkY2hqbm5yZEJ3VnNaY3c9PSIsImkiOiI5WkF6MG1rVWJBUXlXWVVXIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSStvMXJ0Z21lZjNOVXJkaFpVblR5MUhpdXY1TlJkcVhQLytzbFpZMmJQV2xodnBVM1ZERXBONmtxZVhrZGlrNHcwQUYiLCJzIjoidTFsMGZMdmhKdW9MUWNLRmtBVHJKQT09IiwiaSI6IndrdFRyYldON2lleEszQUoifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibEVBRnVhUjl4bFk1SUI0Z3lwVHBpMXdNUGRaMC9JSmRMNG9UN1EwNUJ4TUpqTi9MdTNCcjNaRlkxWitzOGhZbFNRPT0iLCJzIjoib09hbTduUnJaTmgzU1RDTzVPcDZFdz09IiwiaSI6Inl3eGhtbzc3MWprb3BSQnUifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1dHcVZmMTRySmxOdWZkbFBFWVdiaWJnUjhyUGE5bk9IbllNaXQ4SFNQakNwU05VOS9jMDlXUmZBcjlzNW9NR1Z1ZGFjbmlXIiwicyI6Im05ZEVKSms1UWZOTFRkQXpLMkhXY0E9PSIsImkiOiJmb01MTlorNGdiMlpoV3E1In0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMXFnZkc3VEFSZ0hCVzBHVTRibjNMTEY2K1RLQUZoem1keTI3K29kWmZWZnorUmFhbFZxSENIakdTV09aR0hLQlB3PT0iLCJzIjoiYllrYlhPaSswcFVRM1lHeERWLy9Ldz09IiwiaSI6IkZDWDJtY1d3cWl1M1ZPbU4ifQ==",
-    "credits_files": "DUPLEX",
-    "credits_dlc": "DUPLEX",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "209GB"
   },
    {
     "title": "Assassins Creed Mirage",
