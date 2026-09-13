@@ -1,5 +1,27 @@
 [
    {
+    "title": "Wreckfest Complete Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Wreckfest_Complete_Edition.jpg",
+    "tags": [
+      "PPSA29707",
+      "v01.022",
+      "EUR",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "",
+    "viki_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNnhPKzJEd2p5aW1MZW93cGxmWjJzWVM1TUtBOTNYSXFDL3FoeFVxWkdldW5mME1tbjFxY3hKdTdpWnpvdlZieUo0NEozKzhUN0MyWGtZdEtGcHNMVVo4SzJZbi8iLCJpIjoiMGRFWGlEcERsUHhMR2tHRCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "",
+    "vault_url": "",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "57GB"
+  },
+   {
     "title": "FANTASIAN Neo Dimension",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/FANTASIAN_Neo_Dimension.avif",
     "tags": [
