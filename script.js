@@ -1678,7 +1678,7 @@ function openGameModal(game, event) {
             if (game.backport4xx_vault) bp4 += createModalBtn(game.backport4xx_vault, 'VAULT');
             if (game.backport4xx_filed) bp4 += createModalBtn(game.backport4xx_filed, 'FILED');
         }
-        downloadsHTML = `${ffpkgSectionHTML}${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
+        downloadsHTML = `${fpkgSectionHTML}${ffpkgSectionHTML}${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
     } 
     // Verifica se ci sono standard e backport
 else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || 
@@ -1698,7 +1698,7 @@ else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.
         if (game.backport_filek) bp += createModalBtn(game.backport_filek, 'FILEK');
         if (game.backport_vault) bp += createModalBtn(game.backport_vault, 'VAULT');
         if (game.backport_filed) bp += createModalBtn(game.backport_filed, 'FILED');
-        downloadsHTML = `${ffpkgSectionHTML}${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
+        downloadsHTML = `${fpkgSectionHTML}${ffpkgSectionHTML}${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
     } 
     // Altrimenti usa i link standard (EXFAT)
     else {
@@ -1710,7 +1710,7 @@ else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.
         if (game.filek_url) btns += createModalBtn(game.filek_url, 'FILEK');
         if (game.vault_url) btns += createModalBtn(game.vault_url, 'VAULT');
         if (game.filed_url) btns += createModalBtn(game.filed_url, 'FILED');
-        downloadsHTML = `${ffpkgSectionHTML}${btns ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>EXFAT</strong></div>${btns}` : ''}`;
+        downloadsHTML = `${fpkgSectionHTML}${ffpkgSectionHTML}${btns ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>EXFAT</strong></div>${btns}` : ''}`;
     }
     downloadsContainer.innerHTML = downloadsHTML;
 
