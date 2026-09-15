@@ -2620,7 +2620,6 @@ function renderGames() {
     const pageItems = filteredGames.slice(startIndex, startIndex + itemsPerPage);
     if (pageItems.length === 0) { grid.innerHTML = '<p style="text-align:center; width:100%; font-size:1.5rem;">Nessun gioco trovato.</p>'; return; }
     
-    // ✅ Usa un array per accumulare le card e assegna una sola volta
     const cardsHTML = [];
     
     pageItems.forEach(game => {
@@ -2648,10 +2647,15 @@ function renderGames() {
         const createBtn = (url, label, isDLC = false, isDump = false, isFix = false) => { 
             if (!url || url === "undefined" || url.trim() === "") return ''; 
             const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeFileAuth = (game.credits_files || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeBpAuth = (game.credits_backport || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeDlcAuth = (dCredits || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeHPlay = (hPlay || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeFixGuide = (fixGuide || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
             if (isFix) {
-                return `<a onclick="openFixModal('${url}', '${fixGuide}', '${safeTitle}')" class="btn-dl"> ${label}</a>`;
+                return `<a onclick="openFixModal('${url}', '${safeFixGuide}', '${safeTitle}')" class="btn-dl"> ${label}</a>`;
             }
-            return `<a onclick="openDLWithAprEmuCheck('${url}', '${game.credits_files || ''}', '${game.credits_backport || ''}', '${dCredits}', '${hPlay}', ${isDLC}, ${isDump}, '${safeTitle}', ${requireAprEmu})" class="btn-dl">${label}</a>`; 
+            return `<a onclick="openDLWithAprEmuCheck('${url}', '${safeFileAuth}', '${safeBpAuth}', '${safeDlcAuth}', '${safeHPlay}', ${isDLC}, ${isDump}, '${safeTitle}', ${requireAprEmu})" class="btn-dl">${label}</a>`; 
         };
         
         let downloadHTML = '';
