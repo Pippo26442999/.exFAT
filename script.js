@@ -1732,6 +1732,7 @@ function openFixModal(url, fixGuide, gameTitle) {
 }
 
 // ========== FUNZIONE UNIFICATA PER APRIRE IL MODAL ==========
+// ========== FUNZIONE UNIFICATA PER APRIRE IL MODAL ==========
 function openGameModal(game, event) {
     if (event && event.button === 2) { event.preventDefault(); return false; }
     if (hasMoved || window._wasDrag) { hasMoved = false; window._wasDrag = false; return false; }
@@ -1844,13 +1845,14 @@ function openGameModal(game, event) {
             fpkgDualHTML += `<button onclick="openDualDownload('${stdUrl || ''}', '${bpUrl || ''}', '${safeFileAuth}', '${safeBpAuth}', '${safeDlcAuth}', '${safeHPlay}', '${safeTitle}', ${requireAprEmu}, 'FPKG')" class="modal-btn">${label}</button>`;
         };
         
-        if (game.fpkg_standard_akia || game.fpkg_backport_akia) addFpkgDualBtn(game.fpkg_standard_akia, game.fpkg_backport_akia, 'AKIA');
-        if (game.fpkg_standard_viki || game.fpkg_backport_viki) addFpkgDualBtn(game.fpkg_standard_viki, game.fpkg_backport_viki, 'VIKI');
-        if (game.fpkg_standard_buzz || game.fpkg_backport_buzz) addFpkgDualBtn(game.fpkg_standard_buzz, game.fpkg_backport_buzz, 'BUZZ');
-        if (game.fpkg_standard_data || game.fpkg_backport_data) addFpkgDualBtn(game.fpkg_standard_data, game.fpkg_backport_data, 'DATA');
-        if (game.fpkg_standard_filek || game.fpkg_backport_filek) addFpkgDualBtn(game.fpkg_standard_filek, game.fpkg_backport_filek, 'FILEK');
-        if (game.fpkg_standard_vault || game.fpkg_backport_vault) addFpkgDualBtn(game.fpkg_standard_vault, game.fpkg_backport_vault, 'VAULT');
-        if (game.fpkg_standard_filed || game.fpkg_backport_filed) addFpkgDualBtn(game.fpkg_standard_filed, game.fpkg_backport_filed, 'FILED');
+        // ✅ FIX: mostra TUTTI i mirror, anche se manca standard o backport
+        if (game.fpkg_standard_akia || game.fpkg_backport_akia) addFpkgDualBtn(game.fpkg_standard_akia || null, game.fpkg_backport_akia || null, 'AKIA');
+        if (game.fpkg_standard_viki || game.fpkg_backport_viki) addFpkgDualBtn(game.fpkg_standard_viki || null, game.fpkg_backport_viki || null, 'VIKI');
+        if (game.fpkg_standard_buzz || game.fpkg_backport_buzz) addFpkgDualBtn(game.fpkg_standard_buzz || null, game.fpkg_backport_buzz || null, 'BUZZ');
+        if (game.fpkg_standard_data || game.fpkg_backport_data) addFpkgDualBtn(game.fpkg_standard_data || null, game.fpkg_backport_data || null, 'DATA');
+        if (game.fpkg_standard_filek || game.fpkg_backport_filek) addFpkgDualBtn(game.fpkg_standard_filek || null, game.fpkg_backport_filek || null, 'FILEK');
+        if (game.fpkg_standard_vault || game.fpkg_backport_vault) addFpkgDualBtn(game.fpkg_standard_vault || null, game.fpkg_backport_vault || null, 'VAULT');
+        if (game.fpkg_standard_filed || game.fpkg_backport_filed) addFpkgDualBtn(game.fpkg_standard_filed || null, game.fpkg_backport_filed || null, 'FILED');
     }
     
     let fpkgDualSectionHTML = '';
@@ -1891,23 +1893,14 @@ function openGameModal(game, event) {
             stdBtns += `<button onclick="openDualDownload('${stdUrl || ''}', '${bpUrl || ''}', '${safeFileAuth}', '${safeBpAuth}', '${safeDlcAuth}', '${safeHPlay}', '${safeTitle}', ${requireAprEmu}, 'STANDARD')" class="modal-btn">${label}</button>`;
         };
         
-        if (game.standard_akia) addDualBtnModal(game.standard_akia, game.backport_akia, 'AKIA');
-        if (game.standard_viki) addDualBtnModal(game.standard_viki, game.backport_viki, 'VIKI');
-        if (game.standard_buzz) addDualBtnModal(game.standard_buzz, game.backport_buzz, 'BUZZ');
-        if (game.standard_data) addDualBtnModal(game.standard_data, game.backport_data, 'DATA');
-        if (game.standard_filek) addDualBtnModal(game.standard_filek, game.backport_filek, 'FILEK');
-        if (game.standard_vault) addDualBtnModal(game.standard_vault, game.backport_vault, 'VAULT');
-        if (game.standard_filed) addDualBtnModal(game.standard_filed, game.backport_filed, 'FILED');
-        
-        if (!hasStandard) {
-            if (game.backport_akia) addDualBtnModal(null, game.backport_akia, 'AKIA');
-            if (game.backport_viki) addDualBtnModal(null, game.backport_viki, 'VIKI');
-            if (game.backport_buzz) addDualBtnModal(null, game.backport_buzz, 'BUZZ');
-            if (game.backport_data) addDualBtnModal(null, game.backport_data, 'DATA');
-            if (game.backport_filek) addDualBtnModal(null, game.backport_filek, 'FILEK');
-            if (game.backport_vault) addDualBtnModal(null, game.backport_vault, 'VAULT');
-            if (game.backport_filed) addDualBtnModal(null, game.backport_filed, 'FILED');
-        }
+        // ✅ FIX: mostra TUTTI i mirror, anche se manca standard o backport
+        if (game.standard_akia || game.backport_akia) addDualBtnModal(game.standard_akia || null, game.backport_akia || null, 'AKIA');
+        if (game.standard_viki || game.backport_viki) addDualBtnModal(game.standard_viki || null, game.backport_viki || null, 'VIKI');
+        if (game.standard_buzz || game.backport_buzz) addDualBtnModal(game.standard_buzz || null, game.backport_buzz || null, 'BUZZ');
+        if (game.standard_data || game.backport_data) addDualBtnModal(game.standard_data || null, game.backport_data || null, 'DATA');
+        if (game.standard_filek || game.backport_filek) addDualBtnModal(game.standard_filek || null, game.backport_filek || null, 'FILEK');
+        if (game.standard_vault || game.backport_vault) addDualBtnModal(game.standard_vault || null, game.backport_vault || null, 'VAULT');
+        if (game.standard_filed || game.backport_filed) addDualBtnModal(game.standard_filed || null, game.backport_filed || null, 'FILED');
         
         if (hasBackport7) {
             if (game.backport7xx_akia) bp7Btns += createModalBtn(game.backport7xx_akia, 'AKIA');
@@ -2000,7 +1993,8 @@ function openGameModal(game, event) {
     const createFixModalBtn = (url, label) => {
         if (!url || url === "undefined" || url.trim() === "") return '';
         const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
-        return `<button onclick="openFixModal('${url}', '${fixGuide}', '${safeTitle}')" class="modal-btn">${label}</button>`;
+        const safeFixGuide = (fixGuide || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        return `<button onclick="openFixModal('${url}', '${safeFixGuide}', '${safeTitle}')" class="modal-btn">${label}</button>`;
     };
 
     if (game.fix_akia) fixBtns += createFixModalBtn(game.fix_akia, 'AKIA');
@@ -2950,13 +2944,14 @@ function renderGames() {
         const hasFpkgBp = game.fpkg_backport_akia || game.fpkg_backport_viki || game.fpkg_backport_buzz || game.fpkg_backport_data || game.fpkg_backport_filek || game.fpkg_backport_vault || game.fpkg_backport_filed;
         
         if (hasFpkgStd || hasFpkgBp) {
-            if (game.fpkg_standard_akia || game.fpkg_backport_akia) fpkgDualBtns += createDualBtn(game.fpkg_standard_akia, game.fpkg_backport_akia, 'AKIA', 'FPKG');
-            if (game.fpkg_standard_viki || game.fpkg_backport_viki) fpkgDualBtns += createDualBtn(game.fpkg_standard_viki, game.fpkg_backport_viki, 'VIKI', 'FPKG');
-            if (game.fpkg_standard_buzz || game.fpkg_backport_buzz) fpkgDualBtns += createDualBtn(game.fpkg_standard_buzz, game.fpkg_backport_buzz, 'BUZZ', 'FPKG');
-            if (game.fpkg_standard_data || game.fpkg_backport_data) fpkgDualBtns += createDualBtn(game.fpkg_standard_data, game.fpkg_backport_data, 'DATA', 'FPKG');
-            if (game.fpkg_standard_filek || game.fpkg_backport_filek) fpkgDualBtns += createDualBtn(game.fpkg_standard_filek, game.fpkg_backport_filek, 'FILEK', 'FPKG');
-            if (game.fpkg_standard_vault || game.fpkg_backport_vault) fpkgDualBtns += createDualBtn(game.fpkg_standard_vault, game.fpkg_backport_vault, 'VAULT', 'FPKG');
-            if (game.fpkg_standard_filed || game.fpkg_backport_filed) fpkgDualBtns += createDualBtn(game.fpkg_standard_filed, game.fpkg_backport_filed, 'FILED', 'FPKG');
+            // ✅ FIX: mostra TUTTI i mirror anche se manca standard o backport
+            if (game.fpkg_standard_akia || game.fpkg_backport_akia) fpkgDualBtns += createDualBtn(game.fpkg_standard_akia || null, game.fpkg_backport_akia || null, 'AKIA', 'FPKG');
+            if (game.fpkg_standard_viki || game.fpkg_backport_viki) fpkgDualBtns += createDualBtn(game.fpkg_standard_viki || null, game.fpkg_backport_viki || null, 'VIKI', 'FPKG');
+            if (game.fpkg_standard_buzz || game.fpkg_backport_buzz) fpkgDualBtns += createDualBtn(game.fpkg_standard_buzz || null, game.fpkg_backport_buzz || null, 'BUZZ', 'FPKG');
+            if (game.fpkg_standard_data || game.fpkg_backport_data) fpkgDualBtns += createDualBtn(game.fpkg_standard_data || null, game.fpkg_backport_data || null, 'DATA', 'FPKG');
+            if (game.fpkg_standard_filek || game.fpkg_backport_filek) fpkgDualBtns += createDualBtn(game.fpkg_standard_filek || null, game.fpkg_backport_filek || null, 'FILEK', 'FPKG');
+            if (game.fpkg_standard_vault || game.fpkg_backport_vault) fpkgDualBtns += createDualBtn(game.fpkg_standard_vault || null, game.fpkg_backport_vault || null, 'VAULT', 'FPKG');
+            if (game.fpkg_standard_filed || game.fpkg_backport_filed) fpkgDualBtns += createDualBtn(game.fpkg_standard_filed || null, game.fpkg_backport_filed || null, 'FILED', 'FPKG');
         }
         
         let fpkgDualSectionHTML = '';
@@ -3016,25 +3011,14 @@ function renderGames() {
         if (hasBackport7 || hasBackport4 || hasStandard || hasBackport) {
             let stdBtns = '', bp7Btns = '', bp4Btns = '';
             
-            // Standard normali
-            if (game.standard_akia) stdBtns += createDualBtn(game.standard_akia, game.backport_akia, 'AKIA', 'STANDARD');
-            if (game.standard_viki) stdBtns += createDualBtn(game.standard_viki, game.backport_viki, 'VIKI', 'STANDARD');
-            if (game.standard_buzz) stdBtns += createDualBtn(game.standard_buzz, game.backport_buzz, 'BUZZ', 'STANDARD');
-            if (game.standard_data) stdBtns += createDualBtn(game.standard_data, game.backport_data, 'DATA', 'STANDARD');
-            if (game.standard_filek) stdBtns += createDualBtn(game.standard_filek, game.backport_filek, 'FILEK', 'STANDARD');
-            if (game.standard_vault) stdBtns += createDualBtn(game.standard_vault, game.backport_vault, 'VAULT', 'STANDARD');
-            if (game.standard_filed) stdBtns += createDualBtn(game.standard_filed, game.backport_filed, 'FILED', 'STANDARD');
-            
-            // Se ci sono solo backport senza standard
-            if (!hasStandard) {
-                if (game.backport_akia) stdBtns += createDualBtn(null, game.backport_akia, 'AKIA', 'STANDARD');
-                if (game.backport_viki) stdBtns += createDualBtn(null, game.backport_viki, 'VIKI', 'STANDARD');
-                if (game.backport_buzz) stdBtns += createDualBtn(null, game.backport_buzz, 'BUZZ', 'STANDARD');
-                if (game.backport_data) stdBtns += createDualBtn(null, game.backport_data, 'DATA', 'STANDARD');
-                if (game.backport_filek) stdBtns += createDualBtn(null, game.backport_filek, 'FILEK', 'STANDARD');
-                if (game.backport_vault) stdBtns += createDualBtn(null, game.backport_vault, 'VAULT', 'STANDARD');
-                if (game.backport_filed) stdBtns += createDualBtn(null, game.backport_filed, 'FILED', 'STANDARD');
-            }
+            // ✅ FIX: mostra TUTTI i mirror, anche se manca standard o backport
+            if (game.standard_akia || game.backport_akia) stdBtns += createDualBtn(game.standard_akia || null, game.backport_akia || null, 'AKIA', 'STANDARD');
+            if (game.standard_viki || game.backport_viki) stdBtns += createDualBtn(game.standard_viki || null, game.backport_viki || null, 'VIKI', 'STANDARD');
+            if (game.standard_buzz || game.backport_buzz) stdBtns += createDualBtn(game.standard_buzz || null, game.backport_buzz || null, 'BUZZ', 'STANDARD');
+            if (game.standard_data || game.backport_data) stdBtns += createDualBtn(game.standard_data || null, game.backport_data || null, 'DATA', 'STANDARD');
+            if (game.standard_filek || game.backport_filek) stdBtns += createDualBtn(game.standard_filek || null, game.backport_filek || null, 'FILEK', 'STANDARD');
+            if (game.standard_vault || game.backport_vault) stdBtns += createDualBtn(game.standard_vault || null, game.backport_vault || null, 'VAULT', 'STANDARD');
+            if (game.standard_filed || game.backport_filed) stdBtns += createDualBtn(game.standard_filed || null, game.backport_filed || null, 'FILED', 'STANDARD');
             
             // Backport 7.xx e 4.xx (separati)
             if (hasBackport7) {
@@ -3101,30 +3085,21 @@ function openDualDownload(stdUrl, bpUrl, fAuth, bAuth, dAuth, hPlay, gameTitle, 
     const game = allGames.find(g => g.title === gameTitle);
     const fpkgAuth = game ? (game.credits_fpkg || null) : null;
     
-    // ===== CASO 1: Solo STANDARD → modal normale =====
-    if (hasStd && !hasBp) {
-        openDL(stdUrl, fAuth, bAuth, dAuth, hPlay, false, false, gameTitle, null, fpkgAuth);
+    // ===== ✅ FIX: apri SEMPRE il dual modal quando almeno uno dei due esiste =====
+    // Così l'utente vede "Not available" per la versione mancante
+    
+    if (!hasStd && !hasBp) {
+        console.warn('[openDualDownload] Nessun URL passato');
         return;
     }
     
-    // ===== CASO 2: Solo BACKPORT → modal normale =====
-    if (!hasStd && hasBp) {
-        openDL(bpUrl, fAuth, bAuth, dAuth, hPlay, false, false, gameTitle, null, fpkgAuth);
-        return;
-    }
-    
-    // ===== CASO 3: Entrambi → dual modal =====
-    if (hasStd && hasBp) {
-        openDL(stdUrl, fAuth, bAuth, dAuth, hPlay, false, false, gameTitle, {
-            standardUrl: stdUrl,
-            standardLabel: label === 'FPKG' ? 'FPKG STANDARD' : 'STANDARD',
-            backportUrl: bpUrl,
-            backportLabel: label === 'FPKG' ? 'FPKG BACKPORT' : 'BACKPORT'
-        }, fpkgAuth);
-        return;
-    }
-    
-    console.warn('[openDualDownload] Nessun URL passato');
+    // Apri sempre il modal con entrambe le colonne (una mostrerà "Not available" se manca)
+    openDL(stdUrl || '', fAuth, bAuth, dAuth, hPlay, false, false, gameTitle, {
+        standardUrl: hasStd ? stdUrl : null,
+        standardLabel: label === 'FPKG' ? 'FPKG STANDARD' : 'STANDARD',
+        backportUrl: hasBp ? bpUrl : null,
+        backportLabel: label === 'FPKG' ? 'FPKG BACKPORT' : 'BACKPORT'
+    }, fpkgAuth);
 }
 window.openDualDownload = openDualDownload;
 
