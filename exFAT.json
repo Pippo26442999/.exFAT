@@ -1,5 +1,35 @@
 [
    {
+    "title": "Mortal Kombat 1",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Mortal_Kombat_1.jpg",
+    "tags": [
+      "PPSA07570",
+      "v01.010.001",
+      "DLC Merged",
+      "Standard (9.xx) + 4.xx BackPork"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVE1MOXZYT25DY1pvZ0ZHL2lXWHFHWCsvZEIrM1I1aFBHdzlkWFhnaDVYSnFhRXFBSFo4TTlXR05uVnNSUkhpS3JqKzk5d1R0IiwicyI6Inkrc1A4aWhKN3ExKzEwdDhFTlpuNkE9PSIsImkiOiI3cWpQRFA5RnordnpSTEYrIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY2VUR1ZYQXNYMm5qdVJUaXRiOWRyTHJScUxmR09WQ3VVSFhPa1JlQklrQy9TN3BZYnpRYzFuYVdEVTBpMkhuVTd3QWgiLCJzIjoiYkxVRzdZZFE1ajFkQXg3WHpzUGJMQT09IiwiaSI6ImJMbWN5SUJ6NkNVaE1aN1UifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia3NseWlVN3BDdHRBcmFMTFAxYUV0RVp0Nm9EZXlYMUN1dEY5RkRjeTNIeEtYYWZSWlIzc3F0VGEyODRsM0ZIdlVRPT0iLCJzIjoiRDNhUUFkWTZsRW1BQXcvYVMxTXU1QT09IiwiaSI6InZTb2FlMkNxNVVQbEVwOFAifQ==",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRmpUVk0zQ0EwTERMbFdkdjdUZHhYNnJ0b1UrUGRlYzNCa0phb3djRFFJSWZIcDlpNmJGNFlGdTUzZzNQK2dXbWRsQzFsaU1mIiwicyI6IkFlc1cwRTBxbDBuOHBEZnMyZVZIemc9PSIsImkiOiJId1VHSzVIZllQNnl3YkwvIn0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY0xOMWVnSnF3UkhMRFl2YkllNC8xbDZOcGMzOG5sUDNzZkxTSFZudzgzTXdzS29Qc0xpZmlEVklKWUNYRDUyS2RvWGEiLCJzIjoiNHB3Y05qVG5mVndJZkw2aEpPRW5lZz09IiwiaSI6IldNeWpxdTU1MHUzUHJTSmcifQ==",
+    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieWExeDczVXNyM0x4b3hLMmpxcmplWUtmQmZ1cDF2M3BHOUFOdGFOaVI1WTlHY0JZVkQ3eXMvY094TGJmMEtoTnFnPT0iLCJzIjoiLy9qdGZ1K0JwWEpvS3JrNWxmcmZSZz09IiwiaSI6IkVLa1VGZmd6b0lHTTVLTnEifQ==",
+    "fpkg_akia": "",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3NaYUYvOWI2bHk1UEFhRHFNdDM1RHdDUjUyY1FGbkdPMjdyL0RsWWlQUFJhSjRZb2hud0FuVGtGM3ROcllEbXZQQzROMFVzVXRMWkZPZXJBUnQ0WjV3WmVnTjg5cVk9IiwiaSI6Img0MHdlWCtUMzEwWFlkRHAiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM3FQVnBMNitXaGs5bWFVemJsNGc3bmlWSldZcFlPSzZEeTFVbzhIVGVUYkNxKzJlWHdDL3pOMTFORXBBZDZ2T21BOTRDQ2hNUHhxYjF4eGVNeTA3TWhLV1QzMEIiLCJpIjoiNnZRWUZPNllXb0p4cGtqQyIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNmY2UytQNFhKQW93WThtdVJiV3dYSnNydWErbzI1QWYxU0taTEtxZldPZU1NMFd5Y0xMV1JjOTVMelgyMjdZMXZKUE1RWGpxS3pCV29xTmtRcXRHRDVpUXZ0V252UHc9IiwiaSI6Im1kT1FBV1pqVk5CVWxES1UiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_vault": "",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidHBMekxFYy9kUUNtc1ZWamhRZ01wVTFwbG1WblZDQ2daUjVnRnpXR2I0MXltU2EyMzZXTHFUYU1UWDU1TWE5OXAwMWpGbTk5IiwicyI6ImNVczdvdWVkNnk1QlpJYnhDMVBuY2c9PSIsImkiOiJOZXBjWmtXcldkek5BMmtIIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOS9NNkc4VlZQMUtNMmJLUnRaNFQxU1NVYjBWRHFFYkdNWTRpQU96L2p5dk1aUjlJK1hKNFI4SzBkdndZWUNmRWt3PT0iLCJzIjoiY2dvNFlpYUg4bTd2cWlaUVlKK0hJdz09IiwiaSI6IlZFaHExK1UrN2Jud1NJMEMifQ==",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMjd3NGZMVkdTNlVMSkg5dWJtdXFzdWtlM0p6SU1uelFzRU1OQjRDSzI1WlNBVndGM1E5NENaUU8vQnVESG1Fdi9CaUFGK1VvazlMbEV6NVppTGk1bFEyUHdnVTJWUT09IiwiaSI6ImNMc1pZMEsrQ1JxTzBnZHoiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "Pkykzhack",
+    "credits_backport": "BestPig",
+    "how_to_play": "Khaos Reign DLC now is Merged. 306GB (exFAT - All FW) | 93GB (FPKG BP 4.xx - Up to 11.40).",
+    "popular": "on",
+    "size": "306GB"
+  },
+   {
     "title": "Street Fighter 6 Years 1-3 Fighters Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Street_Fighter_6_1_3_FE.jpg",
     "tags": [
@@ -12668,31 +12698,6 @@
     "credits_files": "DUPLEX & SiESPTA",
     "credits_backport": "BestPig",
     "size": "30GB"
-  },
-  {
-    "title": "Mortal Kombat 1",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Mortal_Kombat_1.jpg",
-    "tags": [
-      "PPSA07570",
-      "v01.010.001",
-      "USA to EUR Languages",
-      "DLC Merged",
-      "Standard (9.xx) + 4.xx BackPork"
-    ],
-    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVE1MOXZYT25DY1pvZ0ZHL2lXWHFHWCsvZEIrM1I1aFBHdzlkWFhnaDVYSnFhRXFBSFo4TTlXR05uVnNSUkhpS3JqKzk5d1R0IiwicyI6Inkrc1A4aWhKN3ExKzEwdDhFTlpuNkE9PSIsImkiOiI3cWpQRFA5RnordnpSTEYrIn0=",
-    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY2VUR1ZYQXNYMm5qdVJUaXRiOWRyTHJScUxmR09WQ3VVSFhPa1JlQklrQy9TN3BZYnpRYzFuYVdEVTBpMkhuVTd3QWgiLCJzIjoiYkxVRzdZZFE1ajFkQXg3WHpzUGJMQT09IiwiaSI6ImJMbWN5SUJ6NkNVaE1aN1UifQ==",
-    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia3NseWlVN3BDdHRBcmFMTFAxYUV0RVp0Nm9EZXlYMUN1dEY5RkRjeTNIeEtYYWZSWlIzc3F0VGEyODRsM0ZIdlVRPT0iLCJzIjoiRDNhUUFkWTZsRW1BQXcvYVMxTXU1QT09IiwiaSI6InZTb2FlMkNxNVVQbEVwOFAifQ==",
-    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRmpUVk0zQ0EwTERMbFdkdjdUZHhYNnJ0b1UrUGRlYzNCa0phb3djRFFJSWZIcDlpNmJGNFlGdTUzZzNQK2dXbWRsQzFsaU1mIiwicyI6IkFlc1cwRTBxbDBuOHBEZnMyZVZIemc9PSIsImkiOiJId1VHSzVIZllQNnl3YkwvIn0=",
-    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY0xOMWVnSnF3UkhMRFl2YkllNC8xbDZOcGMzOG5sUDNzZkxTSFZudzgzTXdzS29Qc0xpZmlEVklKWUNYRDUyS2RvWGEiLCJzIjoiNHB3Y05qVG5mVndJZkw2aEpPRW5lZz09IiwiaSI6IldNeWpxdTU1MHUzUHJTSmcifQ==",
-    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieWExeDczVXNyM0x4b3hLMmpxcmplWUtmQmZ1cDF2M3BHOUFOdGFOaVI1WTlHY0JZVkQ3eXMvY094TGJmMEtoTnFnPT0iLCJzIjoiLy9qdGZ1K0JwWEpvS3JrNWxmcmZSZz09IiwiaSI6IkVLa1VGZmd6b0lHTTVLTnEifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidHBMekxFYy9kUUNtc1ZWamhRZ01wVTFwbG1WblZDQ2daUjVnRnpXR2I0MXltU2EyMzZXTHFUYU1UWDU1TWE5OXAwMWpGbTk5IiwicyI6ImNVczdvdWVkNnk1QlpJYnhDMVBuY2c9PSIsImkiOiJOZXBjWmtXcldkek5BMmtIIn0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOS9NNkc4VlZQMUtNMmJLUnRaNFQxU1NVYjBWRHFFYkdNWTRpQU96L2p5dk1aUjlJK1hKNFI4SzBkdndZWUNmRWt3PT0iLCJzIjoiY2dvNFlpYUg4bTd2cWlaUVlKK0hJdz09IiwiaSI6IlZFaHExK1UrN2Jud1NJMEMifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "Pkykzhack",
-    "credits_backport": "BestPig",
-    "how_to_play": "Khaos Reign DLC now is Merged.",
-    "popular": "on",
-    "size": "306GB"
   },
   {
     "title": "The Last of Us Part II Remastered",
