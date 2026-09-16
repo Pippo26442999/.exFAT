@@ -1539,6 +1539,24 @@
             display: inline-block;
             min-width: 75px;
         }
+.game-fpkg-size {
+    background: rgba(0, 255, 238, 0.85) !important;
+    color: #000 !important;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: 900;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 255, 238, 0.6);
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    min-width: 65px;
+}
+.dual-btn {
+    background: linear-gradient(135deg, rgba(0,255,238,0.9), rgba(0,153,204,0.9)) !important;
+    color: #000 !important;
+}
         .game-title, .image-container, .download-section { position: relative; z-index: 5; width: 100%; }
         .game-title { font-weight: 900; text-align: center; text-transform: uppercase; font-size: 1.2rem; min-height: 2.5rem; margin-bottom: 15px; letter-spacing: 1px; }
         .image-container { border-radius: 20px; overflow: hidden; aspect-ratio: 1/1; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); background: #000; }
@@ -1967,6 +1985,22 @@
             color: var(--green-neon);
             text-shadow: 0 0 15px var(--green-neon);
         }
+/* ===== SHINE EFFECT (per modali download) ===== */
+@keyframes shineAnimation {
+    0% { transform: translateX(-100%); }
+    20% { transform: translateX(100%); }
+    100% { transform: translateX(100%); }
+}
+.shine-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    pointer-events: none;
+    animation: shineAnimation 3s ease-in-out infinite;
+}
         .download-final-btn {
             display: block;
             background: linear-gradient(135deg, var(--cyan-neon), #0099cc);

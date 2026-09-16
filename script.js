@@ -1264,34 +1264,44 @@ function setupDownloadModal() {
 function showDownloadModal(content, downloadUrl) {
     const modal = document.getElementById('download-modal');
     const bodyContainer = document.getElementById('downloadModalBody');
-    const finalBtn = document.getElementById('downloadFinalBtn');
-    const pwHint = document.getElementById('downloadPwHint');
-    const pwValue = document.getElementById('downloadPwValue');
-    const passwordBox = document.getElementById('downloadPasswordBox');
     const footerDiv = document.querySelector('#download-modal .download-modal-container > div:last-child');
     
     modal.classList.remove('hiding');
     const container = document.querySelector('#download-modal .download-modal-container');
-    if (container) container.classList.remove('closing');
+    if (container) {
+        container.classList.remove('closing');
+        container.style.maxWidth = '550px';
+    }
     
-    // RESETTA IL FOOTER ALLO STATO ORIGINALE
+    // RESET header al titolo standard
+    const header = modal.querySelector('.download-modal-header');
+    if (header) {
+        header.innerHTML = `
+            <h2>DOWNLOAD READY</h2>
+            <p>Your file is ready to be downloaded</p>
+            <div class="download-modal-close" id="close-download-modal">✕</div>
+        `;
+        const closeBtn = document.getElementById('close-download-modal');
+        if (closeBtn) closeBtn.onclick = () => {
+            modal.classList.add('hiding');
+            const c = modal.querySelector('.download-modal-container');
+            if (c) c.classList.add('closing');
+            setTimeout(() => {
+                modal.classList.remove('show', 'hiding');
+                if (c) c.classList.remove('closing');
+            }, 300);
+        };
+    }
+    
+    // RESET footer allo stato originale
     if (footerDiv) {
         footerDiv.innerHTML = `
+            </div>
             <a id="downloadFinalBtn" target="_blank" class="download-final-btn">DOWNLOAD</a>
         `;
     }
     
-    // Ricarica i riferimenti dopo il reset
-    const newPasswordBox = document.getElementById('downloadPasswordBox');
     const newFinalBtn = document.getElementById('downloadFinalBtn');
-    const newPwHint = document.getElementById('downloadPwHint');
-    const newPwValue = document.getElementById('downloadPwValue');
-    
-    if (newPasswordBox) newPasswordBox.style.display = 'block';
-    if (newFinalBtn) newFinalBtn.style.display = 'block';
-    if (newPwHint) newPwHint.style.display = 'block';
-    if (newPwValue) newPwValue.style.display = 'none';
-    
     if (bodyContainer) bodyContainer.innerHTML = content;
     if (newFinalBtn) newFinalBtn.href = downloadUrl;
     
@@ -1305,11 +1315,34 @@ function showAprEmuDownloadModal(content, downloadUrl) {
     
     modal.classList.remove('hiding');
     const container = document.querySelector('#download-modal .download-modal-container');
-    if (container) container.classList.remove('closing');
+    if (container) {
+        container.classList.remove('closing');
+        container.style.maxWidth = '550px';
+    }
+    
+    // RESET header
+    const header = modal.querySelector('.download-modal-header');
+    if (header) {
+        header.innerHTML = `
+            <h2>DOWNLOAD READY</h2>
+            <p>Your file is ready to be downloaded</p>
+            <div class="download-modal-close" id="close-download-modal">✕</div>
+        `;
+        const closeBtn = document.getElementById('close-download-modal');
+        if (closeBtn) closeBtn.onclick = () => {
+            modal.classList.add('hiding');
+            const c = modal.querySelector('.download-modal-container');
+            if (c) c.classList.add('closing');
+            setTimeout(() => {
+                modal.classList.remove('show', 'hiding');
+                if (c) c.classList.remove('closing');
+            }, 300);
+        };
+    }
     
     if (bodyContainer) bodyContainer.innerHTML = content;
     
-    // RESETTA IL FOOTER CON I BOTTONI APR-EMU
+    // RESET footer con i due bottoni APR-EMU
     if (footerDiv) {
         footerDiv.innerHTML = `
             <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
@@ -1321,27 +1354,6 @@ function showAprEmuDownloadModal(content, downloadUrl) {
                 </a>
             </div>
         `;
-        
-        // Aggiungi l'effetto shine
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes shineAnimation {
-                0% { transform: translateX(-100%); }
-                20% { transform: translateX(100%); }
-                100% { transform: translateX(100%); }
-            }
-            .shine-effect {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-                pointer-events: none;
-                animation: shineAnimation 3s ease-in-out infinite;
-            }
-        `;
-        document.head.appendChild(style);
         
         const aprEmuBtn = footerDiv.querySelector('.apr-emu-download-btn');
         const downloadLink = footerDiv.querySelector('.download-link-btn');
@@ -1393,6 +1405,151 @@ function openAprEmuModalFromDownload() {
     }
 }
 
+function showDualDownloadModal({ standardUrl, standardLabel, backportUrl, backportLabel, content, requireAprEmu }) {
+    const modal = document.getElementById('download-modal');
+    if (!modal) return;
+
+    modal.classList.remove('hiding');
+    const container = modal.querySelector('.download-modal-container');
+    if (container) container.classList.remove('closing');
+
+    // Header
+    const header = modal.querySelector('.download-modal-header');
+    if (header) {
+        header.innerHTML = `
+            <h2>CHOOSE YOUR VERSION</h2>
+            <p>Standard or Backport — pick the one you need</p>
+            <div class="download-modal-close" id="close-download-modal">✕</div>
+        `;
+        const closeBtn = document.getElementById('close-download-modal');
+        if (closeBtn) closeBtn.onclick = () => {
+            modal.classList.add('hiding');
+            const c = modal.querySelector('.download-modal-container');
+            if (c) c.classList.add('closing');
+            setTimeout(() => {
+                modal.classList.remove('show', 'hiding');
+                if (c) c.classList.remove('closing');
+            }, 300);
+        };
+    }
+
+    // Espandi la larghezza del container per il dual-panel
+    if (container) container.style.maxWidth = '960px';
+
+    // Body: crediti + istruzioni (uguale per entrambi)
+    const bodyContainer = document.getElementById('downloadModalBody');
+    if (bodyContainer) bodyContainer.innerHTML = content;
+
+    // Footer: due colonne
+    const footerDiv = modal.querySelector('.download-modal-container > div:last-child');
+    if (footerDiv) {
+        footerDiv.innerHTML = `
+            <div class="dual-variant-grid">
+                <div class="dual-variant-col dual-standard">
+                    <div class="dual-variant-title">${escapeHtml(standardLabel)}</div>
+                    ${standardUrl ? `
+                        ${requireAprEmu ? `<button onclick="openAprEmuModalFromDownload()" class="dual-apr-btn">⚠️ NEED APR-EMU UPDATE? CHECK HERE</button>` : ''}
+                        <a href="${standardUrl}" target="_blank" class="dual-dl-btn dual-dl-standard">DOWNLOAD</a>
+                    ` : `<div class="dual-disabled">Not available</div>`}
+                </div>
+                <div class="dual-variant-col dual-backport">
+                    <div class="dual-variant-title">${escapeHtml(backportLabel)}</div>
+                    ${backportUrl ? `
+                        ${requireAprEmu ? `<button onclick="openAprEmuModalFromDownload()" class="dual-apr-btn">⚠️ NEED APR-EMU UPDATE? CHECK HERE</button>` : ''}
+                        <a href="${backportUrl}" target="_blank" class="dual-dl-btn dual-dl-backport">DOWNLOAD</a>
+                    ` : `<div class="dual-disabled">Not available</div>`}
+                </div>
+            </div>
+            <style>
+                .dual-variant-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 16px;
+                    width: 100%;
+                }
+                .dual-variant-col {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding: 16px;
+                    border-radius: 20px;
+                    background: rgba(255,255,255,0.03);
+                    border: 1px solid rgba(255,255,255,0.08);
+                }
+                .dual-standard { border-color: rgba(0, 255, 238, 0.35); }
+                .dual-backport { border-color: rgba(255, 136, 0, 0.35); }
+                .dual-variant-title {
+                    font-weight: 900;
+                    font-size: 0.85rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin-bottom: 6px;
+                }
+                .dual-standard .dual-variant-title { color: var(--cyan-neon); }
+                .dual-backport .dual-variant-title { color: var(--apr-orange); }
+                .dual-dl-btn {
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    padding: 14px 20px;
+                    border-radius: 50px;
+                    font-weight: 900;
+                    font-size: 0.9rem;
+                    letter-spacing: 1px;
+                    transition: all 0.3s ease;
+                    color: #000;
+                }
+                .dual-dl-standard {
+                    background: linear-gradient(135deg, var(--cyan-neon), #0099cc);
+                }
+                .dual-dl-standard:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 10px 30px rgba(0, 255, 238, 0.5);
+                }
+                .dual-dl-backport {
+                    background: linear-gradient(135deg, var(--apr-orange), var(--apr-dark));
+                    color: #fff;
+                }
+                .dual-dl-backport:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 10px 30px rgba(255, 136, 0, 0.5);
+                }
+                .dual-apr-btn {
+                    background: linear-gradient(135deg, #ff8800, #cc5500);
+                    border: none;
+                    color: #fff;
+                    padding: 10px 14px;
+                    border-radius: 40px;
+                    font-weight: 800;
+                    font-size: 0.7rem;
+                    cursor: pointer;
+                    text-align: center;
+                    transition: all 0.3s ease;
+                }
+                .dual-apr-btn:hover {
+                    background: linear-gradient(135deg, #ffaa00, #ff6600);
+                    box-shadow: 0 0 15px rgba(255, 136, 0, 0.5);
+                }
+                .dual-disabled {
+                    text-align: center;
+                    padding: 14px;
+                    border-radius: 50px;
+                    background: rgba(255,255,255,0.05);
+                    color: rgba(255,255,255,0.4);
+                    font-weight: 700;
+                    font-size: 0.85rem;
+                }
+                @media (max-width: 600px) {
+                    .dual-variant-grid { grid-template-columns: 1fr; }
+                }
+            </style>
+        `;
+    }
+
+    modal.classList.add('show');
+}
+
 function startDownloadFromModal(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle, requireAprEmu) {
     openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle);
 }
@@ -1401,7 +1558,7 @@ function openDLWithAprEmuCheck(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, g
     openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle);
 }
 
-function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, gameTitle) {
+function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, gameTitle, bothVariants = null) {
     let parts = [];
     const clean = (str) => (str && str !== "undefined" && str.trim() !== "") ? str.trim() : null;
     const fileAuthor = clean(fAuth), bpAuthor = clean(bAuth), dlcAuthor = clean(dAuth), playInstructions = clean(hPlay);
@@ -1410,7 +1567,6 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, 
     if (fileAuthor && bpAuthor && dlcAuthor && fileAuthor === bpAuthor && bpAuthor === dlcAuthor) {
         parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs & BackPort`);
     }
-    // Se Files e BackPort sono uguali (DLCs diverso o assente)
     else if (fileAuthor && bpAuthor && fileAuthor === bpAuthor) {
         if (dlcAuthor) {
             parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort and <b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
@@ -1418,21 +1574,18 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, 
             parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with BackPort`);
         }
     }
-    // Se Files e DLCs sono uguali (BackPort diverso o assente)
     else if (fileAuthor && dlcAuthor && fileAuthor === dlcAuthor) {
         parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs`);
         if (bpAuthor && bpAuthor !== fileAuthor) {
             parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort`);
         }
     }
-    // Se BackPort e DLCs sono uguali (Files diverso)
     else if (bpAuthor && dlcAuthor && bpAuthor === dlcAuthor) {
         if (fileAuthor) {
             parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
         }
         parts.push(`<b>${escapeHtml(bpAuthor)}</b> for the BackPort & DLCs`);
     }
-    // Caso standard: tutti diversi o solo alcuni presenti
     else {
         if (fileAuthor) parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files`);
         if (dlcAuthor) parts.push(`<b>${escapeHtml(dlcAuthor)}</b> for DLCs`);
@@ -1453,6 +1606,19 @@ function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, 
     
     const game = allGames.find(g => g.title === gameTitle);
     const requireAprEmu = game && (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true");
+    
+    // ===== DUAL MODAL: Standard & Backport =====
+    if (bothVariants) {
+        showDualDownloadModal({
+            standardUrl: bothVariants.standardUrl || null,
+            standardLabel: bothVariants.standardLabel || 'STANDARD',
+            backportUrl: bothVariants.backportUrl || null,
+            backportLabel: bothVariants.backportLabel || 'BACKPORT',
+            content: modalContent,
+            requireAprEmu: requireAprEmu
+        });
+        return;
+    }
     
     if (requireAprEmu) {
         showAprEmuDownloadModal(modalContent, url);
@@ -1586,6 +1752,22 @@ function openGameModal(game, event) {
     document.getElementById('modal-tags').innerHTML = (game.tags || []).map(t => `<span class="modal-tag">${escapeHtml(t)}</span>`).join('');
     document.getElementById('modal-size').textContent = game.size || 'N/A';
 
+    // ===== FPKG SIZE BADGE =====
+    // Rimuovo eventuale badge precedente (per evitare duplicati quando si cambia gioco)
+    const existingFpkgBadge = document.querySelector('.modal-fpkg-size');
+    if (existingFpkgBadge) existingFpkgBadge.remove();
+
+    if (game.fpkg_size && game.fpkg_size.trim() !== '') {
+        const sizeBadge = document.createElement('div');
+        sizeBadge.className = 'modal-fpkg-size';
+        sizeBadge.style.cssText = 'background: rgba(0,255,238,0.85); color:#000; padding:4px 12px; border-radius:8px; font-size:0.7rem; font-weight:900; display:inline-block; margin-top:6px; margin-left:6px;';
+        sizeBadge.textContent = `${game.fpkg_size} FPKG`;
+        const sizeContainer = document.getElementById('modal-size');
+        if (sizeContainer && sizeContainer.parentNode) {
+            sizeContainer.parentNode.appendChild(sizeBadge);
+        }
+    }
+
     // ===== GESTIONE APR-EMU =====
     const aprEmuBadge = document.getElementById('modal-apr-emu-badge');
     const requireAprEmu = (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true");
@@ -1655,51 +1837,68 @@ function openGameModal(game, event) {
     let ffpkgSectionHTML = ffpkgHTML ? `<div style="width:100%; margin-bottom:10px;"><strong>FFPKG</strong></div>${ffpkgHTML}` : '';
     
     // Verifica se ci sono backport 7.xx o 4.xx
-    const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault || game.backport4xx_filed;
+    // ===== STANDARD & BACKPORT (UNITI) =====
+    const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault || game.backport7xx_filed;
     const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault || game.backport4xx_filed;
+    const hasStandard = game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.standard_filed;
+    const hasBackport = game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault || game.backport_filed;
     
-    if (hasBackport7 || hasBackport4) {
-        let bp7 = '', bp4 = '';
+    if (hasBackport7 || hasBackport4 || hasStandard || hasBackport) {
+        let stdBtns = '', bp7Btns = '', bp4Btns = '';
+        
+        // Standard & Backport uniti
+        const addDualBtnModal = (stdUrl, bpUrl, label) => {
+            if ((!stdUrl || stdUrl.trim() === '') && (!bpUrl || bpUrl.trim() === '')) return;
+            const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeFileAuth = (fileAuthPlaceholder || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeBpAuth = (bpAuthPlaceholder || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeDlcAuth = (dlcAuthPlaceholder || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeHPlay = (hPlayPlaceholder || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            stdBtns += `<button onclick="openDualDownload('${stdUrl || ''}', '${bpUrl || ''}', '${safeFileAuth}', '${safeBpAuth}', '${safeDlcAuth}', '${safeHPlay}', '${safeTitle}', ${requireAprEmu})" class="modal-btn">${label}</button>`;
+        };
+        
+        if (game.standard_akia) addDualBtnModal(game.standard_akia, game.backport_akia, 'AKIA');
+        if (game.standard_viki) addDualBtnModal(game.standard_viki, game.backport_viki, 'VIKI');
+        if (game.standard_buzz) addDualBtnModal(game.standard_buzz, game.backport_buzz, 'BUZZ');
+        if (game.standard_data) addDualBtnModal(game.standard_data, game.backport_data, 'DATA');
+        if (game.standard_filek) addDualBtnModal(game.standard_filek, game.backport_filek, 'FILEK');
+        if (game.standard_vault) addDualBtnModal(game.standard_vault, game.backport_vault, 'VAULT');
+        if (game.standard_filed) addDualBtnModal(game.standard_filed, game.backport_filed, 'FILED');
+        
+        // Se ci sono solo backport senza standard
+        if (!hasStandard) {
+            if (game.backport_akia) addDualBtnModal(null, game.backport_akia, 'AKIA');
+            if (game.backport_viki) addDualBtnModal(null, game.backport_viki, 'VIKI');
+            if (game.backport_buzz) addDualBtnModal(null, game.backport_buzz, 'BUZZ');
+            if (game.backport_data) addDualBtnModal(null, game.backport_data, 'DATA');
+            if (game.backport_filek) addDualBtnModal(null, game.backport_filek, 'FILEK');
+            if (game.backport_vault) addDualBtnModal(null, game.backport_vault, 'VAULT');
+            if (game.backport_filed) addDualBtnModal(null, game.backport_filed, 'FILED');
+        }
+        
+        // BP 7.xx
         if (hasBackport7) {
-            if (game.backport7xx_akia) bp7 += createModalBtn(game.backport7xx_akia, 'AKIA');
-            if (game.backport7xx_viki) bp7 += createModalBtn(game.backport7xx_viki, 'VIKI');
-            if (game.backport7xx_buzz) bp7 += createModalBtn(game.backport7xx_buzz, 'BUZZ');
-            if (game.backport7xx_data) bp7 += createModalBtn(game.backport7xx_data, 'DATA');
-            if (game.backport7xx_filek) bp7 += createModalBtn(game.backport7xx_filek, 'FILEK');
-            if (game.backport7xx_vault) bp7 += createModalBtn(game.backport7xx_vault, 'VAULT');
-            if (game.backport7xx_filed) bp7 += createModalBtn(game.backport7xx_filed, 'FILED');
+            if (game.backport7xx_akia) bp7Btns += createModalBtn(game.backport7xx_akia, 'AKIA');
+            if (game.backport7xx_viki) bp7Btns += createModalBtn(game.backport7xx_viki, 'VIKI');
+            if (game.backport7xx_buzz) bp7Btns += createModalBtn(game.backport7xx_buzz, 'BUZZ');
+            if (game.backport7xx_data) bp7Btns += createModalBtn(game.backport7xx_data, 'DATA');
+            if (game.backport7xx_filek) bp7Btns += createModalBtn(game.backport7xx_filek, 'FILEK');
+            if (game.backport7xx_vault) bp7Btns += createModalBtn(game.backport7xx_vault, 'VAULT');
+            if (game.backport7xx_filed) bp7Btns += createModalBtn(game.backport7xx_filed, 'FILED');
         }
+        // BP 4.xx
         if (hasBackport4) {
-            if (game.backport4xx_akia) bp4 += createModalBtn(game.backport4xx_akia, 'AKIA');
-            if (game.backport4xx_viki) bp4 += createModalBtn(game.backport4xx_viki, 'VIKI');
-            if (game.backport4xx_buzz) bp4 += createModalBtn(game.backport4xx_buzz, 'BUZZ');
-            if (game.backport4xx_data) bp4 += createModalBtn(game.backport4xx_data, 'DATA');
-            if (game.backport4xx_filek) bp4 += createModalBtn(game.backport4xx_filek, 'FILEK');
-            if (game.backport4xx_vault) bp4 += createModalBtn(game.backport4xx_vault, 'VAULT');
-            if (game.backport4xx_filed) bp4 += createModalBtn(game.backport4xx_filed, 'FILED');
+            if (game.backport4xx_akia) bp4Btns += createModalBtn(game.backport4xx_akia, 'AKIA');
+            if (game.backport4xx_viki) bp4Btns += createModalBtn(game.backport4xx_viki, 'VIKI');
+            if (game.backport4xx_buzz) bp4Btns += createModalBtn(game.backport4xx_buzz, 'BUZZ');
+            if (game.backport4xx_data) bp4Btns += createModalBtn(game.backport4xx_data, 'DATA');
+            if (game.backport4xx_filek) bp4Btns += createModalBtn(game.backport4xx_filek, 'FILEK');
+            if (game.backport4xx_vault) bp4Btns += createModalBtn(game.backport4xx_vault, 'VAULT');
+            if (game.backport4xx_filed) bp4Btns += createModalBtn(game.backport4xx_filed, 'FILED');
         }
-        downloadsHTML = `${fpkgSectionHTML}${ffpkgSectionHTML}${bp7 ? `<div style="width:100%; margin-bottom:10px;"><strong>Backport 7.xx</strong></div>${bp7}` : ''}${bp4 ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4}` : ''}`;
-    } 
-    // Verifica se ci sono standard e backport
-else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || 
-         game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault) {
-        let std = '', bp = '';
-        if (game.standard_akia) std += createModalBtn(game.standard_akia, 'AKIA');
-        if (game.standard_viki) std += createModalBtn(game.standard_viki, 'VIKI');
-        if (game.standard_buzz) std += createModalBtn(game.standard_buzz, 'BUZZ');
-        if (game.standard_data) std += createModalBtn(game.standard_data, 'DATA');
-        if (game.standard_filek) std += createModalBtn(game.standard_filek, 'FILEK');
-        if (game.standard_vault) std += createModalBtn(game.standard_vault, 'VAULT');
-        if (game.standard_filed) std += createModalBtn(game.standard_filed, 'FILED');
-        if (game.backport_akia) bp += createModalBtn(game.backport_akia, 'AKIA');
-        if (game.backport_viki) bp += createModalBtn(game.backport_viki, 'VIKI');
-        if (game.backport_buzz) bp += createModalBtn(game.backport_buzz, 'BUZZ');
-        if (game.backport_data) bp += createModalBtn(game.backport_data, 'DATA');
-        if (game.backport_filek) bp += createModalBtn(game.backport_filek, 'FILEK');
-        if (game.backport_vault) bp += createModalBtn(game.backport_vault, 'VAULT');
-        if (game.backport_filed) bp += createModalBtn(game.backport_filed, 'FILED');
-        downloadsHTML = `${fpkgSectionHTML}${ffpkgSectionHTML}${std ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD</strong></div>${std}` : ''}${bp ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>BACKPORT</strong></div>${bp}` : ''}`;
-    } 
+        
+        downloadsHTML = `${fpkgSectionHTML}${ffpkgSectionHTML}${stdBtns ? `<div style="width:100%; margin-bottom:10px;"><strong>STANDARD &amp; BACKPORT</strong></div>${stdBtns}` : ''}${bp7Btns ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 7.xx</strong></div>${bp7Btns}` : ''}${bp4Btns ? `<div style="width:100%; margin-bottom:10px; margin-top:10px;"><strong>Backport 4.xx</strong></div>${bp4Btns}` : ''}`;
+    }
     // Altrimenti usa i link standard (EXFAT)
     else {
         let btns = '';
@@ -2625,10 +2824,16 @@ function renderGames() {
     pageItems.forEach(game => {
         let tagsHTML = (game.tags || []).map(t => `<span class="game-tag">${escapeHtml(t)}</span>`).join('');
         let sizeHTML = '';
+        let fpkgSizeHTML = '';
         let aprEmuHTML = '';
         
         if (game.size) {
             sizeHTML = `<div class="game-size">${game.size}</div>`;
+        }
+        
+        // ===== FPKG SIZE BADGE =====
+        if (game.fpkg_size && game.fpkg_size.trim() !== '') {
+            fpkgSizeHTML = `<div class="game-fpkg-size" style="background: rgba(0, 255, 238, 0.85); color: #000; padding: 4px 10px; border-radius: 8px; font-size: 0.7rem; font-weight: 900; border: 1px solid #fff; box-shadow: 0 0 10px rgba(0, 255, 238, 0.6); white-space: nowrap; text-align: center; display: inline-block; min-width: 65px;">${game.fpkg_size} FPKG</div>`;
         }
         
         const requireAprEmu = (game.apr_emu === "on" || game.apr_emu === true || game.apr_emu === "true");
@@ -2643,7 +2848,7 @@ function renderGames() {
         const dCredits = game.credits_dlc || game.credits_dlcs || '';
         const fixGuide = (game.fix_guide || "").replace(/'/g, "\\'");
         
-        // Funzione per creare bottone nella card (IDENTICO PER TUTTI)
+        // Funzione per creare bottone nella card
         const createBtn = (url, label, isDLC = false, isDump = false, isFix = false) => { 
             if (!url || url === "undefined" || url.trim() === "") return ''; 
             const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
@@ -2658,6 +2863,19 @@ function renderGames() {
             return `<a onclick="openDLWithAprEmuCheck('${url}', '${safeFileAuth}', '${safeBpAuth}', '${safeDlcAuth}', '${safeHPlay}', ${isDLC}, ${isDump}, '${safeTitle}', ${requireAprEmu})" class="btn-dl">${label}</a>`; 
         };
         
+        // ===== FUNZIONE PER CREARE BOTTONE DUAL (Standard + Backport) =====
+        const createDualBtn = (stdUrl, bpUrl, label) => {
+            if ((!stdUrl || stdUrl.trim() === '') && (!bpUrl || bpUrl.trim() === '')) return '';
+            const safeTitle = game.title.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeFileAuth = (game.credits_files || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeBpAuth = (game.credits_backport || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeDlcAuth = (dCredits || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeHPlay = (hPlay || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const stdSafe = stdUrl && stdUrl.trim() !== '' ? stdUrl : '';
+            const bpSafe = bpUrl && bpUrl.trim() !== '' ? bpUrl : '';
+            return `<a onclick="openDualDownload('${stdSafe}', '${bpSafe}', '${safeFileAuth}', '${safeBpAuth}', '${safeDlcAuth}', '${safeHPlay}', '${safeTitle}', ${requireAprEmu})" class="btn-dl dual-btn">${label}</a>`;
+        };
+        
         let downloadHTML = '';
         let dlcBtns = '';
         let dumpBtns = '';
@@ -2666,7 +2884,7 @@ function renderGames() {
         let fixBtns = '';
         let exfatBtns = '';
         
-        // ===== EXFAT (link semplici raggruppati) =====
+        // ===== EXFAT =====
         if (game.akia_url) exfatBtns += createBtn(game.akia_url, 'AKIA');
         if (game.viki_url) exfatBtns += createBtn(game.viki_url, 'VIKI');
         if (game.buzz_url) exfatBtns += createBtn(game.buzz_url, 'BUZZ');
@@ -2677,7 +2895,7 @@ function renderGames() {
         
         let exfatSectionHTML = exfatBtns ? `<p class="ver-label"><b>EXFAT:</b></p><div class="download-container">${exfatBtns}</div>` : '';
         
-        // ===== FPKG (nuova sezione) =====
+        // ===== FPKG =====
         if (game.fpkg_akia) fpkgBtns += createBtn(game.fpkg_akia, 'AKIA');
         if (game.fpkg_viki) fpkgBtns += createBtn(game.fpkg_viki, 'VIKI');
         if (game.fpkg_buzz) fpkgBtns += createBtn(game.fpkg_buzz, 'BUZZ');
@@ -2728,61 +2946,68 @@ function renderGames() {
         if (game.dlc_vault) dlcBtns += createBtn(game.dlc_vault, 'VAULT', true);
         if (game.dlc_filed) dlcBtns += createBtn(game.dlc_filed, 'FILED', true);
         
-        // ===== BACKPORT 7.xx e 4.xx =====
+        // ===== STANDARD & BACKPORT (UNITI) =====
         const hasBackport7 = game.backport7xx_akia || game.backport7xx_viki || game.backport7xx_buzz || game.backport7xx_data || game.backport7xx_filek || game.backport7xx_vault || game.backport7xx_filed;
         const hasBackport4 = game.backport4xx_akia || game.backport4xx_viki || game.backport4xx_buzz || game.backport4xx_data || game.backport4xx_filek || game.backport4xx_vault || game.backport4xx_filed;
+        const hasStandard = game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.standard_filed;
+        const hasBackport = game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault || game.backport_filed;
         
-        if (hasBackport7 || hasBackport4) {
-            let bp7 = '', bp4 = '';
+        if (hasBackport7 || hasBackport4 || hasStandard || hasBackport) {
+            let stdBtns = '', bpBtns = '', bp7Btns = '', bp4Btns = '';
+            
+            // Standard normali
+            if (game.standard_akia) stdBtns += createDualBtn(game.standard_akia, game.backport_akia, 'AKIA');
+            if (game.standard_viki) stdBtns += createDualBtn(game.standard_viki, game.backport_viki, 'VIKI');
+            if (game.standard_buzz) stdBtns += createDualBtn(game.standard_buzz, game.backport_buzz, 'BUZZ');
+            if (game.standard_data) stdBtns += createDualBtn(game.standard_data, game.backport_data, 'DATA');
+            if (game.standard_filek) stdBtns += createDualBtn(game.standard_filek, game.backport_filek, 'FILEK');
+            if (game.standard_vault) stdBtns += createDualBtn(game.standard_vault, game.backport_vault, 'VAULT');
+            if (game.standard_filed) stdBtns += createDualBtn(game.standard_filed, game.backport_filed, 'FILED');
+            
+            // Se ci sono solo backport senza standard
+            if (!hasStandard) {
+                if (game.backport_akia) stdBtns += createDualBtn(null, game.backport_akia, 'AKIA');
+                if (game.backport_viki) stdBtns += createDualBtn(null, game.backport_viki, 'VIKI');
+                if (game.backport_buzz) stdBtns += createDualBtn(null, game.backport_buzz, 'BUZZ');
+                if (game.backport_data) stdBtns += createDualBtn(null, game.backport_data, 'DATA');
+                if (game.backport_filek) stdBtns += createDualBtn(null, game.backport_filek, 'FILEK');
+                if (game.backport_vault) stdBtns += createDualBtn(null, game.backport_vault, 'VAULT');
+                if (game.backport_filed) stdBtns += createDualBtn(null, game.backport_filed, 'FILED');
+            }
+            
+            // Backport 7.xx e 4.xx (separati)
             if (hasBackport7) {
-                if (game.backport7xx_akia) bp7 += createBtn(game.backport7xx_akia, 'AKIA');
-                if (game.backport7xx_viki) bp7 += createBtn(game.backport7xx_viki, 'VIKI');
-                if (game.backport7xx_buzz) bp7 += createBtn(game.backport7xx_buzz, 'BUZZ');
-                if (game.backport7xx_data) bp7 += createBtn(game.backport7xx_data, 'DATA');
-                if (game.backport7xx_filek) bp7 += createBtn(game.backport7xx_filek, 'FILEK');
-                if (game.backport7xx_vault) bp7 += createBtn(game.backport7xx_vault, 'VAULT');
-                if (game.backport7xx_filed) bp7 += createBtn(game.backport7xx_filed, 'FILED');
+                if (game.backport7xx_akia) bp7Btns += createBtn(game.backport7xx_akia, 'AKIA');
+                if (game.backport7xx_viki) bp7Btns += createBtn(game.backport7xx_viki, 'VIKI');
+                if (game.backport7xx_buzz) bp7Btns += createBtn(game.backport7xx_buzz, 'BUZZ');
+                if (game.backport7xx_data) bp7Btns += createBtn(game.backport7xx_data, 'DATA');
+                if (game.backport7xx_filek) bp7Btns += createBtn(game.backport7xx_filek, 'FILEK');
+                if (game.backport7xx_vault) bp7Btns += createBtn(game.backport7xx_vault, 'VAULT');
+                if (game.backport7xx_filed) bp7Btns += createBtn(game.backport7xx_filed, 'FILED');
             }
             if (hasBackport4) {
-                if (game.backport4xx_akia) bp4 += createBtn(game.backport4xx_akia, 'AKIA');
-                if (game.backport4xx_viki) bp4 += createBtn(game.backport4xx_viki, 'VIKI');
-                if (game.backport4xx_buzz) bp4 += createBtn(game.backport4xx_buzz, 'BUZZ');
-                if (game.backport4xx_data) bp4 += createBtn(game.backport4xx_data, 'DATA');
-                if (game.backport4xx_filek) bp4 += createBtn(game.backport4xx_filek, 'FILEK');
-                if (game.backport4xx_vault) bp4 += createBtn(game.backport4xx_vault, 'VAULT');
-                if (game.backport4xx_filed) bp4 += createBtn(game.backport4xx_filed, 'FILED');
+                if (game.backport4xx_akia) bp4Btns += createBtn(game.backport4xx_akia, 'AKIA');
+                if (game.backport4xx_viki) bp4Btns += createBtn(game.backport4xx_viki, 'VIKI');
+                if (game.backport4xx_buzz) bp4Btns += createBtn(game.backport4xx_buzz, 'BUZZ');
+                if (game.backport4xx_data) bp4Btns += createBtn(game.backport4xx_data, 'DATA');
+                if (game.backport4xx_filek) bp4Btns += createBtn(game.backport4xx_filek, 'FILEK');
+                if (game.backport4xx_vault) bp4Btns += createBtn(game.backport4xx_vault, 'VAULT');
+                if (game.backport4xx_filed) bp4Btns += createBtn(game.backport4xx_filed, 'FILED');
             }
-            downloadHTML = `${bp7 ? `<p class="ver-label"><b>BP 7.xx:</b></p><div class="download-container">${bp7}</div>` : ''}${bp4 ? `<p class="ver-label"><b>BP 4.xx:</b></p><div class="download-container">${bp4}</div>` : ''}`;
-        } 
-        // STANDARD e BACKPORT
-        else if (game.standard_akia || game.standard_viki || game.standard_buzz || game.standard_data || game.standard_filek || game.standard_vault || game.standard_filed ||
-                 game.backport_akia || game.backport_viki || game.backport_buzz || game.backport_data || game.backport_filek || game.backport_vault || game.backport_filed) {
-            let std = '', bp = '';
-            if (game.standard_akia) std += createBtn(game.standard_akia, 'AKIA');
-            if (game.standard_viki) std += createBtn(game.standard_viki, 'VIKI');
-            if (game.standard_buzz) std += createBtn(game.standard_buzz, 'BUZZ');
-            if (game.standard_data) std += createBtn(game.standard_data, 'DATA');
-            if (game.standard_filek) std += createBtn(game.standard_filek, 'FILEK');
-            if (game.standard_vault) std += createBtn(game.standard_vault, 'VAULT');
-            if (game.standard_filed) std += createBtn(game.standard_filed, 'FILED');
-            if (game.backport_akia) bp += createBtn(game.backport_akia, 'AKIA');
-            if (game.backport_viki) bp += createBtn(game.backport_viki, 'VIKI');
-            if (game.backport_buzz) bp += createBtn(game.backport_buzz, 'BUZZ');
-            if (game.backport_data) bp += createBtn(game.backport_data, 'DATA');
-            if (game.backport_filek) bp += createBtn(game.backport_filek, 'FILEK');
-            if (game.backport_vault) bp += createBtn(game.backport_vault, 'VAULT');
-            if (game.backport_filed) bp += createBtn(game.backport_filed, 'FILED');
-            downloadHTML = `${std ? `<p class="ver-label"><b>STANDARD:</b></p><div class="download-container">${std}</div>` : ''}${bp ? `<p class="ver-label"><b>BACKPORT:</b></p><div class="download-container">${bp}</div>` : ''}`;
+            
+            downloadHTML = `
+                ${stdBtns ? `<p class="ver-label"><b>STANDARD &amp; BACKPORT:</b></p><div class="download-container">${stdBtns}</div>` : ''}
+                ${bp7Btns ? `<p class="ver-label"><b>BP 7.xx:</b></p><div class="download-container">${bp7Btns}</div>` : ''}
+                ${bp4Btns ? `<p class="ver-label"><b>BP 4.xx:</b></p><div class="download-container">${bp4Btns}</div>` : ''}
+            `;
         }
         
         let dumpSectionHTML = dumpBtns ? `<p class="ver-label"><b>DUMP:</b></p><div class="download-container">${dumpBtns}</div>` : '';
         let dlcSectionHTML = dlcBtns ? `<p class="ver-label"><b>DLCs:</b></p><div class="download-container">${dlcBtns}</div>` : '';
         
-        // ✅ Push nell'array invece di innerHTML +=
-        cardsHTML.push(`<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container loading"><img src="${game.image}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onload="this.parentElement.classList.remove('loading'); this.parentElement.classList.add('loaded');" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'; this.parentElement.classList.remove('loading'); this.parentElement.classList.add('loaded');"><div class="tags-overlay">${tagsHTML}</div><div class="game-badges">${aprEmuHTML}${sizeHTML}</div></div><div class="download-section">${fpkgSectionHTML}${ffpkgSectionHTML}${exfatSectionHTML}${downloadHTML}${fixSectionHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`);
+        cardsHTML.push(`<div class="game-card">${updateBadge}<span class="game-title">${escapeHtml(game.title)}</span><div class="image-container loading"><img src="${game.image}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onload="this.parentElement.classList.remove('loading'); this.parentElement.classList.add('loaded');" onerror="this.src='https://placehold.co/400x400/0a0a1a/cyan?text=No+Image'; this.parentElement.classList.remove('loading'); this.parentElement.classList.add('loaded');"><div class="tags-overlay">${tagsHTML}</div><div class="game-badges">${aprEmuHTML}${fpkgSizeHTML}${sizeHTML}</div></div><div class="download-section">${fpkgSectionHTML}${ffpkgSectionHTML}${exfatSectionHTML}${downloadHTML}${fixSectionHTML}${dumpSectionHTML}${dlcSectionHTML}</div></div>`);
     });
     
-    // ✅ Assegna UNA SOLA VOLTA (parsing HTML singolo)
     grid.innerHTML = cardsHTML.join('');
     
     const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
@@ -2799,6 +3024,17 @@ function renderGames() {
         pageJumpInput.max = totalPages;
     }
 }
+
+function openDualDownload(stdUrl, bpUrl, fAuth, bAuth, dAuth, hPlay, gameTitle, requireAprEmu) {
+    // Chiama openDL con bothVariants
+    openDL(stdUrl || bpUrl, fAuth, bAuth, dAuth, hPlay, false, false, gameTitle, {
+        standardUrl: stdUrl || null,
+        standardLabel: 'STANDARD',
+        backportUrl: bpUrl || null,
+        backportLabel: 'BACKPORT'
+    });
+}
+window.openDualDownload = openDualDownload;
 
 function setupPageJump() {
     const paginationDiv = document.querySelector('.pagination');
