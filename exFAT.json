@@ -25,8 +25,9 @@
     "credits_files": "High-Speed007",
     "credits_dlc": "Pkykzhack",
     "credits_backport": "BestPig",
-    "how_to_play": "Khaos Reign DLC now is Merged. 306GB (exFAT - All FW) | 93GB (FPKG BP 4.xx - Up to 11.40).",
+    "how_to_play": "Khaos Reign DLC now is Merged. FPKG atm is only working up to 11.40, use exFAT (Standard & BackPort) if you are above.",
     "popular": "on",
+    "fpkg_size": "141GB",
     "size": "306GB"
   },
    {
@@ -53,8 +54,9 @@
     "credits_files": "DecKerr97",
     "credits_backport": "DecKerr97",
     "credits_dlc": "DecKerr97",
-    "how_to_play": "200GB (exFAT - All FW) | 93GB (FPKG - Up to 11.40).",
+    "how_to_play": "FPKG atm is only working up to 11.40, use exFAT if you are above.",
     "popular": "on",
+    "fpkg_size": "93GB",
     "size": "200GB"
   },
    {
