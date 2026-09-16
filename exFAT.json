@@ -1,11 +1,42 @@
 [
    {
+    "title": "Assassins Creed Shadows",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Assassins_Creed_Shadows.avif",
+    "tags": [
+      "PPSA20397",
+      "v01.019.076",
+      "EUR",    
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRFV2VnhyWjB1OXlnZ2RRQ3dlVG1XK0xxd3JxNWhGTkpZVHQ2K3Y4QWl2Y1VicFVuTnFvTm9zVWdyYVROaXUvUUVIOTh4azFuIiwicyI6InI2TXlHbFQ2TSs4TCtwVlFRWkhrUWc9PSIsImkiOiIzZ1Y1WU9NdVRLODVCbCtuIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib3hBbG9IZTlEbEZXQlRTaEVFUm9kYnltTnFUeGVkZW5JRGw5emdsRWJQeVZ4cE9uWDNkY0dJbWQ0R2pTaGpNL01WVUoiLCJzIjoiVUVvUkkzSjhTamVDYUc0S01ocjNOdz09IiwiaSI6IjJtZHdYZ0s1WWtFaXp0M3oifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidy9qaXo4K2xHMnVhSVNySGJ3MVQwMEk0V3g5OEEwbmcvTjZoOWlWaDFyRit2b3lsdS9kcy92cUtuVjNWYTFoazJ3PT0iLCJzIjoiZG10OW9hSFRWMjMrd3BEcFJOSkZjZz09IiwiaSI6Ik5jWDNIM2h4RmkxcHprdkQifQ==",
+    "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTGJ2emY5UkQ1MFByU1I1dncyM2p0NmE5YjVNOC9ldzJJdTUwN21EeHM0N1NCd1V1ejZEY3lXWHZiUHlQdUpPRlhHU1EiLCJzIjoiKzNDYzR4N1ZmSTBpYXBQd0ZHVkxmdz09IiwiaSI6IjlJTkY5UDEydzhERnpJaHIifQ==",
+    "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOThoYmduZTNvRTIrU0ZxTXhzeDc1emFPSERiNzRBaE13WVFySjJvQnlTODh2TnNldDNlNjVRWGdOK1RxNGF4ZTZTOD0iLCJzIjoiMXpjMlFLcmdFdmFMOVBEUDdDUTZxUT09IiwiaSI6IlorOGc0S0RibTduck1MTG0ifQ==",
+    "fpkg_akia": "",
+    "fpkg_viki": "",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicXlLZXVvdmxaR3RJdnk5SDNpUTFndk13YzJBWmRmdFlKaGZVQVlNMG00UXA0S0ZyYVBLNThKQWtKYzNQUWhmQzdER2dONEwrSFJNaFM3eFhDdDVkSkh3cVNmMy8iLCJpIjoiQzltSUdBRzBmcUNFK2tzUCIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMnViZSt2YThnVUgxRS9nTkFMTmYwQXZYcWJMYzErNzdaRFdjclB5TSt5bjNQajRXY2tXZ2tGUHpDRVlXdkVWSzR3VzRCMExUTEFnbUtERWVrNmVwOUVUcXN5eHdBek09IiwiaSI6IkYxV1J6R3R4aGNBODZyN0YiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaGlXOUtTR3R1TUZ1aG5lckk4UUJOcjQxTDkyem1laW9POGlNOXhWRU5VcU5MZ1B6SlE3VkxTMHRVclg4YTRBTERTTVRaSW1uY0VIbDhoY2NPOWtmTDZtMTNacHFHdz09IiwiaSI6Im4yZWRNdTBMUGpyNHZqZFEiLCJuIjoiVmF1bHQifQ==",
+    "dlc_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUTRPZU9FdkxVNUNHN1JCbzAxN1hqTzE4V0xWbytJSGlQTStMZjRZaGdjcXZZYWJyQ1VWOVhtWUlwNkNpUG1UNjJNM3AiLCJzIjoiQnVObjBHZjNPelZFdjhtWnFFb2xLQT09IiwiaSI6IkFMc09MbkJJU0pYSlVUdmwifQ==",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoic2dDcXhXeXd6UnJsU1dnTmEwemp5bjFEOExCQ0Q5ZVVGTjFoV2xpL0V3RTRYcXgxM3hZQmY1LzdjMC9idDhBNy9nPT0iLCJzIjoiQ1llY0RTNkRTRXRjRkUyQnFUQXNPdz09IiwiaSI6InhBYVBiNkZPOHhNc1FhQ1oifQ==",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTEpkemdhcnV5NWs4OHpUa2RMUUgzdVJKZVNGQzk1bUFLbGhMbGxQNVhiVDZzSi9hUUFrbExyRlU0UXdKS0pLb0tjNHIyMnBvbzVXbmJ2dGlNanJLOUFNVnBUam9ydz09IiwiaSI6IlFQb0tmbHY0MUxvTktrNzUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX & VanBuuren",
+    "credits_dlc": "DUPLEX & VanBuuren",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.40, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "142GB",
+    "size": "294GB"
+  },
+   {
     "title": "Marvels Spider Man 2 Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Marvels_Spider Man_2_Deluxe_Edition.avif",
     "tags": [
       "PPSA03016",
       "v01.004.003",
-      "USA to EUR Languages",  
+      "USA to EUR Langs",  
       "DLCs Merged", 
       "4.xx BackPork"
     ],
@@ -10526,30 +10557,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "5GB"
-  },
-   {
-    "title": "Assassins Creed Shadows",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Assassins_Creed_Shadows.avif",
-    "tags": [
-      "PPSA20397",
-      "v01.019.076",
-      "EUR",    
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRFV2VnhyWjB1OXlnZ2RRQ3dlVG1XK0xxd3JxNWhGTkpZVHQ2K3Y4QWl2Y1VicFVuTnFvTm9zVWdyYVROaXUvUUVIOTh4azFuIiwicyI6InI2TXlHbFQ2TSs4TCtwVlFRWkhrUWc9PSIsImkiOiIzZ1Y1WU9NdVRLODVCbCtuIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoib3hBbG9IZTlEbEZXQlRTaEVFUm9kYnltTnFUeGVkZW5JRGw5emdsRWJQeVZ4cE9uWDNkY0dJbWQ0R2pTaGpNL01WVUoiLCJzIjoiVUVvUkkzSjhTamVDYUc0S01ocjNOdz09IiwiaSI6IjJtZHdYZ0s1WWtFaXp0M3oifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidy9qaXo4K2xHMnVhSVNySGJ3MVQwMEk0V3g5OEEwbmcvTjZoOWlWaDFyRit2b3lsdS9kcy92cUtuVjNWYTFoazJ3PT0iLCJzIjoiZG10OW9hSFRWMjMrd3BEcFJOSkZjZz09IiwiaSI6Ik5jWDNIM2h4RmkxcHprdkQifQ==",
-    "filek_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTGJ2emY5UkQ1MFByU1I1dncyM2p0NmE5YjVNOC9ldzJJdTUwN21EeHM0N1NCd1V1ejZEY3lXWHZiUHlQdUpPRlhHU1EiLCJzIjoiKzNDYzR4N1ZmSTBpYXBQd0ZHVkxmdz09IiwiaSI6IjlJTkY5UDEydzhERnpJaHIifQ==",
-    "vault_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOThoYmduZTNvRTIrU0ZxTXhzeDc1emFPSERiNzRBaE13WVFySjJvQnlTODh2TnNldDNlNjVRWGdOK1RxNGF4ZTZTOD0iLCJzIjoiMXpjMlFLcmdFdmFMOVBEUDdDUTZxUT09IiwiaSI6IlorOGc0S0RibTduck1MTG0ifQ==",
-    "dlc_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUTRPZU9FdkxVNUNHN1JCbzAxN1hqTzE4V0xWbytJSGlQTStMZjRZaGdjcXZZYWJyQ1VWOVhtWUlwNkNpUG1UNjJNM3AiLCJzIjoiQnVObjBHZjNPelZFdjhtWnFFb2xLQT09IiwiaSI6IkFMc09MbkJJU0pYSlVUdmwifQ==",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoic2dDcXhXeXd6UnJsU1dnTmEwemp5bjFEOExCQ0Q5ZVVGTjFoV2xpL0V3RTRYcXgxM3hZQmY1LzdjMC9idDhBNy9nPT0iLCJzIjoiQ1llY0RTNkRTRXRjRkUyQnFUQXNPdz09IiwiaSI6InhBYVBiNkZPOHhNc1FhQ1oifQ==",
-    "credits_files": "DUPLEX & VanBuuren",
-    "credits_dlc": "DUPLEX & VanBuuren",
-    "credits_backport": "DecKerr97",
-    "how_to_play": "Audio 3D must be off for avoid the crash on Initial Settings.",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "294GB"
   },
    {
     "title": "Bibi and Tina At The Horse Farm",
