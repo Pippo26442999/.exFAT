@@ -1,5 +1,34 @@
 [
    {
+    "title": "WWE 2K26",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/WWE_2K26.avif",
+    "tags": [
+      "PPSA34299",
+      "v01.006",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicjdUZnMrUWNCZE9tOW90dW9ub3lrVGxTQWV6UTIwelVtTElkNUpmbk5VRVhsUEF0anZNUjZEMzJ3ZVlsRnB3NzI5MG1VOHRFbFJkRkQ2dnVIWFhpV0FWTFF2RU5TVTVERHhNPSIsImkiOiJveDVNak0rRVB2YWs2WThHIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMHRxZE9sNTRNVWp4eEdtNXNjMU9uV2d3UnBaWGxoZWgzZEdRcldaWEU2c2FzOHJ1OXFWZUNvM2FUelhaYlRqbFRWVkpNUEZLQ3doT0tKYmxTSm9RZXZlWHNtTitMbWc9IiwiaSI6Imo3cFRNNHEzQUt6ZlQ3M1kiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia0I5bW5mTTRrbXdGcXUxTnM3ZGVZcW1oUGxiQXNvVG9iWUdtWVduQmJFTlZvUkpDUlVyN1pWamdRbXgwUnVUQTRmclZUUHlzem93bmJkVmlXQWh0YS9nL3IzSXUiLCJpIjoiUkwxaHQzNHN6RzFaWjFqMSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOW1kQkdtTWZQeHFxRGR2eHE2V2JkUzUxMXcva2VUckVrK1FXNnVEL1l6L1BnRzFHZmxKbjh3QTV1bm5FWHNaaGhmMU9waEMrR1JjTExMUzZYTmp5WEo4RndWVnBJZzA9IiwiaSI6IjNEdkc4VllCTC9XVVpOcG0iLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNlJROWZUdzlkcHFOZzNNOXB2V2hyemhFaHVOb0NUYUdVTFhFNVpWQ3VrbitvRGdyenpwYXJzQ2hEL0JMME9vbjAxaWVMV1ArRkw2TzNDOUVUSTJXR0sySEFJWjcxdz09IiwiaSI6ImljTDNUMU5RZ3lJNVlvRXIiLCJuIjoiVmF1bHQifQ==",
+    "fpkg_akia": "",
+    "fpkg_viki": "",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidG9Ha0x2MFRQdUFXT3F5b0N3K2ROQ0FlWVg0Ui9Qai8xRml4cEUxcDUzcEhSWHZpeXpSQ1F5aUVBWnMycDgvV21oUkF2dW5rNGErOUwzQVhUejZLaUhiblNGRWciLCJpIjoiOFNMdlJDZ1cwMXdPcXRJSCIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaHpQL3VLTncxK2djOTdtSkxIeWo1L1F3aGhJZndobW1JQjIyL0sxTjJreWQrUkxwNzRSMEk5ejdHSW9qbW1UOFlkaWQrc29YOHJzRzF6Q20xYmU3MkM3RFhkc3JPSXc9IiwiaSI6IlVmb3R1bXBoMlRmRHZlVWEiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVm11T003bFpOcEhhR2VKTXNrSWsxUkpJaDBFdk4xV1FXTFNVeDd6TW9KdHAvM0JYODFHRE1zVW9IblBrRzZid0NpUnRyVUZ5STZuZy9aaFg0ai9Vd0c0MW5EK3FVZz09IiwiaSI6IngvRkpUdCtIVnZqWmkyWlgiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "High-Speed007",
+    "how_to_play": "Ringside Pass DLCs require Internet Connection instead all other DLCs are unlocked, included Pre-Order. Commentary now is working with v01.006+. FPKG atm is only working up to 11.40, use exFAT (Standard & BackPort) if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "120GB",
+    "size": "286GB"
+  },
+   {
     "title": "Mortal Kombat 1",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Mortal_Kombat_1.jpg",
     "tags": [
@@ -6221,29 +6250,6 @@
     "credits_files": "Scene",
     "credits_backport": "DecKerr97",
     "size": "1GB"
-  },
-   {
-    "title": "WWE 2K26",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/WWE_2K26.avif",
-    "tags": [
-      "PPSA34299",
-      "v01.006",
-      "USA",
-      "DLCs Merged",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicjdUZnMrUWNCZE9tOW90dW9ub3lrVGxTQWV6UTIwelVtTElkNUpmbk5VRVhsUEF0anZNUjZEMzJ3ZVlsRnB3NzI5MG1VOHRFbFJkRkQ2dnVIWFhpV0FWTFF2RU5TVTVERHhNPSIsImkiOiJveDVNak0rRVB2YWs2WThHIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMHRxZE9sNTRNVWp4eEdtNXNjMU9uV2d3UnBaWGxoZWgzZEdRcldaWEU2c2FzOHJ1OXFWZUNvM2FUelhaYlRqbFRWVkpNUEZLQ3doT0tKYmxTSm9RZXZlWHNtTitMbWc9IiwiaSI6Imo3cFRNNHEzQUt6ZlQ3M1kiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia0I5bW5mTTRrbXdGcXUxTnM3ZGVZcW1oUGxiQXNvVG9iWUdtWVduQmJFTlZvUkpDUlVyN1pWamdRbXgwUnVUQTRmclZUUHlzem93bmJkVmlXQWh0YS9nL3IzSXUiLCJpIjoiUkwxaHQzNHN6RzFaWjFqMSIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOW1kQkdtTWZQeHFxRGR2eHE2V2JkUzUxMXcva2VUckVrK1FXNnVEL1l6L1BnRzFHZmxKbjh3QTV1bm5FWHNaaGhmMU9waEMrR1JjTExMUzZYTmp5WEo4RndWVnBJZzA9IiwiaSI6IjNEdkc4VllCTC9XVVpOcG0iLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNlJROWZUdzlkcHFOZzNNOXB2V2hyemhFaHVOb0NUYUdVTFhFNVpWQ3VrbitvRGdyenpwYXJzQ2hEL0JMME9vbjAxaWVMV1ArRkw2TzNDOUVUSTJXR0sySEFJWjcxdz09IiwiaSI6ImljTDNUMU5RZ3lJNVlvRXIiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "DecKerr97",
-    "credits_dlc": "High-Speed007",
-    "how_to_play": "Ringside Pass DLCs require Internet Connection instead all other DLCs are unlocked, included Pre-Order. Commentary now is working with v01.006+.",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "286GB"
   },
   {
     "title": "DiRT 5",
