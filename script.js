@@ -1552,20 +1552,24 @@ function showDualDownloadModal({ standardUrl, standardLabel, backportUrl, backpo
     modal.classList.add('show');
 }
 
-function startDownloadFromModal(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle, requireAprEmu) {
-    openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle);
+function startDownloadFromModal(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle, requireAprEmu, fpkgAuth) {
+    openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle, null, fpkgAuth);
 }
 
-function openDLWithAprEmuCheck(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle, requireAprEmu) {
-    openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle);
+function openDLWithAprEmuCheck(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle, requireAprEmu, fpkgAuth) {
+    openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC, isDump, gameTitle, null, fpkgAuth);
 }
 
-function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, gameTitle, bothVariants = null) {
+function openDL(url, fAuth, bAuth, dAuth, hPlay, isDLC = false, isDump = false, gameTitle, bothVariants = null, fpkgAuth = null) {
     let parts = [];
     const clean = (str) => (str && str !== "undefined" && str.trim() !== "") ? str.trim() : null;
     const fileAuthor = clean(fAuth), bpAuthor = clean(bAuth), dlcAuthor = clean(dAuth), playInstructions = clean(hPlay);
+    const fpkgAuthor = clean(fpkgAuth);
     
-    // Se tutti e tre sono uguali (Files, BackPort, DLCs)
+    // FPKG author (extra credit, indipendente da files/backport/dlc)
+    if (fpkgAuthor) parts.push(`<b>${escapeHtml(fpkgAuthor)}</b> for FPKG`);
+    
+    // Files + BackPort + DLCs
     if (fileAuthor && bpAuthor && dlcAuthor && fileAuthor === bpAuthor && bpAuthor === dlcAuthor) {
         parts.push(`<b>${escapeHtml(fileAuthor)}</b> for the Files with DLCs & BackPort`);
     }
@@ -1796,7 +1800,6 @@ function openGameModal(game, event) {
 
     const downloadsContainer = document.getElementById('modal-downloads');
     
-    // Funzione per creare un bottone download nel modal
     const createModalBtn = (url, label, isDump = false) => {
         if (!url || url === "undefined" || url.trim() === "") return '';
         const dumpAttr = isDump ? 'true' : 'false';
@@ -1806,7 +1809,8 @@ function openGameModal(game, event) {
         const safeBpAuth = (bpAuthPlaceholder || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
         const safeDlcAuth = (dlcAuthPlaceholder || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
         const safeHPlay = (hPlayPlaceholder || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
-        return `<button onclick="startDownloadFromModal('${url}', '${safeFileAuth}', '${safeBpAuth}', '${safeDlcAuth}', '${safeHPlay}', ${isDLC}, ${dumpAttr}, '${safeTitle}', ${requireAprEmu})" class="modal-btn">${label}</button>`;
+        const safeFpkgAuth = (game.credits_fpkg || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        return `<button onclick="startDownloadFromModal('${url}', '${safeFileAuth}', '${safeBpAuth}', '${safeDlcAuth}', '${safeHPlay}', ${isDLC}, ${dumpAttr}, '${safeTitle}', ${requireAprEmu}, '${safeFpkgAuth}')" class="modal-btn">${label}</button>`;
     };
     
     let downloadsHTML = '';
@@ -2890,10 +2894,11 @@ function renderGames() {
             const safeDlcAuth = (dCredits || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
             const safeHPlay = (hPlay || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
             const safeFixGuide = (fixGuide || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            const safeFpkgAuth = (game.credits_fpkg || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
             if (isFix) {
                 return `<a onclick="openFixModal('${url}', '${safeFixGuide}', '${safeTitle}')" class="btn-dl"> ${label}</a>`;
             }
-            return `<a onclick="openDLWithAprEmuCheck('${url}', '${safeFileAuth}', '${safeBpAuth}', '${safeDlcAuth}', '${safeHPlay}', ${isDLC}, ${isDump}, '${safeTitle}', ${requireAprEmu})" class="btn-dl">${label}</a>`; 
+            return `<a onclick="openDLWithAprEmuCheck('${url}', '${safeFileAuth}', '${safeBpAuth}', '${safeDlcAuth}', '${safeHPlay}', ${isDLC}, ${isDump}, '${safeTitle}', ${requireAprEmu}, '${safeFpkgAuth}')" class="btn-dl">${label}</a>`; 
         };
         
         // ===== FUNZIONE PER CREARE BOTTONE DUAL (Standard + Backport) =====
@@ -3092,15 +3097,19 @@ function openDualDownload(stdUrl, bpUrl, fAuth, bAuth, dAuth, hPlay, gameTitle, 
     const hasStd = stdUrl && stdUrl.trim() !== '';
     const hasBp  = bpUrl && bpUrl.trim() !== '';
     
+    // Leggi credits_fpkg dal game
+    const game = allGames.find(g => g.title === gameTitle);
+    const fpkgAuth = game ? (game.credits_fpkg || null) : null;
+    
     // ===== CASO 1: Solo STANDARD → modal normale =====
     if (hasStd && !hasBp) {
-        openDL(stdUrl, fAuth, bAuth, dAuth, hPlay, false, false, gameTitle);
+        openDL(stdUrl, fAuth, bAuth, dAuth, hPlay, false, false, gameTitle, null, fpkgAuth);
         return;
     }
     
     // ===== CASO 2: Solo BACKPORT → modal normale =====
     if (!hasStd && hasBp) {
-        openDL(bpUrl, fAuth, bAuth, dAuth, hPlay, false, false, gameTitle);
+        openDL(bpUrl, fAuth, bAuth, dAuth, hPlay, false, false, gameTitle, null, fpkgAuth);
         return;
     }
     
@@ -3111,11 +3120,10 @@ function openDualDownload(stdUrl, bpUrl, fAuth, bAuth, dAuth, hPlay, gameTitle, 
             standardLabel: label === 'FPKG' ? 'FPKG STANDARD' : 'STANDARD',
             backportUrl: bpUrl,
             backportLabel: label === 'FPKG' ? 'FPKG BACKPORT' : 'BACKPORT'
-        });
+        }, fpkgAuth);
         return;
     }
     
-    // ===== CASO 4: Nessuno → non dovrebbe succedere, ma per sicurezza =====
     console.warn('[openDualDownload] Nessun URL passato');
 }
 window.openDualDownload = openDualDownload;
