@@ -1,5 +1,35 @@
 [
    {
+    "title": "Alan Wake 2 Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Alan_Wake_2_Deluxe_Edition.avif",
+    "tags": [
+      "PPSA02572",
+      "v01.200.007",
+      "EUR",
+      "DLCs Merged",
+      "4.xx BackPork"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRFJKRWhqaUVVcnBhdVlPZmtaK2I5WWpINFhic2t1N0NoNTlzaDM2YXlTVHVGNWdzaEQyVWM1Zm9NT1VFT2hqM0JuQXpQd25zMHZtbk83VENyQVR4QSsrYVhHSHdiK1lsUXQ0PSIsImkiOiJac3N3UXhHTlJ0MFExRWdkIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMlp1cGJ2Qmw1d1YvWFZjYlBDWFdldXhGZ1hJeUtFNTNSK1pwWE01THFQV0RpY0xDelprYXpwVHMxU2NPNkpacnYyTkRxQXpzblNjN2JncXNKZ2hRUkMwQ2ljWXZIZjg9IiwiaSI6IldMS1Mzano3UHNMeGJZV0EiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQy9tYnVyY044YVBBbms3UTBWdFMrUkkvTnRiemh3NDg1VFdtbkFnL0U2S0plQmZtTnVEWng5QjhvRmwzSnVFYnNDaUN2K0FkNm15T1ZMSFRXZ1BwTzQ1RFA1MEUiLCJpIjoidU5IcmloWlpvRlMyZmt1bCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYktTMko3ejNqT1l6YjdTWWVjVUpTYy9Ld1RBODV0clVWNEZncGtubVgvdE1hS1BDdGZ6eHg2Wk5SaHdCZ0tTU3pQcXkrMVhkM3RTOTRubGNkb0RmNENlRS9VOFpOWXM9IiwiaSI6IlVtWGN1b2FzY1VMaStIRFAiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSmNZcXFXbkdjZ21Za0hDMm94NUk0dndkS0wxZ1grdzNQVU5sZERRckEzcW9DeHFKR2RuWU1SdzRBaVhjUjBPTnJUSUNudTl4Q1dPQ3lTbG1KU1RFczJwRHRIdjRuZz09IiwiaSI6InR4c1NPK0FHUWtMWkZrZnIiLCJuIjoiVmF1bHQifQ==",
+    "fpkg_backport_akia": "",
+    "fpkg_backport_viki": "",
+    "fpkg_backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaXQ5NHlMeHVxeTdROSsrcC9lN2h1d2FkUzdzZXhMbzJOcFhDK1kyaWxma3RkbWtuU2JwYUZJODJwbFc4RzkxMWd3RU9la21PdDRnbGk1b1ZFWmRIVXU1WDZ5VzEiLCJpIjoiUmtZU3FLMTlSVk9mRlhHaCIsIm4iOiJEYXRhIn0=",
+    "fpkg_backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSGZPcmZvRFNkOEpmdnY5WHNIVStZdUIrV2R2TndTMU1iQ2JVQ0hGa0pFZ3VMdElnUlNZckhib2hBWi9vV0NpMXE2enAreUJFS1ZNRzh3dG53bkRKRU1RZ2cweEZaeEU9IiwiaSI6IktYQ0tXMkxrN3ZXcytWSCsiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRm5TQmF3OUZMMzVoL3dwMWNTMXdkS3JZUWd5S0hSQUVaNnZOQURJSGEwWEdpZEVWTkFjUU5TYlkvR2RWTHprY0o1TDZkK2JnSGhjOHRVcFJISENaeW9seEsyZ09YUT09IiwiaSI6IjBQTHUydHp0S1UwMXFPeXkiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "BestPig",
+    "credits_dlc": "Pkykzhack ",
+    "credits_fpkg": "N1C_0n",
+    "how_to_play": "Only exFAT: Ignore Trophy problem popup at the beginning, saves work fine and can be loaded. FPKG atm is only working up to 11.40, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "93GB",
+    "size": "137GB"
+  },
+   {
     "title": "Mafia The Old Country Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Mafia_The_Old_Country_Deluxe_Edition.png",
     "tags": [
@@ -26,6 +56,7 @@
     "credits_dlc": "Pkykzhack",
     "credits_fpkg": "krifko",
     "popular": "on",
+    "how_to_play": "FPKG atm is only working up to 11.40, use exFAT if you are above.",
     "fpkg_size": "37GB",
     "size": "70GB"
   },
@@ -9796,29 +9827,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "111GB"
-  },
-   {
-    "title": "Alan Wake 2 Deluxe Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Alan_Wake_2_Deluxe_Edition.avif",
-    "tags": [
-      "PPSA02572",
-      "v01.200.007",
-      "EUR",
-      "DLCs Merged",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRFJKRWhqaUVVcnBhdVlPZmtaK2I5WWpINFhic2t1N0NoNTlzaDM2YXlTVHVGNWdzaEQyVWM1Zm9NT1VFT2hqM0JuQXpQd25zMHZtbk83VENyQVR4QSsrYVhHSHdiK1lsUXQ0PSIsImkiOiJac3N3UXhHTlJ0MFExRWdkIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMlp1cGJ2Qmw1d1YvWFZjYlBDWFdldXhGZ1hJeUtFNTNSK1pwWE01THFQV0RpY0xDelprYXpwVHMxU2NPNkpacnYyTkRxQXpzblNjN2JncXNKZ2hRUkMwQ2ljWXZIZjg9IiwiaSI6IldMS1Mzano3UHNMeGJZV0EiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQy9tYnVyY044YVBBbms3UTBWdFMrUkkvTnRiemh3NDg1VFdtbkFnL0U2S0plQmZtTnVEWng5QjhvRmwzSnVFYnNDaUN2K0FkNm15T1ZMSFRXZ1BwTzQ1RFA1MEUiLCJpIjoidU5IcmloWlpvRlMyZmt1bCIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYktTMko3ejNqT1l6YjdTWWVjVUpTYy9Ld1RBODV0clVWNEZncGtubVgvdE1hS1BDdGZ6eHg2Wk5SaHdCZ0tTU3pQcXkrMVhkM3RTOTRubGNkb0RmNENlRS9VOFpOWXM9IiwiaSI6IlVtWGN1b2FzY1VMaStIRFAiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSmNZcXFXbkdjZ21Za0hDMm94NUk0dndkS0wxZ1grdzNQVU5sZERRckEzcW9DeHFKR2RuWU1SdzRBaVhjUjBPTnJUSUNudTl4Q1dPQ3lTbG1KU1RFczJwRHRIdjRuZz09IiwiaSI6InR4c1NPK0FHUWtMWkZrZnIiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "SiESPTA",
-    "credits_backport": "BestPig",
-    "credits_dlc": "Pkykzhack ",
-    "how_to_play": "Ignore Trophy problem popup at the beginning, saves work fine and can be loaded.",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "137GB"
   },
    {
     "title": "Darksiders 2 Deathinitive Edition",
