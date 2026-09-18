@@ -1,5 +1,38 @@
 [
    {
+    "title": "PRAGMATA Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/PRAGMATA_DE.jpg",
+    "tags": [
+      "PPSA02530",
+      "v01.200",
+      "USA",
+      "Standard (5.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK3l3ZWlrTU14Tll2V3RZNEtwaDNxRWFreUo0NkkwQWpIeUt2TXEwcjN2Z08zb2dtazdwRm1GNFRicVEvcXJudmVudSsyRlZqIiwicyI6ImthM3JIS2ZFRmhENlJKbjJtZ0tBbkE9PSIsImkiOiJRdWc2eVk3ZFFucmFoVVFZIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidkk4OExvWUdOUUt2UVFEakVsbjNJRHlUU0EyUngvR0RRTnBGV05zbVMwOENvLy9sVWxWbG1kZ2FNUHF0U3BTWERGSWEiLCJzIjoiRnQzY1dDSndTRTJnQm01WXE0T2FaQT09IiwiaSI6IkZ0MDVnZzUvekY0Mmk0ZzcifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibVRMcHZzaG02NXc0b1NKUEY3MVJzZDlNZTk4b3BCQmxTRkp1cmYyMnpKVzU1WmRWVFdFMTNOTThCb0tqTldJK09BPT0iLCJzIjoiYmRBRjJRVm5uaWY0UWhjUCtqb0JLdz09IiwiaSI6ImhSdUN1eFRaWFJqT2tHcmkifQ==",
+    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicmNIM2JTTGdrRm9YUGsya3BuM3l0cnRKT1BpSjM2RU9lWUYvOGdVQWI1bVFpSHhNZzI0djFkZjdjR0N3ZXRGdEdaN2hSenJOajhpTit0TzZyZy9tMUpwMWpMZzJWNytvK3NBPSIsImkiOiJhRjhTRTA2SzJaVHBTaFpvIiwibiI6IkFraWEifQ==",
+    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN3ByK3RaY2wySFNCMnZqNjQvZ2NhMlFXNERKSjZldkozZG1BVHM4eDZXc0RVK2N1RlhiZURGRnl2NFBHVWJVeDVvWmJ0dTZlN0lQNnEzOE1pM3lVQ29wVFZOcHFMdnM9IiwiaSI6IkVrWGxUeDFSOUt4dlMrK2oiLCJuIjoiVmlraSJ9",
+    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT2ViMndReEFIb0VwVFI1MGpydTNvK2xPdlI3WXhVVlJ6MTVZT3N2YVR4OTZBYzlZM09JSjhldlBnd3VQZEJuZHBSV0RzdjJzTjJJMzQzT1loQkdIUWY5R0NYMlEiLCJpIjoiZWEwQU9JSmtQMG1CeFJDdiIsIm4iOiJEYXRhIn0=",
+    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVTU1c1ZNMXZEV05PRnFwMmtVRHVQTEVsbDVNRnBWODJBRGxOdVFSc0NVQjI4Qjk5WXlQTFNzMFI4Vk1ETS9JUllsd0pPZjRlVHcvRlNHYnRub09UQ2NSK1lOLzdrNEk9IiwiaSI6IjZDNDZRLy85M2cyOFBoTnIiLCJuIjoiRmlsZUsifQ==",
+    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib3hPTXN3K3Rqd1VwUzRLU1o3S3hka3pjamFQd3JJaGIrMW9Vb0JKZk1tRC9JNWdQd3pKS2lsOTFaMDlyVFdCWmZwaG8yK3lJVlRVbnhKUHJIaDRvcjNaMEhxVTZzUT09IiwiaSI6Im9DVWZORW9VQ3Q0WU9CRWQiLCJuIjoiVmF1bHQifQ==",
+    "fpkg_backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRXE5SWhySHlqaExPY09hSUhiemRTQURjaXdVZjFqQjhLUW5IWjVDeDZCd1hicW1KQkcvUk0zdUptREgwYzdZWDhJVk5QZjNycmxqVkxzMVdMVC9wYy9rVldVaWNFbEFrWkd3PSIsImkiOiI0bnR5UnV2WmVmTXZmQVBaIiwibiI6IkFraWEifQ==",
+    "fpkg_backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaGdQeHI5OGY5eFZwNzg5azJESVhEUXdoYlRjK1JHbmlrRy9Yd21pMHh0QWp3eTZYaG1UK0tnSEN4NW1yM0VRamVhYmdsSXdiSjhJLzZWaVNnVEdnVjljOFF3VXV1Ylk9IiwiaSI6IlcvVjJ5czhYSjlzM21iTWciLCJuIjoiVmlraSJ9",
+    "fpkg_backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic1J0MWlIWXdibXhXak9HTk5hTml3N0ZnUkZsQU5kYjlXYm1HRmV1Z040M3Q5RFJ4dmdvRkdoMm1PWnZlTzZVcXNPOHo5S0hDYWo2SEtVdVB1YVZnK1hBZ0l0OEIiLCJpIjoiWHNPb1VpK2RiaCtTcnNydSIsIm4iOiJEYXRhIn0=",
+    "fpkg_backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUituYjJPRkxNd3JiRTNWUHhPSGhPcVNMTHNCSEtZWmVQSTl1Z1crdEw2aWZRZGdQdkRCMkNnajBrSGVpWkZOS2RPdmJiYkxDZmYxYWtPZEk3WEpCTnh3dlZ6d0p5Nzg9IiwiaSI6IlgvSW5DNUUyL09NeUV3YU4iLCJuIjoiRmlsZUsifQ==",
+    "fpkg_backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTUNxM090S1pEQjFVbGZFS3NvbU82ekZQV2kxVDJ0NGJIZFlyQ0orVVU0RSt4T2RzZTFUQml0NnF3OW1rdVZDVG9ua1YzaGhIdzA1M2R2L1FBTUY0M2FBMWphalFtZz09IiwiaSI6Inp4M2YrSE84QmRuRnlLYjciLCJuIjoiVmF1bHQifQ==",
+    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQVMrMSt1QTBmTVg5d1d0SDQ1dVhVaTdjb3c5Z2lZbktNTm5sa0hVQ3RHZXU3VjNiemxmblNWaFUrUEIyYTRSSEZvZW81bTcvIiwicyI6InBxNHpIdnhiTkliK2xGODU5ZTA3dlE9PSIsImkiOiJEaUo1RVZMc05EYkdnMFpPIn0=",
+    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVTcrcUZVbWU0Z28ralJUdUVMT0l3U0oxR2hSbnVBMkQrY3l1enlSNlpuVEZWaHVlQnJVZlo5bUUrb3orRGRJMXBRPT0iLCJzIjoiR293KzRXZTRaS2F3S1o4V3pubFJwZz09IiwiaSI6InhHUW90WENuT0RMQ0kxamIifQ==",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWFFIV2pOVk92eU1rZVZnMGtkald6NkF6OEh1REZSSHdtak42OUpPbG5uMnZMSmttVm0valBwMlNuUWJrQlBrbXE3OHQ2TWhhRm9NWVh3UUJTVzFHTER3MFlHUnJDeUk9IiwiaSI6Ikl4VDZJOEhrZ1ExTDlSa3giLCJuIjoiRmlsZUsifQ==",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQUZ3MEpzeU9lQ1hwVHdTY20xUldDbVhUcy9ad1VpbTh6SXN6enA0NEpneVpWZUg1NWYvc1c0bFc4YnJlRmIveC9ZNXhLOWdKa2JKYm1RUTRWQjQ3ZDVFS0NpMGJQUT09IiwiaSI6ImQrWk5na0t4SnZYZjJMNGYiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA & DUPLEX",
+    "credits_dlc": "SiESPTA & DUPLEX",
+    "credits_backport": "BestPig & rocknard & ManwonHp",
+    "popular": "on",
+    "fpkg_size": "31GB",
+    "size": "85GB"
+  },
+   {
     "title": "Ghost of Yotei Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ghost_of_Yotei_Deluxe_Edition.png",
     "tags": [
@@ -8769,32 +8802,6 @@
     "how_to_play": "All Languages are included. Tested on 4.50 - 10.40, game fixed on high fw.",
     "popular": "on",
     "size": "118GB"
-  },
-   {
-    "title": "PRAGMATA Deluxe Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/PRAGMATA_DE.jpg",
-    "tags": [
-      "PPSA02530",
-      "v01.200",
-      "USA",
-      "Standard (5.xx) + 4.xx BackPort"
-    ],
-    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiK3l3ZWlrTU14Tll2V3RZNEtwaDNxRWFreUo0NkkwQWpIeUt2TXEwcjN2Z08zb2dtazdwRm1GNFRicVEvcXJudmVudSsyRlZqIiwicyI6ImthM3JIS2ZFRmhENlJKbjJtZ0tBbkE9PSIsImkiOiJRdWc2eVk3ZFFucmFoVVFZIn0=",
-    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidkk4OExvWUdOUUt2UVFEakVsbjNJRHlUU0EyUngvR0RRTnBGV05zbVMwOENvLy9sVWxWbG1kZ2FNUHF0U3BTWERGSWEiLCJzIjoiRnQzY1dDSndTRTJnQm01WXE0T2FaQT09IiwiaSI6IkZ0MDVnZzUvekY0Mmk0ZzcifQ==",
-    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibVRMcHZzaG02NXc0b1NKUEY3MVJzZDlNZTk4b3BCQmxTRkp1cmYyMnpKVzU1WmRWVFdFMTNOTThCb0tqTldJK09BPT0iLCJzIjoiYmRBRjJRVm5uaWY0UWhjUCtqb0JLdz09IiwiaSI6ImhSdUN1eFRaWFJqT2tHcmkifQ==",
-    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicmNIM2JTTGdrRm9YUGsya3BuM3l0cnRKT1BpSjM2RU9lWUYvOGdVQWI1bVFpSHhNZzI0djFkZjdjR0N3ZXRGdEdaN2hSenJOajhpTit0TzZyZy9tMUpwMWpMZzJWNytvK3NBPSIsImkiOiJhRjhTRTA2SzJaVHBTaFpvIiwibiI6IkFraWEifQ==",
-    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN3ByK3RaY2wySFNCMnZqNjQvZ2NhMlFXNERKSjZldkozZG1BVHM4eDZXc0RVK2N1RlhiZURGRnl2NFBHVWJVeDVvWmJ0dTZlN0lQNnEzOE1pM3lVQ29wVFZOcHFMdnM9IiwiaSI6IkVrWGxUeDFSOUt4dlMrK2oiLCJuIjoiVmlraSJ9",
-    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT2ViMndReEFIb0VwVFI1MGpydTNvK2xPdlI3WXhVVlJ6MTVZT3N2YVR4OTZBYzlZM09JSjhldlBnd3VQZEJuZHBSV0RzdjJzTjJJMzQzT1loQkdIUWY5R0NYMlEiLCJpIjoiZWEwQU9JSmtQMG1CeFJDdiIsIm4iOiJEYXRhIn0=",
-    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVTU1c1ZNMXZEV05PRnFwMmtVRHVQTEVsbDVNRnBWODJBRGxOdVFSc0NVQjI4Qjk5WXlQTFNzMFI4Vk1ETS9JUllsd0pPZjRlVHcvRlNHYnRub09UQ2NSK1lOLzdrNEk9IiwiaSI6IjZDNDZRLy85M2cyOFBoTnIiLCJuIjoiRmlsZUsifQ==",
-    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib3hPTXN3K3Rqd1VwUzRLU1o3S3hka3pjamFQd3JJaGIrMW9Vb0JKZk1tRC9JNWdQd3pKS2lsOTFaMDlyVFdCWmZwaG8yK3lJVlRVbnhKUHJIaDRvcjNaMEhxVTZzUT09IiwiaSI6Im9DVWZORW9VQ3Q0WU9CRWQiLCJuIjoiVmF1bHQifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQVMrMSt1QTBmTVg5d1d0SDQ1dVhVaTdjb3c5Z2lZbktNTm5sa0hVQ3RHZXU3VjNiemxmblNWaFUrUEIyYTRSSEZvZW81bTcvIiwicyI6InBxNHpIdnhiTkliK2xGODU5ZTA3dlE9PSIsImkiOiJEaUo1RVZMc05EYkdnMFpPIn0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiVTcrcUZVbWU0Z28ralJUdUVMT0l3U0oxR2hSbnVBMkQrY3l1enlSNlpuVEZWaHVlQnJVZlo5bUUrb3orRGRJMXBRPT0iLCJzIjoiR293KzRXZTRaS2F3S1o4V3pubFJwZz09IiwiaSI6InhHUW90WENuT0RMQ0kxamIifQ==",
-    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWFFIV2pOVk92eU1rZVZnMGtkald6NkF6OEh1REZSSHdtak42OUpPbG5uMnZMSmttVm0valBwMlNuUWJrQlBrbXE3OHQ2TWhhRm9NWVh3UUJTVzFHTER3MFlHUnJDeUk9IiwiaSI6Ikl4VDZJOEhrZ1ExTDlSa3giLCJuIjoiRmlsZUsifQ==",
-    "credits_files": "SiESPTA & DUPLEX",
-    "credits_dlc": "SiESPTA & DUPLEX",
-    "credits_backport": "BestPig & rocknard & ManwonHp",
-    "popular": "on",
-    "size": "85GB"
   },
    {
     "title": "Metaphor ReFantazio",
