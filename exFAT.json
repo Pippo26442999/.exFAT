@@ -1,5 +1,36 @@
 [
    {
+    "title": "Ghost of Yotei Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ghost_of_Yotei_Deluxe_Edition.png",
+    "tags": [
+      "PPSA26344",
+      "v01.512",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRUlFYUxlaHYwUDNXajBaNGFRbGRnK0Nzby9KL0YxY2J2Y293dHJGY01TQWpGL1VZNXdBcUtCcXZFQ2daQU40aDVIYytlNE5uWVNhN0lVNTY5VjhVS1RMYTNjakhJZW55ak5nPSIsImkiOiJhWXpWWjVMVjJzTkVpczlCIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWFQwSUVOa0lGZGJkclpHRjkvSmZqU2JWamFrYTZvOTFNYUo4N0M5ZGFDdWs3TlBTSzM5S2RCYlZaMGEzVytRQW1nQUVWV2hqMjlmRnJPOG55ZjBJM2NaRnM5MGU5MXc9IiwiaSI6IlA3azNBNlc0T3VvOTJDbGIiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibFlsWEE1NHBqMjZjR0dVTzhoRjNzSldpL1BkLzR5bGs5alRXK0xqcGlxVkF4RFJlUTA3NUFST2NURGlFZUxKdkpBdmVEcjBzNllFQkhZaEp3aXVsWVI3R3gzSUYiLCJpIjoiOTViSEp5YWNMa2d4MVczOCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ3VnVGYzTkNYbitZR2tDKy9ZYTgxWjgzVWxOQWhnRHBzOE1GaVdNcWM5aFdFczhSTS9TZElyczdxdmtNWWVpcjY0dzJXNkl0SGQvbmN0QS9xOGZmeVdTK0lPalpHNUk9IiwiaSI6IkRPNkdYM1plZFo5SGRROTEiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSDZwQVpJbVUweG1taGhaN1ZOK1U2aGQ4QnFsNnZ0MjF6RlBtV0FFTm9tM1BGaGkyYWxQVXNVemdNYU4yZCsxOVN2NXh2V3piTy96WE1UZDJYT1Bjc0ZFRE5VTlJCdz09IiwiaSI6ImY5a2pHSW1RRWwyY080QisiLCJuIjoiVmF1bHQifQ==",
+    "fpkg_akia": "",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ0hIdkUrUEszaFJUYng0R1hVSGwrUmhsYXpCRENPQXplMlU3azZHWVNybFlyc29TVGdNNkRSY0lFQzdGeXBJb1NQbkNkOVVvZmowNC8zZlBCTGg0dDNRcys2cVkzeEE9IiwiaSI6Ijl1VGxQMEFVcDIzNGZqaGEiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQTM0M3MxSTZwSG9paURoV1VoK0MxZUJ4Rm8xa3BFTHYwRCtOb1BSdDNyYTk4ZmliY2tpVmk4K2krNFdLRlBLd2VVdUhKSXJqV3d1OVBJd1l5ZGxqdkhqOHlrYTUiLCJpIjoiYjhKOGZ3eGN1U1lUN2VwSiIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYnpLbEdEdncxM29KQzhxNnVaanN5S09Kby8xdlJLb1BjMjM0cERaL09zaVo5NnRLNEFkVzJpYjJUdXJGZkd1d1lXV0hORVV0UEh5dVNUU2NtYnY3SlBONEh1Y2YvYTQ9IiwiaSI6InBXTTBlTUZINDVDdXR2QVIiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_vault": "",
+    "dlc_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3JsR29TU2RsQmxoaU05YlR6d1FEYlB3VzMwMHlFZTRmMXB5U3FTcUc0QkVua3JkbFQ1aVpxWXFCNFJ3c1pQNlBCWmVjYXVUbk1OUTc2OTU1ZGFhWmxSZUltR0dKQ3c9IiwiaSI6IjNXWUhoTHlFT2hnblFaNHMiLCJuIjoiVmlraSJ9",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblp3bEh2TEIvRUNCUWJkR05sa21lQlFtc2pRN29aV0p5VHdsUmpSeDduaGlsU1cvV2hlK0xMd3BJamdXWmkrQytsRkh6eWJIWFU0eUJxZnVTU3FSOUpHSHhYS3AiLCJpIjoiajN0UnVZTlpPaFN6UUhubyIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblNBMUJVMlo0UW1TbVgyMlVTL0dhc0dHc1A0WGN3K2x4eG4xQVppdmsrbFRRdVhMeHY4cEZSUENIZkMycTVhb2d6Y3hzZlBZZjBLSGRMMjdiMVJDZFdXTWVxQVJ6Zz09IiwiaSI6ImRwdVMrNVVNTEU4a0NqZVIiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "DUPLEX",
+    "how_to_play": "Loading Splash Screen Fix is already included. Pro Features Fix included. FPKG atm is only working up to 11.40, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "110GB",
+    "size": "188GB"
+  },
+   {
     "title": "ASTRO BOT",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/ASTRO_BOT.avif",
     "tags": [
@@ -2084,32 +2115,6 @@
     "credits_dlc": "Pippo",
     "apr_emu": "on",
     "size": "4GB"
-  },
-   {
-    "title": "Ghost of Yotei Deluxe Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ghost_of_Yotei_Deluxe_Edition.png",
-    "tags": [
-      "PPSA26344",
-      "v01.512",
-      "USA",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRUlFYUxlaHYwUDNXajBaNGFRbGRnK0Nzby9KL0YxY2J2Y293dHJGY01TQWpGL1VZNXdBcUtCcXZFQ2daQU40aDVIYytlNE5uWVNhN0lVNTY5VjhVS1RMYTNjakhJZW55ak5nPSIsImkiOiJhWXpWWjVMVjJzTkVpczlCIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWFQwSUVOa0lGZGJkclpHRjkvSmZqU2JWamFrYTZvOTFNYUo4N0M5ZGFDdWs3TlBTSzM5S2RCYlZaMGEzVytRQW1nQUVWV2hqMjlmRnJPOG55ZjBJM2NaRnM5MGU5MXc9IiwiaSI6IlA3azNBNlc0T3VvOTJDbGIiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibFlsWEE1NHBqMjZjR0dVTzhoRjNzSldpL1BkLzR5bGs5alRXK0xqcGlxVkF4RFJlUTA3NUFST2NURGlFZUxKdkpBdmVEcjBzNllFQkhZaEp3aXVsWVI3R3gzSUYiLCJpIjoiOTViSEp5YWNMa2d4MVczOCIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ3VnVGYzTkNYbitZR2tDKy9ZYTgxWjgzVWxOQWhnRHBzOE1GaVdNcWM5aFdFczhSTS9TZElyczdxdmtNWWVpcjY0dzJXNkl0SGQvbmN0QS9xOGZmeVdTK0lPalpHNUk9IiwiaSI6IkRPNkdYM1plZFo5SGRROTEiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSDZwQVpJbVUweG1taGhaN1ZOK1U2aGQ4QnFsNnZ0MjF6RlBtV0FFTm9tM1BGaGkyYWxQVXNVemdNYU4yZCsxOVN2NXh2V3piTy96WE1UZDJYT1Bjc0ZFRE5VTlJCdz09IiwiaSI6ImY5a2pHSW1RRWwyY080QisiLCJuIjoiVmF1bHQifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUFJNa3pHZ0FYZG9FVkRicS9rVSt6L0FXcTQ0ZTl3dWRRcXRJZDg4dFdnb2JxYTI2a0dUS3Nna3dqRXQra1FHM1E3Y0phOXR4NEpTWVhNemNYeTdLUEN6MktZVnhBcWNlUXhJPSIsImkiOiJlTmU1SFhsSjh2UFNSMmZsIiwibiI6IkFraWEifQ==",
-    "dlc_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3JsR29TU2RsQmxoaU05YlR6d1FEYlB3VzMwMHlFZTRmMXB5U3FTcUc0QkVua3JkbFQ1aVpxWXFCNFJ3c1pQNlBCWmVjYXVUbk1OUTc2OTU1ZGFhWmxSZUltR0dKQ3c9IiwiaSI6IjNXWUhoTHlFT2hnblFaNHMiLCJuIjoiVmlraSJ9",
-    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblp3bEh2TEIvRUNCUWJkR05sa21lQlFtc2pRN29aV0p5VHdsUmpSeDduaGlsU1cvV2hlK0xMd3BJamdXWmkrQytsRkh6eWJIWFU0eUJxZnVTU3FSOUpHSHhYS3AiLCJpIjoiajN0UnVZTlpPaFN6UUhubyIsIm4iOiJEYXRhIn0=",
-    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblNBMUJVMlo0UW1TbVgyMlVTL0dhc0dHc1A0WGN3K2x4eG4xQVppdmsrbFRRdVhMeHY4cEZSUENIZkMycTVhb2d6Y3hzZlBZZjBLSGRMMjdiMVJDZFdXTWVxQVJ6Zz09IiwiaSI6ImRwdVMrNVVNTEU4a0NqZVIiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "DecKerr97",
-    "credits_backport": "DecKerr97",
-    "credits_dlc": "DUPLEX",
-    "how_to_play": "Loading Splash Screen Fix is already included.",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "188GB"
   },
    {
     "title": "Astros Playroom",
