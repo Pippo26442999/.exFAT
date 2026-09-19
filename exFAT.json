@@ -292,7 +292,7 @@
     "credits_files": "DUPLEX & VanBuuren",
     "credits_dlc": "DUPLEX & VanBuuren",
     "credits_backport": "DecKerr97",
-    "how_to_play": "FPKG atm is only working up to 11.40, use exFAT if you are above.",
+    "how_to_play": "Audio 3D must be OFF or will crash on initial Settings. FPKG atm is only working up to 11.40, use exFAT if you are above.",
     "apr_emu": "on",
     "popular": "on",
     "fpkg_size": "142GB",
