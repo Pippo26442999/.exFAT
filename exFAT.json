@@ -1,5 +1,30 @@
 [
    {
+    "title": "Ratchet & Clank Rift Apart Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ratchet_and_Clank_Rift_Apart.avif",
+    "tags": [
+      "PPSA01474",
+      "v01.005.003",
+      "EUR",    
+      "4.xx BackPork"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaDlNUGRTSzNJbE1CYnRNbzVTYkl0TlJlbEdxREJBMXlHLzNSQ0dEb01aMkg4VU54OGpla1E0bm8rbE54RWIyUlEwM1lTbktLIiwicyI6IitlVTg4dEo0dktXbEdSajhSZjRUZEE9PSIsImkiOiJXWDJpZWtVM3RvVlZweHQrIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT1RQRDNCVnkvUWloM0tlODNPRjF3djkzeDRmQk42b2FoNzVpckJVN24zTDVBUXRkT1kvSzBicWh6dFhpTHVrNE1vdEUiLCJzIjoiS252ZEx2Q1k4M08rMGt0TjhSa1lPZz09IiwiaSI6Ilo3SEVFMzJRSE9RZzYvU0wifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia29mOHk4WWhyTEVraG9iajE2TS9RY2RNcVB5RjhRaVdYb2oyaDdTbUd5ald1bTFsODl4eXliUEl4cmwwYnZyeFlnPT0iLCJzIjoianJYY21Gcm9hR0xGYTVQOWdpdFdYdz09IiwiaSI6Inp2MGpVQ201ditNcXByNTYifQ==",
+    "fpkg_akia": "",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSFR4T3AvMU1SN3Q5azhhcTh2S01xajcwbnI2ei9HVEFwQlJTMFlHYzJ4OFVnZ0Zqb1RMQzRYd3M0Qkw3OXp0OUgydDVLekE4bVlLU3RhVzFZUGdsVmRJMUtYSmhkeXM9IiwiaSI6ImZCU2tCMC8raGRzdG04SHkiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibG9mSEZRS05NYWs3K1FwWG44Q1BNWUwvREp5YVdGR2thV3hiUml1dzZRUTdEVUIzSUpuZVBzcFcwczR0NVpkYjNqMVAzM25yUjIzSnZndjhKN0ZKU29HNFNqenciLCJpIjoiTHk3NlFuM0hVQnNXZzAzdiIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQVQwNjAyQmliQkdjTEd6eExzb2pHMTRUdzJkcHJZR1hhV2dlV1VheXVtMnhYZlBWRDYxY2tIUkpMdHZJMGU5MVNJNWhTMEZRalFDTnYxYmV0ZlRWa2NTTUNvcjdUdm89IiwiaSI6IjhFNjYrWnhCVzBuU091YlgiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ2cwZjRqblR0dGoweW83U0xhdExHcitSdHZnbVZyMXFBRHA0eHBPbWdEV0ttZG0xQTIwcDlQMElRTExSNFRFcUIwaU1YQWoxTE5vQW5kNG5oOEw3amFYU2g0TzN3dz09IiwiaSI6Im01SHRrN01zcGRnUndSNkMiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "BestPig",
+    "how_to_play": "FPKG atm is only working up to 11.40, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "39GB",
+    "size": "77GB"
+  },
+   {
     "title": "Returnal",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Returnal.avif",
     "tags": [
@@ -11245,24 +11270,6 @@
     "credits_backport": "BestPig",
     "apr_emu": "on",
     "size": "16GB"
-  },
-   {
-    "title": "Ratchet & Clank Rift Apart",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ratchet_and_Clank_Rift_Apart.avif",
-    "tags": [
-      "PPSA01474",
-      "v01.005.003",
-      "EUR",    
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiaDlNUGRTSzNJbE1CYnRNbzVTYkl0TlJlbEdxREJBMXlHLzNSQ0dEb01aMkg4VU54OGpla1E0bm8rbE54RWIyUlEwM1lTbktLIiwicyI6IitlVTg4dEo0dktXbEdSajhSZjRUZEE9PSIsImkiOiJXWDJpZWtVM3RvVlZweHQrIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT1RQRDNCVnkvUWloM0tlODNPRjF3djkzeDRmQk42b2FoNzVpckJVN24zTDVBUXRkT1kvSzBicWh6dFhpTHVrNE1vdEUiLCJzIjoiS252ZEx2Q1k4M08rMGt0TjhSa1lPZz09IiwiaSI6Ilo3SEVFMzJRSE9RZzYvU0wifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia29mOHk4WWhyTEVraG9iajE2TS9RY2RNcVB5RjhRaVdYb2oyaDdTbUd5ald1bTFsODl4eXliUEl4cmwwYnZyeFlnPT0iLCJzIjoianJYY21Gcm9hR0xGYTVQOWdpdFdYdz09IiwiaSI6Inp2MGpVQ201ditNcXByNTYifQ==",
-    "credits_files": "DUPLEX & SiESPta",
-    "credits_backport": "BestPig",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "77GB"
   },
    {
     "title": "3D MiniGolf",
