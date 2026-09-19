@@ -1,5 +1,34 @@
 [
    {
+    "title": "Horizon Forbidden West Complete Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/HFWCE.webp",
+    "tags": [
+      "PPSA17905",
+      "v01.030",
+      "USA to EUR Langs",   
+      "DLCs Merged",
+      "Standard (7.xx) + 4.xx BackPork"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQ0hCaUR5ZUFNNGRBTWNTNmV4WGhQdzFraDVqWW5HV205UG5FajAxMVlPNi9sOVdkM0FydVBUTWoxZmRJSUVrSGZyRm9XenFrIiwicyI6InFrbWw3TTBCSzB4K0tTa2VKdUJua0E9PSIsImkiOiJ6T0Mzam9CSE5wSzVRWFRMIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicnEwRzRIUEI3dFlpUVU4VzluS2szTnVScUhaMzBrQmVpK2dLdzRoQnZDYXl4czB1OUdwcVFKanZ3d0IwUzZ5Qk51V3ciLCJzIjoickw5QzlJT3JxNnR1cFFoZmZSN2l6UT09IiwiaSI6IlBKck5Hc1hWVmdzK2ZQYmsifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL3pTZTR3K0NxVnlUYXR4Nnl3d3VXbGY2dXlyeGpIMXJWdzZ4S2tsRngwTG1WaDBMZTlnZDc3L2VoRXdPYTh5VUVBPT0iLCJzIjoieGZaczNHQ1VZdlZjWitRMTlsTU5TQT09IiwiaSI6IlFpVTlYVjJFa1hPNzViTzcifQ==",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicmpYZnNqdTVvSnE5L2ZRY1BsRkpxOU9ZSUNZOGZMM1FLODZzZ21NQ2pGb2F0bkduSWE0dTNFVkE2eGYxL00zUEUycHJ4MmhpIiwicyI6IkdIcVc4V3hVZklyQXdIZ3NxRzRRZkE9PSIsImkiOiJGbERod25HbHhicDhWZnZhIn0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieFRFUFZFWHFHSlpYdENOVGZTWjdmL2Q0eURUeVFNWHNyZEtybnR3ZVBHczV4RGRucWxjcytWbERNWkJBZnU2dmxLZloiLCJzIjoiREI5OHBHL0ZtSjBmcHcwOXpVUGJHZz09IiwiaSI6ImpJaVhreTBPeWp5d0N4eHEifQ==",
+    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibXRXVi9QYUFMU3c4WDZpdEgyRzNaalpOdG1LT1NBZlU2NmZJY3Izc291R0JFTzJXYmRHc2VsWDdvRjk3L0w5WXlBPT0iLCJzIjoic2FoYldVOU1jS05UaUhZMzVIbTBKQT09IiwiaSI6IkNIejVpYURORXVMWStYNzcifQ==",
+    "fpkg_backport_akia": "",
+    "fpkg_backport_viki": "",
+    "fpkg_backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoid1Zvc3RSMWxaczMrKzVjQ2ZRc1Y3a0w2U1dzcFliNVJHdk5UUVZYcnVTU1FMQlpYT0NRY1pDRS9rRmV6c24rQ0p2amFGSVYxL0pvUWh4UEUzNGd6a0RFWHl6TGQiLCJpIjoiUFMyREdadTN2M0V3bDZjcyIsIm4iOiJEYXRhIn0=",
+    "fpkg_backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTEljRFkwWEpJOFYzTTliRDdFZDN4U3VMM3lha3FXMVF3M0NUazNOazBWTHJXK3JacFhFYUJGUFlURDY4RGFMMzdxZ2o1a05GdHgyOThxWjZkMUMzMG9hTXNFTkdVZ3M9IiwiaSI6IjlSazk2L3N5T0VYRHY5ZjkiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicEdRU2IxMXR4ZjNvQmtDYTVNQUpWZTRkRnhzSVZldTFDWmN5di8vb1lJMEFxVlZqTG83SFpjOEZKbjJKK1FVVDZXY2JxTlpvdURjTWZabTZINUdFVkRWMUFMYi9DQT09IiwiaSI6Ilkyb1Y5cVFtOHRWLzkxMXkiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_dlc": "b0mba1992",
+    "credits_backport": "BestPig",
+    "how_to_play": "Burning Shores EUR DLC Included. FPKG atm is only working up to 11.40, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "191GB"
+  },
+   {
     "title": "PRAGMATA Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/PRAGMATA_DE.jpg",
     "tags": [
@@ -28,6 +57,7 @@
     "credits_files": "SiESPTA & DUPLEX",
     "credits_dlc": "SiESPTA & DUPLEX",
     "credits_backport": "BestPig & rocknard & ManwonHp",
+    "how_to_play": "FPKG atm is only working up to 11.40, use exFAT if you are above.",
     "popular": "on",
     "fpkg_size": "31GB",
     "size": "85GB"
@@ -11126,28 +11156,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "77GB"
-  },
-   {
-    "title": "Horizon Forbidden West Complete Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/HFWCE.webp",
-    "tags": [
-      "PPSA17905",
-      "v01.030",
-      "USA to EUR Languages",   
-      "7.xx BackPork + 4.xx BackPork"
-    ],
-    "backport7xx_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQ0hCaUR5ZUFNNGRBTWNTNmV4WGhQdzFraDVqWW5HV205UG5FajAxMVlPNi9sOVdkM0FydVBUTWoxZmRJSUVrSGZyRm9XenFrIiwicyI6InFrbWw3TTBCSzB4K0tTa2VKdUJua0E9PSIsImkiOiJ6T0Mzam9CSE5wSzVRWFRMIn0=",
-    "backport7xx_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicnEwRzRIUEI3dFlpUVU4VzluS2szTnVScUhaMzBrQmVpK2dLdzRoQnZDYXl4czB1OUdwcVFKanZ3d0IwUzZ5Qk51V3ciLCJzIjoickw5QzlJT3JxNnR1cFFoZmZSN2l6UT09IiwiaSI6IlBKck5Hc1hWVmdzK2ZQYmsifQ==",
-    "backport7xx_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL3pTZTR3K0NxVnlUYXR4Nnl3d3VXbGY2dXlyeGpIMXJWdzZ4S2tsRngwTG1WaDBMZTlnZDc3L2VoRXdPYTh5VUVBPT0iLCJzIjoieGZaczNHQ1VZdlZjWitRMTlsTU5TQT09IiwiaSI6IlFpVTlYVjJFa1hPNzViTzcifQ==",
-    "backport4xx_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoicmpYZnNqdTVvSnE5L2ZRY1BsRkpxOU9ZSUNZOGZMM1FLODZzZ21NQ2pGb2F0bkduSWE0dTNFVkE2eGYxL00zUEUycHJ4MmhpIiwicyI6IkdIcVc4V3hVZklyQXdIZ3NxRzRRZkE9PSIsImkiOiJGbERod25HbHhicDhWZnZhIn0=",
-    "backport4xx_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieFRFUFZFWHFHSlpYdENOVGZTWjdmL2Q0eURUeVFNWHNyZEtybnR3ZVBHczV4RGRucWxjcytWbERNWkJBZnU2dmxLZloiLCJzIjoiREI5OHBHL0ZtSjBmcHcwOXpVUGJHZz09IiwiaSI6ImpJaVhreTBPeWp5d0N4eHEifQ==",
-    "backport4xx_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibXRXVi9QYUFMU3c4WDZpdEgyRzNaalpOdG1LT1NBZlU2NmZJY3Izc291R0JFTzJXYmRHc2VsWDdvRjk3L0w5WXlBPT0iLCJzIjoic2FoYldVOU1jS05UaUhZMzVIbTBKQT09IiwiaSI6IkNIejVpYURORXVMWStYNzcifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "b0mba1992",
-    "credits_backport": "BestPig",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "191GB"
   },
    {
     "title": "Assassins Creed Mirage",
