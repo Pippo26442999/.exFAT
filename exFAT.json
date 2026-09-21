@@ -1,5 +1,30 @@
 [
    {
+    "title": "Monster Hunter Wilds Premium Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Monster_Hunter_Wilds_Premium_Edition.png",
+    "tags": [
+      "PPSA07862",
+      "v01.041.040",
+      "USA",
+      "Progress Fix",
+      "4.xx BackPort"
+    ],
+    "fpkg_akia": "",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOWhkY0tyaDljQzVqQW9UYnJmVW5leDVwd242aDdJczZBbmZBUGU2Y0xJYWZSdTFrWWdOMXkvYXBJT1VQaUR3cjhicERaVGc4WHdzdWVFK1BmWmE4VEg2SXU3QmVyUzg9IiwiaSI6ImlGQktPcnJOdFY0dWJ6eWMiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiR3VBZlVmT09kdU8vTEZSeUUwZ1pUZTY0MldDN1JyY2NiQURqRzVTb21HWk5FN1RydHhscWVJazl0OTNNeTlsdUNaRWMzZ3B0eCt6ZWJ0SUZ4ZEdndEUzb2cwTEQiLCJpIjoiYTBvblVnejMvRUk4Q0VQNiIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVUxrZGVQVFh0RlZyTjVYcWlMM2RtNWl0SCtPNVBhMDlWN3lGY1R0ZlhpWFdYRVFxN2ljOHlTaUxVNStoWElKdjJpTjhoanJ1ZThCdWlRbERhVjFTbjFqeWVLa0xpbUk9IiwiaSI6IlpjU3JPSUlBY2dtMERCcmkiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidUJMY1ZrWjlwUnFWQkdSVnU2OEhRRHVBRFpEM1FwTnRUMkRjN1Y1Rm8zaW1oRDhqTkRxdEVtbXdFMmhvdlJjUzhFaDdjRzcrZEwxb0dDV3plTTlMdW1IR21BMjk3Zz09IiwiaSI6InpMcFFTdFZzOHVIZU00YnQiLCJuIjoiVmF1bHQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUwwQndqSkZSRHM0OElIK2Y5eG1FUkdMMWlVcDZWUWJDNHdSemNObXh5TnQvQjg1NVFyRlV0ZnhYNy9QWlZQTnBrQVB4WDdyRlQ4aVV3Yzd6M1N4aEtLcEJNYkIiLCJpIjoiblVhMkVtdXpHbE1STzFmdSIsIm4iOiJEYXRhIn0=",
+    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXBHUmx5UFFCcHFSeTQ4UWFsYXVWb2RkUWFrNWRML0x3TkcrcUgvVk1pSzBSanhaMW1Sd2F6MDd0NmFKRHh1WC8wS09NZTdFVDlKRGdqQmdqcHY4N0d4bVZoWmVKMEU9IiwiaSI6InMrUHl6UEREZUtrdkVLR2YiLCJuIjoiRmlsZUsifQ==",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoid2hHTVRqVndoT1pna3Jab0hEM01oRmhsUTFkN3dBQjBKUi9WcmNCSHNVMEJxVHFQcW9UOUxGWGR2K1hkYUxIM2c1S2NWSHdzMlJlRktPMDZVYkJ1RWQ0TWJIM1RVQT09IiwiaSI6IjNmanRZODY3RUVxOVRpcUIiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_dlc": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above. Chapter 1 is now fixed and is possible proceed.",
+    "popular": "on",
+    "size": "60GB"
+  },
+   {
     "title": "Need for Speed Unbound",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Need_for_Speed_Unbound.png",
     "tags": [
@@ -12,7 +37,7 @@
     "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY0VnSmx6Q2NiVzdoYlM5dks3N0RXcUJuRDBDY0FQdzVNV3hubGRaTEo3N2NaWkhNN3RrSFBIQlJwYmhGVmJUcVJNV1lNUFhMdUMvcmxCUzczbjFxY0N2VTlHanJzdG89IiwiaSI6IldzMUZwcGpHc2txRHp3RCsiLCJuIjoiVmlraSJ9",
     "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZUVSQUVnY1VBdVg1V2RCSzlHVTNiNWlvcmZrOUovZHRWOTlGY29FQjV6SHN2Z2NmY1lvUDF4VjZ2SGxhRmhJKzhPcVJkSnBCY3dKTlpDelczaHVqd3p1ODl1dkoiLCJpIjoidXJ2VitBbWlSRC9qY2svayIsIm4iOiJEYXRhIn0=",
     "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZVM2K1l4VWxlMkFhVU4rZ2s2RlJLZDdEL0w1enhoeEFVV3hlUFdtcFFxcTg0V1djckl1VytZM2VNWFhucVJ3MFNGVU0zd0ZaeExHVnBmUTZtK25STXhlWGZvTG91K3M9IiwiaSI6Ik5PN1ZRVE1oRkJnamNzRXoiLCJuIjoiRmlsZUsifQ==",
-    "filed_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidXBLcXZDR1RFQU5FZmtlVVQvTnZIOC9iRDljNTlvcmtWY0pkYjRibEZRckhKTmNtbmtmWHJaQVhFbWVTZ1hnd0xhalhXK04zTUU3NHRkVElEQ0Z0bmtJbzZDT09WLzhMUnN3KzRKYmE2eTlKY01kaVJJNVRCOFNJMk95TkI2dW5YVUtXV0traG5zMVR5ejA9IiwiaSI6IkV5UVpyYUNGVWY1dWNNY1IiLCJuIjoiRmlsZUQifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRXBBcmdKd1BaT0E1OFVJUWE4UTNnbmxKWTRpQlJZTmZxS0lHeEc5ZG9IYmxGQ1FGQzdmNDJ1V202L2M4RUYrMjRTOEM0MFZJVkNvZGFzYWE4WkFYSk1BT2xjRm9aUT09IiwiaSI6Imp3WWhQd2dod1BQdEpTMlkiLCJuIjoiVmF1bHQifQ==",
     "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV1cwcndScW4zZGRuQzZ6alF4bS9ibVhKU3hGdER2VVFSY2pEUjhESllmeTg0bjNYVTJhazlwcStYbW81MVd0RnJXR2VFcUF1TjZDc2xmODZkRlNQVUtRZ1V5YkJJTW5BWHlZPSIsImkiOiJsdFhxVUdTTUZvSkN0SndMIiwibiI6IkFraWEifQ==",
     "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT2J5ZVAvVXZ0NGZkaHd0MVk5bzFJclAyOEU4V3FjZnh6dlJsM09BYmd2RzRzRWtqNmpSM21CTmlLcmZ4SmFEOFhIMUJMemVBVURJNnR4RmVEdFpiTnAxM2k4MktlSWc9IiwiaSI6ImsyOWtaSjhEY0hDVXNmckEiLCJuIjoiVmlraSJ9",
     "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTFUyVFhxclFOM0xvWjZsajhCbDQ2MnM5Z0FtazQ5c2htcHVtM1orWjRLdW9UNmVHRjJlaHVXREF3Mytva0ErMGNneWgvdEsrMUNUSTh0UzcwNkpkM29xVGRoNWsiLCJpIjoiT2liTDVNekhBWEpmY1FyWiIsIm4iOiJEYXRhIn0=",
@@ -22,6 +47,7 @@
     "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaENKRFl4QzNJc2lKY05mRGMzdXJCeG1DMWJhbTlhanBodEMycEZYckNvbm9nRHFMSHhjNDhNdDgxa1d3cW1LcktnUVUzK0RIZkJndVVvOWczMXFYWFFhcWxDVyt6dz09IiwiaSI6ImgyeTBvcks4enNyY3dhS1QiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "dunaevnick",
     "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
     "apr_emu": "on",
     "popular": "on",
     "fpkg_size": "30GB",
@@ -4556,28 +4582,6 @@
     "credits_dlc": "Pippo",
     "popular": "on",
     "size": "77GB"
-  },
-   {
-    "title": "Monster Hunter Wilds Premium Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Monster_Hunter_Wilds_Premium_Edition.png",
-    "tags": [
-      "PPSA07862",
-      "v01.041.040",
-      "USA",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSW1aL2tRQXVlVkNWTGFaMWFPTUpzMDhRN2oyOVhNbW50cWVCZ3h3OUNLdHI2N0kzSEpnV2FoMm83VVBOT1QrTGphalFjeGhYZlBCa3d1cERBQVhDRUNkUThaME5iN3FZRURJPSIsImkiOiJnbE10eE11T2NkSEYvVzdkIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQW9mZ205VXRVdmZ1Q1RqMXhjOUQ4SExyMTF1MTF3M1lCdE9pRnlOLy9SSEJNdUhhb1hXbDNCZzc3dktJUHFyVS9Yb0t4WjVPemQ0TFFFS0NLRkpsc0p5cXBMQXNlN1k9IiwiaSI6IlhzQjZScGVpNEprbWxwYTQiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibUFjQ0RNK0c4NDR4aVJXcEhYQ0xXd1Foamswek00bm01UmNQbWxRRExXYnZmd1FWWEh5RjAvVlBzbzN5SEhwT0krVGJuNUFHdGF1cnYwMzZwR0FYMFBvKy9NRUUiLCJpIjoiK3BKRWcxWlFYZDFhSjNnTiIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMVRGY3JFRXJZY2xrRzdxemM2YzdQQUk0ellBMFhYTHpXVGNQWjBpNEpZbEhpQ2tKOFYxcG92UjV2S3ovN0NhNHRzSlo5TkxvSTZNYUxwZHlRMWlaL2F3RGtlVlBTa2s9IiwiaSI6IjZHZWlGV3JVMGlITitlQkUiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieEFUN1MxZ255M3R6cFh0d1NmK3Z5SStzT1BBZENMTENJeStBcUIvQTcybFcxQTJiUG5qMjZ2TTdMemgrOFNxYVcvb1luOFhHNnRjcGN2M0pVUDZKeEJWQmZ4Ym5udz09IiwiaSI6Ii9GR0tyZzhEcU9Na3hiaU8iLCJuIjoiVmF1bHQifQ==",
-    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUwwQndqSkZSRHM0OElIK2Y5eG1FUkdMMWlVcDZWUWJDNHdSemNObXh5TnQvQjg1NVFyRlV0ZnhYNy9QWlZQTnBrQVB4WDdyRlQ4aVV3Yzd6M1N4aEtLcEJNYkIiLCJpIjoiblVhMkVtdXpHbE1STzFmdSIsIm4iOiJEYXRhIn0=",
-    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXBHUmx5UFFCcHFSeTQ4UWFsYXVWb2RkUWFrNWRML0x3TkcrcUgvVk1pSzBSanhaMW1Sd2F6MDd0NmFKRHh1WC8wS09NZTdFVDlKRGdqQmdqcHY4N0d4bVZoWmVKMEU9IiwiaSI6InMrUHl6UEREZUtrdkVLR2YiLCJuIjoiRmlsZUsifQ==",
-    "credits_files": "DecKerr97",
-    "credits_dlc": "DUPLEX",
-    "credits_backport": "DecKerr97",
-    "popular": "on",
-    "size": "113GB"
   },
    {
     "title": "Baldurs Gate 3 Deluxe Edition",
