@@ -1,5 +1,39 @@
 [
    {
+    "title": "Horizon Zero Dawn Remastered",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Horizon_Zero_Dawn_Remastered.avif",
+    "tags": [
+      "PPSA13427",
+      "v01.008.001",
+      "EUR",
+      "DLCs Merged",
+      "Standard (9.xx) + 4.xx BackPort"
+    ],
+    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR2gxRnhNREowM2kxTEFiSkRpeWNad0kwSVIvWUpHMUxyLzkyendTUVEwZFFha3JKNFBvVnZMbzB4djBYVGpPRVg3RnZVYWVVIiwicyI6IkNmRS8yZnNNMDRCTUdiT3RBT2QrU1E9PSIsImkiOiJOdmZIRVZCNjhhTmtZTGNMIn0=",
+    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieWU5RVFBa2JJUlJWaUhXUzMzY2pIQzh2cTFiZlV3VXloVWNMTkZHcUFTRUhiRnRONDZ3THQ0WEpSVjAvNmJFSEcxM24iLCJzIjoiS3hncTFHY2tDelI4ODF1dG5vOHQxZz09IiwiaSI6IjZ1Tll2a2U4TnVoN0NYRVEifQ==",
+    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWnNVNGNuV0VXNTlpOE5EUGJUZXAxQlR5bWFEWkpOcDE0UCtMYTRYaUtESXhOam5LaStmUlhyUGdpLzNXa2hxaDlnPT0iLCJzIjoiaHp2UndXa1I5VER3bS8xU0I3ZkNiUT09IiwiaSI6IjVaSWVHYWxMeXdTNmdqWHAifQ==",
+    "standard_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTVF3MDJtNGI3NlBLT1dnMU1NUHk4SHVTNEtteERiZ1l5NGtCT0tVQk9LVHgvYVQ1Q2t2bVpYRHBFUG9UM3ZLZElRMkwiLCJzIjoiQldjMU5ld3BLWkMrVkJWMWpER0hTQT09IiwiaSI6IndEeS9vZkpWZUpQc3NPT28ifQ==",
+    "standard_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL0I2cXF6cU5ldDRBeXBCL2JYM1N4d0Z3cG56bWd1SE1JOGYxVWNZQ0lXdGNwcG1RN2F4d01FQmh1SWVRYU1wTFFHcz0iLCJzIjoiL2hsR0JJT1dVUHFubVpEV08vY1ZWZz09IiwiaSI6IlpRWWxDM1hqaHdDZVRlemIifQ==",
+    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRkZIQTR0bWkweGF2YWI4Qi9sbTZlSW1ta1JJcHc2UWlMT01tZmJGaS9zU29RMXAzYThWNmcxbGhScGoxU3JjbWhFYjRVaHh2IiwicyI6InVOK3hSYTJxdVFHNkxMRzNkdHlmZGc9PSIsImkiOiJSelI0NGgxbFFFM093MWRnIn0=",
+    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYnlHRWFNSExHZ3lrc05nWnhMRGxaSHI3UHk3QWpUK0crZWFJdXJyWlN4ZFpxUmQzZU5TeCtkNWJaUWhleUhudHlXbmQiLCJzIjoiSysxN0xoZWQ2TGdDbFp4N1AzRGNqdz09IiwiaSI6ImQzR1lCMjdDeExrOFBJcVYifQ==",
+    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidmFDcVZjYWFGcVN6QjRSTjYwSVNaWjIxc3hLeFpIOWxzZWVQSG5CclE5OWx1S0N2b1JkN0VsZ0xDd3psY2xBOG9nPT0iLCJzIjoiTElxQlZHcGRFVlJyTm1RMTF5dmN5dz09IiwiaSI6Im5ESWJHTk9JWUhjbnlseS8ifQ==",
+    "backport_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNDlFUW12d015ZGg4NUY4cEloNkpIREpCMWpxQlR1SXdFWjdxSlVVN2psNzNvR1cxOGMvVnptOUVzbkViUlBRS2ljWmoiLCJzIjoiZWZNQkdiWU5Pc0R1dzlpazhIVmlsZz09IiwiaSI6Ii8zdEVBVWg2SDZCaWE5ZWoifQ==",
+    "backport_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMGNucUhQQ1BWYmtMbmx3TnIrUHp3ajBEMXI2cEY1bGgxUUlWWnhzRTl2Y0ZPSldJdW16eUpFRFRxL2licklXUzZDYz0iLCJzIjoiWVdtSCtORVVRaXd0ZXB6VFdzbkt1QT09IiwiaSI6IlJxd2ZkRElrWCtFeS9LNHAifQ==",
+    "fpkg_backport_akia": "",
+    "fpkg_backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRzJmYWt6N1h5aStFeGFLSTNNVWFQL0t4U0h5TWpUdGIwRGp4ZFJwcmdYZCtuTDR4OE9Rc1FOYURTOWV5SlJneTM1Wm5xRmwweU5vUE91MFB1YnBsWmpvT3NUZyt2eVE9IiwiaSI6IjBDeXA4UEZ3UjNGdlFxWTMiLCJuIjoiVmlraSJ9",
+    "fpkg_backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiekFkbllxVVhZZHdQdFdiNkpjUlh6VGs4WEQwbEk2SmZXdVptekVtM2pad0hBZzFZek9NWlVxU0l1emlvL3VZUjlqc29udCtTN29WcUFteDdUMDlwSWlDTGIrbVciLCJpIjoiWCtqVzRQcWhMQVR2a3pSMiIsIm4iOiJEYXRhIn0=",
+    "fpkg_backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidGRvQkNTOElzbXNWeUFzUW9Sck1HNGZrOHhKa0xsZ2czV1k2Zmh0RjIxWkJKTy84NlhZMEJaSG9ScHdXYWxHSS8zazRwTk1sOXZPYUVycmZYYXhQckFNNWpPbmt4MnM9IiwiaSI6Im55WTZEelhrdHR3anBmRDYiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiREJXbmo4TC9sS1NjanBtNGo1QmVIZGxmTXp4WlVMMk50RXozMnJHa2dlSEVQdVZXRWZkU0tkcHBtQzZzTGVCWk5BaXNvbnlCUTFBaldWN2o3TEREZUVwQWtLb3NPdz09IiwiaSI6Ilp2TTNyNEZLeFA5Y2pmVkIiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_dlc": "SiESPTA",
+    "credits_backport": "ManwonHp",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "86GB",
+    "size": "135GB"
+  },
+   {
     "title": "Monster Hunter Wilds Premium Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Monster_Hunter_Wilds_Premium_Edition.png",
     "tags": [
@@ -10153,33 +10187,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "13GB"
-  },
-   {
-    "title": "Horizon Zero Dawn Remastered",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Horizon_Zero_Dawn_Remastered.avif",
-    "tags": [
-      "PPSA13427",
-      "v01.008.001",
-      "EUR",
-      "DLCs Merged",
-      "Standard (9.xx) + 4.xx BackPort"
-    ],
-    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiR2gxRnhNREowM2kxTEFiSkRpeWNad0kwSVIvWUpHMUxyLzkyendTUVEwZFFha3JKNFBvVnZMbzB4djBYVGpPRVg3RnZVYWVVIiwicyI6IkNmRS8yZnNNMDRCTUdiT3RBT2QrU1E9PSIsImkiOiJOdmZIRVZCNjhhTmtZTGNMIn0=",
-    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieWU5RVFBa2JJUlJWaUhXUzMzY2pIQzh2cTFiZlV3VXloVWNMTkZHcUFTRUhiRnRONDZ3THQ0WEpSVjAvNmJFSEcxM24iLCJzIjoiS3hncTFHY2tDelI4ODF1dG5vOHQxZz09IiwiaSI6IjZ1Tll2a2U4TnVoN0NYRVEifQ==",
-    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWnNVNGNuV0VXNTlpOE5EUGJUZXAxQlR5bWFEWkpOcDE0UCtMYTRYaUtESXhOam5LaStmUlhyUGdpLzNXa2hxaDlnPT0iLCJzIjoiaHp2UndXa1I5VER3bS8xU0I3ZkNiUT09IiwiaSI6IjVaSWVHYWxMeXdTNmdqWHAifQ==",
-    "standard_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTVF3MDJtNGI3NlBLT1dnMU1NUHk4SHVTNEtteERiZ1l5NGtCT0tVQk9LVHgvYVQ1Q2t2bVpYRHBFUG9UM3ZLZElRMkwiLCJzIjoiQldjMU5ld3BLWkMrVkJWMWpER0hTQT09IiwiaSI6IndEeS9vZkpWZUpQc3NPT28ifQ==",
-    "standard_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiL0I2cXF6cU5ldDRBeXBCL2JYM1N4d0Z3cG56bWd1SE1JOGYxVWNZQ0lXdGNwcG1RN2F4d01FQmh1SWVRYU1wTFFHcz0iLCJzIjoiL2hsR0JJT1dVUHFubVpEV08vY1ZWZz09IiwiaSI6IlpRWWxDM1hqaHdDZVRlemIifQ==",
-    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiRkZIQTR0bWkweGF2YWI4Qi9sbTZlSW1ta1JJcHc2UWlMT01tZmJGaS9zU29RMXAzYThWNmcxbGhScGoxU3JjbWhFYjRVaHh2IiwicyI6InVOK3hSYTJxdVFHNkxMRzNkdHlmZGc9PSIsImkiOiJSelI0NGgxbFFFM093MWRnIn0=",
-    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYnlHRWFNSExHZ3lrc05nWnhMRGxaSHI3UHk3QWpUK0crZWFJdXJyWlN4ZFpxUmQzZU5TeCtkNWJaUWhleUhudHlXbmQiLCJzIjoiSysxN0xoZWQ2TGdDbFp4N1AzRGNqdz09IiwiaSI6ImQzR1lCMjdDeExrOFBJcVYifQ==",
-    "backport_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoidmFDcVZjYWFGcVN6QjRSTjYwSVNaWjIxc3hLeFpIOWxzZWVQSG5CclE5OWx1S0N2b1JkN0VsZ0xDd3psY2xBOG9nPT0iLCJzIjoiTElxQlZHcGRFVlJyTm1RMTF5dmN5dz09IiwiaSI6Im5ESWJHTk9JWUhjbnlseS8ifQ==",
-    "backport_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNDlFUW12d015ZGg4NUY4cEloNkpIREpCMWpxQlR1SXdFWjdxSlVVN2psNzNvR1cxOGMvVnptOUVzbkViUlBRS2ljWmoiLCJzIjoiZWZNQkdiWU5Pc0R1dzlpazhIVmlsZz09IiwiaSI6Ii8zdEVBVWg2SDZCaWE5ZWoifQ==",
-    "backport_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiMGNucUhQQ1BWYmtMbmx3TnIrUHp3ajBEMXI2cEY1bGgxUUlWWnhzRTl2Y0ZPSldJdW16eUpFRFRxL2licklXUzZDYz0iLCJzIjoiWVdtSCtORVVRaXd0ZXB6VFdzbkt1QT09IiwiaSI6IlJxd2ZkRElrWCtFeS9LNHAifQ==",
-    "credits_files": "SiESPTA",
-    "credits_dlc": "SiESPTA",
-    "credits_backport": "ManwonHp",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "135GB"
   },
    {
     "title": "Outward Definitive Edition",
