@@ -20,7 +20,7 @@
     "credits_files": "DecKerr97",
     "credits_dlc": "DUPLEX",
     "credits_backport": "DecKerr97",
-    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above. Chapter 1 is now fixed and is possible proceed.",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above. Chapter 1 is now fixed and is possible proceed. Special thx to the drakmor tool, FPKG make possible this fix.",
     "popular": "on",
     "size": "60GB"
   },
