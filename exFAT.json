@@ -1,5 +1,32 @@
 [
    {
+    "title": "God Of War Ragnarok",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/God_Of_War_Ragnarok.jpg",
+    "tags": [
+      "PPSA08330",
+      "v06.006",
+      "EUR",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV0VyMnBldDJJVVk4NDZsRHJtY1hGTFJJZE5KM3pDdVdId3JLVHYzSXd4NjR0U2RJOFZwTXRjdmRwT0FIak05WHVRVzAzaWNLY1RVNkpBQjhWZkNQSS9uL2g5ZTEwL1YrZ1RrPSIsImkiOiJzSStaSVhHV3NFYTNEWGpjIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUG5XYitKZ2hHQUdqMzR0ai9rMnJTMTN2TFkyWllycVFSa3ZERTVLaEYydmRGMjdOT3pzWmpGSFNZQWc0a2JXS3l1LzlMendpT2lRSnRUenYwU3gzb1JZeDBvemJYa2M9IiwiaSI6IlQ0bDBFcVNOa1BaYUI5VGEiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXBMajRwVnUrOTlTOW42Vkk5RFBiRG9NYUYyZXR3YTVabUk0a1dRTUVRVEVDdWVRd0M2Tk5XL1prbGZXaEdyZktHNDFFQzRIc0JHelBRampRYTMrWFJxZnBwaWUiLCJpIjoiZ2VaNThpMkFnS0pZY25XSCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWHQwY055THhYa01oaDZvb24wQVJJMHExRWVFQnI0TCsrUUVUZXZ3cWI0YklKMzJPN0dNTm5qL2phQzYwdlZwMWc2Q1JydGJhMHZ3TkE5d01zMjVpbjRqMk1tNDgxVUE9IiwiaSI6ImdXbml6ZzU1T25tc2pFVnoiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoick9lNXU5dU15Mm52UjJnSWo0M0V2TjF0SG9JOFRxOXF4UytUclEzUmJ2V0ZyV1pEeDZRTytnRXFvbE9kT2R2VzMxV2d4cmM1bnBPdXpGSWpzY2JzaTRtSHlMWm9qZz09IiwiaSI6IkZhZklMREszK3ZhZThRTWMiLCJuIjoiVmF1bHQifQ==",
+    "fpkg_akia": "",
+    "fpkg_viki": "",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY1ZPeVZTdG5SaDUvM1hiZm9LaHh5d1B6d3Irc09NSzlBSHFUK3FFTGdSU1N2UHpwSU9IRXdOTHdKUTBJRTVUV3NUVGQyRnB5YWVUMU1mYkt3U2pEZUtCN3lZQTEiLCJpIjoiNkNhWHM2REtIK0RIUGIvQiIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTGYrNkd5NytYSVJNSG85bWdTMFFRMXNCbExyNWlTazlZRzFLTmM5dUtXemtqaDRwSVZnUzR3SnJCdktSbm50cEVOSzc0UmJkaEcxN05EUk9BbFZWRlg0RStEZ2lWeTA9IiwiaSI6ImRLOUIxSFNUMjVGNkMzYWgiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUzRjREhrQzFCbExBVzhUcnp2dGErMlI3eEJPUmdBaWtZdHBmRHJudW16MDUzME9Nc0IwTllxdnNYSmd1cVkxekx4a0JSK0FDZngrZjl4ZXYrQm0xNHZ0NlNsYVpKZz09IiwiaSI6IjE1aVBZUHY0ZzdEejQ5c3YiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_dlc": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "popular": "on",
+    "fpkg_size": "101GB",
+    "size": "180GB"
+  },
+   {
     "title": "Horizon Zero Dawn Remastered",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Horizon_Zero_Dawn_Remastered.avif",
     "tags": [
@@ -148,7 +175,7 @@
     "size": "180GB"
   },
    {
-    "title": "Ratchet & Clank Rift Apart Deluxe Edition",
+    "title": "Ratchet & Clank Rift Apart",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Ratchet_and_Clank_Rift_Apart.avif",
     "tags": [
       "PPSA01474",
@@ -1421,27 +1448,6 @@
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibDEzMTdYSVBmekUxSFY4d0htQnAxeXZyeWhjQ3F2SVVhWjRwWEI1d1I5Q0J0SDRXZHdWUEFaaXJoOHZrY09OcWR5SkVJdVBFb3ZhQzZxdGZMemo0aU1ndGUzSXdWZz09IiwiaSI6IjcyVDJLbDBvdk42bWhyVDgiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "BedroZen & SuperPSX",
     "size": "30GB"
-  },
-   {
-    "title": "God Of War Ragnarok",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/God_Of_War_Ragnarok.jpg",
-    "tags": [
-      "PPSA08330",
-      "v06.006",
-      "EUR",
-      "DLCs Merged",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV0VyMnBldDJJVVk4NDZsRHJtY1hGTFJJZE5KM3pDdVdId3JLVHYzSXd4NjR0U2RJOFZwTXRjdmRwT0FIak05WHVRVzAzaWNLY1RVNkpBQjhWZkNQSS9uL2g5ZTEwL1YrZ1RrPSIsImkiOiJzSStaSVhHV3NFYTNEWGpjIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUG5XYitKZ2hHQUdqMzR0ai9rMnJTMTN2TFkyWllycVFSa3ZERTVLaEYydmRGMjdOT3pzWmpGSFNZQWc0a2JXS3l1LzlMendpT2lRSnRUenYwU3gzb1JZeDBvemJYa2M9IiwiaSI6IlQ0bDBFcVNOa1BaYUI5VGEiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXBMajRwVnUrOTlTOW42Vkk5RFBiRG9NYUYyZXR3YTVabUk0a1dRTUVRVEVDdWVRd0M2Tk5XL1prbGZXaEdyZktHNDFFQzRIc0JHelBRampRYTMrWFJxZnBwaWUiLCJpIjoiZ2VaNThpMkFnS0pZY25XSCIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWHQwY055THhYa01oaDZvb24wQVJJMHExRWVFQnI0TCsrUUVUZXZ3cWI0YklKMzJPN0dNTm5qL2phQzYwdlZwMWc2Q1JydGJhMHZ3TkE5d01zMjVpbjRqMk1tNDgxVUE9IiwiaSI6ImdXbml6ZzU1T25tc2pFVnoiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoick9lNXU5dU15Mm52UjJnSWo0M0V2TjF0SG9JOFRxOXF4UytUclEzUmJ2V0ZyV1pEeDZRTytnRXFvbE9kT2R2VzMxV2d4cmM1bnBPdXpGSWpzY2JzaTRtSHlMWm9qZz09IiwiaSI6IkZhZklMREszK3ZhZThRTWMiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "DecKerr97",
-    "credits_dlc": "DecKerr97",
-    "credits_backport": "DecKerr97",
-    "popular": "on",
-    "size": "180GB"
   },
    {
     "title": "Granblue Fantasy Relink Special Edition",
