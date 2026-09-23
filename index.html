@@ -1084,6 +1084,26 @@
             white-space: nowrap;
             box-shadow: 0 0 8px rgba(0, 255, 238, 0.5);
         }
+        /* ===== GRUPPO SIZE BADGES (FPKG + normale) ===== */
+        .popular-size-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: flex-end;
+            flex-shrink: 0;
+        }
+        .popular-fpkg-size {
+            background: rgba(0, 255, 238, 0.85);
+            color: #000;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 900;
+            white-space: nowrap;
+            border: 1px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 255, 238, 0.6);
+            text-align: center;
+        }
         .update-badge-popular {
             position: absolute;
             top: 15px;
@@ -2623,6 +2643,7 @@
                     <div class="option" data-value="az">🔤 A → Z</div>
                     <div class="option" data-value="za">🔤 Z → A</div>
                     <div class="option" data-value="popular">🔥 Popular Games</div>
+                    <div class="option" data-value="fpkg">📦 FPKG</div>
                     <div class="option" data-value="size-asc">📦 Size ↑ (small first)</div>
                     <div class="option" data-value="size-desc">📦 Size ↓ (large first)</div>
                 </div>
@@ -2695,6 +2716,7 @@
                     <div class="option" data-value="az">🔤 A → Z</div>
                     <div class="option" data-value="za">🔤 Z → A</div>
                     <div class="option" data-value="popular">🔥 Popular</div>
+                    <div class="option" data-value="fpkg">📦 FPKG</div>
                     <div class="option" data-value="size-asc">📦 Size ↑</div>
                     <div class="option" data-value="size-desc">📦 Size ↓</div>
                 </div>

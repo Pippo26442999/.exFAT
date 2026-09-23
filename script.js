@@ -439,9 +439,23 @@ function sortGames(games, sortType) {
         case 'size-asc': return sorted.sort((a, b) => sizeToBytes(a.size) - sizeToBytes(b.size));
         case 'size-desc': return sorted.sort((a, b) => sizeToBytes(b.size) - sizeToBytes(a.size));
         case 'popular': return sorted.filter(g => g.popular === "on");
+        case 'fpkg': return sorted.filter(g => hasFpkgLinks(g));
         case 'default': return sorted.sort((a, b) => (originalOrderMap.get(a.title) || 0) - (originalOrderMap.get(b.title) || 0));
         default: return sorted;
     }
+}
+
+// ===== HELPER: controlla se un gioco ha link FPKG (anche solo fpkg_size) =====
+function hasFpkgLinks(game) {
+    if (!game) return false;
+    // Ha il badge fpkg_size?
+    if (game.fpkg_size && String(game.fpkg_size).trim() !== '') return true;
+    // Ha link FPKG singoli?
+    if (game.fpkg_akia || game.fpkg_viki || game.fpkg_buzz || game.fpkg_data || game.fpkg_filek || game.fpkg_vault || game.fpkg_filed) return true;
+    // Ha link FPKG standard/backport (dual)?
+    if (game.fpkg_standard_akia || game.fpkg_standard_viki || game.fpkg_standard_buzz || game.fpkg_standard_data || game.fpkg_standard_filek || game.fpkg_standard_vault || game.fpkg_standard_filed) return true;
+    if (game.fpkg_backport_akia || game.fpkg_backport_viki || game.fpkg_backport_buzz || game.fpkg_backport_data || game.fpkg_backport_filek || game.fpkg_backport_vault || game.fpkg_backport_filed) return true;
+    return false;
 }
 
 function applySorting() {
@@ -2795,7 +2809,13 @@ function renderPopularGames() {
             if (game.ffpkg_akia || game.ffpkg_viki || game.ffpkg_buzz || game.ffpkg_data || game.ffpkg_filek || game.ffpkg_vault || game.ffpkg_filed) {
             }
             
-            htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}${ffpkgIndicator}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`; 
+            // ===== FPKG SIZE BADGE =====
+            let fpkgSizeBadge = '';
+            if (game.fpkg_size && game.fpkg_size.trim() !== '') {
+                fpkgSizeBadge = `<div class="popular-fpkg-size">${game.fpkg_size} FPKG</div>`;
+            }
+            
+            htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}${ffpkgIndicator}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div><div class="popular-size-group">${fpkgSizeBadge}${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div></div><div class="click-hint">✨ Click for details</div></div>`; 
         });
         track.innerHTML = htmlContent + htmlContent;
         attachPopularCardEvents();
@@ -2819,7 +2839,13 @@ function renderPopularGames() {
             ffpkgIndicator = `<div style="position:absolute; bottom:70px; left:15px; z-index:5; background:rgba(255,0,128,0.9); color:#fff; padding:3px 10px; border-radius:4px; font-size:0.6rem; font-weight:900; box-shadow:0 0 10px rgba(255,0,128,0.5);">FFPKG</div>`;
         }
         
-        htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}${ffpkgIndicator}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div>${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div><div class="click-hint">✨ Click for details</div></div>`; 
+        // ===== FPKG SIZE BADGE =====
+        let fpkgSizeBadge = '';
+        if (game.fpkg_size && game.fpkg_size.trim() !== '') {
+            fpkgSizeBadge = `<div class="popular-fpkg-size">${game.fpkg_size} FPKG</div>`;
+        }
+        
+        htmlContent += `<div class="popular-card" data-game='${JSON.stringify(game).replace(/'/g, "&#39;").replace(/"/g, '&quot;')}'><div class="popular-card-bg" style="background-image: url('${game.image}')"></div><div class="popular-card-gradient"></div>${updateBadge}${ffpkgIndicator}<div class="popular-card-content"><div class="popular-card-header"><div class="popular-game-title">${escapeHtml(game.title)}</div><div class="popular-size-group">${fpkgSizeBadge}${game.size ? `<div class="popular-size"> ${game.size}</div>` : ''}</div></div></div><div class="click-hint">✨ Click for details</div></div>`; 
     });
     track.innerHTML = htmlContent + htmlContent;
     
