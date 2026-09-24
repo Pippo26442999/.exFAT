@@ -1,5 +1,57 @@
 [
    {
+    "title": "Tales of Xillia Remastered",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Tales_of_Xillia_Remastered.avif",
+    "tags": [
+      "PPSA16951",
+      "v01.000.003",
+      "ASIA to EUR Langs",
+      "4.xx BackPort"
+    ],
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoianpDUk9LRXJ5THplZnowc0JkRVZRYXhzK3hQaGFtaDRPQWI4UkJpUWFOS1VRNmoxdk12UFZLdW1jWXVXak9KMWpEbWt0WU1mUnhKNFY0TVVVWXYwTC9GRDdmeUprclBxckIwPSIsImkiOiJ1N3RkRW94ZlovaS8yNTMrIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZUJwN0phMGtVSEZSd0NZb0xiUTJES3drc3FQMEVQM2x0dGVQVW5JQVBPQklkNmRpWFZSUEMvcmk1V3BmK2lCRW01M1JZcEswQ1hrYzdiTkZaKzRTUm9XbC9PRnJOQWc9IiwiaSI6Im9zODYvRmVtbU5XTDByUzgiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoickIyNnhOejl6MGpuaWp1MitmbmVsaURBeHBQVEZwQU9oZXgyeWpPWWFjenEzelFacGFobXhoK2hsb2U4VCt5K2E1SjBvT0NJTjRkZHNYc0xaTEVZOFQzdm0yYmsiLCJpIjoid0R6QU95THY2T0FSOG42bSIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicTVoY2pLdGw4QmVkSHdPZHcwVnFrdno1b0Rwa2pWZzhBZmgrTHRaaTNXUExjUVFlOVNYb1V4bVlGOWd4bjFMUWsxVk5vZEFqbDcwUytyU2I3SEhqaHhCMjY2aXJ1MXM9IiwiaSI6ImEwcFhQSVBWZTIyZ2dDZDMiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibUdFWE5ZOTBYWVNQbTRCcmQwRTdGSExsTU5aYVM5a0gxN0xZRUJ1cUNVbjA1Nm5lNm5KeEN3YllLK0hVNGtVU2JoWmVDQUZxbVZHcmxLRHo2cVRPc1JBb3A5eTBNNXhiSlJKRXpKVjBtYW1Jc2c1emdFQnRRSS9ZbFBHd3VVTVllekNxTGlYYm9VMEdiWE1xaGZtNG9wY0giLCJpIjoibGVRME9hcGZhcUxSZGVQZCIsIm4iOiJGaWxlRCJ9",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieEg4QkdoNk4xSkVqR2FTWVAvai95SW50S2t0cnlSRnNlRFREUXFjZ3pmMUUrdXB5U1c2dThXUjhucEJkUDBVZE1HSWQvRW8vY1UxZHVZMUM5RUcwTVRKTTdEcnJyTGhGV1lzPSIsImkiOiJtMERoeU1jSDFXQ2V3ekpGIiwibiI6IkFraWEifQ==",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSmJUQko0djhML2srT0YwWXh2YURoZW9SSUVjTjFHR1hzMVZHL01rSTdkTkRDczExNyt6bDRKVURYUUlCdVk2VURpNVBLYWNNSzFtZFMrdENETnh1UzhHczc4OFBxb2c9IiwiaSI6Im1abC82NDlyRTFHUU00RUEiLCJuIjoiVmlraSJ9",
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicGl0ekRxYUZ2WWJVcG9zencxdFMxOHJub1hkUFVEaXFZZDZtU2JCbnhVOTB4N0FtbjlmTHBvTENDWis4bFp6Rk8xWHZCMEhzTC92VzZkZzBtaVErY2xCZDB1eEMiLCJpIjoieWE5bXZHbFpCNlAxZjQxaCIsIm4iOiJEYXRhIn0=", 
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY0EyNmp5UlB1UEtJdE1welNuSlNYYmoraVVWdi9jczJaVlFjaDBSNmtjMlNkWjVtMFpWbEh2aGJBaXlxN2F1ZlBxc0F1MmV5ZUFRT1FRMmdreDEvWlRLYkVCdTk4em89IiwiaSI6IkpGdWpvbGxBdzhhQ3ZKZzciLCJuIjoiRmlsZUsifQ==",
+    "dump_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRVNtZ3Y2U1FNQm5uT2RuVC94WTNwL0pFQXJOaU1aalltVU5YdzZYazBOWXA4SEkzZFQ0N2xKMDR4V3lHNSsrcy91eFhpeE5RU2FDc2tHeWZ6TVZROWNVL2xpUW8xejN5NEtuT2xDaW5qWmt6SFhjV2JIaERoUEdYZDBMTXdxZkhPNGR2b2prZDl3PT0iLCJpIjoiMy9uWWxqa3FMZXlBLyt2eSIsIm4iOiJGaWxlRCJ9",
+    "credits_files": "月凌风",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "apr_emu": "on",
+    "fpkg_size": "16GB",
+    "size": "18GB"
+  },
+   {
+    "title": "No Sleep For Kaname Date From AI THE SOMNIUM FILES",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/No_Sleep_For_Kaname_Date_From_AI_THE_SOMNIUM_FILES.avif",
+    "tags": [
+      "PPSA24662",
+      "v01.002",
+      "JPN",
+      "4.xx BackPort"
+    ],
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibE93SzN6Rm93b2puaGxFS1BIT3FuaVBzMG9OZWVLWVlhT3gwaG1hcXlNQmJoZmc5MnlLSXgvWlkvSGtQd2JCV09MU0RpREJyWFIyZFVVdzZSUzdWTGpiV3JIeGFVV0pGaHlFPSIsImkiOiJZZEpFUTZKbWRTUE0rR3JqIiwibiI6IkFraWEifQ==",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiKytBK3JKbnlXSTRIODRRK2xpUmRZRG5DQy9vMG94SXRlemlMZUlWQ25nZHhCKzZiZWI0Q2YxcUFtZkswM3J4VllRUXNLdW1uMUZQV2xZUEpneDRGQ1I1aCtSbnZGMTQ9IiwiaSI6InpXbDJNYWovTGhlOHNKcGIiLCJuIjoiVmlraSJ9",
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVlV2bzdNdUZFM1piYlNsSU4yRDQyZCtsQXZiYXhENm5hem9JaEJvUUt0Z3h0TDIvTkdPaWxuVVQ4V09DN3pIbFNKSVIzcWRQTkw3a0V0WTYxZkxra2Joa1hEaGciLCJpIjoid21od0N0YW1FandXemR6YiIsIm4iOiJEYXRhIn0=", 
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZStIUWErU252VHJDN0JhMElwekN4VGVFMWFxYUpNMTVGZU85RTZPVFduNmxmandHNVJyV2ZiUVBVWk5NckdQS1RRdHNzVXNIQlhtRWJXWThadTFTOGgzSEUwWCtKZnM9IiwiaSI6InJrYzBaUnhtNnAzUW9WSEYiLCJuIjoiRmlsZUsifQ==",
+    "dump_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZWc0cjFicGthcCtKcGlyYjhBQ0V2SE5qeFJVdW56dmFSZmsvSG9Ec3RtdlcrNEZhdmhzS0Y0dmNZSDJ0TFA0SWZpN3NxNGQxSk8xc2pIbUc3VE1qSk1jRjI1Lzh6dz09IiwiaSI6IlhpZnB0WlIyczdmNC9YWTkiLCJuIjoiVmF1bHQifQ==",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMUpxZWhEZVh3MFNqRHJPd3lxdnNJSHo3dkVYd1pqbmM1VzBuZlRldHh6cVlrdXZBbUw4aHZvdjdTUEVtY1NRN3dDMHZkK2JRdmF3Vk45cmIvdDZubGlQa1h3cHBoa0Z4ZEpzPSIsImkiOiJYdkFPYTNlb3U0alBvdDlRIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL0p5V3l5Y2pvYUN6ckc3R2FCK1Foek9IeXdRSkZGaWFtZTMrWDgxNGhqSlZwSEkwcFlZc3lQUm5xZk0zZ0dHVURBNlBWRGR4R0RLcEppTXpOQWpKWkpiMjREOWl6c009IiwiaSI6IngveFNvM0pvdVh1ZGFjZzkiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU0ZMTnFnTklNTWJhUXZDblR0emU1ZllSNnBLN2JDL3ozK2tqSXdLcysxR3VUY0c0VlJzdjJNVUN5WjdiZkxScHErOU5sVi93RmtwYkE1anVuT1dlbXB5U3djVEciLCJpIjoiZ1c1bDBUc2g4N0Zua2FVKyIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMG1WNHRqMngvUUhqSUx4Tkc2S0Iyc3MrQTdkbnpXdDF3d3ZDSm5kbk1oOWhLU3UxNFl2TEZkUE9HOFgwV1VidlY3T045OFVrLytGN2JVQ1VFenE0R25JREUzMmpNcmM9IiwiaSI6InRHeG8xM3ZrL1UxOXoxbkoiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNXhOY2NobEp6N3hjME52TEVTNHhmbGx3LzdHS1hsV1BoZk5YYXNRY0JQaTRMb2RHcjVCY1JYN1VzV2N2TmFpRTNzZllpTTJpTDJzZis3OWRDLzd2WVA4ZU9jNWxQUT09IiwiaSI6IjdwcVVtTTNDYW5nSUROTWYiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "月凌风 & 来栖晓",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "apr_emu": "on",
+    "fpkg_size": "8GB",
+    "size": "10GB"
+  },
+   {
     "title": "Days Gone Remastered",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Days_Gone_Remastered.png",
     "tags": [
