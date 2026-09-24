@@ -17,7 +17,7 @@
     "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibWYvYnVXVnRTM0dpQWxkcFBFQk1zbENpNGtwa1NzWVdWaDVjMnNxQXp4OHgvaXVraHZiRHk3M01meFdZTXYwTWdMcFpCSW5KTVlvZEFLNTNCUnR4bnc4MCtQdjZYYjg9IiwiaSI6Imk5SXlZSDV3ZjZpUkg4NkoiLCJuIjoiVmlraSJ9",
     "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWlZFdElWekd2L2J3VWVvY2ZRQ3hhQTNocmFvMEVmNVpVWlZOSitkb0VSckw0aWJuVmpBNkNBY2pDYXpnYTlCTWp1T0tidTFRamU2ZENRQ041YUt5MEp5ZjNrNnEiLCJpIjoiWTdZV1JPREVFcVExM1VRQyIsIm4iOiJEYXRhIn0=",
     "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZHZpZjQ1ZVVnY3IyZEdZdzlESGNpVXJnNkFWUGZIYVI4OTVUT3B2RTBrdTNXUm1YbGpPdG9SRmphSmR5RkMvdEdrMzg2N0E3Qks2cHZ4dFFpdUhPVnErWDRkNTNGR3M9IiwiaSI6Ikg1STZQTzQwREI5WXZHVWoiLCJuIjoiRmlsZUsifQ==",
-    "fpkg_filed": "",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibWU1Ry9zS0VrYlRTS3FtWE83RnZieTlVekVOQUFyeFplaE14TlhVYVIwdkk0OWF0d2JqUUhPWUFSMmEvQkpYR1grenN2VHdYRGNSMmF0eTYwdEowNTNjYklKaEhBSUZmQmE3OXdqWDdIV3NpRy8xZ3BnMXpER28yUGJpQS9yQ256MnlUdnJscjJrYjFVZFA5RWwzZld4U3kiLCJpIjoiL3ZWb0NHM0pNaWJjeW42ayIsIm4iOiJGaWxlRCJ9",
     "credits_files": "DUPLEX",
     "credits_backport": "DecKerr97",
     "how_to_play": "ShadowMountPlus beta16 is recommended for exFAT, FPKG fixed for make it work with ShadowMountPlus 1.7beta1+, thx to DecKerr97 & drakmor for suggestion. FPKG atm is only working up to 11.60, use exFAT if you are above.",
