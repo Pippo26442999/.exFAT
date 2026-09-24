@@ -1,5 +1,32 @@
 [
    {
+    "title": "Battlefield 6",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Battlefield_6.avif",
+    "tags": [
+      "PPSA19534",
+      "v01.000.016",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYmhINUVtTlkwcjdKbVd1UGExYnIwRUZPTThyaGEzUUdDazNTeDFLRFlsMVIvc3FLcC9qMndvYW5tck12SXpDV2Y5QnFUaDU5RnZLVWVGdGdkSUtuMkZUd0xRVWoyb0FLZXRBPSIsImkiOiJqckdYMUZLenZ0OE95ajAvIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3lIMk9xN20rbmtpdUNwNkFkWjJwYmRlbHBtZHIxeHVkUGtoMHRkS2trdkJFemova29TZytoWXY2dXpvZUZkMWNFWUgvMldvQTM5THpDUVRLb3hyUnpib01oQkpOZ3c9IiwiaSI6IkowakE1aWE3ZFBIV3dNREoiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRndUZkltRWNwMWd3d2U4TXhlUkJ3NHByS1Iyb1FXWS9rcVhucTcyOXlNMTZLUUVCZ282YVc4YXJlZUFIc0FYY3R4eTVQMWJqRkFUSlNVcG52MVUyLzc5NXZma0siLCJpIjoibDJMSUdMNXRoQjRYRlJ3OSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM0w5TnNmQkJqVS8zZk9EQkVsQTJxcE83UXZ3YjVvSGhoZ1BmYjRuS1pxbFJnQmUvTHlEQ3dqd2hPOXlwNDA0bGNVQ0pOU0ptMmhZRGllb0crR1dubWx4NEJsem9Vemc9IiwiaSI6ImVFNXFMUVZqSmJjeWZZOWYiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZU03M1RSN0RvOG9xN1Y4M0k3UE5aZnFXcEdHcWpHR2F4RWZYUWg1QkROcllmMnlnSkJGdHl3SVBseGxqYXhGd0RJM0hzdmVVMzhxTFhLbWc5SmxPOTZyN01MRmhDQT09IiwiaSI6Ik9aT3ZlV3ExN2tuc2VocTkiLCJuIjoiVmF1bHQifQ==",
+    "fpkg_akia": "",
+    "fpkg_viki": "",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWlZFdElWekd2L2J3VWVvY2ZRQ3hhQTNocmFvMEVmNVpVWlZOSitkb0VSckw0aWJuVmpBNkNBY2pDYXpnYTlCTWp1T0tidTFRamU2ZENRQ041YUt5MEp5ZjNrNnEiLCJpIjoiWTdZV1JPREVFcVExM1VRQyIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZHZpZjQ1ZVVnY3IyZEdZdzlESGNpVXJnNkFWUGZIYVI4OTVUT3B2RTBrdTNXUm1YbGpPdG9SRmphSmR5RkMvdEdrMzg2N0E3Qks2cHZ4dFFpdUhPVnErWDRkNTNGR3M9IiwiaSI6Ikg1STZQTzQwREI5WXZHVWoiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "ShadowMountPlus beta16 is recommended for exFAT, FPKG fixed for make it work with ShadowMountPlus 1.7beta1+, thx to DecKerr97 & drakmor for suggestion. FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "110GB",
+    "size": "234GB"
+  },
+   {
     "title": "F1 25",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/F1_25.avif",
     "tags": [
@@ -3982,27 +4009,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "256GB"
-  },
-   {
-    "title": "Battlefield 6",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Battlefield_6.avif",
-    "tags": [
-      "PPSA19534",
-      "v01.000.016",
-      "USA",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYmhINUVtTlkwcjdKbVd1UGExYnIwRUZPTThyaGEzUUdDazNTeDFLRFlsMVIvc3FLcC9qMndvYW5tck12SXpDV2Y5QnFUaDU5RnZLVWVGdGdkSUtuMkZUd0xRVWoyb0FLZXRBPSIsImkiOiJqckdYMUZLenZ0OE95ajAvIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK3lIMk9xN20rbmtpdUNwNkFkWjJwYmRlbHBtZHIxeHVkUGtoMHRkS2trdkJFemova29TZytoWXY2dXpvZUZkMWNFWUgvMldvQTM5THpDUVRLb3hyUnpib01oQkpOZ3c9IiwiaSI6IkowakE1aWE3ZFBIV3dNREoiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRndUZkltRWNwMWd3d2U4TXhlUkJ3NHByS1Iyb1FXWS9rcVhucTcyOXlNMTZLUUVCZ282YVc4YXJlZUFIc0FYY3R4eTVQMWJqRkFUSlNVcG52MVUyLzc5NXZma0siLCJpIjoibDJMSUdMNXRoQjRYRlJ3OSIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM0w5TnNmQkJqVS8zZk9EQkVsQTJxcE83UXZ3YjVvSGhoZ1BmYjRuS1pxbFJnQmUvTHlEQ3dqd2hPOXlwNDA0bGNVQ0pOU0ptMmhZRGllb0crR1dubWx4NEJsem9Vemc9IiwiaSI6ImVFNXFMUVZqSmJjeWZZOWYiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZU03M1RSN0RvOG9xN1Y4M0k3UE5aZnFXcEdHcWpHR2F4RWZYUWg1QkROcllmMnlnSkJGdHl3SVBseGxqYXhGd0RJM0hzdmVVMzhxTFhLbWc5SmxPOTZyN01MRmhDQT09IiwiaSI6Ik9aT3ZlV3ExN2tuc2VocTkiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "DUPLEX",
-    "credits_backport": "DecKerr97",
-    "how_to_play": "kstuff lite 1.10+ by EchoStretch with ShadowMountPlus beta16 is recommended.",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "234GB"
   },
    {
     "title": "NHL 26",
