@@ -1,5 +1,33 @@
 [
    {
+    "title": "Final Fantasy XVI Complete Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Final_Fantasy_XVI_CE.avif",
+    "tags": [
+      "PPSA10665",
+      "v01.003.004",
+      "EUR",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUEI1aHZnUTBQa21idkY3eElHT3hQMTVRMDdvMC9VN0tJTDc1MUtQUm9lbDBkUTgvWU0yNmpMb3AxLzFIaWhQdVhzY2xkSENTUjkwSzVFV2RoRndYb0xvME1SK0F3eWJFYkpZPSIsImkiOiI2NmhvUGRJTitOYUUwSFNQIiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTXVxWCtDZkVNeGYwWkczWU9UQWwwY3JJOWFhSzE4K2M1cjVnWjVHdDBoS3kzMnhZd0dOM0NMTGV4MGM2aXZYNndvY296ZS9xb2ZJa1c0UDB5UzB1T2ZoZzh5Q1psYmM9IiwiaSI6IjdIRVJTak9JeU1tS1FLRXoiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQVRBL3NLei91TmJ1K1EzU2hrSWpOU1NYdzFMQ2trVFZuenREZy9zSFIxeHBvSWorczgzS2NrR3A4Y3N3ZTU3aUVnZTg1dFV4bmdsYWtVSi9XVnFlR0J4Q2kyUDYiLCJpIjoiY0QzeER5QkpZV1JNYzNIdSIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMCthYkc0bHpuRTMrdUdkNytLcXhGVWZpZElOUFNUd3k4Zzd2MDJuTUx4aDRzaU5iTlNZSm4rR2VXM0kyOTZraGdCUS9NVnQyRWdlU0lEZVduRFBUT0dSOHRieHczcG89IiwiaSI6IkpkSWJNb3dwMVRxT05leWciLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaCtPZmQ4ZU5aQks3dmdSa1BjOG9vZ2J4TmdqU0piSVkrUmdxSVVmTVNJdzUrcEZkeWg3djZyQnFiVmpJVlpHQVRWZUZ4eUYrU2dLdE05bkdkWFl6dTZrWUtJanpmQT09IiwiaSI6InMzSzQxMFVUd0Q4YnVxaFkiLCJuIjoiVmF1bHQifQ==",
+    "fpkg_akia": "",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTnhsbDJIUU1IV095QngzNW1BRFVtTWpDbVRtYVNZMTc3Mnk0SVZhME9DWXoyQzRKbGFSNm42eDZscys4KzVnNGdyRHV0a0VIaUtGN0NiTXM4RG5keis5bGVNR1luSVU9IiwiaSI6IjkvRFJwSEJwbkxKRHBLMHoiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidnF4eXFRa2YxOFpkcklDYm5acWlGMnFTcG8rQlNqZThmdzdRd2cwazNNTHZLWUtBdVVxWG5Sc1ZEODhESDR0SU45RWh3aG5YMHFlRE1QU0J5L3RINm1ZUndKTDEiLCJpIjoiQzFtNUs5cFNHUHJDeFlmLyIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaFdTWVVjRW13K0dxcVhrTGgyN0NWRmc4OEd0c2t6SXl0c2t1dW51a0VRcElJYzZKdE8yRGovZHl1R3lIdzcxcDU5amhvU2QwWE1FVEV4TWFqNzZYekJEREd6UHBpdzA9IiwiaSI6ImVOcVRWTDdZRmR5UkY0ZEEiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX",
+    "credits_dlc": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "107GB",
+    "size": "296GB"
+  },
+   {
     "title": "Forza Horizon 5",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Forza_Horizon_5.png",
     "tags": [
@@ -1431,27 +1459,6 @@
     "credits_dlc": "Pkykzhack",
     "apr_emu": "on",
     "size": "55GB"
-  },
-   {
-    "title": "Final Fantasy XVI Complete Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Final_Fantasy_XVI_CE.avif",
-    "tags": [
-      "PPSA10665",
-      "v01.003.004",
-      "EUR",
-      "DLCs Merged",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUEI1aHZnUTBQa21idkY3eElHT3hQMTVRMDdvMC9VN0tJTDc1MUtQUm9lbDBkUTgvWU0yNmpMb3AxLzFIaWhQdVhzY2xkSENTUjkwSzVFV2RoRndYb0xvME1SK0F3eWJFYkpZPSIsImkiOiI2NmhvUGRJTitOYUUwSFNQIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTXVxWCtDZkVNeGYwWkczWU9UQWwwY3JJOWFhSzE4K2M1cjVnWjVHdDBoS3kzMnhZd0dOM0NMTGV4MGM2aXZYNndvY296ZS9xb2ZJa1c0UDB5UzB1T2ZoZzh5Q1psYmM9IiwiaSI6IjdIRVJTak9JeU1tS1FLRXoiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQVRBL3NLei91TmJ1K1EzU2hrSWpOU1NYdzFMQ2trVFZuenREZy9zSFIxeHBvSWorczgzS2NrR3A4Y3N3ZTU3aUVnZTg1dFV4bmdsYWtVSi9XVnFlR0J4Q2kyUDYiLCJpIjoiY0QzeER5QkpZV1JNYzNIdSIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMCthYkc0bHpuRTMrdUdkNytLcXhGVWZpZElOUFNUd3k4Zzd2MDJuTUx4aDRzaU5iTlNZSm4rR2VXM0kyOTZraGdCUS9NVnQyRWdlU0lEZVduRFBUT0dSOHRieHczcG89IiwiaSI6IkpkSWJNb3dwMVRxT05leWciLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaCtPZmQ4ZU5aQks3dmdSa1BjOG9vZ2J4TmdqU0piSVkrUmdxSVVmTVNJdzUrcEZkeWg3djZyQnFiVmpJVlpHQVRWZUZ4eUYrU2dLdE05bkdkWFl6dTZrWUtJanpmQT09IiwiaSI6InMzSzQxMFVUd0Q4YnVxaFkiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "DUPLEX & SiESPta",
-    "credits_dlc": "DUPLEX & SiESPta",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "296GB"
   },
    {
     "title": "It Takes Two",
