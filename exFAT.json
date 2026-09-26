@@ -1,5 +1,28 @@
 [
    {
+    "title": "Vampire The Masquerade Bloodlines 2",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Vampire_The_Masquerade_Bloodlines_2.png",
+    "tags": [
+      "PPSA15186",
+      "v01.013",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWkZ6bjJuaDIvd2FZNGhnZnk3WGpPTG55UnJwbXU1cEsvMlFUd0dqN3MrTXBGUEZ5RXI2VTZNdlRnSlpRclJ5RWIyc3VTdGFmZjErdGo5eFBUclVYemxMZXFTSUsiLCJpIjoiWXlpVUZvTnFPT2Q0R1FvTCIsIm4iOiJEYXRhIn0=",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUGxSR3BHazBVZTFPN1dDb01lRlFXQjBHT1R6dkg3QUordmpMQWoydlRNaVp3ZDA1ZUExWHc5K0swSDFhR05JWm9qbWN2dmk0M1R0VzdCdlp3Y0MyeERCTWRXWE1sd3c1ajIwPSIsImkiOiJzYm91SjZud2RGTGJ1N2hVIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ2NYdTN0SFZvWk9ZL2hPTWNCWW4xV0ZrUVhqM040R1hLaVp6R0I1MU02V2FON2tuVXBMZUdqVUc1TU1vdXdrK1M4Y0FJcVc5Zm4vdDdLK253TTh1UERHd1o0TjBBRDQ9IiwiaSI6IkhXOWN3TTlWMW1VYjFybkoiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMWkrMlVFT1BjMFFZeTdzSGdEZ2NnM0hWZ0RYb3RGTURiV3ptTWxXM2Ruc3E2cUNrdGZxTXVLWWpIdlQyNkJ6YzVhTDF1Z2ZZcjNoWlZzckYvYzVoZy9vVUsxZUIiLCJpIjoiUExZRFpsSGdHNHRVNkt6SSIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV3JYTmVzaG9mbXUrZE8rWTJVS3JINURXb3ZpdGdLSmUxTWJIMitLN3dENkN2Z1REZjdLcHl2WE1sMU11MEc1dW54L2I0ZGVlSklQaGM3OUQyeW83cjBFOFQ2ckY0YWM9IiwiaSI6InBIMkdoU0NZZHZkcFVqZS8iLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRzVreUtrZ09oTzF3Z3I5blpHck1US3c3WjlOOVFELzNmUDJobXdPRWN4NmJDV0ozUmE3djV0STVaSWNSQi9zZUpGMERFR2VremhBMFA4bXJKNEtpRWpsYmdtcGxqSnVBL3ZUYUNpOHhPZjNjQmhrRVpJTEJNd2xyVGVQaHdaN3U2MzQwQVJpNTZzVWZkS0duanBzaks5MEZIZz09IiwiaSI6InQ4aUl2V3U0YW9zcnI2SmUiLCJuIjoiRmlsZUQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUM5R054NWZIT3pGeE5VK096ZHVoQ3AyQlF4VXlzT1ljVVJRdGJRblJVVmVRUFlmbWRtbUljTElINlk4OWNNVDJwYzZCU3JlMzkzdVdZUm44TnIxUzVCSG9rZVEiLCJpIjoiU1hoSytETlZ2TmhNQ2F6VCIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidlFkby9YUTF3bDk5eE0yVHFmYWtSU0R2WEtRK09aV0daRlgrMUFDSXA3dW9rSlYvVXVBUTAvTjcrbXhKeUhwemd0M0hqTVMzTUw1KzFEWVh3K1BiNzVVcnFlbDY3QT09IiwiaSI6Ik9QVFROOVpVbTBxWTkwUXciLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "fpkg_size": "19GB",
+    "size": "19GB"
+  },
+   {
     "title": "Final Fantasy XVI Complete Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Final_Fantasy_XVI_CE.avif",
     "tags": [
@@ -75,7 +98,7 @@
     "dump_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRVNtZ3Y2U1FNQm5uT2RuVC94WTNwL0pFQXJOaU1aalltVU5YdzZYazBOWXA4SEkzZFQ0N2xKMDR4V3lHNSsrcy91eFhpeE5RU2FDc2tHeWZ6TVZROWNVL2xpUW8xejN5NEtuT2xDaW5qWmt6SFhjV2JIaERoUEdYZDBMTXdxZkhPNGR2b2prZDl3PT0iLCJpIjoiMy9uWWxqa3FMZXlBLyt2eSIsIm4iOiJGaWxlRCJ9",
     "credits_files": "Yue Lingfeng",
     "credits_backport": "DecKerr97",
-    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
     "apr_emu": "on",
     "fpkg_size": "16GB",
     "size": "18GB"
@@ -101,7 +124,7 @@
     "fpkg_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNXhOY2NobEp6N3hjME52TEVTNHhmbGx3LzdHS1hsV1BoZk5YYXNRY0JQaTRMb2RHcjVCY1JYN1VzV2N2TmFpRTNzZllpTTJpTDJzZis3OWRDLzd2WVA4ZU9jNWxQUT09IiwiaSI6IjdwcVVtTTNDYW5nSUROTWYiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Yue Lingfeng & Lai Qi Xiao",
     "credits_backport": "DecKerr97",
-    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
     "apr_emu": "on",
     "fpkg_size": "8GB",
     "size": "10GB"
@@ -131,7 +154,7 @@
     "credits_files": "High-Speed007",
     "credits_backport": "BestPig & DecKerr97",
     "credits_dlc": "Pippo (Lapy05575948 Tool)",
-    "how_to_play": "For make Region Bypass work i sacrifice French Audio Only, texts are fine. FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "how_to_play": "For make Region Bypass work i sacrifice French Audio Only, texts are fine. FPKG atm is only working up to 11.60, use exFAT/Dump if you are above.",
     "popular": "on",
     "fpkg_size": "44GB",
     "size": "67GB"
@@ -9928,42 +9951,6 @@
     "size": "2GB"
   },
    {
-    "title": "Tomba 2 The Evil Swine Return Special Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Tomba_2_The_Evil_Swine_Return_Special_Edition.jpg",
-    "tags": [
-      "PPSA29866",
-      "v01.300.100",
-      "EUR",
-      "7.xx BackPort"
-    ],
-    "backport7xx_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiKzMzbDF6bi9CUzdYSGVRbHpGUndhdnNscFp6MmNySEEvQ2llejVQRWdEdTRZZ2Rwbll5L1VHV1NadFlZNWdPSEF2VDk0aFBUZkVKY2ZiUVpuNVJJTnlBVW1qcTU2OEYrMnBFPSIsImkiOiJnVFNSdmRqaGNqRm1zSlZvIiwibiI6IkFraWEifQ==",
-    "backport7xx_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZzBZTStxTHlvbjZSREYyWWM3SnlscjRpN2dad0ZFT1VtT2JwQWg0NjZFMElqc1VRZ0RUeEpuSVFpQWlMRjN1Vk9SSHR0bVBkUHl6K3NFSVovL2tTeTJLL3BQMHNlRXc9IiwiaSI6IlY3SGR2TmtmUjdCa3pRc2YiLCJuIjoiVmlraSJ9",
-    "backport7xx_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTC95RnJHSFhuYnlYMUZuNGlBVzZZTUtjTUtyVW43ZUFHWUprQlNoV2FlbEE4QWlnNExMOEhVN29HR2hPQldQVGgzQ1B6MStHM2FQa1IxcXlJMVVaQ29XTHUwS1kiLCJpIjoiT2hOb3VrbllaclllSTEyWCIsIm4iOiJEYXRhIn0=",
-    "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMzZ3aG40RDNXdlFlT0gxV2FEUTBtQ0s0SGowMTJVR2pEYWVaZ0lxMjRsZ2JJeHRmdXZGVFp3Nk9sQ245aGl5cVVIdFpoaVdDUGdDWXd5MnZrMEJHR3hyc3U2NEV0Mmc9IiwiaSI6ImpmTWd4b3BnSzJ3alpXQmoiLCJuIjoiRmlsZUsifQ==",
-    "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZHNJd1FoYWxQdVpTck9Cc1FVNURYZkhVSWJFUGpMdmlXTU4vODlkWnljRzNxOFFVSEs3NUVRS1dXenMxRldiTWJhWXExM1lhVk1HT0J3VFJLdXI1QWxVZ2F0SlQ2UT09IiwiaSI6IktYZnJQVWl0NVVUWTBpNnAiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "Boredslappy & SiESPTA",
-    "credits_backport": "DecKerr97",
-    "size": "5GB"
-  },
-   {
-    "title": "Tomba Special Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Tomba_Special_Edition.jpg",
-    "tags": [
-      "PPSA21382",
-      "v01.003",
-      "EUR",
-      "7.xx BackPort"
-    ],
-    "backport7xx_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQlQ2cE04dmZ4VGluR2d4TklveHpVY1VqNm0xSVp0WXRZSFA4b3g0OGE3a0FMd0twTDUyRlg1Yjl2ZnVKaGlkZ1NyV3Q2SWpxY0J4dWM2cTNScis5VUM5eVNaL2VTQXh3ZkRFPSIsImkiOiI1S25SejZ2cnpydjYwMEVCIiwibiI6IkFraWEifQ==",
-    "backport7xx_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS2tFb2Z2VXpsNmt1ZFNtblExblZReTVWSGxMcjc5eEhLTzdaUmZQNUd0eC82czNtcytOamdHZVptVGNxbU1mZ0s3VVZiNHdlVmVhdEcyZzVlY1QrWFlXRmdyZ2tOeGc9IiwiaSI6InhONEtROGI3KzdIeGdRbFIiLCJuIjoiVmlraSJ9",
-    "backport7xx_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMVhNZVJ5ak5IVWJSZDRXd1BCVWg3UmE4bDVtazA3Z29VNmxpVEE2bnNXck41N0lGTEdhNzNPMVRGREc3STlqTkoxcEczdGdkQkUrOThoa005eEg4QW16QUIvYXgiLCJpIjoiRnZQUUJlcEpuOTlVOWZ6VyIsIm4iOiJEYXRhIn0=",
-    "backport7xx_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYklCUVJ0SDlranlQMXp1b2RjVXYzSi9XRnQ4REpjZVQvcnRtVVFOZFdVK1F3cjJVNk1Pc1E3R3JiMDFDZWFJOGFhenZTUnNVTkN5akI0RlltVWJMTjh3cldDUEVBMk09IiwiaSI6InVGYzhBbytuY28yREpvczUiLCJuIjoiRmlsZUsifQ==",
-    "backport7xx_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVUFYYVU0bG9ZZGM4Ujh6WWx4cXc0RHd6dEhzYmpTR2N4RzN0bU9CTU14NmhWYldnZS9Ob0ZOelUybXJiSDJYNmRIbmlLRVNpbkk2bm5QTTcvSXZoVi9zZ0VYU2lEdz09IiwiaSI6IkpaMlR4aTRoM2dSSUFiZTQiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "Boredslappy & SiESPTA",
-    "credits_backport": "DecKerr97",
-    "size": "4GB"
-  },
-   {
     "title": "KAKU Ancient Seal",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/KAKU_Ancient_Seal.avif",
     "tags": [
@@ -14646,23 +14633,6 @@
     "credits_files": "SiESPTA",
     "credits_dlc": "SiESPTA",
     "size": "48GB"
-  },
-  {
-    "title": "Vampire The Masquerade Bloodlines 2",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Vampire_The_Masquerade_Bloodlines_2.png",
-    "tags": [
-      "PPSA15186",
-      "v01.003",
-      "EUR",
-      "Standard (9.xx) + 4.xx BackPork"
-    ],
-    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiNGg3cVdpSStwcGJoNGRrZzFualo3YysxdndWNVdJUWFNUWdkNDc1TFh3K0JDc0RXZXo2elU3c2phN3ZRN1p4UEhNblYyVjcwIiwicyI6InZ6ZHB5RTFtTEZPc2EzcHlsYnYrZVE9PSIsImkiOiJEajB2YllmU2ZxZTI5UEF4In0=",
-    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOFVhelFFZ2liNHNyVmIxWnVIa0dha05RRWFKWU52enBKeEJ3VFdRaklmRU1WSnNoZmFUMkF5SmliTFBUMnpYWnBhRmQiLCJzIjoiU1BGWGtOVW5MQzVjdnJMMXRPNTFYZz09IiwiaSI6IjBPL2NSbU83djRST2hVUmIifQ==",
-    "backport_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiT3QwTHlWR3M1YzlNb0QzODdxdytWNEdnSmhJb2lLU2Q4eEpoSTB0NTZtakZFb1FhRFA4TlhvcmVUd2U2ZzJCR3JYcFJiWHYyIiwicyI6IjVCVjRuWCt0SFBCQ2xQanhybVg3VkE9PSIsImkiOiIzY0QxWXNDOGRoOXd3NmdCIn0=",
-    "backport_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibW1DQ1B6NktmY0lVOHZwRTZtb1NSMzQyTnNtZzB0czhGeC9LWGtpMVFaS0FSV3YzRUJwNFFMaUJ1YkE2UmE0UlVTd2kiLCJzIjoidzNzMTV5d2xnY3RuYjdhZGdERUxwZz09IiwiaSI6ImJJTHdraGFHSzVaWWx6LzMifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "size": "19GB"
   },
   {
     "title": "Treasures of The Aegean",
