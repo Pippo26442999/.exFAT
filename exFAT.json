@@ -1,5 +1,28 @@
 [
    {
+    "title": "DYNASTY WARRIORS ORIGINS",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/DYNASTY_WARRIORS_ORIGINS.avif",
+    "tags": [
+      "PPSA15972",
+      "v01.007",
+      "JPN",
+      "4.xx BackPort"
+    ],
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTmtFZ3pIYlFPUUU0bXNvWFhNRkN1Ky9TTm92dlNmYmIyWUNaRFpwV0lnZTJMQnpzSG5jMis2cnJtdnBWaTJFQkkzK1FvaDhOZzI5d0RxSzNIaUpZR3JRYmxpVHkiLCJpIjoicE44aFFvWTd6YTNWT2VlbSIsIm4iOiJEYXRhIn0=",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTy9abXFZcTZQcFo0eXpKcGFLcmhSazIwS2c4OVM3dlBXbmdYY2V4aXBURVMweW0vN3lTUjZITnUxT2JBaEFabmlJODZXaEtTYnN3K280dXcxZVZwUFMvY1ZMUXkvbmlDdzBjPSIsImkiOiJNK2RWemJOVDREZUx2L2pmIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM05nejJxQmpQd3RVamFhU1B6R0drUUtBT2hKaHlvLzJwQXgrYzh4ZU5PQWgrQndhdThNNjlaSTZET2JERzlxM0hwZHlRTmlJeEpScjVJY2ZsdXpvb0M2RjlZMDhCUkk9IiwiaSI6ImJxVXBnc2NoNWZZZk9qc3YiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicFI3ak0zR1diNzBFTGNqTnV6eFlCNXZsMjd0SkxWVk5pRlZvcmdDRXFReXE5Qk55SHF1aURtZUhrUHdBeG44cExIMFFhNnJLYm1ZWlBJemtycUZYbHgySi9ZTjUiLCJpIjoiRDBCMUp2dkw1bnUvdHJNUiIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL3ZxbGU5OUdodnZJWFVBbHpJbjRQUzJyWXFyMXZySzV2TWlaQzdMbWl5WEREWG5FUVJrQWF5a2h5UUtBUFRxK3gzMzFHekxYcWlPcW15TEdob2ptcTUwK21JVUZ3M009IiwiaSI6ImtFdGp5YlBhbWw4YXYyTGciLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU3grR2tKdFFvdGNadWFCUEpPTmw1N05RMkoyY1JpaEJYSnlnKzhHTitSWkRkNzNEVVR1Ui9tbndyNjNzRjJpb2JPR3dRMEtoejArZHBVTjhpZVlMdUZ5RW0vQURETW9qREdLRjFUWEcrTzlXSGxKc1dYdVIvLzB6MXRSakUyakowSWRvb0JBeW5HMHIrSFQ3cThvcy9TTWZ6Zz09IiwiaSI6ImlqaDdnMUplSzYrMm5UcHkiLCJuIjoiRmlsZUQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "40GB",
+    "size": "78GB"
+  },
+   {
     "title": "Stellar Blade Complete Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Stellar_Blade_CE.avif",
     "tags": [
