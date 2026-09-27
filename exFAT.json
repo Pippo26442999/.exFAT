@@ -1,5 +1,59 @@
 [
    {
+    "title": "The Last of Us Part II Remastered Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Last_of_Us_Part_II_DE.avif",
+    "tags": [
+      "PPSA15508",
+      "v02.001.010",
+      "EUR",
+      "4.xx BackPork"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN3dCcTluVWJPWFg2ZTNNQitROUNkNUN2UWduNVUvT2VjR3FxQVA2eEtWYXJyYnp5Ty96b1VuSVNtOUdNWWRib2NDQ1h5Y1czIiwicyI6IlA5dG5ORGpENnNTTW00MzB3TVYrMnc9PSIsImkiOiJ3MHUrU2t4NnJwWFg2bXlTIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWnRJWnZUbDRGVUhRbEllY2ZPQlpRRS81OXJmT081S1hmMFZXa2VwR1lNdFo4N3NNMm1GdnVUMVJONVdoZCtNUDYyRVAiLCJzIjoicVBraGFlbE5aSXdESUFXQTdnODhnQT09IiwiaSI6IjV5N2hESE1pZWkzZ1BTaUoifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1d5WUthTGlkR2EwMkx3aCt3WnhCdWVZb1dva2JzTUYxdDBON2tyQllWN0g1SjBSUkMwWENnUk5ZczNTRHdQVlJRPT0iLCJzIjoieTlyUjFQTkVYTXptM2Y2UG83ZFNNZz09IiwiaSI6ImphWTFIRHFVY1laWmsxQWkifQ==",
+    "fpkg_akia": "",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQzhqd09tOTg0aU1GWFhYTUdYTlNVT3lLQnpJSXhMR2ZkU0NEbThxYm1iRDcrYXpxQ2J6Ym5TWTUxSnBTbXVnYmExbFBsT1B3NGtIZktIQXA1TkVYQUdDemNsUG1LR009IiwiaSI6InZOWWVTQUI4N0FZTnQrYnAiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibU1qQ2d0ODAwejI4QWF1UGtFVnF2azU5UmNpbzlmL1ZVelB0ZUdjZUVMM2E4d3FhbTcvQ2lkYjEzRk9hV2xkUlpFQXZmMFpBRGsweVBTNFpEa2kxSHFEM21mMVIiLCJpIjoiYUpCR0tueEFrbllFT0JJcyIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMHBiTXlsdlcxUElMdjh2SkFrd0tJYWtTU09vZkIrODZPcURmOGVyTGZhNTFtNndZSi92WXdEV2dhbFpEMW4yTEJPL3Q4UFFKalUyaURBWmxRZkcxNlVscTAvd2NiN2s9IiwiaSI6Imk4WmF5ZmtkVktuK01QdkkiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOU44d2RUblVaS1dVNlhDVFRwajBmUEEvdE4wUFpBUTFEeVJQczBWaTZmWnJKT2QvS2h4MWV2czNZTXdqV05FVDFSMDBKVE9jMVF0QjRwWURLeVY0SCtSdlBXNWMiLCJpIjoiVktqSnBKSytQWU5LVCsxYiIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZTZNUmJKVU0rRE1LVUFqWkxHdXJUSml4Q0ZUTXZ2Ync5RjRuRWlnKzR1aVRpUGFTVFZxZ3NBbEdKUTV4UlQvbERFbFUwUWRLMm1McGEzZVZRbXBwZXBJTEs4dVpqZz09IiwiaSI6Ikxia2ZqcVFsZzRGV0RCMVciLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "SiESPTA",
+    "credits_backport": "BestPig & DecKerr97",
+    "credits_dlc": "Pippo & Pkykzhack",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "popular": "on",
+    "fpkg_size": "97GB",
+    "size": "155GB"
+  },
+   {
+    "title": "The Last of Us Part I Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Last_of_Us_Part_I.webp",
+    "tags": [
+      "PPSA03396",
+      "v02.000",
+      "USA to EUR Langs",
+      "4.xx BackPork"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY1JJYy9rOEJlSjVSZjBMbXBxUmF6bldLakZKSURleS9oY0VhMjNzcEZSV3BkcW1SVE1EWVF3VWc1d2Q3d1pvS2J2UzRFM2FuIiwicyI6Ilo5SnJZRzhYamMvbU4zc05FSWpSZGc9PSIsImkiOiJHbVBoTTNYY0hIN2JNLzl2In0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWUtFekdCQXBCTnMvU0R5dTEwRVdQUnlPMXhkN1NxTlRsdUJZNWJGT0hlblZnbEhmOHhrSFoxTEtDbTdlZGJqR1V2Q0giLCJzIjoiYk0zbFNFN08xZHRCMWhSdkxVN2ZFQT09IiwiaSI6InQ4aW9TZVh1SzZxN2lzeXkifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSWg3STVwelBpL1ZxVWN4S2hEcmhaV1dMRlVpZ3NSeFZaaHFWZ041YkxpOXR4N1Y1NGpOcHRzYWpWaUxJc2hvRlF3PT0iLCJzIjoiQkVRRXJQN3l0NTRNQU1Demt3QklVUT09IiwiaSI6InVRKzlwQzhIcmZDeE14RHkifQ==",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieDZzeCtSc002Ni8xRElSRXVOME1hOXNJMWtETndhRVI2ZEl6bmgyVUIrQ29vR1ZsWWtOQjFkUUxacUEvN2w0UVZPRGpHaGpaN3UvS2VqeWVBaktTVUxiZlFlbUNjbkhYYnA0PSIsImkiOiJFSGhVZ2JlazVuRlpUVTdqIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVG5GVTBRbjMzSnF4eU9UallJNmlGUWlqc3o3MVFLaXYzUHBkYjFLSngrSjNRclZ0ditNRlBNa3U1VzE1TElIRWVINU96a3hiQ1h3QWtCdWxJWlVUTjhFdUdFVEozazQ9IiwiaSI6IjA5a1dWRStUREI3eTVkaTYiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZnpvck5ETFVmT1ZCKzBWMEdXY0xBNHZzdk52QmdGdkd6ekVqRjcxcmovU0d0ZlMvVUl6Q3NOVTl4UWRDbjRKNE5NVm5JTk9La3ZpbGJaTGlBc1F1VVdONll5WmciLCJpIjoieXQvTk1KN0ZBWGxNN05DNSIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibnU2N3B6akhFS0d2T2VOMHVSNE80SEcybjl2Wlp0dStJTWcxMTJLeGthTDZlNDRTWTlMb29GbEJhZlFCWVJwTURERmRqYlVqM2YzZVNGZGpZZ2dpMFJqQlZ5YU1pTHM9IiwiaSI6IkVjNGdQRnJvUFJ5YnZDY0MiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTTB0Ukd2MnAxTkhVd0FXU2hCS3o3TTZxd1pwSEg2dmM1aEZlRlFhcE1LanVFRzNqeHlwdUZBTERzV0VTSGRRUFZWTTBuK29FWXNXSlFEVWtNbnNodm1oV2JqV2RXcC91bEV6ZTBxUnppY00rVzRvL0hkMko0UkwzRUt3VWNGaXRqT3djOXdWLzkra2ozdy80alFlSUg0YXUwUT09IiwiaSI6InNUZDJ3TmVjaUZEcEd0OXMiLCJuIjoiRmlsZUQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRXZqelR4ZTB1N0thR0s0emRLTjJNdVZXSUN0QmZ4NEJuZ0dyMzl3UGk4RzVzS1dRUVFYS1hxd004bHlRU2dXZmd5QTE1MjN5SGNFTXhKb1VEVmIrNTFiN0dVSGYiLCJpIjoiSWoycmJ0ZVJWTTlqLzdLSyIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVW8yWnB6Q0JqTm55a2dlYkRIWWhkNHNVV3dWTE1BdFVFUmFMRUVVYXB3bHR5UjJnbTBOSVNFTHYycXYvWUZrdVR3eFlsVk8yaWp0Z0lMSWNMK255VVZGVmJyVmhQZz09IiwiaSI6IlBmM2RaUGlHQ2JDZE5IWTciLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig",
+    "credits_dlc": "Pippo & Pkykzhack",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "popular": "on",
+    "fpkg_size": "71GB",
+    "size": "127GB"
+  },
+   {
     "title": "Star Wars Jedi Survivor Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Star_Wars_Jedi_Survivor_DE.avif",
     "tags": [
@@ -13053,23 +13107,6 @@
     "size": "30GB"
   },
   {
-    "title": "The Last of Us Part II Remastered",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Last_of_Us_Part_II.avif",
-    "tags": [
-      "PPSA15508",
-      "v02.001.010",
-      "EUR",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiN3dCcTluVWJPWFg2ZTNNQitROUNkNUN2UWduNVUvT2VjR3FxQVA2eEtWYXJyYnp5Ty96b1VuSVNtOUdNWWRib2NDQ1h5Y1czIiwicyI6IlA5dG5ORGpENnNTTW00MzB3TVYrMnc9PSIsImkiOiJ3MHUrU2t4NnJwWFg2bXlTIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWnRJWnZUbDRGVUhRbEllY2ZPQlpRRS81OXJmT081S1hmMFZXa2VwR1lNdFo4N3NNMm1GdnVUMVJONVdoZCtNUDYyRVAiLCJzIjoicVBraGFlbE5aSXdESUFXQTdnODhnQT09IiwiaSI6IjV5N2hESE1pZWkzZ1BTaUoifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoia1d5WUthTGlkR2EwMkx3aCt3WnhCdWVZb1dva2JzTUYxdDBON2tyQllWN0g1SjBSUkMwWENnUk5ZczNTRHdQVlJRPT0iLCJzIjoieTlyUjFQTkVYTXptM2Y2UG83ZFNNZz09IiwiaSI6ImphWTFIRHFVY1laWmsxQWkifQ==",
-    "credits_files": "SiESPTA",
-    "credits_backport": "BestPig & DecKerr97",
-    "popular": "on",
-    "size": "155GB"
-  },
-  {
     "title": "The Bearer & The Last Flame",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Bearer_and_The_Last_Flame.avif",
     "tags": [
@@ -13120,24 +13157,6 @@
     "credits_dlc": "DUPLEX",
     "popular": "on",
     "size": "135GB"
-  },
-  {
-    "title": "The Last of Us Part I",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Last_of_Us_Part_I.webp",
-    "tags": [
-      "PPSA03396",
-      "v02.000",
-      "Pro Features",
-      "USA to EUR Languages",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY1JJYy9rOEJlSjVSZjBMbXBxUmF6bldLakZKSURleS9oY0VhMjNzcEZSV3BkcW1SVE1EWVF3VWc1d2Q3d1pvS2J2UzRFM2FuIiwicyI6Ilo5SnJZRzhYamMvbU4zc05FSWpSZGc9PSIsImkiOiJHbVBoTTNYY0hIN2JNLzl2In0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWUtFekdCQXBCTnMvU0R5dTEwRVdQUnlPMXhkN1NxTlRsdUJZNWJGT0hlblZnbEhmOHhrSFoxTEtDbTdlZGJqR1V2Q0giLCJzIjoiYk0zbFNFN08xZHRCMWhSdkxVN2ZFQT09IiwiaSI6InQ4aW9TZVh1SzZxN2lzeXkifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiSWg3STVwelBpL1ZxVWN4S2hEcmhaV1dMRlVpZ3NSeFZaaHFWZ041YkxpOXR4N1Y1NGpOcHRzYWpWaUxJc2hvRlF3PT0iLCJzIjoiQkVRRXJQN3l0NTRNQU1Demt3QklVUT09IiwiaSI6InVRKzlwQzhIcmZDeE14RHkifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "127GB"
   },
   {
     "title": "Red Dead Redemption",
