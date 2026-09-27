@@ -1,10 +1,38 @@
 [
    {
+    "title": "Star Wars Jedi Survivor Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Star_Wars_Jedi_Survivor_DE.avif",
+    "tags": [
+      "PPSA07783",
+      "v01.013",
+      "USA to EUR Langs",   
+      "4.xx BackPork"
+    ],
+    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoianhINEhwSG84eTA3Vy8vN0V3U3RTQUExQjlNcXl2VUp3SjJxQzJHSXdzdWFvdFh5eUJyS3hscy9SVVA1eHY4Y2oyTXcvdXIyIiwicyI6InpHR0RGM3dkdEJWZjRucG9HZGdOekE9PSIsImkiOiJRM3JCemwwUWNESysxTTkvIn0=",
+    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieHdFMUR4Njc5ZFpiRzlHQ1FrOXAwRFVVWFhDOGplb1hkU2hrR2tqUnJxNkxodGRGb1RmWlh3Z1V2T0VaTlk0YXVwOE0iLCJzIjoiVVRaMG0vUXZzbmlPNW12dktrRktSUT09IiwiaSI6IkJwUDhCY1pjclN4YUtCWmwifQ==",
+    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZlZGNmI1emMzbXZFRlA1NkxzeFRjTThUVWVzUVV0Y21nc3g3TXRXL040L3F4OFpZQTdtazdMcU1kbmU2enJBaTdnPT0iLCJzIjoiRTFsOS9xeU5jbFY5ZXBhVEZRTTl4Zz09IiwiaSI6InFWdk51OElKZW9uNVpuaDIifQ==",
+    "fpkg_akia": "",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTzIxcU8waU9kRU5yTnlUSzYwYUxGUmhKZXdNWkRLdFZXNE1KVzVWdE5PQlptNnhESkJPazIvZmwxZkg2Q3p2amErOXVZS1RUUGNOZlpndXk0UTY0WEU0RHRaZEpUU3BXUVRxQ2dVOHR3b0U9IiwiaSI6Ik9GRThuTnd4a0hCMElCSEYiLCJuIjoiTXVsdGlQYXJ0cyJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZFR5aU5tVitaOWJIby9vOU95bVJHL1RiYWlPRmpVWERlVk9nbzdGcjAyVktVbngydStLMXA5SWtFVHFKeGpOU04xdHBaaUxMekVacmpYenU0UWptQW9XdnYxSzA1Ukk1dk4vMVdmVGl4dz09IiwiaSI6IlhWNXoyb05wMGxmYmZPKzAiLCJuIjoiTXVsdGlQYXJ0cyJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYkt2TitjaFJ4NVBlK2EvaGIwQ1I2Q0pJRXQ0VWs3dVFZeUFoVHE1TXZXOVBCeWZ1VTFlcW9SMkQxWk40Q3hzN0wzQ1VCcG0yaWp6RklsT0pUQ201K2ZxdjFxZFp5NCtxelNLdld5WHpoUVU9IiwiaSI6Im11eURaUUNPMDJySmZCWFYiLCJuIjoiTXVsdGlQYXJ0cyJ9",
+    "fpkg_vault": "",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV1JweE9idk1leGJXNjdMN2RsbjBCcTRmV1ByamFITHNwQUgycFFpT3J0RzJXQ3ZPZGpMeUkrcUUxSkx4YlZ6MGJKUXVMS09nTGExMGxDckNVNDNhVXhITjhrbS8iLCJpIjoiWXFQWXVSV2NKc2UzSW85bSIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoialFLTzhhdHQ0aVcxTnVEK0VDN2g0cGR4OEZhdUwyMG45MFZvZnB0d3FFTG94VjVidUpaUXJaWmVTUVZLZHA3WWFIajRwUWpYV0pNeHM3WnBOWm9DU1RTd0NoYU5lZz09IiwiaSI6IkFxbmRGejFGMmxxSUJDUmciLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "BestPig",
+    "credits_dlc": "Pippo & DUPLEX",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "140GB",
+    "size": "311GB"
+  },
+   {
     "title": "DYNASTY WARRIORS ORIGINS",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/DYNASTY_WARRIORS_ORIGINS.avif",
     "tags": [
       "PPSA15972",
-      "v01.007",
+      "v01.008",
       "JPN",
       "4.xx BackPort"
     ],
@@ -71,6 +99,7 @@
     "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidlFkby9YUTF3bDk5eE0yVHFmYWtSU0R2WEtRK09aV0daRlgrMUFDSXA3dW9rSlYvVXVBUTAvTjcrbXhKeUhwemd0M0hqTVMzTUw1KzFEWVh3K1BiNzVVcnFlbDY3QT09IiwiaSI6Ik9QVFROOVpVbTBxWTkwUXciLCJuIjoiVmF1bHQifQ==",
     "credits_files": "High-Speed007",
     "credits_backport": "DecKerr97",
+    "credits_dlc": "Pkykzhack",
     "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
     "fpkg_size": "19GB",
     "size": "19GB"
@@ -11431,24 +11460,6 @@
     "apr_emu": "on",
     "popular": "on",
     "size": "72GB"
-  },
-   {
-    "title": "Star Wars Jedi Survivor",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Star_Wars_Jedi_Survivor.webp",
-    "tags": [
-      "PPSA07783",
-      "v01.013",
-      "USA to EUR Languages",   
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoianhINEhwSG84eTA3Vy8vN0V3U3RTQUExQjlNcXl2VUp3SjJxQzJHSXdzdWFvdFh5eUJyS3hscy9SVVA1eHY4Y2oyTXcvdXIyIiwicyI6InpHR0RGM3dkdEJWZjRucG9HZGdOekE9PSIsImkiOiJRM3JCemwwUWNESysxTTkvIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieHdFMUR4Njc5ZFpiRzlHQ1FrOXAwRFVVWFhDOGplb1hkU2hrR2tqUnJxNkxodGRGb1RmWlh3Z1V2T0VaTlk0YXVwOE0iLCJzIjoiVVRaMG0vUXZzbmlPNW12dktrRktSUT09IiwiaSI6IkJwUDhCY1pjclN4YUtCWmwifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZlZGNmI1emMzbXZFRlA1NkxzeFRjTThUVWVzUVV0Y21nc3g3TXRXL040L3F4OFpZQTdtazdMcU1kbmU2enJBaTdnPT0iLCJzIjoiRTFsOS9xeU5jbFY5ZXBhVEZRTTl4Zz09IiwiaSI6InFWdk51OElKZW9uNVpuaDIifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "311GB"
   },
    {
     "title": "Digimon Story Time Stranger",
