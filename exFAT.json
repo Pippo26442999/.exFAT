@@ -1,5 +1,34 @@
 [
    {
+    "title": "Death Stranding Directors Cut",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Death_Stranding_Directors_Cut.jpg",
+    "tags": [
+      "PPSA01969",
+      "v01.005",
+      "USA",
+      "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN0RodWV2U2g0TERTYll3MkVxU3UzeGZ4Q0MxdmJSSWovbGZBREN5OU1NOHNoQjVYZ3J1REZqR1NZbkVZdjY4cnNpUWNKVU5CY0ZqTFR6cWR6VHpveFZLR00xSENtWEttSXpBPSIsImkiOiJPcUM3QytvckNoYnF1Mnl6IiwibiI6IkFraWEifQ==",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY2VLcXFaMVUrZG1WemV3ZXg5MncvdFFoZmtkM3hrRldPdFlCRDVaOVc5c01PVEcxSTdqN3RjUXNGQlZobld5WUVOSy9aUlFPVzdmZVJYQ2JhczEzeFVaOHhnaVJnSmc9IiwiaSI6IlpGUzRQN2gydkNNZ0l1WFYiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSWtLNHkyMzJKZDMyVFpGMlRBdlJsVmVQZlNqeW5nNC9XVFpMeER4SDlUcXozZGdHb05EaFl4OXBiZU1UeDV5bnN1ZWF3cWFkZ054elB2R0xrL2J4TkYraUlKSjkiLCJpIjoibURxVkxrbnFBRksycWFLWCIsIm4iOiJEYXRhIn0=",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoialRsblhLS080WTFqUG1ZLzNRdE9CTGJvbzNiZlJaRzJadjdSRmFuaTVHaklweTNyZlZEU0xZMVZ2eWk0d2V2RkdJVDlpRDdEdUN0N2pTem82QWhSQmlQRGE5bjBFa009IiwiaSI6InFxaENFeUFqWnFkMUZwRzQiLCJuIjoiRmlsZUsifQ==",
+    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZDFBYmVIdDJUMEI3WnFaR1VMOGx3aEFlMUtVVkJreTlrT291aGwraG5CdVoyMWlmbFNteWs0T3doR0pMbURiRHpkM1kyUlZMd0pMWFRzQ3daRDNZcmM3R2hSVkM2QT09IiwiaSI6InF0NHoxSE10dnFFYmRDWCsiLCJuIjoiVmF1bHQifQ==",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWjFDTnJOWWJGTjFrSFBIelp6UklWSWltZzdHcmVybEh5MnFSaGlnMFhoRmVVNEh4Ym5pRTZZSjlyR202ZHR5dzFiT2xRM01jRGJ1QUU3UmVvNW9DR3VwK0VvV0dBeWdLOXprPSIsImkiOiIvZ1kreEVPNmlhcHJBK2tOIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUXJoMkVWL1JrQWZ5b3laKysrTEh0a1FyT0ZUekh0S2QxcVdJOHhEVW1GM21CdlNYTGswa3QrU1R3UUlicE0zbG9PaTdGWG9OL0JpZ2ZGOUNJRUphd0ZteldxNHl1eGM9IiwiaSI6InZuOGpIZGthZUdFVGx5NHkiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV05qTGkyVlNPaUwrb3dtR05pdlA4U21hcXZibnpOZGkxSllYb096V28xelZrZjFJK2dqY1hwbmRUejZrN1hQbFRTakt1WERleURNNS9FdXhmS2lhY1d1OVBhaVkiLCJpIjoiSkJFK3RQcmtWeklMbHpXbyIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiejhwem5WRitJUFJKLzdRSXRaVGtiVmFQdnhJQUZtOWJnbERKWHE2WlVSNVlHNFN1Q29HOWtaUFNjR1pSQy9JT3N3YzZUcTk2VENkQ0dFbFVsSWxRL2UvSjhMUlZJNE09IiwiaSI6IjhwbmowbnJiWHRDbDh4d04iLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM1VSVVEvY1dod1gvejhTUldadnpKTk9lK0tiWEFDQld1TEd1VVAzM0o3b0NQbUV2bEdrcnVnT0E5b09rZW1pQU9IWG5qUCt4UG1ySU9tT1FHTHJKeWZsSmU5NjNTKzdFK0JvOW9tK1huVUxxR09Jb2xJNDFpeHlMZjFQcEI4dnZLQmxVYzQ5Yi9qb1krc094YzFtU3dtWEw1QT09IiwiaSI6ImdwbFhmd1hkcUFieUxMTXAiLCJuIjoiRmlsZUQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pkykzhack",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "63GB",
+    "size": "116GB"
+  },
+   {
     "title": "Demons Souls Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Demons_Souls_DE.avif",
     "tags": [
@@ -6576,28 +6605,6 @@
     "credits_dlc": "Pippo",
     "popular": "on",
     "size": "114GB"
-  },
-   {
-    "title": "Death Stranding Directors Cut",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Death_Stranding_Directors_Cut.jpg",
-    "tags": [
-      "PPSA01969",
-      "v01.005",
-      "USA",
-      "DLCs Merged",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN0RodWV2U2g0TERTYll3MkVxU3UzeGZ4Q0MxdmJSSWovbGZBREN5OU1NOHNoQjVYZ3J1REZqR1NZbkVZdjY4cnNpUWNKVU5CY0ZqTFR6cWR6VHpveFZLR00xSENtWEttSXpBPSIsImkiOiJPcUM3QytvckNoYnF1Mnl6IiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY2VLcXFaMVUrZG1WemV3ZXg5MncvdFFoZmtkM3hrRldPdFlCRDVaOVc5c01PVEcxSTdqN3RjUXNGQlZobld5WUVOSy9aUlFPVzdmZVJYQ2JhczEzeFVaOHhnaVJnSmc9IiwiaSI6IlpGUzRQN2gydkNNZ0l1WFYiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSWtLNHkyMzJKZDMyVFpGMlRBdlJsVmVQZlNqeW5nNC9XVFpMeER4SDlUcXozZGdHb05EaFl4OXBiZU1UeDV5bnN1ZWF3cWFkZ054elB2R0xrL2J4TkYraUlKSjkiLCJpIjoibURxVkxrbnFBRksycWFLWCIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoialRsblhLS080WTFqUG1ZLzNRdE9CTGJvbzNiZlJaRzJadjdSRmFuaTVHaklweTNyZlZEU0xZMVZ2eWk0d2V2RkdJVDlpRDdEdUN0N2pTem82QWhSQmlQRGE5bjBFa009IiwiaSI6InFxaENFeUFqWnFkMUZwRzQiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZDFBYmVIdDJUMEI3WnFaR1VMOGx3aEFlMUtVVkJreTlrT291aGwraG5CdVoyMWlmbFNteWs0T3doR0pMbURiRHpkM1kyUlZMd0pMWFRzQ3daRDNZcmM3R2hSVkM2QT09IiwiaSI6InF0NHoxSE10dnFFYmRDWCsiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "DUPLEX",
-    "credits_backport": "DecKerr97",
-    "credits_dlc": "Pkykzhack",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "116GB"
   },
    {
     "title": "Dead Island 2 Ultimate Edition",
