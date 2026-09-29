@@ -1,5 +1,30 @@
 [
    {
+    "title": "007 First Light Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/007_First_Light_DE.jpg",
+    "tags": [
+      "PPSA11386",
+      "v01.018",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibkpvY3RaRGs4U1l1VXBiY2tYWkNpUFJ3a1gzclRDdDFucXdzTEpSNnBvTnQ0RE90SmdkVlIzRmI3UFV1WVFwU1BqSm1KQXpIekl1MCtoNnppSDFVeHhpMFE2OHYiLCJpIjoiNytLU0JKVUtkRkpmNXRwcSIsIm4iOiJEYXRhIn0=",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRmpQYjdLdlFndHdLMndyY3k4V0tBbGNLZVdSZk41NmhkejRqVzdMRkhlWWcxTmRNVnMzVE5mV3dlai9IbEZ1NldSY0VJMk52VjhaSU9UVkRpQm9rQWJXc1c3d1NIVWs0Unc4PSIsImkiOiJSbVdiSHBTbnBURGFCbkJVIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiamdlUWxmdlJkbnh5YkQ2dWlZVHlJdVJPbUJDcUgzUUhoSVIxNHRTYkdUMk9oamo5VzQ3TlNqNXlXKzRCd0wvU3BMYWtTMC9qSk1vZTFxZzdNT3huamRnRmxyVkZjUDg9IiwiaSI6InRMdlpBY2JwTlltZnFuN1giLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUUJiaG1JaU5LSm45S0xoa3E4U29mbVlWNDFiTHFpblhDc1FYaG01TUl5Q3h6d21pSDlkbHVDSm41Wm5OMFJ5MTNJRlovSDFRdzkxVXpLSGFqSkhmNWhGVGxGZUUiLCJpIjoiR0dWUWpSU0NKaVVXTWY1NiIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSkVpbytka2hiOE8rTS9CTTBtQUpTKytXMFlGOFJkOFkxL3lCSDdrWkhVSmF6TURXdTBkYUl5LzVZRW5NODZlaldXR0luK2dVV0pQK05ONExlVHVvZGU4M0pLbEdHclk9IiwiaSI6Im5aWHN3alJhVzhQOXpKMVkiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK2prODkxQWJhN1ZJN0dSb1IxbG10V0kvNGNqWXZyaGZXeFZUcE0rMVR6ZTg5U2RkUE1NbkhUSVpPZDd3eTczdEVjeUs5NUN5NWMvcnNBaFVLOXZ0Y21pM1IwaDFOMlAzZVVUb294VTJlMDJNWWxEbFl2dWRSVjA5OUJ4V0hTZ25NN3lCSkIvR1hqVXMwWXZtQ0cwQ2grUFUiLCJpIjoic1o2UncwODNsOCsvd08wUCIsIm4iOiJGaWxlRCJ9",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSFFRZGJuSnBQd3FZZ2s4d05ST2Y2VXdnbU5ZbmZockt1M0pablFFYXNGYjN4dWx6cE9EU2ZkanRHL1B6TUhwOGZZdmZPVjdKUTRWK1RyVUxRdW1mNVljOTZWeFciLCJpIjoiVkZ6UlI1ek9sK2o0TVU4cyIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUlQ4ZEtPTFhzZTV3MXVBUU43cjlDbEdNKy9LZytXVStiSWU5UDdHVWxsQ0tKRzIrL09GeFlaMDIrb2hteVRKVVFvaFhNMSt6YjBuc0xsb2hxbHhjb3VXd3ZadU9aQT09IiwiaSI6IlpFRXo0WWpxY2I3MnZnQkoiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "45GB",
+    "size": "81GB"
+  },
+   {
     "title": "Battlefield 6",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Battlefield_6.avif",
     "tags": [
