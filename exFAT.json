@@ -1,5 +1,30 @@
 [
    {
+    "title": "Assassins Creed Black Flag Resynced Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/AC_Black_Flag_Resynced_DE.avif",
+    "tags": [
+      "PPSA15595",
+      "v01.006.038",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMk9rRGE2YUpjcmkyZkpSdU5FV0dsVE80YjJXbTR5K25mM2VmMXEvbkFiblNVN2dORGE1c3pKS1ByUmtoSjhhbXd2VnYvclg1TjJVSTUrOCtjZkwzakNtVkJzSkMiLCJpIjoiNERPWGRSM3d0SU1TZFptMSIsIm4iOiJEYXRhIn0=",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoienFaK29KWHRCbUpIbW1oUkl1dUIwbUhHdXZDU21udkNPczVVcFdXazZGcWdOYzRaUUp6VTB6VU9Bdzd6WHo1R0MwUDZtcWkyZUF2SDRHTjVWbXR4NWpMYmcweEQxdGR5SUgwPSIsImkiOiJTZ2VITmlnM2tFRk1rb29iIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYnRaMGlsODhLSlBVMVdiN3pUbHJZNWxVY0pZKzZESlNNWVRla051UXNONUx6U2RYQTdTQzhmRzBrQlpFdG5KUDg4djZVN1ZWQTNoa3dkczdZVkRXV283RUZTSGlyMVk9IiwiaSI6IkdBMGVCZ1R4VHM5MGx3VHYiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOHlOeGpqc0hjWTBUWTdTRWY0cG45TnJsaG5tTUNSWEFGYzB4ejAxWnZXNVM1RDFQRmFEZUkyb1NWblYyamxTYnNWNUorU1dXVTJKdnJlWTN0bEhiQWlCVFpSS2siLCJpIjoiVU1VdkFLSW9EUzFLUW43aiIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRTYwQW1SSmZjY0c5T1RtWE1URFVtTG1JVUV5K3MrQitZMDB0eEpHaUtiWmJWTDdNREtZN2d6WFhPQ3ViblYrTGZJeENqUEtxQXlzRXJoVC8rRWo4a1YwVHBGRmRQVkU9IiwiaSI6InVadEdIRWxPdllMRC9mdjUiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUEE3YnpFUkhiTjJGb3BzT2ZhdUJnSUptM05MR1dXOFVVeitQY2RwcmFxazhXQVBKa3hBZHJ1M3BUa09wbG1ybUhHSTdnVWlqb3Fydk5OMjEyQWpaei9XcHQ3UDRMY3ZmRzIvaGxtMFlPZGVyaWZrQUNwalh3TEJoTVloVUJkMXdpWldJUDBKY2FyYmpBdHBlSjFFWTJzUHNRQT09IiwiaSI6IjZ0YzlkMXdIUU1yK08ydkMiLCJuIjoiRmlsZUQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZHZwRk93Y3NmL3dYWmVpUjBLZ1VwczVaSW1WVEpEbU94OStNUk52a3FoNGUwdjFaWXNqVFlNaEhhUU40VFhselZSU0ZtbDdHcVY4b0wxd1F3UHJQaFdxSHBId3ciLCJpIjoibmI0c21rSDlCUSsrUTJsMiIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicStUOWtyTUV1VWZqZlhaYXNPWlpKM3ZmVkhjalRTeWVmd2l3TTgxNnFtZ3BPRzkrVUg0bVhCMzFMNlZET1d4QUl0NlI3VkJKSGh3QzFyVVlKV2NzcytraGgydjJUdz09IiwiaSI6IllBUmE5eWxHR2pzaVcrbXYiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "60GB",
+    "size": "122GB"
+  },
+   {
     "title": "God of War Sons of Sparta",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/God_of_War_Sons_of_Sparta.avif",
     "tags": [
