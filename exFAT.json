@@ -1,5 +1,52 @@
 [
    {
+    "title": "Marvels Wolverine",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Marvels_Wolverine.avif",
+    "tags": [
+      "PPSA03671",
+      "v01.001.005",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "", 
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS1p0Uzh0M0M3MGdhWStpNzU1TG9iT3AzTTl0S2hhRGs5Z3dhdWV3dlJteGI3Q1dPY2tYUG1JbGZuU0N2YWRWbmRDbHk2N2xyUGN3TzhTZjBFU2NPWU9YTG5udWF0RjQ9IiwiaSI6IlhyV3RjOWM5SmFqSlFjeFkiLCJuIjoiRmlsZUsifQ==", 
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicG44b1pjd1MxTjh3ZkNtS2MwT3BlVFlmSUNCalFsUzZma2xaTFFEcEM2SmkrYkxPRXBITklObWhmais1enc4VU9CZUxKQkNTbExINmQzalhPNnhBMWU5ZzUxTXFTNjdtZEpnPSIsImkiOiJaU3FmL0hxRVVlbURrYzdOIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYUVrblhBUGI3cFZGNDBJY3pLTFBSMTdIQ0o1OExGUFREYXR3WFJ3V3J6UjBja2J5OGxLbENEcU5LQ2NyVVYrQWVEN00vWXhLZ0crclpNQW4xaVY1YjFlTWhoeWd6aTA9IiwiaSI6Inowb2pFMmYweFFYdCtNVnUiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoick5QRFBSVUI0ZVAyYXNUVUtMeVRicWx5RG9uYzhlVW9xZFk0Zk9aWXR0QnRlM2xsOE9jajcrZVdML0tIbzZSeDRmWlRJRnR1WmJvUDVuNWJVS1NTRVdVckpQRHMiLCJpIjoib0REWDczdkJPb3p2UXl6USIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib0FWZ1plRlhOL1VCZWwyd2VpbC9IRVpEQmNwVlBEU0FaZXYwOWFINWU2U2RNVkN4V0xsY2VsTndsc0p4SjJ2QVJQdGVraE9TTnpOcW8ydnVrWVhuZzJ0U1ZjQytKb0E9IiwiaSI6IlhYdjdnUXRYWDErVWVDcm0iLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidkJlV05mRUp5ekdJc0tYQlNmd00yYWV2MWJkZy9ubi9VOHpPYUVGTjl4UHBTaFVTaUlPR2wwaFJXUTFOZ254Q1dPV091c29jSzVONjc2a3JYdWRDazZwOFJ2YTZYZy91VE4vUjRiZGUrdFJ5NlBlRFZjd29PRm41U3p1dDVlbk5hTTBKTkVjWVZhWG1BNUVDT1RQNHZYa0hYQT09IiwiaSI6ImNKM0JVb244VlM1aXNWVW8iLCJuIjoiRmlsZUQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "94GB",
+    "size": "183GB"
+  },
+   {
+    "title": "Marvels Tokon Fighting Souls",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/MARVEL_Tokon_Fighting_Souls.avif",
+    "tags": [
+      "PPSA15595",
+      "v01.002.003",
+      "JPN",
+      "4.xx BackPort"
+    ],
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiazlEeU1FS0Z6V01SU2d5RisxSjVqY1kwbnJTeHQxam80eVV5bkpDc3lWOUVER3huVUpCZGxzNWJ4SkV5bWgwdnhGVk0xeXNLZnBNVzkxRGMydTlXb1NiWFU5OTEiLCJpIjoiV3Q5QzNzL0RBekdGZDdlNSIsIm4iOiJEYXRhIn0=",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRkRCSUlxZ3huWmRYWlNnbC9ZUVdSR0Y0N2VwZi9TRzlNYjJxc05pOHhRdUNIQkNuak9XcFp4anliLzNKUEZXcU91R3F5c01zeHJZQkRyOFROQVRucTdUeFQwdTI2N2grelpFPSIsImkiOiJDZGdocE5SYmF6UXo3VlJYIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUXkzL2t6Z29EN3pZSWpuYzIyRDQ3Sk1WZktTTWJIT3pyQk0ycW1nTEJ3akFqQ1VJQ1h5RXQ1UWNQbWpMTmtQSzYyV2JiRHhmb1pLQjI0bHFqdjYrcHRLdlNacitTQU09IiwiaSI6IjdDQ2ZCL09YUEdHakJ0TVoiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY2hDYm9TMWdYWjU4RDFyZUtWblBsVzU3QjFvTVkvRkNheThhc0V5WGlVMU5FclJOeGx2UFduS1krYnd2SHZ3S3dMQ21lRzZLZ2dXblpBQ0ZTMXoxc1VkdDhqRXgiLCJpIjoiY3NESThxM1RUOWt0TnQwSiIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSGE2ME1neWc1QmRqcEN5SEdQZERjcXJxQjBMRjhUdW5vc0ZDS25uYnE0NEYrbGlEb1Jra01ybkFXUGN3WkR0cGY2bGtzdHE2MnZPbml2bWlIN0UvZzJ6aFdaSFJvUnc9IiwiaSI6IkpmdEhROHpBMFFJSFg5NXEiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicFl3Z0U0UWF5VWFMNUs2YmhSUmMxR01YbHVlcE9SSXR4ek1JQU5LUEhRcVlnWHFSQ0xDay9XNFJrbndBQ3pOb3FkWk96OHlHc0tsU3NWanczNE5zYzNacGpQK0NNMVY1TStQcndScGlsZWcyUlRiZlBjWkdIcXFPN3kyNWdCQ0V2Nm1ISisvMFdBOWwzeHV6T0c4MkEyZ0UiLCJpIjoiNC9kN2djbUp1N0k0amlkaiIsIm4iOiJGaWxlRCJ9",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "23GB",
+    "size": "97GB"
+  },
+   {
     "title": "Assassins Creed Black Flag Resynced Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/AC_Black_Flag_Resynced_DE.avif",
     "tags": [
