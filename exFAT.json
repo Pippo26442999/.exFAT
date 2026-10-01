@@ -1,5 +1,31 @@
 [
    {
+    "title": "EA SPORTS FC 27",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/FC27.avif",
+    "tags": [
+      "PPSA34015",
+      "v01.00.004",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "filek_url": "",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSDRKK2UxZk0vMWZsdC9HZHdTdVErMlRvbFlSQ1NVOERGalA0L0dqenpJWTZ4WnMyKzdya0tJSGkyREJZa0lRQUpCbVBrdjBOTjB3aXI3Y0I0NWczelJoaGlyTU0iLCJpIjoiYmNyZmJIcEhSUkduTGtxVSIsIm4iOiJEYXRhIn0=",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU0RrYTU0NDJUL1pyQXRrSHFLR1luQWhua0pQUHVOMnBsbDJ2NTc0Umt0ZlRDREt5ZkhJdzJpTXBSaXh2c1NQQ3g4d1RZeXVEclh0RjlRUVBPcnVSbGlEcDZ2ZHpHeWZDT0t3PSIsImkiOiJRNlU5Z1FtQ2Y4TmJvUFFwIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVHpEMTNocmRna1Q1N1lhTnVEenVYTHNvVmwxOUZyYThkaXdOQXhDS0FKM2gvOFFnOTZDUFFFUFhsMThiWUc1SUhsNVdEU203NFBCeElEQmdQV0hzeE1vZDRmd1NuTTA9IiwiaSI6IlhzNld4RzRDRzhxWlpicFciLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRUNNOFJlSTcwQ0U5MThJemw2OUFKMW1UaUVTZ0I5RCs2cjUrN0FWOGdmR01QZiswSnNxSmRDenZqVndDc0g0eHNKUGZuZ0dJTStEMG9RUk1DbWtramdVa3A0ZUMiLCJpIjoiZGhQNFVTL1RpOXN1OSsvYyIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQUthYjF4d2xvYk9VdW5yd2svYy9pZFZsTGIyRnNXNTRrYUYxSDBodFRmcVVwTXBBZnl3UFBmM3hhVDFkRVl1SkxvZ0hETlkyOW1menZmdkRaeW0wak4rSkJ5Z1AraGc9IiwiaSI6IndDa0hTNm8yeDBKZXZpc0oiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZmpnR1ZBS1g2TXhkWGdVWGc0R0phbzRGZ05uUG1PcXJkMUNFWkJJK1IrNk9QK0hQdDNsMWJYSjlQdzFFS1pOc1BVTjNwTXR1bDdTVEU4S2lvVkI5Q3p3Q0s5c04vOVVnN1M4d3FCV3djdExYL3BDVUJnWGJOOWIyc29DTnB4MU5GelNCdkw2aEZNVk5UV01UelBKbUpNK3VMZz09IiwiaSI6IlY3eXlyYmMzUnRqRVhXcTAiLCJuIjoiRmlsZUQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaEVhay9iNFZKeHgyZzdIWEtjdE5CWHZIakVRa0NqeWd4WWE3T0c2aWpLTENXU1ZCdVFuekZxRzNqVnd1T0I3UFNIYlhTa3JKVm5abkZGeXF2YUJDRXljeG45a0kiLCJpIjoiUTk1WjRvZTVuUmU0aWp0aiIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVlhzR2NuSTlyTG0xWXRjWm55djY1aHE1QnFyYlhmaC9ra1FqTkkzM1NyY2pwNUdMOTJXcUtoR0dDTStqeEl4V0pDU3BoVldwSG1CZmpIalloYWpmd2pNNG5na2JSdz09IiwiaSI6InFLMmFsYllUWHpDMEd0MkkiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above. DLCs (Unlocker) is mandatory in order to play.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "61GB",
+    "size": "175GB"
+  },
+   {
     "title": "Marvels Wolverine",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Marvels_Wolverine.avif",
     "tags": [
