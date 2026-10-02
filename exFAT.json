@@ -1,5 +1,29 @@
 [
    {
+    "title": "Marvels Wolverine",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Marvels_Wolverine.avif",
+    "tags": [
+      "PPSA03671",
+      "v01.001.005",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblZiYUtvb3lERDNsdXVDU1U5YTl4cFZqdDBEWk9WMEY4Z2YyQ0xCcUlrZlZYa1FZR1UydStJZmdEdnVDUk9XaytZY1Z1QzZNN0ZTdFh0Wkw1UWMyYzZNNVUwR1IiLCJpIjoiQWdLeE03akZQMnBUaFgrKyIsIm4iOiJEYXRhIn0=", 
+    "dump_filek": "", 
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZk1lZkg3Y0xibVM1SWZhVXIrZ2pndnFINEdmWGE3M002MVBzY1BvVzlOeXlsc1IwUXg4Njk0M2QvK1BCL3dWUyt4THI4Nys3d1ZSYmZ4UmtRWG5EVkRlUVNWWktYWmwvSVlJPSIsImkiOiJHZE04Mmh3dTJ3WUJnK0dLIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ1BSRnJ6dTQ0enREWkxaODhyc1p0bXQwY2RwK1dONWtiY0plemNDWkE3ZkVOZFZyTzJQa3dNeU5vQUZzanRUZ1U3ekZ6V2p4YjZ4a1VHeDI2a0ZwdGlKcmhVa085RjA9IiwiaSI6Ijc1cTdlYlF5U0JIMlpOS3MiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTU5paUMzblpJNnZGS2ZPYVFucENOejNjeHZ1aGJrVnd2ajVRR0VqT3l1T1hFeDVsbXQxeU00bHVmNTM0T1FJK0habE9IV3VhVTAydThHdGFjRVpORFlMWWJLUGwiLCJpIjoiY1ZPdnhIc2VFYm93R3hmaSIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL241OU4xU2xVN1dPM25NRUdidEpEc0FaWmlaOVF0VHp4NjhDQUNvSkdxb0s1WStQYXcyQmJZTHVmc21jeUlPbU9jY2pIL2QxTGE5RFF2YnJadUhMR3BlU050K2ZQNHM9IiwiaSI6IkgzTjk3SHZVRE9lVW1oc1AiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQTYwdTM1eGZDTVBPaEFzcDdXZll2Rlo2Nm5SUUhlL0szc3RXSjBlRUZUNlp6eTk2UWFEMDlVaEZxeTNLZk5RbCtIdWcxcXdtNGQ4bWdKdXlrZTh3QTBWRG9UM2tScllkWmI2Ukc2ekk5ZlRsMEtOWmpiSndHd3lyVzFVLzVicFprcXBJdk5VaERHWDN3NUpobkEzYmk5VjgiLCJpIjoiWUlyQkUybHBPR0ZpQU5HWCIsIm4iOiJGaWxlRCJ9",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Pro Fix added.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "95GB",
+    "size": "183GB"
+  },
+   {
     "title": "LEGO Batman Legacy of The Dark Knight Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/LEGO_Batman_Legacy_of_The_Dark_Knight_DE.avif",
     "tags": [
@@ -53,30 +77,6 @@
     "popular": "on",
     "fpkg_size": "61GB",
     "size": "175GB"
-  },
-   {
-    "title": "Marvels Wolverine",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Marvels_Wolverine.avif",
-    "tags": [
-      "PPSA03671",
-      "v01.001.005",
-      "USA",
-      " BackPort"
-    ],
-    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoickJFM0ZyRXp0N0hvUnRNWmZCVVpQWVVQWk1Mb214aVZ5UTNkVkNVbHcxV0dTWXE4b280N3ZUS0U4aXkzQlRYVzBWcGJWaDU2OGM1M0duL0pnaWVrK0NJU3ppZ3JKSUhwcTBXRitQM25mdEExdEE9PSIsImkiOiJ4QXJWckRvMFZEdUV5OEVSIiwibiI6IkRhdGEifQ==", 
-    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS1p0Uzh0M0M3MGdhWStpNzU1TG9iT3AzTTl0S2hhRGs5Z3dhdWV3dlJteGI3Q1dPY2tYUG1JbGZuU0N2YWRWbmRDbHk2N2xyUGN3TzhTZjBFU2NPWU9YTG5udWF0RjQ9IiwiaSI6IlhyV3RjOWM5SmFqSlFjeFkiLCJuIjoiRmlsZUsifQ==", 
-    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicG44b1pjd1MxTjh3ZkNtS2MwT3BlVFlmSUNCalFsUzZma2xaTFFEcEM2SmkrYkxPRXBITklObWhmais1enc4VU9CZUxKQkNTbExINmQzalhPNnhBMWU5ZzUxTXFTNjdtZEpnPSIsImkiOiJaU3FmL0hxRVVlbURrYzdOIiwibiI6IkFraWEifQ==",
-    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYUVrblhBUGI3cFZGNDBJY3pLTFBSMTdIQ0o1OExGUFREYXR3WFJ3V3J6UjBja2J5OGxLbENEcU5LQ2NyVVYrQWVEN00vWXhLZ0crclpNQW4xaVY1YjFlTWhoeWd6aTA9IiwiaSI6Inowb2pFMmYweFFYdCtNVnUiLCJuIjoiVmlraSJ9",
-    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoick5QRFBSVUI0ZVAyYXNUVUtMeVRicWx5RG9uYzhlVW9xZFk0Zk9aWXR0QnRlM2xsOE9jajcrZVdML0tIbzZSeDRmWlRJRnR1WmJvUDVuNWJVS1NTRVdVckpQRHMiLCJpIjoib0REWDczdkJPb3p2UXl6USIsIm4iOiJEYXRhIn0=",
-    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib0FWZ1plRlhOL1VCZWwyd2VpbC9IRVpEQmNwVlBEU0FaZXYwOWFINWU2U2RNVkN4V0xsY2VsTndsc0p4SjJ2QVJQdGVraE9TTnpOcW8ydnVrWVhuZzJ0U1ZjQytKb0E9IiwiaSI6IlhYdjdnUXRYWDErVWVDcm0iLCJuIjoiRmlsZUsifQ==",
-    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidkJlV05mRUp5ekdJc0tYQlNmd00yYWV2MWJkZy9ubi9VOHpPYUVGTjl4UHBTaFVTaUlPR2wwaFJXUTFOZ254Q1dPV091c29jSzVONjc2a3JYdWRDazZwOFJ2YTZYZy91VE4vUjRiZGUrdFJ5NlBlRFZjd29PRm41U3p1dDVlbk5hTTBKTkVjWVZhWG1BNUVDT1RQNHZYa0hYQT09IiwiaSI6ImNKM0JVb244VlM1aXNWVW8iLCJuIjoiRmlsZUQifQ==",
-    "credits_files": "DecKerr97",
-    "credits_backport": "DecKerr97",
-    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
-    "apr_emu": "on",
-    "popular": "on",
-    "fpkg_size": "94GB",
-    "size": "183GB"
   },
    {
     "title": "Marvels Tokon Fighting Souls",
