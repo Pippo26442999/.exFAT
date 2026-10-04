@@ -1,5 +1,34 @@
 [
    {
+    "title": "Granblue Fantasy Relink Special Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Granblue_Fantasy_Relink_SE.avif",
+    "tags": [
+      "PPSA06955",
+      "v02.000.006",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMkhzdHhKQ3NGbjZZZDYxbVVnVW1sTDFCMHFtdWQySUwwb005cGJpaDE1Ny9XRE5WYUlsVUl4aFpraitFL2Q0U2VKbHJLYmovbE0zcndLc2xKenVhYUd5VDlzQjgiLCJpIjoiaDZXUFd0UHNFS082UGJvbCIsIm4iOiJEYXRhIn0=",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNGtCOVlLZjduMm1ONjVkcFFkbUxKVlY0bmtDZFk2WTRvRUxIVXFOTklIM01oNzR3MWJOdmFFMkhrbHN3aVVhZFhuMmpyOHdNNDJ6ZlY4ZGZYUTNCTm83NlAxWW1EWDg9IiwiaSI6IlM3eGdQZTRTSVk4VXpIME8iLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidWhObVNzckEzeFpPRVNmd2E2R2tBTzIxTVhwVUhXVkFnTm9KUytUandYQWU2TVVUZ2NlOSt2bk9PRU1wQjRiSWoxZ0U0Q2R0aDZ2WUx1Y3YxRFN5UlpuV202WlUrSmFwNkZ3PSIsImkiOiJvUzQ3NDlEV0NYa2JRMk9pIiwibiI6IkFraWEifQ==",
+    "dump_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUUlCaVNBcUl6VWFZTmVhRW5YZkxRWlZrTkdCNDBjUGpORnp2SEhjS2pTaXJ1ZnZETlpXckRNZ3c5b09UR1dVWmtnV3J6dG85RVdzOExnbzh6aWNjTTROL3ZtY3Q1YU5tbmk2eC9DNHR5N05ZUThETnVlYUwzYmhKbUdKUzNGQmhXeCtSNWFqa3dBPT0iLCJpIjoiWk12MG1Kd2FuTW1YNHBXOCIsIm4iOiJGaWxlRCJ9",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU1FDMlY4d2ZYVG5IZ3h4dXRPbVp0N2I1S0JSeU9PcmRYYytUS013cnI0UExadERnL05mS3QyN1YvbHJTaWFhd0U5N0Yyd1F5ZkFNZHhKd3l5VGJBMk1nWjB5NGZKYjg9IiwiaSI6ImFDN2I2dVJhbzZrN2sxSG8iLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicDIxb1g5QTRra2poY1F1TUFyUWw5TndSTzduL2trSlcxSHVHelBWdnQ2MjFPLzlaRWxLaldmMm9wL2s2Ujh1dm1kUE8rV2VGNTZWbnNEK0NTRnl3Tll4RThTU2ZIbFQ4Y1FvPSIsImkiOiJyWFpKT1V3L28ydHRMZ0FwIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic1NCK3BEMWNUQlg3cGwwZkwydnZYQUNjZGFlZU1UT2x0cGoxc3pwdk1oaXFZaHlGS2dnekR4UFdjZ0NtUk5YV21xZ2wzUHR1aXlHOCtTMWFHZnJFZnBRKy8zZjJaazA9IiwiaSI6ImdqMUowSE9FNmVsYkk3U3EiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTGNYOUZTcUgzSU5FazljU2x0QTQyc1VmQWJWSStaOUI0Ui9aV0c5V21PK1BsMTlrdkhaREg1SGk0RXlHNlVFZkpHM3JlSkRzK3I0dHlMb2toYkE0OUtZUDJla0siLCJpIjoiQVc1M3dCeWpNMC8zeVBWdyIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZnQra2ZJclJFaDdWMnRpd3NtbC94S3RtZEhsZ1J0cGhER0lRZU5mdFFhRmpGK2NCcndUZk1tMVFYNEpzRlg4NjdJY2xTbWNUOHQ0M01TLzFiNFl6NFdIRlVFNjFzRjQ9IiwiaSI6ImpjcEh1d3h1aWdoR3BGUGsiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSkxla01ORlRFaTNYRk5OVGQydGRCYjVWcFpZZVVzTDB0M1JSampkS25Fa2Jpc0ZNdUpJZTJJbm9hQ1Z4QkR3d1hkZTBGSW1rbUkvcyt1MjhhNkFYdTQ5YmdwWGlQdmJjaVF6RWNxbnZicHAvdUgyZ0ZVdEp2a2NDRjBTMENJVWNIZWwrR0c3TDBOQ0w5YXA2ajJqY01IekIiLCJpIjoiaUVuS00vbjFOZGNUQlh5MCIsIm4iOiJGaWxlRCJ9",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZXQvTnpYb0dwNGFDQXUxemtzdkdZOElueUdBQjJlUktUdTF4NXBFY3dkdzNxa0J5RUp5MFlYUDVrM1VJOFl6MkxLbmI5RUo4djRTWWJpZmxmalNJNkxUcVU4Y2ciLCJpIjoid1lPTVdrb242TlgyRFFlSiIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMGVnSk5EZ2htckZiVWNxWThRaEJidE5wZU9iNjBLUTlOa1BmYlFJMHJEbG9WYU0rdmZlUVgrcFdsSHh4OEc3MmVqOWtPMk5wbmszRmxIbEorVFU5MjZPaE4yQU1Idz09IiwiaSI6InJ5UUlGcDI4bFdOeVU2QUUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 8.xx, separated BackPort for 4.xx+ included.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "75GB",
+    "size": "111GB"
+  },
+   {
     "title": "Granblue Fantasy Versus Rising",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Granblue_Fantasy_Versus_Rising.avif",
     "tags": [
@@ -2421,28 +2450,6 @@
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibDEzMTdYSVBmekUxSFY4d0htQnAxeXZyeWhjQ3F2SVVhWjRwWEI1d1I5Q0J0SDRXZHdWUEFaaXJoOHZrY09OcWR5SkVJdVBFb3ZhQzZxdGZMemo0aU1ndGUzSXdWZz09IiwiaSI6IjcyVDJLbDBvdk42bWhyVDgiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "BedroZen & SuperPSX",
     "size": "30GB"
-  },
-   {
-    "title": "Granblue Fantasy Relink Special Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Granblue_Fantasy_Relink_SE.avif",
-    "tags": [
-      "PPSA06955",
-      "v01.003.002",
-      "EUR",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUWE1eWZ4NzN5ai9wRGs3VnhJdXYwNUJ4bS9acVdxL3pKTDFqWG1YZ2xxRjloTXEwRXl0OU9xQUREWkZkUjhUYXRkR3YzTmZHeUo3dE5nZlQ2OGJsUGU1QXBseFBwV2w3NGljPSIsImkiOiJwSUNkWGV2Q3BaWU00WU0xIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidUFwTmQwclNqQXB3Y1RiU2J2V2d1ZnBmYnpjSWxkeHJOcnh0UXdianI3YmM4Rk9yUythYmI2L1gxRlIxYXNON0krUHo0VTZmRURBeTZneGY5ZTlHVWltUVFxa1VPMUE9IiwiaSI6IlZ4TFBFSGEzUzJqWFZVTloiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNGJlNWxSelNWdnVWcWtoRm84VkEydHpaWkhqOXZsa3k4b29KaDF4WmZtejNMTDJEcVNPT1pmdWsxeCtkaVFPbjR2OVJMU2pGQWxHUkYvZDlsM3RWYkZRYm1DWVYiLCJpIjoidDZQUThXc1AzNXM4SXcxeSIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT1h2Y3J5Ky80V3Z1RFQ2TTlUcmpaL0wwTUc1cTBBLzQ0VlhRd1A4UXZvOWpzalM0MGFTRlYzVTA5QnZ1NkdiMFNGUDdlZzJpdzZCZllhT0hNZ3U3MTZSVjVUK2creFU9IiwiaSI6IlZHNE9nWmtReVM2akdUYXciLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOWxSM3BaUXlNVGVzL093clYyWDVFRFNtWTdMVE5pTjNIdExQeEJ1RHVUdUdwclFaTkRGVGFRNFhyRERjQ3hVTnJyckt0eldtRzN4OENMS3krNEJWT1BzdkMydFozUT09IiwiaSI6ImZ0MzJIRFBNc0RTM0hiaVgiLCJuIjoiVmF1bHQifQ==",
-    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRGl4UFc0WWYyYjREdldrajQ4YmlQT2FXdU9aOVRXSzN1YmY1RHFwUHVGWm9IVWVnY3NuSmNBUExoelIxK1FnSWQ3TGVOSUF2RjJUaitqQmxaMkxrRitEWndUTXQiLCJpIjoiVk1JdHVhRmhhMmFVY0JvbyIsIm4iOiJEYXRhIn0=",
-    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZGsva2tHbEtOWE9HY2tCMHdFcGs1QW00THo1UWMvWGNWNnQ0THRhb21xNTF4MXliQ1E2NFFiMDNXa2JRTlFMNkxKampyWFNTWk5rL1p5UGhaNmJ3V0x1NmFQdlMxUT09IiwiaSI6Ii9tZk1hbnNNK3V5R2NONnkiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "DUPLEX & VanBuuren",
-    "credits_dlc": "DUPLEX & VanBuuren",
-    "credits_backport": "Deckerr97",
-    "popular": "on",
-    "size": "90GB"
   },
    {
     "title": "Teenage Mutant Ninja Turtles The Cowabunga Collection",
