@@ -1,5 +1,32 @@
 [
    {
+    "title": "Granblue Fantasy Versus Rising",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Granblue_Fantasy_Versus_Rising.avif",
+    "tags": [
+      "PPSA16603",
+      "v02.610",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicmhpTjZ2RDZrMWJudmFkb2VnM0drYTJZVmVSdnVPclR6bStReHNON3JDWkxGRWZXSkNEcHhSZktzY05iR1FjNG5hMXU2TEZidXhwMy9xemJHYktDL2ptWHd4ZEUiLCJpIjoidytIWGtQb1pGNTZNRHA0cCIsIm4iOiJEYXRhIn0=",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL1lwNlVpWWxoUXJjdzU1VkMvMktDVEdNcTZ2SndKOHNRcHFkVXlHRXptSEZDUFhsS2hnUXFSQ1RaK2M2bFJDK1RycFlETHpucllVTlJ6WVlsUm1FOGFpbUdQdkRIUWc9IiwiaSI6Im9IQjFzMDVSc0pveFdqT3IiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY00vN3pCV3pPK2RHUExaYnpENHdrYytYOTl1aDE4K3FnL3llWTFUNG13UW9pbC9QdzBoUzJ6WnZZR2NadGZ1UW1oV21DVXVUM29RNC9UQi9WU1RFRFVvY3BQa2g0V0dOa3JVPSIsImkiOiJoNkVMeVNJanRTeDJJQi9SIiwibiI6IkFraWEifQ==",
+    "dump_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicEZLeDQxN1h1VlFUT0RzUmM2WUYrbDJ6czVSenZCNW5uU0RRcm5pQjdjbW5LZTdjZTZmOVpOME16d1FXVFZBV1hXV0JnbnZES1NuQWVMUS9PeUM5OTZNUkJVYW14ZVB1TVVqV2ZnZkluN2JkSGhpaktNd2E3YW9hVDNLTGZCeTZZdmZDYlBrdG9nPT0iLCJpIjoiZlAwWk93RStsU2pKcURvNyIsIm4iOiJGaWxlRCJ9",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibGErWkRSTlpZNXhFS05ueWg4Zkk4Uk8yODFQUHBxVXM2S21pbXY5N1F5OGZwVWtxNkV5Z3NNZ2Y3KzhXaXliZ0lVcG9WK2krSXhCQjNKNy9ycUNra0dKWnl6a2pjL2c9IiwiaSI6IkhQK1NEUDVHQWlYU09JWmgiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib0ZzQUlaQTVxVWFtWG93aXJqQ3FYQ2h1U1V0b2lXblJKTUthZ1lLV3ZRQTgxWTVBdnlHV1F2YWVjcW5KUnZ3a2d0U1d5dS9UQ2VpdlhaSVZLZ2dySlJpRWVzMUxsVzVKM3RVPSIsImkiOiI2MFpDUlFpRXNpM1ZTSmk4IiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVWkrT3VZdmpFMGN4Um9VVitOdG5oR0YwYlN6SVZoNG1qNFdzWXFBTkFEQ21NRnNkQmxLNmRnS2VmK1FQMlVhdkpzOVRrVW40L0V3SmF4K2p5N201UVZPTnBVQk5Gc1k9IiwiaSI6ImlMdDBLMVRBT0Q0SnhVbUgiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWjJ6K2VpTHl2UmI2S2NlemJ0WGZ0Zm5HMTN1SkNxdXF1NFdEOG9TblNuTGRFTVlwY1Z0YkkvNmVCbXdBZ0hoSUtBelR3VE5vU3NhYkNFRkRKY01mVDJveWhvaTQiLCJpIjoidmE1bDV2eFBZYkVsTWpQSiIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN09NeHNzWlY0Nkh0N3pzU2o4c2p1L1NSamNKVElnN0h6YWJJT3pWY0tUdXlwN1IzdFo5OHpvVkhOVmdKQXJlWVNlWCtlaHF4Tm9ZL1FUNmp3UVBKM1Zsd2orb3BiWDg9IiwiaSI6InF6Qmx0dkdhakdRQTZKb3EiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicWZabDgvOXpwZWpyT1k2ZnlqVHp6L294Y1RId0FzUFF3VUIxejJVZnJjVXQ0UDNxUG9iZ296bVJpVDlWUEN4bDRHczZQaGlhcSt0UG04cUE1YzFjd1JaTkhUQlJvdGdIei9IZ2ZjWmI1dmtSQ2xKdnBlWFJqNy9ocDhSL1NqWnptZjZBWDlmTWRKZjJSRjNvazZyajljSE8iLCJpIjoiN1k3dkhOZVJOQis4SC9WSSIsIm4iOiJGaWxlRCJ9",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 6.xx, separated BackPort for 4.xx+ included.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "24GB",
+    "size": "99GB"
+  },
+   {
     "title": "eFootball 2027",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/eFootball.avif",
     "tags": [
