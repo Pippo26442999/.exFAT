@@ -1,5 +1,82 @@
 [
    {
+    "title": "eFootball 2027",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/eFootball.avif",
+    "tags": [
+      "PPSA03073",
+      "v06.000",
+      "EUR",
+      "3.xx and beyond"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVHQxd0svNGludk5SL0VCMUQ1N1ZEVFA5bXpuQi90bjlEYzRkTU9BbytsOUg1cUpVUjVLNmhLenAxYnBNTy8yeTFCdE9vZ1JNbDVOY1cyOW1LRVhoTGJQVkwzcjMiLCJpIjoiZkFNaXd1S0N5WnZ3dFg2VyIsIm4iOiJEYXRhIn0=",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMlVPbUFiV3ZVQzB2MXZvUEZlWHFPaHhGZ2dxd21vbjJiSUxycmVWSEpKUXBZL3dLckZ5MUFuYnZ4emk2M0ttYUJsMzh5WWFJRWtYNExmbDNrQy91WjBGdTRUOEJPMmc9IiwiaSI6Ii9sUHlXS1lKYk1JUU9OZmciLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQTRBNy8rckhVV2VJSmkzajY2N2EvTnp2TTlUVFRkZW1VMjFHVDJteEpqcCtLcmgxdDRrQlFvSWUyakZ5QlJ0aWtQMm4xWkpjSzRwU052Qk9pcElndzZJaHJoM0lLYnFjNjVrPSIsImkiOiIzSkoyRzEyMmM3a1d1azFyIiwibiI6IkFraWEifQ==",
+    "dump_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidTQwak5ucTYrQk1rR2pia09qV3JNVFRwL0ZMZGpCajBnWnNhREpBSnVlcytrMWtXMnBORlFsQmRIK2tnMitvR0pPYjdSYnRBanlKSElrSWxoVnVveHpGUVU3cE05bi9rYUErZjZBZXBYUnpqNTluRG5qU21lTzEzcWZteXIrSjBGQzBEdGZ2SEZnPT0iLCJpIjoiaFZBVkE4MjNpK2p5L3l3NSIsIm4iOiJGaWxlRCJ9",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSkkzMTJISG9nREN6eUNOSm5GZkFoYWttaDF3NmtWOWRwenNrdG0rY3pOS2syTFFXNjRROWNEVTBiTkFid2VRajVGYVcwZGFNRkp6RkcxZDE0UU1hWGFNTjlZTjFsREU9IiwiaSI6ImZjcWZpV0oveHdXZmswL0ciLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ0hhdUpYcTUzeld0bi9DTU9MeFIvNVlhZDhYMXhycDhqOXNoYlVzM0JIWGZBeVJkL2ZIMG5MK0RwNi9zMTRhOW02MXpiODJldmFha3NEQ2I0Q2dUR1pRVlFkOXVSWjVxR2gwPSIsImkiOiJyQ2lDTThRMEZyUE9WeFo3IiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNWwrZlh1OVI2bmVtSk5ibEtVMHlPa3E3ODZOdDB6YTdyM3h1d20xVEZ0bTJXNVdiWFR2UVhjamtTSjBSbUx2bDdMRExvSmZNdTA4b3ZYZXMxUnZWc0RGYVBaU2wyTk09IiwiaSI6InJVM3lCZ0lMalNQb3FTRzYiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZGZBNG9rL3Z6N01MWWNwZDgyemZXZ1h4elhlOWUvTDVDQmc1TTBjUm1rNDdpSGJvZkdXYzhybUNPZ0dpLytWbXFLMlZiVmM2UTBqUEFCMTgvSitYWmF1a1doN0siLCJpIjoiZG85TzFmWVNXY3lnYktnLyIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY0FwUStxbThOY21lMmpOMmhIOXdjLzBYWUlsaUNVeHJWMFBWaTQ5NjBjQVkyeDFTc0lqaE9MYTdsMVdkMXNWNU9nM3g5VlBiMTRzUkZZL1RLSlY3bmdwVHp0MWtzckk9IiwiaSI6IjkvWWZWQW1HZlNyMkFxQzYiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZWJiWWFwSm5XOXNqZCtrYjNBb1NESU1VSktKRlQ0UnJKY2hLakRCbWlTcWt6OCtKZk5RK3d0ZDVvQUxhZGlsVWU2eXl1MDJ3MTErWHFIZTYvamY0cUVDbzh5UG5YcFROanUxL21NSU12VDZhdjBLMlR1dWU0MEhJTjRiVUZoTW9scDZjcHVzbXBKMzRQMndUbGpnOGNSTVIiLCJpIjoiV3NBMDhHUXV4WTk2SE9YZiIsIm4iOiJGaWxlRCJ9",
+    "credits_files": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
+    "fpkg_size": "46GB",
+    "size": "119GB"
+  },
+   {
+    "title": "Disney Pixar WALL-E",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Disney_Pixar_WALL-E.avif",
+    "tags": [
+      "PPSA14383",
+      "v01.000.001",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSnRnSnYyeHdMMHZNU2J3cFRTOE5ldHVsekZpSGtBMlRGcVFrSXBWdzY4amxiWlRjRWRRem1KYWFHaGV1dEwrRzM2NVFiN1F2SHN6WU1uZFdsK0pNeTNkRk5RYmsiLCJpIjoibU5nQnJaRlBiRDFZYnVBSyIsIm4iOiJEYXRhIn0=",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibkNOVENncThwRm1wSU9qRGxCL0xiZk1vbytaTWo4bGRaUHdHVmk1R3JtMGlWb3A3Z2t5UDVxYlJPTFFRVnNsYmRzb0xmRDVBd1psdkUzVHdQR1JmSm82L1RGUDhrd0k9IiwiaSI6ImlKTUNDMXhZNmJpS3A3MmkiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiKyt0Ri9rTGJ6WFNid3ZNc2FYaWZ6eVR4azMxeE9QRlBpZUVyUllKenZBWE40SWRHMEdtWkFvaStKMWRLT2FrUjZTakFhbUxGK2U2UkRadlpvK2tkbFFmZy9jNEs1bS80Z3RVPSIsImkiOiJnUGZ2UXFuMHMwdFo3L05WIiwibiI6IkFraWEifQ==",
+    "dump_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNExhOGxEcjV1eDZpdkdhZjNseFl3aWZ3RHluWlFFVXdqWUZnNTk0cHVTUDk0TjZpUWsvZS84UGhFQzVPQWdmZ2d1K09SR3R5cm4rOUlPU1ZDbjRnMGxtQXFZeWRXR0QrZlluSXlvOGt4bDVhajk2NmZTN0VVeVJPdkhGVmgwVWJlOEJZd1NyV0dnPT0iLCJpIjoiQXE4dDVtK20xT0tJVWZhYyIsIm4iOiJGaWxlRCJ9",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieHFuRlBnbTNWRVhpL0Q4bXJSeFFWbG0yaWFMclpNQ0lzcXRGQkY2bGNBamh1a2tFRzBFcEs1T0RDRFJ6ZTdPUmNzeUducXFLSWFSbWtqUXN4TWlUc0dFR3RhZ2hVcGc9IiwiaSI6InJzelEvV2hSSG4ydHdJaWgiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRVB6aDhTeHNVbTZYSE1RUU9JaGpoUGVVOVpJMFk1T1FuaTJ3d1lPMHFXV2dBcnBHK2ovOWJ4TjNpR012c2M0WUpmRWs4cWQwTTcrTlF0QTNlNGVLc09Ud1AyYVpuYU13ejk0PSIsImkiOiJRNEwwYzVWSWg2WDhxUkhOIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRFBxNVIxdEZpK1Fxa1ozWTRKY0dSWmgyM2tVYm1pVDNUY1o2OWZPTDB5eGRWWW8wemhQWXYycjlSWFFNaTZLbnhxODU1OExWZjVJNHhmb1ZtaWYwdFF5amNhRTJNWU09IiwiaSI6ImovOE56MVNPeG1nS1JZYXciLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTkNDM282UUpxeVhKd1R6SEx6UGg3QmFNSXdCaisrMDZZOUY5NDNhVFJXb3gxaDA4RUgrMndlaG43Qm1raG1UeFVrS0ZOdk9BcGllRVI4b3RWbGdMQ2ZqNTZXQ0MiLCJpIjoiekU0SGxSSU1QWkFOZThrcSIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT2lVS1Y2T1ZXcXZZazRvaTMwNWpkdzhDeUl3UHBrUktzUDdnUHp4eWIvRXQycTExZWtjWmVqMHNNWXpMMTVqcHJRVDRYS1V0STZkSmxFalBvZTlPRUFuVlJDTTh6akk9IiwiaSI6Ii9OK3pSWVVWWkFwYnBGaG8iLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieURBY2tHZFBmOTEyRG9MRjR5SFFKSnNVWGxTaFp5R1lPbm9pZ0xjT014YVF6OUdyNmMvWkw1SktMOFBJSkFFOTJzQ1hySTB3dXppTE5VQ3NDUG0vTGdILzRJWkxHUGV4NVFhYUNwYm9lRm95eW5HSlZBakgrQ0Rad01JL3daaTdtYU9OTkNhM3JjaTNBVGFzM1F1SWlzd2MiLCJpIjoiZDZ1UkNYQlJoM0xTcFZZWCIsIm4iOiJGaWxlRCJ9",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 9.xx, separated BackPort for 4.xx+ included.",
+    "fpkg_size": "13GB",
+    "size": "24GB"
+  },
+   {
+    "title": "Super Mega Baseball 4 Ballpark Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Super_Mega_Baseball_4_BPE.jpg",
+    "tags": [
+      "PPSA06142",
+      "v01.008",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ1JZSzVZMU5oRHp4VVozTUV0YlYwaEVWV0I2L2dJMzFub1k2dXN5aEdGOFlPZTlTL0RmWlRYMUt2THpHSXF0ZWhaM2JDM2E4UXNKRlUweXJPYjEzV0hSNEZyLysiLCJpIjoiRnA2UWtrMkJMb3dFcmg4aiIsIm4iOiJEYXRhIn0=",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZEZSNTJFY3E2YS8yQVFvQjF0a2ZZcEpvSjBZbWlHNG0wSkNpL0dCZlRLTGhWOUd5QWQ1ZEovZWczVytRcDVKNkp2STUzMkQwRmhQYkU2YmRwenc1cVZiZGt6UnNEYnM9IiwiaSI6IkRabGdQa0xia2Y5dGp1bFEiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNW1OOUhBcmFWMmNYa1hDb2NrK0NvZW9lMmlWZHgzdUw5SzdUREt3dUwvZ2huZEswNjBnN0V5V1FRY1ZFUEJLOHZQaWh2SldqdExKaWE1WGRUM1MvVE91bDhEbkFTVlRnSGl3PSIsImkiOiIvZXVWalBMekh0ZFd6WFh3IiwibiI6IkFraWEifQ==",
+    "dump_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOFhHYithcEJUdklCMVhycjlBUkRNSmFMaFJQTHNMSmFGYXNHSWlXRFQ1VVpFaHcyWFRJYjNjNjR1Z3J2OGUxdFo4SUNKV1pIK3FkQXFtS0gzalZPa0J6aTVPZDhGS3hNNzlSOUFQVFgzcGNwamt5VHZLZ2NnZ29WeS9OSFNBNlhhem0ySVFtZjF3PT0iLCJpIjoiK09NNWI2M2t6bllpSjJ3bSIsIm4iOiJGaWxlRCJ9",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRG9VZzJ4TGt6Sk5qK1N6LytMQVJoZ0p1SW15YXRlR2ZUR0toem42dFBWQ1NCUzlDL3UxZlZiOG5vWEpHTHFlSTd6TDJJZW8vMTdDRlVwVXJxS1Z2WUFPLzZTQWk0WWM9IiwiaSI6IjZKdis0L1JUa0tvbFR6NTYiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidGx4T1QzTStZMzVBYitXeTJSeUZyUWxSWXN1ZkMrOUdEaHBrR1dMeWQ0SHVYQWE5b2E0WXBnTWsvOCszSGNvY2NxbHhDQjcxY1JFZGczMjEwN2NQSDlwejcrUTQwOXhGWC9FPSIsImkiOiJUcDZZcFllNWl4RThKeVYvIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS1ZmcUU0bnJPZjhLUWpPN1VKc1IzYzQ2N3pDUHdWT2lVbWVZMHlUSU84cGlEckNqNWtxbEFiZWExSkVOdGJrN0thQWRXbWtXQzF4MVd1YnY1MFBpTTJ2RFUzYU1NclE9IiwiaSI6InRuMEhlRktRRjV4ZkdVd3giLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNTE4azB1bXcwOTlFemhDYlRlRjNxd3RiM3R3Z1lXS2lDMzk4MzhXeU9mOTU5UngzbzVPcnRpajdpanpMRG5XVm1iVzVzOTZHeHRYaVlUa05obGZhenpqekNEU0kiLCJpIjoiM0ZIWi9hUzJxazY4YjhjdiIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNGkzbE9IVFo0NEhUZ25IckYwM3JsUEh5VGNSSVcyV3gvRDZIUmwvQzNGaDMwa0tKS2tnVGtIOWs4OWFmaXBPRFMzNXdXMVh4cU85blIvRi8zaUxXdUpQT2MwOU4xRlE9IiwiaSI6InBOa1ZQbDhSc05sc2xwUlYiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOUIxaG02UGVoQlN6TXp2SDRkOGNTdTdIZlBwajFOVUdDNnk0YURxN1BPTjhzNk9wbk9yK2F0aWFXdUdFRFhpdTNEMEpOQUNiY2ZuSUVTWGM4d283STU0a0x2bk5ZTndFQ2hLY2ZKTi9PRUdheE4xRU16Y0p6OHVUWFhLenNjQzBKc0N1cHE1cFE5WVhVSW5WQlV6Sko2NUsiLCJpIjoic1JkODhhZ01SclNzSWcvcCIsIm4iOiJGaWxlRCJ9",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUW1BcktacllHSWNuTFFyL0FXNE95aVVBUXViZXNNcmU1S3pSRklkeW1RNjlEaVpObXNsUXhiL0I3Y0tuTE9SVkZ5ZEo0U2pDRHdlUWlhSnBBbWpLVnoydzQzSjMiLCJpIjoiV2I5VTE3eTQxMXNrSU9xdCIsIm4iOiJEYXRhIn0=",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibGQvallxRjRSZUM1RVNKaFBBMkxXdEUyUURTVldkQ1pRdGxXOUMwUEd0dnhRYktxOTdEK0FWWDFSV05xN0pnMGZNOXArSFFQWGhVWk5oRzQ4R2c0YU9ybmwzWkZhZz09IiwiaSI6IlBWaHdaUDEzaFpRQlJOYU4iLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 6.xx, separated BackPort for 4.xx+ included.",
+    "fpkg_size": "14GB",
+    "size": "18GB"
+  },
+   {
     "title": "Sonic Unleashed Recompiled Unofficial Port",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Sonic_Unleashed_Recompiled.jpg",
     "tags": [
