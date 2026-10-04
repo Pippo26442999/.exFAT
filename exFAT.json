@@ -20,6 +20,8 @@
     "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZWJiWWFwSm5XOXNqZCtrYjNBb1NESU1VSktKRlQ0UnJKY2hLakRCbWlTcWt6OCtKZk5RK3d0ZDVvQUxhZGlsVWU2eXl1MDJ3MTErWHFIZTYvamY0cUVDbzh5UG5YcFROanUxL21NSU12VDZhdjBLMlR1dWU0MEhJTjRiVUZoTW9scDZjcHVzbXBKMzRQMndUbGpnOGNSTVIiLCJpIjoiV3NBMDhHUXV4WTk2SE9YZiIsIm4iOiJGaWxlRCJ9",
     "credits_files": "DecKerr97",
     "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
     "fpkg_size": "46GB",
     "size": "119GB"
   },
@@ -45,6 +47,7 @@
     "credits_files": "DecKerr97",
     "credits_backport": "DecKerr97",
     "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 9.xx, separated BackPort for 4.xx+ included.",
+    "apr_emu": "on",
     "fpkg_size": "13GB",
     "size": "24GB"
   },
@@ -73,6 +76,7 @@
     "credits_backport": "DecKerr97",
     "credits_dlc": "Pippo",
     "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 6.xx, separated BackPort for 4.xx+ included.",
+    "apr_emu": "on",
     "fpkg_size": "14GB",
     "size": "18GB"
   },
