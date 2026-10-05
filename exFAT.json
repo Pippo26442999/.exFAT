@@ -1,5 +1,32 @@
 [
    {
+    "title": "Marvels Wolverine Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Marvels_Wolverine.avif",
+    "tags": [
+      "PPSA03671",
+      "v01.001.005",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblZiYUtvb3lERDNsdXVDU1U5YTl4cFZqdDBEWk9WMEY4Z2YyQ0xCcUlrZlZYa1FZR1UydStJZmdEdnVDUk9XaytZY1Z1QzZNN0ZTdFh0Wkw1UWMyYzZNNVUwR1IiLCJpIjoiQWdLeE03akZQMnBUaFgrKyIsIm4iOiJEYXRhIn0=", 
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieXBqV1JqNnk3bTJvNGZib29xTUhYdWNMQnFSSFVPZENJR0NPQ0lvUjJCRjNVdmJxWWxuTXJWdGhsVjZlU280dnFwbUtTTE12bFJlV2FLSFNkQ2Evc3R2MVV3azZvcVE9IiwiaSI6IkozWFhZcTAxZVVZOHhZRngiLCJuIjoiRmlsZUsifQ==", 
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZk1lZkg3Y0xibVM1SWZhVXIrZ2pndnFINEdmWGE3M002MVBzY1BvVzlOeXlsc1IwUXg4Njk0M2QvK1BCL3dWUyt4THI4Nys3d1ZSYmZ4UmtRWG5EVkRlUVNWWktYWmwvSVlJPSIsImkiOiJHZE04Mmh3dTJ3WUJnK0dLIiwibiI6IkFraWEifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ1BSRnJ6dTQ0enREWkxaODhyc1p0bXQwY2RwK1dONWtiY0plemNDWkE3ZkVOZFZyTzJQa3dNeU5vQUZzanRUZ1U3ekZ6V2p4YjZ4a1VHeDI2a0ZwdGlKcmhVa085RjA9IiwiaSI6Ijc1cTdlYlF5U0JIMlpOS3MiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTU5paUMzblpJNnZGS2ZPYVFucENOejNjeHZ1aGJrVnd2ajVRR0VqT3l1T1hFeDVsbXQxeU00bHVmNTM0T1FJK0habE9IV3VhVTAydThHdGFjRVpORFlMWWJLUGwiLCJpIjoiY1ZPdnhIc2VFYm93R3hmaSIsIm4iOiJEYXRhIn0=",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL241OU4xU2xVN1dPM25NRUdidEpEc0FaWmlaOVF0VHp4NjhDQUNvSkdxb0s1WStQYXcyQmJZTHVmc21jeUlPbU9jY2pIL2QxTGE5RFF2YnJadUhMR3BlU050K2ZQNHM9IiwiaSI6IkgzTjk3SHZVRE9lVW1oc1AiLCJuIjoiRmlsZUsifQ==",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQTYwdTM1eGZDTVBPaEFzcDdXZll2Rlo2Nm5SUUhlL0szc3RXSjBlRUZUNlp6eTk2UWFEMDlVaEZxeTNLZk5RbCtIdWcxcXdtNGQ4bWdKdXlrZTh3QTBWRG9UM2tScllkWmI2Ukc2ekk5ZlRsMEtOWmpiSndHd3lyVzFVLzVicFprcXBJdk5VaERHWDN3NUpobkEzYmk5VjgiLCJpIjoiWUlyQkUybHBPR0ZpQU5HWCIsIm4iOiJGaWxlRCJ9",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT1RicktJT05XZkNNR20rVmFkdHc1aU51dTFHSkNhMjhYajJxcUh1SUUxNlN6QUF1WmZHSStzWTBNbmRFalZYbzQxYUdVTS9pR3l6VWo0Y3ZBZWJOUzAxUExsbmlvaHpMT0JLUm5JTGxkUT09IiwiaSI6IllGd2h6VFk5azVZdnJoZVoiLCJuIjoiRGF0YSJ9",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUEtTN3kyYjZvUlFUSGVjT3BybkpVSVo4cHRjWlhPdStrZDl4THJDN24vSFZSR0R6ZE1JNlJ6UnowQjl0V2ZPOU5WYVVIS05lUkNqU2JGTXpodVAvYkFYU0hjbzg5Z3JIM2dsLzlmejhvWlk9IiwiaSI6InVVTUxKT3hNSGJaTFBZSWgiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Fubc",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG is 13.xx, separated BackPort PKG for 4.xx with Pro Fix included. DLCs available after the prologue, after the first suit and unlock the gear tab.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "95GB",
+    "size": "183GB"
+  },
+   {
     "title": "ASTRO BOT Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/ASTRO_BOT_DE.avif",
     "tags": [
@@ -532,30 +559,6 @@
     "popular": "on",
     "fpkg_size": "45GB",
     "size": "81GB"
-  },
-   {
-    "title": "Marvels Wolverine",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Marvels_Wolverine.avif",
-    "tags": [
-      "PPSA03671",
-      "v01.001.005",
-      "USA",
-      "4.xx BackPort"
-    ],
-    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiblZiYUtvb3lERDNsdXVDU1U5YTl4cFZqdDBEWk9WMEY4Z2YyQ0xCcUlrZlZYa1FZR1UydStJZmdEdnVDUk9XaytZY1Z1QzZNN0ZTdFh0Wkw1UWMyYzZNNVUwR1IiLCJpIjoiQWdLeE03akZQMnBUaFgrKyIsIm4iOiJEYXRhIn0=", 
-    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieXBqV1JqNnk3bTJvNGZib29xTUhYdWNMQnFSSFVPZENJR0NPQ0lvUjJCRjNVdmJxWWxuTXJWdGhsVjZlU280dnFwbUtTTE12bFJlV2FLSFNkQ2Evc3R2MVV3azZvcVE9IiwiaSI6IkozWFhZcTAxZVVZOHhZRngiLCJuIjoiRmlsZUsifQ==", 
-    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZk1lZkg3Y0xibVM1SWZhVXIrZ2pndnFINEdmWGE3M002MVBzY1BvVzlOeXlsc1IwUXg4Njk0M2QvK1BCL3dWUyt4THI4Nys3d1ZSYmZ4UmtRWG5EVkRlUVNWWktYWmwvSVlJPSIsImkiOiJHZE04Mmh3dTJ3WUJnK0dLIiwibiI6IkFraWEifQ==",
-    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ1BSRnJ6dTQ0enREWkxaODhyc1p0bXQwY2RwK1dONWtiY0plemNDWkE3ZkVOZFZyTzJQa3dNeU5vQUZzanRUZ1U3ekZ6V2p4YjZ4a1VHeDI2a0ZwdGlKcmhVa085RjA9IiwiaSI6Ijc1cTdlYlF5U0JIMlpOS3MiLCJuIjoiVmlraSJ9",
-    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTU5paUMzblpJNnZGS2ZPYVFucENOejNjeHZ1aGJrVnd2ajVRR0VqT3l1T1hFeDVsbXQxeU00bHVmNTM0T1FJK0habE9IV3VhVTAydThHdGFjRVpORFlMWWJLUGwiLCJpIjoiY1ZPdnhIc2VFYm93R3hmaSIsIm4iOiJEYXRhIn0=",
-    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL241OU4xU2xVN1dPM25NRUdidEpEc0FaWmlaOVF0VHp4NjhDQUNvSkdxb0s1WStQYXcyQmJZTHVmc21jeUlPbU9jY2pIL2QxTGE5RFF2YnJadUhMR3BlU050K2ZQNHM9IiwiaSI6IkgzTjk3SHZVRE9lVW1oc1AiLCJuIjoiRmlsZUsifQ==",
-    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQTYwdTM1eGZDTVBPaEFzcDdXZll2Rlo2Nm5SUUhlL0szc3RXSjBlRUZUNlp6eTk2UWFEMDlVaEZxeTNLZk5RbCtIdWcxcXdtNGQ4bWdKdXlrZTh3QTBWRG9UM2tScllkWmI2Ukc2ekk5ZlRsMEtOWmpiSndHd3lyVzFVLzVicFprcXBJdk5VaERHWDN3NUpobkEzYmk5VjgiLCJpIjoiWUlyQkUybHBPR0ZpQU5HWCIsIm4iOiJGaWxlRCJ9",
-    "credits_files": "DecKerr97",
-    "credits_backport": "DecKerr97",
-    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG is 13.xx, separated BackPort PKG for 4.xx with Pro Fix included.",
-    "apr_emu": "on",
-    "popular": "on",
-    "fpkg_size": "95GB",
-    "size": "183GB"
   },
    {
     "title": "LEGO Batman Legacy of The Dark Knight Deluxe Edition",
