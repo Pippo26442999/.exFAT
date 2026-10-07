@@ -273,7 +273,7 @@
     "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRDdLRmZDWHpNRGtYUmxUaGY1UFVLdUNSWTJkd2JlSEJFam5ra1VVWEdoRXMwcjM0ZFhxdUhjaEhkTGwyWEpFQkhpazJCNWhUb2lSMS83MmtLVG1RcUhvbHJDTWREa3hPVXFZUkJDeGcwakE9IiwiaSI6Ijhjek85UXNNSGtmRlpvWFMiLCJuIjoiVmlraSJ9",
     "credits_files": "DecKerr97",
     "credits_backport": "DecKerr97",
-    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 11.xx, separated BackPort for 4.xx+ included.",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 11.xx, separated BackPort for 4.xx+ included. If no Audio set English as your Console Language.",
     "apr_emu": "on",
     "popular": "on",
     "fpkg_size": "37GB",
