@@ -1,5 +1,33 @@
 [
    {
+    "title": "STAR WARS Galactic Racer Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/STAR_WARS_Galactic_Racer_DE.avif",
+    "tags": [
+      "PPSA28416",
+      "v01.003.001",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaWlLNkl4UytNNmRmOTljOFZZRlpid2lVeEN2NUk2TlJ5MlVGU0plbmtPem9JcFBYRGN2elVJeDEzeWJIMnZhdmx6SHZmc013YUlIanNLemRManZSYnZMV2NrdWNCWDl6WXQwTVBFQ1ZnQT09IiwiaSI6IkZIbzROZmN2ZERlbUltWUMiLCJuIjoiRGF0YSJ9",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSGwvOEpyTDVhbEZ0anhENVU2S0lCOXphVHlIWWtIUGV3WE13UG9pVHViRTVGc0RHRndiWnZ2Vlh4aEhxVkMwSG9CbDVqYXdmTjNFUkdDSFM0eHQwQ2F1K0lnOFVaS0tQMC9Gayt6Nk4iLCJpIjoiN1RaUjE3eUVpS2E3MzVmZiIsIm4iOiJBa2lhIn0=",
+    "dump_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQlFlenB0MjlPWkZqYyt1aWpXL0pzczZWRlg5ekxWby9nY1ZjU3JVekNnUHlsUlRWaEhkSk13Z1djTmpjVDRpbkZnZGliSFVuc1Q2S1FVZVFYSnh4bE5seGVmV1RDK0hOWmhiNElQZytUQT09IiwiaSI6InJLOTdIV0VmUExGTE5Kem4iLCJuIjoiRmlsZUQifQ==",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia1BxUVEzR21iOGxvV0F6VVRkMkgrZEhnc3BzWmpVNlowcU9GN0RLRldEemVWWkNNbXRZVThxQUM5NElvNlFJQi94TFZsN3oxcWF6RG05SGVhc3NKakFIUjBpK2pZbW5icFJudEF1eC9FUEE9IiwiaSI6Ikp1UzRvUDBCNWlsQVpDWUUiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaVhkaTl2RnA4N0lsd0xleTFrcEtWRWcyVjZsakxMREFtZXVKY1krZ21sdkJQMEpteExyRlpkb1NqZGMwMFVJbFRyWkFUUytPSmg1dmJScU9MWEU1VmEvZUUzSjNSbkNScXVRVVdoa3YiLCJpIjoicExLMUFFZ0kwK2lOUGlVbCIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMG94a3BmNVNYSjM2RWRNak83M28zS3J1Nm00QTJ2UVBXNVF2QzQvN0lFRmNGL1dZeGxPWXF3RVBrZ2p1ZmlQQkpZRFFjRDhObGkzK1lab0NiVHNhNjdTRDNuOExyeVRrcEd4MnJJTDRZVEU9IiwiaSI6InRpUTZlbE4vWEJ5TU10UGUiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiajJDY1lTQWE4WFFnVnJDNHFpUXpiRVFkdWY1MXJBbGc4L0k1aDNsUWkzNWczUC9GeVk0TE16NTRXN3JnaVFhUlRkUnF4TUJlRnYzRHNTV21HVk5BbGsrZUVGbjUyYjkxbEVLL2ozZFhGQT09IiwiaSI6ImRaN0drZmFNMXZiZlp2RmkiLCJuIjoiRGF0YSJ9",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTTdyeU8yUmFYTk0vTElJU2Q5dHJ2WEdIY0RIME1tUUM5RzA3ekVIK0tQeUJWd1AwRWdoY2NkN0FEbFkyNTNMcldIRW82a2g1TVR4czVqdzREQ0NQQ2xzU0Q1d0VldHZuVG10OEI2bDN4QT09IiwiaSI6IkQ3Ym1UK3VpWFFrZmw2TlQiLCJuIjoiRmlsZUQifQ==",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUTE5cHpxRGIvb2pWcm9jTkU0RlB0bUpKRHh1K2FiRFhQMDFNdDVWWEdhS0Rod2hVK0psOWhhTlJkOHBqSGNIdndKZnhHaDJHczNFbWV1bDJoRVVKKys2ZnV2VW5TaGlUMElPTU8rdkJaOXc9IiwiaSI6Im12a0VtTzY1T3RIRGFCTlQiLCJuIjoiVmF1bHQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWXQ4V3RPVnd0NDdSWmtPYU94Z3YzTU5UVU50Zm16V0xPanpLcUwxS1YvOWdDeVNERDJZM1JyazdvZzNoRitXS2IvMytPZEwzK2hoWlg4cVlVQmM4MWtLMGJYTjYxMVNvN1hTZTR2SVRtdz09IiwiaSI6IlM3V2p0bDVZeXV4eEdIeWUiLCJuIjoiRGF0YSJ9",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 13.xx, separated BackPort PKG for 4.xx Only & 5.xx+ included with fixes.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "32GB",
+    "size": "68GB"
+  },
+   {
     "title": "Star Wars Zero Company Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Star_Wars_Zero_Company_DE.avif",
     "tags": [
