@@ -19,7 +19,7 @@
     },
     {
       "question": "❌ Can't install BackPort separated, what can i do?",
-      "answer": "This can be everything, make sure you extract the Archive with 7-Zip if not help verify the Contents on SHA256 folder then if you get mismatched need download again. Update delta also if small packages need some space enough on the Console for extract & verify, just in case they are always tested on 9.00."
+      "answer": "This can be everything, make sure you extract the Archive with 7-Zip if not help verify the Contents on SHA256 folder then if you get mismatched need download again. Update delta also if small packages need some space enough on the Console for extract & verify, just in case they are always tested on 9.00 with 500GB Free Space."
     },
     {
       "question": "📁 How to update .exFAT?",
