@@ -1,5 +1,98 @@
 [
    {
+    "title": "Saints Row The Third Remastered",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Saints_Row_The_Third_Remastered.webp",
+    "tags": [
+      "PPSA02873",
+      "v01.005",
+      "USA",
+      "3.xx and beyond"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieUVJOG5PdFpxK3ZwdEtEK09UME0zbE84SmVjTmREWlNJMDlXbGk1ODB0Uis5UDA3WGNDZmRIVXJxOXVsWVk0dU4wZXE2TXc4VG1ydWNWZU5DVVlwYXFzWmVpSHBrQmh6R0pad0hOdnVpQT09IiwiaSI6IjQ5b2Z2bmxNN0dDaFRWenciLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieXFmSnBCV0pWUXphK2dQZjJJOTRXdlVaTXk5V0RIeHdYSTdmSVFyaWd1TnFSa0I4Nmw3bUQ5b3RuM0pqZnFFaUJ0Vm4ranpRK3d2Yk9BaUdOcWRFcnczb3MybU5iMmFSVFUzNzRmaTNmVnM9IiwiaSI6IlA0TDhoOFRWNXZyQkpid0MiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicWYxcVNSMWgrUlUwZTc4aklTVDl5V0JELzNtMGFyWHBpeVJVS3RWWkpNM2g1SUp1TlZDaDlXUjBDMUc3blFhS0VCZjU1U1dIb2p3TElXcDlJa2dQVEt5T1IzaUVld01zMnNPdy9PN04iLCJpIjoiUDg4MUNPcnBKRWlCSE80USIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTzVCZ2NRTzFSVFRKczJQK1JiMmYrMXpKZU9OOU5qWG1IQlRwc1hZWlBDVldad2g5UHBza1gxS3V4aGloajZzeVhwc0dvcDBmb1kzL1BrMHM1ajBzVWZ3WmVqNEJGN0VWdSsvQjNiZGkremM9IiwiaSI6IkQvOWJCZ2Z5SU1rS2FpSHAiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWTl2SU1XSE9sN3EycDNZaTlDZ2g4VzlKMUZHWC85T0lxN1o5N1BzQlFhelExMkhSc3MxVm9TeTQyYkdXbjZwc3h0T0JXMGJyOG9HUGZuNGhnc1NReVNLUDNWa2t4ZGNaa3FsTkxCK1oiLCJpIjoiaU1hNFYrN0tKNDQ1WlVUOSIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTmJPTHZjU0J5NXBQMkQ2RlR6NEgwRWlNblBGK2FQV1ZJN2gxYkNzaFZKaTVWQ0preEM2RUEwY3dwVHA3VkNKQ2NWVWsxK2R4Y2FsamFDbWdqbjV5enNIMjlra1BzMHJoVWZEcGRBbUJBRWs9IiwiaSI6ImVBdHVVaytVWTd4WmczKzEiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMkk3MWRRbTVSNDFrMWlHWTkranZzaTdpZGxPWnZxOVJLRkVGSklKaktDSk9jV3dXd3JCNlA0OUwvUlFWenRRQmIwdmtoRjlOOFMvNkJZMUJ0bWZpbVFkdlZKMXpLZ2JTYzdNSm9HaGV2dz09IiwiaSI6IkRKQnJVVVVoQXVxemUvaTciLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRTRkUm9BTUdMNFFOSlp3bzNjUk82L1FNWHJHaXRSelNPZHBYMldTeHRYbkNraWwwdXZsWW1URkFka2lNU0dyWjYzZEJNQjZvOGNYNFZqNTJ0MVJvMWwrSjN3TTkxYUVYLzFPVW5TRnVTa0E9IiwiaSI6Inc2SmhxVzRiQi9nRkFNZVoiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
+    "fpkg_size": "43GB",
+    "size": "48GB"
+  },
+   {
+    "title": "Super Meat Boy 3D",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Super_Meat_Boy_3D.avif",
+    "tags": [
+      "PPSA31162",
+      "v02.000.001",
+      "EUR",
+      "4.xx BackPort + 5.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMTQwa2JrOGhJY1NPTnFHUWIrMVJmcnJ5SVEzTTF3SUpMK0k3ZExsbWJoZS9DNTl1K1pHVTJHcGl5RlNrVFFTZ3dRbEthUnZaVTlhVVlqYUVUWGtMTmY2OSt4ZjdVdzBhRW41NnhYTCthdz09IiwiaSI6IlBMeHlLeDJSYVkwVDBtWFMiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZXZyeFN2LzFFbnZUUjFxb2hjVmNMa1J1b1BsWm1tLzRQQ2FickI1elFlV01PMjg3Q3BBZGh5MkFZWmlRQWRpTUZ1Sjc1VDZkT2p6UThJY3ljK1RoUUdlYkZLTWxPVFZ6TkU5VG9vM3FKU1k9IiwiaSI6IkZWa29nenFhSVpBY21qTVgiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOVl4YkJ1bEo0VDAwS0hZZDk2clRVaFdKU2VwNXcwVnd2ZDFjU2VvU0RJZDRUQWVjVkh6dHJLT256UHJ0ZmEwUDdmNEZKZDJ4QnROcTBqOE9kaXJPQlI1RHB5NER4UnRlU3BMZCtNQ2YiLCJpIjoibDNOZW1pSlZJcCtBRGNuSiIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOHdnbzF2V2dJU2VEamlpcW5zcm4rN1BwcHlCMGs4dU16QUVLYVhOcng2V2NqcVQwRGxTcGU5ZE9tRFRROHcxNW9ERkE4aU9peC9MWm9OUGpuRG1LQ3BWSjdWdW8xbXpRSlJTNzJ6NDVEVjA9IiwiaSI6IkJxQU96Tm5lcFVPL3lDVHciLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUd0NXhCWlN5WXpiWVJLVnB4NjlEV3pUMkVUV1plaFZkeklXdjNHalJOZVY4ZGg4Tmg0RXBwRUZNSjdYb0hpS1Q3aWx3b0RUbzFNY1ZpUHN1bjFwajZoMHQwY0FSMjdHZnJKbXk5KzYiLCJpIjoiekxtWmZBZWlyTWpmTERiNSIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZmtGNEZWUDB2NUoyMlJnNWNLcGF6NVdpUmZJak85YWVHY1BsMVh6MlRDWkREQkFsOUdDWjJCeG13Yisxb1VPdmN5WDNHanBkUXVwV0pmOHVjcEppcWhSVytXR2hXUWMzVklHUWtaSEpOc2s9IiwiaSI6IjhoWlI3UDFPNWltY0MySlUiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicGFOcEkrUEM4R0pQOHc4SDVtdlNiRm9qUGxRUGp5QmhWQStkbGtkNmN0c0wzcEpoQTF4MEVlcndoTWUzT09RWjVRSys2RTVKcU4rajVtYmxvdHZnWVBMUUVIUVFsUkExckt3VzdQais4UT09IiwiaSI6IkJXaE9neXUzMmVGYUNpYzUiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidHN4TkNibC9TRlprZU5IQU8xYW1vZ0FScm1KRkJnV3RnNy9kMndNMzdFT0h1MWZKWkp2ZHNvejE5YVROb1I3TlZWMThJamhXSlJsdTZ3MDBOK1l0SnVFSEdwZHI5NG5WazE3MjRabm1ZYm89IiwiaSI6InVIL2dQRmZZUEc4WVd6YysiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 11.xx, separated BackPort PKG for 4.xx Only & 5.xx+ included.",
+    "apr_emu": "on",
+    "fpkg_size": "3GB",
+    "size": "4GB"
+  },
+   {
+    "title": "7 Days To Die Console Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/7_Days_To_Die_Console_Edition.avif",
+    "tags": [
+      "PPSA16645",
+      "v01.320.001",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWTQ2eDRFeENnTVg1YnRIaCtlcHZWS3g2NEIwNzFybFloU3BFVkZYOE10akxkOFI1UmUrVFhQNjdKRHFaZ1FMNXBGaFF5bklvcDdNL2ZJYXNybkZ1dEhwSUZGRXdhcHp2NkJOSmVzdE9aZz09IiwiaSI6ImttbU4vZzc4bkRmUzNQdloiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRStld29nWXNYVW5DRW5DeFNmdVBNdEUvVEZtZjZ6YldOQmF5RUYydjZ4YjRySjRtZE5xZkcrYWVvcWR1dEswcTFKNnVZQWYvbXBzaG1LQjh6U2M0cGd0K0FvT2VLd25HYnc4U3RaZVR0WE09IiwiaSI6IkZpTzdKNFI0NTR3SXdPNk8iLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibVdKWjJTYURLSFJ2RmpUaS9GU0s2aWdWWkZVbS9oTk5OYkd0b2phemZWMUViaS84akhBNmRwaUl6UkduZUNxdUZlUXNNN0JnTFNmNWNiRGloc2JsQ1NLelFKU3FSSXFVN082U2YxTzgiLCJpIjoiQ2RMYjhOY2QxNlZuWGtqayIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieWdISUt3TWp5WFNPTzBXODBtWFYvaGtsQWZkZlZaMUdpMDl6Wmd0Zk5GazFDdldxb0dqME1zelVwTmZ5Sm5zcEg5SFhnTkhMZkFqelVOYWkxdDUxcit6c0xwZ2N2c291eUtOUm83UzEvODg9IiwiaSI6IlZCcUxRL2N3NjRDd1k0SFAiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ0RJVldqczA0TEw4T0t5Q3pCUXBremF5U3JEdEkxU1ZMMkIvdEFOQms3TThaNEVpaGE0dFNzNXdJRzNOMmtIRnJ1V0hDbXZ5KzlsYWZOSUY3NGlVTkJ1M21xeE5UdFowNmxPN0toNHEiLCJpIjoiWkF1dGFYVXJiQmdzMGorRiIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibGROaWJqeVdvMHl3SzdXWU1FcUFqbzI0bW9TaVE5a1JQZnRYQ2hVTnJPaUI1YTNSdHFpZEQrZEdhV2JrTVN6Y1FtUTNWQkMyVFQxWkk0MTJrN0xGN3NISE5zZGRMSGRxRTVDZ3hEOURrbDg9IiwiaSI6IlI3NWZKQ1pVSmJCRmNvMkUiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXFzbVpXbktBcVliU2tmcmtoNUluTVI0VmEzYU1ZNldUYldvTG8veXp2THdQV25IeTFXMmhkbEpueDRjRjl2Z2xnKzRFMlZCbTlJdHl4NlBtUTNrbTNCQ2xPZEpURDVFMkVIUVhYUEtkUT09IiwiaSI6InpGQXc2dGJnb1hhSzlUOSsiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaG04alZ6OUFpK1I0UWtoTzNWTjRKSkh0eTArZXZjYzU5Q2VlKzJXdS9FNmFTblJ0SjRka1FHdndzdG5BQjYyaWlnMVpvUlFrNVNaaGxXRHZWdnE5NHlIdzVUaFR3aTRWbDA3b1R0RTdZUWc9IiwiaSI6ImdQSGVKaVIwUzJscHBqdisiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "High-Speed007",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 10.xx, separated BackPort PKG for 4.xx+ included.",
+    "apr_emu": "on",
+    "fpkg_size": "14GB",
+    "size": "27GB"
+  },
+   {
+    "title": "The Last Oricru",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Last_Oricru.avif",
+    "tags": [
+      "PPSA04867",
+      "v01.005",
+      "USA",
+      "4.xx and beyond"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRHc2OXRaUWRwRWxhNGFDelFtOGkrRkRuKzUrQlV6VkMyTlEwQW9aVGIrd1RZbkVEdkRVTEErMjFSaEdubHBTNjJ4WHBLOXFLWXRIWlJzelhBL3VLOFhweStMMzNPa0lIU0FqaS8rTG9LZz09IiwiaSI6ImJSdkVMa1ZLK2hxSlZya1UiLCJuIjoiRGF0YSJ9",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicGxUei9tTFNOa1M2VFpMS2NEd2gzYXcwVzZIZ1ExSXg3QXc4SkdYS1d6OU13WHFTUTluR3dlcUZVWWU4QkhKN1hveit2QThRNDQ1OFg2eFN5NUVWUG0rMlFHejBPUDE2YXdtRXY5eUgiLCJpIjoidmwya0NUY2hxK1lKbnRXeSIsIm4iOiJBa2lhIn0=",
+    "dump_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQTZmc1VXMmZRK0QvYmhiV1ZPQVp4Z1dtQzVCejJYb3M3Q2gvYm1PK09EelJyTDV5cUprQTNPL3ZNQ1ZsMkc4czZiVm9TSzlvdEZlSm8xSlZGd1N5TUZqdStiRVVqU2RLYTQ0S09yait6QT09IiwiaSI6Im9CK1dYNHdFUEd6Q2dHbWkiLCJuIjoiRmlsZUQifQ==",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieVc5Q0V5TGc1MjlCemUvd3pTUDBNOGFaMHEzdTBqdlpKSTcvNmdiK2ZKZkdEeVV1bXFLZGtHTHN0S1JrTE9SNHpQRG9kLzRXS3Iyb3pGQXR6YVBZNzUyV1pQMHA5MnVmSmxpeTJrVytDSzg9IiwiaSI6IkJUN0ZXTTRjSkFYTzNRNTMiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRlNlK0xwaUJVRWJFZVlaQUZyNG5VUi92a2gzcmN6SGwyRnpleld2N1pnbWtZWHl6UGl3b2s2M3creFhqVTMzRlJQYVluR0NFSUlBS3hxTlgrdmZsd1ZsZzhKOWF2RS9od0hYcG9WY1IiLCJpIjoibC9aTEVTK2F3WWlYU0FBKyIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ2pReHkxeGIwYTlqSmE3cHBvUnZCSmIwZHVDRFZNRmVZUDdIK25ra2tjancxRjB0enc0aTNRcUltd3VUQXFSd3dYWjNOdm9iVmhJOWtHWE9FYXU1TE9jOGxIMFpQUUprRHpEaEI1OWQ2V1E9IiwiaSI6ImYzVHNYQzNLdEh3cFpIS3IiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL2ZQWUhhM1pEYVMwRlRLRER3cmMzUGFIaUFaeXd2OVZOak4wTWxmWjMzYkVxdjlLcHBXWm9xbExJT05CTVhEWjJ6Q3FDL3NVaElzaEtFSllNZWRLWVBWZkhlekJHVXdHRXVMQVRMNlJSUT09IiwiaSI6IkQrSXZNZkVnZEpVYmwwelEiLCJuIjoiRGF0YSJ9",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSkRQZ0dKU3UzMFMvQk5ZZjBRclpNT2ZYNmg1MlFmb3V6SW4yOXAzeEJvV1hzWFZwYlhuS05YdmVrdGhBVUpaQm44YWUvTTlEYzh0SlB5amJoU1J2WFdtdXp1eENzY0hqVlJxYWR2b1FGdz09IiwiaSI6IlNoSmZxakt1Q3JkbjEvZUkiLCJuIjoiRmlsZUQifQ==",
+    "credits_files": "High-Speed007",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
+    "fpkg_size": "43GB",
+    "size": "40GB"
+  },
+   {
     "title": "STAR WARS Galactic Racer Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/STAR_WARS_Galactic_Racer_DE.avif",
     "tags": [
@@ -155,7 +248,7 @@
     "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUzkyNUI3c2RGQk4wNDBTa2FsdXlYNXlFZ0p3UlVwcEtiWktraG02MUZEV3B4bjQwdkZuaXFvRzZXL1JGRlZZTnZnQ2V3NEhnbDl6U2FrVzhUV09lWnpMQm92S1YrUkFVS3J1ZmRjSWx0dz09IiwiaSI6IlFLcHhha0kvckg0MlF2ZGUiLCJuIjoiRmlsZUQifQ==",
     "credits_files": "DUPLEX",
     "credits_backport": "DecKerr97",
-    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Unlocker already included (dlc-emu). Only FPKG: Some langs like Spanish, Polish etc need to be unlocked by press R3 button and yes on FC 27 Audio Settings.. By pressing Yes, will simulate the package download and then will be unlocked. Base FPKG & Dump are 12.xx, separated BackPort PKG for 4.xx+ included.",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Unlocker already included (dlc-emu). Only FPKG: Some langs like Spanish, Polish etc need to be unlocked by press R3 button and yes on FC 27 Audio Settings.. By pressing Yes, will simulate the package download and then will be unlocked. Base FPKG & Dump are 12.xx, separated BackPort PKG for 4.xx+ included. (Change console langs into English if switch langs doesnt work / crash)",
     "apr_emu": "on",
     "popular": "on",
     "fpkg_size": "78GB",
