@@ -1,5 +1,30 @@
 [
    {
+    "title": "NBA 2K27",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/NBA_2K27.avif",
+    "tags": [
+      "PPSA35889",
+      "v01.007",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidWpEYU8rNGVYR040bDJXL0tsTUFuTmZFSXV5TmhKRW9pMFNRbjMzM2JzYzVhTUM5eHA0STVTanR1TFFtV1Y3QkdIenAyRldqWlBuMmxkZERHeDBDQUk1VkdRSEV5QkRseEFLZDhiTHFGZz09IiwiaSI6ImdBT1V1bTRmNE1hNmhqRHAiLCJuIjoiRGF0YSJ9",
+    "dump_akia": "",
+    "dump_filek": "",
+    "dump_viki": "",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib2NmNytJV0c3WFpFVDF5NStzTVNKV21hOUdlaEN4ZUJpK1JFYzk2Z2kyUUFHUEswblZEbE1lbm5xcjZndk5BSW9xTEtINW5BSjdsMjkvYitzZjl6Y2tHVEVtQWlQMFU1elNzcUd1Wm8iLCJpIjoiMCtVUi92YU96WWZCQmsxLyIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiajZ0NW1JWjZqSXRwYTVyTmgvWDROYnhpbjVYWEJPeW1lbzdLdmNBeEtPbW9DSnFHSGYyRVgxQ2dtS0VsN0orOCt2M0N6YTZtZGVxRHIyQ0FZcnM4QlhnUE1qaUhCNUdmN1JzUTEvQjZmNFE9IiwiaSI6IjBoMTVBWkZzTGZYSVlFTVIiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSzRsSnNKcWo3MmxLejVkcHhGK2kwRU5UR3RaUVAxanF0NndTNzJvaXlsV25vMXFtRVZWVWVNZ0NuVnpud1ZYY1pkT0VuWUp2OGVZZjRoZzcxNTRZWDdiMEV2N1MyMGljTG9na1ZSNkhrUT09IiwiaSI6Ik1Wc243QWx4cHRnYWkzcFYiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT0lNTFJoMmhDSnhlN2lVdUY3WWsvYWN3MHYvQzlrZGwrOXBsZnFKalZINEVPejRyc0c2ZEVBOEl4Yjh0UXhyZ2NvMjZQOGxKU2twZHd6R0VwcGppanVlZE5QbFFWOWhraWRhc1dmbk9ZVms9IiwiaSI6IlJvTGxSdXJxeWxoZGNNL1IiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 13.xx, separated BackPort PKG for 4.xx+ included.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "107GB",
+    "size": "397GB"
+  },
+   {
     "title": "Saints Row The Third Remastered",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Saints_Row_The_Third_Remastered.webp",
     "tags": [
