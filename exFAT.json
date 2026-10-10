@@ -7,7 +7,7 @@
       "v01.710",
       "USA to EUR Langs",
       "DLCs Merged",
-      "4.xx BackPort"
+      "Standard (5.xx) + 4.xx BackPort"
     ],
     "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV2lnZHY4NzJSRVJaTmYybCs1ZWtzcVhpYVo2TTJWdlgxWVFZTzI0RllDY2Y5TXJ6OFhYTWtPQW9SREI3bkxVVHVXeFdORCtEY0pkVGtDc01BZU1pb3lqMHFjdStzUy9adWl0U29CMVZ0QT09IiwiaSI6IkQ0b3VDMHBsMHZrNGJUVlkiLCJuIjoiRGF0YSJ9",
     "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRGkzU3plRmZBZkFlTTRrcDRuZHUwMFkxcXBkUFZOcVdnU2V4ZllwVGI0bG0zL00yWTh0d2ZZVzVIUURnT2drbmpsNWJFdEhqRzN0cFlpWXliNUNpMWF6blRRZE9JSzh2L2M3NWlZeml5OFk9IiwiaSI6ImtIaFVoNVdSaWgvdTg1ckoiLCJuIjoiRmlsZUsifQ==",
@@ -27,7 +27,7 @@
     "credits_backport": "DecKerr97",
     "credits_dlc": "High-Speed007 & PSVIETHOA",
     "credits_fpkg": "krifko (4.xx Only)",
-    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 12.xx, separated BackPort PKG for 4.xx+ included, use FPKG BackPort Ver for 4.xx FW. All cars add in Garage and also Debug Settings added.",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 12.xx, separated BackPort PKG for 4.xx+ included, use FPKG BackPort Ver for 4.xx FW. Dump work 4.xx to 13.xx+. All cars add in Garage and also Debug Settings added.",
     "apr_emu": "on",
     "popular": "on",
     "fpkg_size": "125GB",
