@@ -15,7 +15,7 @@
     },
     {
       "question": "📦 How install BackPort separated?",
-      "answer": "Install this by using PKG Manager or through Debug Settings (Install first the Base Content then the BackPort), trying install the BackPort on some other existing PacKaGes will not work because they are matched pair with the Library."
+      "answer": "Install this through Debug Settings (Install first the Base Content then the BackPort), trying install the BackPort on some other existing PacKaGes will not work because they are matched pair with the Library."
     },
     {
       "question": "❌ Can't install BackPort separated, what can i do?",
