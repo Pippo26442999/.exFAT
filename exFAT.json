@@ -18,7 +18,7 @@
     "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSU95dTM0Zkg1MEd5M3d3dm9JOGt3MENIVlJqQjRuaTRNNzNUUWRsTzJ3MDUrZDVpMGZLZ0p5UXNwTkIwYWg3czZnNFM3R2VHajFiWFBwdFMzTWpVMHI4NHlORlBMeDYxS3VjUFBVeGRHT0E9IiwiaSI6ImxraVd6VmlDZzdMa1lWalUiLCJuIjoiRmlsZUsifQ==",
     "credits_files": "DecKerr97",
     "credits_backport": "DecKerr97",
-    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 11.xx, separated BackPort PKG for 4.xx+ included.",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 11.xx, separated BackPort PKG for 4.xx+ included. Might be have problems at launch with ShadowMountPlus 1.7beta4 and beta5, use 1.7beta3.",
     "apr_emu": "on",
     "popular": "on",
     "fpkg_size": "94GB",
