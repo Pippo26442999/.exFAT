@@ -15,11 +15,11 @@
     },
     {
       "question": "📦 How install BackPort separated?",
-      "answer": "Install this through Debug Settings (Install first the Base Content then the BackPort), trying install the BackPort on some other existing PacKaGes will not work because they are matched pair with the Library."
+      "answer": "Install this with PKG Manager v1.5.1+ or through Debug Settings (Install first the Base Content then the BackPort), trying install the BackPort on some other existing PacKaGes will not work because they are matched pair with the Library."
     },
     {
       "question": "❌ Can't install BackPort separated, what can i do?",
-      "answer": "This can be everything, make sure you extract the Archive with 7-Zip if not help verify the Contents on SHA256 folder then if you get mismatched need download again. Update delta also if small packages need some space enough on the Console for extract & verify, just in case they are always tested on 9.00 with 500GB Free Space."
+      "answer": "This can be everything, make sure you extract the Archive with 7-Zip if not help verify the Contents on SHA256 folder then if you get mismatched need download again. Update delta also if small packages need some space enough on the Console for extract & verify. Restarting the console also help, just in case they are always tested on 9.00 with 500GB Free Space."
     },
     {
       "question": "📁 How to update .exFAT?",
