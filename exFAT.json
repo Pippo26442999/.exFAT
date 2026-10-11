@@ -1,5 +1,30 @@
 [
    {
+    "title": "Crimson Desert Enhanced",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Crimson_Desert_Enhanced.avif",
+    "tags": [
+      "PPSA25286",
+      "v01.000.568",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieGxCRXFJbGtVQVB1Nm90Ti9HU3JMYmlSQkZHR0M0VjUvQVh3WTdma0RvT0xVRjRic2lUb25KUWZrYTBwRDY4aFNYbkg1ekpDQWd1WlB0aDBLdklSYUpQTGE1UU43Wk1iV2E0TmkybUJIQT09IiwiaSI6IlhrR05KWlB4SzB5SUswRGwiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSUpvUVVwWXg2cHlkbW9YYWsvYnFSZDNrQzZrUEZDZ0tzNTF4MFNoTnd1MU1FSnNUSkZxVW9xTVlWOWp3c3RrNDhjVUNmRE5FYTlzOERmMW5FQXdsMVdHVWF0djdIb2tHcWY4ZFJCMytyYm89IiwiaSI6IlFUU21KakJwcDAvMFhlK20iLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRExmZ3BOcEtlS3pnQVBSdGpTNmRWcU5ub0xEYjI2eDZ4ODVxcllhUGtnVk9GcEJCNXZuZzIwaVVrTEpCWlhuY1Ava1JyZWZ4Qkg2bXhNZVFRemlPSkcrYU5zWHE2MkpiZ2EzMittKzEiLCJpIjoiQVdrd05GVGIxY2xHK1FwQyIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaHhCVXBwZk9SWkZqeVg1OHBSZEc3enVIdUszOU1SeWVZdG9XcFhoOFZJV0I1NTRjMVFwa2JmNm10ekVoZ2hJVUljWFBpTFlQWUFicFZKR2svL3Fob0JFYUZOdmJ3bTA5UzRMVWZ1UGN4MEU9IiwiaSI6InpLYWNIZ1BHWDVxN3cydWUiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRERhMXhsN0ZlZFNIdWdGTlhhZ2t3dVRTSHZVTnJWM2VoUlhNeGJIdzM5TVVZWnQ0NTdBUGQyZTVSdlY5K3RDTit6a0ZvWTBqR01XUEFaNlZsd1hNZkYyelF6L0JiRndDR0paVkI1U0QiLCJpIjoiYnhVWDkzV2owY2lEWW9UQSIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicjV3RzlFbG52bzE5NFdDYWNXMTNKZndVOUkzcTdhVGQxRTFpcVlFTExnWnRaa2pkcncrVk5Tczl4SjNrbEFqZVd6cjc5a3pBcGhKTE9qWHRjOWUzKzFoTXdWUG13QU9TdTkybUQzMlVjcTQ9IiwiaSI6IlVpNEI1SmlZaVhDaEVCSE0iLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiLzFDQ3BzVHR3RjdhK1hLQTFIaTFFMmliUFVHQ3NZa0l1VVdBcTBDeWlXbkR2NDlET09WNEhiSjFvY0oxWE01UzJneFJ5Skw3THBGYTZOakM0dlRpMHBaZnpqWkhmNGxYT0MrZGNYNnJjZz09IiwiaSI6InBkT0xYS2UrTHVHT2ZTN1kiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSU95dTM0Zkg1MEd5M3d3dm9JOGt3MENIVlJqQjRuaTRNNzNUUWRsTzJ3MDUrZDVpMGZLZ0p5UXNwTkIwYWg3czZnNFM3R2VHajFiWFBwdFMzTWpVMHI4NHlORlBMeDYxS3VjUFBVeGRHT0E9IiwiaSI6ImxraVd6VmlDZzdMa1lWalUiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 11.xx, separated BackPort PKG for 4.xx+ included.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "94GB",
+    "size": "190GB"
+  },
+   {
     "title": "The Relic First Guardian",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/The_Relic_First_Guardian.avif",
     "tags": [
@@ -9683,33 +9708,6 @@
     "credits_backport": "DecKerr97",
     "popular": "on",
     "size": "25GB"
-  },
-  {
-    "title": "Crimson Desert Deluxe Edition",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Crimson_Desert_Deluxe_Edition.avif",
-    "tags": [
-      "PPSA25286",
-      "v01.000.151",
-      "USA",
-      "Standard (5.xx) + 4.xx BackPort"
-    ],
-    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWDBmMkFTOHUvWkxhb0N3a3dsNGliZlEyVlVJNFJ3Z3U0RnhEemprTy82cURJdVpIbHhJUE9ERmFxZFN1SEtxRWRYWW5IdkVmIiwicyI6Ijd0ekE4dWt6WlBaQytMM015eUQxTVE9PSIsImkiOiJqdXUzWFV6NzgyNVZHTHo2In0=",
-    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoieXZNMzJwaVFjSnhzVE1ZVDM0azMxZWl0dDdqcC83ZndNZ2o5QUx0T2dQUkRYckUwSUZCQmlLbUtsVEdnd2VFZXhVZlciLCJzIjoicHNRRTlPbVZ6cEhVdFJQeGptbmh1Zz09IiwiaSI6ImxZSDZxaFRiOTVyNFBla2YifQ==",
-    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQjlqc3lDUGhPNHVVOUNCbFZQM3VsRys2TGZiVEVRaDRVWGNFaHl4MEFtYXBTZ3hkYzhybkJxV1crMFhKYmtVOHh3PT0iLCJzIjoiSE8zY0NudTdicDJEM1BVTXVTUThXUT09IiwiaSI6InhtTUtNcFM1MU9LVWc0TGsifQ==",
-    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNmZIMmN6TTdTamxRSkQ5OHhteUM1enNOa0NZUEwrVmQyMkFCdmxYbzlMUHpVZVNMOGNFQS9tRTN4YlQwa1lkd29sWEJhRE1GbXZkVnhxUE56ZTlUUEdjMkd1ZU41b1dsbVVJPSIsImkiOiJLVUExT2Y3RFpCODFkNElwIiwibiI6IkFraWEifQ==",
-    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWEFrNVltNUxFbDhzaHF6OVFaS3RyODZObHUwSjh3eTlERks2Nkk3bEZoTDR5LzA3VXgwaEtwb0dZejY2RnlZQnBEUWVHeVlzWHZsU2VQVjczQmZNWDVvQjN6YzQ1VDA9IiwiaSI6InpkT01kVTVBaTVWbWV0SWsiLCJuIjoiVmlraSJ9",
-    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMVE1ODc1VGNDb3NKMnJ6bkV6c1pnUEpDN3cvZkxQeERZMS8wcFU1WmhHQWhUTEVHSlRoK01oemQxUnBCVTdOekk0dUZ2ZVFqU3dZeUFMVWdTa1lwNktTYUQwbysiLCJpIjoibTJZZHgyUjdzSmhFZ2dFRSIsIm4iOiJEYXRhIn0=",
-    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSjNFcThodWhieTVPcitnSlR5MlpWZ2ZIZDlmbzExZ00wY3dTa0tJdDdHc0pUeXRZZiswdVUxZUwzZWpvSEJRWWVja2FVVUQyeitFS0piVWdzUUZoNE1qSG9KOVA2TUU9IiwiaSI6IkhLQTBwaGlXMWlLSEZQS0wiLCJuIjoiRmlsZUsifQ==",
-    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQklJelIzVWx6MjdVWUpWMEZkbi91cWtHM01wVEN4MjlYUXFFY0gvODZvV1Nkd2xvRmFDdlIrUVJsWDlWNmErc2hOOSthbHdmU3FkWWdsSDJVaFlMSUhzd0hYUHFWUT09IiwiaSI6IkZUc0pKOVNzQkJ3emp1VjYiLCJuIjoiVmF1bHQifQ==",
-    "dlc_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZ2pnYXhXaVZhV04rUmhJMzZEbTFReFJ1eTJ4c2VxOHNRMkh4S1lESHgrdU5SUmFJQlhLWi9Pa1MvSE9PdDI5ZHJLRHZoOFFmIiwicyI6InlXbnZrTi9vYXI5dXE3WG5IK2tMWWc9PSIsImkiOiJQZm44eXZvNjEzVUpQWll3In0=",
-    "dlc_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiY1hOMU9VUTF6bi9LaGZjZlBPdklIV09JNlBkY2VCdnhNUmY3aGhWZmdjS0E3VTFnQUhkeVR3cUkyUTFUVlR3YnpRPT0iLCJzIjoidlUwbnIzK0JkUUtDbzNwWlNwRE9xUT09IiwiaSI6IkpuSnlUUGx5bDRDODJEdzkifQ==",
-    "dlc_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia1J0aGwwVW1uaS84SlEwTFVXazM1RjdnbTVJSHhRNWdPS3lSZ2tKTE94YjNTaXVVTm40UUhGV0EzZTJVNlJDVkliNTZ4Z29QdllUZHBIWEt6Q3pUY1VJRFk1bkZ3SkE9IiwiaSI6ImZnSElFWklkZnFKOUdCbzUiLCJuIjoiRmlsZUsifQ==",
-    "credits_files": "DUPLEX",
-    "credits_backport": "BestPig & Zhwenx",
-    "credits_dlc": "DUPLEX",
-    "how_to_play": "Press START/Options - Add-on right after starting a new game. You can equip them after the prologue.",
-    "popular": "on",
-    "size": "154GB"
   },
    {
     "title": "SpellForce Conquest of Eo",
