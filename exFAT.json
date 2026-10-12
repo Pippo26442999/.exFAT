@@ -1,5 +1,33 @@
 [
    {
+    "title": "Borderlands 4 Super Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Borderlands_4_UE.jpg",
+    "tags": [
+      "PPSA01494",
+      "v01.100.002",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieFZmbSs1aDFCOHUrRjVZMlNBajFWeGFlOVFUTW9uZGI0NFZhcythcGJORnBuTkZiK3hzdXdwaEtZM2JLcnRjcFlOZVRvcS9XdUVzNmplejVzNVJCR0pTUUVkRWh0QzVjT2NLalZGN1NBZz09IiwiaSI6IldJYVM1dythcFBiaENCRDAiLCJuIjoiRGF0YSJ9",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUzR2Z05kSURUUHVkSm1uYXZHWHh1d01mY05MUUVWaWFQeS9KbUEwcWpBK2FxeVhXRjEzMjVLWmRrWkpIVk1TMUhqMnNaTXBtTVEzQU43ckgydk5Ld25YUGxwTVZ4WFJIOHhWcFBZUkQiLCJpIjoiWkF2QVpxTk0rdWNDWm01ViIsIm4iOiJBa2lhIn0=",
+    "dump_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaC94N0NRQnlzSlZjOGxzRndVbGJDaGlwUExSaVBNOHk1VnJIcXMrUVoyYloyb2o3YnZvdVF0VGJSL2VVSlMvVU9OZGtFOW45ck82akRtSzczQi8yK2hEYTIva3MzNkVRcHA4U2ZtZEVoQT09IiwiaSI6IjdXdUUySzU1NXY5NXhPSEUiLCJuIjoiRmlsZUQifQ==",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWWk2MitYRUJabytVTzk1YTl6QWh3V016YWZrNHhiRDkvUTh0Q2RzUVl4aE9kcnVGVW56OFRCTDdHQnZWWlRkNHZJaVFyczdqVk9lWnpxbUdUWGp4c25ZYVNiOEZLTVRPZHREUXZtMEN3MVU9IiwiaSI6IlBiaXRwdEU3UXphUFFMNHciLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK0R2akNEMWdaZUhwajhrRmlPZjZMN3FCWlk1dTdUZ0IzVWtpK1hxQ212cm9PQnY3Q2FjVEgvZHVHdUxGSEU3R0djOUU4SkVjYUVodHlsVFhXWmZWRTJGZEc5QjhwVXQ2SU1BZUVJcVEiLCJpIjoiUWs1R0FvRmszeldWTEtFYyIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicDVsNmQ3ODBDYS9KTmtFTUhrUmRqQVljcGNwREVwa2NMRU13cHlkeFdCSldNYUs4bnlWNFdxY1puVnJQQWcrUkExdkdtWkthWnk1Ky9EVkpkTW1EOVd6aTJOV0RNQ040SENSNlpHN0VjODQ9IiwiaSI6Ik1HTGlxYzU1bEkzVCtYZHkiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNjIyWGl3QjNMaXkvNjNjN05BSWdoQWc4V3NZWjhQNTY4cGlYNlVZam1ramV2cndQZnplT2NTVzBMVmlMTXZGUlVtTlAycXN1YkY5ZHVJUWx2bndwdjlDaXE2eXhFb0kwQnE0cVBoOU5IUT09IiwiaSI6IlArSmw3VVFSQXJhY3QybE8iLCJuIjoiRGF0YSJ9",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZnFqMHBOenRBMUcwbU1nWmEvVkFNdDd3LzJJZlRkMGV2YVF0WUdsUHNDNW5sSm81NldNcHE4YzZPNE9Ea1Y0MnErbzFKbmtkeUNWRTg3U3BWc3BmOGJucVlRbUFxUWxtOTh6bjIyVHNEQT09IiwiaSI6InM0eGdBbnJHK2tIa3FuQnIiLCJuIjoiRmlsZUQifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMWF6K3B6SGRHdGRrRk9qeUdPZDZZRC9LZXJ1YjFNd2NIMlFveUNtcE4zREZiUGtMVjVtZC9qdVFzOElnVEhqN25DdWFvWlpNNjFhVkszVEE5K0ZYRTc1dzltZGlyQ29DQ3NVUFNuZlBIUT09IiwiaSI6IkI5WHgvbE15UEM2dFg1UFQiLCJuIjoiRGF0YSJ9",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNlNZMGxQWWd0Z1A5aDJYa1Z3MjRSNVlmN0l6endBVVFYcWczbmYrUnhvNXNQOUYvYnAvMzIvd01PL1JmWE5teUpKQW5ZZlhsa3dqaTU1Nk84T3ZJQ3ZzblA3YzNYeEU0ZVRhaW9PU20wM0E9IiwiaSI6ImN4am1XbUF1YVc4ajdxdEwiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97 & L3G3ND44",
+    "credits_backport": "DecKerr97 & L3G3ND44",
+    "credits_dlc": "Pippo",
+    "how_to_play": "Note: Audio English Only with all subtitles, miss Audio Langs .pak. FPKG atm is only working up to 11.60, use Dump if you are above. Base FPKG & Dump are 10.xx, separated BackPort PKG for 4.xx+ included.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "35GB",
+    "size": "83GB"
+  },
+   {
     "title": "SAROS",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/SAROS.avif",
     "tags": [
