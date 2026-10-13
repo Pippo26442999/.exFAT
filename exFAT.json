@@ -1,5 +1,30 @@
 [
    {
+    "title": "Cricket 24",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Cricket_24.avif",
+    "tags": [
+      "PPSA16342",
+      "v01.000.053",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTGJ1ZlBlditRWWw2cjRQc0FFaG9MOGdhOFdQcVhObG5QcXF2bXlDS3JTSHE5bStqQnl2QU11QlFjUEVnd2lFMWFGUERGRnNwTHBOeDZGZUZkV00wUjNkUUxWV0xQMEFhUjZGeUV6UVpzQT09IiwiaSI6ImpnOFJ5c29DaXVYTG5BeTgiLCJuIjoiRGF0YSJ9",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWHNaSmdwL3Y4Y0Q0alFqV0Q5RWFxa1lwdWcyazRkTEJMYzgvSHZoT2RnOW9kRFZpb2tOaHRzanBjNk9kV1VKbU01K2ZSSHVyQ3c1MEdtZVNRS1JBYUx3RkQ2RHMxOGJzbzJ3SVV2TXAiLCJpIjoiQldheEVPcElrcWpyRkI0MiIsIm4iOiJBa2lhIn0=",
+    "dump_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWHF3cytML1dyaXg3Z2pMYUYzUlBzb3dBUE9TUWRPSHZZdlNhbHNGTkg0MEoxYkJybE1SQzI1SkJKVWlEYVljeitwQnRxdVpodFUreERwUFZUUE8ra0hINGFUUnE1L2tnSElMUFpMaUZqZz09IiwiaSI6Ikl2eVEraHZBcVgzOExUbmwiLCJuIjoiRmlsZUQifQ==",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibjFoaWZUYnc3RFpoRE9mQm5HblBWNVhtWWF2MUduemtOcDJHenE3Ukgxa3pwbDF3bDQrUWZBNTlMdGtaU3FMY1R3ZHZ6NUtpVnBYTUpJUzE5V1R4VHdjT0FIaU05OVBDbTc1enFyWnlWWDg9IiwiaSI6InAvVlY0cWVieXY2NkZxZGkiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUkvOTRjRE9FSFkrNytOMFN0ZElhaUFpWkxUclo2UU9FUS9tREVZVUpUWVhVRGdhT09vdGJEaHcxL0Vnai9BWmJ4ZkpORFlvVC9OL0ZvdG03ZVduNDRuL1ZtcW1VeXFmcWFtZ0UzL1IiLCJpIjoibzRDZGJWdDQ0TzJwWHdicCIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiekV1ZDFabVRlbE1wamNSSWl4aXJsdXp3NnBiaFBTQTFvcjI1dnlkRFZrVVI5S29FNEMvSlZlZEhZWS9RdmthRDhObHN5RmovVHNYb2M2bEZsMUphQ1BsTEdCSFFrb1I2Rm1vcE1xQVVTRlE9IiwiaSI6ImZjK3N3L3ZYL3JLRGVINzEiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYll3R3Fac1NLRkI3OFNNSngralN4Q0RiMnVuVFRKQkU1a1hYYTRqdXZ6VlFQV3lSQ1BEL2hKZ3V4Nld3V3crbkplK2puNXgrWjRYbjRDMGZILzQzMlNGbzFoRmRTTDBoSVU3OFh6cmVBQT09IiwiaSI6InpDbWZzSHdRQzY1cVBKVFYiLCJuIjoiRGF0YSJ9",
+    "fpkg_filed": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWDkzMzFrZjZwWlFyQlJtMGpadXdOZDkyNy94QWN4OVNFNkl6MGhkRU5RQmpMVU8xeHpjSnpWSHlDalVwWWlCZ3FDRk85dWVmaWRVT2lHM2liTW5PODBnL3Q4UEVjODBuTGlaRnJucldtdz09IiwiaSI6InRPb1BpMENRSFV6ZDh3Vk0iLCJuIjoiRmlsZUQifQ==","credits_files": "DecKerr97",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 7.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "63GB",
+    "size": "251GB"
+  },
+   {
     "title": "Demon Slayer Kimetsu no Yaiba The Hinokami Chronicles 2 Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Demon_Slayer_Kimetsu_no_Yaiba_The_Hinokami_Chronicles_2_DE.avif",
     "tags": [
@@ -21,7 +46,7 @@
     "credits_files": "DecKerr97 & L3G3ND44",
     "credits_backport": "DecKerr97 & L3G3ND44",
     "credits_dlc": "Pippo",
-    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 10.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional but recommended for 10.xx+.",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 10.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
     "apr_emu": "on",
     "popular": "on",
     "fpkg_size": "21GB",
