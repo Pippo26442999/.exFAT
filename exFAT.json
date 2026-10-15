@@ -22,6 +22,8 @@
     "credits_backport": "DecKerr97",
     "credits_dlc": "DUPLEX",
     "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 12.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "apr_emu": "on",
+    "popular": "on",
     "fpkg_size": "81GB",
     "size": "159GB"
   },
