@@ -1,5 +1,33 @@
 [
    {
+    "title": "Forspoken Deluxe Edition",
+    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Forspoken_DE.avif",
+    "tags": [
+      "PPSA03984",
+      "v01.020",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRi81Ly81M3NXRnJPYXBZa1J1NUROZmFXTldYN0c2QlRyZU4yY1JSZnQrWjUvTDJ0ci83SDdyRHMvUTRQSTdXd2syZHN1QmlkMEk3VDRPQ0hlVDl4dVV6QS9YenVreDBSRDNCYW9RNXZCUT09IiwiaSI6IjJtYVM2aXRBck5XdVdZS1IiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoialVKM014ZjJYYnh5YkIrZzAvZVZhcHUrSEY0RElMVGNHbW5aeUc2Z25NQTBML3BISmM0RmpNUVluclZQc3VYMmF3TTAvaUdLSnkxK0NtSUR2eVJsbVR6VEM5RTU2bUd4TWtlYnRnZ1pJamM9IiwiaSI6IlIyU0V6TzJqc1BKLy94UEciLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUpLUDR4dGxoM1gySG9rWXQyb3dkUjhYdEZnNE5kMGpWU1AzRm5GRzFPblNvN1YxQVloWmhFckZHK0VLenovdWhMcW83OUsvZHFCZnJRbjY5aUNoQnlPOVdBbzNYNlhaTFVIUktXalgraGc9IiwiaSI6IjJoSWNldnQ1ZzZZQ2RLOWIiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM2xsQS81ZTNjWVl1NFVCWU5WbTk2ZWFlb0syQmtuT1huclN3eGFlV2tEL2U2TFo3SU9DMXdBelhzRnF0TStnY2pydldsMkdpeURyWkVNQTZJMEE4Z0RSUHowNCtUZnpYWUZyVEdOZWYiLCJpIjoiWXMweTd3cmVyUlk4aGJ0ZCIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibzRxeldJUTh5bGN6SVR0Vmxud3hCL1RLT0dTdS8rTkczOUwyQjJrUlVESFZLMWJEb0JUZkd1bDRBTEg3MmpiSDJxMEczRGluTHlLRlM5UlQ2N3hnYVFPQldSMm5QSFI5SUJTaFErdFpjNFE9IiwiaSI6ImduRUVzR1ZMb0tHSHVoYTMiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUjFIRndQTDhLQUZZZjZET2tCcWZFQTMreXd6SXpEVTFnMjA4S3hwNFRzR0g0YmMwYzBlejhUNEZmZENlZVI3NVN5b3FnVTBOd2lCYjgrRmJ5U3FBMGord0NTSnU0U0JVOTgyRzZvK3NFdz09IiwiaSI6IncyWkFVY2U5c0RNUHkzaGUiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQVJXMEUxemkwRkxvcWU1L2lTM29Lbk9xVVY2U0xyenNJWmFsN3BjeWNVbGdJYlAwcGl2YVZsZTBLMmNRWSsvN1hSSExiSHdHdGtrd2lHYTVjRzN5d2JydWpMY0dDaUdrWXo0UjhqNVJDUHc9IiwiaSI6IllDN2JQZXVxMEdaRE53V1AiLCJuIjoiRmlsZUsifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSGNqYkUyMG80RHI0K3NrMVJPazhRVC9HOHFxeGRwRWN4dHNSM2dGQWFpNXZmb2hXTnY2MDNVdXFCQWRxUXJtWW5HN0Q5d3NNa05aakc2aVV1YTBEYzN4VFM1MHp6QXJ4MDBJclJmNDk4dz09IiwiaSI6IjcrOEFtcjBqZDIrWTFhNm0iLCJuIjoiRGF0YSJ9",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMHJHQk9EUCtJOHljZzdmamdvMEpJeFRjMngvRHhSd3dDRXdYcnJPWVY0RDkwRFY5UkxnZ3BZaWNyZTRNY2RuUFVlcUJLZ041dHhZVVp6SjhOdDJsT1ZmRU9WcU1aNUlTaXRISDRCWFR2MDA9IiwiaSI6InVhc2lBRHV4WTBuRkxET2giLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo & DUPLEX",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 5.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "81GB",
+    "size": "211GB"
+  },
+   {
     "title": "CONTROL Resonant Deluxe Edition",
     "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/CONTROL_Resonant_DE.avif",
     "tags": [
@@ -9497,31 +9525,6 @@
     "credits_files": "SiESPTA",
     "credits_backport": "BestPig",
     "size": "5GB"
-  },
-   {
-    "title": "Forspoken",
-    "image": "https://pub-ce6b40c14d144a128552570bcf6bb628.r2.dev/exFAT/Forspoken.jpg",
-    "tags": [
-      "PPSA03984",
-      "v01.020",
-      "EUR",
-      "Standard (5.xx) + 4.xx BackPort"
-    ],
-    "standard_akia": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiODdyMzFlUm1BTTAvUURBVEVxZHFjQlVrUTV1cG5kcy8raFgrRWQ4VzhEWnFMZXdRRWZKQ1NjOHpwNHFFY01oNzFLbkowVElEIiwicyI6InVKWWU2cVp1MDZJQUZZUWR0K2R4QkE9PSIsImkiOiJJOXlVVEF0MXJ3Q0N3SGlNIn0=",
-    "standard_viki": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiajJtUGdlMGd4cnlJZkVyTWZkT0hXa2ZuSTJISFppaVptUER1SFlhcVBXclpicm1ROXJNUWw0eTRjM2RocVU0RmRoWnoiLCJzIjoicDYzbmZQZWFBQXEvL2x0ckhjd2NSUT09IiwiaSI6IjJ1NWd6RmhpOFFudmtYUGMifQ==",
-    "standard_data": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiQmlzL1FoL0VKUk83ZHVTeGZ5OCtlQXZLMkx4STUvYkozeVFkcy90UWhib1ZkRW1iNFFMOGU0MTFvOWVRT001Y3NBPT0iLCJzIjoiK1VQQTlCcnBWTUduemN2ODJwSCtzQT09IiwiaSI6ImxWNUpKeVg4RWhDYzdhU2IifQ==",
-    "standard_filek": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOWhKajRvME5JS2dEL2JvdzRnY2p1N2RRbGJQejlNWFg4S1M0aVYyTHY4ajJsL3A0Tk03bnVHOXNadlVSbDk0VEM5QkciLCJzIjoiUEcrN2hVT3BkREFyT0E1OFh6NmltZz09IiwiaSI6IlVid1dVVmQyQTNka2VHNEMifQ==",
-    "standard_vault": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiUUNCQXlXSWVxdkwyZ1l3dlcwbFU4SFJTSC9DQk9nTWVPTjJwTE9mKzZ2R1NqeWhyc3RQeDcvNW5GQVMvaUZvNDZscz0iLCJzIjoiS0lmam5vckpmd3piRURBZzF0QWx2dz09IiwiaSI6IlRWVWNEQlJUQTZFU2M2TDIifQ==",
-    "backport_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTGVVc0w3MUwrL1VhZ3BnRDdFT1B5RnBPSGtULzVmRGVCK2MvREkySVRFeHJLbHAzN3htTGRnT1paMWdFUnpPTnBsT0ZudmFZUjFOQjlzaVRSNk9jSWpyMUh0eGpZOTJySGRnPSIsImkiOiJwSExGMng5bk94ZnlFMnNzIiwibiI6IkFraWEifQ==",
-    "backport_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidGF1cWVZT2VOT0svVHV0eDJUbkI4ZjNYRW9idmxocU0rSlh3Z3NHalA1d0t1bXFwOGsvSm9mbnpIUUZRR3lvazRXb2hsdUdFZ3JSNjRPdDdncGJBaGoyMWhkNkVjUzg9IiwiaSI6Ijg2NHpDbEVMNWdtVXJ2SDMiLCJuIjoiVmlraSJ9",
-    "backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZUR2aVFLcHYxOUtsckQwbUZxSlNadnErc2ZZV0pPMy9yWm84TWJCanVnL1BSVU94OHV5RVFRMzcwd2Z1Q1RKbTdEVlE5YlRoQlhzQWJlaVpnbno0MVE2dCszM0ciLCJpIjoiN2lGd2FEQjBMbWlsN0FUViIsIm4iOiJEYXRhIn0=",
-    "backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTVQwbng4QlB3Vjd1anloblZhb0JxNXN5K1NyMDdMNlJFTXhhUHFuWFdIMTZ5bnlRZ1I3QklBS3VhbU1xVHlENjR2K3JjcFZKa1ZJSm5WNjV0RkEwaVlPUjlacTdMN009IiwiaSI6IlFCUGlJKzRMalQrSjlXeXQiLCJuIjoiRmlsZUsifQ==",
-    "backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWngrYnpyUU5GZHZPWXp4YkxNdUdKeEN5dXFaeWlQUHhnandnU2RTZDBKSlJjMFg5NjhXVUlzSGRJcVNFSzFzSHRuSlZ0Y3RraUhoTU9YRGdBTFdIa21PMkxia2JQdz09IiwiaSI6IkgxYm4yczNZcDVySkVJWjAiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "SiESPTA",
-    "credits_backport": "DecKerr97",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "212GB"
   },
    {
     "title": "Horizon Chase 2",
