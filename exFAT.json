@@ -1,5 +1,30 @@
 [
    {
+    "title": "Madden NFL 27",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Madden_NFL_27.avif",
+      "tags": [
+      "PPSA32904",
+      "v01.007",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNVBDenZKRnJnRXI4eEphQUJLWEhnUE5vZXFMLzd3bEllb0xDT1dpS3JIcnc2R1MxRVR4cFJ5T0pMNkNRbjRsZXVGVG02a25Cb3dxMVJuSnY5U002Nk1FaHAwRStDT3h5S3NVN3RTeklzQT09IiwiaSI6Ik9YbTk4eWY2SGl3Y3k4eHAiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVHRGVkVZdG9SaCtwajlkRVVVbGhBeWp6dzhkMUtPRDNOenlrQVVyZE42dzBWMWZHc1Rmc0xEb1Uya3A0bGg4dm1PZFMra2tCVjdCNm1hMCtFQnFDM3cwV1EyNE1OeHpMU3k4WFJHU2ZmcjQ9IiwiaSI6ImFkWDFKVDFKVXZXdDAzek8iLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZHJtRTJ5NWJBVVM0d2xSWHN5dzJSajdrb253eVU3ZnVCanBhOHFDTy8xNWUxK3BMbWROQ1gvQUV5cFE3ZjFPdU5KMzF0MlROTCs2NTNESGpsM2NKRzVMaXRmVUtFeTVFRDFkcklHaUwiLCJpIjoieDFSOGU4VXI0K2VLcG1sRSIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidE4vdWRPcmtIamhYdzBXcGdWM2czSkNDcTUxZnhXdGE1SHZ1VEJJLzJrYzlWRlg4aXZZWEMybVFoajRzMEcxdkN0R1ZvRWluM0ZJSzVnOFZ3Sjl5MkdOMFpGM0pJbm9Ybm9ETGw4eWNTdlk9IiwiaSI6IlRKUTlLQnZYaVZNdnFuaVMiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU0FCNTZOL2ZzVjhZclZpcUFibFZ0aHhEdkVyT1RPQWVLNkVXNzVnNWlYZ1IvRUkwNXZOcmh6UUJ0U09VMlFwTTMrRTRXaW1Ddm1QOVpiN3lNdDdqeW8wSHJnNlZERGVDZURFY29QcmsiLCJpIjoiSDBsTXFDakdrM1JVTlJXdyIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiajcxV1lBOEU1bXZEemErbVFJVFRpemd2aHBvcThIelloR0JFd05iTlBBR25OT3FLaHp1WGd2eUkzcGVDcWJBeko2K0RQNElIOW1QTDJHekxEcHZvMTV3OXlXVjJkZkE4NHBRU3YyaDRNclk9IiwiaSI6Ikc2WlhKcTlrL3RvYWM4eFgiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiejRrRWFOdnZSV0N2YVRkeTRQYWt2eXd0b0k2ZXEwVjUzY1hDcXY0cXRLY3hiWGpsM25OUWEvbExGbWRxU0dYOGcveWhveGlYMEhzQ1FTVnBDOE8remtkUGtxUDg5aWw2ZnY0L0F2MWl1UT09IiwiaSI6Ijl4NzdvUSszR0k5cHZXaVQiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZVpqQ1RJdU43Kzdoc0NKNUVkY0ZXbkpoVVVaZ3NwVnloUnNJU3B3YUp4K3diOTBZd2JtVEYzajFiSEIrRWhHN0k4SmlMK3AydVdJSDdKT0k0L293RmpRdW84QklyZHp2NTlrV3BaMjcweUk9IiwiaSI6InVWOTJhZFVFU1UxSTZzTG0iLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 12.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "54GB",
+    "size": "162GB"
+  },
+   {
     "title": "Assassins Creed Black Flag Resynced Deluxe Edition",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/AC_Black_Flag_Resynced_DE.avif",
     "tags": [
