@@ -3,6 +3,29 @@
     "title": "STEINSGATE REBOOT",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/STEINSGATE_REBOOT.webp",
       "tags": [
+      "PPSA09426",
+      "v01.000.002",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWGpLdHNQenRKcGxxODc5aW9aeGEwbXoxdi95RWRMUHBHUVNGT2ltS2dKWWk1dGlJd3VJcGt4Um5sRURHVW1nYzR1ZFZ1eTBWQXQ1L2xnSVdqOVZkVkVhcXUzODhwMGZpdHNuV3QxRHJDQT09IiwiaSI6IjlLWnJkelJ0QTlsaDR1aVAiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMmVkUkM1UG92SmQ3MW9QbjJTMjZETjVzU2hNZ2hkQldrRXYvQmIrN2V0ME1wMms0NE1KdktlemhqZHpCaFltK0pYQUphci9SMVhQUmxySHIxSG5MTnd5WDJJWXVzNVdIR2l1enMvTzJSMjg9IiwiaSI6IjRIamFoL3M0TEp4UHRCcDAiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidXViY2ZrZFlPc0xvZCtNc0RNWVJYVHBCUEFneTByUDlURTRiNWpuWitaNkFGY2g3d1hhOGVqZDYveEdxWW1rcSt3WTArcDY5ZGxPWGdpaUQvWVJZdTJmRG9hTEtoUnRNOGtueDAvSkYiLCJpIjoiNXRCWlBDUnhIaHJBaURhNSIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoid28rdUF4TmE4NkkwWU1lVW5Land4NnlYUFdTVE1wdktDYVlmWWY1TC9HZTAzNk9ZZHpocXVmYWh0SVRZYzU3eWtucGd1bFV4cTdRU012RzlCYURsK2kvd0RsYzZsY2lvTHk0SElLRE1nb289IiwiaSI6IjNNWEpneEtiOHJ6cU5kUWUiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSytNWk1WNjlzNnh6N0dmaGJKZEFQWDdERmMrMEl4RXZTS2FHeC9KWHcrRk9iV0JSSW12cHQ2UDlNcnRFMEk0aXEwYWJDb1NkQmhqMStPMEZKb2grRFZDRit4cmlvbUxSdjJkMTFWQjQiLCJpIjoicVNvUHg1SHEwWGhDRWtDZCIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaytLUmJ3YU5LRjkzRFlac0R1WTVaWXNnc25TYVFzaWFRaEFGZXIrdnJHVWFYeHpvYjJ4K1BiKzJaUXQxdCt1cS9YMzZmSk1pVk1vODZQNC93cThDSGplL28yWjVHTE51WnRTcG9mdVUwZGM9IiwiaSI6InE5SitUcXRHT2ZEN1FXOVIiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidnhlRE5PZmVnMDVYTHdkaldsb3BnZUlWa2tCU3NacVZ0VHU5MU5QZWVWSXg3WWlPMCtRaTNnSllXdEphSEZQbE9CcjR1Y1J6TDdHYWU4U3VudXVWMGpuYS9qcFQwL3lUN25rdCtSdk5Xdz09IiwiaSI6InM3MG13OW9WVUVpNFdrU0giLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS0VrSENPSXg5RkV3d1JLd3RCWVZWM05TZWJSY2lsQkUxdzAwdG5LNHNudURhSncxdVU0bVVKeGtPa2hqWlJoTHpPTjNSM3JsRGthcitSSjFQQ0x5VkhWUWkzYkhqaCtGUTJTMWxHUVE0Vm89IiwiaSI6Ild5TDVDQWdLL3BwVXFrVEkiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 6.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "fpkg_size": "7GB",
+    "size": "13GB"
+  },
+   {
+    "title": "STEINSGATE REBOOT",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/STEINSGATE_REBOOT.webp",
+      "tags": [
       "PPSA36591",
       "v01.000.002",
       "USA",
@@ -5920,24 +5943,6 @@
     "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOXRWOUlLSHBVUVMvVFI5dTJzSFplQmd2MG9Lb3JQL09HMnRxRmpPYldjRG9TL1BGbWVnOG9nWnB6RGtSTGlQU1I3MFZETTdrQno3YmMzZjAxa0MzL3VwTFVBSUJwdz09IiwiaSI6IitqNWU2TjZUUUpTRHBNenYiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Amiibohound",
     "size": "221MB"
-  },
-   {
-    "title": "Bramble The Mountain King",
-    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Bramble_The_Mountain_King.avif",
-    "tags": [
-      "PPSA09426",
-      "v01.000",
-      "EUR",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaGxhendHZEJpSUIwSTlhVVB1VHJXbVQySjR5b0l3K2o0WXJyUkExT0swYzhJQmtsN2JmTVh0bkE1bEptNGtZRkJFcXg2b3B1WkdtVG9mVjFlRXlmQlYvZ2FlcGpnS25wR1hBPSIsImkiOiI2bXp5NXcyRjQ1M0FqUmZOIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibm9TSEpJcjJNdUdVbUZ6RW83UDFlNTNnZWZUVW13aDdzUzMvZHNFS1V5R1d3WE5KRVhXR0Nzc05qdXE4ZTZIcWFtZEkwa0pSYXllR0VYRnVLdzVxd2JWc2M1Qzhja0U9IiwiaSI6ImhXd3FuL1BDeXlnODAwcXoiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibkZZVXAxZm9GZGF6VldDbG4wZkppRFQvaTVyYWdxQVRCNCtmcTRQWmdZS3h6K2lVQzQxWElCUjZnUFJNNUVId0ZVQ21HVE00YWZrV2lhK3p4UVpSQTQybmtLU2ciLCJpIjoiV1BQR1hTZnNPbzFJSERVeiIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS2lrMTdzeGNKelFRRmM0Y2hUOE15V2hxd0tNZnJXREdBTXJBd2FYVkxFd1E1NDlRcEhiZVJsZG14cVdPdUR3c29jaTZ4MCsrL25VSGhLKzJhcTl3YUlKemY3T1Y5ZlE9IiwiaSI6IndmRFI0bUlmVXpIT2RUdWEiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTXcrT2RqdW0xNnRvb3c1Rzh4dTQ1M0JVb1NuZEZ3L3lqdktLbXdKZnlvSndBZ3VwZXFuSTNqczU3NlIrVGxsc0hJNUJzams4ckV5Y3VQdVRqZFpINjRGZDg5NURLZz09IiwiaSI6IjNlWTZCbU9CWDdoV2lwRk0iLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "DUPLEX",
-    "credits_backport": "DecKerr97",
-    "size": "11GB"
   },
    {
     "title": "Tokyo Xtreme Racer",
