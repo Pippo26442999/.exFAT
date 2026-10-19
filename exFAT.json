@@ -3372,7 +3372,7 @@
     "fpkg_backport_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVGtBaytWV3d5K09oQXhIOGg0eWQ1SUE0UEo1MEtPTWx5V1hDaTBWOTJKWHhQd2FxZ2M1Yms5NG9HQ2Vmd3Njcy9tVkZ5OTFUWmk0eWhzZk1uVk9VZHJJRmZadXIiLCJpIjoiZ3EreXcwYUk3TWpVaDN0NSIsIm4iOiJEYXRhIn0=",
     "fpkg_backport_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQTdZc2J2LzBGVjdBTjdIa29iT3lLY2V6TGtCcVBRY2FRd3RNNWhaSGZZakh0MDF4MXRFcFBVd3RSaUpPcVFYbVNPYnRiWTduT3o3MXIzaVRGMjBCVmNBdmdYRDd5T1U9IiwiaSI6IkZZSmd3dFN3M1dhN0JCVjciLCJuIjoiRmlsZUsifQ==",
     "fpkg_backport_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK2xzb0RtTHhrTUZROFV4YU0xL1JoVTdyd3dYaHVMVHl5YzZVQitBdnBuZlZoVk13SUFKU3BIenloU3RtdGY2UXoyRnR6aitFNnYxOHp5a1E0N05FemExdFVrNDdlZz09IiwiaSI6ImR1VFZ4Ui9LQTV3Z1dPakoiLCJuIjoiVmF1bHQifQ==",
-    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above.",
+    "how_to_play": "FPKG atm is only working up to 11.60, use exFAT if you are above. If not launch set 1 Year back on Console Settings.",
     "credits_files": "SiESPTA",
     "credits_backport": "BestPig",
     "popular": "on",
