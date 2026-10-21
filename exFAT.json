@@ -1,5 +1,30 @@
 [
    {
+    "title": "Diablo 2 Resurrected Infernal Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Diablo_2_Resurrected.webp",
+    "tags": [
+      "PPSA03912",
+      "v01.039",
+      "EUR",
+      "DLCs Merged",
+      "3.xx and beyond"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ09RSjZLdXREZjdYWjh0bFk1d01BQW5IUlM3QnI5T3ZIQTRhQ09hODhlK2szV0VhZkdiT3E5WlhqT1JvT3FhL0YxNXlnRU03QnhKWjFNSkhIWFY1cVJYc3NpcWlldmRZZVBTRGVxZ2tTdz09IiwiaSI6Inp5enRHRGR2VHlFeTd3THciLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNTJXVGN6bHhJOUlreEhyUXowaHB0bzZ0YUlrTk04ZjVEWHprVHIwNUlrNVJoWVVJRWZULytob0hjOGMvRnVvNUtEb3pGbndsaURlSmRkT3MvTjNVSkIyN2xSSEZHVkI4a053UnhJdEMrbkk9IiwiaSI6IlZCbDhzQ2ZNSUt2aDZqWWUiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUktVUHBucCsvVHBXclBzVldtWXN5am56WWc0MXJ3dUk4aTRpU0FncTRQdW82aElyYU5rbklQcjV5endNbzBLQ250UFdmRmREZUpJYXlBV0ZpVG02UG5vTmp1Uk1rczZEUGxzWm1mWkYiLCJpIjoiRHZFMUQ4SitDTGtySlpqayIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidE4rS1JCdFJ0alplOVRrS2JWRm9yWUN4N2QyQVFENDVramRVanNZU0srMmdZeFpyMkZCRy92Z1ZPc05ENTRNcnBtNHZ2UDRVaDhkVlA3UWRHZTZXVFg1WEhlblB2c2xBVzRBNXI2WHFCMWM9IiwiaSI6IitmcGJYWWhBL0g4Rm5tRFoiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOGNBMWxIUFJvSkhKdjN1TG5nMjFlbEZVWXUzVis3TkRSZFkzTjQxV2pwckFJczFFTE9pN2gzS0lSbVg3VTZrMURmbE16N1ZtYUFNZDBaaDV0SjFVMkppWEQxSGh1azUzUW5KZFlEVkIiLCJpIjoiV1V1Kys4c0FuTDFJb1JLKyIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSlJNK1VzTnBhVThiOHJMT3VScUF2c2RGMmE2cWJ0NUdENTVKQXlKMzhvdWJYYWZpOVUyY3liWUNraG83Q0NWTXA4eTlBSFlXZ3lVUTVyNER5WVdYblVRUVZpZ1BHVU1NWWNyR0s5R0htNXM9IiwiaSI6IjRWMm1UMU9nOFJBNEFyUTEiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZDFMdUpWbU9yNDBrUDNGTWNjRmM5NVNlWVljOVp4RzdVYjdxQnhhQWd4dytHTStEcG9sRGw5ZGJ4QWVvM0wwMUtmVHZyMkdHOFhFNmlaR1FNNzJSblp5SHBTRjBqWTczZmZDRGFFWXg4dz09IiwiaSI6IjMzWGVZQ1Jzbmk0NnBMdUUiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSGt5WGZxQVplUENTZEdISlFoeURHRHpFVmcxcWQvckZSMytPMHBRZ0IvazhHOFh5RVFuVWZlWlRjd1llNU1VMDBiYjZpYm84bHp4VFl6VUxQaC9rc2VDMnVsclFDNnVTVDFSTExkaTZFTzg9IiwiaSI6IkxZb3JTaUd3VHZJK0RUSE4iLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX",
+    "credits_dlc": "DUPLEX",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
+    "popular": "on",
+    "fpkg_size": "35GB",
+    "size": "49GB"
+  },
+   {
     "title": "Avatar Frontiers of Pandora Complete Edition",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Avatar_Frontiers_of_Pandora_CE.avif",
     "tags": [
