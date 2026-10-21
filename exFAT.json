@@ -1,5 +1,32 @@
 [
    {
+    "title": "Invincible VS Deluxe Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Invincible_VS_DE.avif",
+    "tags": [
+      "PPSA30568",
+      "v01.016",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZzVoMnZKWWxzQXFqTEZobmpGQUxwWkdvbmJKOGZySVN3T29Kb0dnRjBTdHRyaW1BMTFONk1hcVlhZWE5Smh4aUtERlBMU1RDVmNwVGtxUjdQK2k3Vm9DUUF4VlU2THRUbWw3SzZFMUJwQT09IiwiaSI6ImMydFN5SlluUk9uT2lWQjEiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUUF6RzM2bnJtV2V1dG1oa3IrQWJ4SlYzUXJTWXNrbXFIbWI3N0o3ME43QklXaXQ4dUJPeVhjRzk4M3pzUjFjMnJ0eTZGdVVXREJ3aEkrOEFjSys2UzdZZzcrc054VEVPWS8yZXJLYXpKSGc9IiwiaSI6Imt0WkdQaFVMOWJsSGdkV1kiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQXpTNk0zRUNuQ2QxR05sdDVKWm9Za1ZqNmhlTWVGUlJ0TURudTJPUVlxSWlBa0FRa1U4TlhYMEIxQlNmK1RMcktlbFljQk1hR0NKVmhkMnoxcCt2U3Zhc0dacVNxbzdOQ2h5c0JGSHkiLCJpIjoiM1c3cTUwMGcrQXU5QTlNSCIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSmVIa0Z6Wk9zQWdYaVVnSDk1cUhRdTFDMnBKZ3oyN2czbmJpUkpWRS94Z3VJQnJOa0NKNGJnZm9DZWFYZlVOdVdJUHUzbEpSeGtTUWE0N2tRR294UHBVTTcxWURDMkNyNUVlZ0d2Z3YrVDA9IiwiaSI6ImxFUG52RkRBVVdDZWJlOW4iLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidDRRRHFGRGdmcGNENWxFTStjRXVGaXU5RE9DdHlEdXVwYm9XR21lZ0kwYUh3bEsvblpicUZHV3V5YytHNnFLVWw1UFpwQ1dzMk9IdG5CKzNNc201Y0kwVWZ2YWVXQnAxRE02NkNPWmoiLCJpIjoiV1lTL2dncXpkMnZSdkxRcyIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNnhCWUo2YUpFRlcwa2E3eDlvNG55NThGT2JBY2VqczRVcW9VaU0xQ2prblprdmpZbEdZUFM1MjNpYlIzMERiTDVCOE5hMWZjd2paY0NtaWhiS3YvZVZBSUp2KzFyTm9jWVppa2ZxNWR4cWc9IiwiaSI6IndxamN5TTJzUk92MkZLdUsiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSzNLTHpqcmdwK1NZT0FxY2tkU05lT3d4WEkveEVCbWFCVVRHcWc3YlNJU01SWGhMb25Odk1BK0d5dmQvdUh2N0xieE5RK2gzYXUzZ2l2b0o2cHJrdmZ3RUQ5bktDUkdvazJ5T2Vma1J0QT09IiwiaSI6IjRJZzcycnFuVmh3WngzK1kiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWkJXV2ZyalhEUW9zNnpYemZISVZ6bUgvYnNaUWxCQTJXTURoNFg2WllkdDVnUE55SnU1SVdhSUZNdkxIUlBUSjM0dmFlUjgvTTMvK0hIQWlCM1lEcUIrQmdMZWRteE9RVm5CM2N2Y1BtazQ9IiwiaSI6IkpHbDZnWlhZOHFjK3QyR28iLCJuIjoiRmlsZUsifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVldVQ0RyZkpIaUNGbG5qVU5MWkNIdmcrYUg5Yzd1UXljcjVITWZGbXlIakRwS2JiYS9HWXlaMHVxUkhtemhLUThSNlNraml1RTRHRXgvUlg2dExCbHBqbk9OOUVIRVRza0d5U05NeXFRUT09IiwiaSI6IkJuMjNQRmlyU2REdTEydHkiLCJuIjoiRGF0YSJ9",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicXc3Y1p3d0x6T0NQS1Z3cTlrNU1RdnhZcnRnYVlhOUtUSHJWc1RBU20xK0VCWWRrMTIxVDRlbUlSWDhPa1Z0OFlJVnRaaFAyY1pYc2c4WjFjYnpwOXRudkFiL1lsZGsrUU9JZHNTSXdTMkE9IiwiaSI6IjZCRG5UMzlnRjhhaWNqOGUiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo & DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 4.xx, BackPort already included. About FPKG: BackPort already included on Base.",
+    "popular": "on",
+    "fpkg_size": "9GB",
+    "size": "23GB"
+  },
+   {
     "title": "Diablo 2 Resurrected Infernal Edition",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Diablo_2_Resurrected.avif",
     "tags": [
