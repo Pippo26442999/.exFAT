@@ -19,7 +19,7 @@
     "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOHBuZEpqaitoZDYvSDNRdTg1eGRKOHkvTWgzYWdaQUFpbTNnblFMZlVXcTEyZkIreXFSQlB4UzRRT3l0Qit2ZC9HY1lxU2VscEo3YmIraWpwVVJ0d3ZtbE9vNkhWL01WVnRVVE9pYmorQT09IiwiaSI6Ikt4ZFZ5M2YxZ0ZBMVVFSnUiLCJuIjoiRGF0YSJ9",
     "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNWd6MWFST2p0RlRESHVTNHY1dXpmZVZUbm5vT2p3T1VsRzRDcFp5ZDVORlJNZVJQcWwyVTAzWkZ1UFFpeXIxRGcrZ01hWTJZVFJvZGpMNGdVeG45NVJnMzBLZE5KZmVyaVpmcElTdzlBVHc9IiwiaSI6IlN2ejVaRUpzR2Z4aTN1dHQiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DecKerr97",
-    "credits_backport": "DecKerr97",
+    "credits_backport": "DecKerr97 GUI",
     "how_to_play": "Using HEN can cause crash. FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 10.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
     "apr_emu": "on",
     "popular": "on",
