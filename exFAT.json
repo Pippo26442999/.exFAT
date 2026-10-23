@@ -1,5 +1,33 @@
 [
    {
+    "title": "Ace Combat 8 Wings of Theve Deluxe Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Ace_Combat_8_Wings_of_Theve_DE.avif",
+    "tags": [
+      "PPSA24913",
+      "v01.001.001",
+      "JPN",
+      "4.xx BackPort + 5.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia1BNYWNTNmdXSStXd2ZMRUhQWXBrTUl3QUc5anJLRzdWb1hxZnMyakNWWmZOWVBmRmpROVJrbGkwTDl5RkFCaDJTSTJDZXJrdC8wSjNJbThBdWdpRWwycWd6UXhyQ3cxYTFNNko2QWVYZz09IiwiaSI6ImFNK3doK2RLZjRaSFF0aTEiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN3UwazFQMERRejQrbkVKZ0NSS1NlQjBWNzNKckpBeE5IYlN1WU5BYm52NWYrZ3hBUWFzZGJXeHhNQ1hmRU1WMm5xZktNb05kd3V6eHRjQTQ2RGlzd1dXbzNHUlBlTGlhN0t0OEVMTHpSRkk9IiwiaSI6ImZTeFlCbE5Ua3ZVSW51RnciLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTTRyeG9SdHFnemNhUFJHRnpjcXZHTkNWRkorenFpdm4yZUxXNFo0dE5Sb1BFVHhXQmhzK0pkT0J3TXM0TUsyNzFNZ0VTWXE0Q3pMbndRN3JES0JTa2ZqRUJKOXhmN25CUnVSZjZ0cDMiLCJpIjoiU1hTS1hBSnpvNnQ3UlRYMCIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS0ZSWFR4NGh1R0FNTG1QN0EvZ1JrMlJ0dHpaV3VSb2tBbmdsekZzc1VDdW5PYitDdTVRT2NnZ3dnU3pWVjVvWlRWa2toOTJnSU1vamE2UkhCa0VnZjUwaFpadVlHcWpmSmQzVjI5M0tmcFE9IiwiaSI6IjRseDNwMXJmU3FxdGNxWksiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTXpvTjFBSXVlK2tVNVN5YnBIVEsxcVdVNk9QWS9tWFVVMnU1RnUxQTUwQ25HbkxVQXNFNUR4U0srK2htNWZQaFdwSFFNQnIwTjZ4a1Rxb1BDeDNKMnZmejBpVnVyaXRXLzhkcTRkK24iLCJpIjoicnJEdC9FcllNK1ZmSDcwLyIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMllVa05ua2dqNWFQcTdjM05RSjluK1RwL0d1RFN2UlZFZkl1MVNWZTFTR3JSTk43aytYN29yVzVhNGdzRWpzR01aLythT0FBRHYxRFZmTnZOSnpkTlJDU0pGTElXbHljTTBVaW1HNXNZcmc9IiwiaSI6IktialFwa0svWU5qUXJxVXciLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZSttdjljRUZGYjBMS0pEdTFxWDNhZWxnWjRDdktRRUQ5QWtzM0dKWklJcVBFRU1Ma2ljeGZJY2xqbklEY1R2eDhVMWN6WEFKRDNaRzN5cGlvTFdtQkI5WGpwYitXd1VEM01KUlN0Sm91UT09IiwiaSI6Imc5ak5GdEZlVDA3UktEZ24iLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZTJnRnJPWFBxSnYwRGlDQndnbGFVZzVDTmpLd3FqdkRHYW1uMjJ6RURYaWtyZHAvenRZZHN6U3FkU2p6QjJ1NDA0cEdrUTlTdUZ6TnMrUGFvd0tGc2dvU2lUQ0JmTTEwSEFrQzl5NTViY0E9IiwiaSI6ImpiamxlUlptNk5PUFdIcjYiLCJuIjoiRmlsZUsifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNjJqVGVRaVRkUzhIODFJczI3bGNubFlDWHV2VTA5UU5ldjdsaTBMVVJlMEpteGdycjJUWlovL0Y3NXhlVW9QN01TSFB4dWdDVzMrdWdNVU1rRkdhdGNsOUdBZVZwZjQvT3FueUlmQlgyZz09IiwiaSI6InZsVE1URW8wSFBBVDIvUlMiLCJuIjoiRGF0YSJ9",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMnNIV2IzUFNMcjdqWjhwM09mdS9ldS9FMFhUeW1rMmFvNktHRHVIelVOWHlXbE5JTE95RjhRMUF5Z253UVozTUI3OFdKMDhacU1QRmpQNWZ6bTBuWnlLblVDbXBxOExwWGd4WlZOTCtudjg9IiwiaSI6IjJuMldlNG9aR3RxTm5udlIiLCJuIjoiVmF1bHQifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "credits_dlc": "DUPLEX",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 12.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "104GB",
+    "size": "232GB"
+  },
+   {
     "title": "F1 25 Season 2026 Edition",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/F1_25_26.avif",
     "tags": [
@@ -20,6 +48,7 @@
     "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNWd6MWFST2p0RlRESHVTNHY1dXpmZVZUbm5vT2p3T1VsRzRDcFp5ZDVORlJNZVJQcWwyVTAzWkZ1UFFpeXIxRGcrZ01hWTJZVFJvZGpMNGdVeG45NVJnMzBLZE5KZmVyaVpmcElTdzlBVHc9IiwiaSI6IlN2ejVaRUpzR2Z4aTN1dHQiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DecKerr97",
     "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo & DecKerr97",
     "how_to_play": "Using HEN can cause crash. FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 10.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
     "apr_emu": "on",
     "popular": "on",
@@ -43,7 +72,7 @@
     "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ1pUaFF2UnNJYVV6WkY1bXExR0ovdlJxZkRVNm5wK0ZKdVIwa3JaN09CQW1FNkRjMEVpMkRVSSt5NTh3bkxhL3ZzRGljUjZacjFGa1Nqa2F5RkRSeDcyTmpDU3RqOEtpQUtzbS9DWU9aeGs9IiwiaSI6IjVsMEo3WUtIQU81dXE1N3QiLCJuIjoiVmlraSJ9",
     "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYndSZlBDdDdpNmhpb3hjb3ZrSTBmTmhpSXcyZE9kTEdwTEQ2ZkZLREZNZGtpenZGRXhtWm5oQWY0TjZaNzg2bFJsNWo0NWUzbWNHdElxQ2NJUHpITVpPUUUwZkpPYXBoU3RPTXF3blViUT09IiwiaSI6IjJFRmc3QjdyQUhMSXFRajYiLCJuIjoiRGF0YSJ9",
     "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidW8vQ1FXZktMNTZoOVdGaTBjalMrRm9zVS9RbmNZQTdtWGdONXdUWGVsTFRyNVB2MVZQcFhWbzBZRU9Ta1MvL2tHMWdLOUVJSk1ZMG01VjNJYkt5TnREZ1RYVnVMTEZFUVYybEZhY0V2aW89IiwiaSI6IkFPRHVjV3JXc2JrUGZ1TXkiLCJuIjoiRmlsZUsifQ==",
-    "credits_files": "DecKerr97",
+    "credits_files": "Scene",
     "credits_backport": "DecKerr97 GUI",
     "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 13.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
     "apr_emu": "on",
@@ -97,6 +126,7 @@
     "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoianFPQVRWU21IMFdXY080OHA2Q3FOTmFjN1lxV0dDbFBXa3FnWlF5RnB5c0xZYVRYWWtJTlFjUDVLU0wxam1URnNZamhqRjRFZkNuZU9VMjJFenpiaUh2ZHZjRExCQzcweDVCSjhDdTlQVG89IiwiaSI6IlQwL240TGZDOEdTVVNVN1kiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "DecKerr97",
     "credits_backport": "DecKerr97",
+    "credits_dlc": "Pippo",
     "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 7.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
     "fpkg_size": "17GB",
     "size": "38GB"
