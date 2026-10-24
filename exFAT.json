@@ -1,5 +1,51 @@
 [
    {
+    "title": "Echoes of the End Enhanced Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Echoes_of_the_End.avif",
+    "tags": [
+      "PPSA25636",
+      "v01.012",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWWxsVDZlTVRMelA1WWFWZ1dyYTY4OGUvZndEM3BaL3dFS29yeGFLbnhOQlBpclhlTGM5TTI2Tkl0RlFSWGpxZmJ6K29VQjhId2dZWU9JRzZwblhyZ3YxSWVXc3JzNU8yWFd1aytNZERJUT09IiwiaSI6ImY4VjV6d0cwTDgzUEZUZFYiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibzhHV29pNkV3aHl1R0JSWVlGODQrK0h2Qzl3SzRqOXZzdjhLOUtTQ3BVUjBoc0RIa01RWEJMVUZnZVY4elIwbDRrZHhhZHFORjJ3YmI3R3NSbUJVb01EUHVCVW5SQ3JzV25abTZPMHh0UGc9IiwiaSI6Ii9aTkttaDhGUm43Q2ZIRjciLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRmZwU1FUaFhBSCtTczZ5WUpNbGhESVJqZCtMMVlKc2NJOWgrYVlmamp2aGRENFVucVV2dERua3JKTjFxM2RmUkRjS2VuUkswUDdjSkpjQnBYdW9TeXEvZ01WMmR2L2loMk9nbEh6NDIiLCJpIjoiak5NMWZONE9BUi9hUTZCaSIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL2RXcDd5dVJzUXFZeHQ5b24xdkZNcEozVU83MHBwdk9MMTJRVzQwTG5iOWFvQ1JYNVVWZEpKNTZFN0RZZjBmdWFydlZXOUt0ZWVRQnY4TXNWbFFISDBXeEpjMXlhTFlWNmlDWmZrVmZMRkk9IiwiaSI6ImJGUnBIbnI0aGw1U2ZpL0UiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSVRta0c5bHk3WmZnZjlaWTNBTU9qMWJpL0FhdjVxOFZQRXM2bHgzMnBOVEgwNVZLTzhqVktXL1dvWVJ3S2JtNlJnbkdpQnFBbG1CcDNqSzRNT3lTcUZld1RFQXBXaWp0cEJOZUNFQWUiLCJpIjoiUmJ3TDhZdUlOUVBKdVRVKyIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWVpUNUE1aVZmbmk3bWZ5cG9QR3QxZnMxREtmbms2dkc0S2dQZzZaM0FqODR3NzRpR3pPb1RGNVV0eG5lQ2tmZDdnRFQ2bVNYaVlqd0ducS9MTVdrRjI5b2JWMzNxQlkxdkF6RlFTYWNHMnc9IiwiaSI6IkFxOTlHcmswdDcwa1o2dXQiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTUF4cERURDJveStKVmNxRkRjNko2NTdzTkg4bUs3VjUybkgyYTVWZldFVkI0ajVzYlhpWFJZL05nZWVzY0xFWTlYR0Q1S0JTYWc1VWZsWGIzK3JCYnVmK1J3b0RFNXFFeElyb2dPblczUT09IiwiaSI6IlU5a2JiR2YyWFZDejBFb1QiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV1pEa3ZXTGNwakR1d2d4NGE1cWxHRVNDNTQxeDI3eUtpa0ltUUpDUk84cjkxSVdNaTBmd1o2Y1ZZalM4R0NTZ1lGTDJDNlBDNDJVT2p5T3dHR0pka0pIaE1JL2cvLzJCVytwSmJXd1htYVU9IiwiaSI6IitydVBjSGZUQmRZSnZKQVUiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 10.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "fpkg_size": "37GB",
+    "size": "37GB"
+  },
+   {
+    "title": "TEKKEN 3",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/TEKKEN_3.avif",
+    "tags": [
+      "PPSA31291",
+      "v01.000.001",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibU9WUEEyRHVvQWVnSDZBWktIVlBEZlVPSFN5U2ErMndGRDdyNFZUUmtKNVJQY0J0ODJ2ZDVHbmNjVnR3UXV6T1VIWDFsajdTSmYzbFJDRnZrMWdaYnRFSk1IV25RWXZDU3hIbmVxVFBtZz09IiwiaSI6IlAvK1R0anRQVnkxUXhHT1kiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQXRRazBzT0JzR0NjWVpsU0JjWVN0YlZ1aFBZYWw3c1V3Y0RSTDRoWWxIMk9LV1ZwaTROak5rVGczWVFIelB3bkVpY3VCNFFubktwVGpGYzNNZVQ4dUFGeVd4TkhpYlIvS0lwSHJ4ckZsaUU9IiwiaSI6InJJQk52VmFPbUl2N2krV28iLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOU9KbUxKSHl5QWxSc0dWTiszdk02N1ZJbDBON21FaURhVW1TMnVWekU4SUJla1BSTXlUYlhEQXhJVlBxM3pvMWs2S0o5S0J6aitCaXBUNG8vR0FVQnBTQk5yOGZuQVYxbmorMnpKay8iLCJpIjoiYWI2QTRvdjczU3lWbWwyTCIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSEJSWURVNXBXc1NldGZQWmlFREVsUHp5YTVkZnE1YjRUeGwwcjdGa2xGNHRuOWV5bExpWG9SSmR4T1BoQ2EzQWpFdHhHSjF5NXNFdFVmK1FDam8xOThpQ1ZvQnE0SkxhNVkzbUIwR2lYZUE9IiwiaSI6IlJrRDV6blprSGM4V2JuZFQiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibXRrWlVCZ25yaG1RSjJOdDRHRFlBZXp5QzdJWi9STHVUeHFDbkxpSXVqbFVlR1U0SjE0dkoyekdjUkZWblZUamYxc1d6WUZCdzczKzZyWDJ6eW8wS2prMzJCS0Y4VlVCREJxMGc4YzUiLCJpIjoiS0hXaHFjS0syWmRmZ3ZCTiIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib29ROGMrQ0ZBQ1RuZGlQaEx6Zk1YdjE0OG1XdnVkQVlBYUNud0dMRVAyMFNQVncvd1c2dkkrRDBvZThlWUFja0dodzlUNHZoRWRoME56RHoza295bXRMOFhGSDVVSzBtQ29yU3g2UXRkU3M9IiwiaSI6IjNxTGcwNndBT2NLc1hpeG4iLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTWdrQVl3bitaMXkzTFVlWldTcWJpUzI3Q2lWclhyeEtVNnRKbDhCS3AxWEJOak1IN3pLbFI1R1g2Ny9JK3V4ZitkWXhTMlZYTXVWbzFSWHV1RWdzZWJaM3I5LzdodHo5REtnNUcxbkJ5UT09IiwiaSI6ImliRlFnV295MlZuaTNiYnAiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ2ZKMytQcUJSVXdBZVF0Nmt0S3Z1QmluYWVUSmwzREZicjJWZDNmYTlodndyR1M2VDl0OTdvcDNNc2N4U0JUVExtdHY4OWFkakE4QzNabHA2VmhRYmF1K0VXbDREMDdnV2hXNTRuOFdXbjg9IiwiaSI6IkdDSU5QQjdmOVRWQlZsSUwiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DecKerr97",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 11.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "fpkg_size": "1GB",
+    "size": "1GB"
+  },
+   {
     "title": "Sonic the Hedgehog 2006 (Unofficial Port)",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Sonic_the_Hedgehog_2006.webp",
     "tags": [
