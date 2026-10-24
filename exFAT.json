@@ -1,5 +1,57 @@
 [
    {
+    "title": "Sonic the Hedgehog 2006 (Unofficial Port)",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Sonic_the_Hedgehog_2006.webp",
+    "tags": [
+      "PPSA99903",
+      "v01.000",
+      "USA",
+      "4.xx and beyond"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTjhMMUVUQzZocml0VENzRFFpQ3JvS044dXpGR2FwejI0aVdnUXJQSG14SU9vdEVjMENwM0F6bXk2RWZBOXZoNTcwTkRKaWpvbkJEaU5pQ0RxZTBKKzRIUFJXYlBzVWRvTVl3RUNnQlgiLCJpIjoiZVZsTjQxeHQyRk81Q1pPTCIsIm4iOiJBa2lhIn0=",
+    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNVdFbDBDU3g5NERTbjlaRzcwbVhyNWE4akpqMmJFUjV1aU15ZXpQZVQwV1ltSE0yODhUVFVva0Z4bjhGalMzYjEvWEpGMkdya253RTU2dHQ4TmptV1Rlc3B3dFh2NUdoalBmQm5lZUVpSzg9IiwiaSI6ImtzQmxDVVhRTTEvcXZOTFkiLCJuIjoiVmlraSJ9",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUHlSZ09VOUgyTkYwNEJFMGZ6QU1QRk9ydjZnU2hnWFBYQ2xVY0NaL3o3cUZEcFpSZ2xkTjZBcUU0bkNRYVNFWlJtbXg1Vk1raXdTMkU1TnZaRmZzTDkvMmQ3cG1kTW1pZFlpdUR1UkxOQT09IiwiaSI6InVEYk90aDUweWJqWjQxcFoiLCJuIjoiRGF0YSJ9",
+    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicFYyOVVqdWJIUW9BWnRabzlGeS9WdkZOcUdCQW90SnVSYjNaekNHMFN0ZklTMURCU1ZiL2hmTktic0ttZ2JsRGFzNDVqQm1wVzcyU2ZpWFY5b09YTUdwM1hNWmV4UlQvd0ZERS84OEhGZFU9IiwiaSI6IkxlOE9QU09FU2ZVSUNZdFUiLCJuIjoiRmlsZUsifQ==",
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRFVhRmY1UWdxYmM3MXljZmdmSUcxeUxQNXhBcGY1RDhsb1ZTSk5iay9ncEl3Rnp6M1FIL083UGRhemN4RmJGWE0yeUphczhHelRWUjVaelNBTWlUVW80UW9VQXN5RE5BdTVQSEZ4VDFnQT09IiwiaSI6Im9ZWGh2cDNKQ29BeStWRFYiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTEFpalJaV25ERVBaM01CNmpPMnhaNVY3aWZONTh2TkV1WnZ1WmJvUDFaVHVlTmpjaDNIKy9peDc4VUFIMFVoT0NlZHNta3doSVY1dFgvNUFPY2VOTUlBakZibStQUlJuTUp0ZGFYK00zYmM9IiwiaSI6IjljM1dXdWNIT21rcUNSS2siLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib1BHWnVqM0p2QjhqajU1WjJGUXRtMGt5b3FJQTB4WGZMaFFWeE1PWVlIQWNMS1ZWd09uYjlYU0IzUEdQanNlWkJRQzd3VzFYaTJuMUo3Y0M0R2ZJNC9OZjJYY1RpRVE1UGVVM1I5UE0iLCJpIjoiMHJ4KzlwUVU0R2ZVa2dPTCIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaVhnODJGY3RVUFYyaWdHT2ovSXZtU3FYbFRUVjBDMmlVZGI2T3JuVXhnVWk1a2J2WG5NQTdVajZLSUdqNlZxRndpV1pOZUVIL1BVUG9HOFpSYkkxbWRFUHpmcllQUFQ1NDgzRlcvQkdUMU09IiwiaSI6IlhIaWlYVGNVRGtWelQ3RXoiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL2lSQ2d3OGhyb0Z2TzlINXZ0eUprOUR1WXZEZHRTL0UwbUl3Y1NqWFpOOFNHZzFyd0t5ZTg3UmZSV2xEZUxkV3FXRjhocnRhMzFvbzJ3Y0g5MUdLRUw2bVNrazNzek9ad3pvdHUzQjYiLCJpIjoiQzcvNWRsOHFUQ253bTMwbSIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidFl3OWUrenpHaHlYRlB5V3hNU2hKTmRwZ2dHNWF0T081NkI4NFZqTityNUdYZGZTZ0s2ZDdkMHNjQ05uR0xVSXNnc1N5T01SeHdZY2E3c2xBb2dTaDV3ZXZBNzdzSDRUUERmSy9oUXlROW89IiwiaSI6InZ1TGdMa0VCMDhwd1A5NXUiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiclNzL2hLOCtOZnAxZm85TlhVYTZmWllsTk1tRHlNTElaRG9iVWd4TkZaaGw4VlpvNWRlekxaTDRiZ1NmM2kvWU93NWlON0VHd2dBUEFVMjkzSlZlS1NSenpYZ2VjVmJkd25tZWs3OWxVUT09IiwiaSI6ImlKdFRybG4yZHp3Ni9OdlYiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoid3ArK3locEtoemtWT1RKU2tNbFl6NXNPTzlsaVRibVFtTlhTT1ZIUHdHTTExUUxFZklITy8yOVZrdmpLdXhsQUVCaHE3MXk0ZTJGTkFXNjRTbGRZSFkyb2N1c0xMYmlIZFl2OHdlQ0c0VGc9IiwiaSI6InJzNGI2Qk1jT2ZUZkVxc24iLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "Nazky",
+    "how_to_play": "Use ShadowMountPlus 1.7beta4+. FPKG atm is only working up to 11.60, use Dump if you are above.",
+    "popular": "on",
+    "fpkg_size": "5GB",
+    "size": "5GB"
+  },
+   {
+    "title": "South of Midnight",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/South_of_Midnight.jpg",
+    "tags": [
+      "PPSA29642",
+      "v01.001",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTzk5RDNvTEJJVnEyQzZ6Yy9KVkVRMC8yeUNQZXNUTzV0dERUREFFR3lkbnErWjFwSWk5bTJWMmYzMW94N2Z0NXBGZ1gzaVQ5VlRrdmZ3NVNxbS9oUUQ4SXRiTU5wNzVMZ1hjS0ZZbnRZZz09IiwiaSI6IlVUQ3kyY00zTUlralRYV1oiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieXRmMkVnb05Nb3BlSVk2VWxOV3ZsMngzbnVDTy9HQUU5NTRIWjZtQVRETzdNQUowaXlUM3lIZ0xqSGJNd0dRV21KTEk0OGVvdXlKdXh1ZEIvZk5Vdk1Zd00vMDFhNEZCYVB0MThBV0g3MXM9IiwiaSI6IjZETGZvRDNkTVJaWWZ2aW4iLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS0RVdDFZZlFINFh6ODJLYzVnYXFmUldaa2dsVXlxclVYZGszMTNSdmM4MnlQbEZHM2gvZHFpU1E2OUthS2JNa3NsS2hrOGhiYzU4VnFMTVBvQU1tMXF0QjBvckxFYmR0RGI2U3hQMEoiLCJpIjoidEx6UTl3SkxkS2RqMWdCNCIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOTdqT2tLWEtNOGFvMUZLa2kwNzh1d0l1WE1jdU1yMjIyc2NUc0R5ekxxMVNRWFlLQkdKR2EvWDJDQzl5NlNEdFhnTXZtQ2pJdWdlRENkOFpYTE5YY24yeTRMbk1PZUp4Zmszcm92N0k5Y3c9IiwiaSI6IkxnTDNxZVJ0WTV0N2U1QlgiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRm9KeXBDcjhWS3RBQkorSTUrclBNTnJVYlcxakI0S2FpbWozZmNNY3UvYTZJWGZZTE9pNUdxY20zQlZwMmpXTGFKTGxOMUFIN0MrWVVjR0FhZHNkcXFXckIwdDVyWTNSZG5VemJvTzIiLCJpIjoidHJrTDNoMTdSeXVVMzJKNiIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiKzdqSnpPaVJKRFAzZU1FdlBVa1lWeGZPWUYxZ2lLaTVPWmMwektoa1V0WEM0QVVBeklBTzNmMDYzY1lmS2tOb0lGb2QwZW9PTGR3dlUzanR0WTEybExUbnc0ckwyQk1GYWVUcDJrbEV5dEk9IiwiaSI6ImRpKzJiWngxSkp6WGdQbFIiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMkQyM1FmRDZsZlJhV1ppSmdRbWxLVWFqM3FZbEJNZU9CUkJ0Y1AyeGNYSU43RGxENUgzd095b1JFZXRjckpRUE91Tlpna1hhbStuSVB0OXNGaitEWmVyMnNldnFHc0RNVklvU3kvOGRPUT09IiwiaSI6IlRQRUJXeU5SSWJtNFJySkMiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZGZLZU5MeGUvQzcvUUk5aDRxRldVRzJXbFFrUk1kdnVqWEZQdE9tV3dOSHZtMWozSzQ4M1pxZ2ZUUUdGTWhJOVpkQlNUWS9sSnIwbEV1WHFvV0JxMDdodnNLRTZtNndqamNocUR2bDl5MEE9IiwiaSI6ImttQVl0UjBuam0zd25JUGEiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 11.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "apr_emu": "on",
+    "popular": "on",
+    "fpkg_size": "41GB",
+    "size": "59GB"
+  },
+   {
     "title": "Ace Combat 8 Wings of Theve Deluxe Edition",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Ace_Combat_8_Wings_of_Theve_DE.avif",
     "tags": [
@@ -154,6 +206,7 @@
     "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib3E2UGVQaGN0RXlZYmhqV1A3T3hoQVIzbU9oeFFES1VuODlaUmlucXJlRTNSNGNsZmJ3ZXlScTEwakg1bWpZZ0tEUk9reWJTbjBNSHRIU1RsZFFsS0g4UFVsUTVqeTREcWcrT1JzZm1idHc9IiwiaSI6InNVbGNNTTBkZ3gwa2Z3Z2ciLCJuIjoiRmlsZUsifQ==",
     "credits_files": "DecKerr97",
     "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
+    "popular": "on",
     "fpkg_size": "4GB",
     "size": "5GB"
   },
