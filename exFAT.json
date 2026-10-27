@@ -1,5 +1,28 @@
 [
    {
+    "title": "Onimusha Way of The Sword",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Onimusha_Way_of_The_Sword.avif",
+    "tags": [
+      "PPSA27836",
+      "v01.000.001",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTlBWK2Y2VUFmTW9ub1g1T3dRRVdKRHBLSVFiVE9Fb3VQRkFXOXRKMzFwamMza2N5dlNuSDBXTEFrZDRoUHY2L0xYbnN2SnZiY0VnUE5YWjBDbkN3K0FMc3pMNEx3eWlPc29NemY4K0k2QT09IiwiaSI6IkZybzBDVkJ6cndGMnJ6UEgiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaVEzRUltUlV1alZ3QlNIbzFyZnFudjVQK0QxNU9YU052bHlkbldXaUErM3g2TFFYN3BUeTRHVUVVMG5sbXpJOWVnczZsazlOWm9FWmZZRHNwQ1k1emtqUFpFaWZFZ0N1dDVPQVQ0YTBXRDQ9IiwiaSI6Ii9ISEZXSmpmd1U1d0JrWXYiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN0ZXUUo3azQyVTA3WERJaGxyK2hITlZlYi9NU0JVR1NHeHhsNm0xdndPVmpwWk5GczNuL216QnMwSXJCVEErSERYSHVDemVlRDUyTkp1cUxmWW41ekRac1g0UExZZW45ZkZGaVBlTDIiLCJpIjoicUN4VUU3OERZZ21CZE0wRyIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM212YUp5K2pvOVlZbGM2MHBUUEV0a056SmFrY0tsOXY5d0V4UTVWM3pvWG56QU90MEhuOGJSU0o1djByM21aK1hvOUdGcEtPazRwR0lSSjdyd3Q0eFE1eW1haGkzRnFyeDV6QkJQY3Bpb1k9IiwiaSI6Imw1RSt3OWU1cm1pL21YbzEiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNlZTcmNxUThSL0lhVk5IbUU0U2hxa01WaWNmQTRhRnJueDZQQk9xV0dmMTYranFwMThoaWlsVVpXUk00ZElIYWZpZ09YNEJSSHA1L1U1MmNsTGNKcUFRVVVYMUxXNDMwcGJQczM5NTUiLCJpIjoiZHl2S2IxVFVIN3Z4U1BxbCIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS3lzMjI0cmZwZXJzcUFDSFRMMVB3U3p3alQ4Y25wbngrdnJlVkg0NkNyeEV6Z2ZDNzlOcHM3SGhBMTBhL3NSdG5mTGEyQjk5eXh2Yzg3THp5LzBPcEU2SzVCTXNPakU4YktHWFJySGFxYVk9IiwiaSI6IjRUcHl2MHE4QWVFRmp5VWUiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTjhOL3NNZHV1dEpoeTlMelpNWTRyWHJOeGNqSkt2ZE03d0IveW80OUp4bTJ3Rzc0UDdxam9DelgrdUF4cDc5OEhuZUdISmQ2NVliLzZLWU5vVktuYmpyNk9Gb2QySnZaYStvbUZOODBCQT09IiwiaSI6ImhFeFppV0pnNkxtUWczeW4iLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoielRZM05hUEJBcmNtSWlGSHQ0Z2xDM1pNdEJ1aTFqSWs2TDZmcDJsbEY5bXNvUkVJNGJCNTB4NGZTVDZIeFIwckhvZEdWSit1VnJNM3ZJek5BK1NoR2JBMUxraW1OV2xjNWtVbFdCWTdhMlE9IiwiaSI6IkFLc0x1MGZkWHNUakc4ZzEiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DUPLEX",
+    "credits_backport": "ManwonHp",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 12.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "fpkg_size": "38GB",
+    "size": "77GB"
+  },
+   {
     "title": "1348 Ex Voto",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/1348_Ex_Voto.avif",
     "tags": [
