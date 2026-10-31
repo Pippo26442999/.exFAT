@@ -19,7 +19,6 @@
     "credits_files": "Grim Doe",
     "credits_backport": "DecKerr97 GUI",
     "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 12.xx, separated BackPorts Folder included. About FPKG: 5.xx BackPort already included on Base, 4.xx BackPort Only & separated Original Files PKG included.",
-    "apr_emu": "on",
     "popular": "on",
     "fpkg_size": "26GB",
     "size": "56GB"
