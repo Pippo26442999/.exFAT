@@ -54,7 +54,7 @@
       "PPSA10122",
       "v01.101",
       "USA",
-      "4.xx BackPort"
+      "4.xx BackPort + 5.xx BackPort"
     ],
     "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWEFjbSswOWpQME1pNUd1bUFCZjZzdXNyZEFNYUgzQmh0Y2hHUklBM1dYK1ExUzJ2WVdDek9qMHpWd0w3Z0JieGRyQmdjeG5nUWFBWFY1OEJoMEtNNS9xd2l1VUpsczZpN1lqQTRCZTVsZz09IiwiaSI6Ik1oSVJpRmxEU0xKUTZmWDIiLCJuIjoiRGF0YSJ9",
     "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicHV3T0c4VTZFZk9LeFFiUXNzcUh4L1ZobC9FUGZFMjNzcW96STFReHdaMGtoemdaaER1M0liaUN3cjliUGhpc1lQbkgvbG1GQmlFL0NlM21TdWMvcGxza3R4K2ZZVmZITjJLUVBDc09mc2s9IiwiaSI6Iit5b2R5djh0amhqYkVLbzMiLCJuIjoiRmlsZUsifQ==",
@@ -66,7 +66,7 @@
     "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTzVrbmFYd0hXU3owYTdxT3pMVXpYcDNmSkhKZjBSVmFwdG5HUlNoR2dwY25Zc2g3Uk8vNVlqQTc3aVdYNEYvdmZtanorOU0rMXFwbjRZcnRZbDJuTXljcnp5ckhnSG1VZVVySWYxbDVwNHc9IiwiaSI6ImU1RUJ4Sm5RWERwZll6eGciLCJuIjoiRmlsZUsifQ==",
     "credits_files": "vincenzoz85",
     "credits_backport": "DecKerr97 GUI",
-    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 10.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 10.xx, separated BackPort Folder included. About FPKG: 5.xx BackPort already included on Base, 4.xx BackPort Only & Original Files PKG included.",
     "fpkg_size": "4GB",
     "size": "4GB"
   },
