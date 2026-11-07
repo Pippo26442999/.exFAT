@@ -1,5 +1,101 @@
 [
    {
+    "title": "Bionic Bay",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Bionic_Bay.avif",
+    "tags": [
+      "PPSA23767",
+      "v01.000.008",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWHZUZ002OHZ5b3k4UXN2MXFuOHY2YW92NUZhRDgwNVNCeVVYbk5sTmZONHlkK2wzZkhiWGtCMTNUek1TMWZzY2pZa2lQOTl4aFNQUUt3Tjh6QVprWWRydWFSMjFDV2ozUUJrU2NFT056UT09IiwiaSI6ImFzdk1FSzNQMXNOWmYycTgiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTytPQ0RueWNjK3gzYTlNMzc1U1Uyd2dKbTBtNXpwMXNYWG5sSEJ3Sk1sNHNPcVRBRVBtUy9wMVVmM1ZsNTdTVDVoSEJmTG5wR1J6MVRPVGlUaitjQVhJYzZZck1rVGVZOS9sV3l5OVhhZUk9IiwiaSI6ImpIUGs0T2FFTUJqWXpDUmgiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNk54a3pTYlhzUUdPRHZUQ04yOXVJU3FvNmlRUmJiVVNTTFNRNE56b0pUWmpyZ0ZMcWZVbG5JN1ZmREdKQnEwRk5neTIyVGF0ckNwWHIzVEdwdFdzQ0NOeXlrekIxaVcrekllVTI1dEUiLCJpIjoiSy9tbWRHb0F3L0lIM2lraCIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRUhaanFxZCs0cmc4cXlCYXNseERIUEREb0ZxblNZV29VYmZ6akVkUFFnVTZTSVVmN1V1RllLdmszL3hMYStGQ2dnN1E2MDVrMGkxQmt2SjMxTC9LOTh6MXJxK1dJVkp1dnE0QjV6SmFoTTg9IiwiaSI6Ik96Y2w0TGdyaUl2c2dIMDMiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTlpwNUlqcGxwU2NoRDZuVTRrVHhsOWVMZkgyVGlyME92WW12TkZrN2J2TWlsWnVNVlVxbzlHaEpTdE5tdWJCQjl0a21qM0FFL0tRWTB3bXFEQU9WZEo4YWRPSlI1Qk50NHNtelNmRU8iLCJpIjoibHYyaWd5QXBiQ0hVb2NOYSIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRUl5dklnYnRubUZheFZZWGxQM1IxalVuMDdhWlNuUTk2a3A3Qml2ODZvQVVQcVJ6bmhoTEtVMDZ1TlV3Sk9lekU0Q0w1bmdEMFQxT21MN0dQa2RoTDduaTczNXhKelZ5WGhvdEY3OGtvUWs9IiwiaSI6IlZ4ZnNDZ1RqU2hyVzZIK2siLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZEZKVi9ISzFmN1g5SlpqWGdRQUE4cC9hcWsrSWUyOHVkWlE1Y3RkTXpRSXJTdzk4T3U1TmxZUEhPK2dwK3JTdGlLVWxoaDI0SlAwbkYxQSsvN0JxdVI4amVBejdRZWMxY0J1eWZLY2Fwdz09IiwiaSI6Imdranl0ZXpTZXFaZ1VTc2kiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSVVTRWo2SUFvMlFTSC9FSHBZeXM4bG5LWmNvSlQ3TmFWNDI5T0lsbWduU1QwK0p1ZFBTOXk4VlQzUkEvOStYNzl5WnNJZncwWW8vOFE0c0piKzl4czJCcVQrd3M4dDd2a0ZING1oN3Mrd289IiwiaSI6IjdZNlNNcUNyWWlsK3ExSFUiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "vincenzoz85",
+    "credits_backport": "DecKerr97 GUI",
+    "apr_emu": "on",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 10.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "fpkg_size": "656MB",
+    "size": "2GB"
+  },
+   {
+    "title": "Iron Lung",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Iron_Lung.avif",
+    "tags": [
+      "PPSA21755",
+      "v01.000.100",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWSsxdHphbldCeUw2NnZNVlhGN1ZoL0k4R0h1UHFPdHo5Y0cyQUxiNTBxUFREN2VRQVFSY1VLWWphUGlmdFBkS0QrT1RCdFNOcXFhQ01JbElHSGszbTlBMlRnbThOQkNDTkJQVlN2VERydz09IiwiaSI6IitpR1RoWFlUZlJnM3VVNC8iLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib2pLNk14QkJLOThuRjE1TWpQNTR6alZqQ2VnYkhnSk1MWlp6VXUvdUNEQVFhRWRhTlhFdDgvbjlPTlFEQkZ6VTFXd2JkcHZMKzkxZURsaElrZU5vdHZodGVRSVhkeVNkVE4velZDTlR0S1U9IiwiaSI6IkhLUndZVVR5bVB1cWpEUFUiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOHhjSVc0bG5UWmhBMTZaM3NKdTUwOHppdmYvTG80cXdwRWdTTnpiVWsvcGJSL0tOUUVqWEFkRyt5aVlKemJlSDIrYmk5SWp1TlhRNmdxaG01QlpPdFh4cG42aDRJcGR1bmF4ZmZRNzUiLCJpIjoiM2M0Qk9pdURzaWJXTzQxbiIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUG55dkRJSjd2S2svY09nc3RnWnYzL2VkRnZEWG05YllvblcwMUV4ZEErcTVNUGZTTFI3ZVNnMjh2Sm9tVU9KcDFVWVQ5T05kYngyaU5YWXBrWVdyWjNuVnJqTTVobjE0RkVHdHZTY2lmbVE9IiwiaSI6IjhOcXIzSjdQazN3YlNPYkYiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK1FxTXZ5bWNoeFNJbi80Q0JWbzdrdEhkdmVXTDVkemkwRWFpekxNU1AzQlhHdHRvQ1pYOXlYZWNJM3NVcTIrY2NzYWdXSHQ1d25vUEV1b2hPRWtwVVBFWmsvRm5NT2xSVzFOVHJlSUkiLCJpIjoiNDJuRTdNQU5WVDd1bVhOUiIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWkxBdnk4bDk2MkZYWnBkMDhjR25vdDVEN2JMR3ZnWSs5RUtjR2Uya2hBYVhBUlVSOTIzemdUdklmTjgzeHBVbmpFRWhkZDliaWRZUnY3c2l2dkpnM1Q5VFlmNVNQMitBNHU0aFRzOWdlcnM9IiwiaSI6ImQxTGVtWjBvNUd4Q3U4NWciLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ01uUnJML25CV0hlZVN5czZJS0lycmpYamhmRXhDbTJNdFp1Tk5haXB4KzUrcTNiMFVYVDU0SWhWaGwxSGNjZTc4TmFjNWRvNVdiL1lLTUxEU0VUekxrWXpEdXhHVllxZlpmM0dkMllydz09IiwiaSI6IjNuckQ0OTBEclFTWkRTVTgiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSW5yN2dUQzBiNTByZ1FMZkJ6ZFVqVURPeVlVaDdqaDE5dFJwTzhjQzBWaFIvMmk1LytIcUhnSVlmbVNsQ1lXd2hzeHo4UStwV0tWYlExK0dlMFVtMWJ3WE55T1paWllVK2hsQ0FEbTE5Zm89IiwiaSI6Ik9ocE9pbDRlc29YWk1DQTYiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "vincenzoz85",
+    "credits_backport": "DecKerr97 GUI",
+    "apr_emu": "on",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 10.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "fpkg_size": "208MB",
+    "size": "253MB"
+  },
+   {
+    "title": "HOTEL BARCELONA",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/HOTEL_BARCELONA.avif",
+    "tags": [
+      "PPSA21349",
+      "v02.000",
+      "JPN",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTzE1TG1BMjJXNjhOZ3RlODNjSFNDUEZKREx1UGd2cmwxa0wzaWVYNlhZS05IK3luUjdCN2gxK3FFMDVETGVpU0Z2K0w1eENZZ2pxdzdxM2FCSlVFK1ovcytGd3VtNFpJWjJaTmRpa0xSZz09IiwiaSI6IlNGbjdDajd4UzRQVFJ5c28iLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS1Q0WGJGVHJMR3JYQUxYNEh0UmdRMExaclRETHlnMk1QOGNITTlTRWJoaUdCbmJVMStTK2toVlV5V0tFMlM2VlZnOUJnbzU1WUJQTThwdWE4cmY5RGRXdTlPdVRPTUc5TXZNaVBwMjNKcEU9IiwiaSI6ImorRDhuRmQzQWhZNzZEUVkiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiajB1MlU4Wm1Jbkp3TVMwcWtzWDgrVHZoeWI3NnJZbGliRTFRTGNpWkF4aGd3REZKMVhQQ29CUWRINGNJZzVkVXJla2Y4bUYrM0lQcGVwOE9CMHJ1QnF6VTFFZkFoblJnU3V3TlZqNWwiLCJpIjoiMTZRNjFYUzhybUxiZnJnaSIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidWVVNE5Rcm9UcU5VUlBmTHArSGRkN2xkajN4aDNwaFZ2VzhWdm1Nb1VzNmNjcGR2c2Nvd2JZSkZuTGRCdDRYcS9pcG1Md255L1FXejQvZjh1U1MxdXBlRXl4NE92NHQrNDJRdUlTUjQvMXc9IiwiaSI6IkJXSFFvYTNVZHVGRS81S1QiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiL01FbnhoWlV6eitaaEM2Q0pFc1lxSmlNekE1dmxqbkd2TUpDQ24vK2c1bDh1VEIwVEkxa1ZzNnN1dCtLMFVUZmpjdUExdnJsVmY2anAwVkdyUENCQWJDdTltaGppQm9uL2tyalN1a1kiLCJpIjoiWjAvQVNLVFloaHU4U3hDSyIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVW5sY2FDaEwzRnJZT3o4VkpJTGdjVUJxQ05oOGw4ZkU1SVhGQkVVRlIxdW1xa0xwaWpmMWVrcERnbi9zK0pQZXlRMHRueUE3Zm9OSkJ0NlFGRnVoQXN3bXM0UXRnZFBRdGdjcmZmcHhQQ1k9IiwiaSI6IklRdHZyT3VZb25kZmtLTkUiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaDE2WXpWS2pVaTlnOWwrM3dlL2RqODBGNU4vcDVISktNTHFrUDNQaDFZOWpiamgwekI4d1Y4RmpId2w1QW1mQk9oelNYT0xTcHBuVC9RUkxlL09iUlVFQnU4SnlmQVlNSVhXQk9NbS9VZz09IiwiaSI6IlMwWTh5RkM1S3NHb1F1dUwiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiU0ozWmJpQzBDZlpzdVlRemhvTUloSjd0NVg5S1BDS25tUGJHbWpMVmFuRUFWVGlzSDhvTkFnSUtod3FZQXI3ZmJVVlFVUUJYaWFDVXJhZDBrdEJOSEc2R3lRR2Iwa2VFTnBIc01HN0IyNkk9IiwiaSI6IkhwQTJYNmpJWTJoK0VRbEMiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "Scene",
+    "credits_backport": "DecKerr97 GUI",
+    "apr_emu": "on",
+    "how_to_play": "Note: Own Lizard Extractor. FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 10.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "fpkg_size": "5GB",
+    "size": "9GB"
+  },
+   {
+    "title": "Gothic 1 Remake",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/Gothic_1_Remake.avif",
+    "tags": [
+      "PPSA09826",
+      "v01.000.015",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWi9lSDJJaU00MHZld0xmVVVVeE8zR3N6V2hCcXUrNm5qNFphZkJaWnFhd1MzT1AvaGNDMWpHSDdaWHp0cFhNOWZ0U1hmS0RLQ1Q5eFdGekt3cDhzMXZCbjRBaHdhZzhSdnpsMG9yWnhIZz09IiwiaSI6Im5XZU9JR0ljQzNteEtoUFciLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ1dhYktBVnpya3Z2czZqUEliQWVYeFdaYWhMZjdLSkhISy9vZTZwamh2WWlYcUoxYWRjazhERWp5ZzgxRGx2NzBsSTV3UHRtQmtRUVVtSjhOaFFSanlvaHRvYUJpTFNJL3dKS3FXcU1DMjA9IiwiaSI6Im42OUFaZ0RZWG1PajQzS0oiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaWZOY0ZaZFQ3V2cxTGFGWUZaMDgxb2hnSWYrVTNNNG1vUVJrSEovLzk3V0ZZSWNkSVNQbWU4M0thSG1mN3NvU2l0RXR4VS9WUWVQQUxkeENmWWZCY3NEUWlIdCtGZHhIN1RhOS95VlUiLCJpIjoiUGZ4ZlVNNjdvdkh2cGczZiIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRmtGRm55czZvVSsrME9oZmhCTVorZENZTVdvcW5DdU5Lc0VQSXFrdlVZQWhkeXNISVgzRGE5QUE0d3ZQRzQyYzNjVjVMTEk5cUFyYUplSmF3TTAwM2dnbVRCYm1RWG1ud2Y2SmMydFpQYUk9IiwiaSI6IkFJOWxmQ1hVckJRZGZ1UXoiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZE5TNkxDUWpDWWdlZkl5Tk0zaHM3enVaYkF4N01NMFkwZUd0YW4zNFVzMk5zb3pzYUZIYUd6WDRFWWw1WjVDL25ZRWVLUEoraStuQThuRmJnVHM1S1h1RVFMY3E1SkMvNUF6VVJ3V3YiLCJpIjoiTFNiS3R5SUZ5TDBHQUVUTyIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic2dvRE4xU3V4WlBaZTJISG9RbXpWZW1hQktuZlFnd2prRGR3VkhHRy91TGMvMUNnaFZ4VURISEo4K2dVWVlNUUZKNU9XL3JHdmJIWmdQZXFiU2lRVG12QUx1L3I0K2xuTnFqMXZQOU85dVU9IiwiaSI6InNqbDFnK3FTR3ZzMmloYWEiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibzR6VklsT1NneFVKOXBwMUF6TjlTYUtRWVRYQlRwZTVHTnNXU1hCcjBmalZqM3Q1TGVkdGZYT3J6WVFaVEJuc1dYa0doTHdKNkhHR05OSDZnUXNrc2hEY2Fzblg0U3pWaXFoM0lqRGZrQT09IiwiaSI6IlRqZWNzWjhCcWFWemZxZGUiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNVlzU0hPSnYzcG9EbCszNHZyT0lLR2RMQkZ3WjlIYXFwSUhhZDEyR1pnQzgvaXNnSEN3S3lzV0dBaVZ1TnVRMUU3M3JlQjJFbklWM1hPMFBNaExicVhSMFV2RmQ0N3p4N1p1Y3JOWFNCWjA9IiwiaSI6IkUrTHlERk92bS9yWXFaOE4iLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "b0mba1992",
+    "credits_backport": "DecKerr97 GUI",
+    "popular": "on",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 11.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "fpkg_size": "29GB",
+    "size": "73GB"
+  },
+   {
     "title": "The Adventures of Elliot The Millennium Tales Deluxe Edition",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/exFAT/The_Adventures_of_Elliot_The_Millennium_Tales_DE.avif",
     "tags": [
