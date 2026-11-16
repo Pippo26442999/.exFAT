@@ -74,8 +74,8 @@
     "size": "6GB"
    },
    {
-    "title": "ELDEN RING NIGHTREIGN Deluxe Edition",
-    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/Library_Saves_2/ELDEN_RING_NIGHTREIGN_DE.avif",
+    "title": "ELDEN RING Deluxe Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/Library_Saves_2/Elden_Ring.avif",
     "tags": [
       "PPSA04609",
       "v01.018.001",
@@ -98,6 +98,29 @@
     "popular": "on",
 	"fpkg_size": "71GB",
     "size": "138GB"
+   },
+   {
+    "title": "Elden Ring Nightreign Deluxe Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/Library_Saves_2/ELDEN_RING_NIGHTREIGN_DE.avif",
+    "tags": [
+      "PPSA25381",
+      "v01.003.002",
+      "EUR",
+	  "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ0I4bEFhWUYxRXlRVWRkbU5FSHNwU2dPY0hqNnM0RW1DRWR3cGtLaDR6RWZqU3dFK1ppVWlqQWZlcEpDQVpyYllhMHAxTitpTmlBdi91TEJRWEljR21wMm5QTU9oUkg4Sk9BPSIsImkiOiJ5amFaRmh1S2dDUmQ2R2RjIiwibiI6IkFraWEifQ==",
+    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSmdZamRwaFBhNkVpWGs3bk5RSlpaYnBOZ0JkN0JJSk0vcW9CbjJzcUc3TW1IamovUkF3RmJpWC91d1RnVFlnYW4vaG1MWUw3MWNwcmlsWFVzTWZEZFp6cGRUZFUiLCJpIjoieTBBcnZSMHAvQkovRS9CMiIsIm4iOiJEYXRhIn0=",
+	"viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiekFYdE95TDh4MVBFaVhjZkgzVUhTSko1cXNHYWZ2Ym5haXJiVnFIZC9OUVNZM2VSVEsvR3VHZFRTU29RNnhFTENKWVVpOGUyMHdCelFRTmRjQXRWYmhXam52aG1qMGc9IiwiaSI6Ik8vMkpFYzMrM2FvSkEwNHUiLCJuIjoiVmlraSJ9",
+	"vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVDBhbmN1cDhUdXNyQkd1SWVTM040ckp0WmJ4cjZsbFR6dkVlSUwzV2p0QXRCaFlORzJaM21UK1dFSTZxNytLZ1dyWEp2UERFSVFua1hFS3VqT29nejBMQkcyRG1jZz09IiwiaSI6ImMvOFJsSG5vQitYZlRad0wiLCJuIjoiVmF1bHQifQ==",	
+	"filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYmlzWDZ4Y24zbmVpYVFkNGVKYnFpQUt2K1FrRzlJSVAzT1BaOGdKUzN3MVRtV0ZyVDdDbGVMaTl4RzY2Sk1IK3MyRFRHNmUrQkFQNGd3V0hIbFZHek95SzFPQ25OVGs9IiwiaSI6IkZFcllENU1vWDVnNTQ0QTIiLCJuIjoiRmlsZUsifQ==",		
+	"credits_files": "Scene",
+	"credits_dlc": "Scene",
+    "credits_backport": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+    "size": "55GB"
    },
    {
     "title": "Deadzone Rogue",
@@ -18863,22 +18886,6 @@
     "credits_backport": "BestPig",
     "popular": "on",
     "size": "90GB"
-  },
-  {
-    "title": "ELDEN RING Shadow of the Erdtree Edition",
-    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/Library_Saves_2/Elden_Ring.avif",
-    "tags": [
-      "PPSA04609",
-      "v01.017",
-      "EUR",
-      "3.xx and beyond"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoibFE2SGJaNE1WWjNZUW5kN1lzY0VFR3h0bFFqeFNSS2FHK3ZnR2JITWNWSXNpcWhybVNpUHJ6dGk3WXZnT1VnYWVsdE1La3FZIiwicyI6IlFvYWtTeDJwQjF5dHpneHNVWmpXZEE9PSIsImkiOiJCL1oyL2l3WkRDWUE4UFZZIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiZ3VBMWhkL2hoRW5hWXk0OENhN3U4b1RrRlhlN2E3WUJPKzdXK2tjOXlmUExXQ25iVDA2S3JjV2xoMUVNSzZwdmZPUHIiLCJzIjoiVFhlQWs2Q1BYQzR4cHkyTnFxWURrUT09IiwiaSI6IkJIVUZLUXhzdklQR1l1WUQifQ==",
-    "buzz_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiWkFNUmpFdDZmaUR6a2VuaERKeWoxV0pCcXJFUXc3TzRBMkVQVC93T0JIRldJNmVqTCtYNnd4TWlWbU56QkFXbXlPMnhpZz09IiwicyI6ImIxWFZvTFRkMHJPRDVuaEovYW1GK3c9PSIsImkiOiI3OUVsZVY3TURNMGhXUXdVIn0=",
-    "credits_files": "SiESPTA",
-    "popular": "on",
-    "size": "194GB"
   },
   {
     "title": "Resident Evil 7 Biohazard Gold Edition",
