@@ -1,5 +1,105 @@
 [
    {
+    "title": "Minecraft",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/Library_Saves_1/Minecraft.avif",
+    "tags": [
+      "PPSA17221",
+      "v01.059",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZ1J3NXk5eVRvcGZKMWxzQVp6NzQvY1JtN01SSzZvUmRmM0xJU09DOVV1TXQzVVd6MzhDMGV5VHNlSDNtb2lMN2pVSURKS2gvRVljUTN0d1BTRGpBQWQ4RUNGQnFYMldiQkxxMnA0NWtKUT09IiwiaSI6IjVwenlPRHdnMlZGTkpoTzEiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib04vS1c0UnpNTEZXUzRTY3E0U1BvR2dicURaR3FBVU12QlFvQ0ZBWEN5YUdqM2xhYW15ZXlBdEI3VlFQRmZQVGVGZTVraWVFRDhmNlRHbzkwZThSZWhnR1pmdUJzQzJYdGFnMWtZNXJOQXc9IiwiaSI6InZydXZPcWNVL2dJc2tCclAiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNzRJeUFvYWZwb1VtWUZKU2NuK2sxbDJkSmhaTUN1SEtqVmNSRjNKVVErRm9ianFsQTQ1dnNMY2NqRG52ODFLcy9ZNGZUM1dVTzJmMWZnSWt6QlcxZkNYQXc0QjA4TGYxSklwZWY0VXciLCJpIjoidUhxaXRUaWQ0dno1dy9DVyIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoid1EzY2QxVHhReVMwUUdTaEFob3NiTjlYMFk5YVNyeitudHFsU3FsWmg0ekEzeE8wcm4yRkNVU2p3RGhOL0pHeEJmR2hqY1lSV2VqT1NmeDRxQVZYdGpvNFQ3YW5yVXR6d25aNjMwUDhjTHc9IiwiaSI6ImV2L0RTNnlHbFBMeTNUVXoiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiemJHZjNOYjZ1dGxTbUdaakRscEExcURjU3lTZEUwbUpsVDdiVTlTc3NhQkdsZG1Lc2ZZZUR5WHV3MVJCcUhPTmZ6MGY1TlBIYlNiclJaSmxyM1FhSFRRMzM0NkdEVXJoS2lNY1NMMFciLCJpIjoiVm8zb1Q3WkxPSkFzT3kxZiIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoid2xCejJmMUd4cTJ6Szhhd1JST2sxN0E5SE9ua1diTG1Hd1hoRHVzQ21QWVlObEdscGxHcTZCZ1l0enZaL1NWTmt2bStaRVVUL0x4QWtGQmVIbWg2UExVcTB1aU9LQ2h3TEN3SmgzblpsUmc9IiwiaSI6IitLVTlJZzQ3SCtIVmNJNDMiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibi9pTSs1L0FER0I5WmxuR1ZEN1k4R0tRN012RWZnK2hhUDMxWmVUVDZ6b3ZVc0crWXp5ZzA1VlBBUGJLb2lMYU9rcUFBaVVDcFNONUlMcll6UFduTmNjbGZvdVRuSEZGcWNhTExIdkdBdz09IiwiaSI6InZDbXlmS2diaTVFNkJRa0EiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQW9sd0xISXlpTEcrdmllSi8vYm5XR0RHT0VZWUsvSlQ2bTAzZEx3d2JxUFd0WDZ4ZDd3Q0g2SlFPTEgzZ1NXOHpkblhWMTlILzUvVm1yMHlOSWRNUEkwRndiRUlvQ1BGZ0QybmM3MDFIWEU9IiwiaSI6InBvMXdvdGhwSWlGVlZJbzEiLCJuIjoiRmlsZUsifQ==",
+	"credits_files": "vincenzoz85",
+    "credits_backport": "DecKerr97 GUI",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 12.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+	"apr_emu": "on",
+	"fpkg_size": "1GB",
+    "size": "1GB"
+   },
+   {
+    "title": "Forest Grove",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/Forest_Grove.avif",
+    "tags": [
+      "PPSA07663",
+      "v01.001",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQ0EyL0xiT3drd2FMUVJHSk5nNk41RWlkcVBvUktKN0xLN3JPYm04VDlLanU0YzBMUkFITTNZYmFHSWZMWFkwZk4vTUoreEFCTEVoRGs4aWUrS0NmMUJmSUxsYnROaWJoM0NyNGJMVmorUT09IiwiaSI6ImFxdXNGQkpwRGdVdGlUQnUiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiajhRcjRrYTdqSlByTm5RTjhEUUtOdUlaR2tjOG1JU29sMVcrTlFBMVNKQTdNb3J2UHUvVmdza0ZRNU0zcGUwQ0c5RksvWklibm9RTWxBZzlVbE9zQ2xpcTBlZEppbjJIeHRZdkgwZXBzVGs9IiwiaSI6IkM3czNEMWY4V3ZZSFR5SW0iLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaWJ5SEZqTE1mVjNJRnpvWDZlNVdwRS8rTWljWXFKNytBZXk1bUgwZ3V1NEZNczFPYTg3dkxTS0F2MUJTK1l2SnVWRUN4MmRSNnBFRnk4bzlOL1NUZ1QzMTVMd1Y0c3I4akVubUdQWU8iLCJpIjoiVU03ejJ6R0g0a2Nxc3pGWiIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibW5lM1RJTE9IQ0JSV3hsYU1lS2lxRkh3bncwSnA2MVRHODFicWJOWXQ5ZFRPU2gxZEdZOW0rMUJIdkhGZCtXUWtQU3d1bUpocXgzdEllblN5MU1GTDVJSUdQdnhBYmljdFV6MG51NDA1ZHM9IiwiaSI6IjkyaldqQTltRDRiMVFvckoiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRlhKSkpVekhzVXgvVDROaTNlUjFnQ0grTnNoeGtibG9XVXhIdGhkbTd4Z1Bsc25adEVmNkNEUy9xaGJQNmQvbTh6UjdNb3dsTC9WL002L2w5RWpwWlZtWEt2VnA0U0ZoYmpTN1Z0UEkiLCJpIjoiUGY1L2NnZjM2cHJxQUNnWiIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOUs0ZW5VUVBnYnBqa0Rab1J5TzdTNDRZVHo5NzdqeWpVbzE2U3FaNjZaQlowdmE2N0w0cDdhc1ZQSHZNRTQ3VjVNWlh0N3JBZDBtaDlLWkVaNU4wK2lHeTFRYllXdE8vT25LZ284V1VoRTQ9IiwiaSI6Ik4rK0V0dFBDMGZNSHYwRm4iLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYTRUR1l1QWs5WThqc21jTDNTbEFTcWFRQzducTVsRFlPYWlwbUQrWU9xVmF6YWpoYmVaZWswa2F3RTVTbEo2U1dkbUozcEFHcS9iWUFPY0FSUkw1OGNmNDgvdlQweEgwcXdlYkxTYVpZUT09IiwiaSI6InV4STRUaFVDOU40czBuZjgiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieUFma01seHZMQmFGZWRXY3VaUHlPWStRMFNpdWpaQzNtaHh6R3FLczQ0TlhaaGRwVFIza2VnTDA3clNaczRYRTJ4VXg2Q3lSRzVpSjF4YzduRTFrcnhCbWlmU2F2NDNRWTBYSFgrb2d2Mk09IiwiaSI6IkY2ZUZRTkNBdW5lMDJWcWoiLCJuIjoiRmlsZUsifQ==",
+	"credits_files": "D0ng3r",
+    "credits_backport": "DecKerr97 GUI",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 6.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+	"apr_emu": "on",
+	"fpkg_size": "1GB",
+    "size": "2GB"
+   },
+   {
+    "title": "QUBE 2 Ultimate Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/Q.U.B.E.2_Ultimate_Edition.avif",
+    "tags": [
+      "PPSA06246",
+      "v01.000.001",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSXNDeDByRDhtSjJCVkV2Y1lzZktaRDFodnhWRDB6ZXZ1cCt5NkwrSUtUcU9ldmIvSlNwMEZHQjdtam5PR0ZGbmZCSHZPNC9yc2xacVlHcWRGUFE5VFM0cXRlWGdlQ3pXT2J5VE1jNTJ2UT09IiwiaSI6InVLcGdiOWxBd09xTUd0bjAiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibHNseDUyMm5Fcjk3REdWdXJyVXpOZmpraGptU3o0MFNiUG1GaE9pVHlNNVNrSG9weHNzNmYrU3ZwVVdvQ0xEeFFtK0R1QWhLTGtYeDBXN05yYUNyOHF1elMzN0dyMzFWdnNka1RQcXdzS009IiwiaSI6IkpPaEhqR0FQNEQwRktvbmUiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWmxvSXRiYkRMV2Z4YjdET1ZKeFdhL3lVa2dBcXpFbS9hQk5WVjJOdGFMbHVkUW1MSXlzV3kyTzY2Z1lsVnVLR1JxaUxWdHBTWEMybXhRdW9PUFVUQldJcFlkRS9yQWt3MkQxL0hMM00iLCJpIjoiL0FqN2dYbFNHa2pWRkM5ViIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoickJ4Q0ZTTk9IV3hocEtGcjA1aWFpcTh5KzdlcHI0TFZjK1BSdDRDTnpKV0xLMkVuK24vUi9JRFBrbjBIRGdqcVdycUNicVRxRVloNkpMY1VlSGR1cm5rN1RiYWFKZnpvV0hieGJ2eW5pWTA9IiwiaSI6Ilhncm1laEZnU3NEYkdmSk4iLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNXMrRjZoL0hGM1hKQjMxUDRFTVNPcGFMa2sybVloa0VvcUpFRmZKZm9aTTA3eFBRZWdmd29PbVFUQmI1SG0xMHBXa1YrTExHcEhQMzA0VXNCSnQ0SVFjdy9sMUx3dlkveWM2NW5sRXYiLCJpIjoiYVBnZVd2TEFXOStkcHRVRSIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOVNUUVJBUWJWWHNSYWVsQXhJeGxUbFE2TmhCam1GTlhianVsNG92dVRWbTFnQkFjV084djZCSE8vYUdsV1Iyclc4ZmFWNkp3Q2llUjIvMjFJZDJjeGZJOEZEMlVCRjBMM0JpM21HRWhCRFE9IiwiaSI6ImZBY3VLWGgrd24rbWQ1VTAiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWDg1S1FmOFRpRFhCeTJQdHlsdHcxK1BRSG9NNXVPVzFNcDZzSzNQWlVETWtZSGlydWxreWFPVGxPVnVvbmpWMzhlTUQzZGg3WEV3ZVBjc3hMNXB0TElweVhoSnpjSjZMZ1lja0NQbjNZdz09IiwiaSI6Ikp5bFpucjBmQjFBbjkxSUwiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOHhXZmg1SGF1M29iaTlHOGpOd1k3M21yYTNwOWxKeXFOcGNjQzlsVHhhaFdHSUFWQ3g0RDJNSXdTREFVSmcva3F0OVRIMVNDRFE4cGxPQi9BV3VnS1J1N3NCL252ZjhaT0hpNTI2WUhGY2s9IiwiaSI6ImplM0duNXRKRkNoZE5mckciLCJuIjoiRmlsZUsifQ==",
+    "dlc_data": "",
+    "dlc_vault": "",
+	"credits_files": "vincenzoz85",
+    "credits_backport": "DecKerr97 GUI",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 6.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+	"apr_emu": "on",
+	"fpkg_size": "2GB",
+    "size": "6GB"
+   },
+   {
+    "title": "ELDEN RING NIGHTREIGN Deluxe Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/Library_Saves_2/ELDEN_RING_NIGHTREIGN_DE.avif",
+    "tags": [
+      "PPSA04609",
+      "v01.018.001",
+      "EUR",
+	  "DLCs Merged",
+      "3.xx and beyond"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiK05meUtwbFN1dk1xR0tIMVZFRlB6cTVzbXJaZEpaSTBEN29BL1FzWUtmTng1VVRaNXJ6NlE4V214UUlOdEswZ1BrRVhpZHlYVzdPV1VqWW5OYzhvK3JVeXRaRDYvSUpybTFwa28vdGtoQT09IiwiaSI6IkRKdThablRRcVg2OUN3ZUIiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQTVnazFXR20rNGdGcWlWSjBpaG53bFNqZC9QVHgvSFlMNTNVaGV0NHVRdkV4aFRLSnJBUVdZczgrQ1hTNlMyWFJrWE4zZFYvK3c0aFhYdzMyaVVIM3dBejZhTWtUaWlCRFRKOGRybFY0dlk9IiwiaSI6IjB3ZUhHaGVmckFzN290Z2kiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicU8ycXZtdzhyWkpsc29QenZMdXl0UHI4bldiM1ovR2hyeUcxcXV3T1ZPOVNGdzYvdUN6a0c3WnprOTJ0a2xNbHd1R1VkYnhGVUdkSHlPWk1mRmZRanpBZklzZ2ZBY2RjTEhKbG1SNkEiLCJpIjoiM2VZbnoxL0tSOWVnRGZFSCIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidDhjcE5OKzgxS2lnSTJaMEN2OTBWckoybEo5NEx6MEVMTWk3amVjM0VBQzFjZENrQW5RREtDRFY5Q21HeTgvOVVkNHViWjd4QmhSYktpWjhPVzhKODJDRzlzM25jNWVHU0k0bmhYQ3B2VVE9IiwiaSI6ImFpbmt1MjhpaHZxQjdEbTAiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS0hKdm9tcFI3ZHA4QVAra2xOanArUjNnenZUQjVIVk1kTFVZS01wRy9xT3pyMzN6bHo1c2t2NWN1VEJRNUhQSkhkaXVLNmpraS80bCt1WjdEQjQrRktncEVGbWN0cmRLaFlxZjI1R3AiLCJpIjoiakVyUkkycFFRcUN1L2s5biIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRFpvYTdxWFpjZTd6cElZajJzNllvRTltRmk5dWRRclVpU0RWS25pVXo4WjVmM01ZaytPcGl3eW0zOEpSL1BVcDJwK0NwYTlCVEdwaFUxc0Q1S3E0Tm0zTFc4azJ1QlVmNExiRTg5V0dlUmM9IiwiaSI6IjhJc3pPNzVidndHNTFxaEoiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic3lIeE9RVFV5RVN5ek1uc1FJVFlaZ0sxbmphYWNKWDMzSldxakkwRk50NUVRZjlzWGw3T0l4SGtuYStUUWdiSDRFOFFoczY1UzlDQVliTlpUMHN2ZVRxZVZ3aE9wSVMyZVpVNElEemZ2Zz09IiwiaSI6IlZ1a1d0U1J1Nk14d2hSaXEiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXZLN3dGRy9NOVBiU0RRMlFmV3RHQUNScVp0OGZaVlJYeUE4MzFwQjEyaTUyVnQ3QllaeUdXZWJUM0VwYkQ5UzJWUXZWTXlVUUdnbk9YT0lqNjkwRGhWRjNSakY2V0NNRHM3TTNnNm1LVEU9IiwiaSI6ImVsZzU0OXJJZWF3eU5WUUIiLCJuIjoiRmlsZUsifQ==",
+	"credits_files": "slavkarak & dunaevnick",
+	"credits_dlc": "slavkarak & dunaevnick",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
+    "apr_emu": "on",
+    "popular": "on",
+	"fpkg_size": "138GB",
+    "size": "71GB"
+   },
+   {
     "title": "Deadzone Rogue",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/Deadzone_Rogue.avif",
     "tags": [
@@ -8642,25 +8742,6 @@
     "size": "14GB"
   },
   {
-    "title": "Minecraft",
-    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/Library_Saves_1/Minecraft.avif",
-    "tags": [
-      "PPSA17221",
-      "v01.044",
-      "USA",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidXF5TDVoYTY5cmVEcWR1MjV0d29WU3VZN1lTNHlhejY0bzc4dURaSUdLZElTd0NuR2txMENGUWQ1UWxRbGZrNVhTSHQzOFBLOXpObmlCaTJOVFRyQ0oyem1udlgrMjdpMVNnPSIsImkiOiJYZTFWbk5qRGRsZ1pmeU5HIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVzRGUC9VYkNrcWFHWG9mSERBYURaS0NzMDAyWURjMHB5T1Jma0ZnRGR4d3VYcTJkaWpPbUttckpQb0F0Z2owY2lXQU1MZUJzdFlYUElNb3RScVM5eWp5V3o5dERDVUk9IiwiaSI6InJNcUFTTnZyM2RzZ0d3SlAiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVmoyRms4Zm94RW1mZE9zZWVJaEJjS01tZjhZQkZ3QVNxdUJtZTFQU0FCeldKWFl6b1kyL0VKN0pWRFJXeEVsRENNY1hhMmxkRmNqSmhha1ZZcGJhRmkzeHIwOHAiLCJpIjoiZXF4MS91Y1VubDZqVDJMeiIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiR0NZNEJIMWNLMngyaGpnQVdXa1VncTNaNTMzSS8xaUREREJUY3YxRDh6OTBIdmQ0QnVpYVI0KzVOR3B5em1GOFovRzNXTTUyMjFYWTQ3d0prZnQ0ODhubWZ4bkowN2M9IiwiaSI6IjV3aWlUbmx3UnFQcmtQZisiLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiRm0veHpDOWdLQzFUN1VTUjk4WjJRbUFkQTRSMGZFRUlBdml1MUkwR1V6RWgvdjlzbjdmNXJnNGI0T0lrRzJGVFRYQ3EvdzIxNHA4dUxVRzkrWXJOcGJ5ZFNxbHREdz09IiwiaSI6IjhkQnNYSHZ3UWI2MmdMNHoiLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "2GB"
-  },
-  {
     "title": "Way of The Hunter",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/Library_Saves_1/Way_of_The_Hunter.avif",
     "tags": [
@@ -13073,28 +13154,6 @@
     "credits_backport": "R3c0iL",
     "apr_emu": "on",
     "size": "19GB"
-  },
-  {
-    "title": "ELDEN RING NIGHTREIGN Deluxe Edition",
-    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/Library_Saves_2/ELDEN_RING_NIGHTREIGN_DE.avif",
-    "tags": [
-      "PPSA25381",
-      "v01.003.002",
-      "EUR",
-      "DLCs Merged",
-      "4.xx BackPort"
-    ],
-    "akia_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNENYYzk1cDUzaG1kTGYzTGR5T0FSMlpBaG4vWTdzR3AzNVBCR3pYWGlkcWYyMEhwNzNVRDF1QlVlZjFCNVRyaE1wTjBWRVBOOVJucmxYUWhyNzFFamcvSW1wRk1BNnRkaE1vPSIsImkiOiJYNitjRUNRdUlzYU0rczhSIiwibiI6IkFraWEifQ==",
-    "viki_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicWNLbHEwM21HQWVUN3RuRlhFOFYvZFRWZVo4ZU9CQThRaEJNYlJTOFFrTUh6ZnB3dXFlRG45aEg5eTZJcnBFQ0hCaXNvTEQvUStBeDdkK2tKVTB6UHdEbG8wM2ZSVTA9IiwiaSI6Ilp2WnpocWd2dW1OQmdzM1kiLCJuIjoiVmlraSJ9",
-    "data_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVHVHb2tUNTZaTnhmV0VobXlCeDdQbVI2SHFIV1h4YjBud2swUGl0ZWdCbG0zeDArQXFSQTZyajhFSElTeUJoMXJxWFpDUlNMZnQ0YzBNTTYrRVB0WWtiNzE2RlMiLCJpIjoiamtjSkhad2FnaERLTkRmVCIsIm4iOiJEYXRhIn0=",
-    "filek_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoid1NVSzRBLzV1R3dJTzIvY2x6clY1SXhGc2JaVThlMHprY0hVc05rZUVGaDlsVlFXOFNtV3ZmUjNHSXBFcThFZEVqY1FOa1BabnpLamhaaytvQnNvZ2xWd1FNWkI1ZTQ9IiwiaSI6Iis5RVp6UCtJR3V1R2JSL1ciLCJuIjoiRmlsZUsifQ==",
-    "vault_url": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZzArYVZneFA0UWFvd0FMTmhoZ2lWaEx2VzRrUTY0dXJuYXZWZ21EVUJXNi83eXhEWGtnZ0J2YnVuTnVwYmVuemJ5cUNZaVhzRUZyb0MxVi81OG04MmNQOUQxWFRudz09IiwiaSI6IlhIMGpVUXpUTjlHSXoxV04iLCJuIjoiVmF1bHQifQ==",
-    "credits_files": "High-Speed007",
-    "credits_dlc": "High-Speed007",
-    "credits_backport": "DecKerr97",
-    "apr_emu": "on",
-    "popular": "on",
-    "size": "55GB"
   },
   {
     "title": "Back 4 Blood Ultimate Edition",
