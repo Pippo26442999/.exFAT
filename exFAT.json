@@ -68,7 +68,7 @@
 	"credits_files": "DUPLEX",
     "credits_backport": "DecKerr97",
     "credits_dlc": "DUPLEX",
-    "how_to_play": "Black Screen Fix (Ignore this if you already played this game): Send klogsrv-ps5.elf, launch the game a keep the black screen after intro and check & wait for this log appear -> <118>[NoticeScreenSkip] NoticeScreenSkipFlag is true by System Auto. TitleId: PPSA09663. When appear this you can close the game and launch again. (Only one time) FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 12.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "how_to_play": "Black Screen Fix (Ignore this if you already played this game): Send klogsrv-ps5.elf, launch the game and keep the black screen after intro and check & wait for this log appear -> <118>[NoticeScreenSkip] NoticeScreenSkipFlag is true by System Auto. TitleId: PPSA09663. When appear this you can close the game and launch again. (Only one time) FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 12.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
     "popular": "on",
     "apr_emu": "on",
 	"fpkg_size": "79GB",
