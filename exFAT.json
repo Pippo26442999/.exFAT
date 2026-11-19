@@ -1,5 +1,52 @@
 [
   {
+    "title": "Front Mission 1st Remake",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/Front_Mission_1st_Remake.avif",
+    "tags": [
+      "PPSA16439",
+      "v03.001",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib0dNZk83ZytKbzU1TlNlSVF2TU5PdG9Ma2dMMEZKWTMveEJDZWlFOXJmVjZZM0YzQjdLelV2bEgvTFVhODh1RVI3ZWRkbVptc1d0OHFpK2k0TmVEZVRvMnNaM05oRHRUVDkyRUhzbEZ0UT09IiwiaSI6IjBRWDhvTEFxTGdGOXp2dzgiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidGdwcFZMZ3kzM3R3RnVoQ3BWQmtLK253S3ZSQmFWOGlDcStRU0FJTmR4ZHZOcXdLZHd5djRJUlQzTkpMNE9VSzdmNFRJcXVGdDBVSVVuR2Q0dXhwcmNCQUIyd3V6bVJSVi9qTkhEejBjMUk9IiwiaSI6IjkxS1NhZkc3N2VibnZGMnkiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibWhSdlV0c2lmc0hrM1dpK21SYlord2VJLy8vMlkySHozNVNyTFlGSWxZVE9LM3Q5bmhJcmFReWw4QUx5K2xFdTNJc0UzWXl6eUM5UXdsNVpOMmxlZzhxVFZ5OXF1NGV3ejZ2QkpGbnQiLCJpIjoiamRadU9qdXRobzJjZmFLcSIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicDVxUEQrVDFFeGxHdjRsNGxrNFVxakpFUmhCNlV0Z01HUkIrTWk3aXlvWnQxVUJRNUkyNTB4dWwxMVA3bnFhSFBuMXN0R2NXclEvUGxmdnNSRGUzUnhyc0VGOGtCa2VmU1BPcWdGNHBhazA9IiwiaSI6ImV0VnpBdmVqcnpYRHErUFQiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWklRUmQ5L1NWSmhwZCsvT0RQWUV3bnl0Q3VYeUxGd002VFpKYlllQjRrTC9zYUM1TzI4ZjFqd3kxbnMwVk9TZ0dsSkpDTHV5V0N0SmhtK3R2eFRqZVpHcVZ3RVpLUG0zMzZpc1RhSk4iLCJpIjoiL21xQUFsWHRWK3ZtNExlLyIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieElQUDN2b01sUVhYZW40azBFVlRUaStHb3g4Z2krODdqSnVvMUk4R3ovaVVMVmNGNldlOWNyc2ttT1QwWkJYYXZ5ZTVDd0VDcC9pQzgremdkSHpkdHlWcHNKZEExRFhwWkpsS1FiQS9XTk09IiwiaSI6IjF0MXBwNmJyYnhuWGNxa0ciLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN0J2bFcyQXBLK2pWcnhvM3Jnd2Q0RTFSNnZ3Nlh2dzE3M2VNdys5YmpOTFpqSjdMb21aNmZHbGtYUzlHZDN6dmd1RVJVN3pPOGROTlpjVk8rdGo0RTc2SG9nSklUeHMyTC9LR2Y3a1k2dz09IiwiaSI6IlR4RHJwc1hLaWp1Wlc2ZTYiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiR3ZHK1ZzK0JBUUlTNk1ncnVMa0pvVWZaOFg2NHc1SVZQSWZZWnRZNUNiTk1LQk5pMVQwMTY2c0UxbVFzVi9JdG9FTUJ5SkpsZWhnenhrOFduR2QxSStFaUthRkRlTzduMEFnV3FtOU9qN2M9IiwiaSI6IjFiUUU4Ly94VTVlbXdsckYiLCJuIjoiRmlsZUsifQ==",
+	"credits_files": "Xan",
+    "credits_backport": "DecKerr97 GUI",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 6.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "apr_emu": "on",
+    "fpkg_size": "8GB",
+    "size": "15GB"
+  },
+  {
+    "title": "Human Fall Flat",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/Human_Fall_Flat.avif",
+    "tags": [
+      "PPSA02429",
+      "v01.017",
+      "EUR",
+      "2.xx and beyond"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTnFwaTA2SmowaklrZWw3TW45Q3hwc2I2SlcyY2ZhWkFsd05mTU1HVm9adHRneU0yZ1JWTlQzaTJuZS9PRkNrSytlQ0NCWGl6T0ZQTVVKOUREWm90ZDhXbDNEOWlHNk5nVEtkZXNod0lIdz09IiwiaSI6IjVBZnZnL2w0VWFFNSs3RVciLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVkhDM2J1cC95WmJRRWNHZ1UrR1dOMzRNZEdWYVh5VFBCNlNVYk1qMDhrTllyM1B5WCs4VjV3dTAyUWczTElrbUZFeXRZVWRaM0ZRdVFEZEd4VjJ0eU9hYXFlYUdtbnNib0pYbmpUWWtmbmc9IiwiaSI6IlFnTEk1UVNvR0hRZ1Qyb2QiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaFNWdHN4U2NMaGgzd0g0RG5KUCtCeUpBVEtrckM5b3hTdUJiUWxVNDVxK1hkRElBeUx1UzlnTXZqeGhxcVF4T3B0c24xaG54eEZ2cVptR0tDWHhHaXZTVVFPTVV4M2NkYTk3RGNyLzMiLCJpIjoiWWliTGRSZEJQN0xDbVFlYSIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUGJRWXZtZk9xUGpXcGo1R3pMNktIRXlUOEJXbFNWZjkySjZCZ1FXcHRMS1JTL0hEZDZtcG9wYUQ4L1NzVCtMN1NWYWpUck5IOHVYU3p1TzNGTEo0RzJ0bXh6eTA2RWVPTlkzK1JSOTBidVE9IiwiaSI6Ii92RGNadUVKTmZpQTQzZlIiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMUhNZkQwZTQxSmM0MERWMWtHUVl0OXhjTjBKM2lNSTU4bnFIU1Z3Y05uRnNXSmtBQlVURUtYZWRxS1FKTXJ4S0h4a1hOdWhXZ2YzdDN4NXgxbGtneUl3WEJuSGl5S2xCSEFkZXdNMlMiLCJpIjoiQ05XTnZ1UnNTY3E2T3VUSCIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicjVreHlBVlVaWnVYM1Q4WUNyU2c4OXgxSmdoWDRxSU1GNG1OK3ZnVlJtYWJsYXpPNE0xdUZNSFhPTHMyVWZUYk5CYStZcVNSS25nTVBmVHhxcElJZysvam56RDNJYWRVN1I1WS9KL05zTHM9IiwiaSI6InJwZ1dMcGRkeGV4MVZzbjMiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUUpEY05oNU1XcENudFFCcHhDbUlEK0FXR2JwRDZBcGhWV3RDSDJFNmxCaVhGcGVUcEoreUhYZHhqeE02d1YrNDZERzUyT2lyeHFQL0xBcGtxdHlGOWY3REZOUERMSk1BK3E3SEhWTEFyUT09IiwiaSI6IjIrZkRwZVBNTXNJOWNzcFciLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNnlYMEw2SGF6bTQ3R0VMa0pLNEdNUHJ0ZWJ1L0FEOWY5THlRa2U1dDJNem00dSt2NnJpQ3BuU3JoL3g5Q2JRMmU0ZlZWUFhnL2w0dS9nVnFZYitGbjNoZDFrU05WTXNmbXRlQ1U3TmVPMWM9IiwiaSI6Ik44M1BobGZiLzIySkVSYkYiLCJuIjoiRmlsZUsifQ==",
+    "credits_files": "DecKerr97",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
+    "apr_emu": "on",
+    "fpkg_size": "2GB",
+    "size": "4GB"
+  },
+  {
     "title": "Final Fantasy VII Remake Intergrade Deluxe Edition",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/Library_Saves_2/Final_Fantasy_VII_Remake_Intergrade_DE.avif",
     "tags": [
