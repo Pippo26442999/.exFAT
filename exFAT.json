@@ -1,5 +1,54 @@
 [
   {
+    "title": "Laika Aged Through Blood",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/Laika_Aged_Through_Blood.avif",
+    "tags": [
+      "PPSA17775",
+      "v04.000",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYmErWlNKcWpEcG16SXAyWXhYTGpMcFF3dFBtaDBpR01YQk12T0FVYnJXUGRYcTRlR282QTZGa1Z4MlpWQlh2dnNBVmpJUVh4TzEyZ1kzc2dQdWgwczJmK2FXVFR3K0UrVzlscEozSGdHZz09IiwiaSI6Ilc4bU1IcjFpdkZITjNFdlEiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMm1zVGhxQ2tCeDlJcWhZQ3pYbERCeFFjTHdDMkYrcUR2bEZLRjAwaldXc2tFWHVObUQ0ekYyeE1SaHNsUnl6Nk1uQ3JncGlwaWU1MzQwY1YzcHYwTVdFSEdoZVNGcm5JTy9YTTJuTUdkLzQ9IiwiaSI6InZ2UUNkM2s4L2tRdkUzaHgiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZFJ5TGZORHhSSlJlYlR5eVhiSFFjSGYwUkpPb3Nzb0psUXVxeFdpcTY3djFORzN5M0NBVHZKNEN0L3JiR0NHNThjeXVJRUxHejI1SWFXTFdBUk9DUFZkbjJLZG4wVWtnUGhrbmVhV3AiLCJpIjoiV2NRNXZpcVJjWHlDN0U5ZyIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoic1oycXdKNDlzSWY0K3F6aEszcUk5VVpjWEhrNHpzUUk3d01jdDhJZ0Z4a243NFM0QVk3R1ZiMytUMWVBeXJ5NEJaamV6d0FXNGVEbElCVFlnd1hsNGRzTURGdGNOS3RlWjNSRmFpSm5FU0k9IiwiaSI6IjNCM0ZRMG16RFVhUjBUVUciLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTkUwVnlnSDhQSHpsTk4vT0pqNHFtRTN5UXdRc2ZzbDdTUk9YNmpVT2JDSldHeldqTk9RQStqZGhxd01SOTRlUHhwODZORXNoaFhmVVlPRWViQ0FpeElESEsrV0JwQ0NqSGVlVTJIVGoiLCJpIjoicXo4TStwUllRUW90NFUyWiIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiN0tjSFhvSjFaTXJBVnZHa1p2QmJ3REhubDQ5RG9qbDhQVGJIM21KdDhzS3IybzBNOGJsTms2NUNzWU5sQXQ5ZDRnNU9waFkrTjI1VDFVL0h3dTJ3MWJURVV0a0RBZUdxSVVOQW9UL1BkOTQ9IiwiaSI6ImRjZXBzRVVoUFdvYVh3dW4iLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiem9BNGZuSTBFZnprVy9vM2E5NG1uc1hGQk5QR0JDdEIySUN1a042cXVIOUF1QzQvRVo1aHJhVm1rZmNHT3dGUXZLWkQ1dmRORFVaN2hkUDNKZDVtbkJtVk11MzkzTnh2K0g1YzdNN3NVQT09IiwiaSI6IlNYTHROK0dXVnFsTmJ0b2oiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVkFMNWs3eUdBZjNmbzdIR2ZCRDdTTGowMTNnTTdjY1g3d2QzeXlFNEhhbUVZaldhU2k0c0N6RTlQMFRKRHkza0hOL01Ea1NuS2oyM2xzWHQ2ZkY5Q0V4THlVL2RFRDFvanJSSnhSaTZaKzQ9IiwiaSI6InREODhVTDM1bjgwZjhRUWgiLCJuIjoiRmlsZUsifQ==",
+	"credits_files": "b0mba1992",
+    "credits_backport": "DecKerr97 GUI",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 7.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+	"fpkg_size": "1GB",
+    "size": "15GB"
+  },
+  {
+    "title": "Teenage Mutant Ninja Turtles Shredders Revenge Ultimate Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/TMNT_Shredders_Revenge_UE.avif",
+    "tags": [
+      "PPSA06732",
+      "v01.010",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWUl0WW9ObW9ncDRoSG9TQ3VxOVBvOGRwL1NscjVTTUpqVmxncHJXeDZRbEgwS2R0b2pMSkVWdXdNaElZblFmSXhSZVVLQk9LZkk3U0VnaUVsRHpvRVhSZGM3eDdObWdmb0lEOVk3K09pQT09IiwiaSI6IlJqU1R6RTRGQkZBWVBlNDYiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMFVjNjNHRUpVZnNKSmorV2FBRFBXd1JOSEJFSTJCRENkbU1PbW5zWlVBRlo4aitjcmVFZUNnblRydHdpNlBjZ29aWit0YnBXcmxTOFFWMXdOMFNtWldYZDZLZ0c5Tk9sbytlRWtvQVJ5blU9IiwiaSI6Iklic2pEcmE5QnJLVmk5SFAiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWkRxRzZiR2tKSUpvSVdEVlR5QWdXZTN4ZUVxT0RNcW9Cc3VtVEpVdUdtM1oyM002WGF6b1ZWSjhqSkNueGoyNWFUZGpIWVdrQjhFcGNFcHl0dmFVTFhaWmlGTW5hanBHY2NZSDc0Qi8iLCJpIjoiT3dqUk1qN3ZkL295UzYxNyIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUmhONUFralhkS3YyZ0RvVWlZaDZCQ2VtWjVXUjlHWmw3RFR3OWhWcE53cHl4cHNjQlJVVmxHOWFBVzFHSlRtdFY3RXlLbEZ6S2RKWVl1cldRSCszYUVoS0tsdlduZVFaVU4xWVZnVml1VW89IiwiaSI6IkREeUtKNDc4VnpNVFd6U2YiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibmVYVUF0WSt1M3QzbERVemhNU0lueDdLT05KcFJuT2NCYnZ4WWdndVFzTjBpcEI3cittLzhCRGt2VnVaVlVTQ1Q0bmRmSmV6S3l2NWFJUHVwQTh0cHlFcVJDbWswclZmWmJVT1FnWWwiLCJpIjoieEo4eXpGL0Y3MnRYMGMxciIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNGF6b2hFNmFmcGdnam50cVN2dDJsSTRwaXp3TFh4UkdjT3RzYVh5a0dlTjRWZlBzZUdmaDhKUENZR0VyRXZxa1BjYnhMY2lYdHByNG1NTFB3d3MvcWl3SWdIMHpSa1pWeEIwM0cxSmN2MEU9IiwiaSI6IlV5ZUJDNlNZdWNnT3RTaFUiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSFk0ZzB4YmtmU1VqTTJQdU9zbVYwY2dlMytNTERHNHVnYnhRelEzV1F2bnNoVWRUbHFzOWJ0N3F2L3JNMGRqU3dlSkxjbGc0ZjR2M3UrSUxSYWdSOUtnOHg4S1c2bDJLZDNOUVZocUdPUT09IiwiaSI6IlNBQnB1WGxWcGkyZXUxWE4iLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicWJiV3FZZThIODZrZHEwaVlXQ1pqT054QmxFbEFWeHNzejZuZlQ0YkZzQmNUci9EMXZ1MGVqNlI1L2hiS1VlbEJiOEJ4bEdCdCtBN3BqNlRUUzBFa0JEeXdQWVoyT1F3VGd4bkkxNFJ6eXM9IiwiaSI6InlFeHlsMFhrcjh5UkdiMUIiLCJuIjoiRmlsZUsifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOCt5YVRnaEp2NlU3T3hVb2o0Ukh3a0tnT2x5M1p1NHRMcHcvbXBuMy9NS3paYjJiTFZ2KzdNbDJvMFRYWDRsVXZBU1ZIWFExYkxSZ0lSNjFvQjlVSnlwZExIUzlyNTM3M1E0MjdXTHRrQT09IiwiaSI6IjZiWU1BNnUvdlZUYUw5UXciLCJuIjoiRGF0YSJ9",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiM3dhelp2emhRR2J4OFo3WjhhUlJRTmREZWZ4K2V5WGN1TExJSkIra2w4WXBIVHI2VHlIQjM5VkpyRkxqZURvNElaa0lLUHVjNEJmVW9CVjZyUStwOEo4SlVxOGFLTVA1em92SU95TmFMcFE9IiwiaSI6Ik9DS0toc2FYRUR4K0dCUUUiLCJuIjoiVmF1bHQifQ==",
+	"credits_files": "D0ng3r",
+    "credits_backport": "DecKerr97 GUI",
+	"credits_dlc": "romhunter",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 5.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+	"fpkg_size": "874MB",
+    "size": "1GB"
+  },
+  {
     "title": "Front Mission 1st Remake",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/Front_Mission_1st_Remake.avif",
     "tags": [
