@@ -1,5 +1,59 @@
 [
   {
+    "title": "The Legend of Heroes Trails through Daybreak Ultimate Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/The_Legend_of_Heroes_Trails_through_Daybreak_UE.avif",
+    "tags": [
+      "PPSA18986",
+      "v01.002",
+      "USA",
+      "4.xx and beyond"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaUtGQjVLQWg3UldSNU82L1lyYTBmV1dvQ3dLTXVHOVk3WVpvK3hzem9GUXlET1FTVGMzakI3VGNzMjB6NnRObkE3Uko5ZWI1ZFdSY1VwUUJJUlpxcy9XN2xNZm9SN3JURVpxSm53ZzRIdz09IiwiaSI6Im5WSkZQcUhxc0tNVUJKWEQiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiendwUnQrbmtUUXF3YWRDQXc2MCtjMWZEWHNIYmNRNEF5UEhFR2VGN1Y3RjFpcmdhRWJnN2pHUTBaZTZGY3UwYkFKeXBsSUZIRC95aDZDbk42NEZVR2c2TGpHT1pSMUVESXVoYXV3TytuTk09IiwiaSI6IjVDbDNXTW1XQVF0WFBOb3IiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiajVtQXd1MU5hMlJrb1dsM0hQNktBTm5mT3k0WU1YRWZFT2F0b244eWc1MWEzOVd2d1BTSS84MVplSTBubVBRaGZTSS9RanJqWU82d3ZuMm8xRk54V1MwNFhkeWRkKzg0TVRXbnFhVWkiLCJpIjoiZ1Q1bXM2ZkR4ZGFxOHZLeiIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZU03ZUtaSnIrdmgyUDQvMnhxUU5aSVFiWkU5bXllRUMzR0RsbXE2d0dHL3duTGtDUmJjbU9Obkl4cS9WVHpBVUV0Ly9Yb1FFaHZ3ZFYxelc5Vy9yQlRTYWYzYSs2UW80K1ZJOWVwdmJ0Y3c9IiwiaSI6InUzb0xjdjFhaGRNVlg4WkYiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiak5xTWZ0OStDV1l2R1B5SFE5T1JiNkIyM2haT3NtR2tNZ3RFOTRUSTg4WmlldWVnV3loaGZkQjJQeFZRK0YvczQ2U29VWlB6Z213ajFQVjFRdW5YZ1VVN2J4c0Ivek1rclZnaXd3OE4iLCJpIjoiZkFJdk96cmZjS1U2T2lkVSIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiamlYU2orMG5XeFdwcXVmUFJQNU9FcFpkZkxGVjIxUTUwLzNCSGhxVGJ4a0NTcm5iYllYUUt6ZCtiRGJpaHY3cGp0bnlreWt3a2t2TElOTy9zYi9wRHVIQUJhNUhZcTdFNTlMSUNIc3FTK009IiwiaSI6IkFIY3lhYVZMV0htVktHSGciLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMWYxSDhmUXNJVVVCTVpYTjh3eEsxSkxibE10Vi9JUWhQNGw4cWRvN2VmTkxCdVZ6N3JEVklyU0J4RVhqUXJaM2dIZWQwTUwrMklEV2Z3N25QdE96K3dNTHJZMkZVSnFpVE5MUDdyd2k0UT09IiwiaSI6IjRPak1nd1U1SkxoZnIwcTIiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieGFpYjllUzhJUVVmR1JrOWJiMUtzTXFRZEdKMnhtejVIalFmS3JEc1U3elVCb2J2KzlvbnFsbFJ2ZWJBYy9wVVBVNUlRRE8yTEZrcE5FeXYzcnBrM1A0aWdPWm84cXZYS21hTWp4OVVDTW89IiwiaSI6IllBTUZnME9mQWtqS1AweFIiLCJuIjoiRmlsZUsifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZEF4K1lXMlRpOUFpd09qOUJ2ZWZNeFRTYVVPZUczMkgyLzRxdHBlcjJXUnVEYnNERkU4RHVTWjJoZWMzRlR3NTdGQjd3dnN1OVYrbjdzT2tWaDBPSnlRY28wWGRPUG5vOXhKVDNtN3NhQT09IiwiaSI6InNkSzdNNUg4QWNrSXlaa3YiLCJuIjoiRGF0YSJ9",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidm9ndFBPVzkxN0syODlqb2EzUWNLcEZMbXExSGhuaUdnVWtubHdxYUxTKzhWbGF6UEhaNUlJUWZ0MFhhNHZjcUxCVVlUd1o1SVdHRlQzaFgvY09NTm02VUV6TFdQMmhhSE9pbitycGFwQ0U9IiwiaSI6IklxMmRIWGszQnIwMEV0UE0iLCJuIjoiVmF1bHQifQ==",
+	"credits_files": "DUPLEX",
+    "credits_backport": "DecKerr97 GUI",
+    "credits_dlc": "DUPLEX",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
+	"apr_emu": "on",
+	"fpkg_size": "10GB",
+    "size": "35GB"
+  },
+  {
+    "title": "Ys IX Monstrum Nox Deluxe Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/Ys_IX_Monstrum_Nox_DE.avif",
+    "tags": [
+      "PPSA07528",
+      "v01.001",
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiejVRZkVOMFNjeFUzRXl2d1IyNW5lcm56SzVBTnhzMjUxZTM1WklrWEJJTjAyc1RBdE1nM3Y1ZEZkMnBCRUYxUnNDTGY1cnBPN0FmYU1VTWJLeGlWRnhUTjBPK3lZa2NTVU9PL0FDUTZodz09IiwiaSI6IjhteFdZaXUwUjNDOGdlczciLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS0s1YWNjdVlSeWk3SjY2NncvYUZXbnRtbUM3SVN2ajUxUXBra0J1WStxakVZdk1SZloveGFiYmlkM0NDS2J6SE9UZStaTzNIWVR2YTloNEVkY1ZWM09weEw4T3NCNmFCckNma3dyTGx1UG89IiwiaSI6InpXT0ZHd0NhMTJCYXlBRTciLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoidnBtUzhMYW5yVTQwRkE2U3ZraGhZRU5qdFRGajloUGNNQitNNUZ5cnV0a3ZKWUhPWmtLNzVMZXpqc2JWSm9tMTRYS0dWSjZRc2ZNZWhPNDA0U01Jb0xZYkxYQzNDbHB3d2dPU0xZT0kiLCJpIjoiT0lQOUxQcHhSR0FJODNsSyIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYzZDTjR3SmN4dnliUm96dG9mNURMV1VEeVFNcVNweXFjcTczVU1xa0QxSkVseWlPcWdBUkZSZ2Yvb05JUHVaQjI2ck42M1FBSk1DR3ZaZm5nQmdwRGtxQ1dOWkpONjBkZ2VoVFpQSjBNdkk9IiwiaSI6Im8zaURCOWU5Smc2aHZjU0EiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSFdGbDdTVW9MWThZWU0zZzl6d1BYM244VHVMWWo4RjcvMURzM3RWZ3ZmYXk5aXZIbkIvNC93TmxobCtiYVhKWGlsREZpaVYrVkNHNG8vVjVEeDhJS3pUTFliVVJLcmtlMHpsUWREVjkiLCJpIjoiMTJoYmw0K0pXSHNaeGdxVyIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieks2UnVseXFlOHhvT002dW90cU83UXlqRjRrU3BPWHRHRnBVVDVnR24xc2s4YUFJUVlQQjVOVDdnTG5NS3hlUUx3b1VmOFU4TjVYQTFIY3dxT09wSk9DWFVKZHJlYVdaRHk5OHdFNCtHV0E9IiwiaSI6IlhHWUNZWDNNQTJaS2xwL28iLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiOU1wcmpHOXBhMTlCZ01mTDN2Y0R6WVg4emZlNTdDTGlLOFF4aVphTUxON1czWkZmNmV1bHgyM0QxK2k0cUM4Qk8vTkJRTXFFNklsWlhhQzhBbTBUajgyOWVUdkNlbjBqVVRFc1RlK25ldz09IiwiaSI6IkFYUzVKaVg3MXJaWGlFakciLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicE5lK2lMR0hobURFVkVUNk81eXRQcFRxU29TSGM1WHg0SGFEcTBnakRHbnNSVWh6Y2lzSlk2TFZ6aVJFOXR0WjN5eVFFZWR2T1dPWTBYZE9kMHVsa3VwQkJaUUpmQXlBMWlqZ3JwTUJFWGM9IiwiaSI6Imt0L1NFeUs1UFhaVFZZeWkiLCJuIjoiRmlsZUsifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZHRuV2IveXhOSWRoTVIyUHV5ODFjWC9yVWZHaVBYeHRXUlA0MXFmbUVIS040VjRsMVZsNXRlUXhpL2RrWlk5QjNRVEg2eUs4MHBXOXlUR0tXYlk4SkVyZkQ3VHAvS0U3VzBPb0lkQUZMZz09IiwiaSI6IjNLM1FtY0tIdjBFS0l5em8iLCJuIjoiRGF0YSJ9",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVE1GaW1PRVVFaGpXbjZjdXVFd0hTckFrUzFGcUhsSkgrelloM3poL3FtOWhGd2pmdW5kWDZET0hZNkMwVFA2SkxMR3ZPa2N6L21ZYURmZ09RaHRlUndvVFMzU21vUmk3UU5kbFJqUGRZbzQ9IiwiaSI6IlJmMEJ0N3I5Vy9nV3pRbG4iLCJuIjoiVmF1bHQifQ==",
+	"credits_files": "Xan",
+    "credits_backport": "DecKerr97 GUI",
+    "credits_dlc": "Pippo",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 5.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+	"apr_emu": "on",
+	"fpkg_size": "6GB",
+    "size": "9GB"
+  },
+  {
     "title": "Laika Aged Through Blood",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/Laika_Aged_Through_Blood.avif",
     "tags": [
