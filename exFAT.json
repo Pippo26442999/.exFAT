@@ -20,7 +20,7 @@
     "credits_files": "Zhengpai Yanba",
     "credits_dlc": "Pippo & Zhengpai Yanba",
 	"credits_backport": "DecKerr97 GUI",
-    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 11.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "how_to_play": "Note: Own ZSTD Extractor. FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 11.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
 	"apr_emu": "on",
 	"fpkg_size": "10GB",
     "size": "12GB"
@@ -68,7 +68,7 @@
     "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNHlRQksrc0RyNlVEencwODFyc0xCUFdVRmlneitlWUU5QTFBejZ6TmpmUk1NVm0vWklpczJBSW9aNlUrMHBpN3FSd2tOL3pqb0V0TmFPT25MRVNZZ0l3VzJaYzhlUmtzWUloNVNDK0tiOTA9IiwiaSI6IlBGUGNEUkwzY3M4em0zWlAiLCJuIjoiRmlsZUsifQ==",
     "credits_files": "Zhengpai Yanba",
 	"credits_backport": "DecKerr97 GUI",
-    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 7.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "how_to_play": "Note: Own ZSTD Extractor. FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 7.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
 	"apr_emu": "on",
 	"fpkg_size": "1GB",
     "size": "7GB"
@@ -94,7 +94,7 @@
     "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoieGpoVi9MMXBsV05xWEFhY0NCTDkrN2xrakwxc1FTK1hvL1cvdzd6MnEwbEcvb3lMeHJHRXdkSVBtUUs0b1NaWXBSSm1qWE8wU1R4emtTc0F5MkxLK2tOV1UyN2dUSEp5NWtpMkJxVWwva009IiwiaSI6IjZCN2dxL00rL09vS0ppU2oiLCJuIjoiVmF1bHQifQ==",
     "credits_files": "Zhengpai Yanba",
     "credits_dlc": "Pippo & Zhengpai Yanba",
-    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above.",
+    "how_to_play": "Note: Own ZSTD Extractor. FPKG atm is only working up to 11.60, use Dump if you are above.",
 	"apr_emu": "on",
 	"fpkg_size": "2GB",
     "size": "2GB"
