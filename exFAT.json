@@ -1,5 +1,58 @@
 [
   {
+    "title": "The Legend of Heroes Trails through Daybreak 2 Ultimate Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/The_Legend_of_Heroes_Trails_through_Daybreak_2_UE.jpg",
+    "tags": [
+      "PPSA24326",
+      "v01.002",
+      "USA",
+	  "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiazQ0TmFMWjJhMmFBeWpBQW11dVZEN0FodEg0Sm5RWmo0U05sNHhLOEQ2eW9xZVowaFd0b1NwRWN0OG50cGsySk5Pcy9IOVl4UE5TNU13RHI3NFFKc3NxVEg3b3BCYTQwOUgzSFU0dnBOUT09IiwiaSI6Ik9peUhkWEtpbW93UWZ3dEwiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaXFxVXczNlgvQUliS2NPV3MrZ01tQzUwMEFWS1FiQXNXb3BnQTdjL2JLRnBsemZveEd4ek96V2hOUkl2d1JpcTZMeDFBa3VCWlVXeUNKSXh6aGR2U09WVUlCOURNbmdQK3JKOEhCamRrbmM9IiwiaSI6InBpRzM3a21Qd29kUm90QlAiLCJuIjoiRmlsZUsifQ==",
+    "dump_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiSmg5alZFZWdrcXVhUkd3Sk5NV2dlaTVWYlpHbjNENFhheW93LzlUZGRnWmV1RDI3Y25FWFExU1VnbkQzYWFsd3MzTVJMeHVrd1pDNHpOV0dOUGlvNmNpaENHOXkrL25vNHlFVTkwZzlEbkU9IiwiaSI6Im9TaGcyMWZsK1Zvdmw1bUsiLCJuIjoiVmF1bHQifQ==",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMXNZS2h1MnpWVWc5dzh0WVdUQXpKTkRiWjBGTkFpejh0cVdwVHFaclZyM0N0RzhRc0pHQ2xXNUppZWllRGZQVUlYSWdXOXN5d0k1NWlZOXdXb2xVOTZrTXE1cEREbFBnUHhnV01sWjNzVkU9IiwiaSI6ImdCZXNNWkV5K09LTk5OaEUiLCJuIjoiVmlraSJ9",
+    "fpkg_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY3FCS2NWREg1ZzhaY3lEMXJ0OXdJbGNlTXhMdHc0UGpJZHJWZ3J4Y1JLY2dSSmQ1Q2VCL1BpUHRmYngxeE9LczRIOWUzUWNXbDNhM042bTdscEkyRGw2cnhsdlJKWGk4Q3VKYS8zYmQ4U3c9IiwiaSI6IndyR3R1eE5kUzVZblJKL3EiLCJuIjoiVmF1bHQifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiQlBmR2tBemVHNTU2OVdLRGE3aUhBMEZMZEdqdEYyOEhFVUFKaE00WXRPamJIWmZwNUkxZy9IcnpzQlNxS1RXdVpmZVBMMDh3a0VqM2VYQlhxTGVtcTl0WHl4aTc0ZVNObjFBb1JONUZNWm89IiwiaSI6IlFqQjl0clpVSE5lWTdzREEiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicjVGMkdYcG1xQlZ5WnloQnNSM1BLeGxid2xwellxTUNrR2ZMbnkrZG91emh0bU5ObitOLzBPdHA3Wk1tZnFQNWVMNGdlbHFycmFnY2R6OUw1M3VtcDZsYWRDQ2dubytLeGFIWjBxY3BaUT09IiwiaSI6IldmNHorRmhHSHBNSzdFb2IiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiekdYUjl2OFpVSWkvdzcxQks3UWgxa01GaTRFWnVEV3VVYXA2V0ZYRXMwdE1TcHNVc05rTkUvRVlTaTZiVjJkTXdESXg3K3VYUkdMb0hyY0pQZUR5aWZ2amNMcFVPZ0dMWHIwRVc5a0lzSTQ9IiwiaSI6InB4bzlQdnJmTFA0b2lFTEoiLCJuIjoiRmlsZUsifQ==",
+	"credits_files": "DUPLEX",
+    "credits_dlc": "DUPLEX",
+	"credits_backport": "DecKerr97 GUI",
+    "how_to_play": "FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 5.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+	"apr_emu": "on",
+	"fpkg_size": "16GB",
+    "size": "47GB"
+  },
+  {
+    "title": "MudRunner American Wilds Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/MudRunner_AWE.jpg",
+    "tags": [
+      "PPSA35314",
+      "v01.000",
+      "USA",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNjhWeGhwUkk1ZFF3THNZQ3NFeE9IRGlPNVhQNm1XV09pMFlMOFFsNmI1Z0czYVRkYTJTSmRybmF5bWhsYjdHRW9nT3FPM2d5dGY4V0s1TkxqdmFxUUt5aVpLL2lBbzRQc05YOGpoN0d3dz09IiwiaSI6IlA4bDhVSXdWOTJpVHh4Z28iLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUVEzL3NzVFNneEN3UHdBOEJuUEdSYy8xbkU0dDhRMWpSd1ZQaUtnYU9pNnQ2YktPS05UUkdZdEJjRTAvNmt4dTdYbm1nRkFmYVZLY0ozYlNyL2lxY1EwRGtWOHV0M2xZcHIwbzViaU1EZkE9IiwiaSI6Ik15RHMzdnJHZmh3dGlsdEgiLCJuIjoiRmlsZUsifQ==",
+    "dump_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicVloTE9Ia1NpVGZld0E4OXdUYWhKWlZUOUdWWkVqNTNybWlZakpHaFB0ckFZRkhkVWR5N2xOb0VVWHl1SlVRQVFDQnVNejJtRTM1cFhUdmw4NG9FNmRXWWFvS3VSNzBPSTduQ2YxOG5tL1U9IiwiaSI6InhSZXFybXZVWHMwOEhESnIiLCJuIjoiVmF1bHQifQ==",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiTlUzZ25MaHpuM3JJTGJDaEZrRGlRY3U1WEJrc3poNWZDYkRjOUtBUTJjUEZtY29Id08xM3BUSTZjUnlEeDk5V1lZK1hpMllwUXBKR3lCVThaZlBaVnNSU3poMDFrOFkwd085SktXTjBFMEk9IiwiaSI6IjB4WldZN3F6cytvTmF5S0giLCJuIjoiVmlraSJ9",
+    "fpkg_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWmNZWDNtNDlnaHh4TzB4cjFFNG1RUUREV29sOFhDMkFibVdmdHlxV2FWZW1CeS9xSzZnQkFKZkI5UHVhb3NRVHg1VFFXVDQ1emhmTmdLalA4MGsxTzBuRXF6M011SGQ5eHJ1bm5ZZ1hnVTQ9IiwiaSI6IndNUGlydnMyRG9wTndya3ciLCJuIjoiVmF1bHQifQ==",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiejZvOXdBdElJYlpQSWNUKzVZd3NmUzhIZzIzbTJvK0sxcUswejdXc1FWMyt3STQ1akFQV2pjaTBuU3RYMnd2MGVUZGV2RHljb3JXa3N3eW5BQURMbWI0ZGlrTlJ6UURLQmpEMHc2NzI4MDg9IiwiaSI6IlRvbGR4VWhlQUpBb05ncmQiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaUpMd1RnWTIxQkxPZHdVMVhFbzBvWEtaclh6RjUwcVI1azY3MWlXRTRGSGpOTWdRU1RySkpCeHBjV214NlFsSlA4Z1FUMHlKdkV3QmQ0djFxM3NWTDFtTVRnUVBFT2drTFcrS2RaR0RWdz09IiwiaSI6IjVqWXJ5Sk9nTG5JTERma3YiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiS3l4YTQ0a2Q5Skhabk01c0JVVDJkRmpzbCsxWFFRWnZDdFFXeC9PdmRBT3FpenN2U2xKbnRuMVpxZWRrd3krWnd1bWxwOFZyT3lPdlhDT3pQS3doSHVqMTMzMmlCT1JGaEVla1ZDMk1oUnc9IiwiaSI6Ilh0MEtpQ09tMnJaTUlaeGoiLCJuIjoiRmlsZUsifQ==",
+    "dlc_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiR1BUdmxPd1o0U1BtMnpFZyszN2NNMWNVOWYrREJnaTR1NHd0eHRoUGdDNE9yaTlmeEY3TlpRTHJwREdtWGxQMitCK2ZXMFd2SXRqRHhjWk4zdk93bERzTmhlemk0eVYxTkQ0c3R0N2t0QT09IiwiaSI6ImR1eEVMVFY5RnR1UDJBS1UiLCJuIjoiRGF0YSJ9",
+    "dlc_vault": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVkgyMlp2NE1tLzJ2UFQyR05vTFkwSGhsVE1nMEVNaldUT2hSMGVHbGVLV2pVbS9pYTRDWTVmcHBnNW5vTkp6Rm5hREFZYkhPRlBBbldaUmpCVnk3eHdzLzBzcnZVL1NIQkZwMDlZTWEvYW89IiwiaSI6IlFUZ3pXaFBROWZycGVUTm0iLCJuIjoiVmF1bHQifQ==",
+	"credits_files": "Zhengpai Yanba",
+    "credits_dlc": "Pippo & Zhengpai Yanba",
+	"credits_backport": "DecKerr97 GUI",
+    "how_to_play": "Note: Own ZSTD Extractor. FPKG atm is only working up to 11.60, use Dump if you are above. About Dump: SDK is 12.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+	"apr_emu": "on",
+	"fpkg_size": "1GB",
+    "size": "2GB"
+  },
+  {
     "title": "Cairn Deluxe Edition",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/Cairn_DE.jpg",
     "tags": [
