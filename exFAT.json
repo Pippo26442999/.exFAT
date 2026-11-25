@@ -1,5 +1,59 @@
 [
   {
+    "title": "Monster Hunter Rise + Sunbreak Deluxe",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/Monster_Hunter_Rise_Sunbreak_Deluxe.avif",
+    "tags": [
+      "PPSA08035",
+      "v16.000.002",
+      "EUR",
+	  "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiMk9kRzY4S2gxTVU0SGRvTW93VjVqVEp6djhvc1RoSmNuSTlqY2lseXBXVGUyUmZNRlRoNGZqUy9nNDlySDBkb2JTZHlPdkhwVnlYZU1vSHhMMVNETyt6TGpsYnk3TUtNWjVxU0pvaTA0dz09IiwiaSI6IlBEVTFUeUpCT3JUdWxUWUkiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib0dGZDQwYnkrclJQVVBWZDFpUWJBWUFJNFFYM0JqVlFlQmZrNVRTTHkwQnZyV0NjTDRBZ3RvTVpmbGordGpUeWdCK1hVS2lTQzhweXdaNUtmL0IyaWU3eVlvdTZXTitXaTg1ZHZvdzEwT289IiwiaSI6IjQweTg3TDVBbWVSN3MzUUwiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiV0xYbXR3RXh3TStDNmRKYnpHcUNRRERaRHpScUpnbEpiZlI3aG0zNUtjd3g2eGVBcVl4TmFNSm1LdGUwTDdxMFp3WFBJTHE1NkRDcVcyWWt4QW14UFAxdnVCYlRUYUVXa0FLVGhKY08iLCJpIjoiTHRnVmpQU3kzc2IxS1ZMcyIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoia2taTCthRGRMaTd1QlVCdTUwck9iQ25YK0tsTS9RdEdZekkyekNXZFloaGhWU1hTZ2krZEhrTThoZkxSbXc1QkdOYklVSmI4QlhsbWp2UStsamY0WEEvc0F6WDIvemt1bnJGQXJWc2xVeXc9IiwiaSI6IldNbzJ2ZUpvK1dYVUo4TWwiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNUMvcHA2bDdKcmFlbXNIRjBPODJXSGRubHZKYlhpdW5CTTRHNnQxZlhIcUx1UWU0NFlLU2JJdlpMZTlIV01NYlJKOCs2SWh0cmJXdHZVaXF1bWJUd1ZCUHUrU0tLTHRkeW5RN2FDQmciLCJpIjoiWHR0WkVjNXlEK0pCN0lNQiIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiakJwU2RHeEpuTzREUDJ0TXVaTmlBaEZwRTAxTy9PWG9LRHNwMDhhNGYvSG9wQmgvNSsvYWcyd2N2djNTNXhvR1crVE40dWJ0TzUwZVVnZ1Nlb3pCUmhXdlpFSEd4YkNaekJENjBJc25aR2M9IiwiaSI6IjY2SlRPdmJvcklncVBNV3MiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaDNMNG5sMVFmK3Nwdy8wZmdyRHZNM0IzL2tsc0FRRmNnOG41b0NsTy9VemV2VE5FczhWT3cwL1lqbkZ6RmNVOUpoNytwWkhGSHhnMzcvVC93RWN2Zi8vTWpsYVpQS0puNGExV01pdjduQT09IiwiaSI6Ik1vQm9JZFhqWnNsNmpjMXYiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVHBIVEkwbDdVRFUyZCtlY1g0YUZxb3hvWXdaYi8zWWQ1Unp1ZWg3cWloSHJtSEJ4SGE1U0M5OTA1RG9VMHlaV0E1VlJ0MGl2RE5nZ2labjI3eTZRNnNZODhoVExEZGgwb2s2dkUxVE1rYVE9IiwiaSI6IjEwSyt3THc4UmduSUhqZEwiLCJuIjoiRmlsZUsifQ==",
+	"credits_files": "Barquillo",
+    "credits_dlc": "Barquillo",
+	"credits_backport": "DecKerr97 GUI",
+    "how_to_play": "FPKG atm is only working up to 13.60, use Dump if you are above. About Dump: SDK is 5.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "apr_emu": "on",
+    "popular": "on",
+	"fpkg_size": "35GB",
+    "size": "56GB"
+  },
+  {
+    "title": "STALKER 2 Heart of Chornobyl Ultimate Edition",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/STALKER_2_Heart_of_Chornobyl_UE.avif",
+    "tags": [
+      "PPSA28336",
+      "v01.022",
+      "EUR",
+	  "DLCs Merged",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVWE0WmdoK214TFE3dE9KTnJnRUkyb1hBcHM3SGdpdExzc1ltdEU0WEhnTlZZeUg4azQwTWNLcGFxaFpIYVpzWlMzcEJiaW5PbGZ4TnIzT0YxWXZnQTdwWFVFZGFRNWc4RUp4TXJtcGROQT09IiwiaSI6ImNraXJ4TlBjdnNHZG1vbTUiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWWs3cmFIRzBmdktNUUlkbHVjcFg5MWpmQzYvV2J1MzZRTlozbWJ5b0hLQjMxMWhCWWR3b2MvTVBHNmVidHhiTE1yclduOFNnb3h5NXFrVkpvbGsyZllGeEllNFpUc1c2RGlvUHF1Q2xmb1U9IiwiaSI6ImRQWFdlVHowcVlPNVNLaEYiLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNy82QWRZYzRsWEI2bVgwa0tGdDBpZEYrYnRLSmpGb3h4enJkMVlsb0p6Y3djbGZ2UzZEdXdWZFRWM0t3NE9lLzM2dVYvZ09KMmRZNkdhUGt0aVhHRmFBdjZxL3dMVlh6RFpqdlhwNmgiLCJpIjoiVCtnS0pnTUVBUzB2YkZvbCIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiUDhBdTZqSlNwelBENHVka3Frc3BRSExtMlFhc0IxSmRhU1pvMnYvVWFwTmpsTjk5ay8wbFBSSjFqeDB3Y0s1cVFOVVYzUmRXODV2RDZ1VUVWMGh6clI2NENJQWdDRXNZb0FhRU13dkpJV1k9IiwiaSI6Im5Cd0Q1ekxOMG54WjNBYmkiLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiT214UTlnbitKdCtOeXlJcnVUWGlIaDdHSURIM25zUndzUHdhTGNJSXExN0ZCWVAzUU9DamQvMXE3TEo3V1E5Q1lTUnhiUEEzcFB3WWc3RytsVXl0UCtMNHd2UXVDcXZNbk9ZbWxEbFgiLCJpIjoiRGswZGxpRU50d2FnclRCbCIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoicUFqc3VwQUxuOG1vMnoxV2V0V2Q1TVBsZWNHZXd3VCtGTEJYODYwMDUwZ0xKaElCSTlBai9YeWU4eUNqM1FYWDVyV3JQRFhpd3dsM2JjTllWbEUwZWxTdm5kNkJvZjM1SlpPNDVyOWpEdXM9IiwiaSI6IkNsN2xRcENudkNXQ3UxSTAiLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWWx2Y01hMkpTaEhTanpMRlR2YVRlbmVIdFVDWldLMjg2NDJpdEk4SjNaWTFUUXBveUV2RVE3aUt6NnJidjJ6TWh0RkRnSmhDNlBLcFdvWWJmMjRkRXJLcjJTeVVUdWlFSVZMT3hVcVVNUT09IiwiaSI6IkhkemJTc3FYdWVZaGNnTXUiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiVk5MYStuVmVhemo3LzFXWS84WUhEMjkyaStzVmI4d0cvZE0wWk90cWpJVmw1Rjh4YmtYM3Nnamkra3RENHh4QjUra3ZSQkV5MlZyZllHT3VhbkV2c1RIRmIrVnhwUmtIclVFU1BxQVVhNWM9IiwiaSI6InlOeXYweHU2V3pINUlWeG8iLCJuIjoiRmlsZUsifQ==",
+	"credits_files": "Fubc",
+    "credits_dlc": "Fubc",
+	"credits_backport": "DecKerr97 GUI",
+    "how_to_play": "FPKG atm is only working up to 13.60, use Dump if you are above. About Dump: SDK is 10.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, separated Original Files PKG included, optional.",
+    "apr_emu": "on",
+    "popular": "on",
+	"fpkg_size": "177GB",
+    "size": "177GB"
+  },
+  {
     "title": "Shadow Gambit The Cursed Crew Complete Edition",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/Shadow_Gambit_The_Cursed_Crew_CE.avif",
     "tags": [
@@ -18611,23 +18665,6 @@
     "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiYUlGdjg1OTB4cW9wcURDV0NLc1g3QTg5TkNsT1NRck1nMVFjWlBTL2NQazZWQ3orT1lwUzczYlg2Wk1QMy9tVFJ3PT0iLCJzIjoiU1BqcU5GaG5HY0tKamhjdGl6MnZyZz09IiwiaSI6IkUzTTA5STd0bG1HZTFCbnAifQ==",
     "credits_files": "High-Speed007",
     "size": "24GB"
-  },
-  {
-    "title": "STALKER 2: Heart of Chornobyl",
-    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/Library_Saves_1/STALKER2_Heart_of_Chornobyl.avif",
-    "tags": [
-      "PPSA28336",
-      "v01.009",
-      "USA",
-      "4.xx BackPork"
-    ],
-    "akia_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOEk2TFN1OE9ZYkpWTE52QnVYYTRteUZUOFVhbzVBSnhyaFlRWmRTNE5XclZ6S0MzNlZCalhoMkpINFJqbVZ6clVOcVZDV2VxIiwicyI6ImpQQThIakdVWHpHRys5dXQ0UUxnd3c9PSIsImkiOiJpZWMrOW5lRWRVM0F0RmFuIn0=",
-    "viki_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiTjhKNGZ0WURoS0VDZ3lxbzVKZlJRUzdTemt1SzNHbmJpQkhSUi9QNGZ4SnBGY3ZtRnl1U0p4QzZzcDFGeTV1V2w2elkiLCJzIjoiWGh1cUNVTlFaL1pyVERSanRLYWtTUT09IiwiaSI6IjA1VHFvQTFNT1lvbTJScVcifQ==",
-    "data_url": "https://pippo26442999.github.io/link-lock-pippo/#eyJ2IjoiMC4wLjEiLCJlIjoiOURLM0xnL2dXWUUzRHAxQWRscGJoVG5rYWdtalJMa0lVTUZLSkZBWkhZNStFc1JtS05DL2lyZ3RubWowK21OZWFBPT0iLCJzIjoiVnZ6aWsxVGgzQ1F2WEIyVXlnakdvZz09IiwiaSI6IkRUSWhiYzJSejlBWXk1NWoifQ==",
-    "credits_files": "High-Speed007",
-    "credits_backport": "BestPig",
-    "popular": "on",
-    "size": "149GB"
   },
   {
     "title": "EDENS ZERO",
