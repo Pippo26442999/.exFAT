@@ -13502,6 +13502,29 @@
     "size": "5GB"
   },
   {
+    "title": "CODENAME VI",
+    "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/November_2026/CODENAMEVI.webp",
+    "tags": [
+      "EUR",
+      "4.xx BackPort"
+    ],
+    "dump_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiNEhNZUZEVEZ0TEpLWk1vMWJpeDZacCt6dHpXeVgxdjVSQTRIazVQQ2lSSnlFVElSUldkUVl4V2xmSjJmSmFwSGRMOC9qVEFJUWVEUWVtK2VOYTA3S3RYRkhkZWlVMUNJcThRalVsYzhlZz09IiwiaSI6ImVRY0FCUnJHRkhxTjFtZGQiLCJuIjoiRGF0YSJ9",
+    "dump_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoibHBBdEorS0piVzdiYnY2Z083RytMQkVJNGNPekx5ZXFoczZCT0s3V1Z1LzZMa01CSXdQTjBDZWkwcWEyay9wUVd0OHFFTzdjcTAwbllBZHczemFhWHIyVUdFb3hlbE5Cc3FDRlRuSjJ6K009IiwiaSI6IllVRGlSSnlnV2UzUmEzWU4iLCJuIjoiRmlsZUsifQ==",
+    "dump_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiYXZKMFo5alltTzBIbVBpeU5JelpSK1FmOTBSeG1pcWswQlRTVDJPL3VaNURLREpkMlg0dEgzRm5qQTZUdzBXaUxiT0lkSFhwVDY1M0RLSlFyQTJTZ3lDN1lBWXpUTGMwcFRtTG8veWkiLCJpIjoiVzBicXRTRWJ0c2ZKbnFTViIsIm4iOiJBa2lhIn0=",
+    "dump_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiZWxGZk5ReWhSM1ZvK0RyMnJZT3NNT0JHVnR3WWNDSW1lWVVtNXhpd0xyZFJHM21MeExWcGhZZk9mOVdoRll6aSt5WFdsWHI5UmJObGE1em94dHBnYjJodnVkSzQwbnVSVVEwM0E1T2Q4bEk9IiwiaSI6ImVkQzRXcVg2aHhWaUF3V08iLCJuIjoiVmlraSJ9",
+    "fpkg_akia": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiaFJZV2NQTG51djUraUZ1Ry9zOG9zUFcvbUhHQ3RtbnRBRUxSY1d3SmhRRTZ2U0QyOW12Q1JHVlh6RGpEcVpqMFVJQms4bTF0SUtHY2N6Wm1NSHovZ0k3WUtrVllRTDlvU0V6YU5FTWwiLCJpIjoiQytEWklGUVV1dnJRZm8xciIsIm4iOiJBa2lhIn0=",
+    "fpkg_viki": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiY3Z5VkVUclRDZm5XVEEyajkrNGg0RUZ0TU1hSlhXQWxuU010Z0hmbUdmOWsvNEdHTERXaTA4dTZYZHVXb0FEaTZSSmpiSEhSbjFVd2tYVnVLcGhzN0hrZ1VodkVnbGk3NnpBTTAwQUdYN2s9IiwiaSI6IjV2NVVTVEwyZkp4L1pDOG4iLCJuIjoiVmlraSJ9",
+    "fpkg_data": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoib0ZQaVNyZEhpNWR2WU1jQUtHQWtCVHlnajBWbUtpbUxZeUIyQXNXN29pckV6bVZqTUxEd2x0REZNNXJ0cFRsY052NEhJTGp4V0lVS1l4dFhGZlpwYmROZ0ZCbGQ3eGdnUUs1V1hQeVgzdz09IiwiaSI6IkcwcmtuRnNkR2tYTUtDd1UiLCJuIjoiRGF0YSJ9",
+    "fpkg_filek": "https://pippo26442999.github.io/library-decrypt/decrypt-public.html#eyJ2IjoiMC4wLjEiLCJlIjoiWmF6ZkRyalBlY1p1VlNHS1l2V24xNjcxOFllNW1kZXNRdXR3alFyL25XZ2ZLOFJuUndOMHRINEU0ZXBFSVd3RFdtWU51OW5LMjhZODFLOGxtZjJtTXRWWjhpK2kvdWxYem9QK3Vta0RrZkE9IiwiaSI6IkN6azVxMDhwd0YrZVVHUUkiLCJuIjoiRmlsZUsifQ==",
+	"credits_files": "Scene",
+	"credits_backport": "Scene",
+    "how_to_play": "FPKG atm is only working up to 13.60, use Dump if you are above. About Dump: SDK is 12.xx, separated BackPort Folder included. About FPKG: BackPort already included on Base, Original Files PKG included, optional.",
+    "apr_emu": "on",
+    "popular": "on",
+	"fpkg_size": "197GB",
+    "size": "540GB"
+  },
+  {
     "title": "Aeterna Noctis",
     "image": "https://raw.githubusercontent.com/Pippo26442999/decode-encode/refs/heads/main/Library%20Images/Library_Saves_2/Aeterna_Noctis.avif",
     "tags": [
